@@ -5,91 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CCS News Briefing — Fri 15 May 2026</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
     background: #fff;
-    margin: 0;
-    padding: 2rem 1rem;
+    padding: 24px 16px;
   }
   .wrapper { max-width: 760px; margin: 0 auto; }
   header {
     border-bottom: 3px solid #0a4;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
   }
   header h1 {
-    margin: 0 0 0.25rem;
     font-size: 1.5rem;
+    font-weight: 700;
     color: #0a4;
+    letter-spacing: -0.02em;
   }
-  header p {
-    margin: 0;
-    font-size: 0.95rem;
+  header .meta-header {
+    font-size: 0.9rem;
     color: #555;
+    margin-top: 4px;
+  }
+  header .item-count {
+    display: inline-block;
+    background: #0a4;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 8px;
   }
   section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 36px;
   }
   section h2 {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: #0a4;
-    border-bottom: 1px solid #d0e8d8;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1.25rem;
+    border-left: 4px solid #0a4;
+    padding-left: 10px;
+    margin-bottom: 18px;
   }
   article {
-    margin-bottom: 1.75rem;
-    padding-left: 1rem;
-    border-left: 3px solid #d0e8d8;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
   }
+  article:last-child { border-bottom: none; }
   article h3 {
-    margin: 0 0 0.3rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #111;
+    margin-bottom: 4px;
+    line-height: 1.35;
   }
   p.meta {
-    margin: 0 0 0.4rem;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     color: #666;
+    margin-bottom: 8px;
   }
-  article p {
-    margin: 0 0 0.5rem;
-    font-size: 0.95rem;
-  }
-  a { color: #0a4; }
-  a:hover { color: #062; }
-  .tag {
+  p.meta .region {
     display: inline-block;
-    font-size: 0.75rem;
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
-    background: #e8f5ec;
+    background: #f0f8f0;
     color: #0a4;
-    margin-left: 0.4rem;
-    vertical-align: middle;
+    border: 1px solid #c0e0c0;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 0.72rem;
+    margin-left: 6px;
   }
+  article p { font-size: 0.95rem; color: #333; margin-bottom: 8px; }
+  article a {
+    font-size: 0.85rem;
+    color: #0a4;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #c0e0c0;
+  }
+  article a:hover { border-bottom-color: #0a4; }
   footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    font-size: 0.8rem;
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 0.78rem;
     color: #888;
   }
   @media print {
-    body { padding: 0; font-size: 11pt; }
-    .wrapper { max-width: 100%; }
-    a { color: #000; text-decoration: none; }
-    a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #444; }
-    article { break-inside: avoid; }
-    section h2 { break-after: avoid; }
+    body { font-size: 12px; padding: 0; color: #000; }
     header h1 { color: #000; }
+    section h2 { color: #000; border-left-color: #000; }
+    article a { color: #000; border-bottom: none; }
+    p.meta .region { background: none; border-color: #000; color: #000; }
+    .wrapper { max-width: 100%; }
   }
 </style>
 </head>
@@ -98,129 +114,128 @@
 
 <header>
   <h1>CCS News Briefing</h1>
-  <p>Fri 15 May 2026 &nbsp;·&nbsp; 11 items &nbsp;·&nbsp; Prepared for Matthias Raab, CO2CRC</p>
+  <div class="meta-header">Fri 15 May 2026 &mdash; CO2CRC / Matthias Raab &mdash; Recency window: last ~24 h</div>
+  <span class="item-count">12 items</span>
 </header>
 
-<!-- ═══════════════════════════════════════════
-     SECTION 1 — PROJECTS
-     ══════════════════════════════════════════ -->
-<section>
-  <h2>1 · Projects</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
   <article>
-    <h3>Moomba CCS Sets Record Australian Carbon Credit Haul After First Year of Operations <span class="tag">AU/APAC</span></h3>
-    <p class="meta">Santos · S&amp;P Global Commodity Insights · May 2026</p>
-    <p>Santos' Moomba CCS project — Australia's largest onshore carbon storage facility — has passed its first full year of operations with 1.3 million tonnes of CO₂e permanently stored to date. The Clean Energy Regulator issued 614,133 Australian Carbon Credit Units (ACCUs) for the project's initial six months (September 2024–March 2025), the single largest issuance ever made under the CCS ACCU method. At full injection rates the project will sequester up to 1.7 Mtpa over its 25-year crediting period at a reported cost of ~A$27–28/tCO₂e, among the lowest globally for large-scale CCS.</p>
-    <a href="https://www.santos.com/news/moomba-ccs-receives-record-australian-carbon-credit-units-after-first-year-of-operations/" target="_blank" rel="noopener">Read source</a>
+    <h3>Bonaparte CCS Targets 2026 Operational Start as A$1.2bn INPEX Investment Advances</h3>
+    <p class="meta">Territory Gas NT &middot; May 2026 &middot; <span class="region">APAC</span></p>
+    <p>INPEX is targeting first operations in 2026 for its Bonaparte Basin CCS project in the Northern Territory, with investment estimated at up to 100 billion yen (A$1.2 billion). The project leverages Bayu-Undan field infrastructure and has potential to store up to 10 million tonnes of CO&#x2082; per annum — roughly 1.5% of Australia's annual emissions. The Australian Government awarded it Major Project Status in July 2025, unlocking priority approvals facilitation.</p>
+    <a href="https://territorygas.nt.gov.au/carbon-capture-utilisation-and-storage" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>Porthos Completes Well Conversions — North Sea First Injection on Track for Autumn 2026 <span class="tag">EU</span></h3>
-    <p class="meta">Porthos / Offshore Energy · 5 Feb 2026</p>
-    <p>The Dutch Porthos partnership confirmed on 5 February 2026 that four former TAQA gas production wells on the P18-A offshore platform have been successfully converted to CO₂ injection wells, while three additional wells have been permanently decommissioned. Underground access points are now ready for injection and secure storage beneath the North Sea seabed. First CO₂ injection remains on course for autumn 2026, with full system operationalisation expected H2 2027; the project will store approximately 2.5 Mtpa for 15 years (37 Mt total), serving Rotterdam-area industrial emitters including Air Liquide, Air Products, ExxonMobil and Shell.</p>
-    <a href="https://www.offshore-energy.biz/porthos-in-the-making-new-construction-steps-setting-the-stage-for-first-dutch-large-scale-north-sea-carbon-transport-and-storage-project/" target="_blank" rel="noopener">Read source</a>
+    <h3>Stratos DAC Enters Q2 2026 Startup Phase; 500,000 tpa Plant in Final Commissioning</h3>
+    <p class="meta">1PointFive / Carbon Herald / RBN Energy &middot; May 2026 &middot; <span class="region">North America</span></p>
+    <p>Occidental's 1PointFive confirmed its Stratos direct air capture facility in Ector County, Texas is in the final startup stage for Phase 1, with Phase 2 commissioning beginning this quarter. Designed to capture up to 500,000 tonnes of CO&#x2082; per year at full scale, Stratos uses Carbon Engineering's liquid-solvent DAC technology and holds EPA Class VI injection permits. CDR offtake agreements cover Airbus, Amazon, AT&amp;T, Microsoft and Bain &amp; Company (9,000 t over three years, signed January 2026).</p>
+    <a href="https://www.1pointfive.com/projects/ector-county-tx" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>Northern Lights Signs MOL Charter for Two New Liquefied CO₂ Carriers <span class="tag">Europe / APAC</span></h3>
-    <p class="meta">Mitsui O.S.K. Lines · Offshore Energy · 29 Jan 2026</p>
-    <p>Mitsui O.S.K. Lines (MOL) has signed long-term charter contracts with Northern Lights JV and shipbuilding contracts with HD Hyundai Heavy Industries for two new 12,000 m³ ice-class, LNG dual-fuel liquefied CO₂ carriers, to be deployed from approximately 2028. The vessels will primarily transport CO₂ from the Stockholm Exergi bioenergy facility in Sweden to the Northern Lights receiving terminal at Øygarden, Norway. Together with a K Line/MISC consortium vessel and a fourth Schulte Group ship, the fleet expansion supports Northern Lights' Phase 2 scale-up from 1.5 Mtpa to at least 5 Mtpa by 2028, backed by SLB OneSubsea's EPC contract for two new subsea injection systems.</p>
-    <a href="https://www.mol.co.jp/en/pr/2026/26013.html" target="_blank" rel="noopener">Read source</a>
-  </article>
-
-</section>
-
-<!-- ═══════════════════════════════════════════
-     SECTION 2 — POLICY & FUNDING
-     ══════════════════════════════════════════ -->
-<section>
-  <h2>2 · Policy &amp; Funding</h2>
-
-  <article>
-    <h3>Australia Awards Two Offshore CO₂ Storage Permits in Carnarvon and Bonaparte Basins <span class="tag">AU/APAC</span></h3>
-    <p class="meta">Santos · CO2CRC · 2026</p>
-    <p>DCCEEW has awarded two new offshore greenhouse gas storage permits to Santos-led joint ventures. Permit G-9-AP covers 3,589 km² in the Carnarvon Basin (Santos 50%, Chevron 50%), extending potential CCS acreage beyond Santos' existing Reindeer field position critical to the proposed WA CCS hub. Permit G-11-AP covers 26,239 km² in the Bonaparte Basin (Santos 40%, Chevron 30%, SK E&amp;S 30%). The awards bring total active Commonwealth GHG assessment permits to 17, spread across the Bonaparte, Browse, Carnarvon, Perth, Otway, Bass and Gippsland basins.</p>
-    <a href="https://www.santos.com/news/santos-awarded-co2-storage-permits-for-more-ccs-opportunities/" target="_blank" rel="noopener">Read source</a>
+    <h3>Northern Lights Phase 2 FID Taken in March 2026; SLB OneSubsea Wins Expansion EPC</h3>
+    <p class="meta">Equinor / World Pipelines &middot; Mar&ndash;Jun 2026 &middot; <span class="region">Europe</span></p>
+    <p>The Equinor-Shell-TotalEnergies Northern Lights JV took final investment decision in March 2026 for Phase 2, lifting North Sea CO&#x2082; storage capacity from 1.5 Mtpa to a minimum of 5 Mtpa by 2028. SLB OneSubsea secured the EPC contract for the expansion's subsea and pipeline infrastructure. Cross-border CO&#x2082; from Ørsted (Denmark) and Yara (Netherlands) is expected to begin flowing in 2026, adding to existing Norwegian anchor customers Heidelberg Materials and Celsio.</p>
+    <a href="https://www.equinor.com/energy/northern-lights" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>Germany Opens €6bn CCfD Round — CCS and CCU Eligible for the First Time <span class="tag">EU</span></h3>
-    <p class="meta">Clean Energy Wire · Jones Day · Fuel Cells Works · Oct 2025 / 2026</p>
-    <p>Germany's third round of Carbon Contracts for Difference (CCfDs), worth up to €6 billion, has expanded eligibility to include carbon capture and storage (CCS) and carbon capture and utilisation (CCU) projects for the first time, alongside existing support for process decarbonisation in cement, steel, chemicals, pulp and paper, and ceramics. Projects will receive 15-year fixed-price contracts under a reverse-auction mechanism; the preparatory phase launched on 6 October 2025 with participation required by 1 December 2025. The main auction is expected in mid-2026, potentially channelling substantial long-term revenue certainty to hard-to-abate sectors where CCS is the primary decarbonisation pathway.</p>
-    <a href="https://www.cleanenergywire.org/news/germany-launches-5-billion-euro-second-round-industry-transition-support-scheme" target="_blank" rel="noopener">Read source</a>
-  </article>
-
-  <article>
-    <h3>IRS Issues 45Q Safe Harbor as EPA Subpart RR Faces Elimination <span class="tag">North America</span></h3>
-    <p class="meta">US Internal Revenue Service · Baker Botts · Dec 2025</p>
-    <p>Treasury and the IRS issued Notice 2026-01 in December 2025, providing a safe harbour for taxpayers claiming the Section 45Q carbon capture credit for CO₂ geologically stored during calendar year 2025. The notice responds to the EPA's proposed elimination of Subpart RR monitoring, reporting and verification (MRV) requirements: if the EPA does not relaunch its e-GGRT system by 10 June 2026, taxpayers may substitute an independent engineer or geologist certification of sequestration volumes in lieu of Subpart RR compliance. The guidance applies only to secure geological storage, not CO₂-EOR, and Treasury intends to issue full regulations covering MRV standards.</p>
-    <a href="https://www.irs.gov/newsroom/treasury-irs-provide-safe-harbor-for-taxpayers-claiming-the-carbon-capture-credit" target="_blank" rel="noopener">Read source</a>
-  </article>
-
-  <article>
-    <h3>Alberta and Canada Agree C$130/t Carbon Price Path to 2040 <span class="tag">North America</span></h3>
-    <p class="meta">Bloomberg · 13 May 2026</p>
-    <p>Alberta and the federal Canadian government have agreed to ramp the province's industrial carbon price to C$130 per tonne by 2040, removing a critical obstacle to Ottawa's backing of a new Pacific coast crude pipeline expected to be announced next month. The deal creates a stronger economic case for oil sands carbon capture investment, though negotiations on a specific CCS framework for oil sands operations are continuing. The agreement signals closer federal-provincial alignment on carbon pricing that could unlock additional CCUS investment decisions in one of the world's most carbon-intensive upstream sectors. [paywall]</p>
-    <a href="https://www.bloomberg.com/news/articles/2026-05-13/canada-alberta-to-raise-carbon-price-by-2040-clearing-hurdle-for-pipeline" target="_blank" rel="noopener">Read source</a>
+    <h3>Porthos: All Four North Sea Injection Wells Ready; Rotterdam Commissioning on Track for 2026</h3>
+    <p class="meta">Port of Rotterdam / Gasunie &middot; 2026 &middot; <span class="region">Europe</span></p>
+    <p>Porthos — the EU's first large-scale North Sea CCS project — has completed conversion of four former gas production wells to CO&#x2082; injection wells and permanently decommissioned three others. The 30-km onshore collection pipeline through the Rotterdam port area is under active construction, with the compressor station and Maasvlakte cooling water pump station to follow. Customers Shell, ExxonMobil, Air Liquide and Air Products are contracted to fill the 2.5 Mtpa capacity, storing 37 Mt over a 15-year project life.</p>
+    <a href="https://www.gasunie.nl/en/projects/porthos" target="_blank">Read source</a>
   </article>
 
 </section>
 
-<!-- ═══════════════════════════════════════════
-     SECTION 3 — TECHNOLOGY & R&D
-     ══════════════════════════════════════════ -->
-<section>
-  <h2>3 · Technology &amp; R&amp;D</h2>
+<!-- POLICY -->
+<section id="policy">
+  <h2>Policy &amp; Funding</h2>
 
   <article>
-    <h3>Stratos DAC Targets Q2 2026 Commercial Start After Component Delay <span class="tag">North America</span></h3>
-    <p class="meta">RBN Energy · Occidental / 1PointFive · Q1 2026</p>
-    <p>Occidental Petroleum's 1PointFive subsidiary is targeting a Q2 2026 commercial start for Phase 1 of its Stratos direct air capture facility in West Texas — the world's largest DAC plant at full capacity. Stratos missed earlier 2024 and 2025 commissioning targets after a "non-process component" issue was identified; the company has confirmed the core liquid-solvent capture technology and process unit operations are performing as expected. Phase 1 will add 250,000 t/yr of CO₂ removal capacity, with Phase 2 bringing the total to 500,000 t/yr — more than 13 times the capacity of Climeworks' Mammoth plant in Iceland.</p>
-    <a href="https://rbnenergy.com/daily-posts/analyst-insight/stratos-dac-project-target-q2-2026-startup" target="_blank" rel="noopener">Read source</a>
+    <h3>DCCEEW Carbon Capture Technologies Programme Round 2 Closes with A$32.6M Available</h3>
+    <p class="meta">DCCEEW &middot; 6 May 2026 &middot; <span class="region">APAC</span></p>
+    <p>Applications for Round 2 of Australia's Carbon Capture Technologies Program (CCTP) closed on 6 May 2026, with A$32.6 million on offer for emerging CO&#x2082; capture, use and removal technologies targeting hard-to-abate industrial and residual emissions. Individual grants of up to A$10 million are available to Australian organisations. The programme broadens Round 1's scope to include direct air capture, mineral carbonisation, and other novel CDR pathways alongside point-source industrial capture.</p>
+    <a href="https://www.dcceew.gov.au/about/news/carbon-capture-projects-receive-funding-to-accelerate-technology-and-reduce-emissions" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>American Carbon Registry Expands CCS Methodology to Cover DAC, BECCS and BiCRS <span class="tag">Global</span></h3>
-    <p class="meta">Carbon Pulse · May 2026</p>
-    <p>The American Carbon Registry (ACR) has updated its carbon capture and storage methodology to broaden eligibility beyond traditional geological storage of industrial CO₂ to include direct air capture (DAC), bioenergy with carbon capture and storage (BECCS), biomass carbon removal and storage (BiCRS), and certain CO₂-enhanced oil recovery (EOR) projects. The revision allows a wider range of carbon removal approaches to generate tradeable ACR credits under a unified CCS framework, potentially unlocking additional private capital for projects that previously lacked a credible credit pathway.</p>
-    <a href="https://carbon-pulse.com/509045/" target="_blank" rel="noopener">Read source</a>
+    <h3>UK DESNZ Awards &pound;55M to 15 DAC and Greenhouse Gas Removal Projects in Phase 2</h3>
+    <p class="meta">UK DESNZ / GOV.UK &middot; 12 May 2026 &middot; <span class="region">Europe</span></p>
+    <p>The UK Department for Energy Security and Net Zero announced Phase 2 awards under its Direct Air Capture and Greenhouse Gas Removal Innovation Programme on 12 May 2026, distributing just under &pound;55 million to 15 projects. The funding advances the most promising Phase 1 designs to pilot scale, targeting key component validation and further design development across a range of DAC and GGR technologies. The programme is part of a broader up-to-&pound;100 million R&amp;D commitment, positioning the UK as a prospective leader in commercial-scale negative emissions.</p>
+    <a href="https://www.gov.uk/government/publications/direct-air-capture-and-greenhouse-gas-removal-innovation-programme-selected-projects" target="_blank">Read source</a>
+  </article>
+
+  <article>
+    <h3>US One Big Beautiful Bill Restructures 45Q: $85/t Industrial CCS, $180/t DAC Regardless of End-Use</h3>
+    <p class="meta">Carbon Capture Coalition / Baker Botts &middot; 2026 &middot; <span class="region">North America</span></p>
+    <p>The recently enacted One Big Beautiful Bill Act of 2025 simplified Section 45Q by setting a single credit value of $85/t for CO&#x2082; captured from industrial and power facilities and $180/t for direct air capture, with credit value now independent of end-use (geological storage or utilisation). Treasury issued Notice 2026-01 establishing a safe-harbour verification framework for 2025 capture claims, and the EPA extended the mandatory Subpart RR reporting deadline for 2025 to 10 June 2026. Policy groups are urging the IRS to tighten monitoring as commercial project volume scales rapidly.</p>
+    <a href="https://carboncapturecoalition.org/wp-content/uploads/2025/06/OBBB-fact-sheet.pdf" target="_blank">Read source</a>
   </article>
 
 </section>
 
-<!-- ═══════════════════════════════════════════
-     SECTION 4 — MARKETS & CORPORATE
-     ══════════════════════════════════════════ -->
-<section>
-  <h2>4 · Markets &amp; Corporate</h2>
+<!-- TECHNOLOGY -->
+<section id="technology">
+  <h2>Technology &amp; R&amp;D</h2>
 
   <article>
-    <h3>Svante and Meadow Lake Tribal Council Sign 626,000-Tonne BECCS Offtake with Microsoft <span class="tag">North America</span></h3>
-    <p class="meta">BusinessWire · Svante · 6 Apr 2026</p>
-    <p>North Star Carbon Solutions LP — a partnership between Svante Technologies and the Meadow Lake Tribal Council (MLTC) of Saskatchewan — has signed a 15-year carbon removal offtake agreement with Microsoft for 626,000 tonnes of BECCS-derived CDR credits (up to 90,000 t/yr at capacity). The project will co-locate Svante's solid-sorbent capture technology at the MLTC Bioenergy Centre, capturing CO₂ from waste biomass from an adjacent Indigenous-owned sawmill; captured CO₂ will be transported and stored permanently at a North Star geological storage site. This is Microsoft's first Canadian BECCS CDR offtake, and one of the first such agreements globally to involve full Indigenous ownership of the project entity. Commercial operations are targeted for early 2029.</p>
-    <a href="https://www.businesswire.com/news/home/20260406630377/en/Svante-Meadow-Lake-Tribal-Council-Partnership-Agrees-to-Sell-Microsoft-626000-Tonnes-of-Carbon-Removal-Credits" target="_blank" rel="noopener">Read source</a>
+    <h3>Climeworks' Mammoth DAC Plant Targets Steady-State in 2026 Despite Significant Scale-Up Gap</h3>
+    <p class="meta">Climeworks &middot; 2026 &middot; <span class="region">Europe / RoW</span></p>
+    <p>Climeworks' Mammoth direct air capture plant in Iceland — nameplate 36,000 tonnes of CO&#x2082; per year — is targeting steady-state operations in 2026, though scale-up has proved slower than planned: only 12 of the plant's 72 modular collector containers were fully operational as of late 2025, and 2024 actual capture was just over 100 tonnes. Climeworks attributes shortfalls to commissioning lead times and component availability, while the plant's modular architecture means incremental recovery as additional units come online across the year.</p>
+    <a href="https://climeworks.com/plant-mammoth" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>Willis (WTW) Launches Integrated Insurance Suite for CCS Lifecycle <span class="tag">Global</span></h3>
-    <p class="meta">GlobeNewswire / Willis · 13 May 2026</p>
-    <p>Willis, a WTW business, announced on 13 May a fully integrated insurance solution designed for developers and operators across the CCS value chain — spanning capture, transport and geological storage. The suite adapts upstream energy, marine, liability and environmental coverages to CCS-specific risks including plume migration, leakage response and remediation, value-chain downtime and carbon credit non-delivery penalties. The product includes FEED-phase risk engineering support and is designed to provide "bankability-enabling" coverage aligned with regulatory and carbon credit requirements. The IEA's 2026 <em>Financing CCUS at Scale</em> report flagged unresolved risk-allocation and insurability gaps as a continuing barrier to private capital deployment in hub-based CCS models.</p>
-    <a href="https://www.globenewswire.com/news-release/2026/05/13/3293686/0/en/Willis-launches-integrated-risk-and-insurance-solution-for-carbon-capture.html" target="_blank" rel="noopener">Read source</a>
+    <h3>EU Commission Must Report on Integrating DAC and NETs into EU ETS by 31 July 2026</h3>
+    <p class="meta">European Commission DG CLIMA &middot; 2026 &middot; <span class="region">Europe</span></p>
+    <p>Under its existing mandate the European Commission must submit a report by 31 July 2026 on whether and how negative emissions technologies — including direct air capture — can be safely integrated into the EU Emissions Trading System. A broader EU ETS Directive update is planned for Q3 2026 alongside Energy Union governance reform in Q4. Industry stakeholders estimate a cumulative &euro;10 billion funding shortfall by 2030 for currently announced EU CCS projects, making this Commission report a near-term investment signal.</p>
+    <a href="https://climate.ec.europa.eu/eu-action/industrial-carbon-management/legislative-framework_en" target="_blank">Read source</a>
   </article>
 
   <article>
-    <h3>CDR Offtake Market Hits Highest Activity Since December 2025 <span class="tag">Global</span></h3>
-    <p class="meta">Carbon Removal Weekly (Substack) · 10 May 2026</p>
-    <p>According to the Carbon Removal Weekly tracker, CDR offtake deal value in April 2026 reached an estimated US$233 million across 12 transactions, the highest level since December 2025 and up from US$204 million in March. Notable early-May deals include the largest US biochar offtake to date and a substantial BECCS agreement in Canada. The uptick suggests sustained corporate demand for durable CDR despite Microsoft's reported pause on some carbon removal purchasing programmes earlier in the spring.</p>
-    <a href="https://carbonremovalupdates.substack.com/p/carbon-removal-weekly-summary-04-6dc" target="_blank" rel="noopener">Read source</a>
+    <h3>Germany to Launch &euro;6bn Competitive CCS and Industrial Decarbonisation Support in Mid-2026</h3>
+    <p class="meta">GreenFuel Journal / Carbon Herald &middot; 2026 &middot; <span class="region">Europe</span></p>
+    <p>Germany's &euro;6 billion industrial decarbonisation initiative — covering CCS across cement, steel and chemicals — is set to roll out competitive support mechanisms in mid-2026, offering long-term revenue certainty instruments for first-of-kind CCS deployment at German industrial sites. The programme follows Germany's 2023 Carbon Management Strategy and federal approval of offshore CO&#x2082; storage under the North Sea. It marks a decisive shift from Germany's historically cautious stance on geological storage toward active commercial deployment policy.</p>
+    <a href="https://carbonherald.com/whats-next-for-carbon-capture-utilization-storage-ccus-in-2026/" target="_blank">Read source</a>
+  </article>
+
+</section>
+
+<!-- MARKETS -->
+<section id="markets">
+  <h2>Markets &amp; Corporate</h2>
+
+  <article>
+    <h3>Willis Launches First Integrated Insurance Suite Spanning the Full CCS Value Chain</h3>
+    <p class="meta">Willis / GlobeNewswire &middot; 13 May 2026 &middot; <span class="region">Global</span></p>
+    <p>Insurance broker Willis announced on 13 May 2026 a fully integrated CCS insurance product designed to cover the complete CO&#x2082; capture-transport-storage chain — the first of its kind. The suite includes bankability-enabling coverage aligned with regulatory and carbon credit requirements, FEED-phase risk engineering, contractual risk allocation advice, and lender and regulator support. The launch reflects growing insurer appetite for CCS project risk as the commercial-scale project pipeline expands across North America, Europe and Australia.</p>
+    <a href="https://www.globenewswire.com/news-release/2026/05/13/3293686/0/en/Willis-launches-integrated-risk-and-insurance-solution-for-carbon-capture.html" target="_blank">Read source</a>
+  </article>
+
+  <article>
+    <h3>ACR Expands CCS Credit Methodology to Include DAC, BECCS and BiCRS Projects</h3>
+    <p class="meta">ACR / Carbon Pulse &middot; 5 May 2026 &middot; <span class="region">North America</span></p>
+    <p>The American Carbon Registry updated its CCS carbon crediting methodology on 5 May 2026, widening eligibility beyond point-source industrial capture to include direct air capture, bioenergy with CCS (BECCS), biomass carbon removal and storage (BiCRS), and certain CO&#x2082;-enhanced oil recovery projects. The update is designed to accelerate credit issuance across a broader portfolio of durable removal pathways and to align with emerging CDR market permanence standards. ACR's move mirrors parallel standard-setting efforts by other major registries.</p>
+    <a href="https://carbon-pulse.com/509045/" target="_blank">Read source</a>
+  </article>
+
+  <article>
+    <h3>Bayou Bend CCS Hub: Chevron–Equinor–TotalEnergies JV Holds &gt;1 Billion Tonne Storage Resource</h3>
+    <p class="meta">Chevron / DecarbonFuse &middot; 2026 &middot; <span class="region">North America</span></p>
+    <p>The Bayou Bend CCS JV — Chevron (50%, operator), Equinor (25%) and TotalEnergies (25%, acquired via the March 2026 completion of the Talos Low Carbon Solutions purchase) — is advancing its Gulf Coast storage hub across 140,000 acres in Southeast Texas, targeting industrial emitters along the Houston Ship Channel. Estimated gross storage capacity exceeds one billion metric tonnes; a Class VI injection permit application filed in 2024 is in active EPA review, with a two-year regulatory timeline pointing to potential first injection in 2026–2027.</p>
+    <a href="https://www.chevron.com/newsroom/2025/q3/bayou-bend-project-aims-to-advance-carbon-dioxide-storage-along-the-us-gulf-coast" target="_blank">Read source</a>
   </article>
 
 </section>
 
 <footer>
-  <p>Generated by CCS News Routine · Fri 15 May 2026 · Melbourne, Australia<br>
-  Items sourced from public reporting; verify with primary sources before relying on figures.<br>
-  [paywall] = paywalled source included for reference.</p>
+  <p>Generated by CCS News Routine &middot; Fri 15 May 2026, Melbourne &middot; CO2CRC<br>
+  Sources: Territory Gas NT, 1PointFive, Equinor, Port of Rotterdam/Gasunie, DCCEEW, GOV.UK/DESNZ, Carbon Capture Coalition/Baker Botts, Climeworks, EC DG CLIMA, Carbon Herald, Willis/GlobeNewswire, ACR/Carbon Pulse, Chevron.</p>
 </footer>
 
 </div>
