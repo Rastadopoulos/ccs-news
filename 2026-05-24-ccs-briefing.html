@@ -5,108 +5,126 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quiet day — CCS News Briefing · Sun 24 May 2026</title>
 <style>
+  *, *::before, *::after { box-sizing: border-box; }
   body {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 24px 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
     background: #fff;
+    margin: 0;
+    padding: 1.5rem 1rem;
   }
-  h1 { font-size: 1.6rem; margin-bottom: 4px; }
-  .subline { color: #555; margin-bottom: 16px; font-size: 0.95rem; }
-  .intro { margin-bottom: 28px; color: #444; }
-  h2 {
-    font-size: 1rem;
+  .wrapper { max-width: 760px; margin: 0 auto; }
+  header { border-bottom: 2px solid #222; margin-bottom: 1.5rem; padding-bottom: 0.75rem; }
+  header h1 { margin: 0 0 0.25rem; font-size: 1.6rem; }
+  header p.subtitle { margin: 0; color: #555; font-size: 0.95rem; }
+  .quiet-note {
+    background: #f5f5f5;
+    border-left: 4px solid #aaa;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  section { margin-bottom: 2rem; }
+  section h2 {
+    font-size: 1.05rem;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
-    margin-top: 36px;
-    color: #333;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
   }
-  article {
-    margin: 20px 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0;
-  }
-  article:last-child { border-bottom: none; }
-  h3 { font-size: 1rem; margin: 0 0 4px; }
-  p.meta { color: #666; font-size: 0.85rem; margin: 0 0 8px; }
-  p.summary { margin: 0 0 8px; }
+  article { margin-bottom: 1.5rem; }
+  article h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+  p.meta { margin: 0 0 0.4rem; font-size: 0.85rem; color: #666; }
+  article p { margin: 0 0 0.4rem; }
   a { color: #0a4; }
   a:visited { color: #074; }
   .radar-note {
     background: #fffbe6;
-    border-left: 4px solid #e5a000;
-    padding: 10px 14px;
-    margin: 16px 0 4px;
+    border: 1px solid #e6d87a;
+    border-radius: 3px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
     font-size: 0.9rem;
-    color: #555;
+    color: #5a4a00;
   }
   footer {
-    margin-top: 40px;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
     font-size: 0.8rem;
-    color: #999;
-    border-top: 1px solid #eee;
-    padding-top: 12px;
+    color: #888;
   }
   @media print {
-    body { font-size: 12pt; max-width: 100%; padding: 0; }
-    a { color: #000; text-decoration: none; }
-    footer { display: none; }
-    .radar-note { border: 1px solid #ccc; background: #fafafa; }
+    body { padding: 0; font-size: 11pt; }
+    a { color: #222; text-decoration: none; }
+    a::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
+    .quiet-note, .radar-note { border: 1px solid #aaa; background: none; }
+    footer { font-size: 9pt; }
   }
 </style>
 </head>
 <body>
+<div class="wrapper">
 
-<h1>Quiet day — CCS News Briefing</h1>
-<p class="subline">Sun 24 May 2026 &middot; 1 fresh item &middot; window: Fri 22 May 17:00 AEST &rarr; now</p>
+<header>
+  <h1>Quiet day &#8212; CCS News Briefing</h1>
+  <p class="subtitle">Sun 24 May 2026 &nbsp;&middot;&nbsp; 1 fresh item</p>
+</header>
 
-<p class="intro">Sunday coverage was sparse. Only one confirmable CCS/CCUS item could be verified within the 72-hour window. Three substantive stories from earlier in the week are included in the <em>Still on the radar</em> section below — these are context items from Mon&ndash;Thu, <strong>not</strong> today&rsquo;s news.</p>
+<div class="quiet-note">
+  <strong>Quiet weekend.</strong> Only one article with a verifiable publication date falls within the recency window (since Friday 22 May &#8764;17:00 AEST). CCS trade press publishes primarily on weekdays; Saturday and Sunday indexing is thin. Three items from 20&#8211;21 May appear in the <em>Still on the radar</em> section below, clearly dated.
+</div>
 
-<!-- SECTION: Markets & Corporate -->
+<!-- POLICY & FUNDING -->
 <section>
-  <h2>Markets &amp; Corporate</h2>
+  <h2>Policy &amp; Funding</h2>
 
   <article>
-    <h3>Vallourec and Syngular Solutions sign MoU to develop BECCS projects in Brazil</h3>
-    <p class="meta">GlobeNewswire &middot; 22 May 2026 &middot; [South America]</p>
-    <p class="summary">French premium tubular manufacturer Vallourec signed a Memorandum of Understanding with Syngular Solutions &mdash; Brazil&rsquo;s leading BECCS and CCUS engineering and consulting firm &mdash; to jointly develop bioenergy with carbon capture and geological storage (BECCS) projects in Brazil. The partnership targets the country&rsquo;s large ethanol industry as a source of biogenic CO&sup2;, which would be captured and permanently stored in depleted oil and gas reservoirs or deep saline aquifers. Vallourec contributes its tubular and well-completion expertise for CO&sup2; injection; Syngular brings project development, regulatory navigation and customer relationships with ethanol producers. No specific project capacities or timelines were disclosed in the MoU announcement.</p>
-    <a href="https://www.globenewswire.com/news-release/2026/05/22/3299882/0/en/VALLOUREC-AND-SYNGULAR-SOLUTIONS-SIGN-A-MEMORANDUM-OF-UNDERSTANDING-TO-ACCELERATE-THE-DEVELOPMENT-OF-BIOENERGY-WITH-CARBON-CAPTURE-AND-STORAGE-PROJECTS.html">Read source &rarr;</a>
+    <h3>Alberta Expects Carbon Capture Deal With Oil Sands Alliance Within Two Months</h3>
+    <p class="meta">Bloomberg &nbsp;&middot;&nbsp; 22 May 2026 &nbsp;&middot;&nbsp; [North America]</p>
+    <p>Alberta Premier Danielle Smith said she expects a trilateral funding agreement between the province, Ottawa and the Oil Sands Alliance (Canadian Natural, Cenovus, ConocoPhillips, Imperial, Suncor) to be finalised within &#8220;one to two months.&#8221; The deal would unlock the world&#8217;s largest planned CCS network: 20 oilfield capture plants linked by pipeline to a central injection hub near Cold Lake, AB. Revised targets under the Canada&#8211;Alberta Implementation Agreement set capture at 6 Mt CO&#8322;/yr by 2035 and 16 Mt/yr by 2045 &#8212; a marked reduction from the original pledge of 22 Mt/yr by 2030. The CCS MOU is also a stated precondition for approval of a new oil pipeline to the BC coast.</p>
+    <a href="https://www.bloomberg.com/news/articles/2026-05-22/alberta-sees-oil-sands-deal-on-carbon-project-within-two-months" target="_blank" rel="noopener">Read source [paywall]</a>
   </article>
 </section>
 
-<!-- SECTION: Still on the radar -->
+<!-- STILL ON THE RADAR -->
 <section>
-  <h2>Still on the radar <span style="font-weight:normal;font-size:0.85rem;text-transform:none;letter-spacing:0;">&mdash; older context (17&ndash;21 May 2026), not today&rsquo;s news</span></h2>
-  <div class="radar-note">The three items below were published earlier this week and fall outside today&rsquo;s recency window. They are flagged as ongoing stories that may carry forward into next week. Actual publication dates are shown against each item.</div>
+  <h2>Still on the Radar</h2>
+
+  <div class="radar-note">
+    <strong>These are not today&#8217;s news.</strong> The three items below were published on 20&#8211;21 May 2026 (3&#8211;4 days ago). They are included as ongoing stories worth tracking. Publication dates are shown against each item.
+  </div>
 
   <article>
-    <h3>Santos Moomba CCS stores 2 million tonnes CO&sup2;e — milestone reached in 18 months</h3>
-    <p class="meta">Santos (ASX announcement) &middot; ~19 May 2026 &middot; [Australia &amp; APAC]</p>
-    <p class="summary">Santos announced that its Moomba CCS project in South Australia&rsquo;s Cooper Basin has safely and permanently stored 2 million tonnes of CO&sup2; equivalent since first injection in September 2024 &mdash; achieved in just over 18 months despite two significant flooding events in the basin. The project stored approximately 1 Mt CO&sup2;e in the 2024/25 reporting period alone, equivalent to roughly one-third of total reductions in Safeguard Mechanism covered emissions across Australia for that year. Santos flagged the acreage&rsquo;s potential to support injection of up to 20 Mtpa for up to 50 years, positioning Moomba as the foundation of a future commercial third-party storage business serving hard-to-abate sectors such as steel and cement.</p>
-    <a href="https://www.santos.com/news/moomba-ccs-project-achieves-historic-emissions-reduction-milestone/">Read source &rarr;</a>
+    <h3>Santos Moomba CCS Passes 2 Million Tonnes CO&#8322;e in Just 18 Months</h3>
+    <p class="meta">Santos &nbsp;&middot;&nbsp; 21 May 2026 &nbsp;&middot;&nbsp; [Australia &amp; APAC &#8212; Projects]</p>
+    <p>Santos&#8217; Moomba CCS project (Cooper Basin, South Australia) has permanently stored 2 Mt CO&#8322;e &#8212; reached in just over 18 months despite two major flooding events. The project stored roughly 1 Mt CO&#8322;e in the 2024/25 reporting period, accounting for approximately one-third of covered-sector emissions reductions under Australia&#8217;s Safeguard Mechanism for the year. Lifecycle cost is below US$30/t. Santos says Cooper/Eromanga Basin geology could support up to 20 Mt/yr for 50 years, and is positioning Moomba CCS as the foundation of a third-party commercial storage business targeting hard-to-abate sectors such as steel and cement.</p>
+    <a href="https://www.santos.com/news/moomba-ccs-project-achieves-historic-emissions-reduction-milestone/" target="_blank" rel="noopener">Read source</a>
   </article>
 
   <article>
-    <h3>Bigadan inaugurates EU&rsquo;s first commercial biogenic CO&sup2; capture-to-storage chain at Kalundborg</h3>
-    <p class="meta">Bioenergy Insight / Gasworld &middot; 20 May 2026 &middot; [Europe &mdash; Denmark]</p>
-    <p class="summary">Danish biogas company Bigadan formally inaugurated its CO&sup2; facility at Kalundborg Bioenergi, establishing what it describes as one of the world&rsquo;s first fully integrated commercial value chains for biogenic CO&sup2; capture, liquefaction, marine transport and permanent subsea storage. The facility initially captures 27,000 tonnes of CO&sup2;/year from biogas fed by agricultural and industrial residues; the gas is routed offshore for storage through Project Greensand in the Danish North Sea. Bigadan also operates a capture site at Horsens and is developing a third in Herning, targeting 200,000 tonnes/year across its Danish biogas portfolio by 2030. CCO Henrik Iversen called it &ldquo;the beginning of a new industry&rdquo; for biogenic CCS in Europe.</p>
-    <a href="https://www.bioenergy-news.com/news/bigadan-inaugurates-commercial-biogenic-co%E2%82%82-capture-and-storage-chain-in-denmark/">Read source &rarr;</a>
+    <h3>Pathways / Oil Sands Alliance Cuts CCS Targets Sharply in Ottawa&#8211;Alberta Deal</h3>
+    <p class="meta">Canada&#8217;s National Observer &nbsp;&middot;&nbsp; 20 May 2026 &nbsp;&middot;&nbsp; [North America &#8212; Policy]</p>
+    <p>The flagship C$20B+ Pathways CCS megaproject formally reduced its CO&#8322; capture goal from 22 Mt/yr by 2030 to 6 Mt/yr by 2035 and 16 Mt/yr by 2045 as part of the Ottawa&#8211;Alberta oil sands &#8220;grand bargain&#8221; signed 15 May. Critics note that Ottawa is covering up to 50% of capital costs while the revised targets significantly reduce the project&#8217;s claimed climate impact. A final trilateral MOU between the federal government, Alberta and the Oil Sands Alliance remains outstanding &#8212; the step Premier Smith is now publicly targeting for within two months (see Bloomberg item, 22 May, above).</p>
+    <a href="https://www.nationalobserver.com/2026/05/20/news/flagship-20b-plus-carbon-capture-project-lowered-goals-ottawa-alberta-oilsands-deal" target="_blank" rel="noopener">Read source</a>
   </article>
 
   <article>
-    <h3>Canada-Alberta oilsands deal quietly cuts Pathways CCS capture target from 22 to 16 Mtpa</h3>
-    <p class="meta">Canada&rsquo;s National Observer &middot; 20 May 2026 &middot; [North America &mdash; Canada]</p>
-    <p class="summary">Implementation documents from the Canada-Alberta energy agreement signed by PM Carney and Premier Smith reveal the Oil Sands Alliance (formerly Pathways Alliance) carbon capture target was reduced from 22 Mtpa by 2030 to 16 Mtpa by 2035 &mdash; a concession not mentioned in the public announcement. The revised carbon price floor under the deal is $130/tonne, well below the $170/tonne set under the previous Liberal government. Project costs have already risen from the original $16.5 billion estimate to more than $20 billion. Critics argue the scaled-back targets are insufficient given planned oilsands production expansion and undercut the rationale of tying a new Pacific pipeline to CCS delivery.</p>
-    <a href="https://www.nationalobserver.com/2026/05/20/news/flagship-20b-plus-carbon-capture-project-lowered-goals-ottawa-alberta-oilsands-deal">Read source &rarr;</a>
+    <h3>Durable CDR Contracts Reach 2.3 Mt in Q1 2026 &#8212; Largest Opening Quarter on Record</h3>
+    <p class="meta">Carbon Herald / CDR.fyi &nbsp;&middot;&nbsp; 20 May 2026 &nbsp;&middot;&nbsp; [Markets &amp; Corporate &#8212; Global]</p>
+    <p>The CDR.fyi tracker recorded 2.3 Mt of durable carbon removal contracted in Q1 2026, equal to 560% of Q1 2025 volume. Microsoft alone committed 1 Mt; 113+ other buyers contracted 1.3 Mt &#8212; the third-highest non-Microsoft quarterly volume on record. Biochar dominated at 93% of volumes contracted. High-durability geological removal (DACS/geological CCS-backed CDR) remains a small fraction of total volumes. The report also notes Canada&#8217;s launch of the world&#8217;s first federal CDR procurement programme (C$10M, March 2026) and the Advance Carbon Removal Coalition targeting C$100M by 2030.</p>
+    <a href="https://carbonherald.com/in-2026-carbon-removal-marks-the-largest-q1-on-record-new-cdr-fyi-report-shows/" target="_blank" rel="noopener">Read source</a>
   </article>
 </section>
 
-<footer>Generated Sun 24 May 2026 by CCS News Routine &middot; CO2CRC &middot; matthias.raab@co2crc.com.au</footer>
+<footer>
+  Generated Sun 24 May 2026 by CCS News Routine &nbsp;&middot;&nbsp; Recency window: Fri 22 May 2026 &#8764;17:00 AEST &#8594; now &nbsp;&middot;&nbsp; 1 in-window item, 3 radar items (20&#8211;21 May) &nbsp;&middot;&nbsp; Note: direct WebFetch access to most CCS industry sites blocked (HTTP 403); dates sourced from search metadata and cross-referenced across multiple independent results.
+</footer>
+
+</div>
 </body>
 </html>
