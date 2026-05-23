@@ -1,9 +1,0 @@
-{
-  "hooks": {
-    "SessionStart": [
-      {
-        "command": "git remote set-url origin https://rastadopoulos:$GITHUB_PAT@github.com/rastadopoulos/ccs-news.git"
-      }
-    ]
-  }
-}
