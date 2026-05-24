@@ -1,18 +1,34 @@
 # Quiet day — CCS briefing — Mon 25 May 2026
 
-No confirmable CCS/CCUS items were found within the 72-hour Monday window (since Friday 22 May 2026 17:00 AEST). Extensive searching across Carbon Herald, Carbon Pulse, gasworld, Energy Voice, Global CCS Institute, Santos, Equinor, DCCEEW and other tier-1/2 sources returned either 403 access blocks or items with confirmed publication dates of 20 May or earlier. This is a quiet-day briefing — 0 fresh items. Three near-window items are provided below as background context, clearly dated.
+A light Monday window: 4 fresh items confirmed since Fri 22 May 2026 17:00 AEST. The briefing covers a weekend period with limited industry publishing; all 4 items have confirmed publication dates within the window.
 
 ---
 
-## Still on the radar
+## Projects
 
-> **These items are from 20 May 2026 (5 days ago) — background context only, not today's news.**
+- **Korean CCUS delegation tours Pilot Energy's Cliff Head offshore CCS site, WA** — Eleven Korean industry and government organisations (Korea National Oil Corporation, Samsung, SK, Hyundai, Korea Export-Import Bank) visited the Cliff Head Carbon CCS project off WA as part of the Australia–Korea CCUS Industry Seminar in Perth. Cliff Head is targeted as Australia's first operational offshore CCS facility (>1 Mtpa), converting a depleted oilfield. Organised with Austrade support, reflecting active Korean demand for Australian offshore storage. (Carbon Herald, 23 May 2026) [https://carbonherald.com/pilot-energy-welcomes-korean-delegation-to-showcase-ccs-progress-in-australia/](https://carbonherald.com/pilot-energy-welcomes-korean-delegation-to-showcase-ccs-progress-in-australia/)
 
-- **Oil Sands Alliance cuts Pathways CCS target from 22 Mtpa (2030) to 16 Mtpa (2035)** — As part of a new Ottawa-Alberta implementation agreement, the five-company Oil Sands Alliance (Canadian Natural, Cenovus, ConocoPhillips, Imperial, Suncor) has revised its flagship Pathways CCS commitment downward. The network — a planned CO₂ pipeline linking oil-field capture plants to an underground injection hub north of Edmonton — was originally pledged at 22 Mt/yr by 2030; the revised deal sets 16 Mt/yr by 2035. (Canada's National Observer, 20 May 2026) [link](https://www.nationalobserver.com/2026/05/20/news/flagship-20b-plus-carbon-capture-project-lowered-goals-ottawa-alberta-oilsands-deal)
+---
 
-- **Q1 2026 is the largest quarter on record for durable carbon removal — 2.3 Mt contracted** — CDR.fyi's latest market report shows 2.3 million tonnes of durable carbon removal contracted in Q1 2026, approximately 560% of Q1 2025 volume. Microsoft led with a 1 Mt deal; 113+ other buyers contracted 1.3 Mt across BECCS, DACCS, biochar, mineralisation and ERW pathways. (Carbon Herald / CDR.fyi, 20 May 2026) [link](https://carbonherald.com/in-2026-carbon-removal-marks-the-largest-q1-on-record-new-cdr-fyi-report-shows/)
+## Policy & Funding
 
-- **Buyers' coalition launched in Singapore to unlock APAC climate finance and CDR offtake** — A new demand-side coalition convened in Singapore on 20 May, aiming to aggregate corporate purchasing commitments for carbon removal across Asia. An RFP process is expected in H2 2026. Directly relevant to Australian offshore storage export ambitions given Japan/Korea/Singapore dialogue. (Carbon Herald, 20 May 2026) [link](https://carbonherald.com/)
+- **Japan sets permitting standards for seabed drilling in conservation areas for offshore CCS** — Japan amended its environmental conservation law to establish explicit permitting rules for seabed drilling in designated protected zones for offshore CCS purposes. A significant regulatory step for Japan's national offshore storage programme, including the Metropolitan CCS JV (INPEX / Kanto Natural Gas Development) targeting storage off Kujukuri, Chiba Prefecture. (Carbon Pulse, 22 May 2026) [https://carbon-pulse.com/](https://carbon-pulse.com/) [paywall]
+
+- **EU Innovation Fund Heat Auction: €400 M to 65 industrial heat decarbonisation projects** — The European Commission selected 65 projects under the first-ever EU-wide Innovation Fund Heat Auction, distributing €400 million from EU ETS revenues. Structurally analogous to prior Innovation Fund rounds that backed Northern Lights CCS; signals continued EU deployment of carbon market revenues into industrial decarbonisation ahead of full CBAM activation. (European Commission / Carbon Pulse, 22 May 2026) [https://climate.ec.europa.eu/eu-action/eu-funding-climate-action/innovation-fund/innovation-fund-projects_en](https://climate.ec.europa.eu/eu-action/eu-funding-climate-action/innovation-fund/innovation-fund-projects_en)
+
+- **UN General Assembly adopts landmark climate obligations resolution; Arab nations' CCS amendment rejected** — 141 countries backed UNGA resolution on binding legal climate obligations (8 against, inc. US, Russia, Saudi Arabia). During negotiations, Arab nations proposed an amendment inserting positive CCS language — the amendment was rejected. Reflects contested geopolitics of CCS recognition in multilateral climate frameworks. (Carbon Brief, 22 May 2026) [https://www.carbonbrief.org/debriefed-22-may-2026-un-adopts-landmark-resolution-trump-takes-on-rcp8-5-climate-migration/](https://www.carbonbrief.org/debriefed-22-may-2026-un-adopts-landmark-resolution-trump-takes-on-rcp8-5-climate-migration/)
+
+---
+
+## Still on the radar *(older context — NOT today's news)*
+
+> These items are from 18–19 May 2026 (6–7 days ago). Included for situational awareness; dates are clearly stated to avoid confusion with in-window news.
+
+- **LSB Industries secures pathway to 100% ownership of El Dorado CCS project, Arkansas** — LSB agreed with Lapis Carbon Solutions to acquire full ownership of Project Blue; 400–500 Kt/yr CO₂ storage, $85/t 45Q credits, low-carbon ammonia production. Lapis continues EPA Class VI permitting. Target: construction complete end-2026 or early 2027. (BusinessWire, 19 May 2026) [https://www.businesswire.com/news/home/20260519473501/en/LSB-Industries-Reaches-Agreement-Establishing-a-Pathway-to-100-Ownership-of-El-Dorado-CCS-Project](https://www.businesswire.com/news/home/20260519473501/en/LSB-Industries-Reaches-Agreement-Establishing-a-Pathway-to-100-Ownership-of-El-Dorado-CCS-Project)
+
+- **Global CCS Institute profiles Brevik CCS — world's largest cement CO₂ capture plant** — Heidelberg Materials' Brevik CCS (Norway, commissioned June 2025) ships CO₂ to Northern Lights offshore storage; facility profile covers capture performance and early-operations lessons. (Global CCS Institute, 19 May 2026) [https://www.globalccsinstitute.com/resources/](https://www.globalccsinstitute.com/resources/)
+
+- **Abu Dhabi issues General Policy on Carbon Capture — GCCS Institute calls it a regional milestone** — New CCS policy framework for the Emirate; GCCS Institute notes it as "an important milestone in the evolution of carbon capture policy" in MENA. Abu Dhabi hosts the Al Reyadah CCS project (1 Mtpa, since 2016) and is positioning itself as a regional cross-border storage hub. (Global CCS Institute, 18 May 2026) [https://www.globalccsinstitute.com/](https://www.globalccsinstitute.com/)
 
 ---
 
