@@ -1,102 +1,67 @@
-# CCS Daily Briefing — Final Setup Steps
+# CCS Daily Briefing — Setup notes
 
-The routine is **created but disabled** until you complete the steps below. Once done, you'll get a daily briefing at 7am Melbourne, Mon–Fri (skipping Vic public holidays).
+Architecture (re-revised 2026-05-25): routine pushes to GitHub → GitHub Action emails via Resend. The direct Resend-from-routine path was blocked by the routine sandbox's host allowlist (HTTP 403 for `api.resend.com`).
 
-## What's already done locally
+## Current state
 
-- `CCS-news/` initialised as a git repo on `main` with `.gitignore` + this `README.md` committed.
-- SSH deploy key generated at `~/.ssh/ccs-news-deploy` (private) and `~/.ssh/ccs-news-deploy.pub` (public).
-- Launchd plist for the local 07:15 auto-pull written to `~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist` (not yet loaded).
-- Scheduled remote routine **created (disabled)** with ID `trig_01TgsPpFGdDogXsqGQsSEeDJ` — view at <https://claude.ai/code/routines/trig_01TgsPpFGdDogXsqGQsSEeDJ>.
-- Project context saved to Claude Code memory.
+- Routine `trig_01TgsPpFGdDogXsqGQsSEeDJ` — generates briefing and pushes to `main`. Resend code removed from the prompt.
+- Workflow `.github/workflows/email-briefing.yml` — triggers on push when `*-ccs-briefing.{html,md}` change. Also has `workflow_dispatch` for manual re-runs.
+- Sender: `onboarding@resend.dev` (Resend shared sender). Recipient: `matthias.raab@co2crc.com.au`.
 
-## Steps for you (Matthias)
+## One-time setup steps
 
-### 1. Create the GitHub repo
+### 1. Add the Resend API key as a repo secret
 
-Go to <https://github.com/new>. Name it `ccs-news`. Choose **Public** or **Private**:
+https://github.com/Rastadopoulos/ccs-news/settings/secrets/actions → **New repository secret**
 
-- **Public** is simpler — the remote routine can clone and push without credentials. Briefings are curated public news, no proprietary content, so this is the path of least resistance.
-- **Private** — requires you to add a GitHub Personal Access Token (or app credentials) for the routine to be able to push. See note in step 4.
+- Name: `RESEND_API_KEY`
+- Value: your `re_…` key from https://resend.com/api-keys
 
-Don't initialise it with a README — we already have local commits to push.
+The workflow won't run without it (it errors loudly).
 
-### 2. Connect the local repo to GitHub
+### 2. Email today's already-pushed briefing
 
-In Terminal:
+The 2026-05-25 briefing pushed this morning before the workflow existed. To email it after step 1:
 
-```sh
-cd "/Users/matthias/Documents/Claude Code/CCS-news"
-git remote add origin https://github.com/<your-username>/ccs-news.git
-git push -u origin main
-```
+https://github.com/Rastadopoulos/ccs-news/actions → **Email CCS briefing** → **Run workflow** → leave date blank → run.
 
-(Use HTTPS so macOS Keychain stores credentials and the launchd auto-pull works without SSH-key faff. If you prefer SSH, configure as you normally would.)
+From tomorrow on, the workflow fires automatically on every routine push.
 
-### 3. Update the routine to point at your real repo URL
+### 3. (Optional) Rotate the key
 
-Tell Claude Code in this folder:
+The original `re_…` key was pasted in a Claude Code chat transcript. Once delivery is confirmed working:
 
-> Update routine `trig_01TgsPpFGdDogXsqGQsSEeDJ` — set the git_repository URL to `https://github.com/<your-username>/ccs-news`.
+1. https://resend.com/api-keys → revoke the current key, generate a new one with **Sending access** scope only.
+2. Update the `RESEND_API_KEY` secret value in the repo settings.
 
-(Or edit it via the web UI at the link above.)
+## If a briefing email doesn't arrive
 
-### 4. Sort write-auth so the routine can `git push`
+1. Was there a push? Check `git log origin/main --oneline -5` or the repo commit list.
+2. Did the workflow fire? https://github.com/Rastadopoulos/ccs-news/actions
+3. If the workflow errored: open the run, expand the failing step. Common causes:
+   - `RESEND_API_KEY` not set → set the secret.
+   - Resend HTTP 403 → key revoked or wrong scope. Regenerate.
+   - Resend HTTP 422 → sender or recipient rejected. If you ever change your Resend signup email, the shared `onboarding@resend.dev` sender will stop delivering until you change it back or verify a domain.
+4. Junk folder. First send from a new sender to a corporate tenant often lands there.
 
-- **If repo is public**: the routine can clone but not push without write credentials. The routine prompt has a fallback: if push fails, it emits the briefing content in its final response so you can still read it from the push notification → Claude Code app. To enable proper push, you'll need to embed an auth mechanism (GitHub PAT in the prompt, or wait for the schedule skill to support workspace secrets). Ask Claude Code for help when ready.
-- **If repo is private**: same situation, push needs auth. PAT in the prompt is the pragmatic option for now (fine-grained PAT scoped to this single repo, write access only — minimal blast radius).
+## Decommissioned
 
-If you'd rather skip git-sync entirely and just read the briefing inline each morning, the routine fallback already covers that — no further auth setup needed.
+- **`~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist`** (07:15 local auto-pull) — no longer load-bearing now that delivery is by email. Unload + remove:
+  ```sh
+  launchctl unload ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist
+  rm ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist
+  ```
+- **`YYYY-MM-DD-email.md`** — old Outlook-paste artifact. Replaced by `YYYY-MM-DD-ccs-briefing.md`. Old files remain in git history.
 
-### 5. Load the local 07:15 auto-pull job
+## Daylight-saving swap
 
-```sh
-launchctl load ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist
-launchctl list | grep ccs-news
-```
+Routine cron is UTC-only. Manual swap twice a year:
 
-(Log file: `~/Library/Logs/ccs-news-pull.log`.)
+- AEST (Apr–Oct, UTC+10): `0 21 * * 0-4` — currently set
+- AEDT (Oct–Apr, UTC+11): `0 20 * * 0-4`
 
-Skip this step if you decided not to do git-sync.
+Calendar reminders: early October 2026 to switch to AEDT, early April 2027 to switch back.
 
-### 6. Confirm push notifications work
+## Annual maintenance
 
-In Claude Code, ensure Remote Control is connected (so notifications reach your phone, not just the desktop terminal). If you're unsure, look up Claude Code's "Remote Control" feature in the docs.
-
-### 7. Enable the routine and trigger a test run
-
-Once the URL is updated and auth is sorted:
-
-> Enable routine `trig_01TgsPpFGdDogXsqGQsSEeDJ` and run it once now.
-
-That fires a one-off run so you can see what tomorrow morning's briefing will look like. Watch for the push notification. Then check:
-
-- Files committed to the GitHub repo (if push works)
-- Local files appear after `git pull` (or wait for tomorrow's 07:15 auto-pull)
-- HTML opens cleanly in a browser
-- The email draft pastes nicely into Outlook
-
-## Daylight saving reminder
-
-The cron is **UTC-only** so the seasonal swap is manual:
-
-- **AEST (Apr–Oct, UTC+10)**: cron `0 21 * * 0-4` — currently set
-- **AEDT (Oct–Apr, UTC+11)**: change to cron `0 20 * * 0-4`
-
-Set a calendar reminder for early October 2026 to switch, and early April 2027 to switch back.
-
-## Deploy key (only if you want SSH push)
-
-If you decide to use SSH instead of HTTPS for the routine, the public key is at `~/.ssh/ccs-news-deploy.pub`:
-
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMP7ZuHK1WpENCVx+JcPrmx8ldjRjWQIFF1E52yzW9A1 ccs-news-routine@co2crc.com.au
-```
-
-Add it as a **deploy key with write access** under your repo's Settings → Deploy keys. But: getting the *private* key into the remote routine workspace is the hard part — the schedule skill doesn't expose a secrets mechanism. Until that's resolved, stick with HTTPS + PAT.
-
-## Open questions / known limitations
-
-- **Write-auth for the remote routine to push to GitHub** — the schedule skill clones repos into the routine workspace but doesn't document a write-credentials mechanism. The current routine prompt falls back to emitting briefing content inline if push fails.
-- **Recurring routine lifetime** — if the routine auto-expires, you may need to re-arm. Watch the first week for any gaps.
-- **DST swap** — manual, twice a year (see above).
+- Refresh the Victorian public-holiday list in the routine prompt each January.

@@ -1,0 +1,90 @@
+name: Email CCS briefing
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*-ccs-briefing.html'
+      - '*-ccs-briefing.md'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date of briefing to send (YYYY-MM-DD). Leave blank for latest.'
+        required: false
+        default: ''
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Resolve briefing date
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(ls -1 *-ccs-briefing.html 2>/dev/null | sed 's/-ccs-briefing.html$//' | sort | tail -n1)
+          fi
+          if [ -z "$DATE" ] || [ ! -f "${DATE}-ccs-briefing.html" ] || [ ! -f "${DATE}-ccs-briefing.md" ]; then
+            echo "::error::Could not resolve a briefing date with both .html and .md present"
+            exit 1
+          fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "Sending briefing for $DATE"
+
+      - name: Build Resend payload
+        env:
+          DATE: ${{ steps.pick.outputs.date }}
+        run: |
+          set -euo pipefail
+          HTML_FILE="${DATE}-ccs-briefing.html"
+          MD_FILE="${DATE}-ccs-briefing.md"
+
+          # Subject: first H1 from the markdown, or fallback
+          SUBJECT=$(awk '/^# /{sub(/^# /,""); print; exit}' "$MD_FILE")
+          if [ -z "$SUBJECT" ]; then
+            SUBJECT="CCS briefing — ${DATE}"
+          fi
+
+          base64 -w0 "$MD_FILE" > /tmp/md.b64
+
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --arg fn "$MD_FILE" \
+            --rawfile html "$HTML_FILE" \
+            --rawfile b64 /tmp/md.b64 \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html,
+              attachments: [{filename: $fn, content: $b64}]
+            }' > /tmp/resend.json
+
+          jq -e . /tmp/resend.json > /dev/null
+          echo "Payload OK, $(wc -c </tmp/resend.json) bytes, subject: $SUBJECT"
+
+      - name: Send via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Briefing emailed" ;;
+            *)  echo "::error::Resend rejected the send (HTTP $HTTP)"; exit 1 ;;
+          esac
