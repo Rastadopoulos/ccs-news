@@ -1,18 +1,22 @@
 # RSS/Atom feeds polled by scripts/rss_collector.py as the deterministic
-# "floor" sampler (B) of the CCS-news audit pipeline. Curated to match the
-# routine's PREFERRED SOURCES tiers.
+# "floor" sampler (B) of the CCS-news audit pipeline.
 #
-# Each entry:
-#   name:          Human-readable label (appears in audit reports)
-#   url:           RSS or Atom feed URL
-#   source_domain: Canonical domain string (matches scripts/_canon.source_domain)
-#   tier:          1 | 2 | 2b | 3 | 4 | 5  (mirrors routine prompt)
-#   region:        au | apac | na | eu_uk | mena | row | global
-#   ccs_filter:    "always" — keep every item (sources that are CCS-only)
-#                  "regex"  — apply CCS_KEYWORD_RE before keeping
+# Two feed types in use:
+#   * Direct publisher RSS where it exists and works (Carbon Herald, Bloomberg,
+#     Phys.org, TechXplore, Renew Economy, ABC, AFR, Guardian, ESDnews).
+#   * Google News RSS site-search queries for publishers that retired or
+#     paywalled their feeds. URL pattern:
+#        https://news.google.com/rss/search?q=site:<domain>+(<phrases>)&hl=...
+#     Google News entries link to news.google.com redirects; the collector
+#     uses entry.source.href to populate source_domain correctly.
 #
-# Verify a feed exists before adding: `curl -sI <url> | head -1` should return
-# 200. Some publishers move their feed paths — review quarterly.
+# Query convention for Google News buckets: use phrase matches ("carbon
+# capture", "carbon storage", "carbon capture and storage") plus the
+# unambiguous tokens CCUS / DAC. The bare token CCS is too ambiguous (matches
+# stock tickers, court-case codes, etc) — avoid it unless prefixed.
+#
+# Verify quarterly. If a publisher restores a real RSS feed, replace the
+# Google News bucket; direct feeds are higher signal.
 
 feeds:
   # ------------------------------------------------------------------- Tier 1
@@ -23,73 +27,73 @@ feeds:
     region: global
     ccs_filter: always
 
-  - name: Reuters — Sustainability
-    url: https://www.reutersagency.com/feed/?best-topics=sustainability
+  - name: Reuters (Google News)
+    url: https://news.google.com/rss/search?q=site:reuters.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: reuters.com
     tier: 1
     region: global
     ccs_filter: regex
 
   - name: Bloomberg Green
-    url: https://www.bloomberg.com/green/feeds/articles.rss
+    url: https://feeds.bloomberg.com/green/news.rss
     source_domain: bloomberg.com
     tier: 1
     region: global
     ccs_filter: regex
 
-  - name: Offshore Energy
-    url: https://www.offshore-energy.biz/feed/
+  - name: Offshore Energy (Google News)
+    url: https://news.google.com/rss/search?q=site:offshore-energy.biz+(%22carbon+capture%22+OR+CCUS)&hl=en&gl=US&ceid=US:en
     source_domain: offshore-energy.biz
     tier: 1
     region: global
     ccs_filter: regex
 
   # ------------------------------------------------------------------- Tier 2 (regulatory)
-  - name: DOE — News
-    url: https://www.energy.gov/listings/news-releases/feed
+  - name: DOE (Google News)
+    url: https://news.google.com/rss/search?q=site:energy.gov+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+management%22)&hl=en-US&gl=US&ceid=US:en
     source_domain: energy.gov
     tier: 2
     region: na
     ccs_filter: regex
 
-  - name: NETL — News
-    url: https://netl.doe.gov/rss/news.xml
+  - name: NETL (Google News)
+    url: https://news.google.com/rss/search?q=site:netl.doe.gov&hl=en-US&gl=US&ceid=US:en
     source_domain: netl.doe.gov
     tier: 2
     region: na
     ccs_filter: regex
 
-  - name: European Commission — Climate Action
-    url: https://climate.ec.europa.eu/news_en.rss
-    source_domain: climate.ec.europa.eu
+  - name: European Commission — Climate (Google News)
+    url: https://news.google.com/rss/search?q=site:ec.europa.eu+(%22carbon+capture%22+OR+CCUS+OR+%22CCS+Directive%22)&hl=en&gl=EU&ceid=EU:en
+    source_domain: ec.europa.eu
     tier: 2
     region: eu_uk
     ccs_filter: regex
 
-  - name: DCCEEW (au) — News
-    url: https://www.dcceew.gov.au/about/news/rss.xml
+  - name: DCCEEW (Google News)
+    url: https://news.google.com/rss/search?q=site:dcceew.gov.au+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: dcceew.gov.au
     tier: 2
     region: au
     ccs_filter: regex
 
-  - name: UK CCSA — News
-    url: https://www.ccsassociation.org/feed/
+  - name: UK CCSA (Google News)
+    url: https://news.google.com/rss/search?q=site:ccsassociation.org&hl=en-GB&gl=GB&ceid=GB:en
     source_domain: ccsassociation.org
     tier: 2
     region: eu_uk
     ccs_filter: always
 
   # ------------------------------------------------------------------ Tier 2b (sector trade)
-  - name: Carbon Capture Journal
-    url: https://www.carboncapturejournal.com/rss.rss
+  - name: Carbon Capture Journal (Google News)
+    url: https://news.google.com/rss/search?q=site:carboncapturejournal.com&hl=en-GB&gl=GB&ceid=GB:en
     source_domain: carboncapturejournal.com
     tier: 2b
     region: global
     ccs_filter: always
 
-  - name: The Australian Pipeliner
-    url: https://www.pipeliner.com.au/feed/
+  - name: The Australian Pipeliner (Google News)
+    url: https://news.google.com/rss/search?q=site:pipeliner.com.au+(%22carbon+capture%22+OR+CCUS+OR+CO2)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: pipeliner.com.au
     tier: 2b
     region: au
@@ -109,80 +113,80 @@ feeds:
     region: au
     ccs_filter: regex
 
-  - name: Upstream Online
-    url: https://www.upstreamonline.com/rss
+  - name: Upstream Online (Google News)
+    url: https://news.google.com/rss/search?q=site:upstreamonline.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-GB&gl=GB&ceid=GB:en
     source_domain: upstreamonline.com
     tier: 2b
     region: global
     ccs_filter: regex
 
-  - name: Global CCS Institute — Insights
-    url: https://www.globalccsinstitute.com/feed/
+  - name: Global CCS Institute (Google News)
+    url: https://news.google.com/rss/search?q=site:globalccsinstitute.com&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: globalccsinstitute.com
     tier: 2b
     region: global
     ccs_filter: always
 
   # ------------------------------------------------------------------ Tier 3 (operators)
-  - name: Equinor — News
-    url: https://www.equinor.com/news.rss
+  - name: Equinor (Google News)
+    url: https://news.google.com/rss/search?q=site:equinor.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en&gl=NO&ceid=NO:en
     source_domain: equinor.com
     tier: 3
     region: eu_uk
     ccs_filter: regex
 
-  - name: Shell — Media releases
-    url: https://www.shell.com/media/news-and-media-releases/_jcr_content.feed
+  - name: Shell (Google News)
+    url: https://news.google.com/rss/search?q=site:shell.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-GB&gl=GB&ceid=GB:en
     source_domain: shell.com
     tier: 3
     region: global
     ccs_filter: regex
 
-  - name: Santos — News
-    url: https://www.santos.com/news/feed/
+  - name: Santos (Google News)
+    url: https://news.google.com/rss/search?q=site:santos.com+(%22carbon+capture%22+OR+CCUS+OR+Moomba)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: santos.com
     tier: 3
     region: au
     ccs_filter: regex
 
-  - name: Woodside — News
-    url: https://www.woodside.com/media-centre/news-stories/rss
+  - name: Woodside (Google News)
+    url: https://news.google.com/rss/search?q=site:woodside.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: woodside.com
     tier: 3
     region: au
     ccs_filter: regex
 
-  - name: ExxonMobil — News
-    url: https://corporate.exxonmobil.com/news/_jcr_content.feed
+  - name: ExxonMobil (Google News)
+    url: https://news.google.com/rss/search?q=site:exxonmobil.com+(%22carbon+capture%22+OR+CCUS+OR+%22low+carbon%22)&hl=en-US&gl=US&ceid=US:en
     source_domain: exxonmobil.com
     tier: 3
     region: na
     ccs_filter: regex
 
-  - name: Occidental — Press releases
-    url: https://www.oxy.com/news/news-releases/rss/
+  - name: Occidental (Google News)
+    url: https://news.google.com/rss/search?q=site:oxy.com+(%22carbon+capture%22+OR+CCUS+OR+%22direct+air%22)&hl=en-US&gl=US&ceid=US:en
     source_domain: oxy.com
     tier: 3
     region: na
     ccs_filter: regex
 
-  - name: Aker Carbon Capture — News
-    url: https://akercarboncapture.com/feed/
+  - name: Aker Carbon Capture (Google News)
+    url: https://news.google.com/rss/search?q=site:akercarboncapture.com&hl=en&gl=NO&ceid=NO:en
     source_domain: akercarboncapture.com
     tier: 3
     region: eu_uk
     ccs_filter: always
 
-  - name: Climeworks — News
-    url: https://climeworks.com/feed
+  - name: Climeworks (Google News)
+    url: https://news.google.com/rss/search?q=site:climeworks.com&hl=en&gl=CH&ceid=CH:en
     source_domain: climeworks.com
     tier: 3
     region: eu_uk
     ccs_filter: always
 
   # ------------------------------------------------------------------ Tier 4 (science press)
-  - name: Mirage News — Carbon Capture tag
-    url: https://www.miragenews.com/tag/carbon-capture/feed/
+  - name: Mirage News (Google News)
+    url: https://news.google.com/rss/search?q=site:miragenews.com+(%22carbon+capture%22+OR+CCUS+OR+%22direct+air%22)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: miragenews.com
     tier: 4
     region: global
@@ -202,31 +206,49 @@ feeds:
     region: global
     ccs_filter: regex
 
-  - name: EurekAlert — Earth Science
-    url: https://www.eurekalert.org/rss/earth_science.xml
+  - name: EurekAlert (Google News)
+    url: https://news.google.com/rss/search?q=site:eurekalert.org+(%22carbon+capture%22+OR+CCUS+OR+%22direct+air%22)&hl=en-US&gl=US&ceid=US:en
     source_domain: eurekalert.org
     tier: 4
     region: global
     ccs_filter: regex
 
-  # ------------------------------------------------------------------ Tier 5 (sentiment)
-  - name: The Guardian (AU) — Environment
-    url: https://www.theguardian.com/australia-news/environment/rss
+  # ------------------------------------------------------------------ Tier 5 (sentiment / general)
+  - name: The Guardian — CCS tag
+    url: https://www.theguardian.com/environment/carbon-capture-and-storage/rss
     source_domain: theguardian.com
     tier: 5
-    region: au
-    ccs_filter: regex
+    region: global
+    ccs_filter: always
 
   - name: ABC News (au) — Environment
-    url: https://www.abc.net.au/news/feed/52498/rss.xml
+    url: https://www.abc.net.au/news/feed/2942460/rss.xml
     source_domain: abc.net.au
     tier: 5
     region: au
     ccs_filter: regex
 
-  - name: AFR — Companies
-    url: https://www.afr.com/rss/companies.xml
+  - name: AFR (Google News)
+    url: https://news.google.com/rss/search?q=site:afr.com+(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)&hl=en-AU&gl=AU&ceid=AU:en
     source_domain: afr.com
     tier: 5
     region: au
+    ccs_filter: regex
+
+  # ---------------------------------------------------------------- Catch-all
+  # Broad Google News queries to surface items from publishers outside the
+  # curated list — feeds the audit's "missed items" table with anything the
+  # routine and the per-publisher feeds both missed.
+  - name: Google News — CCS Australia/APAC
+    url: https://news.google.com/rss/search?q=(%22carbon+capture%22+OR+CCUS+OR+%22carbon+storage%22)+(Australia+OR+Otway+OR+Moomba+OR+Bonaparte+OR+Stratos+OR+Bayou+OR+Browse)&hl=en-AU&gl=AU&ceid=AU:en
+    source_domain: news.google.com
+    tier: 1
+    region: au
+    ccs_filter: regex
+
+  - name: Google News — CCS global
+    url: https://news.google.com/rss/search?q=%22carbon+capture+and+storage%22+OR+%22carbon+capture+utilization%22+OR+%22direct+air+capture%22&hl=en&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 1
+    region: global
     ccs_filter: regex

@@ -92,6 +92,7 @@ def collect(today_local: datetime, dow: int) -> list[dict]:
     cfg = yaml.safe_load(FEEDS_PATH.read_text())
     rows: list[dict] = []
     seen_canon: set[str] = set()
+    seen_fuzzy: set[tuple[str, ...]] = set()
 
     for feed_cfg in cfg["feeds"]:
         name = feed_cfg["name"]
@@ -120,18 +121,36 @@ def collect(today_local: datetime, dow: int) -> list[dict]:
             in_window = bool(pub and is_in_window(pub, today_local, dow))
             if not in_window:
                 continue  # Floor sampler only stores in-window items.
+            # Google News RSS entries link to news.google.com redirects but
+            # expose the underlying publisher domain in entry.source.href.
+            # Prefer that for source_domain so coverage attribution is correct.
+            src = entry.get("source") or {}
+            src_href = src.get("href") if isinstance(src, dict) else getattr(src, "href", None)
+            sdom = source_domain(src_href) if src_href else source_domain(link)
+
+            # Drop publisher-homepage/nav entries that Google News occasionally
+            # surfaces (e.g. "Carbon Capture Journal - carboncapturejournal.com").
+            # Heuristic: headline contains the source_domain string AND fewer
+            # than 6 significant tokens after fuzzy_key normalisation.
+            fkey = fuzzy_key(headline, name)
+            if sdom and sdom in headline.lower() and len(fkey) < 6:
+                continue
+
             curl = canonical_url(link)
             if curl in seen_canon:
                 continue
+            if fkey and fkey in seen_fuzzy:
+                continue
             seen_canon.add(curl)
+            seen_fuzzy.add(fkey)
             rows.append({
                 "canonical_url": curl,
                 "raw_url": link,
                 "headline": headline,
-                "source_domain": source_domain(link),
+                "source_domain": sdom,
                 "publication_date": pub.astimezone(timezone.utc).isoformat()
                                     if pub else None,
-                "fuzzy_key": ",".join(fuzzy_key(headline, name)),
+                "fuzzy_key": ",".join(fkey),
                 "feed_name": name,
                 "feed_tier": tier,
             })
