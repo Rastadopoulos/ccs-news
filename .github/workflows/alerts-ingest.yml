@@ -1,0 +1,47 @@
+name: Google Alerts ingester (sampler C)
+
+on:
+  # Every 30 minutes during AU business hours (06:00–22:00 Mel = 20:00–12:00 UTC).
+  # Avoid a full */30 to keep CI minutes reasonable; alerts trickle in steadily.
+  schedule:
+    - cron: '*/30 20-23 * * *'
+    - cron: '*/30 0-12 * * *'
+  workflow_dispatch:
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Skip silently if the Gmail secret hasn't been added yet — keeps Phase 2b
+    # dormant until you finish the one-time Gmail setup.
+    if: ${{ vars.ALERTS_INGEST_ENABLED == 'true' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Alerts ingester
+        env:
+          GMAIL_ADDRESS:       ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD:  ${{ secrets.GMAIL_APP_PASSWORD }}
+          PYTHONUNBUFFERED:    '1'
+        run: python3 scripts/alerts_ingest.py
+
+      - name: Commit audit artefacts
+        run: |
+          set -euo pipefail
+          git config user.email 'ccs-news-routine@co2crc.com.au'
+          git config user.name  'CCS Alerts Ingester'
+          git add audit/candidates.db audit/*-alerts.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No audit changes to commit."
+            exit 0
+          fi
+          git commit -m "Alerts ingest $(TZ=Australia/Melbourne date +%Y-%m-%dT%H:%M)"
+          git pull --rebase --autostash
+          git push origin main

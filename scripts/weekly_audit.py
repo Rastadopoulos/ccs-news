@@ -74,10 +74,12 @@ def load_json_dumps(dates: list[str]) -> dict[str, dict[str, list[dict]]]:
       -rss.json         -> B
       -candidates.json  -> A (or E if row.found_via=='shelly_digest')
       -shadow.json      -> D
+      -alerts.json      -> C
     """
     out: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
     for d in dates:
-        for suffix, sampler in (("rss", "B"), ("candidates", "A"), ("shadow", "D")):
+        for suffix, sampler in (("rss", "B"), ("candidates", "A"),
+                                ("shadow", "D"), ("alerts", "C")):
             path = AUDIT_DIR / f"{d}-{suffix}.json"
             if not path.exists():
                 continue
@@ -92,9 +94,16 @@ def load_json_dumps(dates: list[str]) -> dict[str, dict[str, list[dict]]]:
                 if sampler == "A" and r.get("found_via") == "shelly_digest":
                     out[d]["E"].append(r)
                 else:
-                    if sampler == "B":
-                        # B is always kept (already filtered on disk).
+                    if sampler in ("B", "C"):
+                        # Floor + Alerts only write in-window items.
                         r = dict(r); r["kept"] = True; r["in_window"] = True
+                    elif sampler == "D":
+                        # Shadow trace writes all considered items with explicit
+                        # `kept` flags; trust the file but enforce in_window True
+                        # for sampler-set membership (the audit treats sampler D
+                        # as contributing only the in-window subset).
+                        if not r.get("in_window"):
+                            continue
                     out[d][sampler].append(r)
     return out
 

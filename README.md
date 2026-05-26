@@ -34,7 +34,7 @@ Geographic priority: Australia/APAC → North America → Europe & UK → MENA/R
 
 The routine prompt lives server-side via the `schedule` skill. Routine ID: `trig_01TgsPpFGdDogXsqGQsSEeDJ`. To adjust scope, sources, format, or schedule, ask Claude Code in this folder.
 
-## Audit & comprehensiveness (Phase 1)
+## Audit & comprehensiveness (Phase 1 + 2)
 
 The briefing's recall — what fraction of CCS news in the world it actually catches each day — is measured by an independent pipeline running alongside the routine. The Saturday-morning audit email gives you three numbers: pooled recall, floor recall, and (once Phase 2 ships) an estimated absolute recall via Chapman capture-recapture.
 
@@ -44,13 +44,14 @@ Samplers feeding the audit:
 |---|---|---|---|
 | A | Production routine | The briefing itself, via the `audit/${TODAY}-candidates.json` trace | 1 |
 | B | RSS floor | `scripts/rss_collector.py` polls ~30 RSS/Atom feeds (`config/feeds.yml`), filters on CCS keywords, applies the 24h/72h window | 1 |
-| C | Google Alerts | Dedicated Gmail → IMAP poll (Phase 2) | 2 |
-| D | Shadow LLM | Second briefing agent with different prompt/model (Phase 2) | 2 |
+| C | Google Alerts | `scripts/alerts_ingest.py` polls a dedicated Gmail mailbox via IMAP every 30 min, parses Google Alerts emails, writes `audit/${TODAY}-alerts.json` | 2 |
+| D | Shadow LLM | Separate scheduled Claude routine, concept-based queries, different model from production. Writes `audit/${TODAY}-shadow.json` only | 2 |
 | E | Shelly Murrell digest | Already pulled by the routine's Step 2b; trace tags items `found_via=shelly_digest` | 1 |
 
 Workflows (all in `.github/workflows/`):
 
 - `rss-floor.yml` — cron 07:00 Melbourne weekdays. Writes `audit/${TODAY}-rss.json` and updates `audit/candidates.db`.
+- `alerts-ingest.yml` — cron every 30 min during Australian business hours. Requires `GMAIL_ADDRESS` + `GMAIL_APP_PASSWORD` secrets + `ALERTS_INGEST_ENABLED=true` repo variable.
 - `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`. Manual: Actions tab → Weekly recall audit → Run workflow.
 - `email-audit.yml` — fires on push of a new audit report; emails it via Resend, same pattern as the briefing.
 
@@ -70,12 +71,32 @@ For sampler A to feed the audit, the routine must also write a trace file. Appen
 
 Until that prompt change is applied, the audit can still run (B and E populate the union) but the source-coverage matrix will not show the routine's rejection reasons.
 
+### Phase 2a — shadow LLM routine (sampler D)
+
+A second scheduled routine using a different model (Opus vs Sonnet, opposite of the production routine) and concept-based queries rather than source-tiered ones. It writes only `audit/${TODAY}-shadow.json` and does not produce a briefing or email. The exact prompt is documented in the planning thread; route via the `schedule` skill 30 min after the production routine (cron `30 21 * * 0-4` AEST / `30 20 * * 0-4` AEDT).
+
+### Phase 2b — Google Alerts (sampler C)
+
+One-time setup required:
+
+1. Create or repurpose a dedicated Gmail account (e.g. `co2crc.ccs.alerts@gmail.com`). Use it for nothing else.
+2. Enable IMAP in Gmail settings → Forwarding and POP/IMAP.
+3. Enable 2-Factor Authentication on the account.
+4. Create an App Password at https://myaccount.google.com/apppasswords with label `ccs-news-audit`.
+5. Add repo secrets `GMAIL_ADDRESS` and `GMAIL_APP_PASSWORD` at https://github.com/Rastadopoulos/ccs-news/settings/secrets/actions.
+6. Add repo variable `ALERTS_INGEST_ENABLED` = `true` at https://github.com/Rastadopoulos/ccs-news/settings/variables/actions. The workflow stays dormant until this flips on.
+7. Configure ~20 Google Alerts (https://www.google.com/alerts) delivering to that Gmail. Frequency: *As-it-happens*. Sources: *Automatic*. Suggested set in the script's docstring (`scripts/alerts_ingest.py`).
+
+The workflow runs every 30 min and writes `audit/${TODAY}-alerts.json`, merging across runs so the day's file accumulates rather than overwrites.
+
 ## Daylight-saving swap
 
 Routine cron runs in UTC. Manual swap twice a year:
 
 | | AEST (Apr–Oct, UTC+10) | AEDT (Oct–Apr, UTC+11) |
 |---|---|---|
-| `email-briefing.yml` (briefing) | `0 21 * * 0-4` | `0 20 * * 0-4` |
+| Production briefing routine | `0 21 * * 0-4` | `0 20 * * 0-4` |
+| Shadow sampler routine | `30 21 * * 0-4` | `30 20 * * 0-4` |
 | `rss-floor.yml` | `0 21 * * 0-4` | `0 20 * * 0-4` |
 | `weekly-audit.yml` | `0 22 * * 5` | `0 21 * * 5` |
+| `alerts-ingest.yml` | `*/30 20-23 * * *` + `*/30 0-12 * * *` | (no swap needed — runs in UTC business-hours band) |
