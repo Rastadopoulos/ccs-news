@@ -1,0 +1,93 @@
+name: Email recall audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'audit/*-recall-report.html'
+      - 'audit/*-recall-report.md'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Week-ending date of audit to send (YYYY-MM-DD). Leave blank for latest.'
+        required: false
+        default: ''
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Resolve audit date
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(ls -1 audit/*-recall-report.html 2>/dev/null \
+                    | sed 's|^audit/||;s|-recall-report.html$||' \
+                    | sort | tail -n1)
+          fi
+          if [ -z "$DATE" ] \
+             || [ ! -f "audit/${DATE}-recall-report.html" ] \
+             || [ ! -f "audit/${DATE}-recall-report.md" ]; then
+            echo "::error::Could not resolve an audit date with both .html and .md present"
+            exit 1
+          fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "Sending audit for $DATE"
+
+      - name: Build Resend payload
+        env:
+          DATE: ${{ steps.pick.outputs.date }}
+        run: |
+          set -euo pipefail
+          HTML_FILE="audit/${DATE}-recall-report.html"
+          MD_FILE="audit/${DATE}-recall-report.md"
+
+          SUBJECT=$(awk '/^# /{sub(/^# /,""); print; exit}' "$MD_FILE")
+          if [ -z "$SUBJECT" ]; then
+            SUBJECT="CCS recall audit — ${DATE}"
+          fi
+
+          base64 -w0 "$MD_FILE" > /tmp/md.b64
+
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --arg fn "$(basename "$MD_FILE")" \
+            --rawfile html "$HTML_FILE" \
+            --rawfile b64 /tmp/md.b64 \
+            '{
+              from: "CCS Audit <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html,
+              attachments: [{filename: $fn, content: $b64}]
+            }' > /tmp/resend.json
+
+          jq -e . /tmp/resend.json > /dev/null
+          echo "Payload OK, $(wc -c </tmp/resend.json) bytes, subject: $SUBJECT"
+
+      - name: Send via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Audit emailed" ;;
+            *)  echo "::error::Resend rejected the send (HTTP $HTTP)"; exit 1 ;;
+          esac

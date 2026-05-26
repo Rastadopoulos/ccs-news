@@ -1,0 +1,57 @@
+name: Weekly recall audit
+
+on:
+  # 08:00 Melbourne AEST Saturday = 22:00 UTC Friday.
+  # Swap to '0 21 * * 5' during AEDT (Oct–Apr) — see README.
+  schedule:
+    - cron: '0 22 * * 5'
+  workflow_dispatch:
+    inputs:
+      week_ending:
+        description: 'ISO date (YYYY-MM-DD) for the Saturday ending the week. Blank = today Melbourne.'
+        required: false
+        default: ''
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML
+
+      - name: Run weekly audit
+        env:
+          PYTHONUNBUFFERED: '1'
+          WEEK_ENDING: ${{ github.event.inputs.week_ending }}
+        run: |
+          if [ -n "${WEEK_ENDING}" ]; then
+            python3 scripts/weekly_audit.py --week-ending "${WEEK_ENDING}"
+          else
+            python3 scripts/weekly_audit.py
+          fi
+
+      - name: Commit audit report
+        run: |
+          set -euo pipefail
+          git config user.email 'ccs-news-routine@co2crc.com.au'
+          git config user.name  'CCS Weekly Audit'
+          git add audit/*-recall-report.html audit/*-recall-report.md audit/drift.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No audit changes to commit."
+            exit 0
+          fi
+          git commit -m "Weekly audit $(TZ=Australia/Melbourne date +%Y-%m-%d)"
+          git pull --rebase --autostash
+          git push origin main

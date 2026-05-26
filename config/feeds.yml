@@ -1,0 +1,232 @@
+# RSS/Atom feeds polled by scripts/rss_collector.py as the deterministic
+# "floor" sampler (B) of the CCS-news audit pipeline. Curated to match the
+# routine's PREFERRED SOURCES tiers.
+#
+# Each entry:
+#   name:          Human-readable label (appears in audit reports)
+#   url:           RSS or Atom feed URL
+#   source_domain: Canonical domain string (matches scripts/_canon.source_domain)
+#   tier:          1 | 2 | 2b | 3 | 4 | 5  (mirrors routine prompt)
+#   region:        au | apac | na | eu_uk | mena | row | global
+#   ccs_filter:    "always" — keep every item (sources that are CCS-only)
+#                  "regex"  — apply CCS_KEYWORD_RE before keeping
+#
+# Verify a feed exists before adding: `curl -sI <url> | head -1` should return
+# 200. Some publishers move their feed paths — review quarterly.
+
+feeds:
+  # ------------------------------------------------------------------- Tier 1
+  - name: Carbon Herald
+    url: https://carbonherald.com/feed/
+    source_domain: carbonherald.com
+    tier: 1
+    region: global
+    ccs_filter: always
+
+  - name: Reuters — Sustainability
+    url: https://www.reutersagency.com/feed/?best-topics=sustainability
+    source_domain: reuters.com
+    tier: 1
+    region: global
+    ccs_filter: regex
+
+  - name: Bloomberg Green
+    url: https://www.bloomberg.com/green/feeds/articles.rss
+    source_domain: bloomberg.com
+    tier: 1
+    region: global
+    ccs_filter: regex
+
+  - name: Offshore Energy
+    url: https://www.offshore-energy.biz/feed/
+    source_domain: offshore-energy.biz
+    tier: 1
+    region: global
+    ccs_filter: regex
+
+  # ------------------------------------------------------------------- Tier 2 (regulatory)
+  - name: DOE — News
+    url: https://www.energy.gov/listings/news-releases/feed
+    source_domain: energy.gov
+    tier: 2
+    region: na
+    ccs_filter: regex
+
+  - name: NETL — News
+    url: https://netl.doe.gov/rss/news.xml
+    source_domain: netl.doe.gov
+    tier: 2
+    region: na
+    ccs_filter: regex
+
+  - name: European Commission — Climate Action
+    url: https://climate.ec.europa.eu/news_en.rss
+    source_domain: climate.ec.europa.eu
+    tier: 2
+    region: eu_uk
+    ccs_filter: regex
+
+  - name: DCCEEW (au) — News
+    url: https://www.dcceew.gov.au/about/news/rss.xml
+    source_domain: dcceew.gov.au
+    tier: 2
+    region: au
+    ccs_filter: regex
+
+  - name: UK CCSA — News
+    url: https://www.ccsassociation.org/feed/
+    source_domain: ccsassociation.org
+    tier: 2
+    region: eu_uk
+    ccs_filter: always
+
+  # ------------------------------------------------------------------ Tier 2b (sector trade)
+  - name: Carbon Capture Journal
+    url: https://www.carboncapturejournal.com/rss.rss
+    source_domain: carboncapturejournal.com
+    tier: 2b
+    region: global
+    ccs_filter: always
+
+  - name: The Australian Pipeliner
+    url: https://www.pipeliner.com.au/feed/
+    source_domain: pipeliner.com.au
+    tier: 2b
+    region: au
+    ccs_filter: regex
+
+  - name: Renew Economy
+    url: https://reneweconomy.com.au/feed/
+    source_domain: reneweconomy.com.au
+    tier: 2b
+    region: au
+    ccs_filter: regex
+
+  - name: Energy Source & Distribution
+    url: https://esdnews.com.au/feed/
+    source_domain: esdnews.com.au
+    tier: 2b
+    region: au
+    ccs_filter: regex
+
+  - name: Upstream Online
+    url: https://www.upstreamonline.com/rss
+    source_domain: upstreamonline.com
+    tier: 2b
+    region: global
+    ccs_filter: regex
+
+  - name: Global CCS Institute — Insights
+    url: https://www.globalccsinstitute.com/feed/
+    source_domain: globalccsinstitute.com
+    tier: 2b
+    region: global
+    ccs_filter: always
+
+  # ------------------------------------------------------------------ Tier 3 (operators)
+  - name: Equinor — News
+    url: https://www.equinor.com/news.rss
+    source_domain: equinor.com
+    tier: 3
+    region: eu_uk
+    ccs_filter: regex
+
+  - name: Shell — Media releases
+    url: https://www.shell.com/media/news-and-media-releases/_jcr_content.feed
+    source_domain: shell.com
+    tier: 3
+    region: global
+    ccs_filter: regex
+
+  - name: Santos — News
+    url: https://www.santos.com/news/feed/
+    source_domain: santos.com
+    tier: 3
+    region: au
+    ccs_filter: regex
+
+  - name: Woodside — News
+    url: https://www.woodside.com/media-centre/news-stories/rss
+    source_domain: woodside.com
+    tier: 3
+    region: au
+    ccs_filter: regex
+
+  - name: ExxonMobil — News
+    url: https://corporate.exxonmobil.com/news/_jcr_content.feed
+    source_domain: exxonmobil.com
+    tier: 3
+    region: na
+    ccs_filter: regex
+
+  - name: Occidental — Press releases
+    url: https://www.oxy.com/news/news-releases/rss/
+    source_domain: oxy.com
+    tier: 3
+    region: na
+    ccs_filter: regex
+
+  - name: Aker Carbon Capture — News
+    url: https://akercarboncapture.com/feed/
+    source_domain: akercarboncapture.com
+    tier: 3
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Climeworks — News
+    url: https://climeworks.com/feed
+    source_domain: climeworks.com
+    tier: 3
+    region: eu_uk
+    ccs_filter: always
+
+  # ------------------------------------------------------------------ Tier 4 (science press)
+  - name: Mirage News — Carbon Capture tag
+    url: https://www.miragenews.com/tag/carbon-capture/feed/
+    source_domain: miragenews.com
+    tier: 4
+    region: global
+    ccs_filter: regex
+
+  - name: TechXplore — Energy/Green Tech
+    url: https://techxplore.com/rss-feed/energy-green-tech-news/
+    source_domain: techxplore.com
+    tier: 4
+    region: global
+    ccs_filter: regex
+
+  - name: Phys.org — Earth Sciences
+    url: https://phys.org/rss-feed/earth-news/earth-sciences/
+    source_domain: phys.org
+    tier: 4
+    region: global
+    ccs_filter: regex
+
+  - name: EurekAlert — Earth Science
+    url: https://www.eurekalert.org/rss/earth_science.xml
+    source_domain: eurekalert.org
+    tier: 4
+    region: global
+    ccs_filter: regex
+
+  # ------------------------------------------------------------------ Tier 5 (sentiment)
+  - name: The Guardian (AU) — Environment
+    url: https://www.theguardian.com/australia-news/environment/rss
+    source_domain: theguardian.com
+    tier: 5
+    region: au
+    ccs_filter: regex
+
+  - name: ABC News (au) — Environment
+    url: https://www.abc.net.au/news/feed/52498/rss.xml
+    source_domain: abc.net.au
+    tier: 5
+    region: au
+    ccs_filter: regex
+
+  - name: AFR — Companies
+    url: https://www.afr.com/rss/companies.xml
+    source_domain: afr.com
+    tier: 5
+    region: au
+    ccs_filter: regex
