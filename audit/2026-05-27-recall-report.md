@@ -2,27 +2,28 @@
 
 ## Headline metrics
 
-- **Pooled recall** (A ∩ U / U): **0%**  (0 of 10)
-- **Floor recall** (A ∩ B / B): **0%**  (0 of 10)
+- **Pooled recall** (A ∩ U / U): **0%**  (0 of 14)
+- **Floor recall** (A ∩ B / B): **0%**  (0 of 12)
 
 ## Sampler sizes
 
 | Sampler | Items |
 |---|---:|
 | A · Production routine | 0 |
-| B · RSS floor | 10 |
+| B · RSS floor | 12 |
 | C · Google Alerts | 0 |
-| D · Shadow LLM | 0 |
+| D · Shadow LLM | 2 |
 | E · Shelly Murrell digest | 0 |
-| **Union U** | **10** |
+| **Union U** | **14** |
 
 ## Chapman pair-estimates
 
 | Pair | Overlap | Estimated N |
 |---|---:|---:|
 | A × B (RSS floor) | 0 | nan |
+| A × D (Shadow LLM) | 0 | nan |
 
-## Top missed items (10 total)
+## Top missed items (14 total)
 
 - **Carbon capture is now delivering greener cement, but scale remains a challenge - carboncapturejournal.com** — carboncapturejournal.com · found via _B_ · [link](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSmdxamJJczhYdVczc2RuVk1uS1k4X2tQMVF5YXZ1Zl9WUGx1cW0xSFpuSkpaWWhKODdMNkljSHJ1NWVmQWo4WlVWWmxpeGRaTVJOUGxkSnkzdXZHbVJod3ZFNnNlRE1qdkVEeW5oenRXSVYtdGRlSWNiQk9HZUdGenktcGlIcGluNW5DMk9sTHNKUEdjUUV2elhsYmJSNXhueFNvUkk0VTQ2OWF3bUNXa3R6OE5uY2EySnFXOUt2cDdJUU5RZnh0VmdRX1VERlJJNVY5Q2x3eGJmUQ?oc=5)
 - **Pushing beyond membrane performance limits for carbon capture efficiency - carboncapturejournal.com** — carboncapturejournal.com · found via _B_ · [link](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNUDRXUGI5WlU1Y2VENF9Oc1RQZGpvNHRnZERPUFF6UDNRdWVCYkxmMy1oT3NheXdfMmtHRkJPOHhzbFdHUnNzdDR3MFp6cmNtOWdCUWhzZlJMcHBfSnYxQ0M3c1ROMUltQlg3UmxQbGxZWVU2d0poM3RUbjNQQldyWFJ3b2RIWWFqck5wQWFsaDJXa1BVZmd6SUtkTFFZUGNHdVZjU0EyMTUwcVc3U3c4enVZUFJDUXVBbl9DY3hEcUhzU2lhS3VGU0xEOEFNWkVYYmtJ?oc=5)
@@ -42,6 +43,10 @@
 | carbonherald.com | 6 | 0 | 0% |
 | carboncapturejournal.com | 2 | 0 | 0% |
 | climeworks.com | 2 | 0 | 0% |
+| manilatimes.net | 1 | 0 | 0% |
+| morningagclips.com | 1 | 0 | 0% |
+| nature.com | 1 | 0 | 0% |
+| rigzone.com | 1 | 0 | 0% |
 
 ## Drift — last 12 weeks
 
