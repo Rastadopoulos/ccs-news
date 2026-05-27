@@ -6,35 +6,18 @@ recency window as the briefing routine, and upserts surviving items to
 audit/candidates.db (sampler_id='C'). Also writes audit/${TODAY}-alerts.json
 so the daily / weekly audits don't need to round-trip the DB.
 
-Setup (one-time, manual):
-  1. Create or repurpose a dedicated Gmail account (e.g.
-     co2crc.ccs.alerts@gmail.com). The account should be used for nothing
-     else so the inbox stays clean.
-  2. Enable IMAP in Gmail settings → Forwarding and POP/IMAP.
-  3. Enable 2FA and create an App Password
-     (https://myaccount.google.com/apppasswords). Label it 'ccs-news-audit'.
-  4. Add the app password as repo secret GMAIL_APP_PASSWORD, and the address
-     as GMAIL_ADDRESS.
-  5. Create Google Alerts (https://www.google.com/alerts) delivering to that
-     account. Suggested set (~20 alerts):
-       - "Otway International Test Centre"
-       - "Northern Lights CCS"
-       - "Stratos DAC"
-       - "Bayou Bend"
-       - "Porthos CCS" / "Aramis CCS" / "Greensand" / "HyNet"
-       - "Moomba CCS" / "Bonaparte CCS"
-       - "Class VI permit"
-       - "carbon capture project FID"
-       - "CCUS hub"
-       - "direct air capture offtake"
-       - "carbon storage permit"
-       - "Equinor CCS" / "Shell CCS" / "Santos CCS" / "Woodside CCS"
-       - "Carbon Engineering" / "Climeworks" / "Heirloom"
-       - "1PointFive"
-       - "45Q"
-       - "EU CCS Directive"
-     Set frequency: 'As-it-happens'. Sources: 'Automatic'. Language: English.
-     Region: 'Any region'.
+Setup and the canonical list of configured alerts live in
+docs/google-alerts.md. That file is the source of truth — update it in
+the same commit when you add, remove, or modify an alert in the
+Google Alerts UI.
+
+Quick-reference for the wiring:
+  - Repo secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD must be set; see
+    docs/secrets.md for what each one is and how to rotate.
+  - Repo variable ALERTS_INGEST_ENABLED=true must be set, otherwise the
+    cron-driven workflow stays dormant.
+  - Each alert in the Google Alerts UI must deliver to the address held
+    in GMAIL_ADDRESS, with frequency 'As-it-happens', sources 'Automatic'.
 
 Run locally:
   GMAIL_ADDRESS=... GMAIL_APP_PASSWORD=... python3 scripts/alerts_ingest.py
