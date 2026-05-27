@@ -98,5 +98,25 @@
     "fuzzy_key": "buyers,carbon,climeworks,more,needs,next,phase,regulation,removal,scale,supports",
     "feed_name": "Climeworks (Google News)",
     "feed_tier": 3
+  },
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV3IzUTFNNVBkS2dDazNMN3NQczBNbHZCRE5MUXFhR195TGN6ZUNERUdWNlFzNHRRdGJpdUNpT3JlQnVsRnBUcXNOTTFCQXlCa0dTdDE5Ml9VTENMemxXNGxzQUpyZlBmaXlYM3FJbXhSTEk3WFNSdmpOZ0luOHVZM2pXMWowRVZPbTlhdGZnSGUyWW1YU2o1RzdGT1ZZMVpKN0czZUJNTHA?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV3IzUTFNNVBkS2dDazNMN3NQczBNbHZCRE5MUXFhR195TGN6ZUNERUdWNlFzNHRRdGJpdUNpT3JlQnVsRnBUcXNOTTFCQXlCa0dTdDE5Ml9VTENMemxXNGxzQUpyZlBmaXlYM3FJbXhSTEk3WFNSdmpOZ0luOHVZM2pXMWowRVZPbTlhdGZnSGUyWW1YU2o1RzdGT1ZZMVpKN0czZUJNTHA?oc=5",
+    "headline": "Ohio Senate Passes Substitute Bill on Carbon Capture and Storage Activity - Morning Ag Clips",
+    "source_domain": "morningagclips.com",
+    "publication_date": "2026-05-27T03:09:00+00:00",
+    "fuzzy_key": "activity,ag,bill,capture,carbon,clips,morning,ohio,passes,senate,storage,substitute",
+    "feed_name": "Google News — CCS global",
+    "feed_tier": 1
+  },
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mZTBXX2x0QmQzd0h6dnZPSmZjQ0hUUW95czRTUkFCRGd1WS1QNklrYlpINFk3ZGhBRjA1UDA4bkd1Z2NxQ0IyUTNCOEhaUjRxVlhLOWUtNmkzd0Q0Zmlr?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mZTBXX2x0QmQzd0h6dnZPSmZjQ0hUUW95czRTUkFCRGd1WS1QNklrYlpINFk3ZGhBRjA1UDA4bkd1Z2NxQ0IyUTNCOEhaUjRxVlhLOWUtNmkzd0Q0Zmlr?oc=5",
+    "headline": "Redox-decoupled electrolysis for direct air capture of CO - Nature",
+    "source_domain": "nature.com",
+    "publication_date": "2026-05-26T10:09:24+00:00",
+    "fuzzy_key": "air,capture,co,decoupled,direct,electrolysis,nature,redox",
+    "feed_name": "Google News — CCS global",
+    "feed_tier": 1
   }
 ]
