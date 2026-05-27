@@ -1,92 +1,11 @@
 [
   {
-    "canonical_url": "https://greenreview.com.au/resources/santos-moomba-ccs-project-achieves-milestone-of-storing-two-million-tonnes-of-co2",
-    "raw_url": "https://greenreview.com.au/resources/santos-moomba-ccs-project-achieves-milestone-of-storing-two-million-tonnes-of-co2/",
-    "headline": "Santos' Moomba CCS project achieves milestone - Green Review",
-    "source_domain": "greenreview.com.au",
-    "publication_date": "2026-05-27T04:47:38+00:00",
-    "fuzzy_key": "achieves,ccs,green,milestone,moomba,project,review,santos",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://oilprice.com/Energy/Energy-General/Germany-Puts-5-Billion-Behind-Carbon-Capture-Push.html",
-    "raw_url": "https://oilprice.com/Energy/Energy-General/Germany-Puts-5-Billion-Behind-Carbon-Capture-Push.html",
-    "headline": "Germany Puts €5 Billion Behind Carbon Capture Push | OilPrice.com",
-    "source_domain": "oilprice.com",
-    "publication_date": "2026-05-27T04:52:19+00:00",
-    "fuzzy_key": "behind,billion,capture,carbon,com,germany,oilprice,push,puts",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://gasworld.com/story/linde-and-valmet-advance-electrical-carbon-capture-tech-for-pulp-and-paper/2250436.article",
-    "raw_url": "https://www.gasworld.com/story/linde-and-valmet-advance-electrical-carbon-capture-tech-for-pulp-and-paper/2250436.article/",
-    "headline": "Linde and Valmet advance electrical carbon capture tech for pulp and paper - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-05-27T04:52:19+00:00",
-    "fuzzy_key": "advance,capture,carbon,electrical,gasworld,linde,paper,pulp,tech,valmet",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://thestar.com.my/business/business-news/2026/05/27/canada-confident-oil-sands-can-fund-carbon-capture",
-    "raw_url": "https://www.thestar.com.my/business/business-news/2026/05/27/canada-confident-oil-sands-can-fund-carbon-capture",
-    "headline": "Canada confident oil sands can fund carbon capture | The Star",
-    "source_domain": "com.my",
-    "publication_date": "2026-05-27T04:52:28+00:00",
-    "fuzzy_key": "can,canada,capture,carbon,confident,fund,oil,sands,star",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://rigzone.com/news/eni_blackrock_ccus_jv_raises_582mm-26-may-2026-183780-article",
-    "raw_url": "https://www.rigzone.com/news/eni_blackrock_ccus_jv_raises_582mm-26-may-2026-183780-article/",
-    "headline": "Eni, BlackRock CCUS JV Raises $582MM - Rigzone",
-    "source_domain": "rigzone.com",
-    "publication_date": "2026-05-27T05:45:07+00:00",
-    "fuzzy_key": "582mm,blackrock,ccus,eni,jv,raises,rigzone",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://finance.yahoo.com/sectors/energy/articles/eni-blackrock-ccus-jv-raises-151830629.html",
-    "raw_url": "https://finance.yahoo.com/sectors/energy/articles/eni-blackrock-ccus-jv-raises-151830629.html",
-    "headline": "Eni, BlackRock CCUS JV Raises $582MM - Yahoo Finance",
-    "source_domain": "yahoo.com",
-    "publication_date": "2026-05-27T05:45:07+00:00",
-    "fuzzy_key": "582mm,blackrock,ccus,eni,finance,jv,raises,yahoo",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://gasworld.com/story/california-records-first-co2-injection/2250451.article",
-    "raw_url": "https://www.gasworld.com/story/california-records-first-co2-injection/2250451.article/",
-    "headline": "California records first CO2 injection | Carbon Capture - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-05-27T05:45:32+00:00",
-    "fuzzy_key": "california,capture,carbon,co2,first,gasworld,injection,records",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://discoveryalert.com.au/india-carbon-storage-roadmap-ccus-geological-storage-2026",
-    "raw_url": "https://discoveryalert.com.au/india-carbon-storage-roadmap-ccus-geological-storage-2026/",
-    "headline": "India Carbon Storage Roadmap: Net Zero CCUS Strategy - Discovery Alert",
-    "source_domain": "discoveryalert.com.au",
-    "publication_date": "2026-05-27T05:45:32+00:00",
-    "fuzzy_key": "alert,carbon,ccus,discovery,india,net,roadmap,storage,strategy,zero",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article",
-    "raw_url": "https://www.rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article/",
-    "headline": "Santos Says Moomba CCS Delivering Emissions Reduction at Scale - Rigzone",
-    "source_domain": "rigzone.com",
-    "publication_date": "2026-05-27T05:47:39+00:00",
-    "fuzzy_key": "ccs,delivering,emissions,moomba,reduction,rigzone,santos,says,scale",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://enerdata.net/publications/daily-energy-news/santos-moomba-ccs-project-stores-2-mtco2e-cooper-basin-australia.html",
-    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/santos-moomba-ccs-project-stores-2-mtco2e-cooper-basin-australia.html",
-    "headline": "Santo's Moomba CCS project stores 2 MtCO2e in Cooper Basin (Australia) - Enerdata",
-    "source_domain": "enerdata.net",
-    "publication_date": "2026-05-27T05:47:39+00:00",
-    "fuzzy_key": "australia,basin,ccs,cooper,enerdata,moomba,mtco2e,project,santo,stores",
+    "canonical_url": "https://carbon-pulse.com/515470",
+    "raw_url": "https://carbon-pulse.com/515470/",
+    "headline": "Climeworks CEO urges diversification of carbon removal buyers",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-05-27T05:50:26+00:00",
+    "fuzzy_key": "buyers,carbon,ceo,climeworks,diversification,removal,urges",
     "found_via": "google_alerts"
   },
   {
@@ -99,12 +18,93 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbon-pulse.com/515470",
-    "raw_url": "https://carbon-pulse.com/515470/",
-    "headline": "Climeworks CEO urges diversification of carbon removal buyers",
-    "source_domain": "carbon-pulse.com",
-    "publication_date": "2026-05-27T05:50:26+00:00",
-    "fuzzy_key": "buyers,carbon,ceo,climeworks,diversification,removal,urges",
+    "canonical_url": "https://thestar.com.my/business/business-news/2026/05/27/canada-confident-oil-sands-can-fund-carbon-capture",
+    "raw_url": "https://www.thestar.com.my/business/business-news/2026/05/27/canada-confident-oil-sands-can-fund-carbon-capture",
+    "headline": "Canada confident oil sands can fund carbon capture | The Star",
+    "source_domain": "com.my",
+    "publication_date": "2026-05-27T04:52:28+00:00",
+    "fuzzy_key": "can,canada,capture,carbon,confident,fund,oil,sands,star",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://discoveryalert.com.au/india-carbon-storage-roadmap-ccus-geological-storage-2026",
+    "raw_url": "https://discoveryalert.com.au/india-carbon-storage-roadmap-ccus-geological-storage-2026/",
+    "headline": "India Carbon Storage Roadmap: Net Zero CCUS Strategy - Discovery Alert",
+    "source_domain": "discoveryalert.com.au",
+    "publication_date": "2026-05-27T05:45:32+00:00",
+    "fuzzy_key": "alert,carbon,ccus,discovery,india,net,roadmap,storage,strategy,zero",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://enerdata.net/publications/daily-energy-news/santos-moomba-ccs-project-stores-2-mtco2e-cooper-basin-australia.html",
+    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/santos-moomba-ccs-project-stores-2-mtco2e-cooper-basin-australia.html",
+    "headline": "Santo's Moomba CCS project stores 2 MtCO2e in Cooper Basin (Australia) - Enerdata",
+    "source_domain": "enerdata.net",
+    "publication_date": "2026-05-27T05:47:39+00:00",
+    "fuzzy_key": "australia,basin,ccs,cooper,enerdata,moomba,mtco2e,project,santo,stores",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/california-records-first-co2-injection/2250451.article",
+    "raw_url": "https://www.gasworld.com/story/california-records-first-co2-injection/2250451.article/",
+    "headline": "California records first CO2 injection | Carbon Capture - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-05-27T05:45:32+00:00",
+    "fuzzy_key": "california,capture,carbon,co2,first,gasworld,injection,records",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/linde-and-valmet-advance-electrical-carbon-capture-tech-for-pulp-and-paper/2250436.article",
+    "raw_url": "https://www.gasworld.com/story/linde-and-valmet-advance-electrical-carbon-capture-tech-for-pulp-and-paper/2250436.article/",
+    "headline": "Linde and Valmet advance electrical carbon capture tech for pulp and paper - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-05-27T04:52:19+00:00",
+    "fuzzy_key": "advance,capture,carbon,electrical,gasworld,linde,paper,pulp,tech,valmet",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://greenreview.com.au/resources/santos-moomba-ccs-project-achieves-milestone-of-storing-two-million-tonnes-of-co2",
+    "raw_url": "https://greenreview.com.au/resources/santos-moomba-ccs-project-achieves-milestone-of-storing-two-million-tonnes-of-co2/",
+    "headline": "Santos' Moomba CCS project achieves milestone - Green Review",
+    "source_domain": "greenreview.com.au",
+    "publication_date": "2026-05-27T04:47:38+00:00",
+    "fuzzy_key": "achieves,ccs,green,milestone,moomba,project,review,santos",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/jobs/view/sr-carbon-capture-lab-scientist-1845-at-aramco-4419443144",
+    "raw_url": "https://www.linkedin.com/jobs/view/sr-carbon-capture-lab-scientist-1845-at-aramco-4419443144",
+    "headline": "aramco hiring Sr. Carbon Capture Lab Scientist (1845) in Greater Houston | LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-05-27T05:52:20+00:00",
+    "fuzzy_key": "1845,aramco,capture,carbon,greater,hiring,houston,lab,linkedin,scientist,sr",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oilprice.com/Energy/Energy-General/Germany-Puts-5-Billion-Behind-Carbon-Capture-Push.html",
+    "raw_url": "https://oilprice.com/Energy/Energy-General/Germany-Puts-5-Billion-Behind-Carbon-Capture-Push.html",
+    "headline": "Germany Puts €5 Billion Behind Carbon Capture Push | OilPrice.com",
+    "source_domain": "oilprice.com",
+    "publication_date": "2026-05-27T04:52:19+00:00",
+    "fuzzy_key": "behind,billion,capture,carbon,com,germany,oilprice,push,puts",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://rigzone.com/news/eni_blackrock_ccus_jv_raises_582mm-26-may-2026-183780-article",
+    "raw_url": "https://www.rigzone.com/news/eni_blackrock_ccus_jv_raises_582mm-26-may-2026-183780-article/",
+    "headline": "Eni, BlackRock CCUS JV Raises $582MM - Rigzone",
+    "source_domain": "rigzone.com",
+    "publication_date": "2026-05-27T05:45:07+00:00",
+    "fuzzy_key": "582mm,blackrock,ccus,eni,jv,raises,rigzone",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article",
+    "raw_url": "https://www.rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article/",
+    "headline": "Santos Says Moomba CCS Delivering Emissions Reduction at Scale - Rigzone",
+    "source_domain": "rigzone.com",
+    "publication_date": "2026-05-27T05:47:39+00:00",
+    "fuzzy_key": "ccs,delivering,emissions,moomba,reduction,rigzone,santos,says,scale",
     "found_via": "google_alerts"
   },
   {
@@ -117,12 +117,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://linkedin.com/jobs/view/sr-carbon-capture-lab-scientist-1845-at-aramco-4419443144",
-    "raw_url": "https://www.linkedin.com/jobs/view/sr-carbon-capture-lab-scientist-1845-at-aramco-4419443144",
-    "headline": "aramco hiring Sr. Carbon Capture Lab Scientist (1845) in Greater Houston | LinkedIn",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-05-27T05:52:20+00:00",
-    "fuzzy_key": "1845,aramco,capture,carbon,greater,hiring,houston,lab,linkedin,scientist,sr",
+    "canonical_url": "https://finance.yahoo.com/sectors/energy/articles/eni-blackrock-ccus-jv-raises-151830629.html",
+    "raw_url": "https://finance.yahoo.com/sectors/energy/articles/eni-blackrock-ccus-jv-raises-151830629.html",
+    "headline": "Eni, BlackRock CCUS JV Raises $582MM - Yahoo Finance",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-05-27T05:45:07+00:00",
+    "fuzzy_key": "582mm,blackrock,ccus,eni,finance,jv,raises,yahoo",
     "found_via": "google_alerts"
   }
 ]
