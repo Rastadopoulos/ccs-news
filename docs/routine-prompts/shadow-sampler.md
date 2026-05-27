@@ -36,7 +36,7 @@ If TODAY matches the 2026 Victorian public-holiday list, exit cleanly with no au
 
 === RECENCY WINDOW — IDENTICAL TO PRODUCTION ROUTINE ===
 - Tuesday–Friday: items must be published within the last 24 hours (Melbourne local time).
-- Monday: items must be published since 17:00 Melbourne the previous Friday (~72 hours).
+- Monday: items must be published since 07:00 Melbourne the previous Friday (~72 hours, picking up exactly where Friday's briefing ended).
 - WebFetch each candidate and read the publication date from the page (not the snippet).
 - Items without a confirmable publication date are NOT eligible.
 - This recency rule MUST match the production routine exactly — otherwise the audit's "in_window" comparisons are meaningless.

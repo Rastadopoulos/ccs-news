@@ -34,7 +34,7 @@ The routine's other safeguards (Shelly's digest, RSS floor) under-cover non-West
 
 === RECENCY WINDOW — HARD CONSTRAINT ===
 - Tuesday–Friday: items MUST be published within the last 24 hours (Melbourne local time).
-- Monday: items MUST be published since 17:00 Melbourne the previous Friday (~72 hours).
+- Monday: items MUST be published since 07:00 Melbourne the previous Friday (~72 hours, picking up exactly where Friday's briefing ended).
 - Items without a confirmable publication date are NOT eligible.
 - 'Fewer fresh items beats more stale items'.
 - For EACH candidate item, WebFetch the article URL and READ the publication date from the page (not the snippet). Reject items outside the window.

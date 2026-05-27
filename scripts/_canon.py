@@ -185,23 +185,39 @@ def jaccard(a: Iterable[str], b: Iterable[str]) -> float:
 
 def is_in_window(pub_dt: datetime, today: datetime, dow: int) -> bool:
     """`today` is the briefing's TODAY at 00:00 Melbourne. `dow` is ISO weekday
-    1..7 (Mon=1). Tue–Fri (dow 2..5): item must be within 24h of `today`'s
-    07:00 (i.e. since yesterday 07:00). Mon (dow 1): since 17:00 Friday
-    (~72h). Sat/Sun (6/7): treated like Monday (same 72h floor) — primarily
-    for off-cycle test runs.
+    1..7 (Mon=1).
+
+    Tue–Fri (dow 2..5): item must be within 24h ending now (briefing time
+    07:00 Melbourne) — i.e. published since yesterday 07:00. The window
+    floor is today 00:00 − 24h = yesterday 00:00, which the comparison
+    treats as inclusive.
+
+    Mon (dow 1): item must be published since 07:00 Melbourne the previous
+    Friday (~72h). This picks up exactly where Friday's briefing ended,
+    leaving no gap. Floor = Monday 00:00 − 2 days − 17 hours = previous
+    Friday 07:00.
+
+    Sat/Sun (dow 6, 7): treated like Monday's 72h floor — primarily for
+    off-cycle test runs. Same Friday-07:00 floor.
     """
     if pub_dt is None:
         return False
     if pub_dt.tzinfo is None:
         pub_dt = pub_dt.replace(tzinfo=timezone.utc)
     if dow in (2, 3, 4, 5):
-        # 24h window ending at today's 07:00 local (approximate with 'now').
-        floor = today - timedelta(hours=24)
+        # 24h window for Tue–Fri, ending at the 07:00 Melbourne briefing time.
+        # `today` is briefing-day 00:00 → yesterday 07:00 is 17h earlier.
+        floor = today - timedelta(hours=17)
+    elif dow == 1:
+        # Monday: 72h window starting Friday 07:00 of the previous week.
+        # `today` is Monday 00:00 → Friday 07:00 is 2 days + 17 hours earlier.
+        floor = today - timedelta(days=2, hours=17)
     else:
-        # Monday or weekend: from 17:00 previous Friday.
-        # `today` is Monday 00:00 → Friday 17:00 is 2d 7h earlier.
-        days_back = (dow - 5) % 7 or 3  # Mon→3, Sat→1, Sun→2
-        floor = today - timedelta(days=days_back, hours=7)
+        # Saturday/Sunday off-cycle runs — same Friday-07:00 floor as Monday.
+        # Sat (dow 6): today = Sat 00:00 → Fri 07:00 = today − 17h.
+        # Sun (dow 7): today = Sun 00:00 → Fri 07:00 = today − 1d − 17h.
+        days_back = dow - 6  # Sat=0, Sun=1
+        floor = today - timedelta(days=days_back, hours=17)
     return pub_dt >= floor
 
 
