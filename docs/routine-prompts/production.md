@@ -41,11 +41,29 @@ The routine's other safeguards (Shelly's digest, RSS floor) under-cover non-West
 - Round-up / retrospective articles do NOT count even if their own publication date is fresh — the underlying news must itself be in-window.
 
 === ITEM COUNT — SOFT TARGET ===
-- Aim for 8–12 fresh items.
+- Aim for 8–12 fresh items in the main briefing.
 - 6–12 fresh items: normal briefing.
 - 3–5 fresh items: prefix the header with 'Quiet day —' and ship those only.
 - 0–2 fresh items: 'Quiet day' stub. Optional 'Still on the radar' section (max 3 items, each ≤7 days old, each tagged with its publication date).
 - NEVER include items older than 7 days.
+
+=== HEAVY NEWS DAY — PRIORITISATION + APPENDIX ===
+When more than 12 in-window candidates survive Step 3, this is a heavy news day. Pick the top 8–12 for the main briefing by applying this ranking ladder in order, taking from the top down until you have 8–12 items selected:
+
+1. Regulator decisions or operator FIDs that include hard numbers (Mtpa, $ committed, MW, regulatory permit issued or refused).
+2. Capacity milestones — first injection, capacity expansion, project commissioning, plant-startup.
+3. Cross-border / transboundary CCS deals — bilateral country-to-country agreements, CO2 export licences, liquid-CO2 shipping infrastructure.
+4. Multinational corporate-strategy items — JV/MoU/consortium formations, regional-expansion announcements, capital-allocation commitments.
+5. Items from non-Western operators (NOCs, Asian / Middle-Eastern / LatAm state companies). These are the highest-marginal-value catches because they are systematically under-covered elsewhere in the sampling pipeline.
+6. Australian items — CO2CRC has a home-country editorial lean.
+7. Items grounded in novel technology or peer-reviewed scientific citation.
+8. Everything else, sub-ranked by Tier-1 source authority.
+
+Ensure each of the five sections has at least one item if at least one eligible candidate exists for that section — don't leave a section empty just because the ranking ladder ran out within it before reaching it.
+
+Every in-window candidate that did NOT make the top-12 cut goes into an "Also reported today" appendix (see Output specs). The appendix carries up to 15 items, ranked by the same ladder above. If more than 15 additional items remain after selecting the main 8–12, keep the top 15 and silently drop the rest (they remain in the audit trace with `kept: false`, `reject_reason: "appendix_overflow"`).
+
+Heavy-news-day mode: the main briefing's header sub-line includes a "{N main} items + {M} also reported" suffix instead of just "{N} items".
 
 SCOPE
 1. Projects — FIDs, milestones, capacity changes, injection updates, permit awards, capacity expansions. Geographic coverage is mandatory — surface items from every region listed below in roughly proportional volume to what publicly available CCS news supports each day. Named examples are ILLUSTRATIVE, NOT EXHAUSTIVE — equally surface lesser-known projects.
@@ -140,11 +158,13 @@ PROCEDURE
        "found_via":         "search_query" | "shelly_digest"
      }
 
-   Common reject_reason values: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "off_topic", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2".
+   Common reject_reason values: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "off_topic", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2", "appendix_overflow".
+
+   Items routed to the "Also reported today" appendix have `kept: true` (they are surfaced in the briefing email, just in compact form) — do not mark them rejected. Only items beyond the appendix's 15-item cap get `kept: false` with `reject_reason: "appendix_overflow"`.
 
    Include items rejected during Step 2/2b too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
 
-3. Self-check: enumerate every candidate with confirmed publication date, drop out-of-window items, decide normal vs Quiet-day mode.
+3. Self-check: enumerate every candidate with confirmed publication date, drop out-of-window items, decide normal vs Quiet-day vs Heavy-news-day mode based on the candidate count surviving the recency check.
 
 4. If WebSearches fail persistently: build a stub 'Quiet day' briefing noting the failure. (Step 2b failure alone is never a reason to fail the briefing.)
 
@@ -153,9 +173,10 @@ OUTPUTS
 A) HTML briefing → ${TODAY}-ccs-briefing.html in the repo root
    - Self-contained HTML document (<!doctype html><html>...<body>...</body></html>) — will be used directly as the email body by the GitHub Action.
    - Inline CSS only (max-width 760px, system font stack, 16px / 1.5 line-height, body #222 on #fff, links #0a4). No external stylesheets, no <script>, no remote images.
-   - Header h1: 'CCS News Briefing' or 'Quiet day — CCS News Briefing'. Sub-line: ${DISPLAY_DATE} · {N} items.
+   - Header h1: 'CCS News Briefing' or 'Quiet day — CCS News Briefing'. Sub-line: ${DISPLAY_DATE} · {N} items (or, on heavy news days, "{N} items + {M} also reported").
    - Five <section> blocks in priority order (Projects → Policy → Technology → Markets & strategy → Media sentiment & social licence); each item as <article> with <h3> headline, <p class="meta"> {source} · {full publication date e.g. '14 May 2026'} · [{region}]{ · via Shelly Murrell weekly monitoring if applicable}, <p> summary, <a> 'Read source'. Omit any section that has no in-window items.
-   - Optional final <section> 'Still on the radar' if used.
+   - On heavy news days only: append a final <section class="appendix"> titled <h2>Also reported today — {M} additional items</h2>. Each appendix item is a single <p class="appendix-item"> in slightly smaller font (14px) and lighter colour (#555), formatted as: <strong>{headline}</strong> — {source}, {date} <a href="{url}">link</a>. No <article> wrapper, no summary text, no per-section grouping. Maximum 15 items, ranked by the heavy-news-day ladder.
+   - Optional final <section> 'Still on the radar' if used (Quiet-day mode only).
    - Footer: generation timestamp.
    - @media print rule.
 
@@ -165,7 +186,11 @@ B) Markdown copy → ${TODAY}-ccs-briefing.md in the repo root
      # CCS briefing — ${DISPLAY_DATE}    (prefix 'Quiet day — ' if applicable)
    Then a short intro sentence, then per-section H2 headings (Projects / Policy / Technology / Markets & strategy / Media sentiment & social licence) with bullets:
      - **{Headline}** — {1-sentence gist} ({Source}, {date}) [link]({url})
-   Append ' · via Shelly Murrell weekly monitoring' to the parenthetical when the item came from Step 2b. Omit any H2 whose section is empty. Sign off '— Auto-briefing'.
+   Append ' · via Shelly Murrell weekly monitoring' to the parenthetical when the item came from Step 2b. Omit any H2 whose section is empty.
+   On heavy news days only: after the five main sections (and before the sign-off), include a final H2 `## Also reported today — {M} additional items` listing each appendix item as a single line:
+     - **{Headline}** — {Source}, {date} [link]({url})
+   No summary text per appendix item. Maximum 15 items.
+   Sign off '— Auto-briefing'.
 
 C) Commit + push (this triggers the GitHub Action that sends the email):
      mkdir -p audit
@@ -182,15 +207,16 @@ D) Audit trace → audit/${TODAY}-candidates.json in the repo root.
    This file is staged and pushed alongside the briefing in step C. It is consumed by scripts/weekly_audit.py on Saturday mornings.
 
 E) Success notification:
-   On successful push, PushNotification: 'CCS briefing pushed — {N} fresh items. Email will follow shortly.' (prefix 'Quiet day — ' if applicable).
+   On successful push, PushNotification: 'CCS briefing pushed — {N} fresh items{ + {M} also reported on heavy-news days}. Email will follow shortly.' (prefix 'Quiet day — ' if applicable).
    The Action typically completes in 30–60 seconds. If no email arrives within a few minutes, check https://github.com/Rastadopoulos/ccs-news/actions for the workflow status.
 
 EDGE CASES
 - File for today already exists (manual rerun): overwrite all three files (HTML, MD, audit JSON). The push will trigger the Action again, which will resend the email.
 - All searches blocked/empty: push a 'Quiet day' stub and let the Action send it. Still write an audit trace (even if mostly empty) so the audit can record "0 considered".
 - Outlook MCP unavailable for Step 2b: skip Step 2b silently and continue with the Step 2 results only.
+- Heavy-news-day mode and Quiet-day mode are mutually exclusive — the routine is in exactly one mode each run (or Normal mode in between).
 
 FINAL OUTPUT
-Finish by printing: total item count, breakdown by section, number of items contributed by Step 2b (Shelly's digest), number of items in the audit trace (kept + rejected), date range of items, distinct source_domain count and a list of the regions represented (Aus/APAC, NA, EU/UK, ME, China, India, LatAm, Africa), Quiet-day mode (yes/no), commit hash, and the GitHub Actions URL (https://github.com/Rastadopoulos/ccs-news/actions) so the user can confirm the email step succeeded.
+Finish by printing: total item count (main briefing + appendix separately), breakdown by section for the main briefing, appendix count, number of items contributed by Step 2b (Shelly's digest), number of items in the audit trace (kept + rejected, with appendix-overflow rejects called out separately if any), date range of items, distinct source_domain count and a list of the regions represented (Aus/APAC, NA, EU/UK, ME, China, India, LatAm, Africa), mode flag (Quiet / Normal / Heavy news), commit hash, and the GitHub Actions URL (https://github.com/Rastadopoulos/ccs-news/actions) so the user can confirm the email step succeeded.
 
 ===END PROMPT===
