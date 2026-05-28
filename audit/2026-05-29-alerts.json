@@ -1,11 +1,11 @@
 [
   {
-    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-corporate-strategies-for-long-term-carbon-removal",
-    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-corporate-strategies-for-long-term-carbon-removal",
-    "headline": "Climeworks Highlights Corporate Strategies for Long-Term Carbon Removal - TipRanks",
-    "source_domain": "tipranks.com",
-    "publication_date": "2026-05-28T00:58:07+00:00",
-    "fuzzy_key": "carbon,climeworks,corporate,highlights,long,removal,strategies,term,tipranks",
+    "canonical_url": "https://carboncredits.com/eni-and-blackrock-scale-up-europes-ccs-race-with-670-million-hynet-financing-deal",
+    "raw_url": "https://carboncredits.com/eni-and-blackrock-scale-up-europes-ccs-race-with-670-million-hynet-financing-deal/",
+    "headline": "Eni and BlackRock Scale Up Europe's CCS Race With $670 Million HyNet Financing Deal",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-05-28T14:21:51+00:00",
+    "fuzzy_key": "670,blackrock,ccs,deal,eni,europe,financing,hynet,million,race,scale,up",
     "found_via": "google_alerts"
   },
   {
@@ -18,12 +18,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article",
-    "raw_url": "https://www.gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article/",
-    "headline": "Carbon capture could slash cement emissions by 75%, reveals study - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-05-28T07:29:43+00:00",
-    "fuzzy_key": "75,capture,carbon,cement,could,emissions,gasworld,reveals,slash,study",
+    "canonical_url": "https://constructionnews.co.uk/sections/long-reads/features/snaring-emissions-is-carbon-capture-the-new-beacon-of-britains-industrial-future-28-05-2026",
+    "raw_url": "https://www.constructionnews.co.uk/sections/long-reads/features/snaring-emissions-is-carbon-capture-the-new-beacon-of-britains-industrial-future-28-05-2026/",
+    "headline": "Snaring emissions: Is carbon capture the new beacon of Britain's industrial future?",
+    "source_domain": "constructionnews.co.uk",
+    "publication_date": "2026-05-28T14:21:51+00:00",
+    "fuzzy_key": "beacon,britain,capture,carbon,emissions,future,industrial,new,snaring",
     "found_via": "google_alerts"
   },
   {
@@ -36,21 +36,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carboncredits.com/eni-and-blackrock-scale-up-europes-ccs-race-with-670-million-hynet-financing-deal",
-    "raw_url": "https://carboncredits.com/eni-and-blackrock-scale-up-europes-ccs-race-with-670-million-hynet-financing-deal/",
-    "headline": "Eni and BlackRock Scale Up Europe's CCS Race With $670 Million HyNet Financing Deal",
-    "source_domain": "carboncredits.com",
-    "publication_date": "2026-05-28T14:21:51+00:00",
-    "fuzzy_key": "670,blackrock,ccs,deal,eni,europe,financing,hynet,million,race,scale,up",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://constructionnews.co.uk/sections/long-reads/features/snaring-emissions-is-carbon-capture-the-new-beacon-of-britains-industrial-future-28-05-2026",
-    "raw_url": "https://www.constructionnews.co.uk/sections/long-reads/features/snaring-emissions-is-carbon-capture-the-new-beacon-of-britains-industrial-future-28-05-2026/",
-    "headline": "Snaring emissions: Is carbon capture the new beacon of Britain's industrial future?",
-    "source_domain": "constructionnews.co.uk",
-    "publication_date": "2026-05-28T14:21:51+00:00",
-    "fuzzy_key": "beacon,britain,capture,carbon,emissions,future,industrial,new,snaring",
+    "canonical_url": "https://gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article",
+    "raw_url": "https://www.gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article/",
+    "headline": "Carbon capture could slash cement emissions by 75%, reveals study - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-05-28T07:29:43+00:00",
+    "fuzzy_key": "75,capture,carbon,cement,could,emissions,gasworld,reveals,slash,study",
     "found_via": "google_alerts"
   },
   {
@@ -60,6 +51,15 @@
     "source_domain": "pgjonline.com",
     "publication_date": "2026-05-28T14:21:51+00:00",
     "fuzzy_key": "500,ccs,eni,european,expand,gas,journal,million,pipeline,projects,secures",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-corporate-strategies-for-long-term-carbon-removal",
+    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-corporate-strategies-for-long-term-carbon-removal",
+    "headline": "Climeworks Highlights Corporate Strategies for Long-Term Carbon Removal - TipRanks",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-05-28T00:58:07+00:00",
+    "fuzzy_key": "carbon,climeworks,corporate,highlights,long,removal,strategies,term,tipranks",
     "found_via": "google_alerts"
   }
 ]
