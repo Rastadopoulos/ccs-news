@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://chemanalyst.com/NewsAndDeals/NewsDetails/lsb-industries-advances-plan-for-complete-ownership-42471",
+    "raw_url": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/lsb-industries-advances-plan-for-complete-ownership-42471",
+    "headline": "LSB Industries Advances Plan For Complete Ownership of El Dorado CCS project",
+    "source_domain": "chemanalyst.com",
+    "publication_date": "2026-05-28T06:38:31+00:00",
+    "fuzzy_key": "advances,ccs,complete,dorado,el,industries,lsb,ownership,plan,project",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://climeworks.com/blog/the-next-phase-of-carbon-removal-needs-more-buyers",
     "raw_url": "https://climeworks.com/blog/the-next-phase-of-carbon-removal-needs-more-buyers",
     "headline": "The next phase of carbon removal needs more buyers - Climeworks",
@@ -51,6 +60,15 @@
     "source_domain": "gasworld.com",
     "publication_date": "2026-05-27T05:45:32+00:00",
     "fuzzy_key": "california,capture,carbon,co2,first,gasworld,injection,records",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article",
+    "raw_url": "https://www.gasworld.com/story/carbon-capture-could-slash-cement-emissions-by-75-reveals-study/2250548.article/",
+    "headline": "Carbon capture could slash cement emissions by 75%, reveals study - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-05-28T07:29:43+00:00",
+    "fuzzy_key": "75,capture,carbon,cement,could,emissions,gasworld,reveals,slash,study",
     "found_via": "google_alerts"
   },
   {
