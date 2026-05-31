@@ -1,0 +1,11 @@
+# Quiet day — CCS briefing — Mon 01 Jun 2026
+
+Friday-to-Monday wire was unusually thin: no confirmable Tier-1 / Tier-2 CCS items landed inside the 72-hour window (Fri 29 May 07:00 AEST → Mon 01 Jun). Several Australian and European subscriber outlets (Carbon Pulse, Offshore Energy, gasworld, Energy Voice) were unreachable for date verification this morning, so any soft candidates from those sources were dropped. Three notable items from the prior week are flagged below for situational awareness.
+
+## Still on the radar
+
+- Sirona Technologies launches Project Furu DACCS in Øygarden, Norway — Belgian cleantech Sirona, with Norwegian co-developer CCB Energy, unveiled its flagship European DAC-with-storage plant at the EU's first Carbon Removals and Carbon Farming (CRCF) Days in Brussels; targeting up to 10,000 tCO₂/yr by 2029, hydropower-fed, with captured CO₂ aggregated via CCB Energy's "CarbonLink" system and stored at Northern Lights, and credits already eligible for issuance under the EU CRCF framework. (Carbon Herald, 27 May 2026) [link](https://carbonherald.com/sirona-technologies-launches-furu-daccs-project-in-norway/)
+- City of Stockholm signs 750,000-tonne carbon-removal deal with Stockholm Exergi — Stockholm becomes one of the world's five largest permanent-CDR buyers, committing to a 15-year, 50,000 tCO₂/yr offtake from Stockholm Exergi's BECCS unit at the Värtan bio-cogen plant; the SEK 13 bn (~US$1.3 bn) facility, due online 2028, will capture up to 800,000 tCO₂/yr from forestry/sawmill residue combustion for permanent sub-seabed storage. (ESG Today, 27 May 2026) [link](https://www.esgtoday.com/stockholm-becomes-one-of-worlds-largest-carbon-removal-buyers-with-new-750000-tonne-deal/)
+- Vallourec & Syngular Solutions sign BECCS MoU for Brazil's ethanol corridor — French seamless-tube major Vallourec and Brazilian CCUS engineering specialist Syngular Solutions agreed to jointly develop BECCS projects tied to Brazil's ethanol industry, pairing Syngular's geological-storage and integrated-project expertise with Vallourec's industrial supply capability and depleted reservoir / saline-aquifer storage candidates. (Offshore Energy, 27 May 2026) [link](https://www.offshore-energy.biz/french-firm-enters-deal-for-bioenergy-with-ccs-projects-in-brazil/)
+
+— Auto-briefing
