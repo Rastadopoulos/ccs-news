@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://knowledge.energyinst.org/new-energy-world/article?id=150324",
+    "raw_url": "https://knowledge.energyinst.org/new-energy-world/article?id=150324",
+    "headline": "Cement-sector carbon capture moves towards industrial deployment as infrastructure pressures grow",
+    "source_domain": "energyinst.org",
+    "publication_date": "2026-06-02T08:20:59+00:00",
+    "fuzzy_key": "capture,carbon,cement,deployment,grow,industrial,infrastructure,moves,pressures,sector,towards",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://esgnews.com/climeworks-signs-10-year-carbon-removal-deal-with-td-bank",
     "raw_url": "https://esgnews.com/climeworks-signs-10-year-carbon-removal-deal-with-td-bank/",
     "headline": "Climeworks Signs 10-Year Carbon Removal Deal With TD Bank - ESG News",
@@ -51,6 +60,15 @@
     "source_domain": "tipranks.com",
     "publication_date": "2026-06-02T01:32:16+00:00",
     "fuzzy_key": "american,bank,carbon,climeworks,com,deal,highlights,north,removal,td,tipranks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/santos-keeps-ccs-dream-alive-offshore-timor-leste/2-1-1997664",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/santos-keeps-ccs-dream-alive-offshore-timor-leste/2-1-1997664",
+    "headline": "Santos keeps CCS dream alive offshore Timor-Leste - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-02T08:39:42+00:00",
+    "fuzzy_key": "alive,ccs,dream,keeps,leste,offshore,online,santos,timor,upstream",
     "found_via": "google_alerts"
   }
 ]
