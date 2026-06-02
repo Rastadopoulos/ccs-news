@@ -1,11 +1,56 @@
 [
   {
+    "canonical_url": "https://climeworks.com/press-release/climeworks-solutions-signs-10-year-cdr-agreement-with-td-bank",
+    "raw_url": "https://climeworks.com/press-release/climeworks-solutions-signs-10-year-cdr-agreement-with-td-bank",
+    "headline": "Climeworks Solutions signs 10-year carbon removal agreement with TD Bank",
+    "source_domain": "climeworks.com",
+    "publication_date": "2026-06-02T01:32:16+00:00",
+    "fuzzy_key": "10,agreement,bank,carbon,climeworks,removal,signs,solutions,td,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://esgnews.com/climeworks-signs-10-year-carbon-removal-deal-with-td-bank",
+    "raw_url": "https://esgnews.com/climeworks-signs-10-year-carbon-removal-deal-with-td-bank/",
+    "headline": "Climeworks Signs 10-Year Carbon Removal Deal With TD Bank - ESG News",
+    "source_domain": "esgnews.com",
+    "publication_date": "2026-06-02T01:32:16+00:00",
+    "fuzzy_key": "10,bank,carbon,climeworks,deal,esg,news,removal,signs,td,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/uk-environment-agency-supports-drax-carbon-capture-permit-approval/2250986.article",
+    "raw_url": "https://www.gasworld.com/story/uk-environment-agency-supports-drax-carbon-capture-permit-approval/2250986.article/",
+    "headline": "UK Environment Agency supports Drax carbon capture permit approval - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-02T02:28:42+00:00",
+    "fuzzy_key": "agency,approval,capture,carbon,drax,environment,gasworld,permit,supports,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/climeworks_carbonremoval-climateaction-partnership-activity-7467160551396179968-B4c_",
+    "raw_url": "https://www.linkedin.com/posts/climeworks_carbonremoval-climateaction-partnership-activity-7467160551396179968-B4c_",
+    "headline": "#carbonremoval #climateaction #partnership #climeworkssolutions #tdbank | Climeworks - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-06-02T02:15:11+00:00",
+    "fuzzy_key": "carbonremoval,climateaction,climeworks,climeworkssolutions,linkedin,partnership,tdbank",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://careers.rina.org/job/Kuala-Lumpur-Engineering-Manager-CCS-Malaysia/1353941555",
     "raw_url": "https://careers.rina.org/job/Kuala-Lumpur-Engineering-Manager-CCS-Malaysia/1353941555/",
     "headline": "Engineering Manager CCS - Malaysia Job Details - RINA careers",
     "source_domain": "rina.org",
     "publication_date": "2026-06-01T02:51:35+00:00",
     "fuzzy_key": "careers,ccs,details,engineering,job,malaysia,manager,rina",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-north-american-carbon-removal-deal-with-td-bank",
+    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-north-american-carbon-removal-deal-with-td-bank",
+    "headline": "Climeworks Highlights North American Carbon Removal Deal With TD Bank - TipRanks.com",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-06-02T01:32:16+00:00",
+    "fuzzy_key": "american,bank,carbon,climeworks,com,deal,highlights,north,removal,td,tipranks",
     "found_via": "google_alerts"
   }
 ]
