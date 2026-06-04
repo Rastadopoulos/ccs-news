@@ -1,20 +1,11 @@
 [
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
-    "headline": "MISC and K Line score second newbuild for Northern Lights CCS - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-06-04T00:23:15+00:00",
-    "fuzzy_key": "ccs,lights,line,misc,newbuild,northern,online,score,second,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
-    "raw_url": "https://www.upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
-    "headline": "Shell potentially selling off stake in Australian carbon credits developer - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-06-04T00:23:15+00:00",
-    "fuzzy_key": "australian,carbon,credits,developer,off,online,potentially,selling,shell,stake,upstream",
+    "canonical_url": "https://carbon-pulse.com/518263",
+    "raw_url": "https://carbon-pulse.com/518263/",
+    "headline": "Canadian DAC developer inks deal with financial major for 18k credits - Carbon Pulse",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-06-04T13:21:12+00:00",
+    "fuzzy_key": "18k,canadian,carbon,credits,dac,deal,developer,financial,inks,major,pulse",
     "found_via": "google_alerts"
   },
   {
@@ -27,30 +18,21 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://thestar.com.my/business/business-news/2026/06/04/kelington-expands-collaboration-with-petronas-ccs-solutions",
+    "raw_url": "https://www.thestar.com.my/business/business-news/2026/06/04/kelington-expands-collaboration-with-petronas-ccs-solutions",
+    "headline": "Kelington expands collaboration with PETRONAS CCS Solutions | The Star",
+    "source_domain": "com.my",
+    "publication_date": "2026-06-04T20:58:56+00:00",
+    "fuzzy_key": "ccs,collaboration,expands,kelington,petronas,solutions,star",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://businesstoday.com.my/2026/06/03/misc-wins-second-lco₂-carrier-contract-for-europe-ccs-project",
     "raw_url": "https://www.businesstoday.com.my/2026/06/03/misc-wins-second-lco₂-carrier-contract-for-europe-ccs-project/",
     "headline": "MISC Wins Second LCO₂ Carrier Contract For Europe CCS Project",
     "source_domain": "com.my",
     "publication_date": "2026-06-04T02:18:28+00:00",
     "fuzzy_key": "carrier,ccs,contract,europe,lco,misc,project,second,wins",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://marinelink.com/news/carbon-ridges-onboard-carbon-capture-539920",
-    "raw_url": "https://www.marinelink.com/news/carbon-ridges-onboard-carbon-capture-539920",
-    "headline": "Carbon Ridge's Onboard Carbon Capture System Approved by DNV - Marine Link",
-    "source_domain": "marinelink.com",
-    "publication_date": "2026-06-04T02:18:28+00:00",
-    "fuzzy_key": "approved,capture,carbon,dnv,link,marine,onboard,ridge,system",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://au.jooble.org/jdp/-8945883937119982233",
-    "raw_url": "https://au.jooble.org/jdp/-8945883937119982233",
-    "headline": "CCS Project Integration Manager at Inpex Corporation – Perth – Apply Now! - Jooble",
-    "source_domain": "jooble.org",
-    "publication_date": "2026-06-04T12:20:18+00:00",
-    "fuzzy_key": "apply,ccs,corporation,inpex,integration,jooble,manager,now,perth,project",
     "found_via": "google_alerts"
   },
   {
@@ -63,12 +45,48 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://sg.finance.yahoo.com/news/deep-sky-announces-direct-air-100000064.html",
-    "raw_url": "https://sg.finance.yahoo.com/news/deep-sky-announces-direct-air-100000064.html",
-    "headline": "Deep Sky Announces Direct Air Capture Carbon Removal Agreement with TD Bank Group ...",
-    "source_domain": "yahoo.com",
+    "canonical_url": "https://gasworld.com/story/skytree-to-deploy-direct-air-capture-system-for-dutch-greenhouse-co2-supply/2251367.article",
+    "raw_url": "https://www.gasworld.com/story/skytree-to-deploy-direct-air-capture-system-for-dutch-greenhouse-co2-supply/2251367.article/",
+    "headline": "Skytree to deploy direct air capture system for Dutch greenhouse CO2 supply - gasworld",
+    "source_domain": "gasworld.com",
     "publication_date": "2026-06-04T13:21:12+00:00",
-    "fuzzy_key": "agreement,air,announces,bank,capture,carbon,deep,direct,group,removal,sky,td",
+    "fuzzy_key": "air,capture,co2,deploy,direct,dutch,gasworld,greenhouse,skytree,supply,system",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://au.jooble.org/jdp/-8945883937119982233",
+    "raw_url": "https://au.jooble.org/jdp/-8945883937119982233",
+    "headline": "CCS Project Integration Manager at Inpex Corporation – Perth – Apply Now! - Jooble",
+    "source_domain": "jooble.org",
+    "publication_date": "2026-06-04T12:20:18+00:00",
+    "fuzzy_key": "apply,ccs,corporation,inpex,integration,jooble,manager,now,perth,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://luminews.my/news/4343534",
+    "raw_url": "https://luminews.my/news/4343534",
+    "headline": "Kelington expands Petronas CCS partnership to study satellite CO₂ terminals - Lumi News Malaysia",
+    "source_domain": "luminews.my",
+    "publication_date": "2026-06-04T20:58:56+00:00",
+    "fuzzy_key": "ccs,co,expands,kelington,lumi,malaysia,news,partnership,petronas,satellite,study,terminals",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://marinelink.com/news/carbon-ridges-onboard-carbon-capture-539920",
+    "raw_url": "https://www.marinelink.com/news/carbon-ridges-onboard-carbon-capture-539920",
+    "headline": "Carbon Ridge's Onboard Carbon Capture System Approved by DNV - Marine Link",
+    "source_domain": "marinelink.com",
+    "publication_date": "2026-06-04T02:18:28+00:00",
+    "fuzzy_key": "approved,capture,carbon,dnv,link,marine,onboard,ridge,system",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ogci.com/news/ogci-publishes-new-report-exploring-carbon-accounting-and-reporting-for-carbon-capture-and-storage-ccs-and-engineered-carbon-removals-ecr",
+    "raw_url": "https://www.ogci.com/news/ogci-publishes-new-report-exploring-carbon-accounting-and-reporting-for-carbon-capture-and-storage-ccs-and-engineered-carbon-removals-ecr/",
+    "headline": "OGCI report on carbon accounting for CCS and ECR",
+    "source_domain": "ogci.com",
+    "publication_date": "2026-06-04T18:52:26+00:00",
+    "fuzzy_key": "accounting,carbon,ccs,ecr,ogci,report",
     "found_via": "google_alerts"
   },
   {
@@ -81,21 +99,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbon-pulse.com/518263",
-    "raw_url": "https://carbon-pulse.com/518263/",
-    "headline": "Canadian DAC developer inks deal with financial major for 18k credits - Carbon Pulse",
-    "source_domain": "carbon-pulse.com",
-    "publication_date": "2026-06-04T13:21:12+00:00",
-    "fuzzy_key": "18k,canadian,carbon,credits,dac,deal,developer,financial,inks,major,pulse",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://gasworld.com/story/skytree-to-deploy-direct-air-capture-system-for-dutch-greenhouse-co2-supply/2251367.article",
-    "raw_url": "https://www.gasworld.com/story/skytree-to-deploy-direct-air-capture-system-for-dutch-greenhouse-co2-supply/2251367.article/",
-    "headline": "Skytree to deploy direct air capture system for Dutch greenhouse CO2 supply - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-06-04T13:21:12+00:00",
-    "fuzzy_key": "air,capture,co2,deploy,direct,dutch,gasworld,greenhouse,skytree,supply,system",
+    "canonical_url": "https://upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
+    "headline": "MISC and K Line score second newbuild for Northern Lights CCS - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-04T00:23:15+00:00",
+    "fuzzy_key": "ccs,lights,line,misc,newbuild,northern,online,score,second,upstream",
     "found_via": "google_alerts"
   },
   {
@@ -105,6 +114,33 @@
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-06-04T13:36:02+00:00",
     "fuzzy_key": "alive,ccs,dream,keeps,leste,offshore,online,santos,timor,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
+    "raw_url": "https://www.upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
+    "headline": "Shell potentially selling off stake in Australian carbon credits developer - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-04T00:23:15+00:00",
+    "fuzzy_key": "australian,carbon,credits,developer,off,online,potentially,selling,shell,stake,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://finance.yahoo.com/markets/stocks/articles/amphenol-deepens-ai-data-center-110948440.html",
+    "raw_url": "https://finance.yahoo.com/markets/stocks/articles/amphenol-deepens-ai-data-center-110948440.html",
+    "headline": "Amphenol Deepens AI Data Center Role With CommScope CCS Acquisition",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-06-04T19:22:53+00:00",
+    "fuzzy_key": "acquisition,ai,amphenol,ccs,center,commscope,data,deepens,role",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://sg.finance.yahoo.com/news/deep-sky-announces-direct-air-100000064.html",
+    "raw_url": "https://sg.finance.yahoo.com/news/deep-sky-announces-direct-air-100000064.html",
+    "headline": "Deep Sky Announces Direct Air Capture Carbon Removal Agreement with TD Bank Group ...",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-06-04T13:21:12+00:00",
+    "fuzzy_key": "agreement,air,announces,bank,capture,carbon,deep,direct,group,removal,sky,td",
     "found_via": "google_alerts"
   }
 ]
