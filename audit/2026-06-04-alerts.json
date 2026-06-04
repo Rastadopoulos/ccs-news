@@ -36,6 +36,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://cleanthesky.com/innovation/10-year-carbon-removal",
+    "raw_url": "https://www.cleanthesky.com/innovation/10-year-carbon-removal",
+    "headline": "Carbon Removal Portfolios - Clean the Sky",
+    "source_domain": "cleanthesky.com",
+    "publication_date": "2026-06-04T01:25:32+00:00",
+    "fuzzy_key": "carbon,clean,portfolios,removal,sky",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energydigital.com/news/deep-sky-lufthansas-carbon-removal-credit-partnership",
     "raw_url": "https://energydigital.com/news/deep-sky-lufthansas-carbon-removal-credit-partnership",
     "headline": "Behind Deep Sky & Lufthansa's New Carbon Removal Strategy | Energy Digital",
@@ -87,6 +96,24 @@
     "source_domain": "sifars.com",
     "publication_date": "2026-06-03T00:47:18+00:00",
     "fuzzy_key": "capture,carbon,clean,climeworks,innovation,sifars,tech",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/misc-and-k-line-score-second-newbuild-for-northern-lights-ccs/2-1-1998588",
+    "headline": "MISC and K Line score second newbuild for Northern Lights CCS - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-04T00:23:15+00:00",
+    "fuzzy_key": "ccs,lights,line,misc,newbuild,northern,online,score,second,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
+    "raw_url": "https://www.upstreamonline.com/environment/shell-potentially-selling-off-stake-in-australian-carbon-credits-developer/2-1-1998627",
+    "headline": "Shell potentially selling off stake in Australian carbon credits developer - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-04T00:23:15+00:00",
+    "fuzzy_key": "australian,carbon,credits,developer,off,online,potentially,selling,shell,stake,upstream",
     "found_via": "google_alerts"
   }
 ]
