@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://activesense.uk/work/project-acorn",
+    "raw_url": "https://activesense.uk/work/project-acorn",
+    "headline": "Acorn CCS — North Sea Carbon Capture GIS Platform - ActiveSense",
+    "source_domain": "activesense.uk",
+    "publication_date": "2026-06-06T03:53:30+00:00",
+    "fuzzy_key": "acorn,activesense,capture,carbon,ccs,gis,north,platform,sea",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://bioenergy-news.com/news/uk-agency-backs-permit-change-for-drax-carbon-capture-project",
     "raw_url": "https://www.bioenergy-news.com/news/uk-agency-backs-permit-change-for-drax-carbon-capture-project/",
     "headline": "UK agency backs permit change for Drax carbon capture project - Bioenergy Insight",
@@ -51,6 +60,15 @@
     "source_domain": "chemanalyst.com",
     "publication_date": "2026-06-05T03:47:40+00:00",
     "fuzzy_key": "based,biomass,carbon,credits,expand,graphyte,joint,launch,removal,sumitomo,venture",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://climateaction.org/news/uks-first-full-scale-energy-from-waste-carbon-capture-plant-a-blueprint-wor",
+    "raw_url": "https://www.climateaction.org/news/uks-first-full-scale-energy-from-waste-carbon-capture-plant-a-blueprint-wor",
+    "headline": "UK's First Full-Scale Energy-from-Waste Carbon Capture Plant: A Blueprint Worth Watching",
+    "source_domain": "climateaction.org",
+    "publication_date": "2026-06-06T05:48:53+00:00",
+    "fuzzy_key": "blueprint,capture,carbon,energy,first,full,plant,scale,uk,waste,watching,worth",
     "found_via": "google_alerts"
   },
   {
@@ -186,6 +204,15 @@
     "source_domain": "worldoil.com",
     "publication_date": "2026-06-05T05:35:34+00:00",
     "fuzzy_key": "accelerate,applications,approvals,ccs,class,oil,permit,slow,vi,well,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/SEAEnergyNews/status/2062798353893888367",
+    "raw_url": "https://x.com/SEAEnergyNews/status/2062798353893888367",
+    "headline": "Kelington expands Petronas CCS partnership to study satellite CO₂ terminals",
+    "source_domain": "x.com",
+    "publication_date": "2026-06-06T04:54:30+00:00",
+    "fuzzy_key": "ccs,co,expands,kelington,partnership,petronas,satellite,study,terminals",
     "found_via": "google_alerts"
   },
   {
