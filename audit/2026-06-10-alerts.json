@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://businessnewswales.com/lti-vessco-secures-4-5m-carbon-capture-vessel-contract-from-mitsubishi-heavy-industries",
+    "raw_url": "https://businessnewswales.com/lti-vessco-secures-4-5m-carbon-capture-vessel-contract-from-mitsubishi-heavy-industries/",
+    "headline": "LTi Vessco Secures £4.5m Carbon Capture Vessel Contract From Mitsubishi Heavy Industries",
+    "source_domain": "businessnewswales.com",
+    "publication_date": "2026-06-10T05:48:11+00:00",
+    "fuzzy_key": "5m,capture,carbon,contract,heavy,industries,lti,mitsubishi,secures,vessco,vessel",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://cleanthesky.com/innovation/td-bank-group",
     "raw_url": "https://www.cleanthesky.com/innovation/td-bank-group",
     "headline": "Direct Air Capture Partnerships - Clean the Sky",
@@ -54,12 +63,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://maritime-executive.com/corporate/dnv-onboard-ccs-system-reaches-98-carbon-capture-rate",
+    "raw_url": "https://maritime-executive.com/corporate/dnv-onboard-ccs-system-reaches-98-carbon-capture-rate",
+    "headline": "DNV: Onboard CCS System Reaches 98% Carbon Capture Rate - The Maritime Executive",
+    "source_domain": "maritime-executive.com",
+    "publication_date": "2026-06-10T05:13:00+00:00",
+    "fuzzy_key": "98,capture,carbon,ccs,dnv,executive,maritime,onboard,rate,reaches,system",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://msn.com/en-us/news/technology/lsb-industries-establishes-pathway-to-full-ownership-of-el-dorado-ccs-project/ar-AA23yvv9?apiversion=v2&batchservertelemetry=1&domshim=1&noservercache=1&noservertelemetry=1&renderwebcomponents=1&uxmode=ruby&wcseo=1",
     "raw_url": "https://www.msn.com/en-us/news/technology/lsb-industries-establishes-pathway-to-full-ownership-of-el-dorado-ccs-project/ar-AA23yvv9?uxmode=ruby&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
     "headline": "LSB Industries establishes pathway to full ownership of El Dorado CCS project - MSN",
     "source_domain": "msn.com",
     "publication_date": "2026-06-09T17:17:59+00:00",
     "fuzzy_key": "ccs,dorado,el,establishes,full,industries,lsb,msn,ownership,pathway,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oceannews.com/news/energy/morecambe-net-zero-peak-cluster-ccs-project-reaches-milestone",
+    "raw_url": "https://oceannews.com/news/energy/morecambe-net-zero-peak-cluster-ccs-project-reaches-milestone/",
+    "headline": "Morecambe Net Zero Peak Cluster CCS Project Reaches Milestone",
+    "source_domain": "oceannews.com",
+    "publication_date": "2026-06-10T04:34:09+00:00",
+    "fuzzy_key": "ccs,cluster,milestone,morecambe,net,peak,project,reaches,zero",
     "found_via": "google_alerts"
   },
   {
