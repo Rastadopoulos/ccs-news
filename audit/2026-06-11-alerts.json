@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://alcircle.com/news/canadian-research-council-teams-up-with-anortech-to-develop-alumina-based-carbon-capture-technology-119818",
+    "raw_url": "https://www.alcircle.com/news/canadian-research-council-teams-up-with-anortech-to-develop-alumina-based-carbon-capture-technology-119818",
+    "headline": "Canadian Research Council teams up with AnorTech to develop alumina-based carbon ...",
+    "source_domain": "alcircle.com",
+    "publication_date": "2026-06-10T22:31:50+00:00",
+    "fuzzy_key": "alumina,anortech,based,canadian,carbon,council,develop,research,teams,up",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://businessnewswales.com/lti-vessco-secures-4-5m-carbon-capture-vessel-contract-from-mitsubishi-heavy-industries",
     "raw_url": "https://businessnewswales.com/lti-vessco-secures-4-5m-carbon-capture-vessel-contract-from-mitsubishi-heavy-industries/",
     "headline": "LTi Vessco Secures £4.5m Carbon Capture Vessel Contract From Mitsubishi Heavy Industries",
@@ -24,6 +33,15 @@
     "source_domain": "esgdive.com",
     "publication_date": "2026-06-10T13:29:06+00:00",
     "fuzzy_key": "10,bank,carbon,deal,deep,dive,esg,inks,removal,sky,td,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://investegate.co.uk/announcement/eqs/lafargeholcim-ltd--0qky/holcim-launches-industry-s-first-carbon-captu-/9610304",
+    "raw_url": "https://www.investegate.co.uk/announcement/eqs/lafargeholcim-ltd--0qky/holcim-launches-industry-s-first-carbon-captu-/9610304",
+    "headline": "Holcim launches industry's first carbon capture test platform to validate advanced technologies",
+    "source_domain": "investegate.co.uk",
+    "publication_date": "2026-06-10T22:31:50+00:00",
+    "fuzzy_key": "advanced,capture,carbon,first,holcim,industry,launches,platform,technologies,test,validate",
     "found_via": "google_alerts"
   },
   {
@@ -54,6 +72,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://morningstar.com/news/dow-jones/202606096020/canada-carbon-capture-project-essential-for-oil-sectors-growth-energy-minister-says",
+    "raw_url": "https://www.morningstar.com/news/dow-jones/202606096020/canada-carbon-capture-project-essential-for-oil-sectors-growth-energy-minister-says",
+    "headline": "Canada Carbon-Capture Project Essential for Oil Sector's Growth, Energy Minister Says",
+    "source_domain": "morningstar.com",
+    "publication_date": "2026-06-10T22:31:50+00:00",
+    "fuzzy_key": "canada,capture,carbon,energy,essential,growth,minister,oil,project,says,sector",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://oceannews.com/news/energy/morecambe-net-zero-peak-cluster-ccs-project-reaches-milestone",
     "raw_url": "https://oceannews.com/news/energy/morecambe-net-zero-peak-cluster-ccs-project-reaches-milestone/",
     "headline": "Morecambe Net Zero Peak Cluster CCS Project Reaches Milestone",
@@ -69,6 +96,15 @@
     "source_domain": "substack.com",
     "publication_date": "2026-06-10T15:44:47+00:00",
     "fuzzy_key": "about,ccs,doubts,norway,pilot,project,raises,sustainability",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/Climeworks/status/2064624263454130384",
+    "raw_url": "https://x.com/Climeworks/status/2064624263454130384",
+    "headline": "We're back from Toronto Climate Week with a clear takeaway: #carbonremoval scales when ...",
+    "source_domain": "x.com",
+    "publication_date": "2026-06-10T22:36:14+00:00",
+    "fuzzy_key": "back,carbonremoval,clear,climate,re,scales,takeaway,toronto,week,when",
     "found_via": "google_alerts"
   }
 ]
