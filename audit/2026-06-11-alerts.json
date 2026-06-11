@@ -45,12 +45,39 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://esdnews.com.au/event/carbon-capture-apac-summit-2026",
+    "raw_url": "https://esdnews.com.au/event/carbon-capture-apac-summit-2026/",
+    "headline": "Carbon Capture APAC Summit 2026 - Energy Source & Distribution",
+    "source_domain": "esdnews.com.au",
+    "publication_date": "2026-06-11T06:29:41+00:00",
+    "fuzzy_key": "2026,apac,capture,carbon,distribution,energy,source,summit",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://esgdive.com/news/td-bank-inks-10-year-carbon-removal-deal-with-deep-sky/822390",
     "raw_url": "https://www.esgdive.com/news/td-bank-inks-10-year-carbon-removal-deal-with-deep-sky/822390/",
     "headline": "TD Bank inks 10-year carbon removal deal with Deep Sky | ESG Dive",
     "source_domain": "esgdive.com",
     "publication_date": "2026-06-10T13:29:06+00:00",
     "fuzzy_key": "10,bank,carbon,deal,deep,dive,esg,inks,removal,sky,td,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://eurekalert.org/news-releases/1131598",
+    "raw_url": "https://www.eurekalert.org/news-releases/1131598",
+    "headline": "Turning food waste into carbon captors | EurekAlert!",
+    "source_domain": "eurekalert.org",
+    "publication_date": "2026-06-11T06:33:52+00:00",
+    "fuzzy_key": "captors,carbon,eurekalert,food,into,turning,waste",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://hellenicshippingnews.com/ics-publish-onboard-carbon-capture-and-storage-review-report",
+    "raw_url": "https://www.hellenicshippingnews.com/ics-publish-onboard-carbon-capture-and-storage-review-report/",
+    "headline": "ICS publish Onboard Carbon Capture and Storage Review Report",
+    "source_domain": "hellenicshippingnews.com",
+    "publication_date": "2026-06-11T04:10:12+00:00",
+    "fuzzy_key": "capture,carbon,ics,onboard,publish,report,review,storage",
     "found_via": "google_alerts"
   },
   {
@@ -78,6 +105,15 @@
     "source_domain": "linkedin.com",
     "publication_date": "2026-06-10T11:22:49+00:00",
     "fuzzy_key": "canada,carbonremoval,climeworks,event,linkedin,netzero,post",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://denr.louisiana.gov/assets/OC/ClassVI/ApplicantInformation/FormUIC-60_JUNE2026.pdf",
+    "raw_url": "https://www.denr.louisiana.gov/assets/OC/ClassVI/ApplicantInformation/FormUIC-60_JUNE2026.pdf",
+    "headline": "CLASS VI WELL PERMIT APPLICATION UIC-60 CCS",
+    "source_domain": "louisiana.gov",
+    "publication_date": "2026-06-11T05:35:55+00:00",
+    "fuzzy_key": "60,application,ccs,class,permit,uic,vi,well",
     "found_via": "google_alerts"
   },
   {
