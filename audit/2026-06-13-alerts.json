@@ -1,0 +1,38 @@
+[
+  {
+    "canonical_url": "https://trybooking.com/events/landing/1601094",
+    "raw_url": "https://www.trybooking.com/events/landing/1601094",
+    "headline": "CCS Field Trip to the Otway International Test Centre",
+    "source_domain": "trybooking.com",
+    "publication_date": "2026-06-12T01:54:00+00:00",
+    "fuzzy_key": "ccs,centre,field,international,otway,test,trip",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/thyssenkrupp-linked-firms-heirloom-partner-to-scale-dac-66710.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/thyssenkrupp-linked-firms-heirloom-partner-to-scale-dac-66710.html",
+    "headline": "Thyssenkrupp-linked firms, Heirloom partner to scale DAC",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-06-12T02:29:49+00:00",
+    "fuzzy_key": "dac,firms,heirloom,linked,partner,scale,thyssenkrupp",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://cemnet.com/News/story/181506/thyssenkrupp-calvion-and-partners-launch-large-scale-carbon-removal-initiative.html",
+    "raw_url": "https://www.cemnet.com/News/story/181506/thyssenkrupp-calvion-and-partners-launch-large-scale-carbon-removal-initiative.html",
+    "headline": "Thyssenkrupp Calvion and partners launch large-scale Carbon removal initiative",
+    "source_domain": "cemnet.com",
+    "publication_date": "2026-06-12T08:31:30+00:00",
+    "fuzzy_key": "calvion,carbon,initiative,large,launch,partners,removal,scale,thyssenkrupp",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/heirloom-tkms-and-thyssenkrupp-calvion-partner-on-large-scale-dac-in-canada",
+    "raw_url": "https://carbonherald.com/heirloom-tkms-and-thyssenkrupp-calvion-partner-on-large-scale-dac-in-canada/",
+    "headline": "Heirloom, TKMS And Thyssenkrupp Calvion Partner On Large Scale DAC In Canada",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-06-12T12:30:54+00:00",
+    "fuzzy_key": "calvion,canada,dac,heirloom,large,partner,scale,thyssenkrupp,tkms",
+    "found_via": "google_alerts"
+  }
+]
