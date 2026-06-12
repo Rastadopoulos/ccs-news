@@ -135,6 +135,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://qcintel.com/carbon/article/thyssenkrupp-linked-firms-heirloom-partner-to-scale-dac-66710.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/thyssenkrupp-linked-firms-heirloom-partner-to-scale-dac-66710.html",
+    "headline": "Thyssenkrupp-linked firms, Heirloom partner to scale DAC",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-06-12T02:29:49+00:00",
+    "fuzzy_key": "dac,firms,heirloom,linked,partner,scale,thyssenkrupp",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://serrarigroup.com/denmark-awards-2-6bn-ccs-funding-to-aalborg-portland",
     "raw_url": "https://serrarigroup.com/denmark-awards-2-6bn-ccs-funding-to-aalborg-portland/",
     "headline": "Denmark Awards $2.6bn CCS Funding to Aalborg Portland - Serrari Group",
@@ -159,6 +168,15 @@
     "source_domain": "tkmsgroup.com",
     "publication_date": "2026-06-11T14:25:27+00:00",
     "fuzzy_key": "calvion,carbon,explore,heirloom,technologies,thyssenkrupp,tkms",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://trybooking.com/events/landing/1601094",
+    "raw_url": "https://www.trybooking.com/events/landing/1601094",
+    "headline": "CCS Field Trip to the Otway International Test Centre",
+    "source_domain": "trybooking.com",
+    "publication_date": "2026-06-12T01:54:00+00:00",
+    "fuzzy_key": "ccs,centre,field,international,otway,test,trip",
     "found_via": "google_alerts"
   },
   {
