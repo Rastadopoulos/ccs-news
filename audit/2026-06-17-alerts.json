@@ -9,30 +9,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://woodmac.com/reports/energy-markets-inside-moomba-ccs-a-first-field-report-150479259",
-    "raw_url": "https://www.woodmac.com/reports/energy-markets-inside-moomba-ccs-a-first-field-report-150479259",
-    "headline": "Inside Moomba CCS: a first field report - Wood Mackenzie",
-    "source_domain": "woodmac.com",
-    "publication_date": "2026-06-16T02:24:46+00:00",
-    "fuzzy_key": "ccs,field,first,inside,mackenzie,moomba,report,wood",
+    "canonical_url": "https://gasworld.com/story/e-on-evaluates-carbon-capture-tech-for-swedish-biomass-operations/2252208.article",
+    "raw_url": "https://www.gasworld.com/story/e-on-evaluates-carbon-capture-tech-for-swedish-biomass-operations/2252208.article/",
+    "headline": "E.ON evaluates carbon capture tech for Swedish biomass operations - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-16T16:59:16+00:00",
+    "fuzzy_key": "biomass,capture,carbon,evaluates,gasworld,operations,swedish,tech",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/full-steam-ahead-at-malaysian-offshore-ccs-project/2-1-2003884",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/full-steam-ahead-at-malaysian-offshore-ccs-project/2-1-2003884",
-    "headline": "Full steam ahead at Malaysian offshore CCS project - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-06-16T04:30:26+00:00",
-    "fuzzy_key": "ahead,ccs,full,malaysian,offshore,online,project,steam,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://marinelink.com/news/europe-needs-ship-co-fleet-support-ccs-540349",
-    "raw_url": "https://www.marinelink.com/news/europe-needs-ship-co-fleet-support-ccs-540349",
-    "headline": "Europe Needs 65-Ship CO2 Fleet By 2050 To Support CCS - Marine Link",
-    "source_domain": "marinelink.com",
-    "publication_date": "2026-06-16T13:24:25+00:00",
-    "fuzzy_key": "2050,65,ccs,co2,europe,fleet,link,marine,needs,ship,support",
+    "canonical_url": "https://gasworld.com/story/up-catalyst-unveils-finland-graphite-production-plans/2252216.article",
+    "raw_url": "https://www.gasworld.com/story/up-catalyst-unveils-finland-graphite-production-plans/2252216.article/",
+    "headline": "UP Catalyst unveils Finland graphite production plans | Carbon Capture - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-16T13:27:07+00:00",
+    "fuzzy_key": "capture,carbon,catalyst,finland,gasworld,graphite,plans,production,unveils,up",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +36,66 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://gasworld.com/story/up-catalyst-unveils-finland-graphite-production-plans/2252216.article",
-    "raw_url": "https://www.gasworld.com/story/up-catalyst-unveils-finland-graphite-production-plans/2252216.article/",
-    "headline": "UP Catalyst unveils Finland graphite production plans | Carbon Capture - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-06-16T13:27:07+00:00",
-    "fuzzy_key": "capture,carbon,catalyst,finland,gasworld,graphite,plans,production,unveils,up",
+    "canonical_url": "https://investegate.co.uk/announcement/rns/synergia-energy-ltd-npv--syn/camelot-ccs-and-cambay-psc-update/9621168",
+    "raw_url": "https://www.investegate.co.uk/announcement/rns/synergia-energy-ltd-npv--syn/camelot-ccs-and-cambay-psc-update/9621168",
+    "headline": "Camelot CCS and Cambay PSC Update | Company Announcement - Investegate",
+    "source_domain": "investegate.co.uk",
+    "publication_date": "2026-06-16T17:49:50+00:00",
+    "fuzzy_key": "announcement,cambay,camelot,ccs,company,investegate,psc,update",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://marinelink.com/news/europe-needs-ship-co-fleet-support-ccs-540349",
+    "raw_url": "https://www.marinelink.com/news/europe-needs-ship-co-fleet-support-ccs-540349",
+    "headline": "Europe Needs 65-Ship CO2 Fleet By 2050 To Support CCS - Marine Link",
+    "source_domain": "marinelink.com",
+    "publication_date": "2026-06-16T13:24:25+00:00",
+    "fuzzy_key": "2050,65,ccs,co2,europe,fleet,link,marine,needs,ship,support",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oceannews.com/news/energy/xodus-report-shares-extent-of-needed-infrastructure-for-successful-offshore-carbon-capture-utilization-and-storage",
+    "raw_url": "https://oceannews.com/news/energy/xodus-report-shares-extent-of-needed-infrastructure-for-successful-offshore-carbon-capture-utilization-and-storage/",
+    "headline": "Xodus Report Shares Extent Of Needed Infrastructure For Successful Offshore Carbon ...",
+    "source_domain": "oceannews.com",
+    "publication_date": "2026-06-16T20:35:09+00:00",
+    "fuzzy_key": "carbon,extent,infrastructure,needed,offshore,report,shares,successful,xodus",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://rivieramm.com/news-content-hub/carbon-capture-forecast-claims-65-co2-ships-and-33-ports-required-to-meet-2050-targets-89102",
+    "raw_url": "https://www.rivieramm.com/news-content-hub/carbon-capture-forecast-claims-65-co2-ships-and-33-ports-required-to-meet-2050-targets-89102",
+    "headline": "Carbon capture: forecast claims 65 CO2 ships and 33 ports required to meet 2050 targets",
+    "source_domain": "rivieramm.com",
+    "publication_date": "2026-06-16T16:45:08+00:00",
+    "fuzzy_key": "2050,33,65,capture,carbon,claims,co2,forecast,meet,ports,required,ships,targets",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/carbon-transport-infrastructure-is-missing-link-in-scaling-europe-s-ccs-says-new-report/2-1-2004874",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/carbon-transport-infrastructure-is-missing-link-in-scaling-europe-s-ccs-says-new-report/2-1-2004874",
+    "headline": "Carbon transport infrastructure is missing link in scaling Europe's CCS, says new report",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-16T15:47:06+00:00",
+    "fuzzy_key": "carbon,ccs,europe,infrastructure,link,missing,new,report,says,scaling,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/full-steam-ahead-at-malaysian-offshore-ccs-project/2-1-2003884",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/full-steam-ahead-at-malaysian-offshore-ccs-project/2-1-2003884",
+    "headline": "Full steam ahead at Malaysian offshore CCS project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-16T04:30:26+00:00",
+    "fuzzy_key": "ahead,ccs,full,malaysian,offshore,online,project,steam,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://woodmac.com/reports/energy-markets-inside-moomba-ccs-a-first-field-report-150479259",
+    "raw_url": "https://www.woodmac.com/reports/energy-markets-inside-moomba-ccs-a-first-field-report-150479259",
+    "headline": "Inside Moomba CCS: a first field report - Wood Mackenzie",
+    "source_domain": "woodmac.com",
+    "publication_date": "2026-06-16T02:24:46+00:00",
+    "fuzzy_key": "ccs,field,first,inside,mackenzie,moomba,report,wood",
     "found_via": "google_alerts"
   }
 ]
