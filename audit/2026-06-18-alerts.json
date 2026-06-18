@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://cryptobriefing.com/anthropic-frontier-carbon-removal-coalition",
+    "raw_url": "https://cryptobriefing.com/anthropic-frontier-carbon-removal-coalition/",
+    "headline": "Anthropic joins Big Tech coalition funding carbon removal by $915M - Crypto Briefing",
+    "source_domain": "cryptobriefing.com",
+    "publication_date": "2026-06-18T02:59:33+00:00",
+    "fuzzy_key": "915m,anthropic,big,briefing,carbon,coalition,crypto,funding,joins,removal,tech",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://decarbonfuse.com/posts/alberta-dac-hub-takes-shape-as-heirloom-tkms-and-thyssenkrupp-calvion-sign-mous",
     "raw_url": "https://decarbonfuse.com/posts/alberta-dac-hub-takes-shape-as-heirloom-tkms-and-thyssenkrupp-calvion-sign-mous",
     "headline": "Alberta DAC Hub Takes Shape as Heirloom, TKMS, and thyssenkrupp Calvion Sign MOUs",
@@ -51,6 +60,33 @@
     "source_domain": "hydrogeninsight.com",
     "publication_date": "2026-06-17T23:19:18+00:00",
     "fuzzy_key": "amid,call,capture,carbon,check,delays,ets,giants,green,hydrogen,reality,steel",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://kucoin.com/news/flash/frontier-coalition-raises-915m-for-carbon-removal-adds-anthropic",
+    "raw_url": "https://www.kucoin.com/news/flash/frontier-coalition-raises-915m-for-carbon-removal-adds-anthropic",
+    "headline": "Frontier Coalition Raises $915M for Carbon Removal, Adds Anthropic | KuCoin",
+    "source_domain": "kucoin.com",
+    "publication_date": "2026-06-18T02:59:33+00:00",
+    "fuzzy_key": "915m,adds,anthropic,carbon,coalition,frontier,kucoin,raises,removal",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://mezha.net/eng/bukvy/0c4831d8_frontier_coalition_secures",
+    "raw_url": "https://mezha.net/eng/bukvy/0c4831d8_frontier_coalition_secures/",
+    "headline": "Frontier coalition secures $915 million and adds Anthropic to scale carbon removal",
+    "source_domain": "mezha.net",
+    "publication_date": "2026-06-18T02:59:33+00:00",
+    "fuzzy_key": "915,adds,anthropic,carbon,coalition,frontier,million,removal,scale,secures",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://reuters.com/sustainability/cop/big-tech-backed-coalition-carbon-removal-increases-funding-by-915-million-adds-2026-06-17",
+    "raw_url": "https://www.reuters.com/sustainability/cop/big-tech-backed-coalition-carbon-removal-increases-funding-by-915-million-adds-2026-06-17/",
+    "headline": "Big Tech-backed coalition for carbon removal increases funding by $915 million, adds Anthropic",
+    "source_domain": "reuters.com",
+    "publication_date": "2026-06-18T02:59:33+00:00",
+    "fuzzy_key": "915,adds,anthropic,backed,big,carbon,coalition,funding,increases,million,removal,tech",
     "found_via": "google_alerts"
   },
   {
