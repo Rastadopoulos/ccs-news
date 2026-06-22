@@ -1,5 +1,86 @@
 [
   {
+    "canonical_url": "https://ad-hoc-news.de/boerse/news/ueberblick/direct-air-capture-fleet-from-occidental-petroleum-corp-large-scale/69604905",
+    "raw_url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/direct-air-capture-fleet-from-occidental-petroleum-corp-large-scale/69604905",
+    "headline": "Direct Air Capture fleet from Occidental Petroleum Corp. - large-scale carbon removal targets 1 mill",
+    "source_domain": "ad-hoc-news.de",
+    "publication_date": "2026-06-22T21:35:10+00:00",
+    "fuzzy_key": "air,capture,carbon,corp,direct,fleet,large,mill,occidental,petroleum,removal,scale,targets",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbon-pulse.com/524409",
+    "raw_url": "https://carbon-pulse.com/524409/",
+    "headline": "German service group backs DAC demonstration project - Carbon Pulse",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-06-22T21:35:10+00:00",
+    "fuzzy_key": "backs,carbon,dac,demonstration,german,group,project,pulse,service",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbon-pulse.com/524514",
+    "raw_url": "https://carbon-pulse.com/524514/",
+    "headline": "New food waste-based method shows promise for lower-cost direct air capture",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-06-22T21:35:10+00:00",
+    "fuzzy_key": "air,based,capture,cost,direct,food,lower,method,new,promise,shows,waste",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/ambuja-cements-partners-with-leilac-to-advance-carbon-capture-in-india",
+    "raw_url": "https://carbonherald.com/ambuja-cements-partners-with-leilac-to-advance-carbon-capture-in-india/",
+    "headline": "Ambuja Cements Partners With Leilac To Advance Carbon Capture In India",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-06-22T15:32:21+00:00",
+    "fuzzy_key": "advance,ambuja,capture,carbon,cements,india,leilac,partners",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/dnv-launches-first-standardized-framework-for-onboard-carbon-capture",
+    "raw_url": "https://carbonherald.com/dnv-launches-first-standardized-framework-for-onboard-carbon-capture/",
+    "headline": "DNV Launches First Standardized Framework For Onboard Carbon Capture",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-06-22T15:48:05+00:00",
+    "fuzzy_key": "capture,carbon,dnv,first,framework,launches,onboard,standardized",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://esgnews.com/climeworks-solutions-secures-14-carbon-removal-deals-covering-450000-tons-of-co2-removal",
+    "raw_url": "https://esgnews.com/climeworks-solutions-secures-14-carbon-removal-deals-covering-450000-tons-of-co2-removal/",
+    "headline": "Climeworks Solutions Secures 14 Carbon Removal Deals Covering 450,000 Tons of CO2 ...",
+    "source_domain": "esgnews.com",
+    "publication_date": "2026-06-22T14:22:37+00:00",
+    "fuzzy_key": "000,14,450,carbon,climeworks,co2,covering,deals,removal,secures,solutions,tons",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/europe-needs-dozens-more-co2-carriers-and-ports-by-2050-to-meet-ccus-goals/2252675.article",
+    "raw_url": "https://www.gasworld.com/story/europe-needs-dozens-more-co2-carriers-and-ports-by-2050-to-meet-ccus-goals/2252675.article/",
+    "headline": "Europe needs dozens more CO2 carriers and ports by 2050 to meet CCUS goals - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-22T15:48:05+00:00",
+    "fuzzy_key": "2050,carriers,ccus,co2,dozens,europe,gasworld,goals,meet,more,needs,ports",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/europe-needs-65-co2-carriers-and-33-ports-by-2050-to-meet-ccus-goals-study-finds",
+    "raw_url": "https://www.indexbox.io/blog/europe-needs-65-co2-carriers-and-33-ports-by-2050-to-meet-ccus-goals-study-finds/",
+    "headline": "Europe Needs 65 CO2 Carriers and 33 Ports by 2050 to Meet CCUS Goals, Study Finds",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-06-22T06:16:53+00:00",
+    "fuzzy_key": "2050,33,65,carriers,ccus,co2,europe,finds,goals,meet,needs,ports,study",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indiasnews.net/news/279139231/ambuja-cements-eyes-large-scale-carbon-capture-with-uk-tech-partnership",
+    "raw_url": "https://www.indiasnews.net/news/279139231/ambuja-cements-eyes-large-scale-carbon-capture-with-uk-tech-partnership",
+    "headline": "Ambuja Cements eyes large-scale carbon capture with UK tech partnership - India's News",
+    "source_domain": "indiasnews.net",
+    "publication_date": "2026-06-22T15:32:21+00:00",
+    "fuzzy_key": "ambuja,capture,carbon,cements,eyes,india,large,news,partnership,scale,tech,uk",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/empiremagazine_climeworks-climatetech-carboncapture-activity-7474317687264043008-Cdwr",
     "raw_url": "https://www.linkedin.com/posts/empiremagazine_climeworks-climatetech-carboncapture-activity-7474317687264043008-Cdwr",
     "headline": "The Empire Magazine's Post - LinkedIn",
@@ -18,39 +99,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://indexbox.io/blog/europe-needs-65-co2-carriers-and-33-ports-by-2050-to-meet-ccus-goals-study-finds",
-    "raw_url": "https://www.indexbox.io/blog/europe-needs-65-co2-carriers-and-33-ports-by-2050-to-meet-ccus-goals-study-finds/",
-    "headline": "Europe Needs 65 CO2 Carriers and 33 Ports by 2050 to Meet CCUS Goals, Study Finds",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-06-22T06:16:53+00:00",
-    "fuzzy_key": "2050,33,65,carriers,ccus,co2,europe,finds,goals,meet,needs,ports,study",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://esgnews.com/climeworks-solutions-secures-14-carbon-removal-deals-covering-450000-tons-of-co2-removal",
-    "raw_url": "https://esgnews.com/climeworks-solutions-secures-14-carbon-removal-deals-covering-450000-tons-of-co2-removal/",
-    "headline": "Climeworks Solutions Secures 14 Carbon Removal Deals Covering 450,000 Tons of CO2 ...",
-    "source_domain": "esgnews.com",
-    "publication_date": "2026-06-22T14:22:37+00:00",
-    "fuzzy_key": "000,14,450,carbon,climeworks,co2,covering,deals,removal,secures,solutions,tons",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/ambuja-cements-partners-with-leilac-to-advance-carbon-capture-in-india",
-    "raw_url": "https://carbonherald.com/ambuja-cements-partners-with-leilac-to-advance-carbon-capture-in-india/",
-    "headline": "Ambuja Cements Partners With Leilac To Advance Carbon Capture In India",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-06-22T15:32:21+00:00",
-    "fuzzy_key": "advance,ambuja,capture,carbon,cements,india,leilac,partners",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://indiasnews.net/news/279139231/ambuja-cements-eyes-large-scale-carbon-capture-with-uk-tech-partnership",
-    "raw_url": "https://www.indiasnews.net/news/279139231/ambuja-cements-eyes-large-scale-carbon-capture-with-uk-tech-partnership",
-    "headline": "Ambuja Cements eyes large-scale carbon capture with UK tech partnership - India's News",
-    "source_domain": "indiasnews.net",
-    "publication_date": "2026-06-22T15:32:21+00:00",
-    "fuzzy_key": "ambuja,capture,carbon,cements,eyes,india,large,news,partnership,scale,tech,uk",
+    "canonical_url": "https://upstreamonline.com/carbon-capture/northern-lights-chief-cautiously-optimistic-on-ccs-outlook/2-1-2002245",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/northern-lights-chief-cautiously-optimistic-on-ccs-outlook/2-1-2002245",
+    "headline": "Northern Lights chief 'cautiously optimistic' on CCS outlook - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-06-22T15:48:05+00:00",
+    "fuzzy_key": "cautiously,ccs,chief,lights,northern,online,optimistic,outlook,upstream",
     "found_via": "google_alerts"
   }
 ]
