@@ -234,6 +234,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://linkedin.com/posts/empiremagazine_climeworks-climatetech-carboncapture-activity-7474317687264043008-Cdwr",
+    "raw_url": "https://www.linkedin.com/posts/empiremagazine_climeworks-climatetech-carboncapture-activity-7474317687264043008-Cdwr",
+    "headline": "The Empire Magazine's Post - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-06-22T00:41:44+00:00",
+    "fuzzy_key": "empire,linkedin,magazine,post",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://maritime-executive.com/magazine/ship-ready-onboard-carbon-capture-has-arrived",
     "raw_url": "https://maritime-executive.com/magazine/ship-ready-onboard-carbon-capture-has-arrived",
     "headline": "Ship-Ready: Onboard Carbon Capture Has Arrived - The Maritime Executive",
@@ -276,6 +285,15 @@
     "source_domain": "petroleum-economist.com",
     "publication_date": "2026-06-19T15:34:25+00:00",
     "fuzzy_key": "bp,ccs,economist,petroleum,stake,takes,viking",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://petromindo.com/news/article/pupuk-indonesia-advances-ccs-projects-for-blue-ammonia",
+    "raw_url": "https://www.petromindo.com/news/article/pupuk-indonesia-advances-ccs-projects-for-blue-ammonia",
+    "headline": "Pupuk Indonesia advances CCS projects for blue ammonia - Petromindo",
+    "source_domain": "petromindo.com",
+    "publication_date": "2026-06-22T02:42:32+00:00",
+    "fuzzy_key": "advances,ammonia,blue,ccs,indonesia,petromindo,projects,pupuk",
     "found_via": "google_alerts"
   },
   {
