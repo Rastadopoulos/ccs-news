@@ -54,6 +54,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://gasworld.com/story/ucaneo-to-launch-germanys-first-integrated-dac-facility-in-berlin/2253263.article",
+    "raw_url": "https://www.gasworld.com/story/ucaneo-to-launch-germanys-first-integrated-dac-facility-in-berlin/2253263.article/",
+    "headline": "Ucaneo to launch Germany's first integrated DAC facility in Berlin | Carbon Dioxide",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-29T11:16:46+00:00",
+    "fuzzy_key": "berlin,carbon,dac,dioxide,facility,first,germany,integrated,launch,ucaneo",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://ieaghg.org/news/ieaghg-visits-hynet",
     "raw_url": "https://ieaghg.org/news/ieaghg-visits-hynet/",
     "headline": "IEAGHG Visits HyNet: From Padeswood Cement to Protos ERF CCS Projects",
@@ -87,6 +96,15 @@
     "source_domain": "linkedin.com",
     "publication_date": "2026-06-26T17:12:00+00:00",
     "fuzzy_key": "carbonremoval,climateaction,climeworks,lcaw26,linkedin,netzero",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/climeworks_londonclimateactionweek-climateaction-activity-7477284756511084544-xGlt",
+    "raw_url": "https://www.linkedin.com/posts/climeworks_londonclimateactionweek-climateaction-activity-7477284756511084544-xGlt",
+    "headline": "#londonclimateactionweek #climateaction #netzero #carbonremoval | Climeworks - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-06-29T11:29:40+00:00",
+    "fuzzy_key": "carbonremoval,climateaction,climeworks,linkedin,londonclimateactionweek,netzero",
     "found_via": "google_alerts"
   },
   {
@@ -132,6 +150,24 @@
     "source_domain": "simplywall.st",
     "publication_date": "2026-06-28T11:23:33+00:00",
     "fuzzy_key": "ccs,century,communities,community,could,draw,interest,new,openings,overvalued",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://stratnewsglobal.com/canada/deep-sky-becomes-first-in-north-america-to-deliver-direct-air-capture-carbon-credits",
+    "raw_url": "https://stratnewsglobal.com/canada/deep-sky-becomes-first-in-north-america-to-deliver-direct-air-capture-carbon-credits/",
+    "headline": "Deep Sky Becomes First In North America To Deliver Direct Air Capture Carbon Credits",
+    "source_domain": "stratnewsglobal.com",
+    "publication_date": "2026-06-29T13:17:44+00:00",
+    "fuzzy_key": "air,america,becomes,capture,carbon,credits,deep,deliver,direct,first,north,sky",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft",
+    "raw_url": "https://www.theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft/",
+    "headline": "Deep Sky delivers North America's first direct air capture carbon credits to RBC, Microsoft",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-06-29T11:16:46+00:00",
+    "fuzzy_key": "air,america,capture,carbon,credits,deep,delivers,direct,first,microsoft,north,rbc,sky",
     "found_via": "google_alerts"
   },
   {
