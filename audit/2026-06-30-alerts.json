@@ -1,20 +1,11 @@
 [
   {
-    "canonical_url": "https://linkedin.com/posts/hmt-news_malaysian-firm-helms-wins-petronas-ccs-offshore-activity-7476515485442789376-GHgm",
-    "raw_url": "https://www.linkedin.com/posts/hmt-news_malaysian-firm-helms-wins-petronas-ccs-offshore-activity-7476515485442789376-GHgm",
-    "headline": "Malaysian Firm HELMS Wins PETRONAS CCS Offshore Soil Contract | HMT News",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-06-28T21:49:15+00:00",
-    "fuzzy_key": "ccs,contract,firm,helms,hmt,malaysian,news,offshore,petronas,soil,wins",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft",
-    "raw_url": "https://www.theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft/",
-    "headline": "Deep Sky delivers North America's first direct air capture carbon credits to RBC, Microsoft",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-06-29T11:16:46+00:00",
-    "fuzzy_key": "air,america,capture,carbon,credits,deep,delivers,direct,first,microsoft,north,rbc,sky",
+    "canonical_url": "https://carbon-pulse.com/526722",
+    "raw_url": "https://carbon-pulse.com/526722/",
+    "headline": "Canadian developer issued North America's first certified DAC credits under long-term offtake deals",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-06-29T20:58:06+00:00",
+    "fuzzy_key": "america,canadian,certified,credits,dac,deals,developer,first,issued,long,north,offtake,term,under",
     "found_via": "google_alerts"
   },
   {
@@ -36,6 +27,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://linkedin.com/posts/hmt-news_malaysian-firm-helms-wins-petronas-ccs-offshore-activity-7476515485442789376-GHgm",
+    "raw_url": "https://www.linkedin.com/posts/hmt-news_malaysian-firm-helms-wins-petronas-ccs-offshore-activity-7476515485442789376-GHgm",
+    "headline": "Malaysian Firm HELMS Wins PETRONAS CCS Offshore Soil Contract | HMT News",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-06-28T21:49:15+00:00",
+    "fuzzy_key": "ccs,contract,firm,helms,hmt,malaysian,news,offshore,petronas,soil,wins",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://stratnewsglobal.com/canada/deep-sky-becomes-first-in-north-america-to-deliver-direct-air-capture-carbon-credits",
     "raw_url": "https://stratnewsglobal.com/canada/deep-sky-becomes-first-in-north-america-to-deliver-direct-air-capture-carbon-credits/",
     "headline": "Deep Sky Becomes First In North America To Deliver Direct Air Capture Carbon Credits",
@@ -45,12 +45,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbon-pulse.com/526722",
-    "raw_url": "https://carbon-pulse.com/526722/",
-    "headline": "Canadian developer issued North America's first certified DAC credits under long-term offtake deals",
-    "source_domain": "carbon-pulse.com",
-    "publication_date": "2026-06-29T20:58:06+00:00",
-    "fuzzy_key": "america,canadian,certified,credits,dac,deals,developer,first,issued,long,north,offtake,term,under",
+    "canonical_url": "https://theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft",
+    "raw_url": "https://www.theglobeandmail.com/business/article-deep-sky-first-direct-air-capture-carbon-credits-rbc-microsoft/",
+    "headline": "Deep Sky delivers North America's first direct air capture carbon credits to RBC, Microsoft",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-06-29T11:16:46+00:00",
+    "fuzzy_key": "air,america,capture,carbon,credits,deep,delivers,direct,first,microsoft,north,rbc,sky",
     "found_via": "google_alerts"
   }
 ]
