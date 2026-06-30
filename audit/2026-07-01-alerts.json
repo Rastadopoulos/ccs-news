@@ -1,20 +1,20 @@
 [
   {
-    "canonical_url": "https://gasworld.com/story/deep-sky-delivers-north-americas-first-certified-dac-carbon-removal-credits/2253271.article",
-    "raw_url": "https://www.gasworld.com/story/deep-sky-delivers-north-americas-first-certified-dac-carbon-removal-credits/2253271.article/",
-    "headline": "Deep Sky delivers North America's first certified DAC carbon removal credits - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-06-29T23:54:34+00:00",
-    "fuzzy_key": "america,carbon,certified,credits,dac,deep,delivers,first,gasworld,north,removal,sky",
+    "canonical_url": "https://ainvest.com/news/class-vi-permit-sounds-milestone-isn-trade-2606",
+    "raw_url": "https://www.ainvest.com/news/class-vi-permit-sounds-milestone-isn-trade-2606/",
+    "headline": "The Class VI Permit That Sounds Like a Milestone But Isn't One You Can Trade - AInvest",
+    "source_domain": "ainvest.com",
+    "publication_date": "2026-06-30T22:59:37+00:00",
+    "fuzzy_key": "ainvest,can,class,isn,like,milestone,one,permit,sounds,trade,vi",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://indexbox.io/blog/afry-wins-engineering-contract-for-uks-first-full-scale-carbon-capture-facility-in-waste-to-energy-sector",
-    "raw_url": "https://www.indexbox.io/blog/afry-wins-engineering-contract-for-uks-first-full-scale-carbon-capture-facility-in-waste-to-energy-sector/",
-    "headline": "AFRY Secures Kanadevia Inova Contract for UK's First Full-Scale Carbon Capture at Waste ...",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-06-30T08:18:42+00:00",
-    "fuzzy_key": "afry,capture,carbon,contract,first,full,inova,kanadevia,scale,secures,uk,waste",
+    "canonical_url": "https://businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational",
+    "raw_url": "https://www.businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational",
+    "headline": "BKV Announces Two New Carbon Capture and Sequestration Facilities Now Operational",
+    "source_domain": "businesswire.com",
+    "publication_date": "2026-06-30T17:03:47+00:00",
+    "fuzzy_key": "announces,bkv,capture,carbon,facilities,new,now,operational,sequestration,two",
     "found_via": "google_alerts"
   },
   {
@@ -27,15 +27,6 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://qcintel.com/carbon/article/canadian-developer-receives-first-dac-credits-issued-by-isometric-67747.html",
-    "raw_url": "https://www.qcintel.com/carbon/article/canadian-developer-receives-first-dac-credits-issued-by-isometric-67747.html",
-    "headline": "Canadian developer receives first DAC credits issued by Isometric",
-    "source_domain": "qcintel.com",
-    "publication_date": "2026-06-30T10:47:27+00:00",
-    "fuzzy_key": "canadian,credits,dac,developer,first,isometric,issued,receives",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://esgnews.com/deep-sky-delivers-north-americas-first-dac-carbon-credits",
     "raw_url": "https://esgnews.com/deep-sky-delivers-north-americas-first-dac-carbon-credits/",
     "headline": "Deep Sky Delivers North America's First DAC Carbon Credits - ESG News",
@@ -45,12 +36,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://winnipegfreepress.com/business/2026/06/29/carbon-capture-project-gains-support",
-    "raw_url": "https://www.winnipegfreepress.com/business/2026/06/29/carbon-capture-project-gains-support",
-    "headline": "Carbon capture project gains support - Winnipeg Free Press",
-    "source_domain": "winnipegfreepress.com",
-    "publication_date": "2026-06-30T10:47:27+00:00",
-    "fuzzy_key": "capture,carbon,free,gains,press,project,support,winnipeg",
+    "canonical_url": "https://esgtoday.com/deep-sky-delivers-first-certified-dac-carbon-credits-to-microsoft-rbc",
+    "raw_url": "https://www.esgtoday.com/deep-sky-delivers-first-certified-dac-carbon-credits-to-microsoft-rbc/",
+    "headline": "Deep Sky Delivers First Certified DAC Carbon Credits to Microsoft, RBC - ESG Today",
+    "source_domain": "esgtoday.com",
+    "publication_date": "2026-06-30T18:39:14+00:00",
+    "fuzzy_key": "carbon,certified,credits,dac,deep,delivers,esg,first,microsoft,rbc,sky,today",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/deep-sky-delivers-north-americas-first-certified-dac-carbon-removal-credits/2253271.article",
+    "raw_url": "https://www.gasworld.com/story/deep-sky-delivers-north-americas-first-certified-dac-carbon-removal-credits/2253271.article/",
+    "headline": "Deep Sky delivers North America's first certified DAC carbon removal credits - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-06-29T23:54:34+00:00",
+    "fuzzy_key": "america,carbon,certified,credits,dac,deep,delivers,first,gasworld,north,removal,sky",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://geplus.co.uk/news/contract-news/helms-awarded-offshore-soil-investigation-contract-for-petronas-ccs-business-30-06-2026",
+    "raw_url": "https://www.geplus.co.uk/news/contract-news/helms-awarded-offshore-soil-investigation-contract-for-petronas-ccs-business-30-06-2026/",
+    "headline": "HELMS Awarded offshore soil investigation contract for PETRONAS CCS business",
+    "source_domain": "geplus.co.uk",
+    "publication_date": "2026-06-30T23:07:42+00:00",
+    "fuzzy_key": "awarded,business,ccs,contract,helms,investigation,offshore,petronas,soil",
     "found_via": "google_alerts"
   },
   {
@@ -72,12 +81,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational",
-    "raw_url": "https://www.businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational",
-    "headline": "BKV Announces Two New Carbon Capture and Sequestration Facilities Now Operational",
-    "source_domain": "businesswire.com",
-    "publication_date": "2026-06-30T17:03:47+00:00",
-    "fuzzy_key": "announces,bkv,capture,carbon,facilities,new,now,operational,sequestration,two",
+    "canonical_url": "https://indexbox.io/blog/afry-wins-engineering-contract-for-uks-first-full-scale-carbon-capture-facility-in-waste-to-energy-sector",
+    "raw_url": "https://www.indexbox.io/blog/afry-wins-engineering-contract-for-uks-first-full-scale-carbon-capture-facility-in-waste-to-energy-sector/",
+    "headline": "AFRY Secures Kanadevia Inova Contract for UK's First Full-Scale Carbon Capture at Waste ...",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-06-30T08:18:42+00:00",
+    "fuzzy_key": "afry,capture,carbon,contract,first,full,inova,kanadevia,scale,secures,uk,waste",
     "found_via": "google_alerts"
   },
   {
@@ -90,12 +99,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://esgtoday.com/deep-sky-delivers-first-certified-dac-carbon-credits-to-microsoft-rbc",
-    "raw_url": "https://www.esgtoday.com/deep-sky-delivers-first-certified-dac-carbon-credits-to-microsoft-rbc/",
-    "headline": "Deep Sky Delivers First Certified DAC Carbon Credits to Microsoft, RBC - ESG Today",
-    "source_domain": "esgtoday.com",
-    "publication_date": "2026-06-30T18:39:14+00:00",
-    "fuzzy_key": "carbon,certified,credits,dac,deep,delivers,esg,first,microsoft,rbc,sky,today",
+    "canonical_url": "https://linkedin.com/posts/carbon-herald_strategic-biofuels-secures-landmark-class-activity-7477665092982018048-wjRR",
+    "raw_url": "https://www.linkedin.com/posts/carbon-herald_strategic-biofuels-secures-landmark-class-activity-7477665092982018048-wjRR",
+    "headline": "Strategic Biofuels Secures Landmark Class VI Permit | Carbon Herald - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-06-30T22:59:37+00:00",
+    "fuzzy_key": "biofuels,carbon,class,herald,landmark,linkedin,permit,secures,strategic,vi",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/canadian-developer-receives-first-dac-credits-issued-by-isometric-67747.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/canadian-developer-receives-first-dac-credits-issued-by-isometric-67747.html",
+    "headline": "Canadian developer receives first DAC credits issued by Isometric",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-06-30T10:47:27+00:00",
+    "fuzzy_key": "canadian,credits,dac,developer,first,isometric,issued,receives",
     "found_via": "google_alerts"
   },
   {
@@ -105,6 +123,15 @@
     "source_domain": "thenarwhal.ca",
     "publication_date": "2026-06-30T20:33:50+00:00",
     "fuzzy_key": "capture,carbon,customers,deep,investors,line,narwhal,sky,support,up",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://winnipegfreepress.com/business/2026/06/29/carbon-capture-project-gains-support",
+    "raw_url": "https://www.winnipegfreepress.com/business/2026/06/29/carbon-capture-project-gains-support",
+    "headline": "Carbon capture project gains support - Winnipeg Free Press",
+    "source_domain": "winnipegfreepress.com",
+    "publication_date": "2026-06-30T10:47:27+00:00",
+    "fuzzy_key": "capture,carbon,free,gains,press,project,support,winnipeg",
     "found_via": "google_alerts"
   }
 ]
