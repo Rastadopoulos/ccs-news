@@ -1,5 +1,41 @@
 [
   {
+    "canonical_url": "https://cleanenergywire.org/news/eu-should-reform-carbon-market-include-direct-air-capture-gold-standard-removals-start-ceo",
+    "raw_url": "https://www.cleanenergywire.org/news/eu-should-reform-carbon-market-include-direct-air-capture-gold-standard-removals-start-ceo",
+    "headline": "EU should reform carbon market to include direct air capture, the “gold standard” for removals",
+    "source_domain": "cleanenergywire.org",
+    "publication_date": "2026-07-03T16:27:24+00:00",
+    "fuzzy_key": "air,capture,carbon,direct,eu,gold,include,market,reform,removals,should,standard",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
+    "raw_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
+    "headline": "Strategic Biofuels Secures Pivotal Class VI Permit - decarbonfuse.com",
+    "source_domain": "decarbonfuse.com",
+    "publication_date": "2026-07-02T22:38:57+00:00",
+    "fuzzy_key": "biofuels,class,com,decarbonfuse,permit,pivotal,secures,strategic,vi",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/TMReserve/posts/reservoir-link-secures-petronas-five-year-ccus-panel-appointment-tmrbusiness/1581955903660122",
+    "raw_url": "https://www.facebook.com/TMReserve/posts/reservoir-link-secures-petronas-five-year-ccus-panel-appointment-tmrbusiness/1581955903660122/",
+    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment #TMRBusiness - Facebook",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-07-02T21:57:37+00:00",
+    "fuzzy_key": "appointment,ccus,facebook,five,link,panel,petronas,reservoir,secures,tmrbusiness,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/uk-waste-to-energy-carbon-capture-project-advances/2253503.article",
+    "raw_url": "https://www.gasworld.com/story/uk-waste-to-energy-carbon-capture-project-advances/2253503.article/",
+    "headline": "UK waste-to-energy carbon capture project advances - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-07-02T23:46:38+00:00",
+    "fuzzy_key": "advances,capture,carbon,energy,gasworld,project,uk,waste",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/value-chain-coordination-key-to-eu-ccs-delivery/2253553.article",
     "raw_url": "https://www.gasworld.com/story/value-chain-coordination-key-to-eu-ccs-delivery/2253553.article/",
     "headline": "Value chain coordination key to EU CCS delivery | Carbon Capture - gasworld",
@@ -18,39 +54,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://facebook.com/TMReserve/posts/reservoir-link-secures-petronas-five-year-ccus-panel-appointment-tmrbusiness/1581955903660122",
-    "raw_url": "https://www.facebook.com/TMReserve/posts/reservoir-link-secures-petronas-five-year-ccus-panel-appointment-tmrbusiness/1581955903660122/",
-    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment #TMRBusiness - Facebook",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-07-02T21:57:37+00:00",
-    "fuzzy_key": "appointment,ccus,facebook,five,link,panel,petronas,reservoir,secures,tmrbusiness,year",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://x.com/TMReserve/status/2072617013923696981",
-    "raw_url": "https://x.com/TMReserve/status/2072617013923696981",
-    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment #TMRBusiness",
-    "source_domain": "x.com",
-    "publication_date": "2026-07-02T21:57:37+00:00",
-    "fuzzy_key": "appointment,ccus,five,link,panel,petronas,reservoir,secures,tmrbusiness,year",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://pickfrom.com/?Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment&Task=Product",
-    "raw_url": "https://www.pickfrom.com/?Task=Product&Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment",
-    "headline": "Reservoir Link unit appointed PETRONAS panel contractor for CCUS assessment - PickFrom",
-    "source_domain": "pickfrom.com",
-    "publication_date": "2026-07-02T21:57:37+00:00",
-    "fuzzy_key": "appointed,assessment,ccus,contractor,link,panel,petronas,pickfrom,reservoir,unit",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://x.com/MYBusinessTimes/status/2072554457045639437",
-    "raw_url": "https://x.com/MYBusinessTimes/status/2072554457045639437",
-    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment | New Straits Times",
-    "source_domain": "x.com",
-    "publication_date": "2026-07-02T21:57:37+00:00",
-    "fuzzy_key": "appointment,ccus,five,link,new,panel,petronas,reservoir,secures,straits,times,year",
+    "canonical_url": "https://linkedin.com/posts/the-exchange-asia_reservoirlink-petronas-ccus-activity-7478670483140390912-s-JN",
+    "raw_url": "https://www.linkedin.com/posts/the-exchange-asia_reservoirlink-petronas-ccus-activity-7478670483140390912-s-JN",
+    "headline": "#reservoirlink #petronas #ccus #energy #theexchangeasia | The Exchange Asia - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-03T17:56:24+00:00",
+    "fuzzy_key": "asia,ccus,energy,exchange,linkedin,petronas,reservoirlink,theexchangeasia",
     "found_via": "google_alerts"
   },
   {
@@ -63,15 +72,6 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
-    "raw_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
-    "headline": "Strategic Biofuels Secures Pivotal Class VI Permit - decarbonfuse.com",
-    "source_domain": "decarbonfuse.com",
-    "publication_date": "2026-07-02T22:38:57+00:00",
-    "fuzzy_key": "biofuels,class,com,decarbonfuse,permit,pivotal,secures,strategic,vi",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://linkedin.com/posts/jasoneleson_strategic-biofuels-secures-landmark-class-activity-7477920893285879808-xcDR",
     "raw_url": "https://www.linkedin.com/posts/jasoneleson_strategic-biofuels-secures-landmark-class-activity-7477920893285879808-xcDR",
     "headline": "Strategic Biofuels Secures Landmark Class VI Permit | Jason Eleson - LinkedIn",
@@ -81,12 +81,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://gasworld.com/story/uk-waste-to-energy-carbon-capture-project-advances/2253503.article",
-    "raw_url": "https://www.gasworld.com/story/uk-waste-to-energy-carbon-capture-project-advances/2253503.article/",
-    "headline": "UK waste-to-energy carbon capture project advances - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-07-02T23:46:38+00:00",
-    "fuzzy_key": "advances,capture,carbon,energy,gasworld,project,uk,waste",
+    "canonical_url": "https://marketscale.com/industries/energy/ge-vernova-doubles-down-on-nuclear-direct-air-capture-and-grid-ai-at-aspen-ideas-festival",
+    "raw_url": "https://marketscale.com/industries/energy/ge-vernova-doubles-down-on-nuclear-direct-air-capture-and-grid-ai-at-aspen-ideas-festival",
+    "headline": "GE Vernova doubles down on nuclear, direct air capture, and grid AI at Aspen Ideas Festival",
+    "source_domain": "marketscale.com",
+    "publication_date": "2026-07-03T16:27:24+00:00",
+    "fuzzy_key": "ai,air,aspen,capture,direct,doubles,down,festival,ge,grid,ideas,nuclear,vernova",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://morningstar.com/news/accesswire/1186203msn/ccs-launches-facade",
+    "raw_url": "https://www.morningstar.com/news/accesswire/1186203msn/ccs-launches-facade",
+    "headline": "CCS Launches Facade | Morningstar",
+    "source_domain": "morningstar.com",
+    "publication_date": "2026-07-03T05:11:18+00:00",
+    "fuzzy_key": "ccs,facade,launches,morningstar",
     "found_via": "google_alerts"
   },
   {
@@ -99,6 +108,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://pickfrom.com/?Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment&Task=Product",
+    "raw_url": "https://www.pickfrom.com/?Task=Product&Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment",
+    "headline": "Reservoir Link unit appointed PETRONAS panel contractor for CCUS assessment - PickFrom",
+    "source_domain": "pickfrom.com",
+    "publication_date": "2026-07-02T21:57:37+00:00",
+    "fuzzy_key": "appointed,assessment,ccus,contractor,link,panel,petronas,pickfrom,reservoir,unit",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://qcintel.com/carbon/article/interview-eu-s-largest-dac-plant-targets-sub-300-t-cdrs-68099.html",
     "raw_url": "https://www.qcintel.com/carbon/article/interview-eu-s-largest-dac-plant-targets-sub-300-t-cdrs-68099.html",
     "headline": "INTERVIEW: EU's largest DAC plant targets sub-€300/t CDRs",
@@ -108,12 +126,48 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://morningstar.com/news/accesswire/1186203msn/ccs-launches-facade",
-    "raw_url": "https://www.morningstar.com/news/accesswire/1186203msn/ccs-launches-facade",
-    "headline": "CCS Launches Facade | Morningstar",
-    "source_domain": "morningstar.com",
-    "publication_date": "2026-07-03T05:11:18+00:00",
-    "fuzzy_key": "ccs,facade,launches,morningstar",
+    "canonical_url": "https://ceomorningbrief.theedgemalaysia.com/article/2026/1178/Home/14/809156",
+    "raw_url": "https://ceomorningbrief.theedgemalaysia.com/article/2026/1178/Home/14/809156",
+    "headline": "Reservoir Link clinches five-year PETRONAS CCUS contract | CEO Morning Brief",
+    "source_domain": "theedgemalaysia.com",
+    "publication_date": "2026-07-03T17:56:24+00:00",
+    "fuzzy_key": "brief,ccus,ceo,clinches,contract,five,link,morning,petronas,reservoir,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thehayride.com/2026/07/sadow-trump-markets-hand-win-to-louisiana-ccs-foes",
+    "raw_url": "https://thehayride.com/2026/07/sadow-trump-markets-hand-win-to-louisiana-ccs-foes/",
+    "headline": "SADOW: Trump, Markets Hand Win to Louisiana CCS Foes - The Hayride",
+    "source_domain": "thehayride.com",
+    "publication_date": "2026-07-03T18:43:07+00:00",
+    "fuzzy_key": "ccs,foes,hand,hayride,louisiana,markets,sadow,trump,win",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/RLEB0219/status/2072561082548531392",
+    "raw_url": "https://x.com/RLEB0219/status/2072561082548531392",
+    "headline": "RL is building for the future. $RL #CCUS #PETRONAS #BursaMalaysia #EnergyTransition #KLSE",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-03T17:56:24+00:00",
+    "fuzzy_key": "building,bursamalaysia,ccus,energytransition,future,klse,petronas,rl",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/TMReserve/status/2072617013923696981",
+    "raw_url": "https://x.com/TMReserve/status/2072617013923696981",
+    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment #TMRBusiness",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-02T21:57:37+00:00",
+    "fuzzy_key": "appointment,ccus,five,link,panel,petronas,reservoir,secures,tmrbusiness,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/MYBusinessTimes/status/2072554457045639437",
+    "raw_url": "https://x.com/MYBusinessTimes/status/2072554457045639437",
+    "headline": "Reservoir Link secures Petronas five-year CCUS panel appointment | New Straits Times",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-02T21:57:37+00:00",
+    "fuzzy_key": "appointment,ccus,five,link,new,panel,petronas,reservoir,secures,straits,times,year",
     "found_via": "google_alerts"
   }
 ]
