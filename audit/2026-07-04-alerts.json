@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://thestar.com.my/business/business-news/2026/07/03/reservoir-link-secures-petronas-ccus-panel-deal",
+    "raw_url": "https://www.thestar.com.my/business/business-news/2026/07/03/reservoir-link-secures-petronas-ccus-panel-deal",
+    "headline": "Reservoir Link secures PETRONAS CCUS panel deal | The Star",
+    "source_domain": "com.my",
+    "publication_date": "2026-07-03T21:53:50+00:00",
+    "fuzzy_key": "ccus,deal,link,panel,petronas,reservoir,secures,star",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
     "raw_url": "https://decarbonfuse.com/posts/strategic-biofuels-secures-pivotal-class-vi-permit-advancing-louisiana-s-next-major-clean-energy-project",
     "headline": "Strategic Biofuels Secures Pivotal Class VI Permit - decarbonfuse.com",
@@ -114,6 +123,15 @@
     "source_domain": "pickfrom.com",
     "publication_date": "2026-07-02T21:57:37+00:00",
     "fuzzy_key": "appointed,assessment,ccus,contractor,link,panel,petronas,pickfrom,reservoir,unit",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pressreader.com/malaysia/the-borneo-post/20260703/282222312491728",
+    "raw_url": "https://www.pressreader.com/malaysia/the-borneo-post/20260703/282222312491728",
+    "headline": "Reservoir Link appointed Petronas panel contractor for CCUS projects - PressReader",
+    "source_domain": "pressreader.com",
+    "publication_date": "2026-07-03T21:53:50+00:00",
+    "fuzzy_key": "appointed,ccus,contractor,link,panel,petronas,pressreader,projects,reservoir",
     "found_via": "google_alerts"
   },
   {
