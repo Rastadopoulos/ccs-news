@@ -153,12 +153,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://petroleum-economist.com/magazine/2021/jul-2021/petroleum-economist/acorn-ccs-project-awards-feed-contract",
+    "raw_url": "https://petroleum-economist.com/magazine/2021/jul-2021/petroleum-economist/acorn-ccs-project-awards-feed-contract/",
+    "headline": "Acorn CCS project awards Feed contract - Petroleum Economist",
+    "source_domain": "petroleum-economist.com",
+    "publication_date": "2026-07-03T00:46:34+00:00",
+    "fuzzy_key": "acorn,awards,ccs,contract,economist,feed,petroleum,project",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://pickfrom.com/?Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment&Task=Product",
     "raw_url": "https://www.pickfrom.com/?Task=Product&Param=0018086910413&T=Reservoir-Link-unit-appointed-PETRONAS-panel-contractor-for-CCUS-assessment",
     "headline": "Reservoir Link unit appointed PETRONAS panel contractor for CCUS assessment - PickFrom",
     "source_domain": "pickfrom.com",
     "publication_date": "2026-07-02T21:57:37+00:00",
     "fuzzy_key": "appointed,assessment,ccus,contractor,link,panel,petronas,pickfrom,reservoir,unit",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/interview-eu-s-largest-dac-plant-targets-sub-300-t-cdrs-68099.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/interview-eu-s-largest-dac-plant-targets-sub-300-t-cdrs-68099.html",
+    "headline": "INTERVIEW: EU's largest DAC plant targets sub-€300/t CDRs",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-07-03T02:12:23+00:00",
+    "fuzzy_key": "300,cdrs,dac,eu,interview,largest,plant,sub,targets",
     "found_via": "google_alerts"
   },
   {
