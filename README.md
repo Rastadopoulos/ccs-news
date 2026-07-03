@@ -69,6 +69,7 @@ Workflows (all in `.github/workflows/`):
 - `alerts-ingest.yml` — cron every 30 min during business hours. Requires `GMAIL_ADDRESS` + `GMAIL_APP_PASSWORD` secrets + `ALERTS_INGEST_ENABLED=true` repo variable.
 - `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`. Manual: Actions tab → Weekly recall audit → Run workflow.
 - `email-audit.yml` — fires on push of a new audit report; emails it via Resend.
+- `deadman-check.yml` — cron 08:30 Melbourne weekdays. Alerts by email if today's briefing (`${TODAY}-ccs-briefing.md`) or shadow trace (`audit/${TODAY}-shadow.json`) is missing from `main` — catches silent scheduler failures. Skips weekends and Vic public holidays; the holiday list must be kept in sync with the production prompt.
 
 Dedup contract shared by all samplers: `scripts/_canon.py` — canonical URL (strip safelinks/tracking, lowercase host) plus fuzzy headline match (Jaccard ≥ 0.7 on tokenised, stopword-stripped headline).
 
@@ -94,6 +95,7 @@ Cron expressions run in UTC. Manual swap twice a year:
 | `rss-floor.yml` | `0 21 * * 0-4` | `0 20 * * 0-4` |
 | `weekly-audit.yml` | `0 22 * * 5` | `0 21 * * 5` |
 | `alerts-ingest.yml` | `*/30 20-23 * * *` + `*/30 0-12 * * *` | no swap needed (runs in UTC business-hours band) |
+| `deadman-check.yml` | no swap needed (both crons registered; job self-gates on Melbourne local hour) | — |
 
 Calendar reminders: early October to switch to AEDT, early April to switch back.
 

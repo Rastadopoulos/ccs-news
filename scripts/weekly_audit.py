@@ -44,6 +44,7 @@ from _canon import jaccard  # noqa: E402
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DIR = REPO_ROOT / "audit"
 DB_PATH = AUDIT_DIR / "candidates.db"
+JUNK_DOMAINS_PATH = REPO_ROOT / "config" / "junk_domains.txt"
 MELBOURNE = ZoneInfo("Australia/Melbourne")
 
 SAMPLER_NAMES = {
@@ -53,6 +54,24 @@ SAMPLER_NAMES = {
     "D": "Shadow LLM",
     "E": "Shelly Murrell digest",
 }
+
+# Trace-file suffix per sampler, used both for loading and for the
+# run-coverage table (which days each sampler actually produced a file).
+SAMPLER_SUFFIXES = (("rss", "B"), ("candidates", "A"), ("shadow", "D"), ("alerts", "C"))
+
+
+def load_junk_domains() -> set[str]:
+    """Domains excluded from the union — SEO farms / social reposts the
+    production routine is instructed to reject. Counting them as missed
+    items makes pooled recall unactionable. See config/junk_domains.txt."""
+    if not JUNK_DOMAINS_PATH.exists():
+        return set()
+    domains = set()
+    for line in JUNK_DOMAINS_PATH.read_text().splitlines():
+        line = line.strip().lower()
+        if line and not line.startswith("#"):
+            domains.add(line)
+    return domains
 
 
 def parse_args() -> argparse.Namespace:
@@ -66,23 +85,31 @@ def week_dates(week_ending: date) -> list[str]:
     return [(week_ending - timedelta(days=i)).isoformat() for i in range(6, -1, -1)]
 
 
-def load_json_dumps(dates: list[str]) -> dict[str, dict[str, list[dict]]]:
-    """Return {date: {sampler_id: [rows]}} from the per-day JSON dumps that
-    exist on disk. Missing files are silently treated as empty.
+def load_json_dumps(dates: list[str],
+                    junk_domains: set[str]) -> tuple[dict[str, dict[str, list[dict]]],
+                                                     dict[str, set[str]]]:
+    """Return ({date: {sampler_id: [rows]}}, {sampler_id: set(dates-with-file)})
+    from the per-day JSON dumps that exist on disk. Missing files are silently
+    treated as empty (but recorded in the second return value for the
+    run-coverage table).
 
     Mapping of filename suffix to sampler:
       -rss.json         -> B
       -candidates.json  -> A (or E if row.found_via=='shelly_digest')
       -shadow.json      -> D
       -alerts.json      -> C
+
+    Rows whose source_domain is in `junk_domains` are dropped from every
+    sampler — they'd pollute the union and make recall unactionable.
     """
     out: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
+    ran: dict[str, set[str]] = defaultdict(set)
     for d in dates:
-        for suffix, sampler in (("rss", "B"), ("candidates", "A"),
-                                ("shadow", "D"), ("alerts", "C")):
+        for suffix, sampler in SAMPLER_SUFFIXES:
             path = AUDIT_DIR / f"{d}-{suffix}.json"
             if not path.exists():
                 continue
+            ran[sampler].add(d)
             try:
                 rows = json.loads(path.read_text())
             except json.JSONDecodeError:
@@ -90,6 +117,8 @@ def load_json_dumps(dates: list[str]) -> dict[str, dict[str, list[dict]]]:
                 continue
             for r in rows:
                 if not r.get("canonical_url"):
+                    continue
+                if (r.get("source_domain") or "").lower() in junk_domains:
                     continue
                 if sampler == "A" and r.get("found_via") == "shelly_digest":
                     out[d]["E"].append(r)
@@ -105,11 +134,21 @@ def load_json_dumps(dates: list[str]) -> dict[str, dict[str, list[dict]]]:
                         if not r.get("in_window"):
                             continue
                     out[d][sampler].append(r)
-    return out
+    return out, ran
 
 
 def sampler_sets(by_day: dict[str, dict[str, list[dict]]]) -> dict[str, set[str]]:
-    """Flatten the by-day dict into one set per sampler. Keys are canonical_url."""
+    """Flatten the by-day dict into one set per sampler. Keys are canonical_url.
+
+    Besides A–E this also builds the synthetic set "A_pure": the subset of A
+    found via the routine's own WebSearches (found_via == "search_query").
+    Since mid-2026 the production routine also ingests the RSS floor and
+    Google Alerts traces (found_via "rss" / "google_alerts"), so full A is no
+    longer independent of samplers B and C — Chapman estimates must use
+    A_pure, while recall metrics (what did the briefing capture?) use full A.
+    Rows without a found_via field predate the ingestion change and are
+    search-derived by construction.
+    """
     sets: dict[str, set[str]] = defaultdict(set)
     for d, samplers in by_day.items():
         for sid, rows in samplers.items():
@@ -118,6 +157,8 @@ def sampler_sets(by_day: dict[str, dict[str, list[dict]]]) -> dict[str, set[str]
                 if sid == "A" and not r.get("kept", False):
                     continue
                 sets[sid].add(r["canonical_url"])
+                if sid == "A" and r.get("found_via", "search_query") == "search_query":
+                    sets["A_pure"].add(r["canonical_url"])
     return sets
 
 
@@ -162,18 +203,25 @@ def render_report(week_ending: date,
                   union_rows: dict[str, dict],
                   missed: list[dict],
                   source_coverage: list[dict],
-                  drift_rows: list[dict]) -> tuple[str, str]:
+                  drift_rows: list[dict],
+                  ran: dict[str, set[str]],
+                  dates: list[str],
+                  junk_domains: set[str]) -> tuple[str, str]:
     A = sets.get("A", set())
     B = sets.get("B", set())
+    # Search-only subset of A — independent of samplers B/C, so it is the
+    # correct capture side for Chapman. Recall metrics use full A (they ask
+    # "what did the briefing capture?", not "what did search find?").
+    A_pure = sets.get("A_pure", A)
 
     pooled_recall = (len(A & union) / len(union)) if union else 0.0
     floor_recall = (len(A & B) / len(B)) if B else float("nan")
 
-    # Chapman across all populated sampler pairs that include A.
+    # Chapman across all populated sampler pairs that include A_pure.
     chapman_pairs: list[tuple[str, str, float]] = []
     for partner in ("B", "C", "D", "E"):
         if partner in sets and sets[partner]:
-            est = chapman(len(A), len(sets[partner]), len(A & sets[partner]))
+            est = chapman(len(A_pure), len(sets[partner]), len(A_pure & sets[partner]))
             chapman_pairs.append((partner, SAMPLER_NAMES[partner], est))
     # Median estimate
     estimates = [e for _, _, e in chapman_pairs if e == e]  # filter NaN
@@ -200,16 +248,43 @@ def render_report(week_ending: date,
     md_lines.append("|---|---:|")
     for sid in ("A", "B", "C", "D", "E"):
         md_lines.append(f"| {sid} · {SAMPLER_NAMES[sid]} | {len(sets.get(sid, set()))} |")
+    md_lines.append(f"| A★ · Production, search-only subset (used for Chapman) | {len(A_pure)} |")
     md_lines.append(f"| **Union U** | **{len(union)}** |")
+    if junk_domains:
+        md_lines.append("")
+        md_lines.append(f"_{len(junk_domains)} junk domains excluded from all samplers "
+                        f"(config/junk_domains.txt)._")
     md_lines.append("")
+
+    # Run coverage — which weekdays each sampler actually produced a trace
+    # file. A missing production/shadow day is a scheduler failure worth
+    # noticing even when the metrics look fine.
+    weekdays = [d for d in dates if date.fromisoformat(d).isoweekday() <= 5]
+    md_lines.append("## Sampler run coverage")
+    md_lines.append("")
+    md_lines.append(f"| Sampler | Ran ({len(weekdays)} weekdays) | Missing |")
+    md_lines.append("|---|---|---|")
+    for suffix, sid in SAMPLER_SUFFIXES:
+        have = sorted(ran.get(sid, set()) & set(weekdays))
+        missing_days = sorted(set(weekdays) - ran.get(sid, set()))
+        md_lines.append(f"| {sid} · {SAMPLER_NAMES[sid]} | {len(have)}/{len(weekdays)} | "
+                        + (", ".join(missing_days) if missing_days else "—") + " |")
+    md_lines.append("")
+    md_lines.append("_Public holidays are legitimate skips and still show as missing here._")
+    md_lines.append("")
+
     if chapman_pairs:
         md_lines.append("## Chapman pair-estimates")
+        md_lines.append("")
+        md_lines.append(f"_Capture side restricted to A★ (search-only, {len(A_pure)} items) — "
+                        "full A ingests the RSS floor and Google Alerts feeds, so it is not "
+                        "independent of samplers B/C._")
         md_lines.append("")
         md_lines.append("| Pair | Overlap | Estimated N |")
         md_lines.append("|---|---:|---:|")
         for sid, name, est in chapman_pairs:
-            overlap = len(A & sets[sid])
-            md_lines.append(f"| A × {sid} ({name}) | {overlap} | {est:.0f} |")
+            overlap = len(A_pure & sets[sid])
+            md_lines.append(f"| A★ × {sid} ({name}) | {overlap} | {est:.0f} |")
         md_lines.append("")
 
     md_lines.append(f"## Top missed items ({len(missed)} total)")
@@ -419,7 +494,8 @@ def main() -> int:
         week_ending = datetime.now(MELBOURNE).date()
     dates = week_dates(week_ending)
 
-    by_day = load_json_dumps(dates)
+    junk_domains = load_junk_domains()
+    by_day, ran = load_json_dumps(dates, junk_domains)
     sets = sampler_sets(by_day)
     union = set().union(*sets.values()) if sets else set()
     union_rows = dedup_against(union, by_day)
@@ -432,7 +508,8 @@ def main() -> int:
     floor_recall = (len(A & B) / len(B)) if B else float("nan")
     drift_rows = load_drift(week_ending, pooled_recall, floor_recall)
 
-    md, html_doc = render_report(week_ending, sets, union, union_rows, missed, coverage, drift_rows)
+    md, html_doc = render_report(week_ending, sets, union, union_rows, missed, coverage,
+                                 drift_rows, ran, dates, junk_domains)
 
     out_md = AUDIT_DIR / f"{week_ending.isoformat()}-recall-report.md"
     out_html = AUDIT_DIR / f"{week_ending.isoformat()}-recall-report.html"

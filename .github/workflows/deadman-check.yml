@@ -1,0 +1,130 @@
+name: Dead-man's switch — briefing delivery check
+
+# Watches the watcher. The production routine and shadow sampler run on
+# Anthropic scheduler infrastructure; if the scheduler silently fails to fire
+# (as happened 2026-06-04 and 2026-06-18), nothing in the pipeline notices.
+# This workflow runs ~90 minutes after the routines are due and emails an
+# alert via Resend if today's expected files are absent from main.
+
+on:
+  schedule:
+    # Target: 08:30 Melbourne on weekdays. Cron is UTC and Melbourne shifts
+    # between AEST (UTC+10) and AEDT (UTC+11), so two crons fire and the job
+    # self-gates on Melbourne local hour == 08 — exactly one acts per day.
+    - cron: '30 21 * * 0-4'   # 08:30 AEDT (roughly Oct–Apr)
+    - cron: '30 22 * * 0-4'   # 08:30 AEST (roughly Apr–Oct)
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Gate on Melbourne time, weekday, and Victorian public holidays
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
+          HOUR=$(TZ=Australia/Melbourne date +%H)
+          DOW=$(TZ=Australia/Melbourne date +%u)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+          echo "proceed=false" >> "$GITHUB_OUTPUT"
+
+          # Only the cron matching the current DST phase acts (manual runs bypass).
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "08" ]; then
+            echo "Local hour is $HOUR, not 08 — this is the wrong-DST cron. Skipping."
+            exit 0
+          fi
+          if [ "$DOW" -gt 5 ]; then
+            echo "Weekend in Melbourne — no briefing expected. Skipping."
+            exit 0
+          fi
+          # Must match the holiday list in docs/routine-prompts/production.md.
+          HOLIDAYS="2026-01-01 2026-01-26 2026-03-09 2026-04-03 2026-04-04 2026-04-05 2026-04-06 2026-04-25 2026-06-08 2026-09-25 2026-11-03 2026-12-25 2026-12-28"
+          case " $HOLIDAYS " in
+            *" $TODAY "*)
+              echo "Victorian public holiday — no briefing expected. Skipping."
+              exit 0 ;;
+          esac
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Check today's expected files
+        id: files
+        if: steps.gate.outputs.proceed == 'true'
+        env:
+          TODAY: ${{ steps.gate.outputs.today }}
+        run: |
+          set -euo pipefail
+          MISSING=""
+          if [ ! -f "${TODAY}-ccs-briefing.md" ]; then
+            MISSING="briefing"
+          fi
+          if [ ! -f "audit/${TODAY}-shadow.json" ]; then
+            MISSING="${MISSING:+$MISSING }shadow"
+          fi
+          echo "missing=$MISSING" >> "$GITHUB_OUTPUT"
+          if [ -z "$MISSING" ]; then
+            echo "::notice::All expected files present for $TODAY"
+          else
+            echo "::warning::Missing for $TODAY: $MISSING"
+          fi
+
+      - name: Alert via Resend
+        if: steps.gate.outputs.proceed == 'true' && steps.files.outputs.missing != ''
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TODAY: ${{ steps.gate.outputs.today }}
+          MISSING: ${{ steps.files.outputs.missing }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+
+          case "$MISSING" in
+            *briefing*) SUBJECT="ALERT: no CCS briefing was produced today — ${TODAY}" ;;
+            *)          SUBJECT="CCS pipeline: shadow sampler did not run — ${TODAY}" ;;
+          esac
+
+          {
+            echo "<p>Dead-man's-switch check at 08:30 Melbourne, ${TODAY}.</p>"
+            echo "<ul>"
+            case "$MISSING" in *briefing*)
+              echo "<li><strong>${TODAY}-ccs-briefing.md is missing</strong> — the production routine did not run or did not push. No briefing email was sent today.</li>" ;;
+            esac
+            case "$MISSING" in *shadow*)
+              echo "<li><strong>audit/${TODAY}-shadow.json is missing</strong> — the shadow sampler did not run. Saturday's recall audit loses sampler D for this day.</li>" ;;
+            esac
+            echo "</ul>"
+            echo "<p>Check the scheduled routines in Claude Code (production briefing + shadow sampler), then the"
+            echo "<a href=\"https://github.com/Rastadopoulos/ccs-news/actions\">Actions history</a>."
+            echo "A manual re-run of the affected routine will regenerate and push today's files.</p>"
+          } > /tmp/body.html
+
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --rawfile html /tmp/body.html \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html
+            }' > /tmp/resend.json
+
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Alert emailed: $SUBJECT" ;;
+            *)  echo "::error::Resend rejected the alert (HTTP $HTTP)"; exit 1 ;;
+          esac

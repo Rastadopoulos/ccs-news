@@ -33,8 +33,11 @@ The named projects, operators, and source outlets in this prompt are ILLUSTRATIV
 The routine's other safeguards (Shelly's digest, RSS floor) under-cover non-Western regions and corporate-strategy news, so this production routine is the primary line of defence on both dimensions.
 
 === RECENCY WINDOW — HARD CONSTRAINT ===
-- Tuesday–Friday: items MUST be published within the last 24 hours (Melbourne local time).
-- Monday: items MUST be published since 07:00 Melbourne the previous Friday (~72 hours, picking up exactly where Friday's briefing ended).
+- Tuesday–Friday: items MUST be published on TODAY or the previous calendar day (Melbourne time).
+- Monday: items MUST be published on or after the previous Friday (Melbourne calendar dates Friday through Monday), picking up where Friday's briefing ended.
+- Post-holiday runs: on the first run after one or more skipped weekdays (public holiday), extend the window back to the last calendar day a briefing was produced — e.g. after a holiday Monday, Tuesday's window starts the previous Friday. Never let a skipped day create a coverage hole.
+- Judge the window on Melbourne CALENDAR DATES, not a rolling 24-hour clock: most articles expose only a publication date, not a time, so a strict hour-based window is unenforceable. When a full timestamp IS available, convert it to Melbourne time first, then apply the calendar-date rule.
+- Because consecutive daily windows overlap by one calendar day, cross-day dedup (see QUALITY BAR) is mandatory — an item briefed yesterday is NOT fresh today.
 - Items without a confirmable publication date are NOT eligible.
 - 'Fewer fresh items beats more stale items'.
 - For EACH candidate item, WebFetch the article URL and READ the publication date from the page (not the snippet). Reject items outside the window.
@@ -43,8 +46,8 @@ The routine's other safeguards (Shelly's digest, RSS floor) under-cover non-West
 === ITEM COUNT — SOFT TARGET ===
 - Aim for 8–12 fresh items in the main briefing.
 - 6–12 fresh items: normal briefing.
-- 3–5 fresh items: prefix the header with 'Quiet day —' and ship those only.
-- 0–2 fresh items: 'Quiet day' stub. Optional 'Still on the radar' section (max 3 items, each ≤7 days old, each tagged with its publication date).
+- 3–5 fresh items: prefix the header with 'Quiet day —' and ship those. An optional 'Still on the radar' section (max 3 items, each ≤7 days old, each tagged with its publication date) may be appended so near-miss items have a legitimate outlet — NEVER promote out-of-window items into the five main sections instead.
+- 0–2 fresh items: 'Quiet day' stub. Optional 'Still on the radar' section (same rules as above).
 - NEVER include items older than 7 days.
 
 === HEAVY NEWS DAY — PRIORITISATION + APPENDIX ===
@@ -89,6 +92,7 @@ SCOPE
 QUALITY BAR
 - Skip rehashed press releases unless substantive.
 - Deduplicate across sources; cite the most authoritative one.
+- Cross-day dedup: before finalising, check the briefing markdown files from the previous 7 days (repo root, already present after the git pull). An item already covered in a prior briefing is rejected with reject_reason "already_covered" — unless there is a material NEW development, in which case brief the development, not the original news.
 - Prefer hard numbers (Mtpa, $, MW), named operators, regulator decisions — but do NOT skip items merely because the operator/project name is unfamiliar.
 - Opinion/editorial belongs in Section 5 only — never in Sections 1–4 unless it reports a regulator/operator decision.
 - Flag paywalled items [paywall] but include them.
@@ -117,6 +121,7 @@ PROCEDURE
      git pull --rebase --autostash || true
 
 2. WebSearches per (scope × geography) bucket with date anchors. For each candidate, WebFetch the page and read the publication date from page metadata/body. Discard out-of-window silently.
+   Run a MINIMUM of 14 distinct queries per run. If fewer than 8 in-window candidates have survived after the first full pass, run at least 5 additional queries drawn from the shadow sampler's concept list (docs/routine-prompts/shadow-sampler.md, Step 2) before declaring Quiet-day mode — a quiet day must be a verified finding, not a consequence of thin search effort.
    Issue at least one query per geographic bucket each run, including under-represented regions (China, MENA, India, SE Asia, LatAm, Africa). Issue at least two queries per run targeting multinational-strategy items (`<company> CCS strategy`, `<company> carbon capture investment`, `<company> CCS MoU OR JV OR partnership`) — rotate the company name across runs through both supermajors (BP / Shell / TotalEnergies / Eni / Chevron / ExxonMobil) and the trading houses listed in Tier 3 (Mitsui / Mitsubishi Corp / Itochu / Sumitomo / Marubeni / JERA). Issue at least one query per run on transboundary-CCS topics, rotating across: `London Protocol Article 6 CO2`, `transboundary CO2 OR cross-border CCS`, `CO2 export licence OR sub-seabed storage agreement`, `Bayu-Undan CCS OR Barossa CO2 injection`, `liquid CO2 carrier OR CO2 shipping`, `sea dumping CO2 OR Sea Dumping Act CCS`. Vary base term phrasing across runs to avoid cache-stuck hits — alternate 'CCS', 'carbon capture and storage', 'CCUS', 'carbon storage', plus the local-language equivalent where it materially changes results (Chinese, Spanish, Portuguese, Arabic, Indonesian).
 
 2b. INGEST SHELLY MURRELL'S WEEKLY MEDIA MONITORING (additive, non-blocking)
@@ -132,8 +137,16 @@ PROCEDURE
    - Items that survive both filters are added to the appropriate section (1–5) with the meta-line suffix " · via Shelly Murrell weekly monitoring".
    - If the Outlook MCP call fails OR no items survive filtering, proceed silently — this step never blocks briefing delivery.
 
-2c. BUILD AUDIT TRACE
-   While processing every candidate from Step 2 (WebSearches) and Step 2b (Shelly's digest), accumulate a JSON array `audit_trace` with one entry per URL considered — kept OR rejected. This is consumed by the Saturday recall audit (scripts/weekly_audit.py) to measure how thoroughly the routine catches CCS news.
+2c. INGEST THE RSS FLOOR AND GOOGLE ALERTS TRACES (additive, non-blocking)
+   - After the git pull in Step 1, the repo may contain audit/${TODAY}-rss.json and audit/${TODAY}-alerts.json (the alerts file accumulates through the day — whatever is present at run time is fair game). Read both if present; skip silently if absent.
+   - Treat every entry as a candidate like any other: WebFetch the article, confirm the publication date from the page, apply the same recency window and quality bar.
+   - Deduplicate against the Step 2 + Step 2b candidate set using the same canonical-URL and fuzzy-headline rules as Step 2b.
+   - Survivors are eligible for the briefing like any other candidate. Trace them with found_via "rss" or "google_alerts" respectively.
+   - Note: these feeds are shared with the Saturday audit's samplers B and C, so the audit counts only found_via="search_query" items when estimating this routine's independent recall (handled in scripts/weekly_audit.py). Do NOT avoid these feeds for the audit's sake — a better briefing always wins.
+   - Failure of this step never blocks briefing delivery.
+
+2d. BUILD AUDIT TRACE
+   While processing every candidate from Step 2 (WebSearches), Step 2b (Shelly's digest), and Step 2c (RSS floor + Google Alerts), accumulate a JSON array `audit_trace` with one entry per URL considered — kept OR rejected. This is consumed by the Saturday recall audit (scripts/weekly_audit.py) to measure how thoroughly the routine catches CCS news.
 
    For each candidate, append an object with this schema (no extra fields):
 
@@ -155,14 +168,14 @@ PROCEDURE
        "in_window":         true | false,
        "kept":              true | false,
        "reject_reason":     "<short reason string, or null if kept>",
-       "found_via":         "search_query" | "shelly_digest"
+       "found_via":         "search_query" | "shelly_digest" | "rss" | "google_alerts"
      }
 
-   Common reject_reason values: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "off_topic", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2", "appendix_overflow".
+   reject_reason is a CONTROLLED VOCABULARY — use exactly one of: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "already_covered" (item appeared in a prior briefing — see QUALITY BAR cross-day dedup), "off_topic", "round_up_retrospective", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2", "appendix_overflow". Do NOT invent free-form values — downstream analysis groups on these strings.
 
    Items routed to the "Also reported today" appendix have `kept: true` (they are surfaced in the briefing email, just in compact form) — do not mark them rejected. Only items beyond the appendix's 15-item cap get `kept: false` with `reject_reason: "appendix_overflow"`.
 
-   Include items rejected during Step 2/2b too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
+   Include items rejected during Step 2/2b/2c too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
 
 3. Self-check: enumerate every candidate with confirmed publication date, drop out-of-window items, decide normal vs Quiet-day vs Heavy-news-day mode based on the candidate count surviving the recency check.
 
@@ -202,7 +215,7 @@ C) Commit + push (this triggers the GitHub Action that sends the email):
    If the push ultimately fails: the email cannot be sent, so this is a hard failure. PushNotification: 'CCS briefing — PUSH FAILED, no email sent. See run log.' and emit the full HTML + markdown content inline in your final response.
 
 D) Audit trace → audit/${TODAY}-candidates.json in the repo root.
-   Write the `audit_trace` array (built in step 2c) as JSON, pretty-printed with 2-space indent. UTF-8, ensure_ascii off (preserve em-dashes, en-dashes, smart quotes).
+   Write the `audit_trace` array (built in step 2d) as JSON, pretty-printed with 2-space indent. UTF-8, ensure_ascii off (preserve em-dashes, en-dashes, smart quotes).
    Example: `python3 -c "import json,sys; json.dump(arr, sys.stdout, indent=2, ensure_ascii=False)" > audit/${TODAY}-candidates.json`
    This file is staged and pushed alongside the briefing in step C. It is consumed by scripts/weekly_audit.py on Saturday mornings.
 

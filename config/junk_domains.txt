@@ -1,0 +1,13 @@
+# Domains excluded from the weekly recall audit's union (sampler B/C/D/E items).
+# These are SEO rewrite farms, social platforms without primary sourcing, and
+# microcap-promoter sites that the production routine is *supposed* to reject —
+# counting them as "missed items" makes pooled recall unactionable.
+# One domain per line; matched exactly against the trace's source_domain field.
+# Blank lines and lines starting with # are ignored.
+ad-hoc-news.de
+linkedin.com
+x.com
+twitter.com
+facebook.com
+indexbox.io
+smallcaps.com.au

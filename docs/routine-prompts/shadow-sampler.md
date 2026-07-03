@@ -35,8 +35,10 @@ STEP 1 — HOLIDAY CHECK
 If TODAY matches the 2026 Victorian public-holiday list, exit cleanly with no audit trace written and no notification. Holidays: 2026-01-01, 2026-01-26, 2026-03-09, 2026-04-03, 2026-04-04, 2026-04-05, 2026-04-06, 2026-04-25, 2026-06-08, 2026-09-25, 2026-11-03, 2026-12-25, 2026-12-28.
 
 === RECENCY WINDOW — IDENTICAL TO PRODUCTION ROUTINE ===
-- Tuesday–Friday: items must be published within the last 24 hours (Melbourne local time).
-- Monday: items must be published since 07:00 Melbourne the previous Friday (~72 hours, picking up exactly where Friday's briefing ended).
+- Tuesday–Friday: items must be published on TODAY or the previous calendar day (Melbourne time).
+- Monday: items must be published on or after the previous Friday (Melbourne calendar dates Friday through Monday).
+- Post-holiday runs: on the first run after one or more skipped weekdays (public holiday), extend the window back to the last calendar day the production briefing ran — e.g. after a holiday Monday, Tuesday's window starts the previous Friday.
+- Judge the window on Melbourne CALENDAR DATES, not a rolling 24-hour clock: most articles expose only a publication date, not a time. When a full timestamp IS available, convert it to Melbourne time first, then apply the calendar-date rule.
 - WebFetch each candidate and read the publication date from the page (not the snippet).
 - Items without a confirmable publication date are NOT eligible.
 - This recency rule MUST match the production routine exactly — otherwise the audit's "in_window" comparisons are meaningless.
