@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CCS recall audit — week ending 2026-07-04 — pooled recall 19%</title><style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;color:#222;line-height:1.5;font-size:16px}h1{font-size:22px}h2{font-size:17px;margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #ddd;padding:6px 10px;text-align:left;font-size:14px}th{background:#f4f4f4}a{color:#0a4}@media print{a{color:#000;text-decoration:none}}</style></head><body><h1>CCS recall audit — week ending 2026-07-04 — pooled recall 19%</h1>
+<h2>Headline metrics</h2>
+<ul>
+<li><strong>Pooled recall</strong> (A ∩ U / U): <strong>19%</strong>  (23 of 123)</li>
+<li><strong>Floor recall</strong> (A ∩ B / B): <strong>11%</strong>  (4 of 35)</li>
+<li><strong>Estimated absolute recall</strong> (Chapman, median of 4 pair-estimates): <strong>5%</strong></li>
+</ul>
+<h2>Sampler sizes</h2>
+<table>
+<tr><th>Sampler</th><th>Items</th></tr>
+<tr><td>A · Production routine</td><td>29</td></tr>
+<tr><td>B · RSS floor</td><td>35</td></tr>
+<tr><td>C · Google Alerts</td><td>59</td></tr>
+<tr><td>D · Shadow LLM</td><td>1</td></tr>
+<tr><td>E · Shelly Murrell digest</td><td>37</td></tr>
+<tr><td>A★ · Production, search-only subset (used for Chapman)</td><td>27</td></tr>
+<tr><td><strong>Union U</strong></td><td><strong>123</strong></td></tr>
+</table>
+<p>_7 junk domains excluded from all samplers (config/junk_domains.txt)._</p>
+<h2>Sampler run coverage</h2>
+<table>
+<tr><th>Sampler</th><th>Ran (5 weekdays)</th><th>Missing</th></tr>
+<tr><td>B · RSS floor</td><td>5/5</td><td>—</td></tr>
+<tr><td>A · Production routine</td><td>5/5</td><td>—</td></tr>
+<tr><td>D · Shadow LLM</td><td>1/5</td><td>2026-06-29, 2026-07-01, 2026-07-02, 2026-07-03</td></tr>
+<tr><td>C · Google Alerts</td><td>5/5</td><td>—</td></tr>
+</table>
+<p><em>Public holidays are legitimate skips and still show as missing here.</em></p>
+<h2>Chapman pair-estimates</h2>
+<p><em>Capture side restricted to A★ (search-only, 27 items) — full A ingests the RSS floor and Google Alerts feeds, so it is not independent of samplers B/C.</em></p>
+<table>
+<tr><th>Pair</th><th>Overlap</th><th>Estimated N</th></tr>
+<tr><td>A★ × B (RSS floor)</td><td>4</td><td>201</td></tr>
+<tr><td>A★ × C (Google Alerts)</td><td>2</td><td>559</td></tr>
+<tr><td>A★ × D (Shadow LLM)</td><td>0</td><td>55</td></tr>
+<tr><td>A★ × E (Shelly Murrell digest)</td><td>0</td><td>1063</td></tr>
+</table>
+<h2>Top missed items (100 total)</h2>
+<ul>
+<li><strong>UQ tech turns captured CO₂ into valuable chemicals</strong> — advancedbiofuelsusa.info · found via <em>E</em> · <a href="advancedbiofuelsusa.info/uq-tech-turns-captured-co2-into-valuable-chemicals">link</a></li>
+<li><strong>Giant gas project earns $90m in &#x27;free&#x27; carbon offsets</strong> — afr.com · found via <em>E</em> · <a href="afr.com/companies/energy/giant-gas-project-earns-90m-in-free-carbon-offsets-20260622">link</a></li>
+<li><strong>The Class VI Permit That Sounds Like a Milestone But Isn&#x27;t One You Can Trade - AInvest</strong> — ainvest.com · found via <em>C</em> · <a href="https://www.ainvest.com/news/class-vi-permit-sounds-milestone-isn-trade-2606/">link</a></li>
+<li><strong>Carbon capture, utilization, and storage needs to move faster. Why? - Baker Hughes</strong> — bakerhughes.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOdlRSSnJOeWRkWEpDcUctYlJsanBjQzlfU3NZdlVyTDI5b2w3YTkxamxYclBBLVo3MTFJTHJhVkhQcWNXcmZUaWM3dHFLMTgtM1JQVm1xYkNSeDJmOS1hNi1iWnRPQXhhclJaMWo2QlVlUE56ZEhrX2pqUXJ4WUlMWkxYU3NPYXM1OTZJNnkyQXNleVVXVXZ3SGZ1RWFTTTgzcTZzR0VUOA?oc=5">link</a></li>
+<li><strong>Flanders unveils €2bn industrial decarbonisation plan with focus on carbon capture</strong> — belganewsagency.eu · found via <em>E</em> · <a href="belganewsagency.eu/flanders-unveils-2bn-industrial-decarbonisation-plan-with-focus-on-carbon-capture">link</a></li>
+<li><strong>Climeworks Solutions Secures 450,000 Tons of Diversified Carbon Removal Agreements ...</strong> — biochartoday.com · found via <em>C</em> · <a href="https://biochartoday.com/news/climeworks-solutions-secures-450000-tons-of-diversified-carbon-removal-agreements-with-major-global-corporations/">link</a></li>
+<li><strong>Amazon to Buy Half the Carbon Credits From Bacon Tree Project</strong> — bloomberg.com · found via <em>B</em> · <a href="https://www.bloomberg.com/news/articles/2026-06-30/amazon-to-buy-half-the-carbon-credits-from-bacon-tree-project">link</a></li>
+<li><strong>BKV Announces Two New Carbon Capture and Sequestration Facilities Now Operational</strong> — businesswire.com · found via <em>C</em> · <a href="https://www.businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational">link</a></li>
+<li><strong>Strategic Biofuels Secures Pivotal Class VI Permit, Advancing Louisiana&#x27;s Next Major Clean ...</strong> — businesswire.com · found via <em>C</em> · <a href="https://www.businesswire.com/news/home/20260630121450/en/Strategic-Biofuels-Secures-Pivotal-Class-VI-Permit-Advancing-Louisianas-Next-Major-Clean-Energy-Project">link</a></li>
+<li><strong>Canadian developer issued North America&#x27;s first certified DAC credits under long-term offtake deals</strong> — carbon-pulse.com · found via <em>C</em> · <a href="https://carbon-pulse.com/526722/">link</a></li>
+</ul>
+<h2>Source-coverage matrix</h2>
+<table>
+<tr><th>Source</th><th>Published (B+C+D+E)</th><th>Captured by A</th><th>Capture rate</th></tr>
+<tr><td>carbonherald.com</td><td>16</td><td>4</td><td>25%</td></tr>
+<tr><td>gasworld.com</td><td>7</td><td>1</td><td>14%</td></tr>
+<tr><td>carbon-pulse.com</td><td>6</td><td>4</td><td>67%</td></tr>
+<tr><td>com.my</td><td>5</td><td>0</td><td>0%</td></tr>
+<tr><td>ccsassociation.org</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>climeworks.com</td><td>3</td><td>0</td><td>0%</td></tr>
+<tr><td>offshore-energy.biz</td><td>3</td><td>2</td><td>67%</td></tr>
+<tr><td>businesswire.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncapturejournal.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>cbc.ca</td><td>2</td><td>2</td><td>100%</td></tr>
+<tr><td>esgtoday.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>qcintel.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>reuters.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>simplywall.st</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>tradingview.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>upstreamonline.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>advancedbiofuelsusa.info</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>afr.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>ainvest.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>bakerhughes.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>belganewsagency.eu</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>biochartoday.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>bloomberg.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carbonbrief.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncredits.com</td><td>1</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Drift — last 12 weeks</h2>
+<table>
+<tr><th>Week ending</th><th>Pooled recall</th><th>Floor recall</th></tr>
+<tr><td>2026-05-26</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-27</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-30</td><td>20%</td><td>0%</td></tr>
+<tr><td>2026-06-06</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-06-13</td><td>7%</td><td>2%</td></tr>
+<tr><td>2026-06-20</td><td>14%</td><td>0%</td></tr>
+<tr><td>2026-06-27</td><td>12%</td><td>2%</td></tr>
+<tr><td>2026-07-04</td><td>19%</td><td>11%</td></tr>
+</table>
+<p><em>— Auto-audit</em></p><p style='color:#888;font-size:12px'>Generated 2026-07-04T09:04:36.177063+10:00</p></body></html>
