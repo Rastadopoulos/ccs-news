@@ -130,7 +130,7 @@ PROCEDURE
    - Call read_resource on that message URI to get the HTML body.
    - Parse every link block under "Australian coverage" and "International coverage". Each block has the shape: `<a href="…">{headline}</a> – {source}<br/>{1-sentence summary}`.
    - The hrefs are wrapped in aus01.safelinks.protection.outlook.com. Extract the real URL from the `url=` query parameter and URL-decode it.
-   - For each extracted item: WebFetch the article and read the publication date from the page metadata/body. Apply the SAME recency rule as Step 2 (24h Tue–Fri, 72h Mon). Discard out-of-window items silently.
+   - For each extracted item: WebFetch the article and read the publication date from the page metadata/body. Apply the SAME recency rule as Step 2 (the Melbourne calendar-date window defined under RECENCY WINDOW). Discard out-of-window items silently.
    - Deduplicate against the Step 2 candidate set by:
        (a) canonical URL (strip query/fragment, lowercase host), and
        (b) fuzzy headline match: lowercase, strip the trailing " – {source}", and compare with Jaccard ≥ 0.7 on word sets.
