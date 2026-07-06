@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/the-1point-carbon-capture-system-occidental-petroleum-pushes-modular/69705440",
+    "canonical_url": "https://ad-hoc-news.de/boerse/news/ueberblick/the-1point-carbon-capture-system-occidental-petroleum-pushes-modular/69705440",
+    "fuzzy_key": "1point,air,capture,carbon,direct,modular,occidental,petroleum,pushes,system",
+    "source_domain": "ad-hoc-news.de",
+    "headline": "The 1Point Carbon Capture System. Occidental Petroleum pushes modular direct air …",
+    "publication_date": "2026-07-06T13:45:23+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "low_quality_source",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://insideclimatenews.org/news/03072026/california-environmentalists-press-for-assessment-of-first-carbon-capture-project/",
+    "canonical_url": "https://insideclimatenews.org/news/03072026/california-environmentalists-press-for-assessment-of-first-carbon-capture-project",
+    "fuzzy_key": "assessment,california,capture,carbon,environmentalists,first,press,project",
+    "source_domain": "insideclimatenews.org",
+    "headline": "California's First Carbon Capture Project Is Up and Running. Environmentalists Are Still Trying To Stop It.",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "no_pub_date",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://worldoil.com/news/2026/6/3/class-vi-well-approvals-accelerate-as-ccs-permit-applications-slow/",
+    "canonical_url": "https://worldoil.com/news/2026/6/3/class-vi-well-approvals-accelerate-as-ccs-permit-applications-slow",
+    "fuzzy_key": "accelerate,applications,approvals,ccs,class,permit,slow,vi,well",
+    "source_domain": "worldoil.com",
+    "headline": "Class VI well approvals accelerate as CCS permit applications slow",
+    "publication_date": "2026-06-03T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://theedgemalaysia.com/node/799783",
+    "canonical_url": "https://theedgemalaysia.com/node/799783",
+    "fuzzy_key": "2027,carbon,decision,eyes,landmark,link,malaysia-japan,totalenergies",
+    "source_domain": "theedgemalaysia.com",
+    "headline": "TotalEnergies eyes 2027 decision on landmark Malaysia-Japan carbon link",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "no_pub_date",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/equinor-steps-back-from-ccs-expansion-as-market-signals-weaken/",
+    "canonical_url": "https://carbonherald.com/equinor-steps-back-from-ccs-expansion-as-market-signals-weaken",
+    "fuzzy_key": "back,ccs,equinor,expansion,market,signals,steps,weaken",
+    "source_domain": "carbonherald.com",
+    "headline": "Equinor Steps Back From CCS Expansion As Market Signals Weaken",
+    "publication_date": "2026-02-11T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.newswire.ca/news-releases/deep-sky-announces-direct-air-capture-carbon-removal-agreement-with-td-bank-group-advancing-canada-s-leadership-in-carbon-removal-899228119.html",
+    "canonical_url": "https://newswire.ca/news-releases/deep-sky-announces-direct-air-capture-carbon-removal-agreement-with-td-bank-group-advancing-canada-s-leadership-in-carbon-removal-899228119.html",
+    "fuzzy_key": "advancing,agreement,air,announces,bank,canada,capture,carbon,deep,direct,group,leadership,removal,sky,td",
+    "source_domain": "newswire.ca",
+    "headline": "Deep Sky Announces Direct Air Capture Carbon Removal Agreement with TD Bank Group, Advancing Canada's Leadership in Carbon Removal",
+    "publication_date": "2026-06-01T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article/",
+    "canonical_url": "https://rigzone.com/news/santos_says_moomba_ccs_delivering_emissions_reduction_at_scale-26-may-2026-183778-article",
+    "fuzzy_key": "ccs,delivering,emissions,moomba,reduction,santos,says,scale",
+    "source_domain": "rigzone.com",
+    "headline": "Santos Says Moomba CCS Delivering Emissions Reduction at Scale",
+    "publication_date": "2026-05-26T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/two-new-bkv-carbon-capture-facilities-go-operational-in-texas/",
+    "canonical_url": "https://carbonherald.com/two-new-bkv-carbon-capture-facilities-go-operational-in-texas",
+    "fuzzy_key": "bkv,capture,carbon,facilities,go,new,operational,texas,two",
+    "source_domain": "carbonherald.com",
+    "headline": "Two New BKV Carbon Capture Facilities Go Operational In Texas",
+    "publication_date": "2026-06-30T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/exxonmobil-starts-up-second-ccs-project-in-louisiana-with-ng3-launch/",
+    "canonical_url": "https://carbonherald.com/exxonmobil-starts-up-second-ccs-project-in-louisiana-with-ng3-launch",
+    "fuzzy_key": "ccs,exxonmobil,launch,louisiana,ng3,project,second,starts,up",
+    "source_domain": "carbonherald.com",
+    "headline": "ExxonMobil Starts Up Second CCS Project in Louisiana with NG3 Launch",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "no_pub_date",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://earthjustice.org/press/2026/air-products-abandons-proposed-louisiana-blue-hydrogen-and-ammonia-plant-with-carbon-capture-scheme",
+    "canonical_url": "https://earthjustice.org/press/2026/air-products-abandons-proposed-louisiana-blue-hydrogen-and-ammonia-plant-with-carbon-capture-scheme",
+    "fuzzy_key": "abandons,air,ammonia,blue,capture,carbon,hydrogen,louisiana,plant,products,proposed,scheme",
+    "source_domain": "earthjustice.org",
+    "headline": "Air Products Abandons Proposed Louisiana \"Blue\" Hydrogen and Ammonia Plant with Carbon Capture Scheme",
+    "publication_date": "2026-07-01T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "search_query"
+  }
+]
