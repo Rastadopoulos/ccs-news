@@ -239,6 +239,43 @@ def esc(s):
     return html.escape(str(s if s is not None else ""))
 
 
+# Currency symbols for the pre-conversion reference. INR is shown in crore (the unit CCS
+# announcements use in India); other currencies in bn/m.
+CUR_SYM = {"USD": "US$", "EUR": "€", "GBP": "£", "AUD": "A$", "CAD": "C$", "NOK": "kr",
+           "JPY": "¥", "CNY": "RMB", "SGD": "S$", "BRL": "R$", "INR": "₹", "AED": "AED",
+           "SAR": "SAR", "DKK": "kr"}
+POSITIVE_STATUS = {"announced", "allocated", "committed", "spent"}
+
+
+def fmt_native(amount, cur):
+    """Format a money figure in its original currency (true pre-conversion reference)."""
+    sym = CUR_SYM.get(cur, (cur + " ") if cur else "")
+    if cur == "INR":
+        return f"₹{amount/1e7:,.0f} cr"      # crore = 1e7; ₹200bn → ₹20,000 cr
+    if amount >= 1e9:
+        return f"{sym}{amount/1e9:.2f}bn"
+    if amount >= 1e6:
+        return f"{sym}{amount/1e6:.0f}m"
+    return f"{sym}{amount:,.0f}"
+
+
+def native_ref(records, fx, max_cur=3):
+    """Original-currency reference for a group: face value (positive-status only) of each
+    currency present, largest first, plus the reconciling A$ face total in parentheses."""
+    by_cur = defaultdict(float)
+    for r in records:
+        if r.get("commitment_status") in POSITIVE_STATUS and r.get("amount") and r.get("currency"):
+            by_cur[r["currency"]] += r["amount"]
+    if not by_cur:
+        return "—"
+    ordered = sorted(by_cur.items(), key=lambda kv: -(kv[1] * fx.get(kv[0], 0)))
+    parts = [fmt_native(a, c) for c, a in ordered[:max_cur]]
+    if len(ordered) > max_cur:
+        parts.append("…")
+    face_aud = sum(a * fx.get(c, 0) for c, a in ordered)
+    return " + ".join(parts) + f" ({fmt_aud(round(face_aud))} face)"
+
+
 def hbar_chart(rows, unit="", max_val=None, height_each=26, width=520, label_w=180):
     """Horizontal bar chart. rows = [(label, value, tooltip)]. Returns SVG string."""
     if not rows:
@@ -346,24 +383,30 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     # --- View 1: geography ---
     region_val = Counter()
     region_cnt = Counter()
+    region_recs = defaultdict(list)
     for r in fresh:
         reg = r.get("region") or "Global"
         region_val[reg] += committed_aud(r)
         region_cnt[reg] += 1
+        region_recs[reg].append(r)
     geo_rows = [(reg, region_val[reg], f"{reg}: {fmt_aud(region_val[reg])} across {region_cnt[reg]} items")
                 for reg in REGION_ORDER if region_cnt[reg]]
     geo_rows.sort(key=lambda x: -x[1])
     geo_cnt_rows = sorted([(reg, region_cnt[reg]) for reg in region_cnt], key=lambda x: -x[1])
+    # Region table with the original-currency reference (before A$ conversion).
+    region_tbl = [(reg, region_val[reg], native_ref(region_recs[reg], fx))
+                  for reg, _, _ in geo_rows]
 
     country_val = Counter()
     country_cnt = Counter()
+    country_recs = defaultdict(list)
     for r in fresh:
         for c in (r.get("countries") or []):
             country_val[c] += committed_aud(r)
             country_cnt[c] += 1
-    top_countries = country_val.most_common(12)
-    country_rows = [(c, v, f"{c}: {fmt_aud(v)} across {country_cnt[c]} items")
-                    for c, v in top_countries if v > 0][:10]
+            country_recs[c].append(r)
+    top_countries = [c for c, _ in country_val.most_common() if country_val[c] > 0][:10]
+    country_tbl = [(c, country_val[c], native_ref(country_recs[c], fx)) for c in top_countries]
 
     # --- View 2: where the money goes ---
     instr_val = Counter()
@@ -413,14 +456,18 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     # --- View 5: Australia benchmark ---
     peer_val = Counter()
     peer_cnt = Counter()
+    peer_recs = defaultdict(list)
     for r in fresh:
         for c in (r.get("countries") or []):
             if c in PEER_COUNTRIES:
                 peer_val[c] += committed_aud(r)
                 peer_cnt[c] += 1
+                peer_recs[c].append(r)
     peer_rows = [(c, peer_cnt[c], f"{c}: {peer_cnt[c]} items · {fmt_aud(peer_val[c])}")
                  for c in PEER_COUNTRIES if peer_cnt[c]]
     peer_rows.sort(key=lambda x: -x[1])
+    peer_tbl = [(c, peer_val[c], peer_cnt[c], native_ref(peer_recs[c], fx))
+                for c in sorted(PEER_COUNTRIES, key=lambda c: -peer_val[c]) if peer_cnt[c]]
     au_items = [r for r in fresh if "Australia" in (r.get("countries") or [])]
     apac_watch = [r for r in fresh if r.get("region") in ("APAC", "China", "India")
                   and "Australia" not in (r.get("countries") or [])]
@@ -535,12 +582,28 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
 
     # View 1
     section("1 · Geography of commitment",
-            "Where CCS capital is being committed (status-weighted A$) and where activity is concentrating.")
+            "Where CCS capital is being committed (status-weighted A$) and where activity is concentrating. "
+            "The original currency is shown behind every region and country as a true pre-conversion reference.")
+
+    def geo_table(rows, first_col):
+        h = [f'<table class="tbl geo"><thead><tr><th>{esc(first_col)}</th>'
+             '<th>Committed A$</th><th>Original-currency commitments (face)</th></tr></thead><tbody>']
+        for name, val, nat in rows:
+            h.append(f'<tr><td>{esc(name)}</td><td class="num">{esc(fmt_aud(val))}</td>'
+                     f'<td class="nat">{esc(nat)}</td></tr>')
+        h.append('</tbody></table>')
+        return "".join(h)
+
     A('<div class="grid2">')
     A(f'<div class="card"><h3>Committed A$ by region</h3>{hbar_chart([(a,b) for a,b,_ in geo_rows] and geo_rows, unit="aud")}</div>')
     A(f'<div class="card"><h3>Activity by region (item count)</h3>{hbar_chart(geo_cnt_rows)}</div>')
     A('</div>')
-    A(f'<div class="card"><h3>Top countries by committed A$</h3>{hbar_chart(country_rows, unit="aud")}</div>')
+    A(f'<div class="card"><h3>By region — with original-currency reference</h3>{geo_table(region_tbl, "Region")}</div>')
+    A(f'<div class="card"><h3>Top countries — committed A$ &amp; original currency</h3>{geo_table(country_tbl, "Country")}</div>')
+    A('<p class="fnote">“Committed A$” is status-weighted (announced 0.25 / allocated 0.75 / committed·spent 1.0). '
+      'The original-currency column is the <b>face value</b> of positive-status commitments (announced→spent) '
+      'in each native currency, with its unweighted A$ equivalent in parentheses — your reference before conversion. '
+      f'Rates fixed as of {esc(fx_asof)}; INR shown in crore.</p>')
 
     # View 2
     section("2 · Where the money goes",
@@ -582,11 +645,17 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     # View 5
     section("5 · Australia benchmark",
             "Australia's activity against peer jurisdictions, plus the APAC cross-border watch.")
-    A('<div class="grid2">')
     A(f'<div class="card"><h3>Peer jurisdictions — activity (item count)</h3>{hbar_chart(peer_rows)}</div>')
+    peer_h = ['<div class="card"><h3>Peer jurisdictions — committed A$ &amp; original currency</h3>'
+              '<table class="tbl geo"><thead><tr><th>Jurisdiction</th><th>Committed A$</th>'
+              '<th>Items</th><th>Original-currency commitments (face)</th></tr></thead><tbody>']
+    for c, val, cnt, nat in peer_tbl:
+        peer_h.append(f'<tr><td>{esc(c)}</td><td class="num">{esc(fmt_aud(val))}</td>'
+                      f'<td class="num">{cnt}</td><td class="nat">{esc(nat)}</td></tr>')
+    peer_h.append('</tbody></table></div>')
+    A("".join(peer_h))
     A('<div class="card"><h3>Australia — tracked items</h3>')
     item_list(au_items, limit=8, show_why=True)
-    A('</div>')
     A('</div>')
     A('<div class="card"><h3>APAC cross-border watch (neighbours as competitors & storage customers)</h3>')
     item_list(apac_watch, limit=8, show_why=True)
@@ -693,6 +762,9 @@ h3{font-size:14px;margin:0 0 10px;color:var(--mut);text-transform:uppercase;lett
 .tbl th{text-align:left;padding:8px;border-bottom:2px solid var(--line);color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.03em}
 .tbl td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
 .tbl .ty{font-weight:700;color:var(--accent)}
+.tbl.geo .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.tbl.geo .nat{font-variant-numeric:tabular-nums;color:#2b5563;white-space:nowrap}
+.fnote{color:var(--mut);font-size:11.5px;font-style:italic;margin:6px 2px 0;max-width:80ch}
 .muted{color:var(--mut);font-size:13px}
 footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line)}
 </style>"""
