@@ -42,16 +42,28 @@ jobs:
             python3 scripts/weekly_audit.py
           fi
 
-      - name: Commit audit report
+      - name: Rebuild CCS Intelligence Dashboard
+        # Rebuilds dashboard/index.html from the frozen backfill (dashboard/data/facts-backfill.jsonl)
+        # plus every audit/*-facts.json the daily routine emitted during the week, and writes a dated
+        # board snapshot. Pure standard library + scripts/_canon.py — no extra deps beyond the audit step.
+        env:
+          PYTHONUNBUFFERED: '1'
+          WEEK_ENDING: ${{ github.event.inputs.week_ending }}
+        run: |
+          SNAP="${WEEK_ENDING:-$(TZ=Australia/Melbourne date +%Y-%m-%d)}"
+          BUILD_DATE="${SNAP}" python3 scripts/build_dashboard.py --snapshot "${SNAP}"
+
+      - name: Commit audit report + dashboard
         run: |
           set -euo pipefail
           git config user.email 'ccs-news-routine@co2crc.com.au'
           git config user.name  'CCS Weekly Audit'
           git add audit/*-recall-report.html audit/*-recall-report.md audit/drift.json 2>/dev/null || true
+          git add dashboard/index.html dashboard/snapshots/*.html 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No audit changes to commit."
+            echo "No audit or dashboard changes to commit."
             exit 0
           fi
-          git commit -m "Weekly audit $(TZ=Australia/Melbourne date +%Y-%m-%d)"
+          git commit -m "Weekly audit + dashboard $(TZ=Australia/Melbourne date +%Y-%m-%d)"
           git pull --rebase --autostash
           git push origin main

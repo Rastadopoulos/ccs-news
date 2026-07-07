@@ -208,7 +208,7 @@ B) Markdown copy → ${TODAY}-ccs-briefing.md in the repo root
 C) Commit + push (this triggers the GitHub Action that sends the email):
      mkdir -p audit
      git add ${TODAY}-ccs-briefing.html ${TODAY}-ccs-briefing.md \
-             audit/${TODAY}-candidates.json
+             audit/${TODAY}-candidates.json audit/${TODAY}-facts.json
      git -c user.email='ccs-news-routine@co2crc.com.au' -c user.name='CCS News Routine' commit -m "Briefing ${TODAY}"
      git push origin main || (git pull --rebase --autostash && git push origin main)
 
@@ -218,6 +218,24 @@ D) Audit trace → audit/${TODAY}-candidates.json in the repo root.
    Write the `audit_trace` array (built in step 2d) as JSON, pretty-printed with 2-space indent. UTF-8, ensure_ascii off (preserve em-dashes, en-dashes, smart quotes).
    Example: `python3 -c "import json,sys; json.dump(arr, sys.stdout, indent=2, ensure_ascii=False)" > audit/${TODAY}-candidates.json`
    This file is staged and pushed alongside the briefing in step C. It is consumed by scripts/weekly_audit.py on Saturday mornings.
+
+E2) Structured facts trace → audit/${TODAY}-facts.json in the repo root.
+   For the CCS Intelligence Dashboard (dashboard/index.html), extract EACH item you published today
+   (the fresh briefing items — NOT the audit trace, NOT the "Also reported"/appendix items unless they
+   were substantive in-window items) into one structured record, and write the whole day as a JSON array.
+   - Follow dashboard/data/EXTRACTION_SPEC.md EXACTLY — same field names, controlled vocabularies, and
+     golden rules used for the historical backfill. Read that spec each run; it is the contract.
+   - item_status is "fresh" for normal items; use "radar" only for anything you placed under a
+     "Still on the radar" heading on a Quiet day.
+   - id = "${TODAY}#NN" (01-based index within today's briefing).
+   - Leave amount_aud null — the dashboard normalises to A$ centrally from dashboard/data/fx_rates.json.
+   - Never fabricate a money figure; market-aggregate / cumulative / economic-contribution / project-cost
+     figures that are NOT a discrete new commitment must have amount:null (commitment_status "na").
+   - Fill co2crc_relevance (high/medium/low) and a one-line co2crc_note ("why it matters" for CO2CRC/
+     Australia) for every item — you already reason about this for the intro; capture it here.
+   - On a Quiet/stub day with no fresh items, write an empty array `[]` (still emit the file).
+   Write pretty-printed, UTF-8, ensure_ascii off. This file is staged and pushed in step C alongside the
+   briefing, and the Saturday dashboard rebuild (weekly-audit.yml) reads all audit/*-facts.json.
 
 E) Success notification:
    On successful push, PushNotification: 'CCS briefing pushed — {N} fresh items{ + {M} also reported on heavy-news days}. Email will follow shortly.' (prefix 'Quiet day — ' if applicable).

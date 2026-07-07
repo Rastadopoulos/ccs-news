@@ -1,6 +1,10 @@
 # CCS News
 
-Automated daily briefing on global carbon capture & storage (CCS) news, plus an independent comprehensiveness-audit pipeline that measures how much CCS news the briefing routinely misses.
+Automated daily briefing on global carbon capture & storage (CCS) news, plus an independent comprehensiveness-audit pipeline that measures how much CCS news the briefing routinely misses, plus a strategic-trend dashboard built from the accumulating briefing archive.
+
+## CCS Intelligence Dashboard
+
+[`dashboard/index.html`](dashboard/index.html) turns the daily briefings into a running, CEO-lens read on global CCS momentum — geography of commitment, where the money goes, who's advancing vs retreating, deployment mandates, an Australia benchmark, capacity (Mtpa), and a segmented CO2CRC/CO2Tech signal feed. It's a single self-contained HTML file, rebuilt every Saturday by `weekly-audit.yml`. Scope and how-it-works: [`dashboard/SCOPE.md`](dashboard/SCOPE.md) and [`dashboard/README.md`](dashboard/README.md). The daily routine emits `audit/YYYY-MM-DD-facts.json` (a structured extraction of each briefing per [`dashboard/data/EXTRACTION_SPEC.md`](dashboard/data/EXTRACTION_SPEC.md)) that feeds it.
 
 ## How the briefing reaches you
 
