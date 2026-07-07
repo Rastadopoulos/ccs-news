@@ -1,0 +1,13 @@
+# Quiet day — CCS briefing — Wed 08 Jul 2026
+
+No CCS/CCUS news items could be confirmed within today's recency window (published 7 or 8 July 2026, Melbourne time). The post–US Independence Day lull that produced single-item and stub briefings earlier this week has persisted: across 19 distinct searches spanning every geographic and thematic bucket (Australia/APAC, North America, Europe/UK, Middle East, China, India/SE Asia, Latin America, Africa; projects, policy, technology, markets/strategy, transboundary/London Protocol), the freshest concrete developments surfaced all date 6 July or earlier — outside today's strict window.
+
+Shelly Murrell's weekly media monitoring (1–7 July) was ingested: every item in it dates 1–6 July, and the substantive ones (Strategic Biofuels' Class VI permit, Alberta/Pathways, AFRY's UK waste-to-energy role, Woodside's Gippsland handover, ExxonMobil's Gulf lease surrender, Ucaneo's Berlin DAC plant) were already carried in earlier briefings this week. The two genuinely new items — both dated 6 July — are held in *Still on the radar* below.
+
+**Delivery note:** today's run was again constrained by the execution environment — every outbound fetch to external news domains (Carbon Herald, Reuters, IEA, Global CCS Institute, Offshore Energy and others) was refused at the egress proxy (HTTP 403 policy denial). Web *search* worked normally and was run across all buckets, but article pages could not be opened to confirm publication dates — the routine's hard eligibility requirement — so borderline candidates were held back rather than published unverified. Nothing confirmable in-window was dropped; the underlying newsflow was independently thin. Normal service should resume once article fetching is restored.
+
+## Still on the radar
+- **CCSA EU Conference 2026: Europe's carbon capture debate moves from ambition to execution** — Brussels conference recap; panels reportedly shifted tone from ambition toward delivery, with candid exchanges on progress and remaining points of difference across the European CCS sector (Carbon Herald, 6 Jul 2026 · via Shelly Murrell weekly monitoring) [opinion] [link](https://us.list-manage.com/YLq1IKEfVrE)
+- **Rainbow updates BioCCS methodology to align with EU carbon-removal framework** — Rainbow, a European carbon registry certified CCP-eligible by the ICVCM, revised its biomass carbon removal and storage (BioCCS) methodology to incorporate the EU Carbon Removals and Carbon Farming (CRCF) regulation's requirements (Decarbonfuse, 6 Jul 2026 · via Shelly Murrell weekly monitoring) [link](https://us.list-manage.com/f3PtrcPXuxe)
+
+— Auto-briefing
