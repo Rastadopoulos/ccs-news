@@ -79,6 +79,15 @@ def load_fx():
     return cfg["rates"], cfg.get("as_of", "")
 
 
+def load_reference():
+    """Load the external GCCSI baseline (optional — returns None if absent)."""
+    path = os.path.join(DATA_DIR, "reference-baseline.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def _iter_records():
     """Yield raw records from all sources."""
     backfill = os.path.join(DATA_DIR, "facts-backfill.jsonl")
@@ -362,7 +371,7 @@ def iso_week(d):
     return f"{y}-W{w:02d}"
 
 
-def render(fresh, radar, stats, fx, fx_asof, build_dt):
+def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None):
     dates = sorted({r["briefing_date"] for r in fresh})
     span = f"{dates[0]} → {dates[-1]}" if dates else "no data"
 
@@ -605,8 +614,60 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
       'in each native currency, with its unweighted A$ equivalent in parentheses — your reference before conversion. '
       f'Rates fixed as of {esc(fx_asof)}; INR shown in crore.</p>')
 
-    # View 2
-    section("2 · Where the money goes",
+    # View 2 — GCCSI external baseline
+    if ref:
+        g = ref.get("global", {})
+        section("2 · Global reality check — GCCSI baseline",
+                f"External benchmark: {esc(ref.get('source'))}. The corpus tracks recent news flow (A$); "
+                "this is the authoritative global project pipeline (facilities & Mtpa). Read the geography views above against it.")
+        A('<div class="kpis">')
+        A(kpi("Global pipeline", f"{g.get('pipeline_facilities','—')} facilities",
+              f"{g.get('pipeline_capacity_mtpa','—')} Mtpa total capacity"))
+        A(kpi("Operating now", f"{g.get('operating_facilities','—')} facilities",
+              f"{g.get('operating_capacity_mtpa','—')} Mtpa (+{g.get('operating_capacity_growth_yoy_pct','—')}% YoY)"))
+        A(kpi("In construction", f"{g.get('in_construction_facilities','—')} facilities",
+              f"{g.get('in_construction_capacity_mtpa','—')} Mtpa"))
+        A(kpi("Added since 2024 report", f"+{g.get('facilities_added_yoy','—')}", "net new facilities"))
+        A(kpi("Projected 2030 operating", f"~{g.get('projected_2030_operating_capacity_mtpa','—')} Mtpa",
+              f">5× today; ~{g.get('planned_capacity_cagr_since_2017_pct','—')}% CAGR since 2017"))
+        A('</div>')
+        # Region-by-region: GCCSI baseline vs what our corpus caught
+        A('<div class="card"><h3>Regional reality vs corpus coverage</h3>')
+        A('<table class="tbl"><thead><tr><th>Region</th>'
+          '<th>GCCSI Global Status of CCS 2025</th>'
+          '<th>Our corpus (this window)</th></tr></thead><tbody>')
+        for rg in ref.get("regions", []):
+            cr = rg.get("corpus_region")
+            cnt = region_cnt.get(cr, 0)
+            val = region_val.get(cr, 0)
+            corpus = (f"{cnt} item{'s' if cnt != 1 else ''} · {fmt_aud(val)} committed"
+                      if cnt else "— not captured in window")
+            A(f'<tr><td class="rgn">{esc(rg.get("region"))}</td>'
+              f'<td class="gccsi">{esc(rg.get("gccsi"))}</td>'
+              f'<td class="corpus">{esc(corpus)}</td></tr>')
+        A('</tbody></table></div>')
+        # US-specific + Middle East call-out (the two gaps that prompted this)
+        us_items = [r for r in fresh if "United States" in (r.get("countries") or [])]
+        us_comm = sum(committed_aud(r) for r in us_items)
+        us_canc = sum(r.get("amount_aud") or 0 for r in us_items if r.get("commitment_status") == "cancelled")
+        A('<p class="fnote">⚑ <b>Why the US &amp; Middle East look thin above:</b> the corpus caught '
+          f'{len(us_items)} US items this window, but with only {fmt_aud(us_comm)} of committed capital — its '
+          f'biggest US dollar stories were <b>retreats</b> ({fmt_aud(us_canc)} cancelled/surrendered). GCCSI shows the '
+          'US as the world’s largest operating fleet (39 facilities, &gt;223 Mt stored). The Middle East had zero '
+          'in-window items, yet GCCSI shows the Jubail (9 Mtpa) and Yanbu (2 Mtpa) hubs advancing. The gap is '
+          '<b>news-flow timing &amp; source bias, not real-world absence</b>.</p>')
+        # sector projection
+        sec_proj = ref.get("sector_projection_2030_mtpa") or {}
+        if sec_proj:
+            rows = sorted(([k, v] for k, v in sec_proj.items()), key=lambda x: -x[1])
+            A(f'<div class="card"><h3>Where capture capacity is heading — GCCSI projected by sector (Mtpa, 2030+)</h3>'
+              f'{hbar_chart(rows)}</div>')
+        A(f'<p class="fnote">Source: <a href="{esc(ref.get("url"))}" target="_blank" rel="noopener">'
+          f'{esc(ref.get("source"))}</a>, published {esc(ref.get("published"))} (data as of {esc(ref.get("data_asof"))}); '
+          f'retrieved {esc(ref.get("retrieved"))}. {esc(ref.get("caveat"))}</p>')
+
+    # View 3
+    section("3 · Where the money goes",
             "Split of commitments across policy instruments and the CCS value chain.")
     A('<div class="grid2">')
     A(f'<div class="card"><h3>Committed A$ by instrument</h3>{hbar_chart([r for r in instr_rows if r[1]>0][:10], unit="aud")}</div>')
@@ -614,8 +675,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     A('</div>')
     A(f'<div class="card"><h3>Value-chain focus (item count)</h3>{hbar_chart(vc_rows)}</div>')
 
-    # View 3
-    section("3 · Actors",
+    # View 4
+    section("4 · Actors",
             "Who is most active — and whether the oil & gas majors / NOCs are advancing or retreating.")
     A(f'<div class="card"><h3>Most-mentioned organisations</h3>{hbar_chart(org_rows)}</div>')
     A('<div class="grid2">')
@@ -627,8 +688,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     A('</div>')
     A('</div>')
 
-    # View 4
-    section("4 · Deployment-mandate tracker",
+    # View 5
+    section("5 · Deployment-mandate tracker",
             "Legislated targets & deadlines requiring CCS deployment — surfaced from policy items.")
     if mandates:
         A('<table class="tbl"><thead><tr><th>Target year</th><th>Jurisdiction</th>'
@@ -642,8 +703,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     else:
         A('<p class="muted">No dated deployment mandates in the current corpus.</p>')
 
-    # View 5
-    section("5 · Australia benchmark",
+    # View 6
+    section("6 · Australia benchmark",
             "Australia's activity against peer jurisdictions, plus the APAC cross-border watch.")
     A(f'<div class="card"><h3>Peer jurisdictions — activity (item count)</h3>{hbar_chart(peer_rows)}</div>')
     peer_h = ['<div class="card"><h3>Peer jurisdictions — committed A$ &amp; original currency</h3>'
@@ -661,8 +722,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     item_list(apac_watch, limit=8, show_why=True)
     A('</div>')
 
-    # View 6
-    section("6 · Momentum & social licence",
+    # View 7
+    section("7 · Momentum & social licence",
             "Newsflow momentum, committed-A$ trend by leading region, and media sentiment.")
     A('<div class="grid2">')
     A(f'<div class="card"><h3>Newsflow momentum (items / ISO week)</h3>{sparkline_multi(momentum_series)}</div>')
@@ -676,8 +737,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     A('</div>')
     A('</div>')
 
-    # View 7 — capacity
-    section("7 · Capacity committed (Mtpa)",
+    # View 8 — capacity
+    section("8 · Capacity committed (Mtpa)",
             "For CCS, tonnes matter as much as dollars. Firm = committed/operating; pipeline = "
             "announced/allocated. Capacity as stated in the source items; cancellations excluded.")
     A('<div class="grid2">')
@@ -685,8 +746,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt):
     A(f'<div class="card"><h3>Capacity by value chain (Mtpa)</h3>{hbar_chart(cap_vc_rows)}</div>')
     A('</div>')
 
-    # View 8 — segmented signal feed
-    section("8 · CO2CRC / CO2Tech signal feed",
+    # View 9 — segmented signal feed
+    section("9 · CO2CRC / CO2Tech signal feed",
             "High & medium strategic-relevance items, grouped into actionable buckets (rule-based) "
             "with the 'why it matters' read. Priority order — start at the top.")
     for b in SIGNAL_ORDER:
@@ -762,6 +823,9 @@ h3{font-size:14px;margin:0 0 10px;color:var(--mut);text-transform:uppercase;lett
 .tbl th{text-align:left;padding:8px;border-bottom:2px solid var(--line);color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.03em}
 .tbl td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
 .tbl .ty{font-weight:700;color:var(--accent)}
+.tbl .rgn{font-weight:700;white-space:nowrap;vertical-align:top}
+.tbl .gccsi{font-size:12.5px;line-height:1.45}
+.tbl .corpus{font-size:12.5px;color:#8a5a2b;white-space:nowrap;vertical-align:top}
 .tbl.geo .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
 .tbl.geo .nat{font-variant-numeric:tabular-nums;color:#2b5563;white-space:nowrap}
 .fnote{color:var(--mut);font-size:11.5px;font-style:italic;margin:6px 2px 0;max-width:80ch}
@@ -779,8 +843,9 @@ def main():
 
     fx, fx_asof = load_fx()
     fresh, radar, stats = load_records(fx)
+    ref = load_reference()
     build_dt = os.environ.get("BUILD_DATE") or date.today().isoformat()
-    body = render(fresh, radar, stats, fx, fx_asof, build_dt)
+    body = render(fresh, radar, stats, fx, fx_asof, build_dt, ref)
     # `body` is: <title>…<style>…</style> + <div class="wrap">…</div>. Split the head
     # material from the body content at the wrap div to assemble a valid document.
     page = ("<!doctype html><html lang=en><head><meta charset=utf-8>"

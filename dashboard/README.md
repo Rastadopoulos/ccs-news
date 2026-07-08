@@ -38,11 +38,16 @@ board snapshots are archived in [`snapshots/`](snapshots/).
 
 No dependencies beyond the standard library + `scripts/_canon.py`.
 
-## The eight views
+## The nine views
 
-1. Geography of commitment · 2. Where the money goes · 3. Actors (incl. O&G-major advancing/retreating)
-· 4. Deployment-mandate tracker · 5. Australia benchmark · 6. Momentum & social licence
-· 7. Capacity committed (Mtpa) · 8. Segmented CO2CRC/CO2Tech signal feed.
+1. Geography of commitment · 2. Global reality check — GCCSI baseline · 3. Where the money goes
+· 4. Actors (incl. O&G-major advancing/retreating) · 5. Deployment-mandate tracker · 6. Australia
+benchmark · 7. Momentum & social licence · 8. Capacity committed (Mtpa) · 9. Segmented CO2CRC/CO2Tech
+signal feed.
+
+View 2 overlays an external authoritative benchmark — the Global CCS Institute *Global Status of CCS*
+report (`data/reference-baseline.json`) — so a quiet news window for a region (e.g. the US or Middle
+East) is not misread as real-world inactivity. Refresh it annually when GCCSI publishes.
 
 ## Reading the numbers (important caveats)
 
