@@ -83,6 +83,12 @@ Built in v1 unless marked **[planned]**. Every chart is backed by the underlying
    priority-ordered buckets (rule-based): policy & advocacy hooks · storage customers & cross-border
    demand · competitor & peer project moves · technology threats & substitutes · partnership &
    investment targets. Each with the "why it matters" read.
+2b. **Global reality check — GCCSI baseline** — an external, authoritative benchmark from the Global
+   CCS Institute *Global Status of CCS 2025* report (global pipeline facilities & Mtpa, regional
+   spotlight, sector projections) placed directly under the geography view, with a region-by-region
+   "reality vs corpus coverage" table. Corrects for the corpus's news-flow/source bias (see §5) — e.g.
+   shows the US and Middle East at their true operating scale even in windows where the news is quiet.
+   Data: `dashboard/data/reference-baseline.json` (refresh annually when GCCSI publishes).
 9. **[planned] Otway / MMV lens** — map monitoring-verification and research-collaboration signals to
    CO2CRC's flagship Otway International Test Centre capabilities and CO2Tech's commercial offer.
 10. **[planned] Geographic choropleth** and a **[planned] curated deployment-mandate reference layer**
@@ -100,7 +106,9 @@ Built in v1 unless marked **[planned]**. Every chart is backed by the underlying
   English-language source skew: Europe-UK, North America and APAC dominate; China, India, MENA, Africa
   and LatAm are thin relative to their real-world CCS activity (China especially is under-represented).
   **Absence of evidence here is not evidence of absence.** The dashboard's completeness is bounded by
-  the briefing's recall, which the Saturday audit pipeline measures independently.
+  the briefing's recall, which the Saturday audit pipeline measures independently. The **GCCSI baseline
+  (view 2b)** is the built-in corrective — it shows the true global/regional pipeline so a quiet news
+  window for a region is not mistaken for real-world inactivity.
 - **Mandate tracker is incidental, not exhaustive.** It lists deadlines that *appeared in the news*,
   not a complete register of every jurisdiction's CCS-dependent legislated target. Treat it as
   "deadlines we've seen," not "the answer to which countries must deploy CCS and by when" — that
