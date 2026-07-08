@@ -47,7 +47,12 @@ signal feed.
 
 View 2 overlays an external authoritative benchmark — the Global CCS Institute *Global Status of CCS*
 report (`data/reference-baseline.json`) — so a quiet news window for a region (e.g. the US or Middle
-East) is not misread as real-world inactivity. Refresh it annually when GCCSI publishes.
+East) is not misread as real-world inactivity. It is dual-sourced and labelled by edition: the global
+headline + growth series are **GSR 2025** (from GCCSI's published figures), and the region-by-region
+facility counts & targets are **GSR 2024** (§4, data as of 24 Jul 2024) — the latest edition with a
+verifiable regional breakdown in the CO2CRC GCCSI library (`03-GCCSI-publications/`). GCCSI reports
+regional facility counts + Mtpa targets, not a per-region capacity table. Refresh `reference-baseline.json`
+when a newer edition's regional chapters become available locally.
 
 ## Reading the numbers (important caveats)
 

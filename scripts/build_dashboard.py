@@ -618,53 +618,69 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None):
     if ref:
         g = ref.get("global", {})
         section("2 · Global reality check — GCCSI baseline",
-                f"External benchmark: {esc(ref.get('source'))}. The corpus tracks recent news flow (A$); "
-                "this is the authoritative global project pipeline (facilities & Mtpa). Read the geography views above against it.")
+                "External benchmark from the Global CCS Institute Global Status of CCS reports. The corpus "
+                "tracks recent news flow (A$); this is the authoritative global project pipeline. Read the "
+                "geography views above against it — a quiet news window is not real-world inactivity.")
         A('<div class="kpis">')
-        A(kpi("Global pipeline", f"{g.get('pipeline_facilities','—')} facilities",
+        A(kpi("Global pipeline (GSR 2025)", f"{g.get('pipeline_facilities','—')} facilities",
               f"{g.get('pipeline_capacity_mtpa','—')} Mtpa total capacity"))
         A(kpi("Operating now", f"{g.get('operating_facilities','—')} facilities",
-              f"{g.get('operating_capacity_mtpa','—')} Mtpa (+{g.get('operating_capacity_growth_yoy_pct','—')}% YoY)"))
+              f"{g.get('operating_capacity_mtpa','—')} Mtpa"))
         A(kpi("In construction", f"{g.get('in_construction_facilities','—')} facilities",
               f"{g.get('in_construction_capacity_mtpa','—')} Mtpa"))
-        A(kpi("Added since 2024 report", f"+{g.get('facilities_added_yoy','—')}", "net new facilities"))
         A(kpi("Projected 2030 operating", f"~{g.get('projected_2030_operating_capacity_mtpa','—')} Mtpa",
               f">5× today; ~{g.get('planned_capacity_cagr_since_2017_pct','—')}% CAGR since 2017"))
         A('</div>')
-        # Region-by-region: GCCSI baseline vs what our corpus caught
-        A('<div class="card"><h3>Regional reality vs corpus coverage</h3>')
-        A('<table class="tbl"><thead><tr><th>Region</th>'
-          '<th>GCCSI Global Status of CCS 2025</th>'
-          '<th>Our corpus (this window)</th></tr></thead><tbody>')
+        # Edition growth series
+        eds = ref.get("editions", [])
+        if eds:
+            maxf = max(e["facilities"] for e in eds)
+            fac_rows = [(e["edition"], e["facilities"]) for e in eds]
+            cap_rows = [(e["edition"], e["capacity_mtpa"]) for e in eds]
+            A('<div class="grid2">')
+            A(f'<div class="card"><h3>Pipeline growth — facilities</h3>{hbar_chart(fac_rows)}</div>')
+            A(f'<div class="card"><h3>Pipeline growth — capture capacity (Mtpa)</h3>{hbar_chart(cap_rows)}</div>')
+            A('</div>')
+        # Region-by-region: GCCSI facilities/targets vs what our corpus caught
+        A('<div class="card"><h3>Regional facilities &amp; targets (GSR 2024) vs corpus coverage (this window)</h3>')
+        A('<table class="tbl"><thead><tr><th>Region</th><th>Operating</th><th>In constr.</th>'
+          '<th>Pipeline</th><th>Notable target</th><th>Our corpus</th></tr></thead><tbody>')
         for rg in ref.get("regions", []):
             cr = rg.get("corpus_region")
             cnt = region_cnt.get(cr, 0)
             val = region_val.get(cr, 0)
-            corpus = (f"{cnt} item{'s' if cnt != 1 else ''} · {fmt_aud(val)} committed"
-                      if cnt else "— not captured in window")
+            corpus = (f"{cnt} item{'s' if cnt != 1 else ''} · {fmt_aud(val)}"
+                      if cnt else "— none")
+            fmtn = lambda x: "—" if x is None else str(x)
             A(f'<tr><td class="rgn">{esc(rg.get("region"))}</td>'
-              f'<td class="gccsi">{esc(rg.get("gccsi"))}</td>'
+              f'<td class="num">{esc(fmtn(rg.get("operating")))}</td>'
+              f'<td class="num">{esc(fmtn(rg.get("construction")))}</td>'
+              f'<td class="num">{esc(fmtn(rg.get("pipeline")))}</td>'
+              f'<td class="gccsi">{esc(rg.get("target") or "—")}</td>'
               f'<td class="corpus">{esc(corpus)}</td></tr>')
-        A('</tbody></table></div>')
-        # US-specific + Middle East call-out (the two gaps that prompted this)
+        A('</tbody></table>')
+        A('<p class="fnote">Regional counts = number of commercial CCS facilities (GSR 2024, data as of '
+          '24 Jul 2024, §4). GCCSI reports facility counts &amp; Mtpa targets by region, not a per-region '
+          'operating-capacity table. Hover/see reference-baseline.json for per-region detail &amp; page cites.</p>')
+        # US + Middle East call-out (the two gaps that prompted this) — GSR 2024 edition-consistent
         us_items = [r for r in fresh if "United States" in (r.get("countries") or [])]
         us_comm = sum(committed_aud(r) for r in us_items)
         us_canc = sum(r.get("amount_aud") or 0 for r in us_items if r.get("commitment_status") == "cancelled")
-        A('<p class="fnote">⚑ <b>Why the US &amp; Middle East look thin above:</b> the corpus caught '
-          f'{len(us_items)} US items this window, but with only {fmt_aud(us_comm)} of committed capital — its '
-          f'biggest US dollar stories were <b>retreats</b> ({fmt_aud(us_canc)} cancelled/surrendered). GCCSI shows the '
-          'US as the world’s largest operating fleet (39 facilities, &gt;223 Mt stored). The Middle East had zero '
-          'in-window items, yet GCCSI shows the Jubail (9 Mtpa) and Yanbu (2 Mtpa) hubs advancing. The gap is '
-          '<b>news-flow timing &amp; source bias, not real-world absence</b>.</p>')
+        A('<p class="fnote">⚑ <b>Why the US &amp; Middle East look thin in the geography views:</b> the corpus caught '
+          f'{len(us_items)} US items this window, but only {fmt_aud(us_comm)} of committed capital — its biggest US '
+          f'dollar stories were <b>retreats</b> ({fmt_aud(us_canc)} cancelled/surrendered). GCCSI shows the US as the '
+          'world’s largest operating fleet (19 of 27 Americas facilities, GSR 2024). The Middle East &amp; Africa had '
+          'zero in-window items, yet GCCSI shows 3 operating + 6 in construction, Saudi targeting 44 Mtpa by 2035 and '
+          'ADNOC 10 Mtpa by 2030. The gap is <b>news-flow timing &amp; source bias, not real-world absence</b>.</p>')
         # sector projection
         sec_proj = ref.get("sector_projection_2030_mtpa") or {}
         if sec_proj:
             rows = sorted(([k, v] for k, v in sec_proj.items()), key=lambda x: -x[1])
             A(f'<div class="card"><h3>Where capture capacity is heading — GCCSI projected by sector (Mtpa, 2030+)</h3>'
               f'{hbar_chart(rows)}</div>')
-        A(f'<p class="fnote">Source: <a href="{esc(ref.get("url"))}" target="_blank" rel="noopener">'
-          f'{esc(ref.get("source"))}</a>, published {esc(ref.get("published"))} (data as of {esc(ref.get("data_asof"))}); '
-          f'retrieved {esc(ref.get("retrieved"))}. {esc(ref.get("caveat"))}</p>')
+        A(f'<p class="fnote">Sources: <a href="{esc(ref.get("url"))}" target="_blank" rel="noopener">GCCSI Global Status of CCS</a> — '
+          f'global headline &amp; growth: {esc(ref.get("source_global"))}; regional: {esc(ref.get("source_regional"))}. '
+          f'Retrieved {esc(ref.get("retrieved"))}. {esc(ref.get("caveat"))}</p>')
 
     # View 3
     section("3 · Where the money goes",
