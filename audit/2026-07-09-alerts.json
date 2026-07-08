@@ -1,14 +1,5 @@
 [
   {
-    "canonical_url": "https://aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
-    "raw_url": "https://www.aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
-    "headline": "Deep Sky and Lufthansa Group Enter Carbon Removal Credit Agreement - AOL.com",
-    "source_domain": "aol.com",
-    "publication_date": "2026-07-08T00:22:31+00:00",
-    "fuzzy_key": "agreement,aol,carbon,com,credit,deep,enter,group,lufthansa,removal,sky",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://ad-hoc-news.de/boerse/news/ueberblick/the-net-zero-2050-plan-occidental-petroleum-leans-on-carbon-capture-units/69718206",
     "raw_url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/the-net-zero-2050-plan-occidental-petroleum-leans-on-carbon-capture-units/69718206",
     "headline": "The Net Zero 2050 Plan. Occidental Petroleum leans on carbon capture units",
@@ -27,12 +18,48 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
+    "raw_url": "https://www.aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
+    "headline": "Deep Sky and Lufthansa Group Enter Carbon Removal Credit Agreement - AOL.com",
+    "source_domain": "aol.com",
+    "publication_date": "2026-07-08T00:22:31+00:00",
+    "fuzzy_key": "agreement,aol,carbon,com,credit,deep,enter,group,lufthansa,removal,sky",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://aol.com/articles/louisiana-house-rejects-bills-local-171147000.html",
+    "raw_url": "https://www.aol.com/articles/louisiana-house-rejects-bills-local-171147000.html",
+    "headline": "Louisiana House rejects bills on local control over carbon-capture",
+    "source_domain": "aol.com",
+    "publication_date": "2026-07-08T18:42:27+00:00",
+    "fuzzy_key": "bills,capture,carbon,control,house,local,louisiana,over,rejects",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://businesstimes.com.sg/companies-markets/tencent-inks-first-deal-carbon-removal-credits-outside-china",
     "raw_url": "https://www.businesstimes.com.sg/companies-markets/tencent-inks-first-deal-carbon-removal-credits-outside-china",
     "headline": "Tencent inks first deal for carbon-removal credits outside China - The Business Times",
     "source_domain": "businesstimes.com.sg",
     "publication_date": "2026-07-08T14:25:29+00:00",
     "fuzzy_key": "business,carbon,china,credits,deal,first,inks,outside,removal,tencent,times",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pgjonline.com/news/2026/july/woodmac-ccus-growth-continues-despite-project-delays-policy-challenges",
+    "raw_url": "https://pgjonline.com/news/2026/july/woodmac-ccus-growth-continues-despite-project-delays-policy-challenges",
+    "headline": "WoodMac: CCUS Growth Continues Despite Project Delays, Policy Challenges",
+    "source_domain": "pgjonline.com",
+    "publication_date": "2026-07-08T18:05:28+00:00",
+    "fuzzy_key": "ccus,challenges,continues,delays,despite,growth,policy,project,woodmac",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://play1037.ca/2026/07/08/21634",
+    "raw_url": "https://www.play1037.ca/2026/07/08/21634/",
+    "headline": "Fraser Institute study questions reliance on carbon capture for climate policy | play 103.7",
+    "source_domain": "play1037.ca",
+    "publication_date": "2026-07-08T18:42:27+00:00",
+    "fuzzy_key": "103,capture,carbon,climate,fraser,institute,play,policy,questions,reliance,study",
     "found_via": "google_alerts"
   }
 ]
