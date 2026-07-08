@@ -48,6 +48,30 @@
     "found_via": "search_query"
   },
   {
+    "url": "https://www.fraserinstitute.org/studies/challenges-scaling-up-carbon-capture-utilization-and-storage-technologies",
+    "canonical_url": "https://fraserinstitute.org/studies/challenges-scaling-up-carbon-capture-utilization-and-storage-technologies",
+    "fuzzy_key": "capture,carbon,challenges,scaling,storage,technologies,up,utilization",
+    "source_domain": "fraserinstitute.org",
+    "headline": "The Challenges in Scaling Up Carbon Capture, Utilization, and Storage Technologies",
+    "publication_date": "2026-07-08",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.woodmac.com/blogs/energy-pulse/carbon-capture-continues-to-grow-despite-challenges/",
+    "canonical_url": "https://woodmac.com/blogs/energy-pulse/carbon-capture-continues-to-grow-despite-challenges",
+    "fuzzy_key": "capture,carbon,challenges,continues,despite,grow",
+    "source_domain": "woodmac.com",
+    "headline": "Carbon capture continues to grow, despite challenges",
+    "publication_date": "2026-07-08",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
     "url": "https://www.aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
     "canonical_url": "https://aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html",
     "fuzzy_key": "agreement,carbon,credit,deep,enter,group,lufthansa,removal,sky",
@@ -93,6 +117,42 @@
     "in_window": true,
     "kept": false,
     "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.aol.com/news/louisiana-house-rejects-bills-local-171147708.html",
+    "canonical_url": "https://aol.com/news/louisiana-house-rejects-bills-local-171147708.html",
+    "fuzzy_key": "bills,capture,carbon,control,house,local,louisiana,over,rejects",
+    "source_domain": "aol.com",
+    "headline": "Louisiana House rejects bills on local control over carbon-capture",
+    "publication_date": "2026-05-20",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.pgjonline.com/news/2026/july/woodmac-ccus-growth-continues-despite-project-delays-policy-challenges",
+    "canonical_url": "https://pgjonline.com/news/2026/july/woodmac-ccus-growth-continues-despite-project-delays-policy-challenges",
+    "fuzzy_key": "ccus,challenges,continues,delays,despite,growth,policy,project,woodmac",
+    "source_domain": "pgjonline.com",
+    "headline": "WoodMac: CCUS Growth Continues Despite Project Delays, Policy Challenges",
+    "publication_date": "2026-07-08",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.play1037.ca/2026/07/08/fraser-institute-study-questions-reliance-on-carbon-capture-for-climate-policy/",
+    "canonical_url": "https://play1037.ca/2026/07/08/fraser-institute-study-questions-reliance-on-carbon-capture-for-climate-policy",
+    "fuzzy_key": "capture,carbon,climate,fraser,institute,policy,questions,reliance,study",
+    "source_domain": "play1037.ca",
+    "headline": "Fraser Institute study questions reliance on carbon capture for climate policy",
+    "publication_date": "2026-07-08",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_url",
     "found_via": "google_alerts"
   },
   {
@@ -258,6 +318,18 @@
     "source_domain": "impakter.com",
     "headline": "Australia's Woodside to Resubmit Major Carbon Capture Project",
     "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://americanpress.com/2026/05/20/house-rejects-bills-authorizing-local-control-over-carbon-capture-projects/",
+    "canonical_url": "https://americanpress.com/2026/05/20/house-rejects-bills-authorizing-local-control-over-carbon-capture-projects",
+    "fuzzy_key": "authorizing,bills,capture,carbon,control,house,local,over,projects,rejects",
+    "source_domain": "americanpress.com",
+    "headline": "House rejects bills authorizing local control over carbon-capture projects",
+    "publication_date": "2026-05-20",
     "in_window": false,
     "kept": false,
     "reject_reason": "out_of_window",
