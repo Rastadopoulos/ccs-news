@@ -1,0 +1,20 @@
+{
+  "_comment": "Fixed reference FX rates to A$ as of 2026-06-30. FIXED (not live) so trendlines reflect real commitment shifts, not FX noise. Approximate reference values — review/correct with Finance. The dashboard states this assumption. amount_aud = amount * rate.",
+  "as_of": "2026-06-30",
+  "rates": {
+    "AUD": 1.000,
+    "USD": 1.530,
+    "EUR": 1.660,
+    "GBP": 1.950,
+    "CAD": 1.120,
+    "NOK": 0.148,
+    "JPY": 0.01040,
+    "CNY": 0.2120,
+    "SGD": 1.140,
+    "BRL": 0.2800,
+    "INR": 0.01790,
+    "AED": 0.4170,
+    "SAR": 0.4080,
+    "DKK": 0.2230
+  }
+}
