@@ -1,0 +1,118 @@
+[
+  {
+    "id": "2026-07-10#01",
+    "briefing_date": "2026-07-10",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK offshore CO2 transport & storage decommissioning-funding regime takes effect",
+    "summary": "The Carbon Dioxide Transport and Storage (Financing of Costs of Offshore Decommissioning) Regulations 2026 (SI 2026/632) come into force on 10 July 2026, implementing s.92 of the Energy Act 2023. Licensed CO2 T&S companies must ring-fence a proportion of user fees in an offshore decommissioning fund over an ~25-year operating life.",
+    "source": "Energy Voice / legislation.gov.uk",
+    "pub_date": "2026-07-10",
+    "url": "https://www.energyvoice.com/all-news/600090/ccus-decommissioning-regulations-uk/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "UK Government (DESNZ)"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Offshore CO2 T&S decommissioning-liability funding precedent directly relevant to Australia's OPGGS Act offshore storage regime.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-10#02",
+    "briefing_date": "2026-07-10",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Qatar-based voluntary standard integrates an industry-led CCS crediting framework",
+    "summary": "Carbon Pulse's daily ticker reports a Qatar-based voluntary carbon standard has become the latest crediting body to fold an industry-developed CCS methodology into its programme.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-07-08",
+    "url": "https://carbon-pulse.com/529552/",
+    "region": "Middle East",
+    "countries": [
+      "Qatar"
+    ],
+    "organisations": [
+      "Qatar-based voluntary carbon standard"
+    ],
+    "org_types": [
+      "registry"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Convergence of CCS with voluntary-carbon-market rulebooks; a Middle-East signal, limited direct CO2CRC relevance.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "extractor_note": "Radar item (published 8 Jul, just outside daily window)."
+  },
+  {
+    "id": "2026-07-10#03",
+    "briefing_date": "2026-07-10",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "US opinion: CCS lacks a regulatory framework and lets corporations profit",
+    "summary": "A Prism Reports commentary argues US sub-seabed/saline CO2 injection is advancing ahead of a settled regulatory regime and frames CCS as privatising profit while socialising long-term risk.",
+    "source": "Prism Reports",
+    "pub_date": "2026-07-08",
+    "url": "https://prismreports.org/2026/07/08/ccs-carbon-dioxide-ocean/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Prism Reports",
+      "BOEM"
+    ],
+    "org_types": [
+      "other",
+      "government"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Social-licence critique echoing recent Australian commentary on CCS liability and public risk.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "extractor_note": "Radar item (published 8 Jul, just outside daily window)."
+  }
+]
