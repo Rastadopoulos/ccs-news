@@ -1,0 +1,93 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CCS recall audit — week ending 2026-07-11 — pooled recall 6%</title><style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;color:#222;line-height:1.5;font-size:16px}h1{font-size:22px}h2{font-size:17px;margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #ddd;padding:6px 10px;text-align:left;font-size:14px}th{background:#f4f4f4}a{color:#0a4}@media print{a{color:#000;text-decoration:none}}</style></head><body><h1>CCS recall audit — week ending 2026-07-11 — pooled recall 6%</h1>
+<h2>Headline metrics</h2>
+<ul>
+<li><strong>Pooled recall</strong> (A ∩ U / U): <strong>6%</strong>  (6 of 105)</li>
+<li><strong>Floor recall</strong> (A ∩ B / B): <strong>3%</strong>  (1 of 30)</li>
+<li><strong>Estimated absolute recall</strong> (Chapman, median of 4 pair-estimates): <strong>3%</strong></li>
+</ul>
+<h2>Sampler sizes</h2>
+<table>
+<tr><th>Sampler</th><th>Items</th></tr>
+<tr><td>A · Production routine</td><td>10</td></tr>
+<tr><td>B · RSS floor</td><td>30</td></tr>
+<tr><td>C · Google Alerts</td><td>51</td></tr>
+<tr><td>D · Shadow LLM</td><td>4</td></tr>
+<tr><td>E · Shelly Murrell digest</td><td>36</td></tr>
+<tr><td>A★ · Production, search-only subset (used for Chapman)</td><td>8</td></tr>
+<tr><td><strong>Union U</strong></td><td><strong>105</strong></td></tr>
+</table>
+<p>_7 junk domains excluded from all samplers (config/junk_domains.txt)._</p>
+<h2>Sampler run coverage</h2>
+<table>
+<tr><th>Sampler</th><th>Ran (5 weekdays)</th><th>Missing</th></tr>
+<tr><td>B · RSS floor</td><td>5/5</td><td>—</td></tr>
+<tr><td>A · Production routine</td><td>5/5</td><td>—</td></tr>
+<tr><td>D · Shadow LLM</td><td>2/5</td><td>2026-07-06, 2026-07-07, 2026-07-10</td></tr>
+<tr><td>C · Google Alerts</td><td>5/5</td><td>—</td></tr>
+</table>
+<p><em>Public holidays are legitimate skips and still show as missing here.</em></p>
+<h2>Chapman pair-estimates</h2>
+<p><em>Capture side restricted to A★ (search-only, 8 items) — full A ingests the RSS floor and Google Alerts feeds, so it is not independent of samplers B/C.</em></p>
+<table>
+<tr><th>Pair</th><th>Overlap</th><th>Estimated N</th></tr>
+<tr><td>A★ × B (RSS floor)</td><td>1</td><td>138</td></tr>
+<tr><td>A★ × C (Google Alerts)</td><td>0</td><td>467</td></tr>
+<tr><td>A★ × D (Shadow LLM)</td><td>0</td><td>44</td></tr>
+<tr><td>A★ × E (Shelly Murrell digest)</td><td>0</td><td>332</td></tr>
+</table>
+<h2>Top missed items (99 total)</h2>
+<ul>
+<li><strong>UQ tech turns captured CO2 into valuable chemicals</strong> — advancedbiofuelsusa.info · found via <em>E</em> · <a href="us.list-manage.com/eVnmgbJ66OH">link</a></li>
+<li><strong>Benefits agreement tied to carbon capture hub proposed</strong> — americanpress.com · found via <em>D</em> · <a href="americanpress.com/2026/07/08/benefits-agreement-tied-to-carbon-capture-hub-proposed">link</a></li>
+<li><strong>Deep Sky Announces Direct Air Capture Carbon Removal Agreement with TD Bank Group ...</strong> — aol.com · found via <em>C</em> · <a href="https://www.aol.com/articles/deep-sky-announces-direct-air-100000000.html">link</a></li>
+<li><strong>Deep Sky and Lufthansa Group Enter Carbon Removal Credit Agreement - AOL.com</strong> — aol.com · found via <em>C</em> · <a href="https://www.aol.com/articles/deep-sky-lufthansa-group-enter-154900000.html">link</a></li>
+<li><strong>Louisiana House rejects bills on local control over carbon-capture</strong> — aol.com · found via <em>C</em> · <a href="https://www.aol.com/articles/louisiana-house-rejects-bills-local-171147000.html">link</a></li>
+<li><strong>Flanders unveils EUR2bn industrial decarbonisation plan with focus on carbon capture</strong> — belganewsagency.eu · found via <em>E</em> · <a href="us.list-manage.com/1BRsIfZKumY">link</a></li>
+<li><strong>CP Daily News Ticker: 7 July 2026</strong> — carbon-pulse.com · found via <em>D</em> · <a href="carbon-pulse.com/529177">link</a></li>
+<li><strong>New mechanism to mitigate very long-term project risk launching this year</strong> — carbon-pulse.com · found via <em>E</em> · <a href="us.list-manage.com/B5lBAw3CuQ3">link</a></li>
+<li><strong>Q&amp;A: The current state of &#x27;carbon dioxide removal&#x27; around the world</strong> — carbonbrief.org · found via <em>E</em> · <a href="us.list-manage.com/GctAFgMnnos">link</a></li>
+<li><strong>Ambuja Cements and Leilac partner on commercial scale low carbon cement</strong> — carboncapturejournal.com · found via <em>E</em> · <a href="us.list-manage.com/en9eBb2MdLd">link</a></li>
+</ul>
+<h2>Source-coverage matrix</h2>
+<table>
+<tr><th>Source</th><th>Published (B+C+D+E)</th><th>Captured by A</th><th>Capture rate</th></tr>
+<tr><td>carbonherald.com</td><td>15</td><td>0</td><td>0%</td></tr>
+<tr><td>list-manage.com</td><td>9</td><td>0</td><td>0%</td></tr>
+<tr><td>gasworld.com</td><td>6</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncapturejournal.com</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>ccsassociation.org</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>aol.com</td><td>3</td><td>0</td><td>0%</td></tr>
+<tr><td>carbon-pulse.com</td><td>3</td><td>1</td><td>33%</td></tr>
+<tr><td>inspenet.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>megaproject.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>morningstar.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>offshore-energy.biz</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>tipranks.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>advancedbiofuelsusa.info</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>americanpress.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>belganewsagency.eu</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>bloomberg.com</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>carbonbrief.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncredits.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>chemengonline.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>cleanenergywire.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>climeworks.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>com.my</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>contexte.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>dcceew.gov.au</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>decarbonfuse.com</td><td>1</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Drift — last 12 weeks</h2>
+<table>
+<tr><th>Week ending</th><th>Pooled recall</th><th>Floor recall</th></tr>
+<tr><td>2026-05-26</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-27</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-30</td><td>20%</td><td>0%</td></tr>
+<tr><td>2026-06-06</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-06-13</td><td>7%</td><td>2%</td></tr>
+<tr><td>2026-06-20</td><td>14%</td><td>0%</td></tr>
+<tr><td>2026-06-27</td><td>12%</td><td>2%</td></tr>
+<tr><td>2026-07-04</td><td>19%</td><td>11%</td></tr>
+<tr><td>2026-07-11</td><td>6%</td><td>3%</td></tr>
+</table>
+<p><em>— Auto-audit</em></p><p style='color:#888;font-size:12px'>Generated 2026-07-11T08:59:02.480639+10:00</p></body></html>
