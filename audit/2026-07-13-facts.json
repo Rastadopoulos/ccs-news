@@ -1,0 +1,244 @@
+[
+  {
+    "id": "2026-07-13#01",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "INPEX spuds Japan's first offshore CO₂-storage appraisal well off Chiba",
+    "summary": "INPEX (85%) and Kanto Natural Gas Development (15%), via their Metropolitan CCS JV, began drilling the Kujukuri-Oki J-1 appraisal well ~5 km off Chiba — Japan's first offshore CO₂-storage appraisal well. Initial 1.3 Mtpa injection scalable to 5 Mtpa; FID targeted 2027, storage early 2030s.",
+    "source": "Upstream Online / Rigzone",
+    "pub_date": "2026-07-10",
+    "url": "https://www.upstreamonline.com/carbon-capture/inpex-starts-drilling-first-carbon-capture-appraisal-well-offshore-japan/2-1-2014545",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "INPEX",
+      "Kanto Natural Gas Development",
+      "Metropolitan CCS",
+      "Nippon Steel",
+      "JOGMEC",
+      "METI"
+    ],
+    "org_types": [
+      "NOC",
+      "developer",
+      "developer",
+      "other",
+      "government",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2027,
+    "capacity_mtpa": 1.3,
+    "co2crc_relevance": "high",
+    "co2crc_note": "First offshore CO₂-storage appraisal well in Japan; anchors the Japan–APAC storage build-out relevant to Australia–Japan CCS value chains.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-13#02",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Fugro wins Saipem survey contract for UK's first offshore CO₂ pipeline (Northern Endurance)",
+    "summary": "Fugro contracted by Saipem for integrated marine survey and inspection along the 145-km NEP offshore CO₂ pipeline to the Endurance saline aquifer (up to ~1 Gt capacity). NEP is the bp/Equinor/TotalEnergies JV; UK's first offshore CO₂ T&S, storage targeted 2028.",
+    "source": "Offshore Energy / OEDigital",
+    "pub_date": "2026-07-10",
+    "url": "https://www.offshore-energy.biz/fugro-to-assist-saipem-with-pipeline-work-at-uks-first-offshore-ccs-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Fugro",
+      "Saipem",
+      "Northern Endurance Partnership",
+      "bp",
+      "Equinor",
+      "TotalEnergies"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "developer",
+      "OG-major",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Supply-chain milestone on the UK's first offshore CO₂ T&S network — a reference model for Australian offshore storage T&S.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Up to ~1 Gt is cumulative storage capacity, not annual — capacity_mtpa left null; contract value not disclosed."
+  },
+  {
+    "id": "2026-07-13#03",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Shanghai body to launch China's first CO₂-removal standard",
+    "summary": "QCIntel reports a Shanghai-based organisation is preparing to launch what would be China's first dedicated CO₂-removal (CDR) standard, building a domestic crediting rulebook for engineered/geological removals alongside the relaunched CCER scheme. Details limited behind paywall.",
+    "source": "Quantum Commodity Intelligence",
+    "pub_date": "2026-07-10",
+    "url": "https://www.qcintel.com/carbon/article/shanghai-outfit-to-launch-china-s-first-co2-removal-standard-68613.html",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Early signal of China building CDR crediting infrastructure — shapes the largest potential future demand pool for removals.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "extractor_note": "Launching body not named in available text; uncorroborated beyond source headline."
+  },
+  {
+    "id": "2026-07-13#04",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Gasunie-commissioned PwC study finds CCS the cheapest route to decarbonise Dutch industry",
+    "summary": "A PwC study for Gasunie concludes CCS, low-carbon hydrogen and hybrid electrification are the most cost-effective decarbonisation routes for Dutch industry: CCS modelled to abate ~21 Mt CO₂/yr (~18 Mt via blue hydrogen). Warns high energy costs and grid congestion delay investment.",
+    "source": "Gasunie / ChemXplore",
+    "pub_date": "2026-07-10",
+    "url": "https://www.gasunie.nl/en/news/pwc-study-cost-effective-decarbonisation-of-industry-mainly-through-ccs-hydrogen-and-hybrid-solutions",
+    "region": "Europe-UK",
+    "countries": [
+      "Netherlands"
+    ],
+    "organisations": [
+      "Gasunie",
+      "PwC"
+    ],
+    "org_types": [
+      "utility",
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Independent techno-economic backing for CCS as least-cost industrial decarbonisation — a useful data point for Australian industrial-cluster policy.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "21 Mt CO₂/yr is a modelled abatement scenario, not project capacity — capacity_mtpa left null."
+  },
+  {
+    "id": "2026-07-13#05",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "IEEFA warns offshore CCS ambitions vastly outpace capability",
+    "summary": "IEEFA report (Anika Juhn) argues offshore CO₂-storage ambitions run far ahead of operational reality — scaling from ~3.6 Mt today toward ~140 Mtpa targets is a ~40-fold expansion needing centuries of secure containment; today's operating base is insufficient. Cites Northern Lights' ~US$714m phase-2.",
+    "source": "IEEFA / GreentechLead",
+    "pub_date": "2026-07-10",
+    "url": "https://greentechlead.com/climate/offshore-carbon-capture-faces-massive-scale-up-challenge-as-global-ccs-ambitions-outpace-reality-ieefa-54155",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "IEEFA"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Financial-risk critique of offshore storage scale-up — directly relevant to Australia's offshore CCS pipeline and its social-licence framing.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-13#06",
+    "briefing_date": "2026-07-13",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Australian trade press asks \"Is CCS just smoke and mirrors?\"",
+    "summary": "Energy News Bulletin runs a sceptical news-analysis questioning whether CCS delivers on its promises, reflecting continuing domestic social-licence pressure on the sector. Surfaced via Google Alerts; full text paywalled/unread.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-07-10",
+    "url": "https://www.energynewsbulletin.net/energy-transition/news-analysis/4533947/ccs-smoke-mirrors",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Energy News Bulletin"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Australian-market sceptic framing — the home-turf social-licence narrative CO2CRC must engage with.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion",
+      "paywall"
+    ],
+    "extractor_note": "Headline-level only; article body not fetchable (proxy 403)."
+  }
+]
