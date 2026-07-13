@@ -1,38 +1,11 @@
 [
   {
-    "canonical_url": "https://petronas.com/innovation-petronas/media/media-releases/downhole-co2-logging-assessment-supporting-petronas-ccs-agenda-tc19",
-    "raw_url": "https://www.petronas.com/innovation-petronas/media/media-releases/downhole-co2-logging-assessment-supporting-petronas-ccs-agenda-tc19",
-    "headline": "Downhole CO2 Logging Assessment in Supporting of PETRONAS CCS Agenda (TC19)",
-    "source_domain": "petronas.com",
-    "publication_date": "2026-07-12T22:37:25+00:00",
-    "fuzzy_key": "agenda,assessment,ccs,co2,downhole,logging,petronas,supporting,tc19",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://tiktok.com/@dw_planeta/video/7657525903026654486",
-    "raw_url": "https://www.tiktok.com/@dw_planeta/video/7657525903026654486",
-    "headline": "Climeworks once promised to remove millions of tons of CO2 emissions. ... | carbon capture - TikTok",
-    "source_domain": "tiktok.com",
-    "publication_date": "2026-07-13T11:15:44+00:00",
-    "fuzzy_key": "capture,carbon,climeworks,co2,emissions,millions,once,promised,remove,tiktok,tons",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://japex.co.jp/en/news/detail/20260713_01",
-    "raw_url": "https://www.japex.co.jp/en/news/detail/20260713_01/",
-    "headline": "Establishment of a New Company for the CCS Project in the Tomakomai Area",
-    "source_domain": "japex.co.jp",
-    "publication_date": "2026-07-13T14:35:37+00:00",
-    "fuzzy_key": "area,ccs,company,establishment,new,project,tomakomai",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://euro-petrole.com/fugro-to-support-uk-carbon-capture-infrastructure-development-n-i-30359",
-    "raw_url": "https://www.euro-petrole.com/fugro-to-support-uk-carbon-capture-infrastructure-development-n-i-30359",
-    "headline": "Fugro to support UK carbon capture infrastructure development - Europétrole",
-    "source_domain": "euro-petrole.com",
-    "publication_date": "2026-07-13T15:37:39+00:00",
-    "fuzzy_key": "capture,carbon,development,europ,fugro,infrastructure,support,trole,uk",
+    "canonical_url": "https://bioenergytimes.com/louisiana-set-to-overtake-california-in-renewable-diesel-saf-capacity-as-carbon-capture-gains-momentum",
+    "raw_url": "https://bioenergytimes.com/louisiana-set-to-overtake-california-in-renewable-diesel-saf-capacity-as-carbon-capture-gains-momentum/",
+    "headline": "Louisiana set to overtake California in renewable diesel, SAF capacity as carbon capture ...",
+    "source_domain": "bioenergytimes.com",
+    "publication_date": "2026-07-13T20:50:52+00:00",
+    "fuzzy_key": "california,capacity,capture,carbon,diesel,louisiana,overtake,renewable,saf,set",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +18,48 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://euro-petrole.com/fugro-to-support-uk-carbon-capture-infrastructure-development-n-i-30359",
+    "raw_url": "https://www.euro-petrole.com/fugro-to-support-uk-carbon-capture-infrastructure-development-n-i-30359",
+    "headline": "Fugro to support UK carbon capture infrastructure development - Europétrole",
+    "source_domain": "euro-petrole.com",
+    "publication_date": "2026-07-13T15:37:39+00:00",
+    "fuzzy_key": "capture,carbon,development,europ,fugro,infrastructure,support,trole,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://japex.co.jp/en/news/detail/20260713_01",
+    "raw_url": "https://www.japex.co.jp/en/news/detail/20260713_01/",
+    "headline": "Establishment of a New Company for the CCS Project in the Tomakomai Area",
+    "source_domain": "japex.co.jp",
+    "publication_date": "2026-07-13T14:35:37+00:00",
+    "fuzzy_key": "area,ccs,company,establishment,new,project,tomakomai",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://marketscreener.com/news/canadian-oil-sands-producers-reach-deal-with-governments-for-carbon-capture-project-ce7f5edcdb8eff2d",
+    "raw_url": "https://www.marketscreener.com/news/canadian-oil-sands-producers-reach-deal-with-governments-for-carbon-capture-project-ce7f5edcdb8eff2d",
+    "headline": "Canadian Oil Sands Producers Reach Deal With Governments for Carbon Capture Project",
+    "source_domain": "marketscreener.com",
+    "publication_date": "2026-07-13T21:11:12+00:00",
+    "fuzzy_key": "canadian,capture,carbon,deal,governments,oil,producers,project,reach,sands",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://marketscreener.com/news/japan-petroleum-exploration-establishment-of-a-new-company-for-the-ccs-project-in-the-tomakomai-ar-ce7f5edfdf8af320",
     "raw_url": "https://www.marketscreener.com/news/japan-petroleum-exploration-establishment-of-a-new-company-for-the-ccs-project-in-the-tomakomai-ar-ce7f5edfdf8af320",
     "headline": "Japan Petroleum Exploration : Establishment of a New Company for the CCS Project in the ...",
     "source_domain": "marketscreener.com",
     "publication_date": "2026-07-13T18:19:08+00:00",
     "fuzzy_key": "ccs,company,establishment,exploration,japan,new,petroleum,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://petronas.com/innovation-petronas/media/media-releases/downhole-co2-logging-assessment-supporting-petronas-ccs-agenda-tc19",
+    "raw_url": "https://www.petronas.com/innovation-petronas/media/media-releases/downhole-co2-logging-assessment-supporting-petronas-ccs-agenda-tc19",
+    "headline": "Downhole CO2 Logging Assessment in Supporting of PETRONAS CCS Agenda (TC19)",
+    "source_domain": "petronas.com",
+    "publication_date": "2026-07-12T22:37:25+00:00",
+    "fuzzy_key": "agenda,assessment,ccs,co2,downhole,logging,petronas,supporting,tc19",
     "found_via": "google_alerts"
   },
   {
@@ -72,12 +81,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://bioenergytimes.com/louisiana-set-to-overtake-california-in-renewable-diesel-saf-capacity-as-carbon-capture-gains-momentum",
-    "raw_url": "https://bioenergytimes.com/louisiana-set-to-overtake-california-in-renewable-diesel-saf-capacity-as-carbon-capture-gains-momentum/",
-    "headline": "Louisiana set to overtake California in renewable diesel, SAF capacity as carbon capture ...",
-    "source_domain": "bioenergytimes.com",
-    "publication_date": "2026-07-13T20:50:52+00:00",
-    "fuzzy_key": "california,capacity,capture,carbon,diesel,louisiana,overtake,renewable,saf,set",
+    "canonical_url": "https://tiktok.com/@dw_planeta/video/7657525903026654486",
+    "raw_url": "https://www.tiktok.com/@dw_planeta/video/7657525903026654486",
+    "headline": "Climeworks once promised to remove millions of tons of CO2 emissions. ... | carbon capture - TikTok",
+    "source_domain": "tiktok.com",
+    "publication_date": "2026-07-13T11:15:44+00:00",
+    "fuzzy_key": "capture,carbon,climeworks,co2,emissions,millions,once,promised,remove,tiktok,tons",
     "found_via": "google_alerts"
   }
 ]
