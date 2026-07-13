@@ -134,9 +134,12 @@ Built in v1 unless marked **[planned]**. Every chart is backed by the underlying
 
 1. **Extraction & automation** — one-time local backfill of the historical briefings (no API cost);
    ongoing, the daily production routine emits `audit/YYYY-MM-DD-facts.json` per the spec.
-2. **Output format** — self-contained HTML committed to the repo (`dashboard/index.html`), emailable
-   via the existing pipeline; dated board snapshots in `dashboard/snapshots/`.
-3. **Refresh cadence** — rebuilt weekly on Saturdays alongside the recall audit (`weekly-audit.yml`).
+2. **Output format** — self-contained HTML committed to the repo (`dashboard/index.html`); dated board
+   snapshots in `dashboard/snapshots/`. The snapshot is emailed weekly as an attachment by
+   `email-dashboard.yml` (short intro body + the interactive HTML attached — email clients can't render
+   the fixed nav / inline JS inline).
+3. **Refresh cadence** — rebuilt weekly on Saturdays alongside the recall audit (`weekly-audit.yml`);
+   committing the new snapshot triggers `email-dashboard.yml`, so the board email rides the same cadence.
 4. **Financial rigour & currency** — commitment-status tracked; normalised to **A$** at fixed
    reference rates; original currency shown on drill-down.
 

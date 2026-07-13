@@ -1,0 +1,103 @@
+name: Email CCS dashboard
+
+# Emails the weekly board dashboard. Fires when a new dated board snapshot is
+# committed to main (dashboard/snapshots/YYYY-MM-DD.html) — which the weekly-audit
+# workflow does every Saturday — so this rides the same weekly cadence and does NOT
+# fire on ad-hoc dashboard/index.html edits. The dashboard is interactive (fixed
+# nav, inline JS/CSS) and won't render inline in email clients, so it is sent as a
+# self-contained HTML attachment with a short intro body. Same Resend pattern as
+# email-audit.yml / email-briefing.yml; outbound routed through Actions.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dashboard/snapshots/*.html'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Snapshot date to send (YYYY-MM-DD). Blank = latest.'
+        required: false
+        default: ''
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Resolve snapshot date
+        id: pick
+        run: |
+          set -euo pipefail
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(ls -1 dashboard/snapshots/*.html 2>/dev/null \
+                    | sed 's|^dashboard/snapshots/||;s|\.html$||' \
+                    | sort | tail -n1)
+          fi
+          if [ -z "$DATE" ] || [ ! -f "dashboard/snapshots/${DATE}.html" ]; then
+            echo "::error::Could not resolve a dashboard snapshot to send"
+            exit 1
+          fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "Sending dashboard snapshot $DATE"
+
+      - name: Build Resend payload
+        env:
+          DATE: ${{ steps.pick.outputs.date }}
+        run: |
+          set -euo pipefail
+          SNAP="dashboard/snapshots/${DATE}.html"
+          SUBJECT="Global CCS Dashboard by CO2CRC — ${DATE}"
+
+          base64 -w0 "$SNAP" > /tmp/dash.b64
+
+          cat > /tmp/body.html <<HTML
+          <div style="font:15px/1.5 -apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1a2b34">
+          <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#1f6f8b;font-weight:700;margin:0 0 4px">CO2CRC · CO2Tech — Strategic Intelligence</p>
+          <h1 style="font-size:22px;margin:0 0 8px">Global CCS Dashboard by CO2CRC</h1>
+          <p style="margin:0 0 10px">Weekly build for <b>${DATE}</b>. The full interactive dashboard is <b>attached</b> — open it in a browser for the charts, floating section navigation and drill-down source links (email clients can't render the interactive version inline).</p>
+          <p style="color:#6b7c85;font-size:12px;margin:14px 0 0">Figures: the daily CCS briefing corpus plus the GCCSI Global Status of CCS report and the Imperial College London Register of Subsurface CO2 Storage. Money in A\$ at fixed reference rates. For board &amp; senior-stakeholder situational awareness — not audited financials.</p>
+          </div>
+          HTML
+
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --arg fn "CCS-Dashboard-${DATE}.html" \
+            --rawfile html /tmp/body.html \
+            --rawfile b64 /tmp/dash.b64 \
+            '{
+              from: "CCS Dashboard <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html,
+              attachments: [{filename: $fn, content: $b64}]
+            }' > /tmp/resend.json
+
+          jq -e . /tmp/resend.json > /dev/null
+          echo "Payload OK, $(wc -c </tmp/resend.json) bytes, subject: $SUBJECT"
+
+      - name: Send via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Dashboard emailed" ;;
+            *)  echo "::error::Resend rejected the send (HTTP $HTTP)"; exit 1 ;;
+          esac

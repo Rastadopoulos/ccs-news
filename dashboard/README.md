@@ -28,6 +28,9 @@ board snapshots are archived in [`snapshots/`](snapshots/).
    `scripts/_canon.py`), excludes `radar` items from time-series, and renders `index.html`.
 3. **Weekly rebuild** — `.github/workflows/weekly-audit.yml` rebuilds the dashboard and writes a dated
    snapshot every Saturday (Melbourne), committing both to `main`.
+4. **Weekly email** — committing that dated snapshot triggers `.github/workflows/email-dashboard.yml`,
+   which emails the self-contained dashboard as an attachment via Resend (same pattern as the briefing
+   and audit emails). Trigger it manually anytime from the Actions tab (`workflow_dispatch`).
 
 ## Rebuild locally
 
