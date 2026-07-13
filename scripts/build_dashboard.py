@@ -537,13 +537,17 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     P = []
     A = P.append
 
-    def kpi(label, value, sub=""):
+    def kpi(label, value, sub="", src=None):
+        # src = (href, short-label) → renders a "source table" link inside the card
+        srch = (f'<div class="ksrc"><a href="{esc(src[0])}">{esc(src[1])} →</a></div>'
+                if src else "")
         return (f'<div class="kpi"><div class="kv">{esc(value)}</div>'
                 f'<div class="kl">{esc(label)}</div>'
-                f'{f"<div class=kss>{esc(sub)}</div>" if sub else ""}</div>')
+                f'{f"<div class=kss>{esc(sub)}</div>" if sub else ""}{srch}</div>')
 
-    def section(title, subtitle=""):
-        A(f'<h2>{esc(title)}</h2>')
+    def section(title, subtitle="", anchor=""):
+        idattr = f' id="{anchor}"' if anchor else ""
+        A(f'<h2{idattr}>{esc(title)}</h2>')
         if subtitle:
             A(f'<p class="sub">{esc(subtitle)}</p>')
 
@@ -568,40 +572,44 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
               f'{esc(r.get("instrument_type"))} · {esc(r.get("source"))}</div>{why}</li>')
         A('</ul>')
 
-    A(f'<title>CCS Intelligence Dashboard — CO2CRC</title>')
-    A(f'<meta name="description" content="Global CCS trend intelligence from the daily briefing corpus, through the CO2CRC/CO2Tech strategic lens.">')
+    A(f'<title>Global CCS Dashboard by CO2CRC</title>')
+    A(f'<meta name="description" content="Global CCS Dashboard by CO2CRC — trend intelligence from the daily briefing corpus plus the GCCSI Global Status of CCS report and the London Register of Subsurface CO2 Storage, through the CO2CRC/CO2Tech strategic lens.">')
     A(STYLE)
     A('<div class="wrap">')
     A('<header>')
     A('<div class="eyebrow">CO2CRC · CO2Tech — Strategic Intelligence</div>')
-    A('<h1>CCS Intelligence Dashboard</h1>')
+    A('<h1>Global CCS Dashboard by CO2CRC</h1>')
     A(f'<p class="meta">Corpus: <b>{len(dates)}</b> briefings · {esc(span)} · '
       f'{stats["fresh"]} tracked items ({stats["dropped_dupes"]} duplicates merged) · '
       f'built {esc(build_dt)}</p>')
-    A('<p class="disclaimer">Figures are extracted from press-summary briefings, not audited financials. '
+    A('<p class="disclaimer">Corpus figures are extracted from press-summary briefings (not audited '
+      'financials); global storage baselines are drawn from the GCCSI <i>Global Status of CCS</i> report '
+      'and the Imperial College <i>London Register of Subsurface CO₂ Storage</i>. '
       'Money normalised to A$ at fixed reference rates (as of '
       f'{esc(fx_asof)}); commitment status weights announced vs committed money. '
-      'Every figure links to its source item. For board & senior-stakeholder situational awareness.</p>')
+      'Every headline figure links to the table it comes from; every item links to its source. '
+      'For board &amp; senior-stakeholder situational awareness.</p>')
     A('</header>')
 
     # KPI strip
     A('<div class="kpis">')
     A(kpi("Committed (status-weighted)", fmt_aud(total_committed),
-          "announced discounted; cancelled excluded"))
+          "announced discounted; cancelled excluded", ("#v1", "By region · View 1")))
     A(kpi("Face value of positive commitments", fmt_aud(total_announced_face),
-          "all statuses, unweighted"))
+          "all statuses, unweighted", ("#v-all", "All developments · View 10")))
     A(kpi("Capital withdrawn / at risk", fmt_aud(cancelled_val),
-          "cancellations & surrenders"))
-    A(kpi("Firm capacity", f"{firm_cap:.1f} Mtpa", "committed / operating"))
-    A(kpi("Pipeline capacity", f"{pipeline_cap:.1f} Mtpa", "announced / allocated"))
-    A(kpi("Tracked developments", str(n_items)))
-    A(kpi("High-relevance to CO2CRC", str(len(high_rel))))
+          "cancellations & surrenders", ("#at-risk", "At-risk detail table")))
+    A(kpi("Firm capacity", f"{firm_cap:.1f} Mtpa", "committed / operating", ("#v8", "Capacity · View 8")))
+    A(kpi("Pipeline capacity", f"{pipeline_cap:.1f} Mtpa", "announced / allocated", ("#v8", "Capacity · View 8")))
+    A(kpi("Tracked developments", str(n_items), "", ("#v-all", "All developments · View 10")))
+    A(kpi("High-relevance to CO2CRC", str(len(high_rel)), "", ("#v9", "Signal feed · View 9")))
     A('</div>')
 
     # View 1
     section("1 · Geography of commitment",
             "Where CCS capital is being committed (status-weighted A$) and where activity is concentrating. "
-            "The original currency is shown behind every region and country as a true pre-conversion reference.")
+            "The original currency is shown behind every region and country as a true pre-conversion reference.",
+            anchor="v1")
 
     def geo_table(rows, first_col):
         h = [f'<table class="tbl geo"><thead><tr><th>{esc(first_col)}</th>'
@@ -786,6 +794,29 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     item_list(og_retreating, limit=8)
     A('</div>')
     A('</div>')
+    # Capital withdrawn / at-risk detail — substantiates the headline KPI (source table)
+    cancelled_recs = sorted([r for r in fresh if r.get("commitment_status") == "cancelled"],
+                            key=lambda r: -(r.get("amount_aud") or 0))
+    A('<div class="card" id="at-risk"><h3>Capital withdrawn / at risk — all cancellations &amp; surrenders</h3>')
+    if cancelled_recs:
+        A('<table class="tbl"><thead><tr><th>Date</th><th>Development</th><th>Region</th>'
+          '<th>Instrument</th><th class="num">A$</th></tr></thead><tbody>')
+        for r in cancelled_recs:
+            url = r.get("url") or ""
+            head = esc(r.get("headline", ""))
+            head = f'<a href="{esc(url)}" target="_blank" rel="noopener">{head}</a>' if url else head
+            amt = fmt_aud(r.get("amount_aud")) if r.get("amount_aud") else "—"
+            reg = esc(" · ".join(filter(None, [r.get("region"), ", ".join(r.get("countries") or [])])) or "—")
+            A(f'<tr><td class="muted">{esc(r.get("briefing_date"))}</td><td>{head}</td>'
+              f'<td>{reg}</td><td>{esc(r.get("instrument_type"))}</td>'
+              f'<td class="num">{esc(amt)}</td></tr>')
+        A('</tbody></table>')
+        A(f'<p class="fnote">All {len(cancelled_recs)} items with commitment status = cancelled. These are '
+          'excluded from the committed &amp; face-value totals and summed here as a negative signal — the '
+          f'source of the “{fmt_aud(cancelled_val)}” headline stat.</p>')
+    else:
+        A('<p class="muted">No cancellations or surrenders in the current corpus.</p>')
+    A('</div>')
 
     # View 5
     section("5 · Deployment-mandate tracker",
@@ -839,7 +870,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     # View 8 — capacity
     section("8 · Capacity committed (Mtpa)",
             "For CCS, tonnes matter as much as dollars. Firm = committed/operating; pipeline = "
-            "announced/allocated. Capacity as stated in the source items; cancellations excluded.")
+            "announced/allocated. Capacity as stated in the source items; cancellations excluded.",
+            anchor="v8")
     A('<div class="grid2">')
     A(f'<div class="card"><h3>Capacity by region (Mtpa)</h3>{hbar_chart(cap_reg_rows)}</div>')
     A(f'<div class="card"><h3>Capacity by value chain (Mtpa)</h3>{hbar_chart(cap_vc_rows)}</div>')
@@ -848,7 +880,8 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     # View 9 — segmented signal feed
     section("9 · CO2CRC / CO2Tech signal feed",
             "High & medium strategic-relevance items, grouped into actionable buckets (rule-based) "
-            "with the 'why it matters' read. Priority order — start at the top.")
+            "with the 'why it matters' read. Priority order — start at the top.",
+            anchor="v9")
     for b in SIGNAL_ORDER:
         recs = buckets.get(b)
         if not recs:
@@ -856,6 +889,27 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
         A(f'<div class="card"><h3>{esc(b)} <span class="cnt">{len(recs)}</span></h3>')
         item_list(recs, limit=8, show_why=True)
         A('</div>')
+
+    # View 10 — full corpus table (substantiates the "tracked developments" & face-value headline stats)
+    section("10 · All tracked developments",
+            f"The full {n_items}-item corpus behind the headline count — every tracked development with its "
+            "source link, region, instrument, commitment status and A$ where stated. This is the evidence "
+            "base for the views above; positive-status amounts here are what the face-value stat totals "
+            "(cancelled items are broken out in the at-risk table).",
+            anchor="v-all")
+    A('<div class="card"><table class="tbl"><thead><tr><th>Date</th><th>Development</th>'
+      '<th>Region</th><th>Instrument</th><th>Status</th><th class="num">A$</th></tr></thead><tbody>')
+    for r in sorted(fresh, key=lambda r: (r.get("briefing_date", ""), r.get("id", ""))):
+        url = r.get("url") or ""
+        head = esc(r.get("headline", ""))
+        head = f'<a href="{esc(url)}" target="_blank" rel="noopener">{head}</a>' if url else head
+        amt = fmt_aud(r.get("amount_aud")) if r.get("amount_aud") else "—"
+        reg = esc(" · ".join(filter(None, [r.get("region"), ", ".join(r.get("countries") or [])])) or "—")
+        st = r.get("commitment_status", "") or ""
+        A(f'<tr><td class="muted">{esc(r.get("briefing_date"))}</td><td>{head}</td>'
+          f'<td>{reg}</td><td>{esc(r.get("instrument_type"))}</td>'
+          f'<td>{esc(st)}</td><td class="num">{esc(amt)}</td></tr>')
+    A('</tbody></table></div>')
 
     # footer
     A('<footer>')
@@ -890,6 +944,9 @@ h3{font-size:14px;margin:0 0 10px;color:var(--mut);text-transform:uppercase;lett
 .kv{font-size:22px;font-weight:700;color:var(--accent)}
 .kl{font-size:12px;color:var(--mut);margin-top:2px}
 .kss{font-size:11px;color:var(--mut);margin-top:3px;font-style:italic}
+.ksrc{margin-top:8px;font-size:11px}
+.ksrc a{color:var(--accent);text-decoration:none;font-weight:700}
+.ksrc a:hover{text-decoration:underline}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:720px){.grid2{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0;overflow-x:auto}
