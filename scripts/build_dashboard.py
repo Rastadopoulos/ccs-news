@@ -926,14 +926,17 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
       '<button type="button" data-nav="top" title="Back to top" aria-label="Back to top">⤒</button>'
       '<button type="button" data-nav="prev" title="Previous section" aria-label="Previous section">↑</button>'
       '<button type="button" data-nav="next" title="Next section" aria-label="Next section">↓</button>'
+      '<button type="button" data-nav="bottom" title="Go to bottom" aria-label="Go to bottom">⤓</button>'
       '</nav>')
     A("""<script>
 (function(){
   var heads = [].slice.call(document.querySelectorAll('.wrap h2'));
   var nav = document.querySelector('.floatnav');
   if(!nav || !heads.length) return;
+  var topBtn = nav.querySelector('[data-nav="top"]');
   var prevBtn = nav.querySelector('[data-nav="prev"]');
   var nextBtn = nav.querySelector('[data-nav="next"]');
+  var bottomBtn = nav.querySelector('[data-nav="bottom"]');
   var PAD = 12, TOL = 4;
   function goto(y){ window.scrollTo({top: Math.max(0, y), behavior: 'smooth'}); }
   function tops(){ return heads.map(function(h){ return h.getBoundingClientRect().top + window.pageYOffset - PAD; }); }
@@ -941,13 +944,16 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     var cur = window.pageYOffset, ys = tops();
     var atTop = cur <= (ys[0] || 0) - TOL;
     var atEnd = cur >= (document.documentElement.scrollHeight - window.innerHeight - 2);
+    topBtn.disabled = atTop;
     prevBtn.disabled = atTop;
     nextBtn.disabled = atEnd && cur > ys[ys.length-1] - TOL;
+    bottomBtn.disabled = atEnd;
   }
   nav.addEventListener('click', function(e){
     var b = e.target.closest('button'); if(!b) return;
     var kind = b.getAttribute('data-nav'), cur = window.pageYOffset, ys = tops(), i;
     if(kind === 'top'){ goto(0); return; }
+    if(kind === 'bottom'){ goto(document.documentElement.scrollHeight); return; }
     if(kind === 'next'){
       for(i=0;i<ys.length;i++){ if(ys[i] > cur + TOL){ goto(ys[i]); return; } }
       goto(document.documentElement.scrollHeight); return;
@@ -1026,12 +1032,12 @@ h3{font-size:14px;margin:0 0 10px;color:var(--mut);text-transform:uppercase;lett
 .fnote{color:var(--mut);font-size:11.5px;font-style:italic;margin:6px 2px 0;max-width:80ch}
 .muted{color:var(--mut);font-size:13px}
 footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line)}
-.floatnav{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:8px;z-index:50}
+.floatnav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;z-index:50}
 .floatnav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--accent);font-size:19px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(26,43,52,.14);transition:background .15s,color .15s,opacity .15s}
 .floatnav button:hover:not(:disabled){background:var(--accent);color:#fff}
 .floatnav button:disabled{opacity:.3;cursor:default}
 @media print{.floatnav{display:none}}
-@media (max-width:520px){.floatnav{right:10px;bottom:10px}.floatnav button{width:40px;height:40px}}
+@media (max-width:520px){.floatnav{right:10px}.floatnav button{width:40px;height:40px}}
 </style>"""
 
 
