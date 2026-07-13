@@ -1,0 +1,212 @@
+[
+  {
+    "id": "2026-07-14#01",
+    "briefing_date": "2026-07-14",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Alberta, Ottawa and oil-sands producers sign MOU to advance the Pathways CCS project — capture target cut to ~16 Mtpa",
+    "summary": "Alberta and federal governments and the five Oil Sands Alliance members signed an MOU to advance the Pathways CO2 transport-and-storage project (pipeline to a Cold Lake storage hub), with Ottawa extending carbon-capture ITCs to 2035 and Alberta finalising its own incentives; the target was set at ~16 Mtpa by 2035, down ~77% from the original 68 Mt/yr ambition, and tied to support for a proposed ~1 Mbbl/d Alberta-BC oil pipeline.",
+    "source": "Reuters / BNN Bloomberg / Canada's National Observer",
+    "pub_date": "2026-07-13",
+    "url": "https://www.reuters.com/business/energy/canadas-oil-sands-alliance-reaches-agreement-advance-pathways-carbon-capture-2026-07-13/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Government of Alberta",
+      "Government of Canada",
+      "Canadian Natural Resources",
+      "Cenovus Energy",
+      "ConocoPhillips Canada",
+      "Imperial Oil",
+      "Suncor Energy"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2035,
+    "capacity_mtpa": 16,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Global CCS-policy signal: the ITC-backed framework and the 77% target cut sharpen the economics/social-licence debate Australian gas-CCS proponents also face.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Government-industry framework MOU advancing a specific named project; placed in projects."
+  },
+  {
+    "id": "2026-07-14#02",
+    "briefing_date": "2026-07-14",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "JAPEX establishes Tomakomai CCS Co. to run Japan's first specified-area offshore storage project",
+    "summary": "JAPEX announced it established wholly-owned subsidiary Tomakomai CCS Co., Ltd. (TCCS) on 1 July as the implementing entity for the Tomakomai-area offshore CCS project off Hokkaido; JAPEX will seek to transfer its exploratory drilling permit to TCCS, which will then apply to METI for a CO2 storage business permit. Targets CO2 from Idemitsu's Hokkaido Refinery and HEPCO's Tomato-Atsuma power station.",
+    "source": "JAPEX",
+    "pub_date": "2026-07-13",
+    "url": "https://www.japex.co.jp/en/news/detail/20260713_01/",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "JAPEX",
+      "Tomakomai CCS Co.",
+      "Idemitsu Kosan",
+      "Hokkaido Electric Power",
+      "METI"
+    ],
+    "org_types": [
+      "NOC",
+      "developer",
+      "OG-major",
+      "utility",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Japan is a prospective CO2-export partner for Australian storage; advancing Japan's first specified-area offshore CCS grows the APAC storage market CO2CRC operates in.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Corporate/entity-formation milestone for a named project."
+  },
+  {
+    "id": "2026-07-14#03",
+    "briefing_date": "2026-07-14",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "PETRONAS details a downhole CO2-logging assessment supporting its CCS agenda (TC19)",
+    "summary": "Malaysia's PETRONAS published a technical release on a downhole CO2-logging assessment method to strengthen well-integrity and measurement/monitoring for its CCS programme — an MMV/well-surveillance R&D signal from a SE Asian NOC building out multiple Malaysian CCS hubs.",
+    "source": "PETRONAS",
+    "pub_date": "2026-07-12",
+    "url": "https://www.petronas.com/innovation-petronas/media/media-releases/downhole-co2-logging-assessment-supporting-petronas-ccs-agenda-tc19",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "PETRONAS"
+    ],
+    "org_types": [
+      "NOC"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "MMV-MRV",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Downhole CO2-logging/MMV work is directly relevant to CO2CRC's monitoring-and-verification research focus and to SE Asian NOC storage buildout.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-14#04",
+    "briefing_date": "2026-07-14",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Global Carbon Council and CCS+ Initiative sign MoU on high-integrity CCS/CDR methodologies",
+    "summary": "Qatar-based crediting body the Global Carbon Council signed an MoU with the CCS+ Initiative (announced at the IETA Asia Climate Summit in Hong Kong) to adapt CCS+ methodology materials (DAC, CO2 transport, BECCS) into the GCC programme and assess a dedicated module for industrial point-source capture.",
+    "source": "Carbon Herald / Global Carbon Council",
+    "pub_date": "2026-07-13",
+    "url": "https://carbonherald.com/gcc-and-ccs-initiative-to-advance-high-integrity-carbon-capture-removal/",
+    "region": "Middle East",
+    "countries": [
+      "Qatar"
+    ],
+    "organisations": [
+      "Global Carbon Council",
+      "CCS+ Initiative"
+    ],
+    "org_types": [
+      "registry",
+      "industry-body"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "capture",
+      "DAC",
+      "BECCS",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Crediting-methodology convergence affects the bankability of CCS/CDR credits, including for APAC/Australian projects.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Carbon-market methodology MoU; placed in markets."
+  },
+  {
+    "id": "2026-07-14#05",
+    "briefing_date": "2026-07-14",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Verra opens consultation on a major revision to its CO2-in-concrete methodology (VM0043 v2.0)",
+    "summary": "Verra launched a public consultation (10 Jul-10 Aug) on revising VM0043, the VCS methodology for using waste CO2 as a feedstock in concrete production, aligning it with Verra's DAC (VMD0056) and CCS (VM0049) methodologies and splitting removal vs reduction labels; sponsored by CarbonCure Technologies.",
+    "source": "Verra / QCIntel",
+    "pub_date": "2026-07-10",
+    "url": "https://verra.org/consultation-revision-to-concrete-production-methodology-vm0043/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Verra",
+      "CarbonCure Technologies"
+    ],
+    "org_types": [
+      "registry",
+      "developer"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "utilisation",
+      "mineralisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "CO2-utilisation crediting rulebook development; peripheral to CO2CRC's storage focus but relevant to CCU credit markets.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Radar item — consultation opened 10 Jul, just outside the 13-14 Jul window."
+  }
+]
