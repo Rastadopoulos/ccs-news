@@ -40,10 +40,17 @@ No dependencies beyond the standard library + `scripts/_canon.py`.
 
 ## The nine views
 
-1. Geography of commitment · 2. Global reality check — GCCSI baseline · 3. Where the money goes
-· 4. Actors (incl. O&G-major advancing/retreating) · 5. Deployment-mandate tracker · 6. Australia
-benchmark · 7. Momentum & social licence · 8. Capacity committed (Mtpa) · 9. Segmented CO2CRC/CO2Tech
-signal feed.
+1. Geography of commitment · 2. Global reality check — GCCSI baseline · 2c. Cumulative storage
+delivered (GCCSI × Imperial) · 3. Where the money goes · 4. Actors (incl. O&G-major
+advancing/retreating) · 5. Deployment-mandate tracker · 6. Australia benchmark · 7. Momentum & social
+licence · 8. Capacity committed (Mtpa) · 9. Segmented CO2CRC/CO2Tech signal feed.
+
+View 2c reconciles two cumulative-storage sources that measure different things — GCCSI's dedicated
+(non-EOR) project count (capacity basis) and Imperial College's *London Register of Subsurface CO₂
+Storage* (measured actual tonnes, all storage types) — as two labelled series joined by a documented
+bridge, under a destination-based 3-way taxonomy (dedicated / associated / EOR). Data:
+`data/storage-baseline.json`. The Imperial source is watched **monthly** by
+`.github/workflows/imperial-register-check.yml` (emails on change via Resend).
 
 View 2 overlays an external authoritative benchmark — the Global CCS Institute *Global Status of CCS*
 report (`data/reference-baseline.json`) — so a quiet news window for a region (e.g. the US or Middle

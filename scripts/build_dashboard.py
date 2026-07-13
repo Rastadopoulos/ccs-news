@@ -88,6 +88,15 @@ def load_reference():
         return json.load(f)
 
 
+def load_storage_baseline():
+    """Load the cumulative-storage baseline (GCCSI × Imperial reconciliation; optional)."""
+    path = os.path.join(DATA_DIR, "storage-baseline.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def _iter_records():
     """Yield raw records from all sources."""
     backfill = os.path.join(DATA_DIR, "facts-backfill.jsonl")
@@ -371,7 +380,7 @@ def iso_week(d):
     return f"{y}-W{w:02d}"
 
 
-def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None):
+def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None):
     dates = sorted({r["briefing_date"] for r in fresh})
     span = f"{dates[0]} → {dates[-1]}" if dates else "no data"
 
@@ -682,6 +691,80 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None):
           f'global headline &amp; growth: {esc(ref.get("source_global"))}; regional: {esc(ref.get("source_regional"))}. '
           f'Retrieved {esc(ref.get("retrieved"))}. {esc(ref.get("caveat"))}</p>')
 
+    # View 2c — Cumulative storage delivered: GCCSI (capacity) vs Imperial (actual), with a bridge
+    if sref:
+        gd = sref.get("series", {}).get("gccsi_dedicated", {})
+        ia = sref.get("series", {}).get("imperial_all_storage", {})
+        idd = sref.get("series", {}).get("imperial_dedicated_derived", {})
+        asum = sref.get("assumptions", {})
+        section("2c · Cumulative storage delivered — pipeline vs actual tonnes",
+                "Two authoritative sources measured on different bases: GCCSI counts dedicated (non-EOR) "
+                "projects (capacity-leaning); Imperial's London Register measures actual tonnes injected "
+                "(all storage types). Reconciled by the bridge below — never blended into one number.")
+        A('<div class="kpis">')
+        A(kpi("GCCSI dedicated (non-EOR)", f"{gd.get('cumulative_qualifier','—')} Mt",
+              f"{gd.get('projects_operational','—')} projects · capacity basis · {gd.get('as_of','')}"))
+        A(kpi("Imperial — all storage", f"{ia.get('cumulative_mt_to_2024','—')} Mt",
+              "incl. EOR · measured actual · to 2024"))
+        A(kpi("Imperial — dedicated only", f"~{idd.get('cumulative_mt_approx','—')} Mt",
+              f"measured actual · to {idd.get('as_of','')}"))
+        df = asum.get("delivery_factor_range", [])
+        A(kpi("Capacity→actual factor", f"{df[0]}–{df[1]}" if len(df) == 2 else "—",
+              "reported capacity overstates actual (Imperial)"))
+        A('</div>')
+        # Reconciliation bridge (waterfall as a table — steps mix +/- and qualitative growth)
+        bw = sref.get("bridge_waterfall", {})
+        steps = bw.get("steps", [])
+        if steps:
+            A('<div class="card"><h3>Reconciliation bridge — Imperial actual (2020) → GCCSI pipeline (2025)</h3>')
+            A('<table class="tbl"><thead><tr><th>Step</th><th>Mt</th><th>Basis</th></tr></thead><tbody>')
+            for s in steps:
+                mt = s.get("mt")
+                mt_s = s.get("mt_qualifier") or ("—" if mt is None else str(mt))
+                A(f'<tr><td>{esc(s.get("label"))}</td><td class="num">{esc(mt_s)}</td>'
+                  f'<td class="gccsi">{esc(s.get("basis") or "")}</td></tr>')
+            A('</tbody></table>')
+            A(f'<p class="fnote">{esc(bw.get("note", ""))}</p></div>')
+        # Per-project bridge table, grouped by storage class
+        projs = sref.get("projects", [])
+        CLASS_LABEL = {"dedicated": "Dedicated (non-EOR)",
+                       "associated": "Associated reinjection",
+                       "eor": "EOR"}
+        A('<div class="card"><h3>Project bridge — capacity vs measured-actual, by storage class</h3>')
+        A('<table class="tbl"><thead><tr><th>Project</th><th>Country</th><th>Start</th>'
+          '<th>Capacity Mtpa</th><th>Reported cum. Mt</th><th>Actual cum. Mt</th></tr></thead><tbody>')
+        fmtn = lambda x: "—" if x is None else str(x)
+        for cls in ("dedicated", "associated", "eor"):
+            rows = [p for p in projs if p.get("class") == cls]
+            if not rows:
+                continue
+            A(f'<tr><td colspan="6" style="background:#f4f6f8;font-weight:600">'
+              f'{esc(CLASS_LABEL[cls])} — {len(rows)} project{"s" if len(rows) != 1 else ""}</td></tr>')
+            for p in rows:
+                A(f'<tr><td class="rgn">{esc(p.get("name"))}</td>'
+                  f'<td>{esc(p.get("country"))}</td>'
+                  f'<td class="num">{esc(fmtn(p.get("start_year")))}</td>'
+                  f'<td class="num">{esc(fmtn(p.get("capacity_mtpa")))}</td>'
+                  f'<td class="num">{esc(fmtn(p.get("reported_cumulative_mt")))}</td>'
+                  f'<td class="num">{esc(fmtn(p.get("measured_actual_cumulative_mt")))}</td></tr>')
+        A('</tbody></table>')
+        A(f'<p class="fnote">{esc(sref.get("caveat", ""))}</p></div>')
+        # Sources + taxonomy + known gaps
+        src = sref.get("sources", {})
+        gccsi_url = src.get("gccsi_dedicated", {}).get("url", "")
+        imp_url = src.get("imperial_register", {}).get("register_url", "")
+        gaps = sref.get("known_gaps", [])
+        tax_note = sref.get("taxonomy", {}).get("classes", {})
+        A(f'<p class="fnote">Sources: '
+          f'<a href="{esc(gccsi_url)}" target="_blank" rel="noopener">GCCSI — Safety &amp; Permanence of CO₂ Geological Storage (2025)</a>; '
+          f'<a href="{esc(imp_url)}" target="_blank" rel="noopener">Imperial College — London Register of Subsurface CO₂ Storage</a> '
+          f'(Zhang, Krevor &amp; Jackson 2022, <i>Env. Sci. Tech. Letters</i>). Retrieved {esc(sref.get("retrieved", ""))}. '
+          f'<b>Taxonomy:</b> destination-based 3-way — dedicated (into a non-producing formation) / '
+          f'associated (reinjection into a producing reservoir) / EOR. '
+          f'The widely-cited “383 Mt since 1996” is Imperial’s <b>all-storage</b> actual total (EOR-dominated), '
+          f'not a GCCSI or dedicated-only figure. '
+          f'<b>Known gaps:</b> {esc("; ".join(gaps[:3]))}. See <code>storage-baseline.json</code> for the full record.</p>')
+
     # View 3
     section("3 · Where the money goes",
             "Split of commitments across policy instruments and the CCS value chain.")
@@ -860,8 +943,9 @@ def main():
     fx, fx_asof = load_fx()
     fresh, radar, stats = load_records(fx)
     ref = load_reference()
+    sref = load_storage_baseline()
     build_dt = os.environ.get("BUILD_DATE") or date.today().isoformat()
-    body = render(fresh, radar, stats, fx, fx_asof, build_dt, ref)
+    body = render(fresh, radar, stats, fx, fx_asof, build_dt, ref, sref)
     # `body` is: <title>…<style>…</style> + <div class="wrap">…</div>. Split the head
     # material from the body content at the wrap div to assemble a valid document.
     page = ("<!doctype html><html lang=en><head><meta charset=utf-8>"

@@ -1,0 +1,123 @@
+{
+  "_comment": "Cumulative geological CO2 storage baseline for the dashboard's storage-delivered view (planned view 2c), sibling to reference-baseline.json. Reconciles TWO sources that measure DIFFERENT things and must NOT be blended into one headline: (A) Global CCS Institute — PURPOSE-based project count, capacity-leaning; (B) Imperial College London 'London Register of Subsurface CO2 Storage' — MEASURED actual tonnes injected. The 'resolution' of the apparent discrepancy is the documented bridge_waterfall + the per-project bridge table below, NOT a single reconciled number. Design decisions signed off 2026-07-13 (3-way taxonomy; two series + bridge). Populated for REVIEW — see known_gaps before wiring into build_dashboard.py.",
+  "schema_version": 1,
+  "signed_off": "2026-07-13",
+  "retrieved": "2026-07-13",
+
+  "sources": {
+    "gccsi_dedicated": {
+      "title": "Global CCS Institute — The Safety and Permanence of CO2 Geological Storage (Perspective)",
+      "published": "2025-09",
+      "data_asof": "2025-06",
+      "basis": "purpose-based project count; cumulative is capacity-leaning / operator-reported",
+      "url": "https://www.globalccsinstitute.com/wp-content/uploads/2025/09/The-Safety-and-Permanence-of-CO2-Geological-Storage-Global-CCS-Institute.pdf",
+      "companion_project_list": "Seyyedi, Consoli, Minervini, Hatta & Williams (2024), The Global Landscape of CO2 Storage Projects, SSRN 5063681 (auth-walled; full 18-project enumeration not yet extracted — see known_gaps)"
+    },
+    "imperial_register": {
+      "title": "Imperial College London — The London Register of Subsurface CO2 Storage (Krevor / Jackson / Zhang)",
+      "register_url": "https://imperialcollegelondon.github.io/The-London-Register-of-Subsurface-CO2-Storage/",
+      "repo": "ImperialCollegeLondon/The-London-Register-of-Subsurface-CO2-Storage (site config only; raw dataset not published in-repo)",
+      "basis": "measured ACTUAL tonnes injected, verified against operator/regulator reporting",
+      "foundational_paper": {
+        "cite": "Zhang, Krevor & Jackson (2022), Environmental Science & Technology Letters 9(8):693-698",
+        "doi": "10.1021/acs.estlett.2c00296",
+        "preprint": "https://eartharxiv.org/repository/object/2984/download/6036/",
+        "coverage": "1996-2020, 20 commercial-scale facilities (Table 1)"
+      },
+      "update_2025": {
+        "cite": "London Register 2025 refresh (released around COP30)",
+        "url": "https://www.imperial.ac.uk/news/271713/first-complete-record-global-underground-co/"
+      }
+    }
+  },
+
+  "taxonomy": {
+    "note": "User approved a 3-way split on 2026-07-13. During extraction the classifying rule was sharpened to be DESTINATION-based (defensible and matches GCCSI's own 18-project set), NOT source-based. Flagged for confirmation: this places Sleipner/Snohvit/Gorgon as 'dedicated' (their CO2 comes from gas processing but is injected into a dedicated saline formation, not a producing reservoir), and leaves only Santos Pre-Salt + Qatar in 'associated'. The co2_source flag on each project preserves the alternative source-based grouping so the rule can be toggled without re-tagging.",
+    "classes": {
+      "dedicated": "CO2 injected into a non-producing formation (saline aquifer or depleted field) primarily to store it. == GCCSI's 'dedicated' set.",
+      "associated": "CO2 reinjected into a producing hydrocarbon reservoir (pressure maintenance / co-mingled with production), e.g. pre-salt gas reinjection.",
+      "eor": "CO2 injected into oil fields to enhance recovery. Excluded from GCCSI's dedicated count."
+    }
+  },
+
+  "assumptions": {
+    "delivery_factor_range": [0.70, 0.81],
+    "delivery_factor_note": "Imperial's measured finding that reported CAPTURE CAPACITY overstates ACTUAL storage. Zhang 2022: aggregate storage was 19-30% below nameplate capacity (2019: 27-31 Mt actual vs 36 Mt capacity ~= 75-86%; headline 81%). Apply to GCCSI's capacity-leaning cumulative to approximate actual. Treated like fx_rates / status-weighting: a stated, editable assumption.",
+    "vintage_caveat": "The two headline numbers are ~5 years and one measurement-basis apart (GCCSI Jun-2025 capacity vs Imperial 2020/2023 actual). The bridge does NOT hide this; the gap is largely real-world growth + new projects, not error."
+  },
+
+  "series": {
+    "gccsi_dedicated": {
+      "as_of": "2025-06",
+      "projects_operational": 18,
+      "cumulative_mt": 80,
+      "cumulative_qualifier": ">80 (capacity-leaning)",
+      "country_counts": {"United States": 6, "Norway": 3, "Canada": 2, "Australia": 2, "Iceland": 1, "Italy": 1, "Qatar": 1, "China": 1, "New Zealand": 1},
+      "excludes": "33 EOR projects + 50+ pilot/demo projects"
+    },
+    "imperial_all_storage": {
+      "cumulative_mt_to_2020": 196.12,
+      "cumulative_mt_to_2024": 383,
+      "annual_mt_2019": 27,
+      "annual_mt_2023": 45.2,
+      "growth_pct_yr": 9.2,
+      "includes": "ALL geological storage: dedicated + associated + EOR",
+      "note": "The widely-cited '383 Mt stored since 1996' is THIS number (Imperial, all-storage, actual) — NOT a GCCSI figure and NOT dedicated-only. 2023 flow dominated by EOR/associated: Santos Basin Pre-Salt ~13.0 Mt + Seminole San Andres (US EOR) ~3.9 Mt = >1/3 of the year."
+    },
+    "imperial_dedicated_derived": {
+      "as_of": "2020",
+      "cumulative_mt_approx": 33,
+      "method": "Sum of destination-'dedicated' rows in Zhang 2022 Table 1 (Sleipner 18.5 + Snohvit 6.5 + Quest 4.8 + Illinois 1.04 + Aquistore 0.27 + Gorgon ~2 ramping).",
+      "confidence": "medium — Gorgon 2020 value approximate; needs the register's per-project actual series to firm up (known_gaps)."
+    }
+  },
+
+  "bridge_waterfall": {
+    "note": "Anchored on Imperial MEASURED actuals to 2020 (the most complete verified per-project set), then reconciled forward to the GCCSI Jun-2025 capacity figure. Every step is a documented adjustment, not a fudge.",
+    "steps": [
+      {"label": "Imperial ALL storage, actual, cumulative to 2020", "mt": 196.12, "basis": "measured"},
+      {"label": "less EOR projects (Weyburn/Great Plains, Century, Shute Creek, Gulf Coast, Core Energy, Coffeyville, Arkalon, ACTL, CNPC Jilin, Sinopec, Karamay)", "mt": -123, "basis": "measured", "confidence": "approx"},
+      {"label": "less associated reinjection (Santos Pre-Salt 21.4 + Qatar ~20*)", "mt": -41, "basis": "measured", "confidence": "low — Qatar value unverified, see known_gaps"},
+      {"label": "= Imperial DEDICATED-only, actual, cumulative to 2020", "mt": 33, "basis": "measured", "confidence": "medium"},
+      {"label": "+ 5 years growth & new projects to Jun-2025 (Gorgon ramp-up, Moomba, Northern Lights, Ravenna, new US saline, etc.)", "mt": "+~", "basis": "mixed"},
+      {"label": "GCCSI DEDICATED, capacity-leaning, to Jun-2025", "mt": 80, "mt_qualifier": ">80", "basis": "capacity"},
+      {"label": "apply delivery factor 0.70-0.81 to approximate GCCSI figure on an ACTUAL basis", "mt": "56-65", "basis": "derived actual", "note": "residual after this vs the growth-adjusted Imperial figure = the irreducible uncertainty band"}
+    ]
+  },
+
+  "projects": [
+    {"name": "Sleipner", "country": "Norway", "start_year": 1996, "class": "dedicated", "co2_source": "gas-processing", "storage_type": "saline (offshore)", "capacity_mtpa": 1.0, "measured_actual_cumulative_mt": 18.5, "measured_asof": 2019, "reported_cumulative_mt": 20, "reported_asof": 2025, "source": "Zhang 2022 Table 1; GCCSI 2025 (~20 Mt @ 30 yrs)", "caveat": "Equinor acknowledged (Oct 2024) over-reporting captured volumes for a period."},
+    {"name": "Snohvit", "country": "Norway", "start_year": 2008, "class": "dedicated", "co2_source": "gas-processing", "storage_type": "saline (offshore)", "capacity_mtpa": 0.7, "measured_actual_cumulative_mt": 6.5, "measured_asof": 2019, "source": "Zhang 2022 Table 1"},
+    {"name": "Northern Lights (Phase 1)", "country": "Norway", "start_year": 2025, "class": "dedicated", "co2_source": "merchant/multi-source", "storage_type": "saline (offshore)", "capacity_mtpa": 1.5, "measured_actual_cumulative_mt": null, "reported_cumulative_mt": 0, "source": "Equinor 2025-08-25 (first CO2 stored); world-first merchant T&S"},
+    {"name": "Quest", "country": "Canada", "start_year": 2015, "class": "dedicated", "co2_source": "hydrogen/SMR", "storage_type": "saline", "capacity_mtpa": 1.1, "measured_actual_cumulative_mt": 4.8, "measured_asof": 2020, "reported_cumulative_mt": 10, "reported_asof": 2024, "source": "Zhang 2022 Table 1; Shell (>10 Mt)"},
+    {"name": "Boundary Dam -> Aquistore (dedicated fraction)", "country": "Canada", "start_year": 2015, "class": "dedicated", "co2_source": "power (post-combustion)", "storage_type": "saline", "capacity_mtpa": null, "measured_actual_cumulative_mt": 0.27, "measured_asof": 2020, "source": "Zhang 2022 Table 1", "caveat": "Most Boundary Dam CO2 goes to Weyburn EOR (counted under EOR); only the Aquistore fraction is dedicated saline storage."},
+    {"name": "Illinois Industrial CCS (ADM Decatur)", "country": "United States", "start_year": 2017, "class": "dedicated", "co2_source": "ethanol fermentation", "storage_type": "saline", "capacity_mtpa": 1.0, "measured_actual_cumulative_mt": 1.55, "measured_asof": 2020, "source": "Zhang 2022 Table 1 (1.042-1.55 across sources); excludes the earlier IBDP demo"},
+    {"name": "Gorgon", "country": "Australia", "start_year": 2019, "class": "dedicated", "co2_source": "gas-processing", "storage_type": "saline (Barrow Is.)", "capacity_mtpa": 4.0, "measured_actual_cumulative_mt": 2, "measured_asof": 2020, "reported_cumulative_mt": 11, "reported_asof": 2025, "source": "Zhang 2022 (ramping); GCCSI 2025 (~11 Mt @ Jul-2025)", "caveat": "Has run well below its ~4 Mtpa nameplate (injection/water-handling constraints)."},
+    {"name": "Moomba", "country": "Australia", "start_year": 2024, "class": "dedicated", "co2_source": "gas-processing", "storage_type": "depleted gas (Cooper Basin)", "capacity_mtpa": 1.7, "measured_actual_cumulative_mt": null, "reported_cumulative_mt": 1, "reported_asof": 2025, "source": "Santos; Enerdata 2024-10"},
+    {"name": "Ravenna (Phase 1)", "country": "Italy", "start_year": 2024, "class": "dedicated", "co2_source": "gas-processing", "storage_type": "depleted gas", "capacity_mtpa": 0.025, "future_capacity_mtpa": 4, "future_by": 2030, "measured_actual_cumulative_mt": null, "source": "Eni/Snam 2024-09"},
+    {"name": "Orca / CarbFix (Iceland dedicated site)", "country": "Iceland", "start_year": 2021, "class": "dedicated", "co2_source": "DAC / geothermal", "storage_type": "mineral carbonation (basalt)", "capacity_mtpa": null, "measured_actual_cumulative_mt": null, "source": "GCCSI 2025 country count (Iceland=1); exact project TBC — known_gaps"},
+    {"name": "Santos Basin Pre-Salt", "country": "Brazil", "start_year": 2008, "class": "associated", "co2_source": "gas-processing", "storage_type": "reinjection into producing pre-salt reservoir", "capacity_mtpa": 4.6, "measured_actual_cumulative_mt": 21.4, "measured_asof": 2020, "annual_mt_2023": 13.0, "source": "Zhang 2022 Table 1; Imperial 2025 (13.0 Mt in 2023 — single largest annual)", "caveat": "GCCSI would not count this as dedicated; largest swing item in the taxonomy choice."},
+    {"name": "Qatar LNG (Ras Laffan)", "country": "Qatar", "start_year": 2010, "class": "associated", "co2_source": "gas-processing", "storage_type": "reinjection", "capacity_mtpa": 2.1, "measured_actual_cumulative_mt": null, "reported_cumulative_mt_unverified": 63.6, "source": "Zhang 2022 Table 1 row appears mis-aligned in extraction (rate>capacity; 63.6 implausible for the period) — VALUE UNVERIFIED, see known_gaps"},
+    {"name": "Great Plains Synfuel -> Weyburn-Midale", "country": "United States/Canada", "start_year": 2000, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 3.0, "measured_actual_cumulative_mt": 32.2, "measured_asof": 2018, "source": "Zhang 2022 Table 1"},
+    {"name": "Century -> Hobbs/Denver Unit", "country": "United States", "start_year": 2010, "class": "eor", "co2_source": "gas-processing", "storage_type": "EOR", "capacity_mtpa": 5.0, "measured_actual_cumulative_mt": 10.78, "measured_asof": 2019, "source": "Zhang 2022 Table 1 (Hobbs 10.78; Denver Unit 16.16; Oxy aggregate 25.66 across linked sinks)"},
+    {"name": "Shute Creek", "country": "United States", "start_year": 1986, "class": "eor", "co2_source": "gas-processing", "storage_type": "EOR", "capacity_mtpa": 7.0, "measured_actual_cumulative_mt": 4, "measured_asof": 2020, "source": "Zhang 2022 Table 1 (Chevron/ExxonMobil; large capacity but much CO2 vented/EOR)"},
+    {"name": "Air Products (Port Arthur) -> Gulf Coast/Denbury", "country": "United States", "start_year": 2013, "class": "eor", "co2_source": "hydrogen/SMR", "storage_type": "EOR", "capacity_mtpa": 1.0, "measured_actual_cumulative_mt": 2.08, "measured_asof": 2020, "source": "Zhang 2022 Table 1"},
+    {"name": "Coffeyville -> North Burbank Unit", "country": "United States", "start_year": 2013, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 1.0, "measured_actual_cumulative_mt": 3.49, "measured_asof": 2019, "source": "Zhang 2022 Table 1"},
+    {"name": "Arkalon -> Farnsworth Unit", "country": "United States", "start_year": 2009, "class": "eor", "co2_source": "ethanol", "storage_type": "EOR", "capacity_mtpa": 0.29, "measured_actual_cumulative_mt": 0.46, "measured_asof": 2017, "source": "Zhang 2022 Table 1"},
+    {"name": "Core Energy", "country": "United States", "start_year": 2003, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 0.35, "measured_actual_cumulative_mt": 0.69, "measured_asof": 2020, "source": "Zhang 2022 Table 1"},
+    {"name": "ACTL (Nutrien + Sturgeon) -> Clive/Enhance", "country": "Canada", "start_year": 2020, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 1.7, "measured_actual_cumulative_mt": 1, "measured_asof": 2021, "source": "Zhang 2022 Table 1"},
+    {"name": "CNPC Jilin", "country": "China", "start_year": 2018, "class": "eor", "co2_source": "gas-processing", "storage_type": "EOR", "capacity_mtpa": 0.6, "measured_actual_cumulative_mt": 1.9, "measured_asof": 2020, "source": "Zhang 2022 Table 1"},
+    {"name": "Sinopec Zhongyuan", "country": "China", "start_year": 2015, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 0.12, "measured_actual_cumulative_mt": null, "source": "Zhang 2022 Table 1 (small)"},
+    {"name": "Karamay Dunhua", "country": "China", "start_year": 2015, "class": "eor", "storage_type": "EOR", "capacity_mtpa": 0.1, "measured_actual_cumulative_mt": null, "source": "Zhang 2022 Table 1 (small)"}
+  ],
+
+  "known_gaps": [
+    "GCCSI full 18-project enumeration not extracted — companion paper Seyyedi et al. 2024 (SSRN 5063681) is auth-walled (HTTP 403). Country counts are known; the specific US(6)/China(1)/NZ(1)/Iceland(1) members are partly inferred. Needs the CO2CRC GCCSI library copy or SSRN access.",
+    "Qatar LNG (Ras Laffan) cumulative — Zhang 2022 row mis-aligned in PDF extraction (capture rate > capacity; 63.6 Mt implausible for 2010-2020 at 2.1 Mtpa). Verify against the paper's SI table.",
+    "Imperial per-project ACTUAL series for 2021-2024 not obtained — the London Register's raw dataset is not in its public GitHub repo (site config .toml only). Only 2023 aggregates + Santos/Seminole are public. Needed to firm up imperial_dedicated_derived beyond 2020.",
+    "Gorgon 2020 measured value is approximate (project started 2019, ramping).",
+    "post-2020 dedicated projects (Moomba, Northern Lights, Ravenna, new US saline) have reported/capacity figures only — no independent measured-actual series yet."
+  ],
+
+  "caveat": "Two sources, two different questions. GCCSI answers 'how many dedicated projects and which ones' (purpose-based, forward-looking pipeline). Imperial answers 'how much CO2 actually went underground' (measured, but includes EOR). Neither publishes a clean 'dedicated non-EOR ACTUAL cumulative' headline; the best current answer is GCCSI's >80 Mt across 18 projects, read as a capacity-leaning figure that is plausibly ~20-30% above true injected volume. Present as TWO labelled series joined by the bridge_waterfall — never a single blended number."
+}
