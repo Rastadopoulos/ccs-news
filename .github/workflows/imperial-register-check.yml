@@ -1,0 +1,128 @@
+name: Imperial CO2 storage register — monthly update check
+
+# Watches the Imperial College London "London Register of Subsurface CO2 Storage"
+# for updates so the dashboard's storage baseline (dashboard/data/storage-baseline.json)
+# stays current. The register's raw dataset is NOT in its public repo, so we watch two
+# signals: (1) the source repo's latest commit SHA, (2) a content hash of the rendered
+# register page. On change, commit the new fingerprint and email an alert via Resend
+# (same pattern as deadman-check.yml). Outbound email is routed through Actions per the
+# repo convention (the local sandbox cannot reach api.resend.com).
+
+on:
+  schedule:
+    # 1st of every month, ~09:00 Melbourne. Cron is UTC; two crons cover the DST shift
+    # and the job self-gates on Melbourne local hour == 09 so exactly one acts.
+    - cron: '0 22 1 * *'   # 09:00 AEDT (roughly Oct–Apr)
+    - cron: '0 23 1 * *'   # 09:00 AEST (roughly Apr–Oct)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Gate on Melbourne local hour (skip the wrong-DST cron)
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          HOUR=$(TZ=Australia/Melbourne date +%H)
+          echo "proceed=false" >> "$GITHUB_OUTPUT"
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "09" ]; then
+            echo "Local hour is $HOUR, not 09 — wrong-DST cron. Skipping."
+            exit 0
+          fi
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Fingerprint the register (repo commit + page content)
+        id: fp
+        if: steps.gate.outputs.proceed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          REPO="ImperialCollegeLondon/The-London-Register-of-Subsurface-CO2-Storage"
+          PAGE="https://imperialcollegelondon.github.io/The-London-Register-of-Subsurface-CO2-Storage/database/"
+
+          # (1) latest commit SHA of the register's source repo (empty string if the API call fails)
+          SHA=$(gh api "repos/${REPO}/commits?per_page=1" --jq '.[0].sha' 2>/dev/null || echo "")
+
+          # (2) content hash of the rendered database page (strip nothing fancy — a raw sha256 is enough
+          #     to detect any change; false positives are acceptable for a monthly nudge).
+          PAGE_HASH=$(curl -sSL --max-time 60 "$PAGE" | sha256sum | cut -d' ' -f1 || echo "")
+
+          CUR="repo_sha=${SHA} page_sha256=${PAGE_HASH}"
+          echo "current=$CUR" >> "$GITHUB_OUTPUT"
+          echo "Current fingerprint: $CUR"
+
+          SNAP="dashboard/data/.imperial-register-seen.txt"
+          PREV=""
+          if [ -f "$SNAP" ]; then PREV=$(cat "$SNAP"); fi
+          echo "Previous fingerprint: ${PREV:-<none>}"
+
+          if [ "$CUR" != "$PREV" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "$CUR" > "$SNAP"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit updated fingerprint
+        if: steps.gate.outputs.proceed == 'true' && steps.fp.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/data/.imperial-register-seen.txt
+          git commit -m "Imperial storage register fingerprint changed $(TZ=Australia/Melbourne date +%Y-%m-%d)" || echo "nothing to commit"
+          git push
+
+      - name: Alert via Resend
+        if: steps.gate.outputs.proceed == 'true' && steps.fp.outputs.changed == 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY:-}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
+
+          {
+            echo "<p>The Imperial College <strong>London Register of Subsurface CO2 Storage</strong> looks like it changed (monthly check, ${TODAY}).</p>"
+            echo "<p>Review whether new cumulative/annual figures or per-project actuals should update"
+            echo "<code>dashboard/data/storage-baseline.json</code> (the storage-delivered baseline).</p>"
+            echo "<ul>"
+            echo "<li>Register: <a href=\"https://imperialcollegelondon.github.io/The-London-Register-of-Subsurface-CO2-Storage/database/\">database page</a></li>"
+            echo "<li>News/updates: <a href=\"https://www.imperial.ac.uk/people/s.krevor\">Krevor group</a></li>"
+            echo "</ul>"
+            echo "<p>Fingerprint now: <code>$(cat dashboard/data/.imperial-register-seen.txt)</code></p>"
+          } > /tmp/body.html
+
+          jq -n \
+            --arg subject "CCS dashboard: Imperial CO2 storage register may have updated — ${TODAY}" \
+            --rawfile html /tmp/body.html \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html
+            }' > /tmp/resend.json
+
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"; cat /tmp/resend.out; echo
+          case "$HTTP" in
+            2*) echo "::notice::Update alert emailed" ;;
+            *)  echo "::error::Resend rejected the alert (HTTP $HTTP)"; exit 1 ;;
+          esac

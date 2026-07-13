@@ -89,6 +89,17 @@ Built in v1 unless marked **[planned]**. Every chart is backed by the underlying
    "reality vs corpus coverage" table. Corrects for the corpus's news-flow/source bias (see §5) — e.g.
    shows the US and Middle East at their true operating scale even in windows where the news is quiet.
    Data: `dashboard/data/reference-baseline.json` (refresh annually when GCCSI publishes).
+2c. **Cumulative storage delivered — pipeline vs actual tonnes** — reconciles two authoritative
+   cumulative-storage sources that measure *different things* and are therefore **never blended**:
+   GCCSI's dedicated (non-EOR) **project count** (capacity-leaning, >80 Mt / 18 projects) and Imperial
+   College's **London Register of Subsurface CO₂ Storage** (measured *actual* tonnes, all storage types,
+   383 Mt to 2024). Shown as two labelled series joined by a documented reconciliation **bridge
+   (waterfall)** + a per-project table under a **destination-based 3-way taxonomy** (dedicated /
+   associated reinjection / EOR — signed off 2026-07-13). Corrects the common error of reading the
+   "383 Mt" all-storage figure as dedicated-only or as a GCCSI number, and surfaces Imperial's
+   measured ~19–30% capacity-vs-actual gap. Data: `dashboard/data/storage-baseline.json`. Second
+   external source refreshed **monthly** by `.github/workflows/imperial-register-check.yml`, which
+   emails when the Imperial register changes.
 9. **[planned] Otway / MMV lens** — map monitoring-verification and research-collaboration signals to
    CO2CRC's flagship Otway International Test Centre capabilities and CO2Tech's commercial offer.
 10. **[planned] Geographic choropleth** and a **[planned] curated deployment-mandate reference layer**
