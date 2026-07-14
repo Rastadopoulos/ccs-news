@@ -1,0 +1,123 @@
+[
+  {
+    "id": "2026-07-15#01",
+    "briefing_date": "2026-07-15",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Pertamina Geothermal Energy and ITB study CCS deployment at a geothermal field",
+    "summary": "PT Pertamina Geothermal Energy (PGEO) and Institut Teknologi Bandung (ITB) are studying the feasibility of deploying carbon capture and storage at an Indonesian geothermal field, an early-stage R&D collaboration exploring CO2 management/reinjection in geothermal reservoirs.",
+    "source": "Petromindo",
+    "pub_date": "2026-07-14",
+    "url": "https://www.petromindo.com/news/article/pgeo-itb-study-ccs-deployment-at-geothermal-field",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Pertamina Geothermal Energy",
+      "Institut Teknologi Bandung"
+    ],
+    "org_types": [
+      "NOC",
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "APAC CCS R&D from an Indonesian state operator/university pairing; CCS-at-geothermal is a novel storage angle and Indonesia is a growing regional storage market CO2CRC engages with (Otway hosts SE-Asian delegations).",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Feasibility/R&D study surfaced via Google Alerts (Petromindo); full article not fetchable (proxy 403), summary from alert headline + trade context."
+  },
+  {
+    "id": "2026-07-15#02",
+    "briefing_date": "2026-07-15",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "UK's Airhive acquires Dutch rival Carbyon to build a larger European DAC company",
+    "summary": "London-based direct-air-capture startup Airhive acquired Dutch competitor Carbyon in an all-consolidation deal (terms undisclosed) it says creates one of Europe's biggest integrated DAC companies, combining Airhive's fluidised-bed approach with Carbyon's high-kinetics solid sorbent; teams merge under the Airhive name with early R&D concentrated at High Tech Campus Eindhoven on a next-gen 'Cascade' technology. Airhive framed the move as consolidation amid uncertain DAC demand and policy support.",
+    "source": "Bloomberg",
+    "pub_date": "2026-07-14",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-14/london-startup-acquires-dutch-competitor-in-carbon-capture-deal",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Netherlands"
+    ],
+    "organisations": [
+      "Airhive",
+      "Carbyon"
+    ],
+    "org_types": [
+      "startup",
+      "startup"
+    ],
+    "instrument_type": "M&A",
+    "value_chain": [
+      "DAC",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals consolidation pressure in the engineered-CDR/DAC sector as demand and policy support wobble — a market-structure signal for the CDR credits CCS players also compete in.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "extractor_note": "M&A between DAC startups; terms undisclosed so amount null. Cited Bloomberg (paywall); corroborated by Dutch trade press (industrielinqs, IO+)."
+  },
+  {
+    "id": "2026-07-15#03",
+    "briefing_date": "2026-07-15",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Microsoft's emissions jump 25% on AI buildout as it reaffirms carbon-removal commitment",
+    "summary": "Microsoft's 2026 sustainability report shows FY2025 emissions of ~20 Mt CO2e, up 25% year-on-year and ~58% above its 2020 baseline, driven by AI data-centre expansion; the company reaffirmed its carbon-negative-by-2030 goal and one of the world's largest corporate CDR portfolios (29 projects added across 10 pathways, >45 Mt of removals contracted), even as its H1-2026 offtake volume fell 82% to ~9.5 Mt.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-07-14",
+    "url": "https://carbon-pulse.com/530401/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Microsoft"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "DAC",
+      "BECCS",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Microsoft is the largest corporate buyer of engineered CDR/BECCS credits; rising demand-side pressure (and its offtake volatility) shapes the CCS/BECCS credit market Australian projects hope to sell into.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "extractor_note": "Corporate sustainability-report / CDR-demand item; cited Carbon Pulse (paywall), corroborated by edie, GeekWire, gasworld, Carbon Herald. No discrete new money commitment -> amount null, commitment_status na."
+  }
+]
