@@ -63,6 +63,51 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://linkedin.com/posts/louisehornbyhydrogenmanager_hynet-supplychain-energytransition-activity-7482914416452210688-JWvP",
+    "raw_url": "https://www.linkedin.com/posts/louisehornbyhydrogenmanager_hynet-supplychain-energytransition-activity-7482914416452210688-JWvP",
+    "headline": "#hynet #supplychain #energytransition #carboncapture #ccus #hydrogen… | Louise Hornby",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "carboncapture,ccus,energytransition,hornby,hydrogen,hynet,louise,supplychain",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/score-group_scoreforward-hynet-netzero-activity-7482720584565608449-XFpW",
+    "raw_url": "https://www.linkedin.com/posts/score-group_scoreforward-hynet-netzero-activity-7482720584565608449-XFpW",
+    "headline": "#scoreforward #hynet #netzero #carboncapture #hydrogen #energytransition ... - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "carboncapture,energytransition,hydrogen,hynet,linkedin,netzero,scoreforward",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/associated-british-ports_viking-ccs-economic-benefits-carbon-capture-activity-7482804178281500672-n-7M",
+    "raw_url": "https://www.linkedin.com/posts/associated-british-ports_viking-ccs-economic-benefits-carbon-capture-activity-7482804178281500672-n-7M",
+    "headline": "Associated British Ports' Post - Viking CCS - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "associated,british,ccs,linkedin,ports,post,viking",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/carboncaptureandstorageassociation_milestone-news-viking-ccs-development-activity-7482801784953151488-pUqZ",
+    "raw_url": "https://www.linkedin.com/posts/carboncaptureandstorageassociation_milestone-news-viking-ccs-development-activity-7482801784953151488-pUqZ",
+    "headline": "Carbon Capture and Storage Association's Post - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "association,capture,carbon,linkedin,post,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/activity-7482768943053565953-Gzzu",
+    "raw_url": "https://www.linkedin.com/posts/activity-7482768943053565953-Gzzu",
+    "headline": "Viking CCS | Economic Benefits | Carbon Capture - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "benefits,capture,carbon,ccs,economic,linkedin,viking",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://marketscreener.com/news/canadian-oil-sands-producers-reach-deal-with-governments-for-carbon-capture-project-ce7f5edcdb8eff2d",
     "raw_url": "https://www.marketscreener.com/news/canadian-oil-sands-producers-reach-deal-with-governments-for-carbon-capture-project-ce7f5edcdb8eff2d",
     "headline": "Canadian Oil Sands Producers Reach Deal With Governments for Carbon Capture Project",
@@ -87,6 +132,15 @@
     "source_domain": "simplywall.st",
     "publication_date": "2026-07-14T11:47:51+00:00",
     "fuzzy_key": "ccs,century,communities,launches,pointe,still,triangle,undervalued,west",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/EnergyVoiceNews/status/2077050961449640285",
+    "raw_url": "https://x.com/EnergyVoiceNews/status/2077050961449640285",
+    "headline": "Viking carbon capture plan backed by £65.5m cash injection",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-15T02:12:03+00:00",
+    "fuzzy_key": "5m,65,backed,capture,carbon,cash,injection,plan,viking",
     "found_via": "google_alerts"
   }
 ]
