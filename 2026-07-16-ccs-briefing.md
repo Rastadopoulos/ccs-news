@@ -1,0 +1,13 @@
+# Quiet day — CCS briefing — Thu 16 Jul 2026
+
+A quiet mid-week window (Melbourne calendar dates 15–16 Jul): two fresh, previously-uncovered items survive the recency check. Most of the day's alert and search traffic was either re-reporting of already-covered news or older material — a Saudi Aramco/Spiritus DAC "partnership" piece that recycles a 2023–2025 investment relationship, and a long tail of LinkedIn/X reposts of the day's single UK story. The genuine news is both European: the UK government's £65.5m development-fund grant to the Viking CCS transport-and-storage cluster, and a PwC study for Gasunie finding CCS and low-carbon hydrogen to be the cheapest route to decarbonise Dutch industry. As on recent runs, the sandbox refused all outbound article fetches (HTTP 403 at the egress proxy), so publication dates were confirmed via the Google Alerts pipeline's own UTC timestamps (converted to Melbourne time), publisher URL date-tokens and cross-source corroboration.
+
+## Policy
+
+- **UK commits £65.5m development-fund subsidy to the Viking CCS transport & storage cluster** — The Department for Energy Security and Net Zero (DESNZ) confirmed a £65.5 million, 2.5-year development-fund grant to Chrysaor Production UK Ltd (owned by Harbour Energy, acting as the Viking transport & storage developer), following Subsidy Advice Unit clearance of the referred subsidy. The money de-risks and advances the Humber Track-2 cluster — a BP/Harbour project targeting CO₂ storage in depleted southern North Sea gas fields — toward financial close within this Parliament. (gasworld / QCIntel, 15 Jul 2026) [link](https://www.gasworld.com/story/viking-ccs-project-receives-development-funding/2254425.article)
+
+## Markets & strategy
+
+- **PwC study for Gasunie finds CCS and low-carbon hydrogen the cheapest route to decarbonise Dutch industry** — A PwC study commissioned by Dutch gas-infrastructure operator Gasunie concludes that CCS, low-carbon (blue) hydrogen and hybrid electrification are the most cost-effective feasible routes to abate ~44 Mt CO₂ from Dutch industry, with CCS alone covering ~21 Mtpa (about 18 Mtpa of it via blue hydrogen) — conditional on timely infrastructure availability. Government support was deliberately excluded so the underlying technology economics could be compared directly. (Gasunie / Fuel Cells Works, 15 Jul 2026) [link](https://www.gasunie.nl/en/news/pwc-study-cost-effective-decarbonisation-of-industry-mainly-through-ccs-hydrogen-and-hybrid-solutions)
+
+— Auto-briefing
