@@ -22,6 +22,7 @@ The whole point of sampler D is to be methodologically independent. Do NOT mimic
 
 2. **Do not consult**:
    - Shelly Murrell's weekly digest (skip Step 2b of the production prompt entirely — that's sampler E).
+   - The IEAGHG Weekly News in the Outlook "IEAGHG news" folder (skip Step 2b-2 of the production prompt entirely — that's sampler F). Sampler D must stay independent of the curated feeds, or the Chapman D×F pair-estimate collapses.
    - The production routine's own briefing file or candidates.json — your hits must be retrieved independently.
 
 3. **Source breadth**: cast wider than the production routine's PREFERRED SOURCES tiers. Items from outlets the production routine doesn't list are particularly valuable — they're the most likely to be ones it missed. You are explicitly expected to surface news from non-Western, non-English-primary publishers (Chinese state media, Middle Eastern energy press, Indonesian / Malaysian business press, Brazilian / Argentine media, Indian energy press, Japanese trade press). Items in this category are the highest-value catches because the production routine and the RSS floor both under-cover them.
