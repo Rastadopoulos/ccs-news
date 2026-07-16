@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.entergy.com/news/entergy-and-mhi-group-outline-collaborative-partnership-designed-to-accelerate-commercialization-and-affordability-around-carbon-capture-solutions",
+    "canonical_url": "https://entergy.com/news/entergy-and-mhi-group-outline-collaborative-partnership-designed-to-accelerate-commercialization-and-affordability-around-carbon-capture-solutions",
+    "fuzzy_key": "accelerate,affordability,around,capture,carbon,collaborative,commercialization,entergy,group,mhi,outline,partnership,solutions",
+    "source_domain": "entergy.com",
+    "headline": "Entergy and MHI Group outline collaborative partnership to accelerate commercialization and affordability around carbon capture solutions",
+    "publication_date": "2026-07-15T00:00:00-05:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/07/15/3327718/23976/en/Gevo-Provides-Business-Update-and-Announces-Progress-on-Business-Objectives.html",
+    "canonical_url": "https://globenewswire.com/news-release/2026/07/15/3327718/23976/en/Gevo-Provides-Business-Update-and-Announces-Progress-on-Business-Objectives.html",
+    "fuzzy_key": "announces,business,gevo,objectives,progress,provides,update",
+    "source_domain": "globenewswire.com",
+    "headline": "Gevo Provides Business Update and Announces Progress on Business Objectives",
+    "publication_date": "2026-07-15T00:00:00-06:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "off_topic",
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://carbonherald.com/california-launches-first-operational-carbon-storage-project/",
+    "canonical_url": "https://carbonherald.com/california-launches-first-operational-carbon-storage-project",
+    "fuzzy_key": "california,carbon,first,launches,operational,project,storage",
+    "source_domain": "carbonherald.com",
+    "headline": "California Launches First Operational Carbon Storage Project",
+    "publication_date": "2026-07-03T00:00:00-07:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://fuelcellsworks.com/2026/05/07/h2/cf-industries-targets-construction-start-this-year-on-blue-hydrogen-and-ammonia-complex",
+    "canonical_url": "https://fuelcellsworks.com/2026/05/07/h2/cf-industries-targets-construction-start-this-year-on-blue-hydrogen-and-ammonia-complex",
+    "fuzzy_key": "ammonia,blue,cf,complex,construction,hydrogen,industries,start,targets,year",
+    "source_domain": "fuelcellsworks.com",
+    "headline": "CF Industries targets construction start this year on blue hydrogen and ammonia complex",
+    "publication_date": "2026-05-07T00:00:00-05:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://carbonherald.com/malaysia-and-japan-advance-cross-border-ccs-plan/",
+    "canonical_url": "https://carbonherald.com/malaysia-and-japan-advance-cross-border-ccs-plan",
+    "fuzzy_key": "advance,border,ccs,cross,japan,malaysia,plan",
+    "source_domain": "carbonherald.com",
+    "headline": "Malaysia and Japan Advance Cross-Border CCS Plan",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "no_pub_date",
+    "found_via": "concept_query"
+  }
+]

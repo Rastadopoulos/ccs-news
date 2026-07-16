@@ -4,6 +4,11 @@
 **Model**: deliberately the opposite of production (Opus vs Sonnet) for methodological independence.
 **Purpose**: feeds `audit/${TODAY}-shadow.json` for the Saturday recall audit's Chapman pair-estimator. Does NOT produce a briefing or email.
 
+> **⚠️ SCHEDULING CAVEAT — if the trigger cron is UTC, the day-of-week must be `0-4`, not `1-5`.**
+> The target is 07:30 **Melbourne**, Mon–Fri. 07:30 Melbourne is **21:30 the _previous_ UTC day** under AEST (UTC+10), or 20:30 UTC under AEDT (UTC+11). So a UTC-interpreted cron must set day-of-week to **`0-4` (Sun–Thu UTC)**, which maps to Mon–Fri Melbourne. Using `1-5` shifts the whole window one day forward in Melbourne: it silently **skips every Monday** and wrongly **fires on Saturday**.
+> This exact bug ran until 2026-07-16 — a `30 21 * * 1-5` UTC cron produced **zero** Monday shadow files ever and 3 spurious Saturday files (2026-06-06/13/20), losing sampler D every Monday. Diagnosis: git commit times showed each run firing ~21:5x UTC the previous day (e.g. "Shadow 2026-06-20" committed Fri 21:56 UTC = Sat 07:56 Melbourne).
+> **Correct settings** — either set the trigger timezone to `Australia/Melbourne` and use `30 7 * * 1-5`, or (UTC-only) use both DST crons, mirroring `.github/workflows/deadman-check.yml`: `30 20 * * 0-4` (07:30 AEDT) and `30 21 * * 0-4` (07:30 AEST). The same rule applies to the production routine and any Melbourne-local scheduled task. The `deadman-check.yml` dead-man's switch alerts by email if a weekday's `shadow.json` is missing, but it cannot fix the schedule — keep this cron correct.
+
 This file is the canonical, version-controlled copy of the shadow sampler's prompt body. Update it in the same commit when the live routine prompt changes.
 
 When pasting into the scheduler, replace `<GITHUB_PAT_REDACTED>` with the real GitHub personal access token — same token as the production routine. See `docs/secrets.md`.

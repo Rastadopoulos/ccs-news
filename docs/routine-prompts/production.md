@@ -4,6 +4,8 @@
 **Cadence**: 07:00 Melbourne, Mon–Fri (skipping Vic public holidays).
 **Model**: see scheduler config.
 
+> **⚠️ Scheduling caveat:** if the trigger cron is interpreted in UTC (not Melbourne local), the day-of-week must be **`0-4` (Sun–Thu UTC)** — because 07:00 Melbourne is the _previous_ UTC day — NOT `1-5`, which silently skips Monday and fires Saturday. Prefer setting the trigger timezone to `Australia/Melbourne` with `0 7 * * 1-5`. See the full write-up (and the 2026-07 shadow-sampler incident) in `docs/routine-prompts/shadow-sampler.md`.
+
 This file is the canonical, version-controlled copy of the production routine's prompt body. When you change the prompt via the `schedule` skill, update this file in the same commit so the repo stays in sync. Use `git log -p docs/routine-prompts/production.md` to see the prompt's revision history.
 
 The block below — between the `===BEGIN PROMPT===` and `===END PROMPT===` lines — is what you paste into the scheduler, with **one substitution**: replace `<GITHUB_PAT_REDACTED>` with the real GitHub personal access token. The PAT is not committed to the repo because GitHub's secret-scanning push protection (correctly) blocks any commit containing a literal `github_pat_…` token. The live routine in the scheduler has the real token; this repo'd copy is the structural source of truth with the secret elided. See `docs/secrets.md` for where the token is stored and how to rotate it.
