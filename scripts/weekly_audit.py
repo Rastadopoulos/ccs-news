@@ -7,6 +7,8 @@ Reads:
   (Phase 2+) audit/YYYY-MM-DD-shadow.json  — shadow LLM sampler (D)
   Shelly's digest items already live in candidates.json with
   found_via="shelly_digest" — they are folded into sampler E.
+  IEAGHG Weekly News items likewise live in candidates.json with
+  found_via="ieaghg_newsletter" — they are folded into sampler F.
 
 Produces:
   audit/YYYY-MM-DD-recall-report.html
@@ -53,6 +55,7 @@ SAMPLER_NAMES = {
     "C": "Google Alerts",
     "D": "Shadow LLM",
     "E": "Shelly Murrell digest",
+    "F": "IEAGHG Weekly News",
 }
 
 # Trace-file suffix per sampler, used both for loading and for the
@@ -95,7 +98,8 @@ def load_json_dumps(dates: list[str],
 
     Mapping of filename suffix to sampler:
       -rss.json         -> B
-      -candidates.json  -> A (or E if row.found_via=='shelly_digest')
+      -candidates.json  -> A (or E if row.found_via=='shelly_digest',
+                              or F if row.found_via=='ieaghg_newsletter')
       -shadow.json      -> D
       -alerts.json      -> C
 
@@ -122,6 +126,8 @@ def load_json_dumps(dates: list[str],
                     continue
                 if sampler == "A" and r.get("found_via") == "shelly_digest":
                     out[d]["E"].append(r)
+                elif sampler == "A" and r.get("found_via") == "ieaghg_newsletter":
+                    out[d]["F"].append(r)
                 else:
                     if sampler in ("B", "C"):
                         # Floor + Alerts only write in-window items.
@@ -219,7 +225,7 @@ def render_report(week_ending: date,
 
     # Chapman across all populated sampler pairs that include A_pure.
     chapman_pairs: list[tuple[str, str, float]] = []
-    for partner in ("B", "C", "D", "E"):
+    for partner in ("B", "C", "D", "E", "F"):
         if partner in sets and sets[partner]:
             est = chapman(len(A_pure), len(sets[partner]), len(A_pure & sets[partner]))
             chapman_pairs.append((partner, SAMPLER_NAMES[partner], est))
@@ -246,7 +252,7 @@ def render_report(week_ending: date,
     md_lines.append("")
     md_lines.append("| Sampler | Items |")
     md_lines.append("|---|---:|")
-    for sid in ("A", "B", "C", "D", "E"):
+    for sid in ("A", "B", "C", "D", "E", "F"):
         md_lines.append(f"| {sid} · {SAMPLER_NAMES[sid]} | {len(sets.get(sid, set()))} |")
     md_lines.append(f"| A★ · Production, search-only subset (used for Chapman) | {len(A_pure)} |")
     md_lines.append(f"| **Union U** | **{len(union)}** |")
@@ -444,7 +450,7 @@ def compute_missed_and_coverage(union: set[str],
         if not r:
             continue
         # Determine which sampler(s) found it.
-        found_in = [sid for sid in ("B", "C", "D", "E") if cu in sets.get(sid, set())]
+        found_in = [sid for sid in ("B", "C", "D", "E", "F") if cu in sets.get(sid, set())]
         missed.append({
             "canonical_url": cu,
             "headline": r.get("headline", "(no headline)"),

@@ -30,7 +30,7 @@ The named projects, operators, and source outlets in this prompt are ILLUSTRATIV
 - items from unnamed projects in any geography;
 - items from non-listed publishers;
 - corporate-strategy items where a multinational announces its global or regional CCS approach without naming a single specific project (e.g. Mitsui's Asia-Pacific CCS portfolio strategy, BP's hub consolidation roadmap, an Eni capital-markets-day CCS commitment).
-The routine's other safeguards (Shelly's digest, RSS floor) under-cover non-Western regions and corporate-strategy news, so this production routine is the primary line of defence on both dimensions.
+The routine's other safeguards (Shelly's digest, the IEAGHG weekly, RSS floor) under-cover non-Western regions and corporate-strategy news, so this production routine is the primary line of defence on both dimensions.
 
 === RECENCY WINDOW — HARD CONSTRAINT ===
 - Tuesday–Friday: items MUST be published on TODAY or the previous calendar day (Melbourne time).
@@ -137,16 +137,31 @@ PROCEDURE
    - Items that survive both filters are added to the appropriate section (1–5) with the meta-line suffix " · via Shelly Murrell weekly monitoring".
    - If the Outlook MCP call fails OR no items survive filtering, proceed silently — this step never blocks briefing delivery.
 
+2b-2. INGEST THE IEAGHG WEEKLY NEWS (additive, non-blocking)
+   Tim Wilson at IEAGHG (timothy.wilson@ieaghg.org, display name "Tim at IEAGHG") sends Matthias a highly credible, human-curated weekly CCS/CCUS news digest ("IEAGHG Weekly News - {Nth Month}"). Matthias files it in the Outlook folder "IEAGHG news" (a subfolder of "09-Science-Newsletters"). IEAGHG is a Tier-1 source; treat this like Shelly's digest — a curated feed, additive and non-blocking.
+   - Call the Outlook MCP outlook_email_search with folderName="IEAGHG news", order="newest", limit=5 (do NOT pass `query` — it is incompatible with `order`; folderName + order + a sender/date filter are compatible, but `query` is not). The folder also holds other IEAGHG mail (report/webinar announcements), so filter by subject next.
+   - From the returned list, pick the most recent message whose subject starts with "IEAGHG Weekly News". (If the folder lookup returns nothing, fall back to sender="timothy.wilson@ieaghg.org", order="newest" — but note that sender+order searches the Inbox by default, and the live newsletters are filed in the "IEAGHG news" folder, so the folder search is primary.) If no weekly is found, skip this step.
+   - Call read_resource on that message URI to get the HTML body. The newsletter has three item-bearing blocks:
+       (a) "IEAGHG News" — IEAGHG's OWN new reports / blogs / events (e.g. a new techno-economic study), each an `<a href="…">{title}</a>` followed by a `<p>` summary. These are Tier-1 IEAGHG publications — eligible for Sections 1–4 (usually Technology or Markets & strategy) when substantive and in-window.
+       (b) "Headlines" — the week's marquee third-party items, each `<strong>{DD Month} - </strong><a href="…">{headline}</a>` then a `<p>` one-sentence summary.
+       (c) "Also this week" — secondary third-party items, same `<strong>{DD Month} - </strong><a href="…">{headline}</a>` shape, usually without a summary.
+     Parse every item in (a), (b) and (c). A single headline is sometimes split across several adjacent `<a>` tags (e.g. a subscript break in "CO2") — concatenate the anchor texts into the full headline.
+   - The `{DD Month}` prefix on (b)/(c) items is IEAGHG's own publication-date label. Treat it as the candidate publication date, but the RECENCY WINDOW still governs. The href is an aus01.safelinks.protection.outlook.com wrapper around an `ieaghg.us6.list-manage.com/track/click` Mailchimp redirector that HIDES the destination and is not itself fetchable — so extract the safelinks `url=` param for the record, but recover the real publisher article and confirm its true publication date by WebSearching the headline (as in Step 2), then apply the Melbourne calendar-date window. Discard out-of-window items silently. (Because the digest is weekly, most of its items will be several days old on any given daily run — that is expected; only items dated inside the daily window are eligible.)
+   - Deduplicate against the Step 2 + Step 2b candidate set (and against each other) using the same canonical-URL and fuzzy-headline (Jaccard ≥ 0.7) rules as Step 2b. The IEAGHG digest routinely re-lists items the routine already found this run or already briefed on a prior day — cross-day dedup ("already_covered") still applies.
+   - Items that survive all filters are added to the appropriate section (1–5) with the meta-line suffix " · via IEAGHG Weekly News".
+   - Trace every IEAGHG item considered (kept OR rejected) with found_via "ieaghg_newsletter" (see Step 2d).
+   - If the Outlook MCP call fails OR no items survive filtering, proceed silently — this step never blocks briefing delivery.
+
 2c. INGEST THE RSS FLOOR AND GOOGLE ALERTS TRACES (additive, non-blocking)
    - After the git pull in Step 1, the repo may contain audit/${TODAY}-rss.json and audit/${TODAY}-alerts.json (the alerts file accumulates through the day — whatever is present at run time is fair game). Read both if present; skip silently if absent.
    - Treat every entry as a candidate like any other: WebFetch the article, confirm the publication date from the page, apply the same recency window and quality bar.
-   - Deduplicate against the Step 2 + Step 2b candidate set using the same canonical-URL and fuzzy-headline rules as Step 2b.
+   - Deduplicate against the Step 2 + Step 2b + Step 2b-2 candidate set using the same canonical-URL and fuzzy-headline rules as Step 2b.
    - Survivors are eligible for the briefing like any other candidate. Trace them with found_via "rss" or "google_alerts" respectively.
    - Note: these feeds are shared with the Saturday audit's samplers B and C, so the audit counts only found_via="search_query" items when estimating this routine's independent recall (handled in scripts/weekly_audit.py). Do NOT avoid these feeds for the audit's sake — a better briefing always wins.
    - Failure of this step never blocks briefing delivery.
 
 2d. BUILD AUDIT TRACE
-   While processing every candidate from Step 2 (WebSearches), Step 2b (Shelly's digest), and Step 2c (RSS floor + Google Alerts), accumulate a JSON array `audit_trace` with one entry per URL considered — kept OR rejected. This is consumed by the Saturday recall audit (scripts/weekly_audit.py) to measure how thoroughly the routine catches CCS news.
+   While processing every candidate from Step 2 (WebSearches), Step 2b (Shelly's digest), Step 2b-2 (IEAGHG Weekly News), and Step 2c (RSS floor + Google Alerts), accumulate a JSON array `audit_trace` with one entry per URL considered — kept OR rejected. This is consumed by the Saturday recall audit (scripts/weekly_audit.py) to measure how thoroughly the routine catches CCS news.
 
    For each candidate, append an object with this schema (no extra fields):
 
@@ -168,14 +183,14 @@ PROCEDURE
        "in_window":         true | false,
        "kept":              true | false,
        "reject_reason":     "<short reason string, or null if kept>",
-       "found_via":         "search_query" | "shelly_digest" | "rss" | "google_alerts"
+       "found_via":         "search_query" | "shelly_digest" | "ieaghg_newsletter" | "rss" | "google_alerts"
      }
 
    reject_reason is a CONTROLLED VOCABULARY — use exactly one of: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "already_covered" (item appeared in a prior briefing — see QUALITY BAR cross-day dedup), "off_topic", "round_up_retrospective", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2", "appendix_overflow". Do NOT invent free-form values — downstream analysis groups on these strings.
 
    Items routed to the "Also reported today" appendix have `kept: true` (they are surfaced in the briefing email, just in compact form) — do not mark them rejected. Only items beyond the appendix's 15-item cap get `kept: false` with `reject_reason: "appendix_overflow"`.
 
-   Include items rejected during Step 2/2b/2c too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
+   Include items rejected during Step 2/2b/2b-2/2c too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
 
 3. Self-check: enumerate every candidate with confirmed publication date, drop out-of-window items, decide normal vs Quiet-day vs Heavy-news-day mode based on the candidate count surviving the recency check.
 
@@ -187,7 +202,7 @@ A) HTML briefing → ${TODAY}-ccs-briefing.html in the repo root
    - Self-contained HTML document (<!doctype html><html>...<body>...</body></html>) — will be used directly as the email body by the GitHub Action.
    - Inline CSS only (max-width 760px, system font stack, 16px / 1.5 line-height, body #222 on #fff, links #0a4). No external stylesheets, no <script>, no remote images.
    - Header h1: 'CCS News Briefing' or 'Quiet day — CCS News Briefing'. Sub-line: ${DISPLAY_DATE} · {N} items (or, on heavy news days, "{N} items + {M} also reported").
-   - Five <section> blocks in priority order (Projects → Policy → Technology → Markets & strategy → Media sentiment & social licence); each item as <article> with <h3> headline, <p class="meta"> {source} · {full publication date e.g. '14 May 2026'} · [{region}]{ · via Shelly Murrell weekly monitoring if applicable}, <p> summary, <a> 'Read source'. Omit any section that has no in-window items.
+   - Five <section> blocks in priority order (Projects → Policy → Technology → Markets & strategy → Media sentiment & social licence); each item as <article> with <h3> headline, <p class="meta"> {source} · {full publication date e.g. '14 May 2026'} · [{region}]{ · via Shelly Murrell weekly monitoring OR · via IEAGHG Weekly News if applicable}, <p> summary, <a> 'Read source'. Omit any section that has no in-window items.
    - On heavy news days only: append a final <section class="appendix"> titled <h2>Also reported today — {M} additional items</h2>. Each appendix item is a single <p class="appendix-item"> in slightly smaller font (14px) and lighter colour (#555), formatted as: <strong>{headline}</strong> — {source}, {date} <a href="{url}">link</a>. No <article> wrapper, no summary text, no per-section grouping. Maximum 15 items, ranked by the heavy-news-day ladder.
    - Optional final <section> 'Still on the radar' if used (Quiet-day mode only).
    - Footer: generation timestamp.
@@ -199,7 +214,7 @@ B) Markdown copy → ${TODAY}-ccs-briefing.md in the repo root
      # CCS briefing — ${DISPLAY_DATE}    (prefix 'Quiet day — ' if applicable)
    Then a short intro sentence, then per-section H2 headings (Projects / Policy / Technology / Markets & strategy / Media sentiment & social licence) with bullets:
      - **{Headline}** — {1-sentence gist} ({Source}, {date}) [link]({url})
-   Append ' · via Shelly Murrell weekly monitoring' to the parenthetical when the item came from Step 2b. Omit any H2 whose section is empty.
+   Append ' · via Shelly Murrell weekly monitoring' to the parenthetical when the item came from Step 2b, or ' · via IEAGHG Weekly News' when it came from Step 2b-2. Omit any H2 whose section is empty.
    On heavy news days only: after the five main sections (and before the sign-off), include a final H2 `## Also reported today — {M} additional items` listing each appendix item as a single line:
      - **{Headline}** — {Source}, {date} [link]({url})
    No summary text per appendix item. Maximum 15 items.
@@ -244,10 +259,10 @@ E) Success notification:
 EDGE CASES
 - File for today already exists (manual rerun): overwrite all three files (HTML, MD, audit JSON). The push will trigger the Action again, which will resend the email.
 - All searches blocked/empty: push a 'Quiet day' stub and let the Action send it. Still write an audit trace (even if mostly empty) so the audit can record "0 considered".
-- Outlook MCP unavailable for Step 2b: skip Step 2b silently and continue with the Step 2 results only.
+- Outlook MCP unavailable for Step 2b / Step 2b-2: skip the affected step(s) silently and continue with the remaining results. Neither Shelly's digest nor the IEAGHG weekly is ever a reason to fail the briefing.
 - Heavy-news-day mode and Quiet-day mode are mutually exclusive — the routine is in exactly one mode each run (or Normal mode in between).
 
 FINAL OUTPUT
-Finish by printing: total item count (main briefing + appendix separately), breakdown by section for the main briefing, appendix count, number of items contributed by Step 2b (Shelly's digest), number of items in the audit trace (kept + rejected, with appendix-overflow rejects called out separately if any), date range of items, distinct source_domain count and a list of the regions represented (Aus/APAC, NA, EU/UK, ME, China, India, LatAm, Africa), mode flag (Quiet / Normal / Heavy news), commit hash, and the GitHub Actions URL (https://github.com/Rastadopoulos/ccs-news/actions) so the user can confirm the email step succeeded.
+Finish by printing: total item count (main briefing + appendix separately), breakdown by section for the main briefing, appendix count, number of items contributed by Step 2b (Shelly's digest) and by Step 2b-2 (IEAGHG Weekly News), number of items in the audit trace (kept + rejected, with appendix-overflow rejects called out separately if any), date range of items, distinct source_domain count and a list of the regions represented (Aus/APAC, NA, EU/UK, ME, China, India, LatAm, Africa), mode flag (Quiet / Normal / Heavy news), commit hash, and the GitHub Actions URL (https://github.com/Rastadopoulos/ccs-news/actions) so the user can confirm the email step succeeded.
 
 ===END PROMPT===

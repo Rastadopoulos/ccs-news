@@ -54,5 +54,33 @@
     "sentiment": null,
     "tags": [],
     "extractor_note": "Analysis/study item (no controlled instrument fits cleanly -> 'other'); Gasunie is a state-owned gas-transport infrastructure operator, org_type 'other'. The 21 Mtpa is a scenario figure, not a facility capacity, so capacity_mtpa left null."
+  },
+  {
+    "id": "2026-07-16#03",
+    "briefing_date": "2026-07-16",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Hyundai and KNOC team up on cross-border CCS to store Korean CO2 in Southeast Asia",
+    "summary": "Korea National Oil Corporation (KNOC) launched an international tender for a reservoir-development simulation study under an offshore CCS project run with an unnamed Southeast-Asian state oil company, to test permanent CO2 storage in depleted offshore fields; Hyundai E&C has been tapped to lead. A rare non-Western NOC, cross-border/transboundary catch surfaced by the IEAGHG weekly.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-07-14",
+    "url": "https://carbonherald.com/hyundai-and-knoc-team-up-on-cross-border-carbon-capture-storage/",
+    "region": "APAC",
+    "countries": ["South Korea"],
+    "organisations": ["KNOC", "Hyundai E&C"],
+    "org_types": ["NOC", "developer"],
+    "instrument_type": "MoU-JV",
+    "value_chain": ["transport", "storage"],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A capture-in-one-country, store-in-another APAC arrangement is a direct analogue to Australia-Timor-Leste (Bayu-Undan) and a signpost for regional CO2-storage demand CO2CRC tracks.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Radar item (out of the 15-16 Jul window, published 14 Jul; <=7 days old). SE-Asian storage partner unnamed in source, so countries lists only South Korea. Hyundai E&C is the EPC contractor -> org_type 'developer'."
   }
 ]

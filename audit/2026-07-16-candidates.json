@@ -310,5 +310,113 @@
     "kept": false,
     "reject_reason": "out_of_window",
     "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/hyundai-and-knoc-team-up-on-cross-border-carbon-capture-storage/",
+    "canonical_url": "https://carbonherald.com/hyundai-and-knoc-team-up-on-cross-border-carbon-capture-storage",
+    "fuzzy_key": "border,capture,carbon,cross,hyundai,knoc,storage,team,up",
+    "source_domain": "carbonherald.com",
+    "headline": "Hyundai and KNOC team up on cross-border carbon capture & storage",
+    "publication_date": "2026-07-14T00:00:00+00:00",
+    "in_window": false,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://carbon-pulse.com/530213/",
+    "canonical_url": "https://carbon-pulse.com/530213",
+    "fuzzy_key": "avoid,can,carbon,catf,credit,deficit,eu,how,international",
+    "source_domain": "carbon-pulse.com",
+    "headline": "CATF: how the EU can avoid an international carbon credit deficit",
+    "publication_date": "2026-07-12T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://carbon-pulse.com/530401/",
+    "canonical_url": "https://carbon-pulse.com/530401",
+    "fuzzy_key": "25,ai,boom,case,co2,emissions,microsoft,removal,rise,strengthens",
+    "source_domain": "carbon-pulse.com",
+    "headline": "AI boom strengthens case for CO2 removal as Microsoft emissions rise 25%",
+    "publication_date": "2026-07-14T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://www.reuters.com/business/energy/canadas-oil-sands-alliance-reaches-agreement-advance-pathways-carbon-capture-2026-07-13/",
+    "canonical_url": "https://reuters.com/business/energy/canadas-oil-sands-alliance-reaches-agreement-advance-pathways-carbon-capture-2026-07-13",
+    "fuzzy_key": "agreement,capture,carbon,dollar,multibillion,pathways,project,reached,storage",
+    "source_domain": "reuters.com",
+    "headline": "Agreement reached on multibillion-dollar Pathways carbon capture and storage project",
+    "publication_date": "2026-07-13T00:00:00+10:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=ad406b3414&e=8f6063f18d",
+    "canonical_url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=ad406b3414&e=8f6063f18d",
+    "fuzzy_key": "47b,ccsa,ggr,led,market,outlines,private,saving,taxpayer,via",
+    "source_domain": "list-manage.com",
+    "headline": "CCSA outlines $47B taxpayer saving via private-led GGR market",
+    "publication_date": "2026-07-09T00:00:00+01:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=d216aadc30&e=8f6063f18d",
+    "canonical_url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=d216aadc30&e=8f6063f18d",
+    "fuzzy_key": "awarded,carbon,contract,first,project,storage,survey,uk",
+    "source_domain": "list-manage.com",
+    "headline": "Survey contract awarded for UK's first carbon storage project",
+    "publication_date": "2026-07-13T00:00:00+01:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=1cd789675a&e=8f6063f18d",
+    "canonical_url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=1cd789675a&e=8f6063f18d",
+    "fuzzy_key": "capture,carbon,climate,crisis,tackling,vital",
+    "source_domain": "list-manage.com",
+    "headline": "Carbon capture is vital in tackling the climate crisis",
+    "publication_date": "2026-07-12T00:00:00+01:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=6de7c56088&e=8f6063f18d",
+    "canonical_url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=6de7c56088&e=8f6063f18d",
+    "fuzzy_key": "000,10,beccs,breakthrough,france,hub,idex,launch,nuada,ton",
+    "source_domain": "list-manage.com",
+    "headline": "Idex and Nuada launch breakthrough 10,000-ton BECCS hub in France",
+    "publication_date": "2026-07-10T00:00:00+02:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "ieaghg_newsletter"
+  },
+  {
+    "url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=2306dda1fc&e=8f6063f18d",
+    "canonical_url": "https://ieaghg.us6.list-manage.com/track/click?u=4935fa44ae8c4ee05b2b0631d&id=2306dda1fc&e=8f6063f18d",
+    "fuzzy_key": "cement,clean,decarbonisation,economic,environmental,new,outlook,pathways,report,techno,transformative",
+    "source_domain": "list-manage.com",
+    "headline": "New Report: Clean Cement: Environmental & Techno-Economic Outlook of Transformative Decarbonisation Pathways",
+    "publication_date": "2026-07-08T00:00:00+01:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "ieaghg_newsletter"
   }
 ]

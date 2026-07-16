@@ -65,6 +65,7 @@ Samplers feeding the audit:
 | C | Google Alerts | `scripts/alerts_ingest.py` polls a dedicated Gmail mailbox via IMAP every 30 min, parses Google Alerts emails — see [`docs/google-alerts.md`](docs/google-alerts.md) for the 30 configured alerts |
 | D | Shadow LLM | Separate scheduled Claude routine, concept-based queries, different model from production. Writes `audit/${TODAY}-shadow.json` only |
 | E | Shelly Murrell digest | Already pulled by the production routine's Step 2b; trace entries tagged `found_via=shelly_digest` |
+| F | IEAGHG Weekly News | Already pulled by the production routine's Step 2b-2 (Outlook folder "IEAGHG news"); trace entries tagged `found_via=ieaghg_newsletter` |
 
 Workflows (all in `.github/workflows/`):
 
