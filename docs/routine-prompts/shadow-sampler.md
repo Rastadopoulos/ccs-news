@@ -9,12 +9,11 @@
 > This exact bug ran until 2026-07-16 — a `30 21 * * 1-5` UTC cron produced **zero** Monday shadow files ever and 3 spurious Saturday files (2026-06-06/13/20), losing sampler D every Monday. Diagnosis: git commit times showed each run firing ~21:5x UTC the previous day (e.g. "Shadow 2026-06-20" committed Fri 21:56 UTC = Sat 07:56 Melbourne).
 > **Correct settings** — either set the trigger timezone to `Australia/Melbourne` and use `30 7 * * 1-5`, or (UTC-only) use both DST crons, mirroring `.github/workflows/deadman-check.yml`: `30 20 * * 0-4` (07:30 AEDT) and `30 21 * * 0-4` (07:30 AEST). The same rule applies to the production routine and any Melbourne-local scheduled task. The `deadman-check.yml` dead-man's switch alerts by email if a weekday's `shadow.json` is missing, but it cannot fix the schedule — keep this cron correct.
 >
-> **DST swap calendar (for a UTC-only trigger with no timezone field — which is what this trigger is).** Keep day-of-week `0-4` always; change only the *hour* at each Australian Eastern DST boundary:
-> - **AEST** (UTC+10, ≈ early Apr → early Oct): `30 21 * * 0-4`  →  07:30 Melbourne
-> - **AEDT** (UTC+11, ≈ early Oct → early Apr): `30 20 * * 0-4`  →  07:30 Melbourne
+> **DST swap calendar.** As of Jul 2026 the live triggers are pinned to a **fixed GMT+10 offset** (the trigger UI renders "Runs weekdays at 7:00 GMT+10"), backed by these UTC crons — production `0 21 * * 0-4` (07:00) and shadow `30 21 * * 0-4` (07:30). GMT+10 is a *fixed* offset, so it does NOT track Australian daylight saving: from early Oct to early Apr (AEDT, UTC+11) the routines fire an hour late in Melbourne (08:00 / 08:30). Keep day-of-week `0-4` always; at each DST boundary either **bump the trigger offset GMT+10 → GMT+11** or, equivalently, **drop the cron hour by one** (`21 → 20`):
+> - **AEST** (≈ early Apr → early Oct): production `0 21 * * 0-4`, shadow `30 21 * * 0-4`  →  07:00 / 07:30 Melbourne
+> - **AEDT** (≈ early Oct → early Apr): production `0 20 * * 0-4`, shadow `30 20 * * 0-4`  →  07:00 / 07:30 Melbourne
 >
-> **Next action: switch to `30 20 * * 0-4` on/before Mon 5 Oct 2026** (DST starts Sun 4 Oct 2026). Then revert to `30 21 * * 0-4` on/before Mon 5 Apr 2027 (DST ends Sun 4 Apr 2027). Leaving it at `30 21` through summer isn't broken — it just runs at 08:30 Melbourne, which risks colliding with the 08:30 dead-man's-switch and firing false alerts, so the swap is worth doing.
-> Do **not** add both cron lines to dodge the swap unless the routine self-gates on Melbourne local hour (`== 7`); without a gate, two lines make it fire twice a day.
+> **Next action: on/before Mon 5 Oct 2026** (DST starts Sun 4 Oct 2026) switch to the AEDT crons (or GMT+11). Revert on/before Mon 5 Apr 2027 (DST ends Sun 4 Apr 2027). Leaving shadow at `30 21` through summer isn't broken — it just runs at 08:30 Melbourne, which risks colliding with the 08:30 dead-man's switch and firing false alerts, so the swap is worth doing. If the trigger UI offers a DST-aware zone (e.g. `Australia/Melbourne`) rather than a fixed GMT offset, selecting that removes the twice-yearly chore entirely.
 
 This file is the canonical, version-controlled copy of the shadow sampler's prompt body. Update it in the same commit when the live routine prompt changes.
 

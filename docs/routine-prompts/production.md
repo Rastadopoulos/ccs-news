@@ -4,7 +4,7 @@
 **Cadence**: 07:00 Melbourne, Mon–Fri (skipping Vic public holidays).
 **Model**: see scheduler config.
 
-> **⚠️ Scheduling caveat:** if the trigger cron is interpreted in UTC (not Melbourne local), the day-of-week must be **`0-4` (Sun–Thu UTC)** — because 07:00 Melbourne is the _previous_ UTC day — NOT `1-5`, which silently skips Monday and fires Saturday. Prefer setting the trigger timezone to `Australia/Melbourne` with `0 7 * * 1-5`. See the full write-up (and the 2026-07 shadow-sampler incident) in `docs/routine-prompts/shadow-sampler.md`.
+> **⚠️ Scheduling caveat:** the live trigger runs "weekdays at 7:00 GMT+10", backed by the UTC cron **`0 21 * * 0-4`** (21:00 UTC Sun–Thu = 07:00 Mon–Fri Melbourne). Day-of-week MUST stay **`0-4` (Sun–Thu UTC)** — because 07:00 Melbourne is the _previous_ UTC day — NOT `1-5`, which silently skips Monday and fires Saturday (that was the shadow-sampler bug). The GMT+10 offset is fixed and does not track daylight saving, so in AEDT (≈ Oct–Apr) it runs an hour late; see the DST swap calendar in `docs/routine-prompts/shadow-sampler.md` (production AEDT cron: `0 20 * * 0-4`).
 
 This file is the canonical, version-controlled copy of the production routine's prompt body. When you change the prompt via the `schedule` skill, update this file in the same commit so the repo stays in sync. Use `git log -p docs/routine-prompts/production.md` to see the prompt's revision history.
 
