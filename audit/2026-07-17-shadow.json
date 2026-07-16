@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://www.entergy.com/news/entergy-and-mhi-group-outline-collaborative-partnership-designed-to-accelerate-commercialization-and-affordability-around-carbon-capture-solutions",
+    "canonical_url": "https://entergy.com/news/entergy-and-mhi-group-outline-collaborative-partnership-designed-to-accelerate-commercialization-and-affordability-around-carbon-capture-solutions",
+    "fuzzy_key": "around,capture,carbon,collaborative,entergy,group,mhi,outline,partnership,solutions",
+    "source_domain": "entergy.com",
+    "headline": "Entergy and MHI Group outline collaborative partnership around carbon capture solutions",
+    "publication_date": "2026-07-15T00:00:00-05:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.investegate.co.uk/announcement/rns/orcadian-energy--orca/earlham-orwell-gas-development-concept-/9671317",
+    "canonical_url": "https://investegate.co.uk/announcement/rns/orcadian-energy--orca/earlham-orwell-gas-development-concept-/9671317",
+    "fuzzy_key": "capture,carbon,concept,development,earlham,gas,orwell,wire",
+    "source_domain": "investegate.co.uk",
+    "headline": "Earlham & Orwell gas development concept: gas-to-wire with carbon capture",
+    "publication_date": "2026-07-16T00:00:00+01:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.qcintel.com/carbon/article/industry-groups-urge-action-to-enable-baltic-offshore-co2-storage-68906.html",
+    "canonical_url": "https://qcintel.com/carbon/article/industry-groups-urge-action-to-enable-baltic-offshore-co2-storage-68906.html",
+    "fuzzy_key": "action,baltic,co2,enable,groups,industry,offshore,storage,urge",
+    "source_domain": "qcintel.com",
+    "headline": "Industry groups urge action to enable Baltic offshore CO2 storage",
+    "publication_date": "2026-07-16T00:00:00+01:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://carbonherald.com/iogps-caterina-de-matteis-europe-needs-enabling-measures-not-just-co2-storage-targets/",
+    "canonical_url": "https://carbonherald.com/iogps-caterina-de-matteis-europe-needs-enabling-measures-not-just-co2-storage-targets",
+    "fuzzy_key": "caterina,co2,de,enabling,europe,iogp,just,matteis,measures,needs,not,storage,targets",
+    "source_domain": "carbonherald.com",
+    "headline": "IOGP's Caterina De Matteis: Europe Needs Enabling Measures, Not Just CO2 Storage Targets",
+    "publication_date": "2026-07-16T00:00:00+01:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.upstreamonline.com/carbon-capture/uk-government-backs-viking-carbon-capture-project/2-1-2016000",
+    "canonical_url": "https://upstreamonline.com/carbon-capture/uk-government-backs-viking-carbon-capture-project/2-1-2016000",
+    "fuzzy_key": "backs,capture,carbon,government,project,uk,viking",
+    "source_domain": "upstreamonline.com",
+    "headline": "UK government backs Viking carbon capture project",
+    "publication_date": "2026-07-16T00:00:00+01:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.globalccsinstitute.com/publications/state-of-the-art-ccs-technologies-2026/",
+    "canonical_url": "https://globalccsinstitute.com/publications/state-of-the-art-ccs-technologies-2026",
+    "fuzzy_key": "2026,art,ccs,state,technologies",
+    "source_domain": "globalccsinstitute.com",
+    "headline": "State of the Art: CCS Technologies 2026",
+    "publication_date": "2026-07-14T00:00:00+11:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "concept_query"
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S305129482600037X",
+    "canonical_url": "https://sciencedirect.com/science/article/pii/S305129482600037X",
+    "fuzzy_key": "air,assessment,calcium,capture,cement,cycle,direct,life,looping,negative,net,solid",
+    "source_domain": "sciencedirect.com",
+    "headline": "Life cycle assessment of solid calcium-looping direct air capture for net-negative cement",
+    "publication_date": "2026-06-04T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "concept_query"
+  }
+]
