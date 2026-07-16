@@ -1,0 +1,131 @@
+name: Early nudge — briefing/shadow arrival check
+
+# A soft, EARLY companion to deadman-check.yml. The production routine is due
+# 07:00 Melbourne and the shadow sampler 07:30; this job runs at 07:50 Melbourne
+# (~50 min / ~20 min of grace respectively) and emails a gentle "not in yet"
+# heads-up if today's files are still absent from main — 40 minutes before the
+# 08:30 dead-man's switch. The goal is faster awareness of a silent scheduler
+# no-fire (as on 2026-07-17) while there is still time for the scheduler to
+# self-recover or for a same-morning manual re-run. This is a NUDGE, not the
+# definitive alert: deadman-check.yml at 08:30 remains the hard check.
+
+on:
+  schedule:
+    # Target: 07:50 Melbourne on weekdays. Cron is UTC and Melbourne shifts
+    # between AEST (UTC+10) and AEDT (UTC+11), so two crons fire and the job
+    # self-gates on Melbourne local hour == 07 — exactly one acts per day.
+    - cron: '50 20 * * 0-4'   # 07:50 AEDT (roughly Oct–Apr)
+    - cron: '50 21 * * 0-4'   # 07:50 AEST (roughly Apr–Oct)
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Gate on Melbourne time, weekday, and Victorian public holidays
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
+          HOUR=$(TZ=Australia/Melbourne date +%H)
+          DOW=$(TZ=Australia/Melbourne date +%u)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+          echo "proceed=false" >> "$GITHUB_OUTPUT"
+
+          # Only the cron matching the current DST phase acts (manual runs bypass).
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "07" ]; then
+            echo "Local hour is $HOUR, not 07 — this is the wrong-DST cron. Skipping."
+            exit 0
+          fi
+          if [ "$DOW" -gt 5 ]; then
+            echo "Weekend in Melbourne — no briefing expected. Skipping."
+            exit 0
+          fi
+          # Must match the holiday list in docs/routine-prompts/production.md.
+          HOLIDAYS="2026-01-01 2026-01-26 2026-03-09 2026-04-03 2026-04-04 2026-04-05 2026-04-06 2026-04-25 2026-06-08 2026-09-25 2026-11-03 2026-12-25 2026-12-28"
+          case " $HOLIDAYS " in
+            *" $TODAY "*)
+              echo "Victorian public holiday — no briefing expected. Skipping."
+              exit 0 ;;
+          esac
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Check today's expected files
+        id: files
+        if: steps.gate.outputs.proceed == 'true'
+        env:
+          TODAY: ${{ steps.gate.outputs.today }}
+        run: |
+          set -euo pipefail
+          MISSING=""
+          if [ ! -f "${TODAY}-ccs-briefing.md" ]; then
+            MISSING="briefing"
+          fi
+          if [ ! -f "audit/${TODAY}-shadow.json" ]; then
+            MISSING="${MISSING:+$MISSING }shadow"
+          fi
+          echo "missing=$MISSING" >> "$GITHUB_OUTPUT"
+          if [ -z "$MISSING" ]; then
+            echo "::notice::All expected files already present for $TODAY at 07:50 — nothing to nudge."
+          else
+            echo "::warning::Not yet present for $TODAY at 07:50: $MISSING (early nudge)"
+          fi
+
+      - name: Soft nudge via Resend
+        if: steps.gate.outputs.proceed == 'true' && steps.files.outputs.missing != ''
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TODAY: ${{ steps.gate.outputs.today }}
+          MISSING: ${{ steps.files.outputs.missing }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+
+          SUBJECT="CCS pipeline: today's files not in yet (07:50 early check) — ${TODAY}"
+
+          {
+            echo "<p>Early arrival check at 07:50 Melbourne, ${TODAY} — a heads-up, not the definitive alert.</p>"
+            echo "<p>As of 07:50 the following are not yet on <code>main</code>:</p>"
+            echo "<ul>"
+            case "$MISSING" in *briefing*)
+              echo "<li><strong>${TODAY}-ccs-briefing.md</strong> — the production routine (due 07:00) has not pushed yet.</li>" ;;
+            esac
+            case "$MISSING" in *shadow*)
+              echo "<li><strong>audit/${TODAY}-shadow.json</strong> — the shadow sampler (due 07:30) has not pushed yet.</li>" ;;
+            esac
+            echo "</ul>"
+            echo "<p><strong>This may be benign</strong> — a routine can still be mid-run and push within the next few minutes; if the files land shortly, no action is needed and the 08:30 dead-man's switch will stay quiet.</p>"
+            echo "<p>If they are still missing at 08:30 you will get the definitive alert. To act now, check the"
+            echo "<a href=\"https://github.com/Rastadopoulos/ccs-news/actions\">Actions history</a> and the scheduled routines in Claude Code; a manual re-run will regenerate and push today's files.</p>"
+          } > /tmp/body.html
+
+          jq -n \
+            --arg subject "$SUBJECT" \
+            --rawfile html /tmp/body.html \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html
+            }' > /tmp/resend.json
+
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Early nudge emailed: $SUBJECT" ;;
+            *)  echo "::error::Resend rejected the nudge (HTTP $HTTP)"; exit 1 ;;
+          esac
