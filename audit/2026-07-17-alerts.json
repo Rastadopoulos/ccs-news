@@ -63,6 +63,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://japanccs.com/en/news/20260717",
+    "raw_url": "https://www.japanccs.com/en/news/20260717/",
+    "headline": "Regarding the relocation and name change of the “Tomakomai CCS Demonstration Center”",
+    "source_domain": "japanccs.com",
+    "publication_date": "2026-07-17T08:35:57+00:00",
+    "fuzzy_key": "ccs,center,change,demonstration,name,regarding,relocation,tomakomai",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/heidelbergmaterialsuk_hynet-carboncapture-netzero-activity-7483545179304411136-DmXN",
     "raw_url": "https://www.linkedin.com/posts/heidelbergmaterialsuk_hynet-carboncapture-netzero-activity-7483545179304411136-DmXN",
     "headline": "#hynet #carboncapture #netzero #industrialdecarbonisation #heidelbergmaterialsuk - LinkedIn",
@@ -141,6 +150,15 @@
     "source_domain": "storageterminalsmag.com",
     "publication_date": "2026-07-17T02:56:21+00:00",
     "fuzzy_key": "approved,ccs,development,funding,magazine,storage,terminals,viking",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/ccs-on-a-transformation-journey-to-capture-value/2-1-2017956",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/ccs-on-a-transformation-journey-to-capture-value/2-1-2017956",
+    "headline": "CCS on a “transformation journey” to capture value - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-07-17T10:17:19+00:00",
+    "fuzzy_key": "capture,ccs,journey,online,transformation,upstream,value",
     "found_via": "google_alerts"
   },
   {
