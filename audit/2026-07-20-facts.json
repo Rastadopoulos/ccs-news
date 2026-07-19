@@ -1,0 +1,193 @@
+[
+  {
+    "id": "2026-07-20#01",
+    "briefing_date": "2026-07-20",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "EU tables sweeping ETS overhaul for 2031–40, with a first-ever channel to fund permanent CO2 removals",
+    "summary": "The European Commission proposed its Phase 5 revision of the EU ETS, aligning it with the 90%-by-2040 net-emissions target while easing industry pressure (cap-decline cut to ~3.7% from 2031, free allocation extended to end-2037, 80% of free permits conditional on EU decarbonisation investment). It expands Modernisation Fund eligibility to cover CCS/CCU and raises the cap by 250 million allowances (auctioned 2031–2040) whose revenue centrally purchases certified permanent carbon-removal units.",
+    "source": "Reuters",
+    "pub_date": "2026-07-17",
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N43I0TB:0-eu-to-revamp-carbon-market-to-ease-pressure-on-industry/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "European Commission",
+      "CCS Europe"
+    ],
+    "org_types": [
+      "government",
+      "industry-body"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "capture",
+      "storage",
+      "DAC",
+      "BECCS"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2040,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "First compliance-grade ETS demand-pull for permanent removals/CCS sets a precedent for how carbon-management demand can be underwritten by policy — relevant context for Australian storage and CDR market design.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "250 million allowances is an allowance volume (2031–2040), not a stated money amount; amount left null. Same proposal also reported by ICAP and QCIntel (250m removal-credit facility); deduped to Reuters."
+  },
+  {
+    "id": "2026-07-20#02",
+    "briefing_date": "2026-07-20",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Peer-reviewed schema tackles regional storage characterisation for Class VI wells in Kansas's Arbuckle Group",
+    "summary": "A Scientific Reports paper proposes a schema for basin/regional-scale geological evaluation to support US EPA Class VI well applications in the Arbuckle Group, a stacked Cambrian–Ordovician carbonate saline reservoir in a seismically sensitive region, addressing storage-capacity, reservoir-pressure and caprock-integrity uncertainties left open by earlier plume-only modelling.",
+    "source": "Nature / Scientific Reports",
+    "pub_date": "2026-07-18",
+    "url": "https://www.nature.com/articles/s41598-026-59916-7",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Permitting-grade regional storage-characterisation methodology is directly transferable to CO2CRC's site-assessment and monitoring work (Otway) and to Australian basin screening.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Peer-reviewed research paper; no financial dimension. Date confirmed via Google Alerts timestamp (page fetch 403-blocked)."
+  },
+  {
+    "id": "2026-07-20#03",
+    "briefing_date": "2026-07-20",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Petrovietnam seeks deeper LNG and CCS cooperation with Canada",
+    "summary": "State-owned Petrovietnam is looking to expand cooperation with Canada across LNG, nuclear power and CCS, discussed at a Hanoi meeting between CEO Le Manh Cuong and Canada's ambassador Jim Nickel. Petrovietnam said it is building the legal framework to deploy CCS in Vietnam while researching with international partners.",
+    "source": "Upstream",
+    "pub_date": "2026-07-17",
+    "url": "https://www.upstreamonline.com/energy-security/petrovietnam-seeks-deeper-lng-and-ccs-cooperation-with-canada/2-1-2017966",
+    "region": "APAC",
+    "countries": [
+      "Vietnam",
+      "Canada"
+    ],
+    "organisations": [
+      "Petrovietnam",
+      "Government of Canada"
+    ],
+    "org_types": [
+      "NOC",
+      "government"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A non-Western NOC assembling CCS regulatory foundations and seeking international partners is an emerging APAC partner/competitor signal relevant to Australia's regional CCS and CO2-export ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "extractor_note": "Early-stage cooperation intent (meeting-level), not a signed agreement; commitment_status announced."
+  },
+  {
+    "id": "2026-07-20#04",
+    "briefing_date": "2026-07-20",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Green groups say the ETS overhaul caves to industrial laggards; CCS industry wants removals cash ring-fenced",
+    "summary": "The European Environmental Bureau warned the Commission's ETS revision caves to industrial laggards, arguing softer caps, extended free permits and new flexibilities reward polluters. CCS Europe welcomed the permanent-removals integration but urged ring-fenced dedicated CCS funding rather than competition inside a broadened Modernisation Fund.",
+    "source": "European Environmental Bureau / CCS Europe",
+    "pub_date": "2026-07-17",
+    "url": "https://eeb.org/en/commission-caves-to-industrial-laggards-weakening-eu-carbon-market",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "European Environmental Bureau",
+      "CCS Europe"
+    ],
+    "org_types": [
+      "other",
+      "industry-body"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Social-licence and design tension around funding CCS vs broader decarbonisation inside the ETS — a live debate CO2CRC should track as removals-demand policy matures.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "extractor_note": "Two opposing reactions merged into one social-licence item; primary framing (EEB) is negative."
+  },
+  {
+    "id": "2026-07-20#05",
+    "briefing_date": "2026-07-20",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Building CCUS to secure Europe's industrial future",
+    "summary": "An opinion piece argues that, timed to the ETS revision, CCUS is essential infrastructure for keeping European heavy industry competitive and on a net-zero path, and that the policy package must translate targets into bankable projects.",
+    "source": "Euractiv",
+    "pub_date": "2026-07-17",
+    "url": "https://www.euractiv.com/opinion/building-ccus-to-secure-europes-industrial-future/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "policy",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Pro-CCUS industrial-competitiveness framing reinforces the 'targets don't build projects' delivery-gap narrative that also applies to Australian CCS deployment.",
+    "sentiment": "positive",
+    "tags": [
+      "opinion"
+    ],
+    "extractor_note": "Opinion/editorial correctly placed in Section 5 (media)."
+  }
+]
