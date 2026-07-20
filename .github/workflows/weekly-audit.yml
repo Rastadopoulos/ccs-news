@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write   # to dispatch the email workflows below
     steps:
       - name: Check out repo
         uses: actions/checkout@v5
@@ -54,6 +55,7 @@ jobs:
           BUILD_DATE="${SNAP}" python3 scripts/build_dashboard.py --snapshot "${SNAP}"
 
       - name: Commit audit report + dashboard
+        id: commit
         run: |
           set -euo pipefail
           git config user.email 'ccs-news-routine@co2crc.com.au'
@@ -62,8 +64,27 @@ jobs:
           git add dashboard/index.html dashboard/snapshots/*.html 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No audit or dashboard changes to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "Weekly audit + dashboard $(TZ=Australia/Melbourne date +%Y-%m-%d)"
           git pull --rebase --autostash
           git push origin main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Dispatch email workflows
+        # The push above uses the default GITHUB_TOKEN, and GitHub suppresses
+        # push-triggered workflows for GITHUB_TOKEN pushes (anti-recursion), so
+        # email-audit.yml and email-dashboard.yml never fire from it. Dispatch
+        # them explicitly instead — workflow_dispatch via the API is exempt from
+        # that suppression. (First missed Saturday: 2026-07-18.)
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK_ENDING: ${{ github.event.inputs.week_ending }}
+        run: |
+          set -euo pipefail
+          SNAP="${WEEK_ENDING:-$(TZ=Australia/Melbourne date +%Y-%m-%d)}"
+          gh workflow run email-audit.yml     --repo "$GITHUB_REPOSITORY" -f date="$SNAP"
+          gh workflow run email-dashboard.yml --repo "$GITHUB_REPOSITORY" -f date="$SNAP"
+          echo "Dispatched email-audit and email-dashboard for $SNAP"

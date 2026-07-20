@@ -1,9 +1,11 @@
 name: Email CCS dashboard
 
 # Emails the weekly board dashboard. Fires when a new dated board snapshot is
-# committed to main (dashboard/snapshots/YYYY-MM-DD.html) — which the weekly-audit
-# workflow does every Saturday — so this rides the same weekly cadence and does NOT
-# fire on ad-hoc dashboard/index.html edits. The dashboard is interactive (fixed
+# pushed to main (dashboard/snapshots/YYYY-MM-DD.html) by a user, or via the
+# explicit workflow_dispatch that weekly-audit.yml issues every Saturday. The
+# push trigger alone canNOT ride the weekly-audit commit: that push uses the
+# default GITHUB_TOKEN, whose pushes never trigger downstream workflows. It
+# does NOT fire on ad-hoc dashboard/index.html edits. The dashboard is interactive (fixed
 # nav, inline JS/CSS) and won't render inline in email clients, so it is sent as a
 # self-contained HTML attachment with a short intro body. Same Resend pattern as
 # email-audit.yml / email-briefing.yml; outbound routed through Actions.
