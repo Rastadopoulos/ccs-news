@@ -187,6 +187,32 @@ def test_weekly_audit_dispatches_email_workflows():
     assert "gh workflow run email-dashboard.yml" in run_text
 
 
+def test_reconcile_workflow_delivers_routine_branch_pushes():
+    """Regression for 2026-07-17/20/21: the scheduled routine runs on an isolated
+    claude/* working branch, so its `git push origin main` lands on that branch,
+    not main — email-briefing never fires and deadman reports a false no-fire.
+    reconcile-routine-branch.yml brings routine-authored dated files onto main
+    and dispatches the briefing email."""
+    wf = _load("reconcile-routine-branch.yml")
+    on = wf.get("on") or wf.get(True)
+    assert "claude/**" in on["push"]["branches"], "must watch routine branches"
+    assert "workflow_dispatch" in on, "manual reconcile path missing"
+
+    # Must be able to write main and dispatch the email workflow.
+    perms = wf.get("permissions", {})
+    assert perms.get("contents") == "write"
+    assert perms.get("actions") == "write"
+
+    run_text = _all_run_text(wf)
+    # Only routine-authored commits are ever merged to main.
+    assert "ccs-news-routine@co2crc.com.au" in run_text
+    assert "ccs-news-shadow@co2crc.com.au" in run_text
+    # Never clobber a file already on main (protects manual backfills).
+    assert "git cat-file -e" in run_text
+    # GITHUB_TOKEN pushes don't trigger email-briefing, so it must be dispatched.
+    assert "gh workflow run email-briefing.yml" in run_text
+
+
 def test_all_workflows_parse_and_scheduled_ones_allow_manual_run():
     for path in WORKFLOWS.glob("*.yml"):
         wf = yaml.safe_load(path.read_text())

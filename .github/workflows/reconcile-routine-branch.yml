@@ -1,0 +1,158 @@
+name: Reconcile routine branch → main
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WHY THIS EXISTS
+# The production briefing routine and shadow sampler run as scheduled Claude Code
+# sessions. Those sessions execute on an auto-created, isolated working branch
+# (claude/<name>-<hash>), and their `git push origin main` lands on THAT branch
+# rather than on main. Result: the day's briefing/audit files are generated on
+# time and pushed to GitHub, but never reach main — so email-briefing.yml (which
+# triggers only on main) never fires, and deadman-check.yml reports a false
+# "no briefing produced today". This was misdiagnosed as a scheduler no-fire on
+# 2026-06-04, 2026-06-18, 2026-07-17, 2026-07-20 and 2026-07-21; in every case
+# the briefing existed on a claude/* branch the whole time.
+#
+# WHAT THIS DOES
+# On every push to a claude/** branch, if the tip commit is authored by the
+# routine identities and adds the expected dated briefing/audit files, this
+# workflow brings those files onto main (only files not already present, so a
+# manual backfill is never clobbered), commits, and pushes. If a briefing .md
+# was reconciled it then dispatches email-briefing.yml for that date — the main
+# push here uses GITHUB_TOKEN, whose pushes GitHub deliberately does NOT let
+# trigger other workflows (the same anti-recursion rule addressed in
+# weekly-audit.yml), so the email must be dispatched explicitly.
+#
+# This is a downstream safety net. The upstream fix is to make the scheduled
+# routine push to main directly (see docs/routine-prompts/production.md); until
+# that is confirmed working, this guarantees delivery regardless.
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch/ref to reconcile onto main (e.g. claude/nifty-feynman-s4ckn0).'
+        required: true
+
+permissions:
+  contents: write      # commit & push to main
+  actions: write       # dispatch email-briefing.yml
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main (full history)
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Identify the source ref and its tip author
+        id: src
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_REF: ${{ github.event.inputs.ref }}
+          PUSH_REF: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            REF="$DISPATCH_REF"
+          else
+            REF="$PUSH_REF"
+          fi
+          git fetch origin "$REF":"refs/reconcile/src" --force
+          AUTHOR_EMAIL=$(git log -1 --format='%ae' refs/reconcile/src)
+          echo "ref=$REF" >> "$GITHUB_OUTPUT"
+          echo "author_email=$AUTHOR_EMAIL" >> "$GITHUB_OUTPUT"
+          echo "Source ref: $REF (tip author: $AUTHOR_EMAIL)"
+
+      - name: Gate on routine authorship
+        id: gate
+        env:
+          AUTHOR_EMAIL: ${{ steps.src.outputs.author_email }}
+        run: |
+          set -euo pipefail
+          case "$AUTHOR_EMAIL" in
+            ccs-news-routine@co2crc.com.au|ccs-news-shadow@co2crc.com.au)
+              echo "proceed=true" >> "$GITHUB_OUTPUT"
+              echo "Tip commit is routine-authored — proceeding." ;;
+            *)
+              echo "proceed=false" >> "$GITHUB_OUTPUT"
+              echo "::notice::Tip author '$AUTHOR_EMAIL' is not a routine identity — ignoring branch." ;;
+          esac
+
+      - name: Select whitelisted, dated files that are new to main
+        id: pick
+        if: steps.gate.outputs.proceed == 'true'
+        run: |
+          set -euo pipefail
+          # Whitelist: only the routine's own dated outputs are ever eligible.
+          PATTERN='^([0-9]{4}-[0-9]{2}-[0-9]{2}-ccs-briefing\.(md|html)|audit/[0-9]{4}-[0-9]{2}-[0-9]{2}-(candidates|facts|shadow)\.json)$'
+          mapfile -t CAND < <(git ls-tree -r --name-only refs/reconcile/src | grep -E "$PATTERN" || true)
+
+          BROUGHT=""
+          DATES=""
+          for f in "${CAND[@]}"; do
+            # Never clobber a file already on main (protects manual backfills).
+            if git cat-file -e "HEAD:$f" 2>/dev/null; then
+              echo "skip (already on main): $f"
+              continue
+            fi
+            git checkout refs/reconcile/src -- "$f"
+            BROUGHT="${BROUGHT:+$BROUGHT }$f"
+            D=$(echo "$f" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -n1)
+            case " $DATES " in *" $D "*) ;; *) DATES="${DATES:+$DATES }$D" ;; esac
+          done
+
+          echo "brought=$BROUGHT" >> "$GITHUB_OUTPUT"
+          echo "dates=$DATES" >> "$GITHUB_OUTPUT"
+          # A briefing email is warranted only if a briefing .md was brought over.
+          if echo "$BROUGHT" | grep -qE '[0-9]{4}-[0-9]{2}-[0-9]{2}-ccs-briefing\.md'; then
+            echo "has_briefing=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_briefing=false" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -z "$BROUGHT" ]; then
+            echo "::notice::Nothing new to reconcile (all files already on main)."
+          else
+            echo "Reconciling: $BROUGHT"
+          fi
+
+      - name: Commit & push to main
+        id: commit
+        if: steps.gate.outputs.proceed == 'true' && steps.pick.outputs.brought != ''
+        env:
+          REF: ${{ steps.src.outputs.ref }}
+          DATES: ${{ steps.pick.outputs.dates }}
+        run: |
+          set -euo pipefail
+          git config user.email 'ccs-news-routine@co2crc.com.au'
+          git config user.name  'CCS Routine Reconcile'
+          git add -- ${{ steps.pick.outputs.brought }}
+          if git diff --cached --quiet; then
+            echo "Nothing staged; exiting."
+            exit 0
+          fi
+          git commit -m "Briefing/audit ${DATES} (reconciled from routine branch ${REF})"
+          git pull --rebase --autostash
+          git push origin main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Dispatch briefing email for each reconciled date
+        if: steps.commit.outputs.pushed == 'true' && steps.pick.outputs.has_briefing == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATES: ${{ steps.pick.outputs.dates }}
+        run: |
+          set -euo pipefail
+          for D in $DATES; do
+            # Only dispatch for dates whose briefing .md we actually reconciled.
+            if [ -f "${D}-ccs-briefing.md" ] && [ -f "${D}-ccs-briefing.html" ]; then
+              gh workflow run email-briefing.yml --repo "$GITHUB_REPOSITORY" -f date="$D"
+              echo "Dispatched briefing email for $D"
+            fi
+          done
