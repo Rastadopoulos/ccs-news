@@ -29,7 +29,9 @@ The repo-tracked copies of the prompts in `docs/routine-prompts/` redact this to
 3. Revoke the old PAT at https://github.com/settings/personal-access-tokens (Active tokens list).
 4. The repo-tracked copies in `docs/routine-prompts/` don't need to change — they remain redacted.
 
-**When to rotate**: annually as default hygiene; immediately if the PAT may have leaked (pasted into a chat transcript, committed by mistake to a public repo, included in a screenshot). The token's previous instances in chat transcripts are an outstanding hygiene concern — rotate at next opportunity.
+**When to rotate**: annually as default hygiene; immediately if the PAT may have leaked (pasted into a chat transcript, committed by mistake to a public repo, included in a screenshot).
+
+**Rotation status**: the PAT exposed in earlier chat transcripts was **rotated on 2026-07-22**; the old token is revoked. Next routine hygiene rotation due ~2026-07 (annual). Note: as of 2026-07-22 both routines run with the `Rastadopoulos/ccs-news` repository bound and push via isolated cloud-session `claude/*` branches (reconciled to main by `reconcile-routine-branch.yml`). If the bound-repo GitHub integration now authorises those pushes, the PAT embedded in the `git remote set-url` line may be legacy — verify at the next rotation whether the routines still depend on it before regenerating.
 
 ## Variables
 

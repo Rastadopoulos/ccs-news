@@ -4,10 +4,12 @@ name: Early nudge — briefing/shadow arrival check
 # 07:00 Melbourne and the shadow sampler 07:30; this job runs at 07:50 Melbourne
 # (~50 min / ~20 min of grace respectively) and emails a gentle "not in yet"
 # heads-up if today's files are still absent from main — 40 minutes before the
-# 08:30 dead-man's switch. The goal is faster awareness of a silent scheduler
-# no-fire (as on 2026-07-17) while there is still time for the scheduler to
-# self-recover or for a same-morning manual re-run. This is a NUDGE, not the
-# definitive alert: deadman-check.yml at 08:30 remains the hard check.
+# 08:30 dead-man's switch, while there is still time for a same-morning re-run.
+# This is a NUDGE, not the definitive alert: deadman-check.yml at 08:30 remains
+# the hard check. Since reconcile-routine-branch.yml now merges routine claude/*
+# branch pushes onto main within a minute or two of the routine finishing, this
+# nudge should normally stay quiet; if it fires, the routine likely truly did
+# not run (see deadman-check.yml for the branch-push history behind past alarms).
 
 on:
   schedule:

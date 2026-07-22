@@ -1,10 +1,16 @@
 name: Dead-man's switch — briefing delivery check
 
-# Watches the watcher. The production routine and shadow sampler run on
-# Anthropic scheduler infrastructure; if the scheduler silently fails to fire
-# (as happened 2026-06-04 and 2026-06-18), nothing in the pipeline notices.
-# This workflow runs ~90 minutes after the routines are due and emails an
-# alert via Resend if today's expected files are absent from main.
+# Watches the watcher. The production routine and shadow sampler run as scheduled
+# Claude Code cloud sessions. This workflow runs ~90 minutes after they are due
+# and emails an alert via Resend if today's expected files are absent from main.
+#
+# NB on the alerts of 2026-06-04, 2026-06-18, 2026-07-17/20/21: those were NOT
+# scheduler no-fires. The routines ran on time but, running on isolated cloud
+# branches, pushed to auto-created claude/* branches instead of main, so their
+# files never reached main and this check fired a false alarm. That gap is now
+# closed by reconcile-routine-branch.yml, which merges routine claude/* pushes
+# onto main automatically — so a genuine alert here now means the routine truly
+# did not run (check the routine's run history in Claude Code), not a mis-push.
 
 on:
   schedule:
