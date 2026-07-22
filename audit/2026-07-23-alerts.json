@@ -1,14 +1,5 @@
 [
   {
-    "canonical_url": "https://x.com/Orgetorix/status/2079583044655084022",
-    "raw_url": "https://x.com/Orgetorix/status/2079583044655084022",
-    "headline": "INPEX-led JV begins drilling first CCS appraisal well off Chiba - Drilling Contractor",
-    "source_domain": "x.com",
-    "publication_date": "2026-07-22T00:15:52+00:00",
-    "fuzzy_key": "appraisal,begins,ccs,chiba,contractor,drilling,first,inpex,jv,led,off,well",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://business-humanrights.org/en/latest-news/metropolitan-ccs-did-not-respond",
     "raw_url": "https://www.business-humanrights.org/en/latest-news/metropolitan-ccs-did-not-respond/",
     "headline": "Metropolitan CCS did not respond - Business and Human Rights Centre",
@@ -18,12 +9,39 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://globenewswire.com/news-release/2026/07/22/3331535/0/en/gas-separation-membranes-market-to-reach-2-5-billion-by-2031-driven-by-green-hydrogen-and-carbon-capture-technologies.html",
+    "raw_url": "https://www.globenewswire.com/news-release/2026/07/22/3331535/0/en/gas-separation-membranes-market-to-reach-2-5-billion-by-2031-driven-by-green-hydrogen-and-carbon-capture-technologies.html",
+    "headline": "Gas Separation Membranes Market to Reach $2.5 Billion by - GlobeNewswire",
+    "source_domain": "globenewswire.com",
+    "publication_date": "2026-07-22T20:22:03+00:00",
+    "fuzzy_key": "billion,gas,globenewswire,market,membranes,reach,separation",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://tipranks.com/news/private-companies/climeworks-emphasizes-advisory-capabilities-to-support-corporate-carbon-removal-strategies",
     "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-emphasizes-advisory-capabilities-to-support-corporate-carbon-removal-strategies",
     "headline": "Climeworks Emphasizes Advisory Capabilities to Support Corporate Carbon Removal Strategies",
     "source_domain": "tipranks.com",
     "publication_date": "2026-07-22T13:56:14+00:00",
     "fuzzy_key": "advisory,capabilities,carbon,climeworks,corporate,emphasizes,removal,strategies,support",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/Climeworks/status/2079853970353422596",
+    "raw_url": "https://x.com/Climeworks/status/2079853970353422596",
+    "headline": "Carbon removal can be complex. Our Advisory Team helps make it practical. Meet the ...",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-22T18:55:00+00:00",
+    "fuzzy_key": "advisory,can,carbon,complex,helps,make,meet,our,practical,removal,team",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/Orgetorix/status/2079583044655084022",
+    "raw_url": "https://x.com/Orgetorix/status/2079583044655084022",
+    "headline": "INPEX-led JV begins drilling first CCS appraisal well off Chiba - Drilling Contractor",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-22T00:15:52+00:00",
+    "fuzzy_key": "appraisal,begins,ccs,chiba,contractor,drilling,first,inpex,jv,led,off,well",
     "found_via": "google_alerts"
   }
 ]
