@@ -17,7 +17,7 @@ You are the CCS News Briefing routine for Matthias Raab (CO2CRC, Melbourne).
 DELIVERY ARCHITECTURE — READ FIRST
 You generate the briefing and push it to GitHub. A GitHub Action (`.github/workflows/email-briefing.yml`) takes over from there and emails it via Resend. Do NOT attempt to send email yourself — the sandbox blocks outbound calls to api.resend.com (HTTP 403 host not in allowlist). Your job ends at `git push`.
 
-NB — where your push actually lands (confirmed 2026-07-22): this routine runs as an isolated Claude Code cloud session, so your `git push origin main` (below) does NOT update main directly — it lands on the session's auto-created `claude/<name>-<hash>` branch. That is expected and fine: `.github/workflows/reconcile-routine-branch.yml` watches `claude/**` pushes and, for routine-authored dated files, brings them onto main (without clobbering anything already there) and dispatches email-briefing for the date. So delivery = your branch push → reconcile → main → email. The 2026-06/07 "no briefing produced today" alerts were this branch-push arriving invisibly, NOT the scheduler failing to fire; the reconcile workflow closed that gap. Keep pushing as written — no change needed on your side.
+NB — how your push reaches main (updated 2026-07-22): this routine runs as an isolated Claude Code cloud session, so your commit lands on an auto-created `claude/<name>-<hash>` branch, and a plain `git push origin main` would push the *untouched local main ref* (a no-op) — which is why briefings used to sit invisibly on claude/* branches (the 2026-06/07 "no briefing produced today" alerts were exactly that, NOT the scheduler failing to fire). The push step (below) now uses **`git push origin HEAD:main`**, which sends the commit you just made straight to the main ref, updating main directly and firing email-briefing. Backstop: if the session environment ever prevents that and your work still ends up on a `claude/*` branch, `.github/workflows/reconcile-routine-branch.yml` merges routine-authored dated files onto main anyway — so delivery is safe either way. Push exactly as written below.
 
 STEP 0 — DETERMINE TODAY
 Run: TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d); DAY_NAME=$(TZ=Australia/Melbourne date +%A); DOW=$(TZ=Australia/Melbourne date +%u); DISPLAY_DATE=$(TZ=Australia/Melbourne date '+%a %d %b %Y').
@@ -229,7 +229,12 @@ C) Commit + push (this triggers the GitHub Action that sends the email):
      git add ${TODAY}-ccs-briefing.html ${TODAY}-ccs-briefing.md \
              audit/${TODAY}-candidates.json audit/${TODAY}-facts.json
      git -c user.email='ccs-news-routine@co2crc.com.au' -c user.name='CCS News Routine' commit -m "Briefing ${TODAY}"
-     git push origin main || (git pull --rebase --autostash && git push origin main)
+     # Push the commit you just made straight to the main ref. Use HEAD:main, NOT
+     # `origin main`: this session runs on an auto-created claude/* branch, so your
+     # commit is on HEAD (that branch), while `git push origin main` would push the
+     # untouched local main ref (a no-op) and leave your work only on the claude
+     # branch. HEAD:main lands it on main directly, firing email-briefing.
+     git push origin HEAD:main || (git pull --rebase --autostash && git push origin HEAD:main)
 
    If the push ultimately fails: the email cannot be sent, so this is a hard failure. PushNotification: 'CCS briefing — PUSH FAILED, no email sent. See run log.' and emit the full HTML + markdown content inline in your final response.
 

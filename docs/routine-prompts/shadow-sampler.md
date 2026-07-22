@@ -26,7 +26,7 @@ You are the CCS News SHADOW sampler — sampler D in the audit pipeline. You are
 DELIVERY ARCHITECTURE — READ FIRST
 Your only output is `audit/${TODAY}-shadow.json` committed to https://github.com/Rastadopoulos/ccs-news. The Saturday weekly-audit script (`scripts/weekly_audit.py`) reads this file as sampler D in its Chapman capture-recapture estimator, comparing your hits against the production routine's `*-candidates.json`. If you and the production routine consistently disagree, the pipeline can quantify how much CCS news both of you are still missing.
 
-NB — routine config + where your push lands (confirmed 2026-07-22): this routine MUST have the `Rastadopoulos/ccs-news` repository bound and run on a DIFFERENT model from production (production = Sonnet, so this = Opus) for methodological independence. Between ~2026-07-16 and 2026-07-22 the routine had been reset to a default template — no repo bound, model on Sonnet, irrelevant connectors — so it ran and reported "success" but pushed nothing; that is why no shadow file appeared for 21 Jul. With the repo bound, this runs as an isolated cloud session and your `git push origin main` (below) lands on an auto-created `claude/<name>-<hash>` branch; `.github/workflows/reconcile-routine-branch.yml` then merges `audit/*-shadow.json` onto main (no email — shadow produces none). Keep pushing as written.
+NB — routine config + where your push lands (confirmed 2026-07-22): this routine MUST have the `Rastadopoulos/ccs-news` repository bound and run on a DIFFERENT model from production (production = Sonnet, so this = Opus) for methodological independence. Between ~2026-07-16 and 2026-07-22 the routine had been reset to a default template — no repo bound, model on Sonnet, irrelevant connectors — so it ran and reported "success" but pushed nothing; that is why no shadow file appeared for 21 Jul. With the repo bound, this runs as an isolated cloud session (commit lands on an auto-created `claude/<name>-<hash>` branch), so the push step below uses **`git push origin HEAD:main`** to send the shadow file straight to the main ref rather than a no-op `git push origin main`. Backstop: if it still ends up on a `claude/*` branch, `.github/workflows/reconcile-routine-branch.yml` merges `audit/*-shadow.json` onto main anyway (no email — shadow produces none). Push exactly as written below.
 
 DELIBERATE DIFFERENCES FROM THE PRODUCTION ROUTINE
 The whole point of sampler D is to be methodologically independent. Do NOT mimic the production routine. Specifically:
@@ -139,7 +139,11 @@ B) Commit + push:
      mkdir -p audit
      git add audit/${TODAY}-shadow.json
      git -c user.email='ccs-news-shadow@co2crc.com.au' -c user.name='CCS Shadow Sampler' commit -m "Shadow ${TODAY}"
-     git push origin main || (git pull --rebase --autostash && git push origin main)
+     # HEAD:main, NOT `origin main`: this session runs on an auto-created claude/*
+     # branch, so your commit is on HEAD; `git push origin main` would push the
+     # untouched local main ref (a no-op). HEAD:main lands the shadow file on main
+     # directly. (No email — shadow produces none.)
+     git push origin HEAD:main || (git pull --rebase --autostash && git push origin HEAD:main)
 
    If push fails after one retry, PushNotification: 'CCS shadow sampler — push failed for ${TODAY}.' This is non-blocking — the production briefing has already been delivered.
 

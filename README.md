@@ -10,11 +10,12 @@ Automated daily briefing on global carbon capture & storage (CCS) news, plus an 
 
 Delivery pipeline:
 
-1. **Generate + push** — at 07:00 Melbourne weekdays (skipping Vic public holidays) a remote Claude Code routine generates a briefing and pushes three files:
+1. **Generate + push to main** — at 07:00 Melbourne weekdays (skipping Vic public holidays) a remote Claude Code routine generates a briefing and pushes three files to `main`:
    - `YYYY-MM-DD-ccs-briefing.html` — self-contained styled HTML, used directly as the email body.
    - `YYYY-MM-DD-ccs-briefing.md` — markdown copy (email attachment + searchable archive).
    - `audit/YYYY-MM-DD-candidates.json` — the routine's audit trace (sampler A) for the Saturday recall audit.
-2. **Reconcile** — the routine runs as an isolated Claude Code cloud session, so its `git push origin main` actually lands on an auto-created `claude/*` branch, not `main`. `.github/workflows/reconcile-routine-branch.yml` watches those branches, brings the routine's dated files onto `main` (without clobbering anything already there), and dispatches the email step. (The 2026-06/07 "no briefing produced today" alerts were this branch push arriving invisibly — not the scheduler failing to fire.)
+   The routine runs as an isolated Claude Code cloud session (its commit lands on an auto-created `claude/*` branch), so its push step uses `git push origin HEAD:main` to target `main` directly rather than a no-op `git push origin main`.
+2. **Reconcile (backstop)** — `.github/workflows/reconcile-routine-branch.yml` watches `claude/**` pushes and, if a routine's work ever lands on a branch instead of `main` (as it did throughout 2026-06/07, which produced false "no briefing produced today" alerts — not a scheduler no-fire), brings the dated files onto `main` without clobbering existing ones and dispatches the email. With step 1 pushing `HEAD:main`, this is now a safety net rather than the primary path.
 3. **Email** — `.github/workflows/email-briefing.yml` reads the HTML/MD and sends to `matthias.raab@co2crc.com.au` via Resend.
 
 The generate/email split exists because the routine sandbox blocks outbound calls to api.resend.com.
@@ -71,7 +72,7 @@ Samplers feeding the audit:
 Workflows (all in `.github/workflows/`):
 
 - `email-briefing.yml` — fires on push of `*-ccs-briefing.{html,md}` to `main`, or via dispatch from `reconcile-routine-branch.yml`; emails the briefing via Resend.
-- `reconcile-routine-branch.yml` — fires on push to `claude/**`. Brings routine-authored dated briefing/audit files (incl. `*-shadow.json`) onto `main` without clobbering existing files, then dispatches `email-briefing.yml` per reconciled date. Bridges the routines' isolated-branch pushes to `main`.
+- `reconcile-routine-branch.yml` — fires on push to `claude/**`. Backstop: if a routine's work lands on a branch instead of `main`, brings routine-authored dated files (incl. `*-shadow.json`) onto `main` without clobbering existing files, then dispatches `email-briefing.yml` per reconciled date. Since the routines now push `HEAD:main`, this normally no-ops.
 - `late-file-check.yml` — cron 07:50 Melbourne weekdays. Soft "not in yet" nudge if the day's files haven't reached `main`; 40 min before the dead-man's switch.
 - `rss-floor.yml` — cron 07:00 Melbourne weekdays. Writes `audit/${TODAY}-rss.json` and updates `audit/candidates.db`.
 - `alerts-ingest.yml` — cron every 30 min during business hours. Requires `GMAIL_ADDRESS` + `GMAIL_APP_PASSWORD` secrets + `ALERTS_INGEST_ENABLED=true` repo variable.
