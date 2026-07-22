@@ -8,15 +8,16 @@ Automated daily briefing on global carbon capture & storage (CCS) news, plus an 
 
 ## How the briefing reaches you
 
-Two-stage pipeline:
+Delivery pipeline:
 
-1. **Generate + push** — at 07:00 Melbourne weekdays (skipping Vic public holidays) a remote Claude Code routine generates a briefing and pushes three files to this repo:
+1. **Generate + push** — at 07:00 Melbourne weekdays (skipping Vic public holidays) a remote Claude Code routine generates a briefing and pushes three files:
    - `YYYY-MM-DD-ccs-briefing.html` — self-contained styled HTML, used directly as the email body.
    - `YYYY-MM-DD-ccs-briefing.md` — markdown copy (email attachment + searchable archive).
    - `audit/YYYY-MM-DD-candidates.json` — the routine's audit trace (sampler A) for the Saturday recall audit.
-2. **Email** — `.github/workflows/email-briefing.yml` fires on push of the HTML/MD files, reads them, and sends to `matthias.raab@co2crc.com.au` via Resend.
+2. **Reconcile** — the routine runs as an isolated Claude Code cloud session, so its `git push origin main` actually lands on an auto-created `claude/*` branch, not `main`. `.github/workflows/reconcile-routine-branch.yml` watches those branches, brings the routine's dated files onto `main` (without clobbering anything already there), and dispatches the email step. (The 2026-06/07 "no briefing produced today" alerts were this branch push arriving invisibly — not the scheduler failing to fire.)
+3. **Email** — `.github/workflows/email-briefing.yml` reads the HTML/MD and sends to `matthias.raab@co2crc.com.au` via Resend.
 
-The two-stage split exists because the routine sandbox blocks outbound calls to api.resend.com.
+The generate/email split exists because the routine sandbox blocks outbound calls to api.resend.com.
 
 A push notification fires when the briefing is pushed. The email follows within ~1 minute. If it doesn't arrive, check https://github.com/Rastadopoulos/ccs-news/actions for the workflow run.
 
@@ -69,12 +70,14 @@ Samplers feeding the audit:
 
 Workflows (all in `.github/workflows/`):
 
-- `email-briefing.yml` — fires on push of `*-ccs-briefing.{html,md}`; emails the briefing via Resend.
+- `email-briefing.yml` — fires on push of `*-ccs-briefing.{html,md}` to `main`, or via dispatch from `reconcile-routine-branch.yml`; emails the briefing via Resend.
+- `reconcile-routine-branch.yml` — fires on push to `claude/**`. Brings routine-authored dated briefing/audit files (incl. `*-shadow.json`) onto `main` without clobbering existing files, then dispatches `email-briefing.yml` per reconciled date. Bridges the routines' isolated-branch pushes to `main`.
+- `late-file-check.yml` — cron 07:50 Melbourne weekdays. Soft "not in yet" nudge if the day's files haven't reached `main`; 40 min before the dead-man's switch.
 - `rss-floor.yml` — cron 07:00 Melbourne weekdays. Writes `audit/${TODAY}-rss.json` and updates `audit/candidates.db`.
 - `alerts-ingest.yml` — cron every 30 min during business hours. Requires `GMAIL_ADDRESS` + `GMAIL_APP_PASSWORD` secrets + `ALERTS_INGEST_ENABLED=true` repo variable.
 - `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`. Manual: Actions tab → Weekly recall audit → Run workflow.
 - `email-audit.yml` — fires on push of a new audit report; emails it via Resend.
-- `deadman-check.yml` — cron 08:30 Melbourne weekdays. Alerts by email if today's briefing (`${TODAY}-ccs-briefing.md`) or shadow trace (`audit/${TODAY}-shadow.json`) is missing from `main` — catches silent scheduler failures. Skips weekends and Vic public holidays; the holiday list must be kept in sync with the production prompt.
+- `deadman-check.yml` — cron 08:30 Melbourne weekdays. Alerts by email if today's briefing (`${TODAY}-ccs-briefing.md`) or shadow trace (`audit/${TODAY}-shadow.json`) is missing from `main`. Since `reconcile-routine-branch.yml` now delivers the routines' branch pushes, a genuine alert here means the routine truly did not run (check its run history in Claude Code) — not a branch mis-push. Skips weekends and Vic public holidays; the holiday list must be kept in sync with the production prompt.
 
 Dedup contract shared by all samplers: `scripts/_canon.py` — canonical URL (strip safelinks/tracking, lowercase host) plus fuzzy headline match (Jaccard ≥ 0.7 on tokenised, stopword-stripped headline).
 
