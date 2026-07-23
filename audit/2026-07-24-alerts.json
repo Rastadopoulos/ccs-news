@@ -1,23 +1,5 @@
 [
   {
-    "canonical_url": "https://energiesmedia.com/uk-government-approves-viking-ccs-funding",
-    "raw_url": "https://energiesmedia.com/uk-government-approves-viking-ccs-funding/",
-    "headline": "UK government approves development funding for Viking CCS carbon capture project in the ...",
-    "source_domain": "energiesmedia.com",
-    "publication_date": "2026-07-22T23:52:12+00:00",
-    "fuzzy_key": "approves,capture,carbon,ccs,development,funding,government,project,uk,viking",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://asia.nikkei.com/business/companies/japan-s-inpex-to-test-undersea-co2-storage-near-tokyo-in-green-steel-push",
-    "raw_url": "https://asia.nikkei.com/business/companies/japan-s-inpex-to-test-undersea-co2-storage-near-tokyo-in-green-steel-push",
-    "headline": "Japan's Inpex to test undersea CO2 storage near Tokyo in green steel push - Nikkei Asia",
-    "source_domain": "nikkei.com",
-    "publication_date": "2026-07-23T01:41:50+00:00",
-    "fuzzy_key": "asia,co2,green,inpex,japan,near,nikkei,push,steel,storage,test,tokyo,undersea",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://biochartoday.com/news/puro-earth-certifies-inherit-carbon-solutions-for-first-biogas-beccs-carbon-removal-in-norway",
     "raw_url": "https://biochartoday.com/news/puro-earth-certifies-inherit-carbon-solutions-for-first-biogas-beccs-carbon-removal-in-norway/",
     "headline": "Puro.earth Certifies Inherit Carbon Solutions for First Biogas BECCS Carbon Removal in Norway",
@@ -27,30 +9,66 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://rabble.ca/environment/clean-power-pathways-beat-carbon-capture",
-    "raw_url": "https://rabble.ca/environment/clean-power-pathways-beat-carbon-capture/",
-    "headline": "Clean power pathways beat carbon capture - Rabble.ca",
-    "source_domain": "rabble.ca",
-    "publication_date": "2026-07-23T07:38:24+00:00",
-    "fuzzy_key": "beat,ca,capture,carbon,clean,pathways,power,rabble",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://simplywall.st/stocks/us/utilities/nyse-etr/entergy/news/is-entergy-etr-pricey-after-its-mitsubishi-carbon-capture-de",
-    "raw_url": "https://simplywall.st/stocks/us/utilities/nyse-etr/entergy/news/is-entergy-etr-pricey-after-its-mitsubishi-carbon-capture-de",
-    "headline": "Is Entergy (ETR) Pricey After Its Mitsubishi Carbon Capture Deal And Ahead Of Earnings?",
-    "source_domain": "simplywall.st",
-    "publication_date": "2026-07-23T07:38:24+00:00",
-    "fuzzy_key": "after,ahead,capture,carbon,deal,earnings,entergy,etr,mitsubishi,pricey",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://climeworks.com/press-release/climeworks-solutions-launches-compliance-ready-carbon-removal-offering",
     "raw_url": "https://climeworks.com/press-release/climeworks-solutions-launches-compliance-ready-carbon-removal-offering",
     "headline": "Climeworks Solutions launches compliance-ready carbon removal offering",
     "source_domain": "climeworks.com",
     "publication_date": "2026-07-23T08:51:00+00:00",
     "fuzzy_key": "carbon,climeworks,compliance,launches,offering,ready,removal,solutions",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://co2crc.com.au/ccs-insights-newsletter-may-2026",
+    "raw_url": "https://co2crc.com.au/ccs-insights-newsletter-may-2026/",
+    "headline": "CCS Insights Newsletter - May 2026 - CO2CRC",
+    "source_domain": "co2crc.com.au",
+    "publication_date": "2026-07-23T19:21:55+00:00",
+    "fuzzy_key": "2026,ccs,co2crc,insights,may,newsletter",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energiesmedia.com/uk-government-approves-viking-ccs-funding",
+    "raw_url": "https://energiesmedia.com/uk-government-approves-viking-ccs-funding/",
+    "headline": "UK government approves development funding for Viking CCS carbon capture project in the ...",
+    "source_domain": "energiesmedia.com",
+    "publication_date": "2026-07-22T23:52:12+00:00",
+    "fuzzy_key": "approves,capture,carbon,ccs,development,funding,government,project,uk,viking",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gastopowerjournal.com/news/projectsandfinance/worley-selected-for-unipers-ccs-power-project-in-the-uk",
+    "raw_url": "https://gastopowerjournal.com/news/projectsandfinance/worley-selected-for-unipers-ccs-power-project-in-the-uk/",
+    "headline": "Worley selected for Uniper's CCS power project in the UK",
+    "source_domain": "gastopowerjournal.com",
+    "publication_date": "2026-07-23T16:53:12+00:00",
+    "fuzzy_key": "ccs,power,project,selected,uk,uniper,worley",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund",
+    "raw_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund/",
+    "headline": "JERA Invests in Silva Carbon Credits Fund - - Insurance Edge",
+    "source_domain": "insurance-edge.net",
+    "publication_date": "2026-07-23T12:29:40+00:00",
+    "fuzzy_key": "carbon,credits,edge,fund,insurance,invests,jera,silva",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://kalkinemedia.com/us/companies/nasdaq-ccs",
+    "raw_url": "https://kalkinemedia.com/us/companies/nasdaq-ccs",
+    "headline": "Century Communities Inc (NYSE:CCS) Share Price, News, Chart & Financials | Kalkine Media",
+    "source_domain": "kalkinemedia.com",
+    "publication_date": "2026-07-23T17:21:45+00:00",
+    "fuzzy_key": "ccs,century,chart,communities,financials,inc,kalkine,media,news,nyse,price,share",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/esg-post_climeworks-solutions-expands-carbon-removal-activity-7486065265147867136-TBJi",
+    "raw_url": "https://www.linkedin.com/posts/esg-post_climeworks-solutions-expands-carbon-removal-activity-7486065265147867136-TBJi",
+    "headline": "Climeworks Solutions expands carbon removal offering to address global compliance frameworks",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-07-23T18:52:06+00:00",
+    "fuzzy_key": "address,carbon,climeworks,compliance,expands,frameworks,global,offering,removal,solutions",
     "found_via": "google_alerts"
   },
   {
@@ -72,66 +90,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund",
-    "raw_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund/",
-    "headline": "JERA Invests in Silva Carbon Credits Fund - - Insurance Edge",
-    "source_domain": "insurance-edge.net",
-    "publication_date": "2026-07-23T12:29:40+00:00",
-    "fuzzy_key": "carbon,credits,edge,fund,insurance,invests,jera,silva",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
-    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
-    "headline": "Climeworks Positions Carbon Removal Solutions for Emerging Compliance Markets",
-    "source_domain": "tipranks.com",
-    "publication_date": "2026-07-23T12:29:45+00:00",
-    "fuzzy_key": "carbon,climeworks,compliance,emerging,markets,positions,removal,solutions",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://x.com/Climeworks/status/2080199497515250040",
-    "raw_url": "https://x.com/Climeworks/status/2080199497515250040",
-    "headline": "From CORSIA to Article 6.2 and the EU CRCF, carbon removal compliance markets are ...",
-    "source_domain": "x.com",
-    "publication_date": "2026-07-23T14:42:06+00:00",
-    "fuzzy_key": "article,carbon,compliance,corsia,crcf,eu,markets,removal",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://gastopowerjournal.com/news/projectsandfinance/worley-selected-for-unipers-ccs-power-project-in-the-uk",
-    "raw_url": "https://gastopowerjournal.com/news/projectsandfinance/worley-selected-for-unipers-ccs-power-project-in-the-uk/",
-    "headline": "Worley selected for Uniper's CCS power project in the UK",
-    "source_domain": "gastopowerjournal.com",
-    "publication_date": "2026-07-23T16:53:12+00:00",
-    "fuzzy_key": "ccs,power,project,selected,uk,uniper,worley",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://jpt.spe.org/harbour-energy-takes-a-step-closer-to-making-major-uk-ccs-project-a-reality",
-    "raw_url": "https://jpt.spe.org/harbour-energy-takes-a-step-closer-to-making-major-uk-ccs-project-a-reality",
-    "headline": "Harbour Energy Takes a Step Closer to Making Major UK CCS Project a Reality - JPT/SPE",
-    "source_domain": "spe.org",
-    "publication_date": "2026-07-23T16:53:42+00:00",
-    "fuzzy_key": "ccs,closer,energy,harbour,jpt,major,making,project,reality,spe,step,takes,uk",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://worldpipelines.com/project-news/23072026/uks-first-ccs-project-launches-historic-offshore-construction-campaign-in-hartlepool/amp",
-    "raw_url": "https://www.worldpipelines.com/project-news/23072026/uks-first-ccs-project-launches-historic-offshore-construction-campaign-in-hartlepool/amp/",
-    "headline": "UK's first CCS project launches historic offshore construction campaign in Hartlepool",
-    "source_domain": "worldpipelines.com",
-    "publication_date": "2026-07-23T16:53:42+00:00",
-    "fuzzy_key": "campaign,ccs,construction,first,hartlepool,historic,launches,offshore,project,uk",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://kalkinemedia.com/us/companies/nasdaq-ccs",
-    "raw_url": "https://kalkinemedia.com/us/companies/nasdaq-ccs",
-    "headline": "Century Communities Inc (NYSE:CCS) Share Price, News, Chart & Financials | Kalkine Media",
-    "source_domain": "kalkinemedia.com",
-    "publication_date": "2026-07-23T17:21:45+00:00",
-    "fuzzy_key": "ccs,century,chart,communities,financials,inc,kalkine,media,news,nyse,price,share",
+    "canonical_url": "https://asia.nikkei.com/business/companies/japan-s-inpex-to-test-undersea-co2-storage-near-tokyo-in-green-steel-push",
+    "raw_url": "https://asia.nikkei.com/business/companies/japan-s-inpex-to-test-undersea-co2-storage-near-tokyo-in-green-steel-push",
+    "headline": "Japan's Inpex to test undersea CO2 storage near Tokyo in green steel push - Nikkei Asia",
+    "source_domain": "nikkei.com",
+    "publication_date": "2026-07-23T01:41:50+00:00",
+    "fuzzy_key": "asia,co2,green,inpex,japan,near,nikkei,push,steel,storage,test,tokyo,undersea",
     "found_via": "google_alerts"
   },
   {
@@ -144,21 +108,57 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://linkedin.com/posts/esg-post_climeworks-solutions-expands-carbon-removal-activity-7486065265147867136-TBJi",
-    "raw_url": "https://www.linkedin.com/posts/esg-post_climeworks-solutions-expands-carbon-removal-activity-7486065265147867136-TBJi",
-    "headline": "Climeworks Solutions expands carbon removal offering to address global compliance frameworks",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-07-23T18:52:06+00:00",
-    "fuzzy_key": "address,carbon,climeworks,compliance,expands,frameworks,global,offering,removal,solutions",
+    "canonical_url": "https://rabble.ca/environment/clean-power-pathways-beat-carbon-capture",
+    "raw_url": "https://rabble.ca/environment/clean-power-pathways-beat-carbon-capture/",
+    "headline": "Clean power pathways beat carbon capture - Rabble.ca",
+    "source_domain": "rabble.ca",
+    "publication_date": "2026-07-23T07:38:24+00:00",
+    "fuzzy_key": "beat,ca,capture,carbon,clean,pathways,power,rabble",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://co2crc.com.au/ccs-insights-newsletter-may-2026",
-    "raw_url": "https://co2crc.com.au/ccs-insights-newsletter-may-2026/",
-    "headline": "CCS Insights Newsletter - May 2026 - CO2CRC",
-    "source_domain": "co2crc.com.au",
-    "publication_date": "2026-07-23T19:21:55+00:00",
-    "fuzzy_key": "2026,ccs,co2crc,insights,may,newsletter",
+    "canonical_url": "https://simplywall.st/stocks/us/utilities/nyse-etr/entergy/news/is-entergy-etr-pricey-after-its-mitsubishi-carbon-capture-de",
+    "raw_url": "https://simplywall.st/stocks/us/utilities/nyse-etr/entergy/news/is-entergy-etr-pricey-after-its-mitsubishi-carbon-capture-de",
+    "headline": "Is Entergy (ETR) Pricey After Its Mitsubishi Carbon Capture Deal And Ahead Of Earnings?",
+    "source_domain": "simplywall.st",
+    "publication_date": "2026-07-23T07:38:24+00:00",
+    "fuzzy_key": "after,ahead,capture,carbon,deal,earnings,entergy,etr,mitsubishi,pricey",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://jpt.spe.org/harbour-energy-takes-a-step-closer-to-making-major-uk-ccs-project-a-reality",
+    "raw_url": "https://jpt.spe.org/harbour-energy-takes-a-step-closer-to-making-major-uk-ccs-project-a-reality",
+    "headline": "Harbour Energy Takes a Step Closer to Making Major UK CCS Project a Reality - JPT/SPE",
+    "source_domain": "spe.org",
+    "publication_date": "2026-07-23T16:53:42+00:00",
+    "fuzzy_key": "ccs,closer,energy,harbour,jpt,major,making,project,reality,spe,step,takes,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
+    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
+    "headline": "Climeworks Positions Carbon Removal Solutions for Emerging Compliance Markets",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-07-23T12:29:45+00:00",
+    "fuzzy_key": "carbon,climeworks,compliance,emerging,markets,positions,removal,solutions",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://worldpipelines.com/project-news/23072026/uks-first-ccs-project-launches-historic-offshore-construction-campaign-in-hartlepool/amp",
+    "raw_url": "https://www.worldpipelines.com/project-news/23072026/uks-first-ccs-project-launches-historic-offshore-construction-campaign-in-hartlepool/amp/",
+    "headline": "UK's first CCS project launches historic offshore construction campaign in Hartlepool",
+    "source_domain": "worldpipelines.com",
+    "publication_date": "2026-07-23T16:53:42+00:00",
+    "fuzzy_key": "campaign,ccs,construction,first,hartlepool,historic,launches,offshore,project,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/Climeworks/status/2080199497515250040",
+    "raw_url": "https://x.com/Climeworks/status/2080199497515250040",
+    "headline": "From CORSIA to Article 6.2 and the EU CRCF, carbon removal compliance markets are ...",
+    "source_domain": "x.com",
+    "publication_date": "2026-07-23T14:42:06+00:00",
+    "fuzzy_key": "article,carbon,compliance,corsia,crcf,eu,markets,removal",
     "found_via": "google_alerts"
   }
 ]
