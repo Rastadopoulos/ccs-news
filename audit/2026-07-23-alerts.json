@@ -45,12 +45,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund",
+    "raw_url": "https://insurance-edge.net/2026/07/23/jera-invests-in-silva-carbon-credits-fund/",
+    "headline": "JERA Invests in Silva Carbon Credits Fund - - Insurance Edge",
+    "source_domain": "insurance-edge.net",
+    "publication_date": "2026-07-23T12:29:40+00:00",
+    "fuzzy_key": "carbon,credits,edge,fund,insurance,invests,jera,silva",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://marketscreener.com/news/inpex-starts-trial-seabed-drilling-for-carbon-capture-project-ce7f51d9d181f526",
     "raw_url": "https://www.marketscreener.com/news/inpex-starts-trial-seabed-drilling-for-carbon-capture-project-ce7f51d9d181f526",
     "headline": "Inpex Starts Trial Seabed Drilling for Carbon Capture Project | MarketScreener",
     "source_domain": "marketscreener.com",
     "publication_date": "2026-07-23T09:46:28+00:00",
     "fuzzy_key": "capture,carbon,drilling,inpex,marketscreener,project,seabed,starts,trial",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://moomoo.com/news/post/73389310/market-chatter-inpex-starts-trial-seabed-drilling-for-carbon-capture",
+    "raw_url": "https://www.moomoo.com/news/post/73389310/market-chatter-inpex-starts-trial-seabed-drilling-for-carbon-capture",
+    "headline": "Market Chatter: Inpex Starts Trial Seabed Drilling for Carbon Capture Project - Moomoo",
+    "source_domain": "moomoo.com",
+    "publication_date": "2026-07-23T12:29:40+00:00",
+    "fuzzy_key": "capture,carbon,chatter,drilling,inpex,market,moomoo,project,seabed,starts,trial",
     "found_via": "google_alerts"
   },
   {
@@ -87,6 +105,15 @@
     "source_domain": "tipranks.com",
     "publication_date": "2026-07-22T13:56:14+00:00",
     "fuzzy_key": "advisory,capabilities,carbon,climeworks,corporate,emphasizes,removal,strategies,support",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
+    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-positions-carbon-removal-solutions-for-emerging-compliance-markets",
+    "headline": "Climeworks Positions Carbon Removal Solutions for Emerging Compliance Markets",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-07-23T12:29:45+00:00",
+    "fuzzy_key": "carbon,climeworks,compliance,emerging,markets,positions,removal,solutions",
     "found_via": "google_alerts"
   },
   {
