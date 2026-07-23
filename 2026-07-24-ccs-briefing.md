@@ -1,0 +1,7 @@
+# Quiet day — CCS briefing — Fri 24 Jul 2026
+
+No fresh, in-window CCS/CCUS items could be confirmed for today. A full worldwide sweep of 16 web searches ran across every geographic bucket (Australia & APAC, North America, Europe & UK, Middle East, China — including Chinese-language queries — India, Latin America, Africa), multinational-strategy angles (Mitsui/Mitsubishi, Shell/BP/Eni/TotalEnergies), transboundary/London Protocol topics and the Bayu-Undan/Barossa case. The candidates that surfaced were either evergreen background/explainer content or had underlying news dated before the window (e.g. Sasol Q4 production results dated 21–22 Jul, which are not CCS news; California Resources' first CO₂ injection from May 2026; the Northern Lights Phase-2 FID from 2025; India's February 2026 CCUS budget line).
+
+Verification caveat for the record: article-page fetching (WebFetch) and all direct outbound HTTPS were blocked by the environment's egress policy today (HTTP 403 on every host tried, including Carbon Herald, Reuters, gov.uk and Wikipedia). The routine's recency rule requires each candidate's publication date to be read from the article page; with page access unavailable, no candidate could be certified as published on 23 or 24 July 2026 (Melbourne time). Consistent with "fewer fresh items beats more stale items", nothing unverifiable was promoted into the five sections. Normal coverage resumes once page access is restored.
+
+— Auto-briefing
