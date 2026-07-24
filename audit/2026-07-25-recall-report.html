@@ -1,0 +1,96 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CCS recall audit — week ending 2026-07-25 — pooled recall 11%</title><style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;color:#222;line-height:1.5;font-size:16px}h1{font-size:22px}h2{font-size:17px;margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #ddd;padding:6px 10px;text-align:left;font-size:14px}th{background:#f4f4f4}a{color:#0a4}@media print{a{color:#000;text-decoration:none}}</style></head><body><h1>CCS recall audit — week ending 2026-07-25 — pooled recall 11%</h1>
+<h2>Headline metrics</h2>
+<ul>
+<li><strong>Pooled recall</strong> (A ∩ U / U): <strong>11%</strong>  (14 of 128)</li>
+<li><strong>Floor recall</strong> (A ∩ B / B): <strong>10%</strong>  (5 of 49)</li>
+<li><strong>Estimated absolute recall</strong> (Chapman, median of 4 pair-estimates): <strong>6%</strong></li>
+</ul>
+<h2>Sampler sizes</h2>
+<table>
+<tr><th>Sampler</th><th>Items</th></tr>
+<tr><td>A · Production routine</td><td>14</td></tr>
+<tr><td>B · RSS floor</td><td>49</td></tr>
+<tr><td>C · Google Alerts</td><td>59</td></tr>
+<tr><td>D · Shadow LLM</td><td>16</td></tr>
+<tr><td>E · Shelly Murrell digest</td><td>18</td></tr>
+<tr><td>F · IEAGHG Weekly News</td><td>0</td></tr>
+<tr><td>A★ · Production, search-only subset (used for Chapman)</td><td>12</td></tr>
+<tr><td><strong>Union U</strong></td><td><strong>128</strong></td></tr>
+</table>
+<p>_7 junk domains excluded from all samplers (config/junk_domains.txt)._</p>
+<h2>Sampler run coverage</h2>
+<table>
+<tr><th>Sampler</th><th>Ran (5 weekdays)</th><th>Missing</th></tr>
+<tr><td>B · RSS floor</td><td>5/5</td><td>—</td></tr>
+<tr><td>A · Production routine</td><td>5/5</td><td>—</td></tr>
+<tr><td>D · Shadow LLM</td><td>5/5</td><td>—</td></tr>
+<tr><td>C · Google Alerts</td><td>5/5</td><td>—</td></tr>
+</table>
+<p><em>Public holidays are legitimate skips and still show as missing here.</em></p>
+<h2>Chapman pair-estimates</h2>
+<p><em>Capture side restricted to A★ (search-only, 12 items) — full A ingests the RSS floor and Google Alerts feeds, so it is not independent of samplers B/C.</em></p>
+<table>
+<tr><th>Pair</th><th>Overlap</th><th>Estimated N</th></tr>
+<tr><td>A★ × B (RSS floor)</td><td>4</td><td>129</td></tr>
+<tr><td>A★ × C (Google Alerts)</td><td>2</td><td>259</td></tr>
+<tr><td>A★ × D (Shadow LLM)</td><td>4</td><td>43</td></tr>
+<tr><td>A★ × E (Shelly Murrell digest)</td><td>0</td><td>246</td></tr>
+</table>
+<h2>Top missed items (114 total)</h2>
+<ul>
+<li><strong>Puro.earth Certifies Inherit Carbon Solutions for First Biogas BECCS Carbon Removal in Norway</strong> — biochartoday.com · found via <em>C</em> · <a href="https://biochartoday.com/news/puro-earth-certifies-inherit-carbon-solutions-for-first-biogas-beccs-carbon-removal-in-norway/">link</a></li>
+<li><strong>Metropolitan CCS did not respond - Business and Human Rights Centre</strong> — business-humanrights.org · found via <em>C</em> · <a href="https://business-humanrights.org/en/latest-news/metropolitan-ccs-did-not-respond">link</a></li>
+<li><strong>Viking CCS Wins UK Development Funding — A Step Forward, Not a Final Decision</strong> — captaindrawdown.com · found via <em>C</em> · <a href="https://captaindrawdown.com/posts/uk-greenlights-development-funding-for-viking-ccs-project/">link</a></li>
+<li><strong>CP Daily News Ticker: 21 July 2026</strong> — carbon-pulse.com · found via <em>D</em> · <a href="https://carbon-pulse.com/533429">link</a></li>
+<li><strong>Adani partners with Dioxycle for low carbon chemicals production - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdmVRdXZCTGQ2TVNXaUpwR3dPQjQyMm9yc3ota3puOGxjVDRyMUxybHBiNHA2VkVfYkQ4d1pUQWdDNnpzWkNiUWxMSTBnN1JzbUZyZFFWd3JfZFA2ZncxSkhsOV93WmdHWVE4aW52bmlFUXN3cXZwR2xvcEdtTWM2c2xUVVJWUmxvWEhGQ2ZOVkktcDhhU3BVc05DeDNTN2g0WUFncHhGcGJBVkdZd1RoUTZ4V1RKZWVhMVNlTGQ0eE01TEdNWEkzNg?oc=5">link</a></li>
+<li><strong>Carbon Capture Journal - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPVl9GbEYwV1pwZl90MlhCTV9MM1J4ckVfNWxZSzB5V29GdmhWWEdGNzdCR2tkRXQzVmhBcjg3WVNodEdYUDNIS1R5RWdRb2szbEZsU0I4dU1pc1dsdHhxTnNmNVdDeWNLNi1vTV9LMURyWmNBNkVocWlaT05ZWGlXRW1nVF94ZWlBbEdmT2diSWRsbC1kZ3FzT21lRGt4cEJZN3BTdHV2YlV4OExp?oc=5">link</a></li>
+<li><strong>Contribution of Carbon Capture and Utilisation towards climate neutrality in the EU - carboncapturejournal.com</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPa2FGYV9RSlZPWHNsTTBsdEVZYTVFMTVOaXJEano2cElkN1psMi00Yjg1TXBiX3F3RHFuaWJuNlQtYTVPQ3I2SUFOSTJWQnJraHVMQWpkZ0tsNkIxYW5SVUtCeWkwZXVmUmsyMjU2eGFjeV9WdERJd1pieHRCWXpXV3NrWVp2cDVvRUR3UWIxRG9INm9tRTF6SjhqeWJ4aEtsUU9rblJhNHpzMkxwdXFSamluMmV3aUxQVS1CdEIxaThOX0p0cXJ1b2tJX3Rtb1lrd3ZqcFdtajdBSXJEMEs5MmtB?oc=5">link</a></li>
+<li><strong>Development funding approved for UK Viking CCS Project - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>C</em> · <a href="https://www.carboncapturejournal.com/news/development-funding-approved-for-uk-viking-ccs-project/7342.aspx?Category=all">link</a></li>
+<li><strong>EU ETS recognises onboard mineralisation capture method - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQLUplMXo4YVA5T0xNNU0wV2kxWXpfdkFPa1hQLThrZDgyRXJqTHhfdFhrRXlmMjJLbWJqUndwaEhIYVBNRDZxcE15cExpYlRsLTRraklweVVIMElGcDRrN0JzcldwRW5JbkNaSGNQM2VvYXNhb2lNdjdhQVRfRmhYMnBQbGJ4TVUxMVU1NUtkUFpkTnF0Z1kydlE2X2tGVF9LYVBuazZXbm9JWHo4UGxVUy1hR0RrU1p4bVZQdw?oc=5">link</a></li>
+<li><strong>NSTA operational guidance for carbon storage projects - carboncapturejournal.com</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQZkJQZHFjY0Vob0ppYjNRWWlKQU9fS0xVd3ZhWjRIYVhrNlgwNUFPU2RQLXdQZjVHXy03Rk9odjV0VUdwbEJPNHNlQXNEcHRQY0VsdzJZb1NZMWVYNXdNbXM0TVAtd2lCMGpRSnNPdmJWbmpfVW1kaXVPdHplME1PMzlFUEE0RkVra3ZEZ1FvZU00VXJPamduUDN2VlhoRGRMbmZxRVR4NjZPTDZpWWw5LWNuS3h4STlZMFE?oc=5">link</a></li>
+</ul>
+<h2>Source-coverage matrix</h2>
+<table>
+<tr><th>Source</th><th>Published (B+C+D+E)</th><th>Captured by A</th><th>Capture rate</th></tr>
+<tr><td>carbonherald.com</td><td>30</td><td>5</td><td>17%</td></tr>
+<tr><td>list-manage.com</td><td>11</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncapturejournal.com</td><td>7</td><td>0</td><td>0%</td></tr>
+<tr><td>ccsassociation.org</td><td>6</td><td>0</td><td>0%</td></tr>
+<tr><td>simplywall.st</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>upstreamonline.com</td><td>4</td><td>1</td><td>25%</td></tr>
+<tr><td>carbon-pulse.com</td><td>2</td><td>1</td><td>50%</td></tr>
+<tr><td>carboncredits.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>climeworks.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>decarbonfuse.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>esgnews.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>latrobevalleyexpress.com.au</td><td>2</td><td>1</td><td>50%</td></tr>
+<tr><td>oedigital.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>offshore-energy.biz</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>tipranks.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>biochartoday.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>business-humanrights.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>businesscheshire.co.uk</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>captaindrawdown.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>chinadaily.com.cn</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>co2crc.com.au</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>commodityinside.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>corrs.com.au</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>defence.in</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>discoveryalert.com.au</td><td>1</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Drift — last 12 weeks</h2>
+<table>
+<tr><th>Week ending</th><th>Pooled recall</th><th>Floor recall</th></tr>
+<tr><td>2026-05-26</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-27</td><td>0%</td><td>0%</td></tr>
+<tr><td>2026-05-30</td><td>20%</td><td>0%</td></tr>
+<tr><td>2026-06-06</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-06-13</td><td>7%</td><td>2%</td></tr>
+<tr><td>2026-06-20</td><td>14%</td><td>0%</td></tr>
+<tr><td>2026-06-27</td><td>12%</td><td>2%</td></tr>
+<tr><td>2026-07-04</td><td>19%</td><td>11%</td></tr>
+<tr><td>2026-07-11</td><td>6%</td><td>3%</td></tr>
+<tr><td>2026-07-18</td><td>18%</td><td>5%</td></tr>
+<tr><td>2026-07-25</td><td>11%</td><td>10%</td></tr>
+</table>
+<p><em>— Auto-audit</em></p><p style='color:#888;font-size:12px'>Generated 2026-07-25T09:01:51.494334+10:00</p></body></html>
