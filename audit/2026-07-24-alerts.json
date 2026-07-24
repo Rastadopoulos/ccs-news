@@ -36,12 +36,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/601241/northern-endurance-partnership-offshore-construction",
+    "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/601241/northern-endurance-partnership-offshore-construction/",
+    "headline": "Northern Endurance Partnership starts offshore construction - Energy Voice",
+    "source_domain": "energyvoice.com",
+    "publication_date": "2026-07-24T01:17:06+00:00",
+    "fuzzy_key": "construction,endurance,energy,northern,offshore,partnership,starts,voice",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://esgnews.com/puro-earth-certifies-first-biogas-carbon-removal",
     "raw_url": "https://esgnews.com/puro-earth-certifies-first-biogas-carbon-removal/",
     "headline": "Puro.earth Certifies First Biogas Carbon Removal - ESG News",
     "source_domain": "esgnews.com",
     "publication_date": "2026-07-23T23:45:21+00:00",
     "fuzzy_key": "biogas,carbon,certifies,earth,esg,first,news,puro,removal",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://fredrosenthalsolar.co.za/santos-says-moomba-ccs-delivering-emissions-reduction-at-scale",
+    "raw_url": "https://fredrosenthalsolar.co.za/santos-says-moomba-ccs-delivering-emissions-reduction-at-scale/",
+    "headline": "SANTOS SAYS MOOMBA CCS DELIVERING EMISSIONS REDUCTION AT SCALE",
+    "source_domain": "fredrosenthalsolar.co.za",
+    "publication_date": "2026-07-24T00:10:45+00:00",
+    "fuzzy_key": "ccs,delivering,emissions,moomba,reduction,santos,says,scale",
     "found_via": "google_alerts"
   },
   {
