@@ -1,5 +1,23 @@
 [
   {
+    "canonical_url": "https://carbonherald.com/uniper-selects-worley-for-2030-carbon-capture-power-station",
+    "raw_url": "https://carbonherald.com/uniper-selects-worley-for-2030-carbon-capture-power-station/",
+    "headline": "Uniper Selects Worley For 2030 Carbon Capture Power Station",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-07-25T05:46:01+00:00",
+    "fuzzy_key": "2030,capture,carbon,power,selects,station,uniper,worley",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://decarbonfuse.com/posts/climeworks-solutions-launches-compliance-ready-carbon-removal-offering-as-policy-advances",
+    "raw_url": "https://decarbonfuse.com/posts/climeworks-solutions-launches-compliance-ready-carbon-removal-offering-as-policy-advances",
+    "headline": "Climeworks Solutions Launches Compliance-Ready Carbon Removal Offering As Policy Advances",
+    "source_domain": "decarbonfuse.com",
+    "publication_date": "2026-07-25T07:29:45+00:00",
+    "fuzzy_key": "advances,carbon,climeworks,compliance,launches,offering,policy,ready,removal,solutions",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://defence.in/threads/tedbf-first-flight-possible-in-5-years-post-ccs-approval-indian-navy-requirement-to-exceed-120-aircraft-says-former-tejas-chief-designer.18356",
     "raw_url": "https://defence.in/threads/tedbf-first-flight-possible-in-5-years-post-ccs-approval-indian-navy-requirement-to-exceed-120-aircraft-says-former-tejas-chief-designer.18356/",
     "headline": "TEDBF First Flight Possible in 5 Years Post-CCS Approval, Indian Navy Requirement to ...",
@@ -96,6 +114,15 @@
     "source_domain": "offshore-energy.biz",
     "publication_date": "2026-07-23T23:46:38+00:00",
     "fuzzy_key": "ccs,dutch,feed,goddess,named,north,pre,project,role,roman,sea,takes,worley",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/analysis-co2-removal-firms-pivot-into-adjacent-markets-69644.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/analysis-co2-removal-firms-pivot-into-adjacent-markets-69644.html",
+    "headline": "ANALYSIS: CO2 removal firms pivot into adjacent markets",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-07-25T05:46:01+00:00",
+    "fuzzy_key": "adjacent,analysis,co2,firms,into,markets,pivot,removal",
     "found_via": "google_alerts"
   }
 ]
