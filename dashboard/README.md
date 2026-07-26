@@ -165,6 +165,30 @@ Drop it in `03-GCCSI-publications/`. Monday's watcher runs
 
 Run it by hand any time: `python3 scripts/check_gccsi_publications.py`
 
+### Editing the curated data in Excel
+
+Three datasets are maintained by hand rather than extracted — `funding-programmes.json`,
+`funding-enrichment.json` and `project-locations.json`. They round-trip through CSV:
+
+```sh
+python3 scripts/curation_io.py export        # -> dashboard/data/curation/*.csv
+# edit in Excel
+python3 scripts/curation_io.py import        # validates, then writes the JSON back
+python3 scripts/curation_io.py import --dry-run   # validate only
+```
+
+The JSON stays the source of truth and stays in git; the CSVs are a working format and are
+gitignored. Import replaces **only** the row data, so the `_comment` provenance headers,
+`definitions` blocks and `known_gaps` arrays a spreadsheet cannot hold are preserved — a trip
+through Excel can never silently delete a caveat.
+
+Import is all-or-nothing: if any row fails validation, nothing is written. It checks country names
+against `scripts/_countries.py`, currencies against `fx_rates.json`, enum fields against their
+allowed values, that `awarded_to_date` never exceeds a programme total, that project names match
+`storage-baseline.json` exactly (a mismatched name means the pin is silently never drawn), and that
+coordinates are in range. Number types are preserved on the way through — Excel returns everything
+as a float, which would otherwise rewrite every amount and flatten decimal coordinates.
+
 ### Funding review backlog
 
 `data/funding-enrichment.json` classifies each money figure by funder, basis and period. It is keyed by

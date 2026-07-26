@@ -743,3 +743,139 @@ def test_gccsi_publication_classifier_routes_each_type():
     # The quarterly path must keep warning about the dedup trap.
     _, quarterly_actions = chk.classify("Q3-2026-Report.pdf")
     assert any("dedup" in a.lower() or "duplicate" in a.lower() for a in quarterly_actions)
+
+
+# ------------------------------------------------- curated-data CSV round-trip
+
+CURATED = ("funding-programmes.json", "funding-enrichment.json",
+           "project-locations.json")
+
+
+@pytest.fixture()
+def curation(tmp_path, monkeypatch):
+    """Run curation_io against a throwaway copy of the real data.
+
+    These tests exercise an importer that WRITES, so they must not touch the
+    repo's own files — a test run should never leave the working tree dirty."""
+    import shutil
+    import curation_io as cio
+    data = tmp_path / "data"
+    data.mkdir()
+    for name in CURATED + ("fx_rates.json", "storage-baseline.json"):
+        shutil.copy(os.path.join(cio.DATA_DIR, name), data / name)
+    monkeypatch.setattr(cio, "DATA_DIR", str(data))
+    monkeypatch.setattr(cio, "CSV_DIR", str(tmp_path / "curation"))
+    return cio
+
+
+def _snapshot(cio):
+    return {n: json.load(open(os.path.join(cio.DATA_DIR, n), encoding="utf-8"))
+            for n in CURATED}
+
+
+def test_curation_round_trip_is_lossless(curation):
+    """Export to CSV and import straight back must change nothing. If Excel can
+    silently alter a figure on the way through, the spreadsheet workflow is worse
+    than editing the JSON by hand."""
+    cio = curation
+    before = _snapshot(cio)
+    assert cio.cmd_export() == 0
+    assert cio.cmd_import() == 0
+    assert _snapshot(cio) == before
+
+
+def test_curation_round_trip_preserves_number_types(curation):
+    """Excel hands everything back as a float. Two failure modes to hold shut:
+    an amount widening from 556100000 to 556100000.0, and a longitude of -103.0
+    collapsing to -103, which reads as dropped precision."""
+    cio = curation
+    cio.cmd_export()
+    cio.cmd_import()
+    progs = json.load(open(os.path.join(cio.DATA_DIR, "funding-programmes.json"),
+                           encoding="utf-8"))["programmes"]
+    for p in progs:
+        if p.get("amount") is not None:
+            assert isinstance(p["amount"], int), f"{p['programme']}: amount became a float"
+        if p.get("period_start") is not None:
+            assert isinstance(p["period_start"], int)
+    locs = json.load(open(os.path.join(cio.DATA_DIR, "project-locations.json"),
+                          encoding="utf-8"))["locations"]
+    for name, loc in locs.items():
+        assert isinstance(loc["lat"], float), f"{name}: latitude lost its decimal type"
+        assert isinstance(loc["lon"], float), f"{name}: longitude lost its decimal type"
+
+
+def test_curation_import_preserves_prose_metadata(curation):
+    """The CSVs carry rows only. The provenance headers, definitions and
+    known_gaps must survive a round-trip — losing a caveat silently would be the
+    worst possible outcome of an editing convenience."""
+    cio = curation
+    cio.cmd_export()
+    cio.cmd_import()
+    progs = json.load(open(os.path.join(cio.DATA_DIR, "funding-programmes.json"),
+                           encoding="utf-8"))
+    assert progs["_comment"] and progs["definitions"] and progs["known_gaps"]
+    enr = json.load(open(os.path.join(cio.DATA_DIR, "funding-enrichment.json"),
+                         encoding="utf-8"))
+    assert enr["_comment"] and enr["definitions"]
+
+
+def test_curation_import_rejects_bad_edits(curation, capsys):
+    """A typo must never reach the dashboard. Import is all-or-nothing."""
+    import csv as _csv
+    cio = curation
+    cio.cmd_export()
+    before = _snapshot(cio)
+
+    path = os.path.join(cio.CSV_DIR, "funding-programmes.csv")
+    with open(path, encoding=cio.ENCODING, newline="") as f:
+        rows = list(_csv.DictReader(f))
+    rows[0]["country"] = "Untied Kingdom"      # typo
+    rows[1]["currency"] = "GPB"                # transposed
+    rows[2]["scope"] = "sort-of-ccs"           # invalid enum
+    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
+        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(rows)
+
+    assert cio.cmd_import() == 1, "import accepted invalid data"
+    err = capsys.readouterr().err
+    assert "Untied Kingdom" in err and "GPB" in err and "sort-of-ccs" in err
+    assert _snapshot(cio) == before, "a failed import still wrote to disk"
+
+
+def test_curation_import_catches_awarded_exceeding_total(curation, capsys):
+    """Drawdown above the programme total is the error most likely to go
+    unnoticed by eye, and it would make a country look over-funded."""
+    import csv as _csv
+    cio = curation
+    cio.cmd_export()
+    path = os.path.join(cio.CSV_DIR, "funding-programmes.csv")
+    with open(path, encoding=cio.ENCODING, newline="") as f:
+        rows = list(_csv.DictReader(f))
+    target = next(r for r in rows if r["amount"])
+    target["awarded_to_date"] = str(int(float(target["amount"])) * 10)
+    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
+        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(rows)
+    assert cio.cmd_import() == 1
+    assert "exceeds the programme total" in capsys.readouterr().err
+
+
+def test_curation_import_rejects_unknown_project_name(curation, capsys):
+    """A pin whose name does not match storage-baseline.json is never drawn — it
+    would fail silently rather than loudly."""
+    import csv as _csv
+    cio = curation
+    cio.cmd_export()
+    path = os.path.join(cio.CSV_DIR, "project-locations.csv")
+    with open(path, encoding=cio.ENCODING, newline="") as f:
+        rows = list(_csv.DictReader(f))
+    rows[0]["project"] = "Sleipner Phase 9"
+    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
+        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
+        w.writeheader()
+        w.writerows(rows)
+    assert cio.cmd_import() == 1
+    assert "Sleipner Phase 9" in capsys.readouterr().err
