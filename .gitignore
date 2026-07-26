@@ -7,8 +7,5 @@
 __pycache__/
 *.pyc
 
-# Curated-data spreadsheets are a working format, not the source of truth.
-# Regenerate any time with: python3 scripts/curation_io.py export
-# Committing them would let a stale CSV drift out of step with the JSON it came
-# from, and leave two answers to the question of which one is authoritative.
-dashboard/data/curation/
+# NOTE: dashboard/data/curation/ is deliberately NOT ignored. Those CSVs are the
+# source of truth for the curated datasets, not a derived working copy.

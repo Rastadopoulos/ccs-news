@@ -44,6 +44,7 @@ from _canon import canonical_url, fuzzy_key, jaccard  # noqa: E402
 from _countries import (COUNTRY_ISO, NON_COUNTRY_TOKENS, split_compound,  # noqa: E402
                          CONTINENT_GROUPS, GROUP_ORDER)
 import _worldmap as W  # noqa: E402  (generated — see scripts/gen_worldmap.py)
+import _curation  # noqa: E402  (curated CSV datasets — see scripts/_curation.py)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "dashboard", "data")
@@ -124,44 +125,31 @@ def load_storage_baseline():
 
 
 def load_reference_countries():
-    """Load the country-level GSR2024 facility-count extension (optional — returns
-    None if the extraction pass hasn't produced the file yet; the map's lifecycle
-    pill degrades gracefully rather than crashing)."""
-    path = os.path.join(DATA_DIR, "reference-baseline-countries.json")
-    if not os.path.exists(path):
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    """Per-country GCCSI facility counts, capacity and policy status.
+
+    Source of truth is dashboard/data/curation/gccsi-countries.csv, written by
+    scripts/gen_gccsi_countries.py from the Global Status report. Returns None
+    when absent so the GCCSI map layers render as "no data" rather than the
+    build failing."""
+    return _curation.load_reference_countries()
 
 
 def load_funding_enrichment():
     """Re-extraction overlay for money-carrying records: who funds it, what the
-    figure actually measures, over what period, and whether it duplicates
-    another record. Optional — without it the corpus figures are used raw."""
-    path = os.path.join(DATA_DIR, "funding-enrichment.json")
-    if not os.path.exists(path):
-        return {}
-    with open(path, encoding="utf-8") as f:
-        return json.load(f).get("records", {})
+    figure measures, over what period, and whether it duplicates another
+    record. Empty overlay means corpus figures are used raw."""
+    return _curation.load_funding_enrichment()
 
 
 def load_funding_programmes():
-    """Standing government CCS funding programmes (optional)."""
-    path = os.path.join(DATA_DIR, "funding-programmes.json")
-    if not os.path.exists(path):
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    """Standing government CCS funding programmes."""
+    return _curation.load_funding_programmes()
 
 
 def load_project_locations():
-    """Load indicative map coordinates for the storage-register projects
-    (optional — without it the map simply draws no project pins)."""
-    path = os.path.join(DATA_DIR, "project-locations.json")
-    if not os.path.exists(path):
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    """Indicative map coordinates for the storage-register projects. Without it
+    the map simply draws no project pins."""
+    return _curation.load_project_locations()
 
 
 def _iter_records():

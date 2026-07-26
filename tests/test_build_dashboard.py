@@ -559,15 +559,21 @@ def test_gccsi_country_data_matches_the_reports_own_totals():
     assert by_country["United States"]["operating"] == 19
 
 
-def test_gccsi_country_data_documents_its_known_gaps():
-    """This dataset carries real caveats — nameplate-vs-actual capacity, an
-    unreconciled Norway count, Europe-only policy coverage. They must travel
-    with the data, not live only in someone's memory."""
-    ref = bd.load_reference_countries()
-    gaps = " ".join(ref["known_gaps"]).lower()
-    for topic in ("nameplate", "norway", "europe only"):
-        assert topic in gaps, f"known_gaps no longer mentions {topic!r}"
-    assert ref["validation"]["checks"], "validation block lost its cross-checks"
+def test_curation_notes_document_every_dataset_and_its_caveats():
+    """The CSVs hold rows; NOTES.md holds the part a row cannot — what a column
+    means, where it came from, what is knowingly missing. A figure without its
+    caveat is worse than no figure, so the notes are not optional."""
+    import _curation
+    notes_path = os.path.join(_curation.CSV_DIR, "NOTES.md")
+    assert os.path.exists(notes_path), "curation/NOTES.md is missing"
+    notes = open(notes_path, encoding="utf-8").read().lower()
+    for dataset in ("funding-programmes.csv", "funding-enrichment.csv",
+                    "project-locations.csv", "gccsi-countries.csv"):
+        assert dataset in notes, f"NOTES.md does not cover {dataset}"
+    # The caveats that stop numbers being misread must survive the migration.
+    for topic in ("nameplate", "norway", "europe only", "drawdown",
+                  "blank", "indicative"):
+        assert topic in notes, f"NOTES.md no longer mentions {topic!r}"
 
 
 def test_map_gccsi_country_exposes_all_four_metric_layers():
@@ -745,195 +751,129 @@ def test_gccsi_publication_classifier_routes_each_type():
     assert any("dedup" in a.lower() or "duplicate" in a.lower() for a in quarterly_actions)
 
 
-# ------------------------------------------------- curated-data CSV round-trip
+# ------------------------------------------------ curated CSV source of truth
 
-CURATED = ("funding-programmes.json", "funding-enrichment.json",
-           "project-locations.json")
-
-
-@pytest.fixture()
-def curation(tmp_path, monkeypatch):
-    """Run curation_io against a throwaway copy of the real data.
-
-    These tests exercise an importer that WRITES, so they must not touch the
-    repo's own files — a test run should never leave the working tree dirty."""
-    import shutil
-    import curation_io as cio
-    data = tmp_path / "data"
-    data.mkdir()
-    for name in CURATED + ("fx_rates.json", "storage-baseline.json"):
-        shutil.copy(os.path.join(cio.DATA_DIR, name), data / name)
-    monkeypatch.setattr(cio, "DATA_DIR", str(data))
-    monkeypatch.setattr(cio, "CSV_DIR", str(tmp_path / "curation"))
-    return cio
+CURATED_CSVS = ("funding-programmes.csv", "funding-enrichment.csv",
+                "project-locations.csv", "gccsi-countries.csv")
 
 
-def _snapshot(cio):
-    return {n: json.load(open(os.path.join(cio.DATA_DIR, n), encoding="utf-8"))
-            for n in CURATED}
+def test_curated_csvs_are_the_source_of_truth():
+    """All four exist, and no JSON copy survives to drift out of step with them."""
+    import _curation
+    for name in CURATED_CSVS:
+        path = os.path.join(_curation.CSV_DIR, name)
+        assert os.path.exists(path), f"{name} is missing"
+        assert _curation.read_rows(name), f"{name} is empty"
+    for orphan in ("funding-programmes.json", "funding-enrichment.json",
+                   "project-locations.json", "reference-baseline-countries.json"):
+        assert not os.path.exists(os.path.join(_curation.DATA_DIR, orphan)), (
+            f"{orphan} still exists — two representations of the same data is "
+            f"exactly the drift risk the migration removed")
 
 
-def test_curation_round_trip_is_lossless(curation):
-    """Export to CSV and import straight back must change nothing. If Excel can
-    silently alter a figure on the way through, the spreadsheet workflow is worse
-    than editing the JSON by hand."""
-    cio = curation
-    before = _snapshot(cio)
-    assert cio.cmd_export() == 0
-    assert cio.cmd_import() == 0
-    assert _snapshot(cio) == before
+def test_blank_cells_load_as_none_never_zero():
+    """The dashboard distinguishes 'not reported' from 'zero' everywhere. A blank
+    drawdown rendering as A$0 would say a government has spent nothing when the
+    truth is that nobody publishes the figure."""
+    import _curation
+    assert _curation._coerce("awarded_to_date", "") is None
+    assert _curation._coerce("awarded_to_date", "   ") is None
+    assert _curation._coerce("capacity_mtpa", "") is None
+    assert _curation._coerce("awarded_to_date", "0") == 0     # a real zero survives
 
 
-def test_curation_round_trip_preserves_number_types(curation):
-    """Excel hands everything back as a float. Two failure modes to hold shut:
-    an amount widening from 556100000 to 556100000.0, and a longitude of -103.0
-    collapsing to -103, which reads as dropped precision."""
-    cio = curation
-    cio.cmd_export()
-    cio.cmd_import()
-    progs = json.load(open(os.path.join(cio.DATA_DIR, "funding-programmes.json"),
-                           encoding="utf-8"))["programmes"]
+def test_csv_number_typing_survives_the_spreadsheet():
+    """period_years is 25 for the UK clusters but 2.5 for the Viking grant, so
+    whole numbers must stay int and fractions stay float. Coordinates and
+    capacities stay float even when whole — -103 instead of -103.0 reads as
+    dropped precision."""
+    import _curation
+    assert _curation._coerce("period_years", "25") == 25
+    assert isinstance(_curation._coerce("period_years", "25"), int)
+    assert _curation._coerce("period_years", "2.5") == 2.5
+    assert isinstance(_curation._coerce("lon", "-103"), float)
+    assert isinstance(_curation._coerce("capacity_mtpa", "4"), float)
+    assert _curation._coerce("amount", "21700000000") == 21_700_000_000
+    assert isinstance(_curation._coerce("amount", "21700000000"), int)
+
+
+def test_curated_data_passes_integrity_checks():
+    """The validation the importer used to run at edit time. These files are now
+    maintained programmatically, so the guard belongs in the suite: bad data
+    should fail the build, not reach the dashboard."""
+    import _curation
+    fx, _ = bd.load_fx()
+    problems = []
+
+    progs = _curation.load_funding_programmes()["programmes"]
     for p in progs:
-        if p.get("amount") is not None:
-            assert isinstance(p["amount"], int), f"{p['programme']}: amount became a float"
-        if p.get("period_start") is not None:
-            assert isinstance(p["period_start"], int)
-    locs = json.load(open(os.path.join(cio.DATA_DIR, "project-locations.json"),
-                          encoding="utf-8"))["locations"]
+        where = f"funding-programmes: {p.get('programme')}"
+        if p["country"] not in _countries.COUNTRY_ISO and \
+                p["country"] not in _countries.NON_COUNTRY_TOKENS:
+            problems.append(f"{where}: unknown country {p['country']!r}")
+        if p.get("currency") and p["currency"] not in fx:
+            problems.append(f"{where}: currency {p['currency']!r} has no FX rate")
+        if p.get("scope") not in ("ccs-specific", "ccs-eligible"):
+            problems.append(f"{where}: bad scope {p.get('scope')!r}")
+        if p.get("status") not in ("announced", "committed", "operating"):
+            problems.append(f"{where}: bad status {p.get('status')!r}")
+        if not p.get("source"):
+            problems.append(f"{where}: no source")
+        if p.get("amount") and p.get("awarded_to_date") and \
+                p["awarded_to_date"] > p["amount"]:
+            problems.append(f"{where}: awarded exceeds the programme total")
+
+    enrich = _curation.load_funding_enrichment()
+    VALID_BASIS = {"government-funding", "private-investment", "project-capex",
+                   "supplier-contract", "market-aggregate", "not-ccs-funding",
+                   "cancelled"}
+    for rid, e in enrich.items():
+        if e.get("funder_type") not in ("government", "private", "mixed", "none"):
+            problems.append(f"funding-enrichment {rid}: bad funder_type")
+        if e.get("basis") not in VALID_BASIS:
+            problems.append(f"funding-enrichment {rid}: bad basis {e.get('basis')!r}")
+        if e.get("duplicate_of") and e["duplicate_of"] not in enrich:
+            problems.append(f"funding-enrichment {rid}: duplicate_of points nowhere")
+        if not e.get("note"):
+            problems.append(f"funding-enrichment {rid}: no note — the audit trail")
+
+    locs = _curation.load_project_locations()["locations"]
+    known = {p["name"] for p in bd.load_storage_baseline()["projects"]}
     for name, loc in locs.items():
-        assert isinstance(loc["lat"], float), f"{name}: latitude lost its decimal type"
-        assert isinstance(loc["lon"], float), f"{name}: longitude lost its decimal type"
+        if name not in known:
+            problems.append(f"project-locations: {name!r} is not in storage-baseline "
+                            f"— its pin would never be drawn")
+        if not (-90 <= loc["lat"] <= 90) or not (-180 <= loc["lon"] <= 180):
+            problems.append(f"project-locations: {name} has out-of-range coordinates")
+
+    for row in _curation.load_reference_countries()["countries"]:
+        if row["country"] not in _countries.COUNTRY_ISO:
+            problems.append(f"gccsi-countries: unknown country {row['country']!r}")
+
+    assert not problems, "curated data failed validation:\n  " + "\n  ".join(problems)
 
 
-def test_curation_import_preserves_prose_metadata(curation):
-    """The CSVs carry rows only. The provenance headers, definitions and
-    known_gaps must survive a round-trip — losing a caveat silently would be the
-    worst possible outcome of an editing convenience."""
-    cio = curation
-    cio.cmd_export()
-    cio.cmd_import()
-    progs = json.load(open(os.path.join(cio.DATA_DIR, "funding-programmes.json"),
-                           encoding="utf-8"))
-    assert progs["_comment"] and progs["definitions"] and progs["known_gaps"]
-    enr = json.load(open(os.path.join(cio.DATA_DIR, "funding-enrichment.json"),
-                         encoding="utf-8"))
-    assert enr["_comment"] and enr["definitions"]
+def test_every_storage_project_still_has_a_pin_after_migration():
+    locs = _curation_locations()
+    missing = [p["name"] for p in bd.load_storage_baseline()["projects"]
+               if p["name"] not in locs]
+    assert not missing, f"storage projects with no coordinates: {missing}"
 
 
-def test_curation_import_rejects_bad_edits(curation, capsys):
-    """A typo must never reach the dashboard. Import is all-or-nothing."""
-    import csv as _csv
-    cio = curation
-    cio.cmd_export()
-    before = _snapshot(cio)
-
-    path = os.path.join(cio.CSV_DIR, "funding-programmes.csv")
-    with open(path, encoding=cio.ENCODING, newline="") as f:
-        rows = list(_csv.DictReader(f))
-    rows[0]["country"] = "Untied Kingdom"      # typo
-    rows[1]["currency"] = "GPB"                # transposed
-    rows[2]["scope"] = "sort-of-ccs"           # invalid enum
-    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
-        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
-        w.writeheader()
-        w.writerows(rows)
-
-    assert cio.cmd_import() == 1, "import accepted invalid data"
-    err = capsys.readouterr().err
-    assert "Untied Kingdom" in err and "GPB" in err and "sort-of-ccs" in err
-    assert _snapshot(cio) == before, "a failed import still wrote to disk"
+def _curation_locations():
+    import _curation
+    return _curation.load_project_locations()["locations"]
 
 
-def test_curation_import_catches_awarded_exceeding_total(curation, capsys):
-    """Drawdown above the programme total is the error most likely to go
-    unnoticed by eye, and it would make a country look over-funded."""
-    import csv as _csv
-    cio = curation
-    cio.cmd_export()
-    path = os.path.join(cio.CSV_DIR, "funding-programmes.csv")
-    with open(path, encoding=cio.ENCODING, newline="") as f:
-        rows = list(_csv.DictReader(f))
-    target = next(r for r in rows if r["amount"])
-    target["awarded_to_date"] = str(int(float(target["amount"])) * 10)
-    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
-        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
-        w.writeheader()
-        w.writerows(rows)
-    assert cio.cmd_import() == 1
-    assert "exceeds the programme total" in capsys.readouterr().err
-
-
-def test_curation_import_rejects_unknown_project_name(curation, capsys):
-    """A pin whose name does not match storage-baseline.json is never drawn — it
-    would fail silently rather than loudly."""
-    import csv as _csv
-    cio = curation
-    cio.cmd_export()
-    path = os.path.join(cio.CSV_DIR, "project-locations.csv")
-    with open(path, encoding=cio.ENCODING, newline="") as f:
-        rows = list(_csv.DictReader(f))
-    rows[0]["project"] = "Sleipner Phase 9"
-    with open(path, "w", encoding=cio.ENCODING, newline="") as f:
-        w = _csv.DictWriter(f, fieldnames=rows[0].keys())
-        w.writeheader()
-        w.writerows(rows)
-    assert cio.cmd_import() == 1
-    assert "Sleipner Phase 9" in capsys.readouterr().err
-
-
-def test_repeated_export_is_not_treated_as_an_edit(curation):
-    """Exporting twice in a row must not trip the unimported-edits guard. mtimes
-    can't tell 'you edited this' from 'this was just written', which is why the
-    guard compares content hashes."""
-    cio = curation
-    assert cio.cmd_export() == 0
-    assert cio.cmd_export() == 0
-    assert cio.cmd_export() == 0
-
-
-def test_export_refuses_to_clobber_unimported_edits(curation, capsys):
-    """Edit a CSV, then re-export: the edits would be silently destroyed."""
-    cio = curation
-    cio.cmd_export()
-    path = os.path.join(cio.CSV_DIR, "project-locations.csv")
-    with open(path, "a", encoding=cio.ENCODING) as f:
-        f.write("\n")
-    assert cio.cmd_export() == 1
-    assert "never imported" in capsys.readouterr().err
-    assert cio.cmd_export(force=True) == 0, "--force must still allow it"
-
-
-def test_import_refuses_a_csv_older_than_its_json(curation, capsys):
-    """The dangerous one: the JSON changed after export (a colleague, a routine,
-    a later session), and importing the old CSV would quietly revert it."""
-    cio = curation
-    cio.cmd_export()
-    target = os.path.join(cio.DATA_DIR, "funding-programmes.json")
-    doc = json.load(open(target, encoding="utf-8"))
-    doc["known_gaps"].append("a change made outside the spreadsheet")
-    with open(target, "w", encoding="utf-8") as f:
-        json.dump(doc, f, indent=2, ensure_ascii=False)
-
-    assert cio.cmd_import() == 1
-    assert "silently revert" in capsys.readouterr().err
-    # The out-of-band change must still be there.
-    doc = json.load(open(target, encoding="utf-8"))
-    assert "a change made outside the spreadsheet" in doc["known_gaps"]
-    assert cio.cmd_import(force=True) == 0, "--force must still allow it"
-
-
-def test_import_clears_the_staleness_flag(curation):
-    """After a successful import the CSVs and JSON agree again, so the next
-    export must not report a conflict."""
-    cio = curation
-    cio.cmd_export()
-    assert cio.cmd_import() == 0
-    assert cio.cmd_export() == 0
-
-
-def test_export_state_file_is_not_mistaken_for_data(curation):
-    """The bookkeeping file lives alongside the CSVs; it must not be read as one."""
-    cio = curation
-    cio.cmd_export()
-    assert os.path.exists(os.path.join(cio.CSV_DIR, cio.STATE_FILE))
-    assert cio.cmd_import() == 0
+def test_generated_dataset_is_not_hand_edited(real_build, monkeypatch):
+    """gccsi-countries.csv is produced by gen_gccsi_countries.py. If someone
+    hand-edits it the next regeneration silently discards the edit, so the
+    header must keep exactly the columns the generator writes."""
+    import _curation
+    rows = _curation.read_rows("gccsi-countries.csv")
+    expected = {"country", "operating", "construction", "advanced_development",
+                "early_development", "pipeline", "total_facilities",
+                "cross_border_participation", "capacity_mtpa",
+                "capacity_all_stages_mtpa", "page", "policy_status",
+                "policy_page", "policy_note", "carbon_price", "carbon_price_page"}
+    assert set(rows[0]) == expected
