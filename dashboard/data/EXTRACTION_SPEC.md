@@ -49,6 +49,9 @@ briefing *item*.
 | `co2crc_note` | string\|null | One line: *why it matters* for CO2CRC/Australia. Use the briefing's own "for CO2CRC" cues when present. |
 | `sentiment` | enum\|null | `positive` \| `neutral` \| `negative` — for media/social-licence items; null otherwise. |
 | `tags` | string[] | Inline briefing tags: `opinion`, `paywall`, `NGO`, etc. |
+| `amount_period_years` | number\|null | **How many years the amount spans**, if the text says so ("a five-year scheme" → 5; "£21.7bn over 25 years" → 25). null when unstated. Without this a multi-decade programme total is indistinguishable from this year's budget — the single most damaging ambiguity in CCS funding reporting. |
+| `funder_type` | enum\|null | Who is paying: `government` \| `private` \| `mixed` \| `none`. `none` where the figure is not a funding flow at all. Do not infer from `org_types` — a government can *announce* money a company will spend. |
+| `amount_basis` | enum\|null | What the figure measures: `government-funding` \| `private-investment` \| `project-capex` \| `supplier-contract` \| `market-aggregate` \| `not-ccs-funding`. See notes below. |
 | `extractor_note` | string\|null | Any ambiguity flag for later human review. |
 
 ## Controlled vocabularies
@@ -99,6 +102,32 @@ Use `Global` for multilateral/UN/cross-region items.)
 `cancelled` (cancelled/withdrawn/surrendered/at-risk — NEGATIVE signal) ·
 `na` (no financial dimension — e.g. a court ruling, an opinion piece)
 
+### AMOUNT_BASIS — what a money figure actually measures
+
+Getting this wrong is how non-CCS money ends up in CCS totals. Observed failure modes, all real:
+
+- `government-funding` — a public grant, subsidy, CfD or tax-credit pot. **The default meaning of "funding".**
+- `private-investment` — corporate capex, venture rounds, bank facilities, corporate programmes.
+- `project-capex` — the total build cost of a named project. Real CCS money, but a cost, not an award, and
+  the funder is often unstated. Never add to government funding.
+- `supplier-contract` — payment for goods/services *inside* a project (a £4.5m vessel fabrication order).
+  Already contained in that project's capex; counting it separately double-counts.
+- `market-aggregate` — an economy-wide or sector-wide total (£90bn of UK clean-energy investment; €4bn of
+  ETS cost savings). Not a CCS commitment.
+- `not-ccs-funding` — a lawsuit value, an emissions budget, a merger synergy target (US$60m of "annual
+  synergies" from an operatorship transfer is **not** CCS money).
+
+Set `commitment_status: na` for `market-aggregate` and `not-ccs-funding`.
+
+### DUPLICATE COMMITMENTS
+
+The same commitment often arrives twice — once from the daily press and once from a GCCSI quarterly, worded
+differently, so the automatic headline dedup misses it. Known live examples: the Pathways Alliance network
+(C$16.5bn / C$16bn), India's CCUS scheme (₹20,000 crore / ₹19,700 crore), and Spain's PERTE round where a
+€119m award is a *subset* of a €319m total. When a new figure looks like an existing commitment, check
+org + project + rough magnitude before treating it as new money, and record the link in
+`dashboard/data/funding-enrichment.json` rather than deleting the record.
+
 ### FX_RATES — fixed reference rates to A$ (as of 2026-06-30; ASSUMPTION, editable)
 > These are **fixed** so trendlines reflect real commitment shifts, not FX noise. Values are approximate
 > reference rates and should be reviewed/corrected by Finance. The dashboard states this assumption.
@@ -138,4 +167,20 @@ appears `fresh`. Reuses the repo's existing `scripts/_canon.py` logic.
 ## Output location
 - Backfill (one-time, all history): `dashboard/data/facts-backfill.jsonl`
 - Ongoing (per daily routine): `audit/YYYY-MM-DD-facts.json` (a JSON array of that day's records)
-- The dashboard builder reads BOTH, dedups, and renders.
+- Periodic external reports (e.g. a new GCCSI quarterly update landing in
+  `03-GCCSI-publications/`): `dashboard/data/quarterly/YYYY-QN.jsonl`. Same schema; extract on
+  arrival following the same golden rules. Distinguishing conventions used so far:
+  - `id`: `YYYY-QN#NN` (sequential across the whole report, not per-section).
+  - `briefing_date`: the quarter-end date the report covers through (e.g. `2026-06-30` for Q2 2026)
+    — this is what centralised dedup sorts on, so a report item that duplicates one the daily
+    routine already caught (same/near-identical headline+org, or same URL) correctly loses to the
+    earlier daily-briefing record and is dropped.
+  - `source`: the report's full name, e.g. `"Global CCS Institute — CCS Quarterly Update Q2 2026"`.
+  - `url`: `null` — these reports are PDFs with no per-item hyperlinks; never invent one.
+  - `tags`: include a `"GCCSI-quarterly"` (or equivalent) tag on every record so the batch stays
+    traceable to its source report.
+  - Extract only the report's actual news sections (Projects/Partnerships/Funding/Policy/Tech
+    equivalents); skip the publisher's own institutional activity (advocacy events, its own
+    reports/factsheets, roll-call name lists that duplicate fuller items covered elsewhere in the
+    same report) — these aren't market/policy/tech commitments and don't fit the schema.
+- The dashboard builder reads ALL THREE, dedups, and renders.

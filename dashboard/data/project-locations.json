@@ -1,0 +1,32 @@
+{
+  "_comment": "Indicative map coordinates for the CO2 storage projects listed in storage-baseline.json, so they can be drawn as pins on the dashboard's world map. Keyed by the EXACT project 'name' string in storage-baseline.json — that file stays the authoritative record of what each project IS; this file only says where to draw it. Deliberately kept separate so the signed-off reconciliation dataset is never edited for a presentation concern.",
+  "schema_version": 1,
+  "precision": "INDICATIVE, not surveyed. Coordinates locate the storage site (or, where noted, the capture plant) to roughly the nearest field or town. The dashboard map renders ~40 km per pixel at the equator, so errors of a few tens of km are sub-pixel and do not affect what the map communicates. Do NOT reuse these coordinates for anything requiring real positional accuracy — they are for visual placement only.",
+  "created": "2026-07-26",
+
+  "locations": {
+    "Sleipner":                                  {"lat": 58.37, "lon": 1.91,    "place": "Sleipner field, North Sea"},
+    "Snohvit":                                   {"lat": 71.55, "lon": 21.05,   "place": "Snøhvit field, Barents Sea (capture at Melkøya, Hammerfest)"},
+    "Northern Lights (Phase 1)":                 {"lat": 60.40, "lon": 3.50,    "place": "Aurora storage site, North Sea (terminal at Øygarden)"},
+    "Quest":                                     {"lat": 53.77, "lon": -113.10, "place": "Scotford, Alberta"},
+    "Boundary Dam -> Aquistore (dedicated fraction)": {"lat": 49.09, "lon": -103.00, "place": "Estevan, Saskatchewan"},
+    "Illinois Industrial CCS (ADM Decatur)":     {"lat": 39.84, "lon": -88.95,  "place": "Decatur, Illinois"},
+    "Gorgon":                                    {"lat": -20.80, "lon": 115.40, "place": "Barrow Island, Western Australia"},
+    "Moomba":                                    {"lat": -28.10, "lon": 140.20, "place": "Cooper Basin, South Australia"},
+    "Ravenna (Phase 1)":                         {"lat": 44.42, "lon": 12.28,   "place": "Offshore Ravenna, Adriatic"},
+    "Orca / CarbFix (Iceland dedicated site)":   {"lat": 64.04, "lon": -21.40,  "place": "Hellisheiði, Iceland"},
+    "Santos Basin Pre-Salt":                     {"lat": -24.50, "lon": -42.50, "place": "Santos Basin pre-salt, offshore Brazil"},
+    "Qatar LNG (Ras Laffan)":                    {"lat": 25.90, "lon": 51.55,   "place": "Ras Laffan Industrial City"},
+    "Great Plains Synfuel -> Weyburn-Midale":    {"lat": 49.66, "lon": -103.85, "place": "Weyburn-Midale, Saskatchewan (CO2 piped from Beulah, North Dakota)"},
+    "Century -> Hobbs/Denver Unit":              {"lat": 32.55, "lon": -103.15, "place": "Hobbs / Permian Basin, New Mexico–Texas"},
+    "Shute Creek":                               {"lat": 42.00, "lon": -110.10, "place": "LaBarge, Wyoming"},
+    "Air Products (Port Arthur) -> Gulf Coast/Denbury": {"lat": 29.88, "lon": -93.93, "place": "Port Arthur, Texas"},
+    "Coffeyville -> North Burbank Unit":         {"lat": 36.85, "lon": -96.40,  "place": "North Burbank Unit, Oklahoma (capture at Coffeyville, Kansas)"},
+    "Arkalon -> Farnsworth Unit":                {"lat": 36.40, "lon": -100.95, "place": "Farnsworth Unit, Texas panhandle (capture at Arkalon, Kansas)"},
+    "Core Energy":                               {"lat": 44.70, "lon": -84.70,  "place": "Northern Michigan"},
+    "ACTL (Nutrien + Sturgeon) -> Clive/Enhance": {"lat": 52.40, "lon": -113.30, "place": "Clive field, Alberta (Alberta Carbon Trunk Line)"},
+    "CNPC Jilin":                                {"lat": 44.80, "lon": 124.80,  "place": "Songyuan, Jilin province"},
+    "Sinopec Zhongyuan":                         {"lat": 35.70, "lon": 115.00,  "place": "Puyang, Henan province"},
+    "Karamay Dunhua":                            {"lat": 45.60, "lon": 84.90,   "place": "Karamay, Xinjiang"}
+  }
+}
