@@ -1,0 +1,300 @@
+[
+  {
+    "id": "2026-07-27#01",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Northern Endurance Partnership launches offshore construction at the Port of Hartlepool",
+    "summary": "The Northern Endurance Partnership (BP, Equinor, TotalEnergies), the UK's first CO2 transport-and-storage network, began its offshore construction campaign at PD Ports' Port of Hartlepool, staging ~12,000 concrete-coated linepipe joints (~170,000 t) for a 149 km, 28-inch offshore pipeline delivered with Saipem; the network will be able to store up to 23 Mtpa of CO2, ~20% of UK emissions.",
+    "source": "Energy Voice",
+    "pub_date": "2026-07-24",
+    "url": "https://www.energyvoice.com/renewables-energy-transition/ccs/601241/northern-endurance-partnership-offshore-construction/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Northern Endurance Partnership",
+      "BP",
+      "Equinor",
+      "TotalEnergies",
+      "Saipem",
+      "PD Ports",
+      "Corinth Pipeworks"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 23,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A large shared T&S backbone entering physical offshore build — an execution and local-content template for Australian CO2 transport hubs (CarbonNet).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Underlying construction-launch event dated 23 Jul; recovered on 27 Jul as the 24 Jul (Fri) run produced no items due to an egress/WebFetch block."
+  },
+  {
+    "id": "2026-07-27#02",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "BP's Tangguh Ubadari CCUS moves into offshore installation as first jacket reaches Papua",
+    "summary": "The first of four offshore platform jackets (~994 t) for BP's Tangguh Ubadari (UCC) project completed its ~5,800 km journey to Fakfak, Papua Barat, starting the offshore installation phase of Indonesia's first at-scale CCUS development; the ~US$7bn scheme pairs Ubadari gas development with enhanced gas recovery and CO2 storage, targeting ~15 Mt CO2 sequestration in its initial phase, with 75 km of pipeline to follow.",
+    "source": "Offshore Engineer",
+    "pub_date": "2026-07-24",
+    "url": "https://www.oedigital.com/news/541499-bp-moves-indonesia-ccus-project-into-offshore-installation-phase",
+    "region": "APAC",
+    "countries": [
+      "Indonesia",
+      "United Kingdom"
+    ],
+    "organisations": [
+      "BP",
+      "Saipem"
+    ],
+    "org_types": [
+      "OG-major",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": 7000000000,
+    "currency": "USD",
+    "amount_aud": 10710000000,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": 15,
+    "co2crc_relevance": "high",
+    "co2crc_note": "APAC's flagship at-scale CCUS entering construction; the depleted-reservoir EGR-plus-storage model is directly analogous to Australian gas-field CCS and to cross-border APAC storage demand.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "US$7bn is total project capex (gas + CCUS), not a discrete new CCS commitment; ~15 Mt is initial-phase cumulative sequestration potential rather than annual capacity."
+  },
+  {
+    "id": "2026-07-27#03",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Uniper names Worley preferred EPC contractor for the Connah's Quay low-carbon (CCGT+CCS) power project",
+    "summary": "Uniper selected Worley as preferred EPC contractor for its proposed Connah's Quay Low Carbon Power project in Deeside, Wales — a combined-cycle gas turbine station (~1.1 GW, up to 1.38 GW; ~550 MW phase 1 potentially operational by 2030) fitted with carbon capture (>=95%) and connected to the HyNet CO2 transport-and-storage network. The choice follows a FEED competition; a DCO decision is pending.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-07-23",
+    "url": "https://carbonherald.com/uniper-selects-worley-for-2030-carbon-capture-power-station/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Uniper",
+      "Worley"
+    ],
+    "org_types": [
+      "utility",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Gas-plus-capture power feeding a shared T&S cluster — a dispatchable-power CCS template relevant to Australian gas-fired abatement debates.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Preferred-EPC selection (not yet a signed EPC contract or FID); DCO still pending, hence commitment_status 'announced'. CO2 capacity not stated."
+  },
+  {
+    "id": "2026-07-27#04",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Evero moves to retrofit its Ince Bio Power plant with carbon capture, joining HyNet (UK BECCS)",
+    "summary": "Evero Energy is progressing plans to retrofit its Ince Bio Power plant at Protos, Cheshire, with CO2 capture — a BECCS project removing ~217,000 t CO2/yr while processing ~170,000 t of waste wood — using Mitsubishi Heavy Industries capture technology and connecting to HyNet via the planned ~980 kt/yr Protos Spur pipeline. The planning application is before Cheshire West and Chester Council; operation is targeted around the end of the decade.",
+    "source": "gasworld",
+    "pub_date": "2026-07-24",
+    "url": "https://www.gasworld.com/story/evero-bioenergy-plant-moves-to-join-hynet-carbon-capture-network/2255213.article/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Japan"
+    ],
+    "organisations": [
+      "Evero Energy",
+      "Mitsubishi Heavy Industries",
+      "Peel NRE"
+    ],
+    "org_types": [
+      "developer",
+      "other",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "BECCS",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 0.217,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A concrete BECCS negative-emissions project entering planning — relevant to Australian interest in engineered removals and biomass-CCS credit pathways.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Planning-stage milestone (application submitted), not an FID; 217 kt/yr converted to 0.217 Mtpa."
+  },
+  {
+    "id": "2026-07-27#05",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Petrogas picks Worley for pre-FEED of the Abeona CO2 storage project, Dutch North Sea",
+    "summary": "Petrogas E&P Netherlands appointed Worley to deliver the pre-FEED study for the Abeona CCS project — a CO2 transport-and-storage scheme for hard-to-abate emitters in the Netherlands' North Sea Canal Area that would reuse an existing pipeline from the Port of Amsterdam to inject CO2 into depleted offshore reservoirs. Worley will refine the development concept and cost estimates ahead of FEED.",
+    "source": "Offshore Energy",
+    "pub_date": "2026-07-23",
+    "url": "https://www.offshore-energy.biz/worley-takes-pre-feed-role-on-roman-goddess-named-dutch-north-sea-ccs-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "Netherlands"
+    ],
+    "organisations": [
+      "Petrogas E&P Netherlands",
+      "Worley"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Reuse of existing offshore infrastructure for CO2 storage — a cost-reduction pathway of interest to Australian depleted-field storage economics.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Early pre-FEED contract award; capacity and cost not yet defined."
+  },
+  {
+    "id": "2026-07-27#06",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "CDR developers pivot into adjacent markets as the carbon-removal sector consolidates",
+    "summary": "A Quantum Commodity Intelligence analysis reports carbon-dioxide-removal developers pivoting toward adjacent, more stable markets (BECCS, e-fuels) and into acquisition talks as the sector shifts from broad enthusiasm to a selective, execution-driven phase; roughly US$1.06bn of disclosed capital was committed to CDR between June 2025 and March 2026, with supply diversifying away from biomass-based pathways.",
+    "source": "Quantum Commodity Intelligence",
+    "pub_date": "2026-07-25",
+    "url": "https://www.qcintel.com/carbon/article/analysis-co2-removal-firms-pivot-into-adjacent-markets-69644.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "M&A",
+    "value_chain": [
+      "DAC",
+      "BECCS"
+    ],
+    "amount": 1060000000,
+    "currency": "USD",
+    "amount_aud": 1621800000,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "CDR market maturation and consolidation reshape offtake pricing and counterparty risk for any Australian removals or BECCS credit strategy.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "mixed",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "Sector-wide analysis, not a single-org deal; US$1.06bn is a market-aggregate disclosed-capital figure (Jun 2025-Mar 2026), hence commitment_status 'na'. instrument_type 'M&A' chosen as closest fit for the consolidation/acquisition theme."
+  },
+  {
+    "id": "2026-07-27#07",
+    "briefing_date": "2026-07-27",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "OilPrice: 'The Carbon Capture Boom Is Starting to Crack'",
+    "summary": "An OilPrice.com opinion piece by Felicity Bradstock argues the CCS boom is faltering — many projects have undershot capture rates and run over cost — fuelling scepticism that CCS will play more than a limited decarbonisation role and that capital should shift toward permanent low-carbon alternatives.",
+    "source": "OilPrice.com",
+    "pub_date": "2026-07-25",
+    "url": "https://oilprice.com/Energy/Energy-General/The-Carbon-Capture-Boom-Is-Starting-to-Crack.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "OilPrice.com"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Sceptic narrative in an energy-industry outlet — a social-licence signal CO2CRC should track when framing performance and cost messaging for CCS.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  }
+]
