@@ -877,3 +877,38 @@ def test_generated_dataset_is_not_hand_edited(real_build, monkeypatch):
                 "capacity_all_stages_mtpa", "page", "policy_status",
                 "policy_page", "policy_note", "carbon_price", "carbon_price_page"}
     assert set(rows[0]) == expected
+
+
+def test_notes_are_not_left_behind_by_a_data_change():
+    """Backstop for the standing rule that curated data and its caveats ship
+    together. Checks the last commit that touched a curation CSV also touched
+    NOTES.md — catching the case where a figure's meaning changed but the note
+    explaining it did not.
+
+    A report, not a hard failure, because plenty of edits are self-describing:
+    correcting a typo or adding a row under an already-documented convention
+    needs no note. A test that cried wolf on every commit would train people to
+    ignore it. It reports; the reader judges."""
+    import subprocess
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(bd.__file__)))
+
+    def last_touch(pathspec):
+        out = subprocess.run(
+            ["git", "-C", repo, "log", "-1", "--format=%H", "--", pathspec],
+            capture_output=True, text=True).stdout.strip()
+        return out or None
+
+    csv_commit = last_touch("dashboard/data/curation/*.csv")
+    notes_commit = last_touch("dashboard/data/curation/NOTES.md")
+    if not csv_commit or not notes_commit:
+        pytest.skip("no git history for the curated data yet")
+
+    if csv_commit != notes_commit:
+        subj = subprocess.run(
+            ["git", "-C", repo, "log", "-1", "--format=%s", csv_commit],
+            capture_output=True, text=True).stdout.strip()
+        print(f"\n  NOTE: the last curated-data change ({csv_commit[:7]} {subj!r}) "
+              f"did not touch NOTES.md.\n"
+              f"  If that change altered what a figure means — its basis, period, "
+              f"scope or source — the note explaining it is now missing.\n"
+              f"  See dashboard/data/curation/NOTES.md")
