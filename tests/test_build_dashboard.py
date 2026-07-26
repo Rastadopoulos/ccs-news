@@ -879,3 +879,61 @@ def test_curation_import_rejects_unknown_project_name(curation, capsys):
         w.writerows(rows)
     assert cio.cmd_import() == 1
     assert "Sleipner Phase 9" in capsys.readouterr().err
+
+
+def test_repeated_export_is_not_treated_as_an_edit(curation):
+    """Exporting twice in a row must not trip the unimported-edits guard. mtimes
+    can't tell 'you edited this' from 'this was just written', which is why the
+    guard compares content hashes."""
+    cio = curation
+    assert cio.cmd_export() == 0
+    assert cio.cmd_export() == 0
+    assert cio.cmd_export() == 0
+
+
+def test_export_refuses_to_clobber_unimported_edits(curation, capsys):
+    """Edit a CSV, then re-export: the edits would be silently destroyed."""
+    cio = curation
+    cio.cmd_export()
+    path = os.path.join(cio.CSV_DIR, "project-locations.csv")
+    with open(path, "a", encoding=cio.ENCODING) as f:
+        f.write("\n")
+    assert cio.cmd_export() == 1
+    assert "never imported" in capsys.readouterr().err
+    assert cio.cmd_export(force=True) == 0, "--force must still allow it"
+
+
+def test_import_refuses_a_csv_older_than_its_json(curation, capsys):
+    """The dangerous one: the JSON changed after export (a colleague, a routine,
+    a later session), and importing the old CSV would quietly revert it."""
+    cio = curation
+    cio.cmd_export()
+    target = os.path.join(cio.DATA_DIR, "funding-programmes.json")
+    doc = json.load(open(target, encoding="utf-8"))
+    doc["known_gaps"].append("a change made outside the spreadsheet")
+    with open(target, "w", encoding="utf-8") as f:
+        json.dump(doc, f, indent=2, ensure_ascii=False)
+
+    assert cio.cmd_import() == 1
+    assert "silently revert" in capsys.readouterr().err
+    # The out-of-band change must still be there.
+    doc = json.load(open(target, encoding="utf-8"))
+    assert "a change made outside the spreadsheet" in doc["known_gaps"]
+    assert cio.cmd_import(force=True) == 0, "--force must still allow it"
+
+
+def test_import_clears_the_staleness_flag(curation):
+    """After a successful import the CSVs and JSON agree again, so the next
+    export must not report a conflict."""
+    cio = curation
+    cio.cmd_export()
+    assert cio.cmd_import() == 0
+    assert cio.cmd_export() == 0
+
+
+def test_export_state_file_is_not_mistaken_for_data(curation):
+    """The bookkeeping file lives alongside the CSVs; it must not be read as one."""
+    cio = curation
+    cio.cmd_export()
+    assert os.path.exists(os.path.join(cio.CSV_DIR, cio.STATE_FILE))
+    assert cio.cmd_import() == 0

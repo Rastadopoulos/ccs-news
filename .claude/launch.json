@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "_comment": "This project has no application server — build_dashboard.py is a one-shot generator that writes a single self-contained dashboard/index.html. The entry below is a plain static file server over that output, which is the closest thing to a dev server here and renders the page properly (a file:// URL opens as a static snapshot instead). Each start rebuilds first, so the preview can never show a stale build.",
+  "configurations": [
+    {
+      "name": "CCS Dashboard",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "python3 scripts/build_dashboard.py && exec python3 -m http.server 8765 --bind 127.0.0.1 --directory dashboard"
+      ],
+      "port": 8765
+    }
+  ]
+}

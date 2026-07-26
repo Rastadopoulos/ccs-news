@@ -171,11 +171,28 @@ Three datasets are maintained by hand rather than extracted — `funding-program
 `funding-enrichment.json` and `project-locations.json`. They round-trip through CSV:
 
 ```sh
-python3 scripts/curation_io.py export        # -> dashboard/data/curation/*.csv
-# edit in Excel
+python3 scripts/curation_io.py edit          # regenerate the CSVs and open them
+# edit in Excel, save as CSV
 python3 scripts/curation_io.py import        # validates, then writes the JSON back
-python3 scripts/curation_io.py import --dry-run   # validate only
 ```
+
+`edit` is the entry point: it always regenerates first, so you can never start from a stale copy.
+`export` and `import --dry-run` are available if you want the steps separately.
+
+**The CSVs are not regenerated automatically**, and deliberately so. A background refresh on a hook
+or a timer cannot tell a stale copy apart from one you are halfway through editing, so it would
+eventually overwrite live work. Instead the tool refuses in both directions, because both failures
+are silent and both lose data:
+
+| Situation | What would happen | What the tool does |
+|---|---|---|
+| JSON changed after you exported | Importing reverts that change | Import refuses, names the file |
+| You edited a CSV but never imported | Re-exporting destroys the edits | Export refuses, names the file |
+
+Both can be overridden with `--force` when you mean it. Detection uses content hashes recorded at
+export time in `curation/.export-state.json`, not timestamps — after any export the CSVs are newer
+than the JSON simply because they were written second, so mtimes cannot distinguish "you edited
+this" from "this was just written".
 
 The JSON stays the source of truth and stays in git; the CSVs are a working format and are
 gitignored. Import replaces **only** the row data, so the `_comment` provenance headers,

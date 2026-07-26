@@ -11,10 +11,15 @@ They are small, judgement-heavy, and they are the files most likely to need
 editing when a new commitment is announced. Editing them as raw JSON is fiddly
 and easy to break; editing them as a spreadsheet is not.
 
-    python3 scripts/curation_io.py export      # JSON -> dashboard/data/curation/*.csv
-    ... edit the CSVs in Excel ...
+    python3 scripts/curation_io.py edit        # export fresh CSVs and open them
+    ... edit in Excel ...
     python3 scripts/curation_io.py import      # CSV -> JSON, with validation
+
+    python3 scripts/curation_io.py export      # JSON -> CSV only
     python3 scripts/curation_io.py import --dry-run   # validate only, write nothing
+
+`edit` is the intended entry point: it always regenerates before opening, so there
+is no way to start editing a stale copy.
 
 WHAT THIS DELIBERATELY DOES NOT DO: it does not make the CSVs the source of
 truth. The JSON stays canonical, stays in git, and keeps the parts a spreadsheet
@@ -24,12 +29,24 @@ untouched, so a round-trip through Excel can never quietly delete a caveat.
 
 Import refuses to write anything if any row fails validation, so a typo in a
 country name or a currency code cannot reach the dashboard.
+
+STALENESS IS GUARDED IN BOTH DIRECTIONS, because both are silent and both lose
+work:
+
+  * Importing a CSV older than its JSON would revert whatever changed in between.
+  * Exporting over a CSV newer than its JSON would destroy edits not yet imported.
+
+Each is refused with an explanation and can be overridden with --force when you
+genuinely mean it. This is why the CSVs are not regenerated automatically on a
+hook or a timer: a background refresh cannot tell the difference between a stale
+copy and one you are halfway through editing.
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import os
 import sys
@@ -93,6 +110,67 @@ def _num(value, field, row_id, errors, keep_float=False):
     if keep_float:
         return n
     return int(n) if n == int(n) else n
+
+
+PAIRS = [("funding-programmes.csv", "funding-programmes.json"),
+         ("funding-enrichment.csv", "funding-enrichment.json"),
+         ("project-locations.csv", "project-locations.json")]
+
+# Written by export, read by both commands. Content hashes rather than mtimes:
+# after any normal export the CSVs are newer than the JSON simply because they
+# were written second, so timestamps cannot tell "you edited this" apart from
+# "this was just exported". Hashes can.
+STATE_FILE = ".export-state.json"
+
+
+def _sha(path):
+    if not os.path.exists(path):
+        return None
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        h.update(f.read())
+    return h.hexdigest()
+
+
+def _read_state():
+    path = os.path.join(CSV_DIR, STATE_FILE)
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def _write_state():
+    state = {"json": {j: _sha(os.path.join(DATA_DIR, j)) for _, j in PAIRS},
+             "csv": {c: _sha(os.path.join(CSV_DIR, c)) for c, _ in PAIRS}}
+    with open(os.path.join(CSV_DIR, STATE_FILE), "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+
+
+def _json_changed_since_export():
+    """JSON files edited after the CSVs were exported. Importing would revert them."""
+    state = _read_state().get("json", {})
+    out = []
+    for csv_name, json_name in PAIRS:
+        recorded = state.get(json_name)
+        if recorded and _sha(os.path.join(DATA_DIR, json_name)) != recorded:
+            out.append((csv_name, json_name))
+    return out
+
+
+def _csv_edited_since_export():
+    """CSVs edited but never imported. Exporting would overwrite the edits."""
+    state = _read_state().get("csv", {})
+    out = []
+    for csv_name, json_name in PAIRS:
+        recorded = state.get(csv_name)
+        path = os.path.join(CSV_DIR, csv_name)
+        if recorded and os.path.exists(path) and _sha(path) != recorded:
+            out.append((csv_name, json_name))
+    return out
 
 
 def _write_csv(path, fieldnames, rows):
@@ -286,13 +364,24 @@ def import_locations(errors):
 
 # --------------------------------------------------------------------------- commands
 
-def cmd_export():
+def cmd_export(force=False):
+    unimported = _csv_edited_since_export()
+    if unimported and not force:
+        print("Refusing to export — these CSVs have edits that were never imported,\n"
+              "and overwriting them would throw that work away:\n", file=sys.stderr)
+        for csv_name, _ in unimported:
+            print(f"  · {csv_name} has changed since it was exported", file=sys.stderr)
+        print("\nEither import them first:  python3 scripts/curation_io.py import\n"
+              "or discard them:           python3 scripts/curation_io.py export --force",
+              file=sys.stderr)
+        return 1
     os.makedirs(CSV_DIR, exist_ok=True)
     counts = {
         "funding-programmes.csv": export_programmes(),
         "funding-enrichment.csv": export_enrichment(),
         "project-locations.csv": export_locations(),
     }
+    _write_state()
     print(f"Exported to {CSV_DIR}")
     for name, n in counts.items():
         print(f"  {name:28} {n} rows")
@@ -302,9 +391,20 @@ def cmd_export():
     return 0
 
 
-def cmd_import(dry_run=False):
+def cmd_import(dry_run=False, force=False):
     if not os.path.isdir(CSV_DIR):
         sys.exit(f"No CSVs found at {CSV_DIR}. Run `export` first.")
+    stale = _json_changed_since_export()
+    if stale and not force:
+        print("Refusing to import — the JSON has changed since these CSVs were\n"
+              "exported, so importing them would silently revert that change:\n",
+              file=sys.stderr)
+        for csv_name, json_name in stale:
+            print(f"  · {json_name} changed after {csv_name} was exported", file=sys.stderr)
+        print("\nRe-export and redo the edit:  python3 scripts/curation_io.py edit\n"
+              "or override if you are sure:   python3 scripts/curation_io.py import --force",
+              file=sys.stderr)
+        return 1
     errors = []
     currencies = _fx_currencies()
 
@@ -341,18 +441,44 @@ def cmd_import(dry_run=False):
         print("Validation passed. Written:")
         for path, n in written:
             print(f"  {os.path.relpath(path, ROOT):45} {n} rows")
+        if os.path.isdir(CSV_DIR):
+            _write_state()   # the CSVs and JSON now agree again
         print("\nRebuild to see the effect: python3 scripts/build_dashboard.py")
+    return 0
+
+
+def cmd_edit():
+    """Always regenerate, then open. The safe path should also be the easy one."""
+    rc = cmd_export()
+    if rc:
+        return rc
+    opener = {"darwin": "open", "win32": "explorer"}.get(sys.platform, "xdg-open")
+    try:
+        import subprocess
+        subprocess.run([opener, CSV_DIR], check=False)
+        print(f"Opened {CSV_DIR}")
+    except Exception:
+        print(f"Open them from: {CSV_DIR}")
     return 0
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("export", help="write the curated JSON out as CSV")
+    sub.add_parser("edit", help="export fresh CSVs and open them (start here)")
+    exp = sub.add_parser("export", help="write the curated JSON out as CSV")
+    exp.add_argument("--force", action="store_true",
+                     help="overwrite CSVs that have unimported edits")
     imp = sub.add_parser("import", help="read the CSVs back, with validation")
     imp.add_argument("--dry-run", action="store_true", help="validate only")
+    imp.add_argument("--force", action="store_true",
+                     help="import even if the JSON changed after the export")
     args = ap.parse_args()
-    return cmd_export() if args.cmd == "export" else cmd_import(args.dry_run)
+    if args.cmd == "edit":
+        return cmd_edit()
+    if args.cmd == "export":
+        return cmd_export(args.force)
+    return cmd_import(args.dry_run, args.force)
 
 
 if __name__ == "__main__":
