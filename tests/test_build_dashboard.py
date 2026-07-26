@@ -912,3 +912,31 @@ def test_notes_are_not_left_behind_by_a_data_change():
               f"  If that change altered what a figure means — its basis, period, "
               f"scope or source — the note explaining it is now missing.\n"
               f"  See dashboard/data/curation/NOTES.md")
+
+
+def test_page_is_one_consistent_width(real_build, monkeypatch):
+    """Every block on the page runs to the same width — the map's, which is the
+    widest thing on it. The map used to break out of a narrower column with a
+    negative-margin trick, which left the rest of the page visibly narrower than
+    the hero."""
+    out_html, _ = real_build
+    monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
+    bd.main()
+    page = out_html.read_text()
+
+    assert ".wrap{max-width:1180px" in page, "the page column is not the map's width"
+    # The breakout is gone; the map card is now an ordinary card.
+    assert "transform:translateX(-50%)" not in page
+    assert ".mapcard{padding:20px}" in page
+    # overflow-x:hidden only existed to contain that breakout, and it masks real
+    # overflow bugs rather than fixing them.
+    assert "overflow-x:hidden" not in page
+
+    # Bar charts scale with their container, text included. Without a cap a 12px
+    # label renders at ~26px in a 1140px card.
+    assert ".chart{display:block;margin:0 auto;max-width:820px}" in page
+    assert ".worldmap{max-width:none}" in page, "the map must still fill its column"
+
+    # A wrapped flex row stretches its last items; the two leftover KPIs each
+    # ballooned to half the page before this became an auto-fill grid.
+    assert "grid-template-columns:repeat(auto-fill,minmax(200px,1fr))" in page
