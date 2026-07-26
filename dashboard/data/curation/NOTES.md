@@ -93,6 +93,10 @@ while the record itself stays, because the news did happen.
   the Pathways Alliance network (C$16.5bn / C$16bn), India's CCUS scheme (₹20,000cr / ₹19,700cr), and
   Spain's PERTE round where a €119m award is a *subset* of a €319m total.
 - **Periods are only recorded where the source states one**, which is the minority of records.
+- **`project-capex` sometimes covers more than the CCS.** BP's Tangguh Ubadari is carried at its
+  US$7bn whole-scheme cost, but that pairs a gas development with enhanced gas recovery and CO₂
+  storage — the CCS-specific share is not broken out and the figure therefore overstates it. Where a
+  capex figure bundles CCS into a larger development, say so in the row's note.
 
 ---
 
