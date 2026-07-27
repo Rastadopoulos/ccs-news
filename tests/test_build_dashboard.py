@@ -284,6 +284,39 @@ def test_real_build_storage_rate_kpis_match_independent_computation(real_build, 
         assert f'{rate_sum:.1f}' in page, f"{cls} measured-actual rate {rate_sum:.1f} not found in page"
 
 
+def test_real_build_flags_stale_dedicated_project_figures(real_build, monkeypatch):
+    """Regression for 2026-07-28: Gorgon and Moomba's operator-reported figures
+    sat a year stale until a human happened to notice by hand during a July
+    2026 rebuild. Any dedicated-project figure a year or more behind the build
+    year must be surfaced on the dashboard so this is caught automatically
+    next time, rather than depending on someone noticing by chance."""
+    out_html, _ = real_build
+    build_date = "2026-07-28"
+    monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
+    monkeypatch.setenv("BUILD_DATE", build_date)
+    bd.main()
+    page = out_html.read_text()
+
+    sref = bd.load_storage_baseline()
+    build_year = int(build_date[:4])
+    dedicated = [p for p in sref["projects"] if p.get("class") == "dedicated"]
+    expected_stale = {p["name"] for p in dedicated
+                       if isinstance(p.get("reported_asof"), int)
+                       and build_year - p["reported_asof"] >= 1}
+    assert expected_stale, "fixture data has no stale dedicated project to exercise this test"
+    assert "Gorgon" not in expected_stale and "Moomba" not in expected_stale, (
+        "Gorgon/Moomba were corrected to reported_asof 2026 on 2026-07-28 — "
+        "if this fails, check whether reported_asof regressed")
+
+    i = page.find("Figures due for a refresh check")
+    assert i != -1, "staleness card did not render even though stale projects exist"
+    card = page[i:i + 2000]
+    for name in expected_stale:
+        assert f"{name} —" in card, f"{name} is stale but missing from the refresh-check card"
+    assert "Gorgon —" not in card
+    assert "Moomba —" not in card
+
+
 def test_real_data_has_no_unknown_currencies(real_build, monkeypatch):
     """Every currency appearing in the live fact records must have an FX rate,
     otherwise its money silently drops out of the dashboard totals."""

@@ -1652,6 +1652,29 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
           'today — a more recent news mention elsewhere on this dashboard reporting a higher tonnage for the '
           'same project is showing real growth since that snapshot, not a contradiction.</p>')
         A(f'<p class="fnote">{esc(sref.get("caveat", ""))}</p></div>')
+
+        # Staleness check — dedicated-class projects feed the headline "CO2
+        # stored to date" KPIs and are actively injecting today, so their
+        # reported figures are worth periodically re-verifying against the
+        # operator's current public reporting. This is the mechanism that
+        # would have caught Gorgon/Moomba's figures being a year stale before
+        # a human happened to notice by hand (2026-07-28).
+        build_year_s = str(build_dt)[:4]
+        build_year = int(build_year_s) if build_year_s.isdigit() else None
+        stale_projects = [
+            (p["name"], p["reported_asof"]) for p in projs
+            if p.get("class") == "dedicated" and isinstance(p.get("reported_asof"), int)
+            and build_year is not None and build_year - p["reported_asof"] >= 1
+        ]
+        if stale_projects:
+            A('<div class="card warn"><h3>Figures due for a refresh check</h3>')
+            A('<p class="fnote">These dedicated-project reported figures are a year or more old — worth '
+              'checking against the operator’s current public reporting before relying on them for a board '
+              'decision:</p>')
+            A('<ul>')
+            for name, asof in sorted(stale_projects, key=lambda x: x[1]):
+                A(f'<li>{esc(name)} — reported figure as of {asof}</li>')
+            A('</ul></div>')
         # Sources + taxonomy + known gaps
         src = sref.get("sources", {})
         gccsi_url = src.get("gccsi_dedicated", {}).get("url", "")
