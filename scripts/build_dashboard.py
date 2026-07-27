@@ -1161,6 +1161,17 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
 
     # KPI strip
     A('<div class="kpis">')
+    if sref:
+        _bw_steps = sref.get("bridge_waterfall", {}).get("steps", [])
+        _dedicated_step = next((s for s in _bw_steps if s.get("basis") == "derived actual"), None)
+        _eor_step = next((s for s in _bw_steps if "EOR projects" in (s.get("label") or "")), None)
+        _idd = sref.get("series", {}).get("imperial_dedicated_derived", {})
+        _dedicated_mt = _dedicated_step.get("mt") if _dedicated_step else _idd.get("cumulative_mt_approx", "—")
+        _eor_mt = abs(_eor_step["mt"]) if _eor_step and isinstance(_eor_step.get("mt"), (int, float)) else "—"
+        A(kpi("CO₂ stored to date — dedicated", f"{_dedicated_mt} Mt",
+              "measured actual, delivery-factor-adjusted to ~Jun-2025", ("#v2c", "Reconciliation · View 2c")))
+        A(kpi("CO₂ stored to date — via EOR", f"~{_eor_mt} Mt",
+              "measured actual, ~2020 vintage — most recent reconciled figure", ("#v2c", "Reconciliation · View 2c")))
     prog_total = sum(d["funding"].get("total_aud", 0) for d in map_data.values())
     prog_awarded = sum(d["funding"].get("awarded_aud", 0) for d in map_data.values())
     prog_countries = sum(1 for d in map_data.values() if d["funding"].get("total_aud"))
@@ -1179,17 +1190,6 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
           "million tonnes a year, already operating or committed", ("#v8", "Capacity · View 8")))
     A(kpi("Capture capacity — planned", f"{pipeline_cap:.1f} Mtpa",
           "announced or funded, not yet committed", ("#v8", "Capacity · View 8")))
-    if sref:
-        _bw_steps = sref.get("bridge_waterfall", {}).get("steps", [])
-        _dedicated_step = next((s for s in _bw_steps if s.get("basis") == "derived actual"), None)
-        _eor_step = next((s for s in _bw_steps if "EOR projects" in (s.get("label") or "")), None)
-        _idd = sref.get("series", {}).get("imperial_dedicated_derived", {})
-        _dedicated_mt = _dedicated_step.get("mt") if _dedicated_step else _idd.get("cumulative_mt_approx", "—")
-        _eor_mt = abs(_eor_step["mt"]) if _eor_step and isinstance(_eor_step.get("mt"), (int, float)) else "—"
-        A(kpi("CO₂ stored to date — dedicated", f"{_dedicated_mt} Mt",
-              "measured actual, delivery-factor-adjusted to ~Jun-2025", ("#v2c", "Reconciliation · View 2c")))
-        A(kpi("CO₂ stored to date — via EOR", f"~{_eor_mt} Mt",
-              "measured actual, ~2020 vintage — most recent reconciled figure", ("#v2c", "Reconciliation · View 2c")))
     A(kpi("Tracked developments", str(n_items),
           "news events in this window, not a project count", ("#v-all", "All developments · View 10")))
     A(kpi("High relevance to CO2CRC", str(len(high_rel)),
