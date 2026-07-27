@@ -187,6 +187,25 @@ def test_weekly_audit_dispatches_email_workflows():
     assert "gh workflow run email-dashboard.yml" in run_text
 
 
+def test_weekly_audit_gates_on_tests_before_rebuild_and_commit():
+    """Regression for 2026-07-28: weekly-audit used to rebuild, commit and
+    dispatch the board email regardless of test status — a failing
+    data-integrity test (e.g. the double-count or unreviewed-money guards)
+    would not have blocked publication. The test step must exist and must
+    run before the rebuild/commit steps, not just exist somewhere."""
+    steps = _job_steps(_load("weekly-audit.yml"))
+    names = [s.get("name", "") for s in steps]
+    test_idx = next(i for i, n in enumerate(names) if "test" in n.lower())
+    rebuild_idx = next(i for i, n in enumerate(names) if "rebuild" in n.lower())
+    commit_idx = next(i for i, n in enumerate(names) if "commit" in n.lower())
+    assert test_idx < rebuild_idx < commit_idx
+
+    run_text = _all_run_text(_load("weekly-audit.yml"))
+    assert "pytest tests/" in run_text
+    install_text = "\n".join(s.get("run", "") for s in steps if "install" in s.get("name", "").lower())
+    assert "pytest" in install_text, "pytest must actually be installed before it's run"
+
+
 def test_reconcile_workflow_delivers_routine_branch_pushes():
     """Regression for 2026-07-17/20/21: the scheduled routine runs on an isolated
     claude/* working branch, so its `git push origin main` lands on that branch,

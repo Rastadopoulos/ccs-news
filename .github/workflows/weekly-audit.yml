@@ -30,7 +30,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install PyYAML
+          pip install PyYAML feedparser pytest
+
+      - name: Run test suite
+        # Gate the rebuild on the test suite passing — a failing data-integrity
+        # test (e.g. the double-count or unreviewed-money guards) must block
+        # the weekly commit/email, not just be discoverable after the fact by
+        # someone running pytest locally.
+        run: python3 -m pytest tests/ -q
 
       - name: Run weekly audit
         env:
