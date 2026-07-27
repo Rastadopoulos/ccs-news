@@ -161,7 +161,9 @@ def _iter_records():
     sources += sorted(glob.glob(os.path.join(RAW_DIR, "*.jsonl")))
     # Periodic external reports (e.g. GCCSI quarterly updates) — same schema, extracted
     # on arrival rather than daily. Centrally deduped against the daily corpus like everything else.
-    sources += sorted(glob.glob(os.path.join(QUARTERLY_DIR, "*.jsonl")))
+    quarterly_sources = sorted(glob.glob(os.path.join(QUARTERLY_DIR, "*.jsonl")))
+    sources += quarterly_sources
+    quarterly_set = set(quarterly_sources)
     for path in sources:
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -169,10 +171,18 @@ def _iter_records():
                 if not line:
                     continue
                 try:
-                    yield json.loads(line)
+                    rec = json.loads(line)
                 except json.JSONDecodeError as e:
                     print(f"  ! skipping bad JSONL line in {os.path.basename(path)}: {e}",
                           file=sys.stderr)
+                    continue
+                if path in quarterly_set:
+                    # All of a quarterly report's items share one ingestion-date
+                    # stamp (the date the file landed), not a real per-item news
+                    # date — a week-by-week trend chart would show a false spike
+                    # in whatever week the report happened to be processed.
+                    rec["_periodic_report"] = True
+                yield rec
     # Ongoing per-day emissions (JSON arrays).
     for path in sorted(glob.glob(os.path.join(AUDIT_DIR, "*-facts.json"))):
         with open(path, encoding="utf-8") as f:
@@ -250,9 +260,15 @@ def load_records(fx):
         if e.get("duplicate_of"):
             # The news item is real and stays in the corpus; its money is not
             # new money, so the amount is removed rather than the record.
+            # Capacity is excluded the same way and for the same reason — a
+            # restated project's Mtpa is not new capacity either, and until
+            # 2026-07-28 this side of the same known duplicate (e.g. the
+            # Pathways Alliance pair) was still being summed into pipeline_cap.
             rec["_dup_of"] = e["duplicate_of"]
             rec["_amount_aud_excluded"] = rec.get("amount_aud")
             rec["amount_aud"] = None
+            rec["_capacity_mtpa_excluded"] = rec.get("capacity_mtpa")
+            rec["capacity_mtpa"] = None
             dup_dropped += 1
     if dup_dropped:
         print(f"  · {dup_dropped} duplicate money figures excluded from totals "
@@ -1016,16 +1032,21 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
     media = [r for r in fresh if r.get("section") == "media" or r.get("sentiment")]
     sent_cnt = Counter(r.get("sentiment") for r in media if r.get("sentiment"))
 
-    # weekly item-count momentum
-    wk_cnt = Counter(iso_week(r["briefing_date"]) for r in fresh)
+    # weekly item-count momentum. Periodic reports (e.g. a GCCSI quarterly update)
+    # land as one batch under a single ingestion-date stamp, not real day-by-day
+    # news — including them would show a false newsflow spike in whatever week
+    # they happened to be processed, not a real acceleration in CCS activity.
+    trend_fresh = [r for r in fresh if not r.get("_periodic_report")]
+    wk_cnt = Counter(iso_week(r["briefing_date"]) for r in trend_fresh)
     weeks = sorted(wk_cnt)
     momentum_series = [("Developments / week", [(w.split("-W")[1], wk_cnt[w]) for w in weeks])]
 
-    # weekly committed A$ by top-3 regions
+    # weekly committed A$ by top-3 regions — same periodic-report exclusion, and
+    # for the same reason (a batch ingestion date is not a real weekly signal).
     top3 = [reg for reg, _ in Counter(
         {reg: region_val[reg] for reg in region_val}).most_common(3)]
     wk_reg = defaultdict(lambda: defaultdict(float))
-    for r in fresh:
+    for r in trend_fresh:
         wk_reg[r.get("region") or "Global"][iso_week(r["briefing_date"])] += committed_aud(r)
     money_series = [(reg, [(w.split("-W")[1], wk_reg[reg].get(w, 0)) for w in weeks])
                     for reg in top3]
@@ -1127,8 +1148,11 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
       f'{stats["fresh"]} tracked developments ({stats["dropped_dupes"]} duplicate reports merged) · '
       f'built {esc(build_dt)}</p>')
     A('<p class="disclaimer">Corpus figures are extracted from press-summary briefings (not audited '
-      'financials); global storage baselines are drawn from the GCCSI <i>Global Status of CCS</i> report '
-      'and the Imperial College <i>London Register of Subsurface CO₂ Storage</i>. '
+      'financials); global storage baselines are drawn from two sources that measure different things — '
+      'the GCCSI <i>Global Status of CCS</i> report (reported project capacity) and the Imperial College '
+      '<i>London Register of Subsurface CO₂ Storage</i> (independently measured actual tonnes). '
+      '<b>They are shown side by side but never added together or reconciled into one number</b> — see '
+      '<a href="#v2c">View 2c</a> for why, and how much they diverge. '
       'Money normalised to A$ at fixed reference rates (as of '
       f'{esc(fx_asof)}); commitment status weights announced vs committed money. '
       'Every headline figure links to the table it comes from; every development links to its source. '
@@ -1359,6 +1383,26 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
          "A country's storage <i>resource</i> is the geological space thought to be available, often measured "
          "in gigatonnes. What has been <i>used</i> is a tiny fraction of it. Large resource figures describe "
          "potential, not achievement."),
+        ("MMV / MRV",
+         "Monitoring, measurement and verification (also called monitoring, reporting and verification) — "
+         "confirming that injected CO₂ stays underground where it was put, over decades. This is CO2CRC's "
+         "own core specialty via the Otway International Test Centre, so items tagged with it are flagged as "
+         "directly relevant to CO2CRC's commercial offer."),
+        ("DAC",
+         "Direct air capture — pulling CO₂ straight out of the ambient atmosphere, rather than from a "
+         "power plant or factory's flue gas. Far more expensive per tonne than capturing a concentrated "
+         "industrial stream, but usable anywhere, independent of a nearby emission source."),
+        ("BECCS",
+         "Bioenergy with carbon capture and storage — burning biomass (wood, crop waste) for energy and "
+         "capturing the resulting CO₂. Because the biomass absorbed that carbon while growing, a working "
+         "BECCS plant can be net carbon-negative, not just low-emission."),
+        ("NZIA",
+         "The EU's Net Zero Industry Act — the regulation setting the bloc's CO₂ injection-capacity target "
+         "(50 Mtpa by 2030) and deadlines for major emitters to secure storage access (Article 23)."),
+        ("Class VI",
+         "The US EPA well classification for a CO₂ injection well built for permanent geological storage — "
+         "distinct from the Class II wells used for enhanced oil recovery. A Class VI permit is the regulatory "
+         "gate a dedicated (non-EOR) US storage project must clear before it can inject."),
     ]
     for term, definition in TERMS:
         A(f'<div class="gterm"><dt>{term}</dt><dd>{definition}</dd></div>')
@@ -1391,13 +1435,47 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
       'in each native currency, with its unweighted A$ equivalent in parentheses — your reference before conversion. '
       f'Rates fixed as of {esc(fx_asof)}; INR shown in crore.</p>')
 
+    # How much of the window's money is actually real vs merely announced —
+    # the status-weighting fnote above states the discount scheme; this table
+    # is where a reader sees the actual split it produces.
+    STATUS_ORDER = ["announced", "allocated", "committed", "spent"]
+    STATUS_LABEL = {"announced": "Announced", "allocated": "Allocated",
+                     "committed": "Committed", "spent": "Spent"}
+    status_cnt = Counter()
+    status_face = defaultdict(float)
+    for r in fresh:
+        st = r.get("commitment_status")
+        if st in STATUS_ORDER:
+            status_cnt[st] += 1
+            status_face[st] += funding_flow(r)
+    total_face_positive = sum(status_face.values())
+    A('<div class="card"><h3>New money reported — by commitment status (face value, this window)</h3>')
+    A('<table class="tbl"><thead><tr><th>Status</th><th>Weight applied</th><th class="num">Items</th>'
+      '<th class="num">Face-value A$</th><th class="num">Share of face value</th></tr></thead><tbody>')
+    for st in STATUS_ORDER:
+        face = status_face.get(st, 0)
+        share = f"{face / total_face_positive * 100:.0f}%" if total_face_positive else "—"
+        A(f'<tr><td>{esc(STATUS_LABEL[st])}</td><td class="num">{STATUS_WEIGHT[st]:.0%}</td>'
+          f'<td class="num">{status_cnt.get(st, 0)}</td><td class="num">{esc(fmt_aud(face))}</td>'
+          f'<td class="num">{share}</td></tr>')
+    A('</tbody></table>')
+    announced_face = status_face.get("announced", 0)
+    announced_share = f"{announced_face / total_face_positive * 100:.0f}%" if total_face_positive else "0%"
+    A(f'<p class="fnote">Of the {esc(fmt_aud(total_face_positive))} in this window’s face-value money, '
+      f'<b>{announced_share} is still only announced</b> (25% weight in the headline KPIs above, since an '
+      f'announcement is an intention, not money that has moved). This is a snapshot of the <i>news window</i> '
+      f'only — it says nothing about how much of the standing government funding programmes (map above) has '
+      f'been awarded, which is tracked separately per programme.</p></div>')
+
     # View 2 — GCCSI external baseline
     if ref:
         g = ref.get("global", {})
-        section("2 · Global reality check — the GCCSI baseline",
-                "An external benchmark from the Global CCS Institute's annual survey. The views above track "
-                "what was in the news over a few weeks; this is the standing global picture of real facilities. "
-                "Read them against each other — a quiet news window is not the same as real-world inactivity.",
+        section("2 · The global baseline — GCCSI",
+                "The standing global picture of real facilities, from the Global CCS Institute's annual survey. "
+                "This is the starting point the rest of the dashboard builds on: the news views above add what has "
+                "moved since the survey was compiled — new money, new projects, changes of status — that an annual "
+                "snapshot cannot yet show. Read the news as additions to this picture; coverage in any one window "
+                "is partial, so it extends the baseline rather than replacing it.",
                 sources=("gccsi",))
         A('<div class="kpis">')
         A(kpi("Global pipeline (GSR 2025)", f"{g.get('pipeline_facilities','—')} facilities",
@@ -1419,10 +1497,10 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
             A(f'<div class="card"><h3>Pipeline growth — facilities</h3>{hbar_chart(fac_rows)}</div>')
             A(f'<div class="card"><h3>Pipeline growth — capture capacity (Mtpa)</h3>{hbar_chart(cap_rows)}</div>')
             A('</div>')
-        # Region-by-region: GCCSI facilities/targets vs what our corpus caught
-        A('<div class="card"><h3>Regional facilities &amp; targets (GSR 2024) vs corpus coverage (this window)</h3>')
+        # Region-by-region: GCCSI baseline plus what the news added on top
+        A('<div class="card"><h3>Regional baseline (GSR 2024) + what the news added (this window)</h3>')
         A('<table class="tbl"><thead><tr><th>Region</th><th>Operating</th><th>In constr.</th>'
-          '<th>Pipeline</th><th>Notable target</th><th>Our corpus</th></tr></thead><tbody>')
+          '<th>Pipeline</th><th>Notable target</th><th>Added this window</th></tr></thead><tbody>')
         for rg in ref.get("regions", []):
             cr = rg.get("corpus_region")
             cnt = region_cnt.get(cr, 0)
@@ -1440,16 +1518,16 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
         A('<p class="fnote">Regional counts = number of commercial CCS facilities (GSR 2024, data as of '
           '24 Jul 2024, §4). GCCSI reports facility counts &amp; Mtpa targets by region, not a per-region '
           'operating-capacity table. Hover/see reference-baseline.json for per-region detail &amp; page cites.</p>')
-        # US + Middle East call-out (the two gaps that prompted this) — GSR 2024 edition-consistent
+        # US + Middle East call-out — what the news added on top of a large baseline (GSR 2024 edition-consistent)
         us_items = [r for r in fresh if "United States" in (r.get("countries") or [])]
         us_comm = sum(committed_aud(r) for r in us_items)
         us_canc = sum(r.get("amount_aud") or 0 for r in us_items if r.get("commitment_status") == "cancelled")
-        A('<p class="fnote">⚑ <b>Why the US &amp; Middle East look thin in the geography views:</b> the corpus caught '
-          f'{len(us_items)} US developments this window, but only {fmt_aud(us_comm)} of committed capital — its biggest US '
-          f'dollar stories were <b>retreats</b> ({fmt_aud(us_canc)} cancelled/surrendered). GCCSI shows the US as the '
-          'world’s largest operating fleet (19 of 27 Americas facilities, GSR 2024). The Middle East &amp; Africa had '
-          'zero developments in this window, yet GCCSI shows 3 operating + 6 in construction, Saudi targeting 44 Mtpa by 2035 and '
-          'ADNOC 10 Mtpa by 2030. The gap is <b>news-flow timing &amp; source bias, not real-world absence</b>.</p>')
+        A('<p class="fnote">⚑ <b>Reading the US &amp; Middle East rows:</b> both start from a large baseline — the US is '
+          'the world’s largest operating fleet (19 of 27 Americas facilities, GSR 2024), and the Middle East &amp; Africa '
+          f'has 3 operating + 6 in construction, with Saudi targeting 44 Mtpa by 2035 and ADNOC 10 Mtpa by 2030. '
+          f'<b>What the news added this window for the US was net negative:</b> {fmt_aud(us_canc)} cancelled or '
+          f'surrendered against {fmt_aud(us_comm)} of new committed capital, across {len(us_items)} developments. '
+          'Nothing new for the Middle East &amp; Africa, which leaves that baseline standing as-is until the next signal.</p>')
         # sector projection
         sec_proj = ref.get("sector_projection_2030_mtpa") or {}
         if sec_proj:
@@ -1471,7 +1549,7 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
                 "projects and reports their stated volumes. Imperial College London independently measures how "
                 "many tonnes actually went underground, across all storage types including enhanced oil "
                 "recovery. The two are reconciled step by step below and never merged into a single number.",
-                sources=("gccsi", "imperial"))
+                anchor="v2c", sources=("gccsi", "imperial"))
         A('<div class="kpis">')
         A(kpi("GCCSI dedicated (non-EOR)", f"{gd.get('cumulative_qualifier','—')} Mt",
               f"{gd.get('projects_operational','—')} projects · capacity basis · {gd.get('as_of','')}"))
@@ -1503,7 +1581,7 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
                        "eor": "EOR"}
         A('<div class="card"><h3>Project bridge — capacity vs measured-actual, by storage class</h3>')
         A('<table class="tbl"><thead><tr><th>Project</th><th>Country</th><th>Start</th>'
-          '<th>Capacity Mtpa</th><th>Reported cum. Mt</th><th>Actual cum. Mt</th></tr></thead><tbody>')
+          '<th>Capacity Mtpa</th><th>Reported cum. Mt (as of)</th><th>Actual cum. Mt</th></tr></thead><tbody>')
         fmtn = lambda x: "—" if x is None else str(x)
         for cls in ("dedicated", "associated", "eor"):
             rows = [p for p in projs if p.get("class") == cls]
@@ -1512,13 +1590,19 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
             A(f'<tr><td colspan="6" style="background:#f4f6f8;font-weight:600">'
               f'{esc(CLASS_LABEL[cls])} — {len(rows)} project{"s" if len(rows) != 1 else ""}</td></tr>')
             for p in rows:
+                rep = p.get("reported_cumulative_mt")
+                asof = p.get("reported_asof")
+                rep_s = "—" if rep is None else (f"{rep} (as of {asof})" if asof else str(rep))
                 A(f'<tr><td class="rgn">{esc(p.get("name"))}</td>'
                   f'<td>{esc(p.get("country"))}</td>'
                   f'<td class="num">{esc(fmtn(p.get("start_year")))}</td>'
                   f'<td class="num">{esc(fmtn(p.get("capacity_mtpa")))}</td>'
-                  f'<td class="num">{esc(fmtn(p.get("reported_cumulative_mt")))}</td>'
+                  f'<td class="num">{esc(rep_s)}</td>'
                   f'<td class="num">{esc(fmtn(p.get("measured_actual_cumulative_mt")))}</td></tr>')
         A('</tbody></table>')
+        A('<p class="fnote">A project’s reported cumulative figure is a snapshot as of the year shown, not '
+          'today — a more recent news mention elsewhere on this dashboard reporting a higher tonnage for the '
+          'same project is showing real growth since that snapshot, not a contradiction.</p>')
         A(f'<p class="fnote">{esc(sref.get("caveat", ""))}</p></div>')
         # Sources + taxonomy + known gaps
         src = sref.get("sources", {})
@@ -1545,6 +1629,10 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
     A(f'<div class="card"><h3>Committed A$ by instrument</h3>{hbar_chart([r for r in instr_rows if r[1]>0][:10], unit="aud")}</div>')
     A(f'<div class="card"><h3>Activity by instrument (count)</h3>{hbar_chart(instr_cnt_rows[:10])}</div>')
     A('</div>')
+    A('<p class="fnote">The two charts above list different instrument types because they answer different '
+      'questions: the left chart only ever shows instruments that carry a committed dollar figure, so types '
+      'like policy or R&amp;D — real activity, but with no A$ attached in the source reporting — appear on the '
+      'right (by count) and not on the left (by A$). Neither chart is missing data.</p>')
     A(f'<div class="card"><h3>Developments by value-chain segment (count)</h3>{hbar_chart(vc_rows)}</div>')
 
     # View 4
@@ -1633,9 +1721,14 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
     A(f'<div class="card"><h3>Newsflow momentum (items / ISO week)</h3>{sparkline_multi(momentum_series)}</div>')
     A(f'<div class="card"><h3>Committed A$ / week — top regions</h3>{sparkline_multi(money_series, unit="aud")}</div>')
     A('</div>')
+    A('<p class="fnote">Both trend lines exclude periodic external reports (e.g. a GCCSI quarterly update). '
+      'Those land as one batch under a single ingestion-date stamp rather than real day-by-day news, so counting '
+      'them here would show a false spike in whatever week the report happened to be processed — not a real '
+      'change in CCS newsflow. They are included in every other view on this dashboard.</p>')
     sent_rows = [(s.title(), sent_cnt[s]) for s in ("positive", "neutral", "negative") if sent_cnt.get(s)]
     A('<div class="grid2">')
-    A(f'<div class="card"><h3>Media sentiment mix</h3>{hbar_chart(sent_rows) if sent_rows else "<p class=muted>No sentiment-tagged items.</p>"}</div>')
+    A(f'<div class="card"><h3>Media sentiment mix</h3>{hbar_chart(sent_rows) if sent_rows else "<p class=muted>No sentiment-tagged items.</p>"}'
+      f'{"<p class=fnote>Based on " + str(len(media)) + " sentiment-tagged items out of " + str(len(fresh)) + " tracked developments — a media-monitoring subsample, not a verdict on all CCS coverage.</p>" if media else ""}</div>')
     A('<div class="card"><h3>Recent social-licence signals</h3>')
     item_list([r for r in media if r.get("sentiment") == "negative"], limit=6)
     A('</div>')
@@ -1655,9 +1748,12 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
 
     # View 9 — segmented signal feed
     section("9 · CO2CRC / CO2Tech signal feed",
-            "The developments most relevant to CO2CRC, sorted into themes and annotated with why each one "
-            "matters. Themes are assigned by a transparent rule based on each development's type, sector and "
-            "value-chain segment — not by editorial judgement. Highest priority first.",
+            f"The developments most relevant to CO2CRC, sorted into themes and annotated with why each one "
+            f"matters. Themes are assigned by a transparent rule based on each development's type, sector and "
+            f"value-chain segment — not by editorial judgement. Highest priority first. Covers both high "
+            f"({len(high_rel)}) and medium relevance ({len(feed_pool) - len(high_rel)}) items — {len(feed_pool)} "
+            f"in total, which is why this runs larger than the ‘High relevance’ KPI above, which counts "
+            f"high-relevance only.",
             anchor="v9", sources=("co2crc",))
     for b in SIGNAL_ORDER:
         recs = buckets.get(b)

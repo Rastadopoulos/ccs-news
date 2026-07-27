@@ -96,6 +96,39 @@ def test_load_records_fuzzy_dedup_respects_org(monkeypatch):
     assert {r["url"] for r in fresh} == {"https://a.com/1", "https://c.com/3"}
 
 
+def test_duplicate_of_excludes_capacity_as_well_as_money(monkeypatch):
+    """A record flagged duplicate_of in funding-enrichment has its money
+    excluded from totals. Capacity must be excluded the same way — the same
+    restated project's Mtpa is not new capacity either. (Regression for the
+    Alberta/Pathways pair, which was double-counted ~22 Mtpa in pipeline_cap
+    until this was fixed: the May record carried 16.0 Mtpa, the July
+    restatement carried 6, and only the money side was being excluded.)"""
+    records = [
+        _rec("Canada presses oil sands producers on Pathways carbon capture project",
+             "https://a.com/may", organisations=["Government of Canada"],
+             amount=16_500_000_000, currency="CAD", capacity_mtpa=16.0,
+             commitment_status="announced", id="2026-05-26#01"),
+        _rec("Alberta submits West Coast pipeline proposal on Pathways CCS hub",
+             "https://b.com/july", organisations=["Government of Alberta"],
+             amount=16_000_000_000, currency="CAD", capacity_mtpa=6.0,
+             commitment_status="announced", id="2026-07-02#04",
+             briefing_date="2026-07-02"),
+    ]
+    monkeypatch.setattr(bd, "_iter_records", lambda: iter(records))
+    monkeypatch.setattr(bd, "load_funding_enrichment",
+                        lambda: {"2026-07-02#04": {"duplicate_of": "2026-05-26#01"}})
+    fresh, _, _ = bd.load_records({"CAD": 1.0})
+
+    by_id = {r["id"]: r for r in fresh}
+    dupe = by_id["2026-07-02#04"]
+    assert dupe["amount_aud"] is None
+    assert dupe["capacity_mtpa"] is None
+    assert dupe["_capacity_mtpa_excluded"] == 6.0
+    assert bd.capacity(dupe) == 0.0
+    # The original record is untouched — only the flagged duplicate is excluded.
+    assert by_id["2026-05-26#01"]["capacity_mtpa"] == 16.0
+
+
 def test_signal_bucket_priority_order():
     assert bd.signal_bucket({"instrument_type": "policy"}) == "Policy & advocacy hooks"
     assert bd.signal_bucket({"instrument_type": "offtake"}) \
@@ -133,6 +166,52 @@ def test_iter_records_skips_bad_lines(monkeypatch, tmp_path, capsys):
     err = capsys.readouterr().err
     assert "skipping bad JSONL line" in err
     assert "skipping bad facts file" in err
+
+
+def test_quarterly_records_tagged_and_excluded_from_trend_charts(monkeypatch, tmp_path):
+    """A quarterly report lands as one batch under a single ingestion-date stamp,
+    not real day-by-day news. It must be tagged _periodic_report so the
+    week-by-week momentum/money trend charts can exclude it — otherwise a big
+    batch of quarterly items would show a false newsflow spike in whatever week
+    the report happened to be processed (regression: GCCSI Q2-2026 landed 115
+    items under one date and inflated one ISO week from ~20 to 138)."""
+    data_dir = tmp_path / "data"
+    raw_dir = data_dir / "raw"
+    quarterly_dir = data_dir / "quarterly"
+    audit_dir = tmp_path / "audit"
+    raw_dir.mkdir(parents=True)
+    quarterly_dir.mkdir()
+    audit_dir.mkdir()
+    (data_dir / "facts-backfill.jsonl").write_text(
+        '{"headline": "Daily briefing news item about a CCS grant", "id": "daily-1", '
+        '"url": "https://ex.com/daily", "briefing_date": "2026-07-01", "item_status": "fresh"}\n')
+    QUARTERLY_HEADLINES = [
+        "Norway commissions new offshore storage terminal",
+        "Canada Pathways Alliance updates hub capacity plan",
+        "Japan announces coastal CO2 injection trial",
+        "UK cluster reports first quarter throughput",
+        "Qatar LNG expands associated reinjection volume",
+    ]
+    (quarterly_dir / "2026-Q2.jsonl").write_text(
+        "\n".join(
+            f'{{"headline": "{h}", "id": "q-{i}", "url": "https://ex.com/q{i}", '
+            f'"briefing_date": "2026-07-01", "item_status": "fresh"}}'
+            for i, h in enumerate(QUARTERLY_HEADLINES)
+        ) + "\n")
+    monkeypatch.setattr(bd, "DATA_DIR", str(data_dir))
+    monkeypatch.setattr(bd, "RAW_DIR", str(raw_dir))
+    monkeypatch.setattr(bd, "QUARTERLY_DIR", str(quarterly_dir))
+    monkeypatch.setattr(bd, "AUDIT_DIR", str(audit_dir))
+    recs = list(bd._iter_records())
+    by_id = {r["id"]: r for r in recs}
+    assert by_id["daily-1"].get("_periodic_report") is not True
+    assert all(by_id[f"q-{i}"]["_periodic_report"] is True for i in range(5))
+
+    fresh, _, _ = bd.load_records({})
+    trend_fresh = [r for r in fresh if not r.get("_periodic_report")]
+    assert len(fresh) == 1 + len(QUARTERLY_HEADLINES)
+    assert len(trend_fresh) == 1
+    assert trend_fresh[0]["id"] == "daily-1"
 
 
 # ---------------------------------------------------------------- real build

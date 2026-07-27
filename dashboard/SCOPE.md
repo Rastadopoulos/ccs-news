@@ -83,11 +83,12 @@ Built in v1 unless marked **[planned]**. Every chart is backed by the underlying
    priority-ordered buckets (rule-based): policy & advocacy hooks · storage customers & cross-border
    demand · competitor & peer project moves · technology threats & substitutes · partnership &
    investment targets. Each with the "why it matters" read.
-2b. **Global reality check — GCCSI baseline** — an external, authoritative benchmark from the Global
+2b. **The global baseline — GCCSI** — the external, authoritative starting point from the Global
    CCS Institute *Global Status of CCS 2025* report (global pipeline facilities & Mtpa, regional
    spotlight, sector projections) placed directly under the geography view, with a region-by-region
-   "reality vs corpus coverage" table. Corrects for the corpus's news-flow/source bias (see §5) — e.g.
-   shows the US and Middle East at their true operating scale even in windows where the news is quiet.
+   "baseline + what the news added" table. The annual survey establishes the standing picture; the
+   news views record what has moved since it was compiled, region by region. Where a region is quiet
+   in a window, the baseline still carries its scale (see §5 on news-flow/source bias).
    Data: `dashboard/data/reference-baseline.json` (refresh annually when GCCSI publishes).
 2c. **Cumulative storage delivered — pipeline vs actual tonnes** — reconciles two authoritative
    cumulative-storage sources that measure *different things* and are therefore **never blended**:

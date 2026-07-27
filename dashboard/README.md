@@ -90,7 +90,7 @@ adjusted away. The script prints the check on every run.
 
 ## The nine views
 
-1. Geography of commitment · 2. Global reality check — GCCSI baseline · 2c. Cumulative storage
+1. Geography of commitment · 2. The global baseline — GCCSI · 2c. Cumulative storage
 delivered (GCCSI × Imperial) · 3. Where the money goes · 4. Actors (incl. O&G-major
 advancing/retreating) · 5. Deployment-mandate tracker · 6. Australia benchmark · 7. Momentum & social
 licence · 8. Capacity committed (Mtpa) · 9. Segmented CO2CRC/CO2Tech signal feed.
@@ -104,9 +104,10 @@ bridge, under a destination-based 3-way taxonomy (dedicated / associated / EOR).
 `data/storage-baseline.json`. The Imperial source is watched **monthly** by
 `.github/workflows/imperial-register-check.yml` (emails on change via Resend).
 
-View 2 overlays an external authoritative benchmark — the Global CCS Institute *Global Status of CCS*
-report (`data/reference-baseline.json`) — so a quiet news window for a region (e.g. the US or Middle
-East) is not misread as real-world inactivity. It is dual-sourced and labelled by edition: the global
+View 2 carries the external authoritative baseline — the Global CCS Institute *Global Status of CCS*
+report (`data/reference-baseline.json`). It is the starting point for the whole dashboard: the news
+views record what has moved since that annual survey was compiled, so they extend the baseline rather
+than being checked against it. It is dual-sourced and labelled by edition: the global
 headline + growth series are **GSR 2025** (from GCCSI's published figures), and the region-by-region
 facility counts & targets are **GSR 2024** (§4, data as of 24 Jul 2024) — the latest edition with a
 verifiable regional breakdown in the CO2CRC GCCSI library (`03-GCCSI-publications/`). GCCSI reports
