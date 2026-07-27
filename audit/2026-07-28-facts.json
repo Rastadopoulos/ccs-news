@@ -1,0 +1,33 @@
+[
+  {
+    "id": "2026-07-28#01",
+    "briefing_date": "2026-07-28",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Global CCS Institute maps 190+ carbon-capture technology solutions in its State of the Art: CCS Technologies 2026 compendium",
+    "summary": "The Global CCS Institute's 2026 technology compendium maps more than 190 solutions from over 90 companies across capture, transport and storage, flagging accelerating innovation in emerging capture routes as projects move from planning toward 2030 deployment.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-07-23",
+    "url": "https://carbonherald.com/global-ccs-institute-maps-latest-carbon-capture-technologies-as-ccs-sector-expands/",
+    "region": "Global",
+    "countries": [],
+    "organisations": ["Global CCS Institute"],
+    "org_types": ["industry-body"],
+    "instrument_type": "R&D",
+    "value_chain": ["whole-chain"],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A current map of the CCS technology frontier (190+ solutions from 90+ companies) useful for CO2CRC/CO2Tech technology tracking and benchmarking.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Radar / out-of-window context item (published 2026-07-23) surfaced on a quiet day; instrument_type approximated as R&D for a technology-landscape compendium (no financial dimension)."
+  }
+]
