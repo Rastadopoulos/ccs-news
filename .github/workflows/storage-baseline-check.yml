@@ -1,0 +1,114 @@
+name: Storage project figures — weekly freshness check
+
+# Scans the RSS floor's accumulated audit/candidates.db for headlines
+# mentioning any of the 23 named projects in dashboard/data/storage-baseline.json
+# (via each project's news_aliases), and emails an alert when a new mention is
+# found -- with a candidate cumulative-Mt figure attached where the headline
+# states one. Detection only: this never writes storage-baseline.json itself,
+# a human always reviews and edits the JSON by hand. Same "detect, surface,
+# human decides" shape as imperial-register-check.yml.
+#
+# Runs after the RSS floor's weekday collection (rss-floor.yml) has had a
+# chance to populate that week's items, so Saturday gives it the full week.
+
+on:
+  schedule:
+    # 08:15 Melbourne Saturday. Two crons cover the DST shift; the job
+    # self-gates on Melbourne local hour == 08 so exactly one acts (same
+    # pattern as imperial-register-check.yml).
+    - cron: '15 22 * * 5'  # 08:15 AEDT (roughly Oct-Apr)
+    - cron: '15 21 * * 5'  # 08:15 AEST (roughly Apr-Oct)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Gate on Melbourne local hour (skip the wrong-DST cron)
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          HOUR=$(TZ=Australia/Melbourne date +%H)
+          echo "proceed=false" >> "$GITHUB_OUTPUT"
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "08" ]; then
+            echo "Local hour is $HOUR, not 08 — wrong-DST cron. Skipping."
+            exit 0
+          fi
+          echo "proceed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        if: steps.gate.outputs.proceed == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Run freshness check
+        id: check
+        if: steps.gate.outputs.proceed == 'true'
+        run: |
+          set -euo pipefail
+          python3 scripts/check_storage_baseline_freshness.py > /tmp/matches.json
+          COUNT=$(python3 -c "import json; print(len(json.load(open('/tmp/matches.json'))))")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Found $COUNT new match(es)"
+
+      - name: Commit updated seen-state
+        if: steps.gate.outputs.proceed == 'true' && steps.check.outputs.count != '0'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/data/.storage-project-alerts-seen.json
+          git commit -m "Storage project mentions: $(TZ=Australia/Melbourne date +%Y-%m-%d)" || echo "nothing to commit"
+          git pull --rebase --autostash
+          git push
+
+      - name: Alert via Resend
+        if: steps.gate.outputs.proceed == 'true' && steps.check.outputs.count != '0'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY:-}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
+          COUNT="${{ steps.check.outputs.count }}"
+
+          {
+            echo "<p><strong>${COUNT} new mention(s)</strong> of a tracked CO2 storage project turned up"
+            echo "in this week's monitored press (weekly check, ${TODAY}). Detection only — nothing has"
+            echo "been changed in <code>dashboard/data/storage-baseline.json</code>; review each below and"
+            echo "edit the JSON by hand if it warrants an update.</p>"
+            python3 scripts/check_storage_baseline_freshness.py --html /tmp/matches.json
+          } > /tmp/body.html
+
+          jq -n \
+            --arg subject "CCS dashboard: ${COUNT} storage-project mention(s) to review — ${TODAY}" \
+            --rawfile html /tmp/body.html \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html
+            }' > /tmp/resend.json
+
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"; cat /tmp/resend.out; echo
+          case "$HTTP" in
+            2*) echo "::notice::Freshness-check alert emailed" ;;
+            *)  echo "::error::Resend rejected the alert (HTTP $HTTP)"; exit 1 ;;
+          esac

@@ -206,6 +206,30 @@ def test_weekly_audit_gates_on_tests_before_rebuild_and_commit():
     assert "pytest" in install_text, "pytest must actually be installed before it's run"
 
 
+def test_storage_baseline_check_never_auto_writes_storage_baseline_json():
+    """This workflow is detection-only (mirrors imperial-register-check.yml):
+    it may commit its own seen-state dotfile, but must never write
+    storage-baseline.json itself -- a human always reviews and edits it."""
+    wf = _load("storage-baseline-check.yml")
+    on = wf.get("on") or wf.get(True)
+    assert "workflow_dispatch" in on, "manual re-run path missing"
+    assert "schedule" in on
+
+    run_text = _all_run_text(wf)
+    assert "check_storage_baseline_freshness.py" in run_text
+    assert "storage-project-alerts-seen.json" in run_text
+    # The only git-add target may be the seen-state file, never the curated JSON.
+    add_lines = [ln for ln in run_text.splitlines() if ln.strip().startswith("git add")]
+    assert add_lines, "expected a git add step for the seen-state file"
+    for ln in add_lines:
+        assert "storage-baseline.json" not in ln, \
+            f"workflow must never git-add the curated JSON directly: {ln}"
+
+    assert "RESEND_API_KEY" in run_text
+    assert '::error::RESEND_API_KEY secret is not set' in run_text
+    assert "exit 1" in run_text
+
+
 def test_reconcile_workflow_delivers_routine_branch_pushes():
     """Regression for 2026-07-17/20/21: the scheduled routine runs on an isolated
     claude/* working branch, so its `git push origin main` lands on that branch,

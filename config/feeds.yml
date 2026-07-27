@@ -184,6 +184,175 @@ feeds:
     region: eu_uk
     ccs_filter: always
 
+  # ------------------------------------------------------------- Tier 3b (named storage projects)
+  # One Google News query per project in dashboard/data/storage-baseline.json,
+  # feeding scripts/check_storage_baseline_freshness.py (not the daily
+  # briefing extraction). No site: restriction — these are project-name
+  # searches across all publishers, so a project's storage figure can surface
+  # from any outlet, not just its own operator's site. Verify quarterly
+  # alongside the rest of this file; if storage-baseline.json's project list
+  # changes, keep this section in step.
+  - name: Sleipner (storage project)
+    url: https://news.google.com/rss/search?q=(%22Sleipner+CO2%22+OR+%22Sleipner+carbon+capture%22+OR+%22Sleipner+CCS%22)&hl=en&gl=NO&ceid=NO:en
+    source_domain: news.google.com
+    tier: 3b
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Snohvit (storage project)
+    url: https://news.google.com/rss/search?q=(%22Snohvit+CO2%22+OR+%22Snohvit+CCS%22+OR+%22Snohvit+carbon+capture%22)&hl=en&gl=NO&ceid=NO:en
+    source_domain: news.google.com
+    tier: 3b
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Northern Lights (storage project)
+    url: https://news.google.com/rss/search?q=(%22Northern+Lights+CCS%22+OR+%22Northern+Lights+CO2+storage%22)&hl=en&gl=NO&ceid=NO:en
+    source_domain: news.google.com
+    tier: 3b
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Quest (storage project)
+    url: https://news.google.com/rss/search?q=(%22Quest+CCS%22+OR+%22Quest+carbon+capture%22+OR+%22Shell+Quest%22)&hl=en&gl=CA&ceid=CA:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Boundary Dam / Aquistore (storage project)
+    url: https://news.google.com/rss/search?q=(%22Boundary+Dam+CCS%22+OR+%22Aquistore%22+CO2)&hl=en&gl=CA&ceid=CA:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Illinois Industrial CCS / ADM Decatur (storage project)
+    url: https://news.google.com/rss/search?q=(%22Decatur+CCS%22+OR+%22ADM+carbon+capture%22+OR+%22Illinois+Industrial+CCS%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Gorgon (storage project)
+    url: https://news.google.com/rss/search?q=(%22Gorgon+CCS%22+OR+%22Gorgon+carbon+capture%22+OR+%22Barrow+Island%22+CO2)&hl=en-AU&gl=AU&ceid=AU:en
+    source_domain: news.google.com
+    tier: 3b
+    region: au
+    ccs_filter: always
+
+  - name: Moomba (storage project)
+    url: https://news.google.com/rss/search?q=(%22Moomba+CCS%22+OR+%22Moomba+carbon+capture%22)&hl=en-AU&gl=AU&ceid=AU:en
+    source_domain: news.google.com
+    tier: 3b
+    region: au
+    ccs_filter: always
+
+  - name: Ravenna (storage project)
+    url: https://news.google.com/rss/search?q=(%22Ravenna+CCS%22+OR+%22Ravenna+carbon+capture%22)&hl=en&gl=IT&ceid=IT:en
+    source_domain: news.google.com
+    tier: 3b
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Orca / CarbFix (storage project)
+    url: https://news.google.com/rss/search?q=(%22CarbFix%22+OR+%22Coda+Terminal%22+OR+%22Orca+direct+air+capture%22)&hl=en&gl=IS&ceid=IS:en
+    source_domain: news.google.com
+    tier: 3b
+    region: eu_uk
+    ccs_filter: always
+
+  - name: Santos Basin Pre-Salt (storage project)
+    url: https://news.google.com/rss/search?q=(%22pre-salt+carbon+capture%22+OR+%22Santos+Basin+CO2%22+OR+%22Petrobras+carbon+capture%22)&hl=en&gl=BR&ceid=BR:en
+    source_domain: news.google.com
+    tier: 3b
+    region: global
+    ccs_filter: always
+
+  - name: Qatar LNG / Ras Laffan (storage project)
+    url: https://news.google.com/rss/search?q=(%22Ras+Laffan+carbon+capture%22+OR+%22Qatar+LNG+CO2%22+OR+%22QatarEnergy+carbon+capture%22)&hl=en&gl=QA&ceid=QA:en
+    source_domain: news.google.com
+    tier: 3b
+    region: global
+    ccs_filter: always
+
+  - name: Weyburn-Midale (storage project)
+    url: https://news.google.com/rss/search?q=(%22Weyburn+CO2%22+OR+%22Weyburn-Midale%22+OR+%22Great+Plains+Synfuels+carbon+capture%22)&hl=en&gl=CA&ceid=CA:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Century / Hobbs-Denver Unit (storage project)
+    url: https://news.google.com/rss/search?q=(%22Century+Plant+CO2%22+OR+%22Hobbs+CO2%22+OR+%22Denver+Unit+CO2%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Shute Creek (storage project)
+    url: https://news.google.com/rss/search?q=(%22Shute+Creek+CO2%22+OR+%22LaBarge+CCS%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Port Arthur / Gulf Coast Denbury (storage project)
+    url: https://news.google.com/rss/search?q=(%22Port+Arthur+carbon+capture%22+OR+%22Air+Products+CCS%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Coffeyville / North Burbank Unit (storage project)
+    url: https://news.google.com/rss/search?q=(%22Coffeyville+CO2%22+OR+%22North+Burbank+Unit+CO2%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Arkalon / Farnsworth Unit (storage project)
+    url: https://news.google.com/rss/search?q=(%22Arkalon+CO2%22+OR+%22Farnsworth+Unit+CCS%22)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: Core Energy (storage project)
+    url: https://news.google.com/rss/search?q=(%22Core+Energy+CO2%22+OR+%22Core+Energy+EOR%22+Michigan)&hl=en-US&gl=US&ceid=US:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: ACTL / Clive-Enhance (storage project)
+    url: https://news.google.com/rss/search?q=(%22Alberta+Carbon+Trunk+Line%22+OR+%22ACTL+CO2%22)&hl=en&gl=CA&ceid=CA:en
+    source_domain: news.google.com
+    tier: 3b
+    region: na
+    ccs_filter: always
+
+  - name: CNPC Jilin (storage project)
+    url: https://news.google.com/rss/search?q=(%22Jilin+oilfield+CO2%22+OR+%22CNPC+carbon+capture%22)&hl=en&gl=CN&ceid=CN:en
+    source_domain: news.google.com
+    tier: 3b
+    region: global
+    ccs_filter: always
+
+  - name: Sinopec Zhongyuan (storage project)
+    url: https://news.google.com/rss/search?q=(%22Zhongyuan+CO2%22+OR+%22Sinopec+carbon+capture%22)&hl=en&gl=CN&ceid=CN:en
+    source_domain: news.google.com
+    tier: 3b
+    region: global
+    ccs_filter: always
+
+  - name: Karamay Dunhua (storage project)
+    url: https://news.google.com/rss/search?q=(%22Karamay+CO2%22+OR+%22Dunhua+carbon+capture%22)&hl=en&gl=CN&ceid=CN:en
+    source_domain: news.google.com
+    tier: 3b
+    region: global
+    ccs_filter: always
+
   # ------------------------------------------------------------------ Tier 4 (science press)
   - name: Mirage News (Google News)
     url: https://news.google.com/rss/search?q=site:miragenews.com+(%22carbon+capture%22+OR+CCUS+OR+%22direct+air%22)&hl=en-AU&gl=AU&ceid=AU:en
