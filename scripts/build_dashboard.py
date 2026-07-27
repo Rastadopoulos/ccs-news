@@ -1139,6 +1139,7 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
 
     A(f'<title>Global CCS Dashboard by CO2CRC</title>')
     A(f'<meta name="description" content="Global CCS Dashboard by CO2CRC — trend intelligence from the daily briefing corpus plus the GCCSI Global Status of CCS report and the London Register of Subsurface CO2 Storage, through the CO2CRC/CO2Tech strategic lens.">')
+    A(f'<meta name="author" content="Dr Matthias Raab">')
     A(STYLE)
     A('<div class="wrap">')
     A('<header>')
