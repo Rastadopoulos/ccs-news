@@ -1179,6 +1179,17 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
           "million tonnes a year, already operating or committed", ("#v8", "Capacity · View 8")))
     A(kpi("Capture capacity — planned", f"{pipeline_cap:.1f} Mtpa",
           "announced or funded, not yet committed", ("#v8", "Capacity · View 8")))
+    if sref:
+        _bw_steps = sref.get("bridge_waterfall", {}).get("steps", [])
+        _dedicated_step = next((s for s in _bw_steps if s.get("basis") == "derived actual"), None)
+        _eor_step = next((s for s in _bw_steps if "EOR projects" in (s.get("label") or "")), None)
+        _idd = sref.get("series", {}).get("imperial_dedicated_derived", {})
+        _dedicated_mt = _dedicated_step.get("mt") if _dedicated_step else _idd.get("cumulative_mt_approx", "—")
+        _eor_mt = abs(_eor_step["mt"]) if _eor_step and isinstance(_eor_step.get("mt"), (int, float)) else "—"
+        A(kpi("CO₂ stored to date — dedicated", f"{_dedicated_mt} Mt",
+              "measured actual, delivery-factor-adjusted to ~Jun-2025", ("#v2c", "Reconciliation · View 2c")))
+        A(kpi("CO₂ stored to date — via EOR", f"~{_eor_mt} Mt",
+              "measured actual, ~2020 vintage — most recent reconciled figure", ("#v2c", "Reconciliation · View 2c")))
     A(kpi("Tracked developments", str(n_items),
           "news events in this window, not a project count", ("#v-all", "All developments · View 10")))
     A(kpi("High relevance to CO2CRC", str(len(high_rel)),
@@ -1561,6 +1572,42 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
         A(kpi("Capacity→actual factor", f"{df[0]}–{df[1]}" if len(df) == 2 else "—",
               "reported capacity overstates actual (Imperial)"))
         A('</div>')
+
+        # Annual storage rate by class — nameplate capacity vs measured-actual
+        # (lifetime average). No source publishes a per-class ACTUAL annual
+        # rate directly, so the measured column is derived: each project's
+        # measured_actual_cumulative_mt ÷ (measured_asof − start_year), summed
+        # per class, over only the projects with both data points. This is a
+        # lifetime average, not necessarily this year's rate — labelled as such.
+        def _class_rates(cls):
+            rows = [p for p in sref.get("projects", []) if p.get("class") == cls]
+            cap_vals = [p["capacity_mtpa"] for p in rows if isinstance(p.get("capacity_mtpa"), (int, float))]
+            rate_vals = []
+            for p in rows:
+                m, sy, asof = (p.get("measured_actual_cumulative_mt"), p.get("start_year"),
+                               p.get("measured_asof"))
+                if (isinstance(m, (int, float)) and isinstance(sy, int)
+                        and isinstance(asof, int) and asof > sy):
+                    rate_vals.append(m / (asof - sy))
+            return (sum(cap_vals), len(cap_vals), sum(rate_vals), len(rate_vals), len(rows))
+
+        A('<div class="card"><h3>Current annual storage rate — nameplate vs measured actual</h3>')
+        A('<table class="tbl"><thead><tr><th>Class</th><th class="num">Nameplate capacity (Mtpa)</th>'
+          '<th class="num">Measured actual — lifetime avg (Mtpa)</th></tr></thead><tbody>')
+        for cls, label in (("dedicated", "Dedicated (non-EOR)"), ("eor", "EOR")):
+            cap_sum, cap_n, rate_sum, rate_n, total_n = _class_rates(cls)
+            A(f'<tr><td class="rgn">{esc(label)}</td>'
+              f'<td class="num">{cap_sum:.1f} <span class="muted">({cap_n}/{total_n} projects)</span></td>'
+              f'<td class="num">{rate_sum:.1f} <span class="muted">({rate_n}/{total_n} projects)</span></td></tr>')
+        A('</tbody></table>')
+        A('<p class="fnote">Nameplate capacity is each project’s stated design rate, summed by class — a '
+          'ceiling, not what was actually injected. The measured-actual column is a <b>lifetime average</b> '
+          '(each project’s measured cumulative tonnage ÷ years since it started), not a snapshot of the most '
+          'recent year specifically — no source publishes a per-class annual actual rate directly, so this is '
+          'derived from the same per-project data as the reconciliation bridge below. The project-coverage '
+          'fraction shown is a floor, not the full population: projects missing a data point are excluded, '
+          'not counted as zero.</p></div>')
+
         # Reconciliation bridge (waterfall as a table — steps mix +/- and qualitative growth)
         bw = sref.get("bridge_waterfall", {})
         steps = bw.get("steps", [])

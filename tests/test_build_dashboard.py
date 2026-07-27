@@ -249,6 +249,41 @@ def test_real_data_build_produces_selfcontained_html(real_build, monkeypatch):
     assert snap.read_text() == page
 
 
+def test_real_build_storage_rate_kpis_match_independent_computation(real_build, monkeypatch):
+    """The header's two 'CO2 stored to date' KPIs must reuse the signed-off
+    bridge_waterfall figures (never re-derive a new cumulative total from
+    per-project rows, which are known-incomplete and would silently disagree
+    with the reconciled figures — e.g. summing EOR rows gives ~56.6 Mt vs the
+    bridge's own ~123 Mt). The View 2c annual-rate table's numbers must match
+    an independent recomputation from the same per-project data."""
+    out_html, _ = real_build
+    monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
+    bd.main()
+    page = out_html.read_text()
+
+    sref = bd.load_storage_baseline()
+    bw_steps = sref["bridge_waterfall"]["steps"]
+    dedicated_step = next(s for s in bw_steps if s.get("basis") == "derived actual")
+    eor_step = next(s for s in bw_steps if "EOR projects" in s.get("label", ""))
+    assert f'{dedicated_step["mt"]} Mt' in page
+    assert f'~{abs(eor_step["mt"])} Mt' in page
+
+    def _class_rates(cls):
+        rows = [p for p in sref["projects"] if p.get("class") == cls]
+        cap_sum = sum(p["capacity_mtpa"] for p in rows if isinstance(p.get("capacity_mtpa"), (int, float)))
+        rate_sum = 0.0
+        for p in rows:
+            m, sy, asof = p.get("measured_actual_cumulative_mt"), p.get("start_year"), p.get("measured_asof")
+            if isinstance(m, (int, float)) and isinstance(sy, int) and isinstance(asof, int) and asof > sy:
+                rate_sum += m / (asof - sy)
+        return cap_sum, rate_sum
+
+    for cls in ("dedicated", "eor"):
+        cap_sum, rate_sum = _class_rates(cls)
+        assert f'{cap_sum:.1f}' in page, f"{cls} nameplate capacity {cap_sum:.1f} not found in page"
+        assert f'{rate_sum:.1f}' in page, f"{cls} measured-actual rate {rate_sum:.1f} not found in page"
+
+
 def test_real_data_has_no_unknown_currencies(real_build, monkeypatch):
     """Every currency appearing in the live fact records must have an FX rate,
     otherwise its money silently drops out of the dashboard totals."""
