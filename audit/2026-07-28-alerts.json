@@ -45,6 +45,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/601402/liverpool-bay-crown-estate-hynet",
+    "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/601402/liverpool-bay-crown-estate-hynet/",
+    "headline": "Liverpool Bay carbon capture hopes boosted by Crown Estate lease - Energy Voice",
+    "source_domain": "energyvoice.com",
+    "publication_date": "2026-07-28T07:52:46+00:00",
+    "fuzzy_key": "bay,boosted,capture,carbon,crown,energy,estate,hopes,lease,liverpool,voice",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/puro-certifies-first-european-biogas-beccs-carbon-removal-project/2255433.article",
     "raw_url": "https://www.gasworld.com/story/puro-certifies-first-european-biogas-beccs-carbon-removal-project/2255433.article/",
     "headline": "Puro.earth certifies first European biogas BECCS carbon removal project - gasworld",
@@ -63,12 +72,39 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://indexbox.io/blog/liverpool-bay-ccs-secures-crown-estate-lease-for-uks-first-repurposed-infrastructure-ccs-project",
+    "raw_url": "https://www.indexbox.io/blog/liverpool-bay-ccs-secures-crown-estate-lease-for-uks-first-repurposed-infrastructure-ccs-project/",
+    "headline": "Liverpool Bay CCS Project Secures Crown Estate Lease for HyNet Cluster CO2 Storage",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-07-28T07:52:46+00:00",
+    "fuzzy_key": "bay,ccs,cluster,co2,crown,estate,hynet,lease,liverpool,project,secures,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://mrw.co.uk/news/evero-plans-carbon-capture-for-cheshire-biomass-facility-27-07-2026",
+    "raw_url": "https://www.mrw.co.uk/news/evero-plans-carbon-capture-for-cheshire-biomass-facility-27-07-2026/",
+    "headline": "Evero plans carbon capture for Cheshire biomass facility | MRW - Materials Recycling World",
+    "source_domain": "mrw.co.uk",
+    "publication_date": "2026-07-28T07:52:46+00:00",
+    "fuzzy_key": "biomass,capture,carbon,cheshire,evero,facility,materials,mrw,plans,recycling,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://northjersey.com/press-release/story/217845/society-for-low-carbon-technologies-and-brazilian-regulator-hold-international-ccs-knowledge-exchange",
     "raw_url": "https://www.northjersey.com/press-release/story/217845/society-for-low-carbon-technologies-and-brazilian-regulator-hold-international-ccs-knowledge-exchange/",
     "headline": "Society for Low Carbon Technologies and Brazilian Regulator Hold International CCS ...",
     "source_domain": "northjersey.com",
     "publication_date": "2026-07-28T03:55:28+00:00",
     "fuzzy_key": "brazilian,carbon,ccs,hold,international,low,regulator,society,technologies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-energy.biz/uk-co2-storage-project-that-will-reuse-existing-infrastructure-secures-lease",
+    "raw_url": "https://www.offshore-energy.biz/uk-co2-storage-project-that-will-reuse-existing-infrastructure-secures-lease/",
+    "headline": "UK CO2 storage project that will reuse existing infrastructure secures lease",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-07-28T07:52:46+00:00",
+    "fuzzy_key": "co2,existing,infrastructure,lease,project,reuse,secures,storage,uk,will",
     "found_via": "google_alerts"
   },
   {
