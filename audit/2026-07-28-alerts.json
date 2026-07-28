@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://businessgreen.com/news/4533451/liverpool-bay-hartlepool-carbon-capture-storage-industry-hails-twin-milestones",
+    "raw_url": "https://www.businessgreen.com/news/4533451/liverpool-bay-hartlepool-carbon-capture-storage-industry-hails-twin-milestones",
+    "headline": "From Liverpool Bay to Hartlepool: Carbon capture and storage industry hails twin milestones",
+    "source_domain": "businessgreen.com",
+    "publication_date": "2026-07-28T02:10:57+00:00",
+    "fuzzy_key": "bay,capture,carbon,hails,hartlepool,industry,liverpool,milestones,storage,twin",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/climeworks-targets-compliance-market-with-new-carbon-removal-portfolio-service",
     "raw_url": "https://carbonherald.com/climeworks-targets-compliance-market-with-new-carbon-removal-portfolio-service/",
     "headline": "Climeworks Targets Compliance Market With New Carbon Removal Portfolio Service",
@@ -69,6 +78,15 @@
     "source_domain": "petromindo.com",
     "publication_date": "2026-07-27T21:09:20+00:00",
     "fuzzy_key": "capture,carbon,facility,gas,microalgae,pertamina,petromindo,pilots,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theenergyst.com/liverpool-bay-ccs-enters-into-lease-with-the-crown-estate-for-uk-first-carbon-storage-project-repurposing-existing-infrastructure",
+    "raw_url": "https://theenergyst.com/liverpool-bay-ccs-enters-into-lease-with-the-crown-estate-for-uk-first-carbon-storage-project-repurposing-existing-infrastructure/",
+    "headline": "Liverpool Bay CCS enters into lease with The Crown Estate - theenergyst.com",
+    "source_domain": "theenergyst.com",
+    "publication_date": "2026-07-28T02:10:57+00:00",
+    "fuzzy_key": "bay,ccs,com,crown,enters,estate,into,lease,liverpool,theenergyst",
     "found_via": "google_alerts"
   }
 ]
