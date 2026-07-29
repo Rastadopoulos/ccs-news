@@ -63,6 +63,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energy-pedia.com/news/united-kingdom/liverpool-bay-ccs-ltd-enters-into-lease-with-the-crown-estate-for-uk-first-carbon-storage-project-repurposing-existing-infrastructure-204753",
+    "raw_url": "https://www.energy-pedia.com/news/united-kingdom/liverpool-bay-ccs-ltd-enters-into-lease-with-the-crown-estate-for-uk-first-carbon-storage-project-repurposing-existing-infrastructure-204753",
+    "headline": "Liverpool Bay CCS Ltd enters into lease with The Crown Estate for UK-first carbon storage ...",
+    "source_domain": "energy-pedia.com",
+    "publication_date": "2026-07-29T00:12:33+00:00",
+    "fuzzy_key": "bay,carbon,ccs,crown,enters,estate,first,into,lease,liverpool,ltd,storage,uk",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/601402/liverpool-bay-crown-estate-hynet",
     "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/601402/liverpool-bay-crown-estate-hynet/",
     "headline": "Liverpool Bay carbon capture hopes boosted by Crown Estate lease - Energy Voice",
@@ -162,6 +171,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://ogj.com/energy-transition/news/55394086/liverpool-bay-ccs-to-repurpose-infrastructure-for-ccs",
+    "raw_url": "https://www.ogj.com/energy-transition/news/55394086/liverpool-bay-ccs-to-repurpose-infrastructure-for-ccs",
+    "headline": "Liverpool Bay CCS to repurpose infrastructure for CCS - Oil & Gas Journal",
+    "source_domain": "ogj.com",
+    "publication_date": "2026-07-29T00:12:33+00:00",
+    "fuzzy_key": "bay,ccs,gas,infrastructure,journal,liverpool,oil,repurpose",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://petromindo.com/news/article/pertamina-pilots-microalgae-carbon-capture-at-upstream-gas-facility",
     "raw_url": "https://www.petromindo.com/news/article/pertamina-pilots-microalgae-carbon-capture-at-upstream-gas-facility",
     "headline": "Pertamina pilots microalgae carbon capture at upstream gas facility - Petromindo",
@@ -186,6 +204,15 @@
     "source_domain": "prlog.org",
     "publication_date": "2026-07-28T23:26:54+00:00",
     "fuzzy_key": "2035,bioenergy,capture,carbon,forecast,market,prlog,size,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thebusinessdesk.com/northwest/news/2176657-carbon-capture-storage-group-seals-crown-estate-lease-to-develop-sea-bed-network",
+    "raw_url": "https://www.thebusinessdesk.com/northwest/news/2176657-carbon-capture-storage-group-seals-crown-estate-lease-to-develop-sea-bed-network",
+    "headline": "Carbon capture storage group seals Crown Estate lease to develop sea bed network",
+    "source_domain": "thebusinessdesk.com",
+    "publication_date": "2026-07-29T00:12:33+00:00",
+    "fuzzy_key": "bed,capture,carbon,crown,develop,estate,group,lease,network,sea,seals,storage",
     "found_via": "google_alerts"
   },
   {
