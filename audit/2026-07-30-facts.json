@@ -1,0 +1,133 @@
+[
+  {
+    "id": "2026-07-30#01",
+    "briefing_date": "2026-07-30",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Shearwater wins CO2-storage seismic survey contract offshore Australia (Bonaparte Basin)",
+    "summary": "Shearwater GeoServices was awarded a 3D seismic survey (vessel SW Bly, ~50 days, Q3 2026 start) to appraise carbon-storage potential in the Bonaparte Basin for INPEX's proposed CCS project; data will high-grade injection-well locations and serve as a 4D monitoring baseline. It is Shearwater's second Bonaparte CCS survey after 2024.",
+    "source": "Upstream",
+    "pub_date": "2026-07-29",
+    "url": "https://www.upstreamonline.com/carbon-capture/shearwater-wins-carbon-storage-survey-contract-down-under",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Shearwater GeoServices",
+      "INPEX"
+    ],
+    "org_types": [
+      "other",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Australian offshore storage characterisation and a 4D MMV baseline — squarely in CO2CRC's Otway monitoring wheelhouse.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-30#02",
+    "briefing_date": "2026-07-30",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Northern Lights completes phase-1 LCO2 carrier fleet as 'Northern Purpose' arrives in Norway",
+    "summary": "The fourth dedicated 7,500 m3 liquefied-CO2 carrier, Northern Purpose, arrived in Norway on 29 July after delivery from Dalian, completing the four-vessel fleet (Pioneer, Pathfinder, Phoenix, Purpose) for phase-1 CO2 shipping to the Oygarden receiving terminal and positioning the JV to scale customer operations.",
+    "source": "Offshore Engineer / MarineLink",
+    "pub_date": "2026-07-29",
+    "url": "https://www.oedigital.com/news/541597-northern-lights-ccs-fleet-set-for-next-stage-with-latest-lco2-carrier-arrival",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Northern Lights JV",
+      "Equinor",
+      "Shell",
+      "TotalEnergies"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 1.5,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Benchmarks the cross-border LCO2 shipping-and-terminal logistics that underpin Australia's CO2-import storage ambitions (e.g. Moomba/Japan).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-30#03",
+    "briefing_date": "2026-07-30",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Williams selects ExxonMobil for CO2 transport and storage from Louisiana Energy Gateway",
+    "summary": "Williams selected ExxonMobil to transport and permanently store up to 1 Mtpa of CO2 captured from its proposed Louisiana Energy Gateway gas-fired power facility, extending ExxonMobil's Gulf Coast CCS customer portfolio into power generation. The project remains subject to FID, permitting and other approvals.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-07-29",
+    "url": "https://carbonherald.com/exxonmobil-williams-expanding-carbon-capture-portfolio/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Williams",
+      "ExxonMobil"
+    ],
+    "org_types": [
+      "other",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 1.0,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Signals ExxonMobil's transport-and-storage-as-a-service model extending to gas-fired power — a commercial template for shared-hub operators.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": null
+  }
+]
