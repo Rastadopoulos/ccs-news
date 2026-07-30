@@ -1,0 +1,165 @@
+[
+  {
+    "id": "2026-07-31#01",
+    "briefing_date": "2026-07-31",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "NSTA commissions two studies to boost UK carbon storage market",
+    "summary": "The UK's North Sea Transition Authority said the carbon storage industry had been given a 'significant boost' with the publication of two NSTA-commissioned studies aimed at accelerating development of the country's carbon storage market.",
+    "source": "Upstream / Rigzone",
+    "pub_date": "2026-07-30",
+    "url": "https://www.upstreamonline.com/carbon-capture/new-studies-to-boost-uk-carbon-capture-development/2-1-2022655",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "North Sea Transition Authority"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "UK storage-market enabling studies are a useful reference model for Australia's offshore storage regulatory and appraisal development.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-31#02",
+    "briefing_date": "2026-07-31",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Singapore and Australia aim to conclude cross-border CCS instrument negotiations by year-end",
+    "summary": "Singapore and Australia are targeting the end of 2026 to conclude negotiations on a bilateral legal instrument enabling cross-border CO2 transport and storage between the two countries.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-07-30",
+    "url": "https://carbon-pulse.com/536055/",
+    "region": "APAC",
+    "countries": [
+      "Singapore",
+      "Australia"
+    ],
+    "organisations": [
+      "Singapore Government",
+      "Australian Government"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2026,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Cross-border CO2 export/storage frameworks directly enable Australian storage hubs to import regional CO2; a Singapore-Australia instrument is a template CO2CRC tracks closely.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Continues the year-end-target story flagged on the 30 Jul radar (Carbon Pulse 535933, 28 Jul); this distinct 30 Jul Carbon Pulse article (536055) is its first in-window appearance in a main section."
+  },
+  {
+    "id": "2026-07-31#03",
+    "briefing_date": "2026-07-31",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Woodside's Browse declared a Western Australian state significant project",
+    "summary": "The WA government declared Woodside's Browse project - which includes the proposed Browse offshore CCS component near Scott Reef - a 'state significant project', enabling more streamlined, coordinated approvals.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-07-27",
+    "url": "https://www.energynewsbulletin.net/operations/news-articles/4534692/woodsides-browse-declared-significant-project",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Woodside Energy",
+      "Government of Western Australia"
+    ],
+    "org_types": [
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Browse CCS progress and its Scott Reef social-licence scrutiny are bellwethers for Australian offshore storage permitting.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-07-31#04",
+    "briefing_date": "2026-07-31",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "PureField Ingredients launches 150,000 tpa Class VI CCS facility in Russell, Kansas",
+    "summary": "PureField Ingredients held a ribbon-cutting for its 150,000 tpa carbon capture and sequestration facility in Russell, Kansas - permitted under the US EPA's Class VI program - capturing fermentation CO2 from its wheat-to-ethanol operation for permanent storage, and announced plans to double ethanol and sequestration capacity.",
+    "source": "PR Newswire / Commercial Baking",
+    "pub_date": "2026-07-29",
+    "url": "https://www.prnewswire.com/news-releases/purefield-ingredients-celebrates-landmark-carbon-capture-facility-and-announces-expansion-plans-302839448.html",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "PureField Ingredients"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.15,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A completed US Class VI ethanol-BECCS facility illustrates the pace of small-scale point-source CCS deployment under the 45Q/Class VI regime.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Ribbon-cutting 29 Jul 2026 (just outside the Fri 30-31 Jul window); PR distributed 30 Jul. Placed on radar, not a main fresh item."
+  }
+]
