@@ -1,29 +1,11 @@
 [
   {
-    "canonical_url": "https://t.co/HTrd0TTtAp",
-    "raw_url": "https://t.co/HTrd0TTtAp",
-    "headline": "Northern Lights CCS Project: Norway's CO₂ storage network expands",
-    "source_domain": "t.co",
-    "publication_date": "2026-08-03T02:27:27+00:00",
-    "fuzzy_key": "ccs,co,expands,lights,network,northern,norway,project,storage",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://link.springer.com/chapter/10.1007/978-3-032-28296-5_7",
-    "raw_url": "https://link.springer.com/chapter/10.1007/978-3-032-28296-5_7",
-    "headline": "Class VI Well Permits and CCS Project Lifecycles | Springer Nature Link",
-    "source_domain": "springer.com",
-    "publication_date": "2026-08-03T02:57:31+00:00",
-    "fuzzy_key": "ccs,class,lifecycles,link,nature,permits,project,springer,vi,well",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/petronas-taps-helms-geomarine-to-conduct-soil-surveys-for-ccs-projects",
-    "raw_url": "https://carbonherald.com/petronas-taps-helms-geomarine-to-conduct-soil-surveys-for-ccs-projects/",
-    "headline": "Petronas Taps Helms Geomarine To Conduct Soil Surveys For CCS Projects",
+    "canonical_url": "https://carbonherald.com/bipartisan-lawmakers-reintroduce-bill-to-expand-federal-purchases-of-carbon-removal",
+    "raw_url": "https://carbonherald.com/bipartisan-lawmakers-reintroduce-bill-to-expand-federal-purchases-of-carbon-removal/",
+    "headline": "Bipartisan Lawmakers Reintroduce Bill To Expand Federal Purchases Of Carbon Removal",
     "source_domain": "carbonherald.com",
     "publication_date": "2026-08-03T19:36:10+00:00",
-    "fuzzy_key": "ccs,conduct,geomarine,helms,petronas,projects,soil,surveys,taps",
+    "fuzzy_key": "bill,bipartisan,carbon,expand,federal,lawmakers,purchases,reintroduce,removal",
     "found_via": "google_alerts"
   },
   {
@@ -36,12 +18,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/bipartisan-lawmakers-reintroduce-bill-to-expand-federal-purchases-of-carbon-removal",
-    "raw_url": "https://carbonherald.com/bipartisan-lawmakers-reintroduce-bill-to-expand-federal-purchases-of-carbon-removal/",
-    "headline": "Bipartisan Lawmakers Reintroduce Bill To Expand Federal Purchases Of Carbon Removal",
+    "canonical_url": "https://carbonherald.com/paypal-backs-emerging-carbon-removal-technologies-in-latest-climate-investment-strategy",
+    "raw_url": "https://carbonherald.com/paypal-backs-emerging-carbon-removal-technologies-in-latest-climate-investment-strategy/",
+    "headline": "PayPal Backs Emerging Carbon Removal Technologies In Latest Climate Investment Strategy",
     "source_domain": "carbonherald.com",
     "publication_date": "2026-08-03T19:36:10+00:00",
-    "fuzzy_key": "bill,bipartisan,carbon,expand,federal,lawmakers,purchases,reintroduce,removal",
+    "fuzzy_key": "backs,carbon,climate,emerging,investment,latest,paypal,removal,strategy,technologies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/petronas-taps-helms-geomarine-to-conduct-soil-surveys-for-ccs-projects",
+    "raw_url": "https://carbonherald.com/petronas-taps-helms-geomarine-to-conduct-soil-surveys-for-ccs-projects/",
+    "headline": "Petronas Taps Helms Geomarine To Conduct Soil Surveys For CCS Projects",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-08-03T19:36:10+00:00",
+    "fuzzy_key": "ccs,conduct,geomarine,helms,petronas,projects,soil,surveys,taps",
     "found_via": "google_alerts"
   },
   {
@@ -54,12 +45,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/paypal-backs-emerging-carbon-removal-technologies-in-latest-climate-investment-strategy",
-    "raw_url": "https://carbonherald.com/paypal-backs-emerging-carbon-removal-technologies-in-latest-climate-investment-strategy/",
-    "headline": "PayPal Backs Emerging Carbon Removal Technologies In Latest Climate Investment Strategy",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-08-03T19:36:10+00:00",
-    "fuzzy_key": "backs,carbon,climate,emerging,investment,latest,paypal,removal,strategy,technologies",
+    "canonical_url": "https://link.springer.com/chapter/10.1007/978-3-032-28296-5_7",
+    "raw_url": "https://link.springer.com/chapter/10.1007/978-3-032-28296-5_7",
+    "headline": "Class VI Well Permits and CCS Project Lifecycles | Springer Nature Link",
+    "source_domain": "springer.com",
+    "publication_date": "2026-08-03T02:57:31+00:00",
+    "fuzzy_key": "ccs,class,lifecycles,link,nature,permits,project,springer,vi,well",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://t.co/HTrd0TTtAp",
+    "raw_url": "https://t.co/HTrd0TTtAp",
+    "headline": "Northern Lights CCS Project: Norway's CO₂ storage network expands",
+    "source_domain": "t.co",
+    "publication_date": "2026-08-03T02:27:27+00:00",
+    "fuzzy_key": "ccs,co,expands,lights,network,northern,norway,project,storage",
     "found_via": "google_alerts"
   },
   {
