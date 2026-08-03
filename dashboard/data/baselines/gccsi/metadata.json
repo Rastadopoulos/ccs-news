@@ -1,0 +1,26 @@
+{
+  "dataset": "Global Status of CCS 2025",
+  "edition": "2025",
+  "data_asof": "2025-07",
+  "retrieval_date": "2026-08-03",
+  "source_url": "https://www.globalccsinstitute.com/resources/global-status-report/",
+  "pdf_url": "https://www.globalccsinstitute.com/wp-content/uploads/2025/10/Global-Status-of-CCS-2025-report-9-October.pdf",
+  "source_sha256": "67d52344a6bc5c5789cec1bdb212b2b37e8e969900a0c8f573075736cd35a84f",
+  "structured_scope": "The report's complete 47-facility in-construction appendix only.",
+  "country_scope_limitation": "GSR 2025 does not reproduce GSR 2024's all-stage country facilities table. The dashboard therefore labels its all-stage country layer GSR 2024 and its global/construction baseline GSR 2025; the vintages are never blended into one total.",
+  "global": {
+    "operating_facilities": 77,
+    "operating_capacity_mtpa": 64,
+    "construction_facilities": 47,
+    "construction_capacity_mtpa": 44,
+    "development_facilities": 610,
+    "pipeline_facilities": 734,
+    "pipeline_capacity_mtpa": 513
+  },
+  "construction_rows": 47,
+  "construction_rows_with_capture_capacity": 34,
+  "canonical_matches": 7,
+  "crosswalk_review": 40,
+  "not_audited_financial_data": true,
+  "methodology": "PDF table located by repeated column headings; capture capacities preserved as Mtpa; T&S rows remain blank."
+}

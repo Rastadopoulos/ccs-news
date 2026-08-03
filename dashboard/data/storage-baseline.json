@@ -1,5 +1,5 @@
 {
-  "_comment": "Cumulative geological CO2 storage baseline for the dashboard's storage-delivered view (planned view 2c), sibling to reference-baseline.json. Reconciles TWO sources that measure DIFFERENT things and must NOT be blended into one headline: (A) Global CCS Institute — PURPOSE-based project count, capacity-leaning; (B) Imperial College London 'London Register of Subsurface CO2 Storage' — MEASURED actual tonnes injected. The 'resolution' of the apparent discrepancy is the documented bridge_waterfall + the per-project bridge table below, NOT a single reconciled number. Design decisions signed off 2026-07-13 (3-way taxonomy; two series + bridge). Populated for REVIEW — see known_gaps before wiring into build_dashboard.py.",
+  "_comment": "LEGACY named-project map subset retained for geographic discovery only. It must not supply current global storage headlines. The authoritative London Register 2025 workbook is now stored at dashboard/data/sources/london-register-2025.xlsx and its reproducible outputs are under dashboard/data/baselines/london-register/. The current measured totals are 384.597621 Mt cumulative and 33.218509 Mt in 2024 across 46 projects. Historical analytical bridge fields below remain for auditability and are visibly superseded in the dashboard.",
   "schema_version": 1,
   "signed_off": "2026-07-13",
   "retrieved": "2026-07-13",
@@ -16,7 +16,9 @@
     "imperial_register": {
       "title": "Imperial College London — The London Register of Subsurface CO2 Storage (Krevor / Jackson / Zhang)",
       "register_url": "https://imperialcollegelondon.github.io/The-London-Register-of-Subsurface-CO2-Storage/",
-      "repo": "ImperialCollegeLondon/The-London-Register-of-Subsurface-CO2-Storage (site config only; raw dataset not published in-repo)",
+      "repo": "ImperialCollegeLondon/The-London-Register-of-Subsurface-CO2-Storage",
+      "workbook_doi": "10.5281/zenodo.18016847",
+      "workbook_path": "dashboard/data/sources/london-register-2025.xlsx",
       "basis": "measured ACTUAL tonnes injected, verified against operator/regulator reporting",
       "foundational_paper": {
         "cite": "Zhang, Krevor & Jackson (2022), Environmental Science & Technology Letters 9(8):693-698",
@@ -57,12 +59,12 @@
     },
     "imperial_all_storage": {
       "cumulative_mt_to_2020": 196.12,
-      "cumulative_mt_to_2024": 383,
+      "cumulative_mt_to_2024": 384.597621,
       "annual_mt_2019": 27,
       "annual_mt_2023": 45.2,
       "growth_pct_yr": 9.2,
       "includes": "ALL geological storage: dedicated + associated + EOR",
-      "note": "The widely-cited '383 Mt stored since 1996' is THIS number (Imperial, all-storage, actual) — NOT a GCCSI figure and NOT dedicated-only. 2023 flow dominated by EOR/associated: Santos Basin Pre-Salt ~13.0 Mt + Seminole San Andres (US EOR) ~3.9 Mt = >1/3 of the year."
+      "note": "The older rounded '383 Mt stored since 1996' headline is superseded by the workbook-derived 384.597621 Mt through 2024. This is all-storage actual (EOR-dominated), not a GCCSI figure and not dedicated-only."
     },
     "imperial_dedicated_derived": {
       "as_of": "2020",

@@ -1,0 +1,2 @@
+normalised_name,iea_project,gccsi_project,iea_stage,gccsi_stage,stage_difference,iea_capacity_basis,gccsi_capacity_basis,iea_capacity_mtpa,gccsi_capacity_mtpa,capacity_difference_mtpa,review_note
+new generation gas gathering ng3,New Generation Gas Gathering (NG3),New Generation Gas Gathering (NG3),operating,construction,yes,capture_capacity,capture_capacity,1.2,1.2,0.0,Exact normalised name match; adjudicate scope/components before accepting differences.

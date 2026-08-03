@@ -18,7 +18,8 @@ from __future__ import annotations
 import json
 import sqlite3
 import sys
-from datetime import datetime, timezone
+import argparse
+from datetime import date, datetime, time as datetime_time, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -179,7 +180,11 @@ def upsert(conn: sqlite3.Connection, rows: list[dict], sample_date: str) -> None
 
 
 def main() -> int:
-    now_mel = datetime.now(MELBOURNE)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", help="collection date to retry/backfill (YYYY-MM-DD)")
+    args = ap.parse_args()
+    now_mel = (datetime.combine(date.fromisoformat(args.date), datetime_time.min, tzinfo=MELBOURNE)
+               if args.date else datetime.now(MELBOURNE))
     today_local = now_mel.replace(hour=0, minute=0, second=0, microsecond=0)
     dow = now_mel.isoweekday()
     sample_date = today_local.date().isoformat()

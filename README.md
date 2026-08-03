@@ -4,7 +4,7 @@ Automated daily briefing on global carbon capture & storage (CCS) news, plus an 
 
 ## CCS Intelligence Dashboard
 
-[`dashboard/index.html`](dashboard/index.html) turns the daily briefings into a running, CEO-lens read on global CCS momentum — geography of commitment, where the money goes, who's advancing vs retreating, deployment mandates, an Australia benchmark, capacity (Mtpa), and a segmented CO2CRC/CO2Tech signal feed. It's a single self-contained HTML file, rebuilt every Saturday by `weekly-audit.yml`. Scope and how-it-works: [`dashboard/SCOPE.md`](dashboard/SCOPE.md) and [`dashboard/README.md`](dashboard/README.md). The daily routine emits `audit/YYYY-MM-DD-facts.json` (a structured extraction of each briefing per [`dashboard/data/EXTRACTION_SPEC.md`](dashboard/data/EXTRACTION_SPEC.md)) that feeds it.
+[`dashboard/index.html`](dashboard/index.html) is a self-contained, decision-grade CCS intelligence product. It combines a stable project/component register, official IEA 2026 and GCCSI 2025 companion baselines, the current London Register, strict funding categories and a fully sourced event archive. Daily briefings remain the evidence stream; articles are never summed as independent projects or commitments. The page leads with collection health, deployment reality and the Australia benchmark. Architecture and scope: [`dashboard/README.md`](dashboard/README.md), [`dashboard/SCOPE.md`](dashboard/SCOPE.md) and [`docs/reliability-operations.md`](docs/reliability-operations.md).
 
 ## How the briefing reaches you
 
@@ -56,7 +56,7 @@ When changing a routine, edit it via the `schedule` skill **and** update the cor
 
 ## Audit & comprehensiveness pipeline
 
-The briefing's recall — what fraction of CCS news in the world it actually catches each day — is measured by an independent pipeline running alongside the routine. The Saturday-morning audit email reports three numbers: pooled recall, floor recall, and an estimated absolute recall via Chapman capture-recapture.
+The briefing's retrieval quality is measured by an independent pipeline running alongside the routine. The Saturday audit adjudicates relevance before constructing its denominator and reports precision, relevant recall, decision-relevant recall and breakdowns by geography, source class and content type. Chapman capture-recapture is retained only as an experimental diagnostic; sampler dependence and unequal catchability prevent an authoritative absolute-recall claim.
 
 Samplers feeding the audit:
 
@@ -79,10 +79,12 @@ Workflows (all in `.github/workflows/`):
 - `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`. Manual: Actions tab → Weekly recall audit → Run workflow.
 - `email-audit.yml` — fires on push of a new audit report; emails it via Resend.
 - `deadman-check.yml` — cron 08:30 Melbourne weekdays. Alerts by email if today's briefing (`${TODAY}-ccs-briefing.md`) or shadow trace (`audit/${TODAY}-shadow.json`) is missing from `main`. Since `reconcile-routine-branch.yml` now delivers the routines' branch pushes, a genuine alert here means the routine truly did not run (check its run history in Claude Code) — not a branch mis-push. Skips weekends and Vic public holidays; the holiday list must be kept in sync with the production prompt.
+- `authoritative-source-monitor.yml` — weekly deterministic fingerprints for official baselines, registers, regulators and a geographically broader operator/technology set; structured changes and human-review alerts land under `dashboard/data/monitoring/`.
+- `collection-backfill.yml` — manual retry of the deterministic sampler floor after an impaired date, with retained coverage/retry artefacts.
 
 Dedup contract shared by all samplers: `scripts/_canon.py` — canonical URL (strip safelinks/tracking, lowercase host) plus fuzzy headline match (Jaccard ≥ 0.7 on tokenised, stopword-stripped headline).
 
-If floor recall (`|A ∩ B| / |B|`) drops below 90% in any week, treat it as a plumbing alert — the routine is missing items the RSS sampler proves were published.
+If adjudicated high-priority floor recall (`|A ∩ B★| / |B★|`) drops below 90% in any week, treat it as a plumbing alert. Do not apply the threshold to unadjudicated newsletter landing pages, tickers, off-topic “CCS” meanings or other noisy candidates.
 
 For the Chapman estimator's theory and per-week metric definitions, see the comments in [`scripts/weekly_audit.py`](scripts/weekly_audit.py).
 

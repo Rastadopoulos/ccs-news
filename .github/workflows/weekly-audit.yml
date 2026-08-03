@@ -51,14 +51,18 @@ jobs:
           fi
 
       - name: Rebuild CCS Intelligence Dashboard
-        # Rebuilds dashboard/index.html from the frozen backfill (dashboard/data/facts-backfill.jsonl)
-        # plus every audit/*-facts.json the daily routine emitted during the week, and writes a dated
-        # board snapshot. Pure standard library + scripts/_canon.py — no extra deps beyond the audit step.
+        # Refreshes every derived reliability layer before rendering the live
+        # dashboard and a dated board snapshot. The downloaded source editions
+        # stay pinned and are refreshed only by their dedicated import routines.
         env:
           PYTHONUNBUFFERED: '1'
           WEEK_ENDING: ${{ github.event.inputs.week_ending }}
         run: |
           SNAP="${WEEK_ENDING:-$(TZ=Australia/Melbourne date +%Y-%m-%d)}"
+          python3 scripts/build_entity_register.py
+          python3 scripts/build_baseline_comparison.py
+          python3 scripts/coverage_report.py --date "${SNAP}" --window 14
+          python3 scripts/build_reliability_model.py
           BUILD_DATE="${SNAP}" python3 scripts/build_dashboard.py --snapshot "${SNAP}"
 
       - name: Commit audit report + dashboard
@@ -68,7 +72,7 @@ jobs:
           git config user.email 'ccs-news-routine@co2crc.com.au'
           git config user.name  'CCS Weekly Audit'
           git add audit/*-recall-report.html audit/*-recall-report.md audit/drift.json 2>/dev/null || true
-          git add dashboard/index.html dashboard/snapshots/*.html 2>/dev/null || true
+          git add dashboard/index.html dashboard/snapshots/*.html dashboard/data/entities dashboard/data/baselines/comparison dashboard/data/coverage dashboard/data/model 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No audit or dashboard changes to commit."
             echo "pushed=false" >> "$GITHUB_OUTPUT"

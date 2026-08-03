@@ -1,0 +1,90 @@
+{
+  "dataset": "IEA CCUS Projects Database",
+  "edition": "2026",
+  "update_date": "2026-03-27",
+  "retrieval_date": "2026-08-03",
+  "product_url": "https://www.iea.org/data-and-statistics/data-product/ccus-projects-database",
+  "explorer_url": "https://www.iea.org/data-and-statistics/data-tools/ccus-projects-explorer",
+  "explorer_data_url": "https://iea.blob.core.windows.net/scripts/ccus-projects-database/data/projects.json",
+  "licence": "CC BY 4.0",
+  "citation": "IEA, CCUS Projects Database, IEA, Paris, https://www.iea.org/data-and-statistics/data-product/ccus-projects-database",
+  "coverage_thresholds": {
+    "general_tco2_per_year": 100000,
+    "direct_air_capture_tco2_per_year": 1000
+  },
+  "scope": "Capture, transport, storage and utilisation projects with a clear emissions-reduction scope; excludes low-climate-benefit utilisation, conventional internal urea use, and naturally occurring CO2 used for EOR.",
+  "not_audited_financial_data": true,
+  "source_filename": "iea-ccus-projects-database-2026.xlsx",
+  "source_sha256": "9afde5c0ba8f8b3f314ebc44eed7bdaa0a54d479be70c242369e696857272bd8",
+  "ingestion": {
+    "source_form": "official_workbook",
+    "sheet": "DRAFT CCUS Projects Database",
+    "headers": [
+      "announced_capacity_mt_co2_yr",
+      "announcement",
+      "cdr_capacity_mt_co2_yr",
+      "country_or_economy",
+      "estimated_capacity_by_iea_mt_co2_yr",
+      "fate_of_carbon",
+      "fid",
+      "id",
+      "link_1",
+      "link_2",
+      "link_3",
+      "link_4",
+      "link_5",
+      "link_6",
+      "link_7",
+      "operation",
+      "part_of_ccus_hub",
+      "partners",
+      "project_name",
+      "project_phase",
+      "project_status",
+      "project_type",
+      "ref_1",
+      "ref_2",
+      "ref_3",
+      "ref_4",
+      "ref_5",
+      "ref_6",
+      "ref_7",
+      "region",
+      "sector",
+      "subsector",
+      "suspension_decommissioning_cancellation"
+    ],
+    "named_projects": 1110,
+    "reference_urls_preserved": 1058,
+    "workbook_note": "Project announcements are current to February 2026; workbook released 27 March 2026."
+  },
+  "summary": {
+    "project_rows": 1110,
+    "named_project_rows": 1110,
+    "canonical_matches": 29,
+    "candidate_reviews": 1,
+    "by_status": {
+      "Cancelled": 77,
+      "Decommissioned": 3,
+      "Operational": 86,
+      "Planned": 877,
+      "Suspended": 1,
+      "Under construction": 66
+    },
+    "by_capacity_basis": {
+      "capture_capacity": {
+        "projects": 745,
+        "capacity_mtpa": 646.194
+      },
+      "storage_injection_capacity": {
+        "projects": 285,
+        "capacity_mtpa": 948.033
+      },
+      "transport_capacity": {
+        "projects": 80,
+        "capacity_mtpa": 870.2
+      }
+    }
+  },
+  "crosswalk_review_rows": 1081
+}

@@ -1,0 +1,49 @@
+project_id,event_id,effective_date,lifecycle_stage,event_direction,source_url,confidence,note
+uk-hynet-protos,2026-05-29#02,2026-05-28,construction,positive,https://www.energyvoice.com/renewables-energy-transition/ccs/598331/hynet-carbon-capture-anchor-project/,medium,Stage signal extracted from event; current register remains curator-controlled.
+eu-nzia-2030,2026-06-02#03,2026-05-28,commissioning,positive,https://climate.ec.europa.eu/news-other-reads/news/eu-makes-good-progress-towards-its-2030-co2-injection-target-2026-05-28_en,medium,Stage signal extracted from event; current register remains curator-controlled.
+my-kasawari,2026-06-09#02,2026-06-03,feasibility,neutral,https://themalaysianreserve.com/2026/06/03/kelington-expands-petronas-ccs-partnership-to-study-satellite-co%E2%82%82-terminals/,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-morecambe,2026-06-10#01,2026-06-09,feasibility,positive,https://worldoil.com/news/2026/6/9/major-uk-ccs-project-clears-milestone-toward-offshore-co2-storage/,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-morecambe,2026-06-11#02,2026-06-10,feasibility,neutral,https://oceannews.com/news/energy/morecambe-net-zero-peak-cluster-ccs-project-reaches-milestone/,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-morecambe,2026-06-12#07,2026-06-09,feasibility,neutral,https://worldoil.com/news/2026/6/9/major-uk-ccs-project-clears-milestone-toward-offshore-co2-storage/,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-northern-endurance,2026-06-15#01,2026-06-12,FID/financial close,positive,https://www.qcintel.com/carbon/article/uk-dac-project-targets-60-000-tonnes-year-facility-by-2032-66711.html,medium,Stage signal extracted from event; current register remains curator-controlled.
+my-kasawari,2026-06-17#02,2026-06-16,commissioning,positive,https://www.upstreamonline.com/carbon-capture/full-steam-ahead-at-malaysian-offshore-ccs-project/2-1-2003884,medium,Stage signal extracted from event; current register remains curator-controlled.
+au-myrtle,2026-06-19#01,2026-06-18,operating,positive,https://www.miningweekly.com/article/australia-opens-first-carbon-refinery-making-new-products-from-captured-carbon-dioxide-2026-06-18,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-morecambe,2026-06-19#05,2026-06-09,permit application,positive,https://worldoil.com/news/2026/6/9/major-uk-ccs-project-clears-milestone-toward-offshore-co2-storage/,medium,Stage signal extracted from event; current register remains curator-controlled.
+au-myrtle,2026-06-25#05,2026-06-22,operating,positive,https://www.reuters.com/,medium,Stage signal extracted from event; current register remains curator-controlled.
+ca-varme-heartland,2026-06-30#02,2026-06-29,cancelled,negative,https://www.cbc.ca/news/canada/calgary/bakx-varme-edmonton-smith-carney-carbon-tax-tier-9.7247705,medium,Stage signal extracted from event; current register remains curator-controlled.
+ca-meadowbrook,2026-Q2#14,2026-06-30,operating,positive,https://www.globalccsinstitute.com/resources/publications-reports-research/,medium,Stage signal extracted from event; current register remains curator-controlled.
+cn-tianchi-xinjiang,2026-Q2#48,2026-04-27,permit application,neutral,https://www.globalccsinstitute.com/resources/publications-reports-research/,medium,Stage signal extracted from event; current register remains curator-controlled.
+cn-baotou-chemical,2026-Q2#52,2026-05-29,operating,neutral,https://www.globalccsinstitute.com/resources/publications-reports-research/,medium,Stage signal extracted from event; current register remains curator-controlled.
+ca-varme-heartland,2026-07-01#07,2026-06-29,cancelled,negative,https://www.cbc.ca/news/canada/calgary/bakx-varme-edmonton-smith-carney-carbon-tax-tier-9.7247705,medium,Stage signal extracted from event; current register remains curator-controlled.
+us-strategic-biofuels,2026-07-02#01,2026-07-01,permitted,positive,https://www.businesswire.com/news/home/20260630121450/en/Strategic-Biofuels-Secures-Pivotal-Class-VI-Permit-Advancing-Louisianas-Next-Major-Clean-Energy-Project,medium,Stage signal extracted from event; current register remains curator-controlled.
+us-bkv-east-texas,2026-07-02#02,2026-06-30,commissioning,positive,https://www.businesswire.com/news/home/20260630926298/en/BKV-Announces-Two-New-Carbon-Capture-and-Sequestration-Facilities-Now-Operational,medium,Stage signal extracted from event; current register remains curator-controlled.
+au-moomba-ccs,canonical-snapshot,2026-05-24,operating,neutral,https://www.santos.com/news/moomba-ccs-project-stores-two-million-tonnes-of-co2/,high,Current curator-verified snapshot.
+au-cliff-head-ccs,canonical-snapshot,2026-05-25,FEED,neutral,,medium,Current curator-verified snapshot.
+au-gorgon-ccs,canonical-snapshot,2026-07-28,operating,neutral,,high,Current curator-verified snapshot.
+au-carbonnet,canonical-snapshot,2026-07-28,FEED,neutral,,medium,Current curator-verified snapshot.
+ca-pathways,canonical-snapshot,2026-07-02,feasibility,neutral,,medium,Current curator-verified snapshot.
+ca-meadowbrook,canonical-snapshot,2026-06-30,operating,neutral,,medium,Current curator-verified snapshot.
+ca-varme-heartland,canonical-snapshot,2026-07-01,FEED,neutral,,medium,Current curator-verified snapshot.
+us-carbon-terravault-i,canonical-snapshot,2026-05-28,commissioning,neutral,,high,Current curator-verified snapshot.
+us-el-dorado,canonical-snapshot,2026-05-25,FEED,neutral,,medium,Current curator-verified snapshot.
+us-stratos,canonical-snapshot,2026-06-17,construction,neutral,,high,Current curator-verified snapshot.
+us-bkv-east-texas,canonical-snapshot,2026-07-02,operating,neutral,,medium,Current curator-verified snapshot.
+us-strategic-biofuels,canonical-snapshot,2026-07-02,permitted,neutral,,high,Current curator-verified snapshot.
+uk-morecambe,canonical-snapshot,2026-06-12,feasibility,neutral,,high,Current curator-verified snapshot.
+uk-hynet-protos,canonical-snapshot,2026-05-29,construction,neutral,,high,Current curator-verified snapshot.
+uk-hynet-padeswood,canonical-snapshot,2026-06-11,construction,neutral,,high,Current curator-verified snapshot.
+uk-hynet,canonical-snapshot,2026-06-11,FID/financial close,neutral,,high,Current curator-verified snapshot.
+uk-northern-endurance,canonical-snapshot,2026-07-27,construction,neutral,,high,Current curator-verified snapshot.
+uk-drax-beccs,canonical-snapshot,2026-06-09,permit application,neutral,,medium,Current curator-verified snapshot.
+dk-accsion,canonical-snapshot,2026-06-16,FID/financial close,neutral,,high,Current curator-verified snapshot.
+nl-aramis,canonical-snapshot,2026-05-29,permitted,neutral,,high,Current curator-verified snapshot.
+my-kasawari,canonical-snapshot,2026-06-17,construction,neutral,,high,Current curator-verified snapshot.
+id-tangguh-ucc,canonical-snapshot,2026-07-27,construction,neutral,,high,Current curator-verified snapshot.
+cn-tianchi-xinjiang,canonical-snapshot,2026-06-30,permit application,neutral,,medium,Current curator-verified snapshot.
+cn-xingzichuan,canonical-snapshot,2026-06-30,commissioning,neutral,,medium,Current curator-verified snapshot.
+cn-shengli-power,canonical-snapshot,2026-06-30,FEED,neutral,,medium,Current curator-verified snapshot.
+cn-baotou-chemical,canonical-snapshot,2026-06-30,operating,neutral,,medium,Current curator-verified snapshot.
+no-furu-daccs,canonical-snapshot,2026-06-01,construction,neutral,,medium,Current curator-verified snapshot.
+se-stockholm-exergi,canonical-snapshot,2026-06-01,construction,neutral,,high,Current curator-verified snapshot.
+au-myrtle,canonical-snapshot,2026-06-25,operating,neutral,,high,Current curator-verified snapshot.
+eu-nzia-2030,canonical-snapshot,2026-07-01,operating,neutral,https://climate.ec.europa.eu/news-other-reads/news/eu-makes-good-progress-towards-its-2030-co2-injection-target-2026-05-28_en,high,Current curator-verified snapshot.

@@ -1,0 +1,38 @@
+{
+  "dataset": "The London Register of Subsurface CO2 Storage",
+  "edition": "2025",
+  "update_date": "2025-11-12",
+  "zenodo_metadata_updated": "2025-12-22",
+  "retrieval_date": "2026-08-03",
+  "source_url": "https://zenodo.org/records/18016847",
+  "download_url": "https://zenodo.org/api/records/18016847/files/2-2025Nov12_LondonRegisterofSubsurfaceCO2Storage.xlsx/content",
+  "licence": "CC BY 4.0",
+  "doi": "10.5281/zenodo.18016847",
+  "source_filename": "london-register-2025.xlsx",
+  "source_sha256": "c3766fb41f37bc52aac2c27a3b12c5079822c2de5e2e3fc39a4e70328a027917",
+  "methodology": "Pivot sheet selected by Imperial for the public register; annual MtCO2 values. Some years are averages derived from cumulative disclosures. Not audited financial data.",
+  "summary": {
+    "project_count": 46,
+    "year_start": 1996,
+    "year_end": 2024,
+    "cumulative_all_storage_mt": 384.597621,
+    "latest_annual_all_storage_mt": 33.218509,
+    "by_storage_class": {
+      "dedicated": {
+        "projects": 14,
+        "cumulative_mt": 54.391728,
+        "latest_annual_mt": 2.708927
+      },
+      "associated": {
+        "projects": 1,
+        "cumulative_mt": 3.69,
+        "latest_annual_mt": 0.61
+      },
+      "eor": {
+        "projects": 31,
+        "cumulative_mt": 326.515893,
+        "latest_annual_mt": 29.899582
+      }
+    }
+  }
+}

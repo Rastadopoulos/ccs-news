@@ -18,6 +18,29 @@ than being maintainer notes.
 distinction throughout: a country with no published drawdown figure must not render as having drawn
 down nothing.
 
+## Reliability v2 entity and baseline conventions (2026-08-03)
+
+- `entity-seed.csv` is the curator-owned identity layer. Stable IDs and exact aliases control event
+  crosswalking. Add an alias only with source support; ambiguous matches stay in
+  `dashboard/data/entities/crosswalk-review.csv`.
+- `dashboard/data/entities/capacities.csv` is the only additive local project-capacity table. Article
+  values remain evidence. Capture, transport, storage injection, utilisation, removal purchase,
+  policy target and cumulative resource bases are incompatible unless explicitly compared.
+- The current London Register workbook is available and has been ingested. The 2025 edition contains
+  46 projects and sums to 384.597621 Mt all-storage through 2024. The statement that raw Imperial data
+  is unavailable is obsolete. `storage-baseline.json` now serves only the visibly labelled legacy map
+  subset; it is not a headline total.
+- The authenticated IEA 2026 workbook is the primary companion baseline: 1,110 named project/component
+  rows with announcements through February 2026. Exact curated aliases may map automatically; substring
+  and same-country candidates stay in `baselines/iea/crosswalk-review.csv`. Never infer identities from
+  country/stage/capacity alone. The 422-row explorer JSON is retained only as a fallback source.
+- GSR 2025 provides current global totals and a 47-row construction appendix, but not the full all-stage
+  country table. The country map therefore remains labelled GSR 2024.
+- Physical project geography controls additive regional totals. Organisation headquarters is not a
+  substitute. EU-wide records occupy an explicit bloc bucket.
+- The A$8.02bn award figure is a lower bound across four reporting programmes; all blank drawdown fields
+  mean unpublished, not zero.
+
 ---
 
 ## funding-programmes.csv

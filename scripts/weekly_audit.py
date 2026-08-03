@@ -203,6 +203,68 @@ def chapman(nx: int, ny: int, m: int) -> float:
     return (nx + 1) * (ny + 1) / (m + 1) - 1
 
 
+FALSE_POSITIVE_CCS = (
+    "combined charging system", "clinical classification software",
+    "central control system", "customer care service", "college for creative studies",
+    "cascading style", "china classification society",
+)
+
+
+def adjudicate(row: dict) -> dict:
+    """Rule-assisted relevance decision, overridable by a human trace field."""
+    explicit = str(row.get("relevance_status") or "").lower()
+    text = " ".join(str(row.get(k) or "") for k in (
+        "headline", "summary", "section", "instrument_type", "source_domain"
+    )).lower()
+    if explicit in ("relevant", "irrelevant"):
+        relevant = explicit == "relevant"
+        basis = "human adjudication"
+    elif any(meaning in text for meaning in FALSE_POSITIVE_CCS):
+        relevant = False
+        basis = "rule: false-positive meaning of CCS"
+    elif any(term in text for term in ("newsletter signup", "daily ticker", "market ticker", "homepage")):
+        relevant = False
+        basis = "rule: landing page/ticker, not an article"
+    else:
+        relevant = True
+        basis = "rule-assisted relevant; human override available"
+    explicit_priority = row.get("decision_relevant")
+    if isinstance(explicit_priority, bool):
+        decision = explicit_priority and relevant
+    elif not any(row.get(k) for k in ("summary", "section", "instrument_type")):
+        # Legacy sampler traces (and compact synthetic fixtures) lack metadata;
+        # keep them in the high-priority floor until adjudicated rather than
+        # silently declaring them low-value.
+        decision = relevant
+    else:
+        decision = relevant and any(term in text for term in (
+            "permit", "licen", "regulat", "policy", "fund", "investment", "fid",
+            "financial close", "construction", "commission", "operation", "inject",
+            "cancel", "suspend", "delay", "storage", "capture", "ccus", "co2",
+        ))
+    geography = (row.get("geography") or row.get("region") or
+                 ((row.get("countries") or [""])[0] if isinstance(row.get("countries"), list) else "") or
+                 "Unclassified")
+    source_class = row.get("source_class") or (
+        "primary/official" if any(x in text for x in (".gov", "government", "regulator", "operator"))
+        else "media/newsletter")
+    content_type = row.get("content_type") or row.get("section") or row.get("instrument_type") or "unclassified"
+    return {
+        "relevant": relevant, "decision_relevant": decision, "adjudication_basis": basis,
+        "geography": geography, "source_class": source_class, "content_type": content_type,
+    }
+
+
+def recall_breakdown(relevant_union: set[str], union_rows: dict[str, dict],
+                     captured: set[str], field: str) -> list[dict]:
+    groups: dict[str, set[str]] = defaultdict(set)
+    for url in relevant_union:
+        groups[adjudicate(union_rows[url])[field]].add(url)
+    return [{"group": group, "relevant": len(urls), "captured": len(urls & captured),
+             "recall": len(urls & captured) / len(urls)}
+            for group, urls in sorted(groups.items())]
+
+
 def render_report(week_ending: date,
                   sets: dict[str, set[str]],
                   union: set[str],
@@ -212,7 +274,8 @@ def render_report(week_ending: date,
                   drift_rows: list[dict],
                   ran: dict[str, set[str]],
                   dates: list[str],
-                  junk_domains: set[str]) -> tuple[str, str]:
+                  junk_domains: set[str],
+                  quality: dict | None = None) -> tuple[str, str]:
     A = sets.get("A", set())
     B = sets.get("B", set())
     # Search-only subset of A — independent of samplers B/C, so it is the
@@ -222,6 +285,9 @@ def render_report(week_ending: date,
 
     pooled_recall = (len(A & union) / len(union)) if union else 0.0
     floor_recall = (len(A & B) / len(B)) if B else float("nan")
+    quality = quality or {}
+    precision = quality.get("precision", 1.0)
+    decision_recall = quality.get("decision_recall", pooled_recall)
 
     # Chapman across all populated sampler pairs that include A_pure.
     chapman_pairs: list[tuple[str, str, float]] = []
@@ -244,9 +310,11 @@ def render_report(week_ending: date,
     md_lines.append("## Headline metrics")
     md_lines.append("")
     md_lines.append(f"- **Pooled recall** (A ∩ U / U): **{pooled_recall:.0%}**  ({len(A & union)} of {len(union)})")
-    md_lines.append(f"- **Floor recall** (A ∩ B / B): " + (f"**{floor_recall:.0%}**  ({len(A & B)} of {len(B)})" if B else "_no RSS floor items this week_"))
+    md_lines.append(f"- **Precision** (adjudicated relevant items / production items): **{precision:.0%}**")
+    md_lines.append(f"- **Decision-relevant recall**: **{decision_recall:.0%}**")
+    md_lines.append(f"- **Adjudicated high-priority floor recall** (A ∩ B★ / B★): " + (f"**{floor_recall:.0%}**  ({len(A & B)} of {len(B)})" if B else "_no adjudicated high-priority RSS floor items this week_"))
     if abs_recall is not None:
-        md_lines.append(f"- **Estimated absolute recall** (Chapman, median of {len(estimates)} pair-estimates): **{abs_recall:.0%}**")
+        md_lines.append(f"- **Experimental Chapman diagnostic** (median of {len(estimates)} pair-estimates): **{abs_recall:.0%}** — not an authoritative absolute-recall estimate")
     md_lines.append("")
     md_lines.append("## Sampler sizes")
     md_lines.append("")
@@ -280,11 +348,12 @@ def render_report(week_ending: date,
     md_lines.append("")
 
     if chapman_pairs:
-        md_lines.append("## Chapman pair-estimates")
+        md_lines.append("## Experimental Chapman pair-estimates")
         md_lines.append("")
         md_lines.append(f"_Capture side restricted to A★ (search-only, {len(A_pure)} items) — "
                         "full A ingests the RSS floor and Google Alerts feeds, so it is not "
                         "independent of samplers B/C._")
+        md_lines.append("_Diagnostic only: sampler independence and equal catchability are violated, so this must not be read as authoritative absolute recall._")
         md_lines.append("")
         md_lines.append("| Pair | Overlap | Estimated N |")
         md_lines.append("|---|---:|---:|")
@@ -295,6 +364,19 @@ def render_report(week_ending: date,
 
     md_lines.append(f"## Top missed items ({len(missed)} total)")
     md_lines.append("")
+
+    for title_text, key in (("Recall by geography", "by_geography"),
+                            ("Recall by source class", "by_source_class"),
+                            ("Recall by content type", "by_content_type")):
+        values = quality.get(key, [])
+        if values:
+            md_lines.append(f"## {title_text}")
+            md_lines.append("")
+            md_lines.append("| Group | Adjudicated relevant | Captured | Recall |")
+            md_lines.append("|---|---:|---:|---:|")
+            for row in values:
+                md_lines.append(f"| {row['group']} | {row['relevant']} | {row['captured']} | {row['recall']:.0%} |")
+            md_lines.append("")
     if not missed:
         md_lines.append("_No items in U that A did not capture._")
     else:
@@ -508,6 +590,24 @@ def main() -> int:
     # union is now potentially larger than the dedup'd set; reduce to dedup'd keys.
     union = set(union_rows.keys())
 
+    decisions = {url: adjudicate(row) for url, row in union_rows.items()}
+    relevant_union = {url for url, decision in decisions.items() if decision["relevant"]}
+    decision_union = {url for url, decision in decisions.items() if decision["decision_relevant"]}
+    A_all, B_all = sets.get("A", set()), sets.get("B", set())
+    # The 90% floor is applied only to adjudicated decision-relevant RSS items.
+    # Every other sampler still contributes to the broader relevant union.
+    B_priority = B_all & decision_union
+    quality = {
+        "precision": len(A_all & relevant_union) / len(A_all & union) if A_all & union else 0.0,
+        "decision_recall": len(A_all & decision_union) / len(decision_union) if decision_union else 0.0,
+        "by_geography": recall_breakdown(relevant_union, union_rows, A_all, "geography"),
+        "by_source_class": recall_breakdown(relevant_union, union_rows, A_all, "source_class"),
+        "by_content_type": recall_breakdown(relevant_union, union_rows, A_all, "content_type"),
+    }
+    union = relevant_union
+    sets = dict(sets)
+    sets["B"] = B_priority
+
     missed, coverage = compute_missed_and_coverage(union, union_rows, sets)
     A, B = sets.get("A", set()), sets.get("B", set())
     pooled_recall = (len(A & union) / len(union)) if union else 0.0
@@ -515,7 +615,7 @@ def main() -> int:
     drift_rows = load_drift(week_ending, pooled_recall, floor_recall)
 
     md, html_doc = render_report(week_ending, sets, union, union_rows, missed, coverage,
-                                 drift_rows, ran, dates, junk_domains)
+                                 drift_rows, ran, dates, junk_domains, quality)
 
     out_md = AUDIT_DIR / f"{week_ending.isoformat()}-recall-report.md"
     out_html = AUDIT_DIR / f"{week_ending.isoformat()}-recall-report.html"

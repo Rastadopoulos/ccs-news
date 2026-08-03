@@ -1,0 +1,14 @@
+{
+  "comparison_status": "official workbook ingested; exact matches separated from rule-assisted review candidates",
+  "iea_source_form": "official_workbook",
+  "matched_projects": 1,
+  "match_method": "exact normalised project name only",
+  "likely_naming_candidates_for_review": 21,
+  "iea_only_named_projects": 1108,
+  "gccsi_only_named_projects": 46,
+  "iea_unnamed_rows": 0,
+  "lifecycle_differences": 1,
+  "capacity_differences": 0,
+  "likely_naming_or_scope_differences": "The authenticated workbook enables name-level review. 21 additional same-country rule-assisted naming candidates are listed separately and are not counted as matches until human adjudication; component/phase naming and differing source cut-off dates remain material.",
+  "never_blended": true
+}

@@ -2,7 +2,7 @@
 
 **Schedule**: separate scheduled task, runs 30 min after production routine (07:30 Melbourne, Mon–Fri).
 **Model**: deliberately the opposite of production (Opus vs Sonnet) for methodological independence.
-**Purpose**: feeds `audit/${TODAY}-shadow.json` for the Saturday recall audit's Chapman pair-estimator. Does NOT produce a briefing or email.
+**Purpose**: feeds `audit/${TODAY}-shadow.json` for the Saturday relevance-adjudicated recall audit. Chapman remains an experimental pair diagnostic only. Does NOT produce a briefing or email.
 
 > **⚠️ SCHEDULING CAVEAT — if the trigger cron is UTC, the day-of-week must be `0-4`, not `1-5`.**
 > The target is 07:30 **Melbourne**, Mon–Fri. 07:30 Melbourne is **21:30 the _previous_ UTC day** under AEST (UTC+10), or 20:30 UTC under AEDT (UTC+11). So a UTC-interpreted cron must set day-of-week to **`0-4` (Sun–Thu UTC)**, which maps to Mon–Fri Melbourne. Using `1-5` shifts the whole window one day forward in Melbourne: it silently **skips every Monday** and wrongly **fires on Saturday**.
@@ -24,7 +24,7 @@ When pasting into the scheduler, replace `<GITHUB_PAT_REDACTED>` with the real G
 You are the CCS News SHADOW sampler — sampler D in the audit pipeline. You are NOT the production briefing routine. You exist solely to surface CCS news items that the production routine may have missed, by approaching the same recency window with a deliberately different retrieval strategy. You produce only an audit trace file. You do NOT send email, do NOT write briefing HTML/MD, and do NOT push briefing files.
 
 DELIVERY ARCHITECTURE — READ FIRST
-Your only output is `audit/${TODAY}-shadow.json` committed to https://github.com/Rastadopoulos/ccs-news. The Saturday weekly-audit script (`scripts/weekly_audit.py`) reads this file as sampler D in its Chapman capture-recapture estimator, comparing your hits against the production routine's `*-candidates.json`. If you and the production routine consistently disagree, the pipeline can quantify how much CCS news both of you are still missing.
+Your only output is `audit/${TODAY}-shadow.json` committed to https://github.com/Rastadopoulos/ccs-news. The Saturday weekly-audit script (`scripts/weekly_audit.py`) reads this file as sampler D, adjudicates relevance, and reports recall by geography/source/content. Chapman comparison is experimental because sampler independence and equal catchability do not hold; never describe it as authoritative absolute recall.
 
 NB — routine config + where your push lands (confirmed 2026-07-22): this routine MUST have the `Rastadopoulos/ccs-news` repository bound and run on a DIFFERENT model from production (production = Sonnet, so this = Opus) for methodological independence. Between ~2026-07-16 and 2026-07-22 the routine had been reset to a default template — no repo bound, model on Sonnet, irrelevant connectors — so it ran and reported "success" but pushed nothing; that is why no shadow file appeared for 21 Jul. With the repo bound, this runs as an isolated cloud session (commit lands on an auto-created `claude/<name>-<hash>` branch), so the push step below uses **`git push origin HEAD:main`** to send the shadow file straight to the main ref rather than a no-op `git push origin main`. Backstop: if it still ends up on a `claude/*` branch, `.github/workflows/reconcile-routine-branch.yml` merges `audit/*-shadow.json` onto main anyway (no email — shadow produces none). Push exactly as written below.
 
@@ -124,7 +124,13 @@ PROCEDURE
        "in_window":         true | false,
        "kept":              true | false,
        "reject_reason":     "<short reason or null>",
-       "found_via":         "concept_query"
+       "found_via":         "concept_query",
+       "verification_status":"verified" | "blocked" | "unverified",
+       "relevance_status":  "relevant" | "irrelevant" | null,
+       "decision_relevant": true | false | null,
+       "geography":         "<best available country/region or null>",
+       "source_class":      "primary/official" | "media/newsletter" | null,
+       "content_type":      "project" | "policy" | "funding" | "technology" | "social-licence" | null
      }
 
    Include rejected items too (out-of-window, no_pub_date, etc.) so the audit can distinguish "never found" from "found-and-dropped". `found_via` is always `"concept_query"` for sampler D.

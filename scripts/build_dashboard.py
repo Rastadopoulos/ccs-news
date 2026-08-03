@@ -45,6 +45,7 @@ from _countries import (COUNTRY_ISO, NON_COUNTRY_TOKENS, split_compound,  # noqa
                          CONTINENT_GROUPS, GROUP_ORDER)
 import _worldmap as W  # noqa: E402  (generated — see scripts/gen_worldmap.py)
 import _curation  # noqa: E402  (curated CSV datasets — see scripts/_curation.py)
+from reliability_dashboard import upgrade_body  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "dashboard", "data")
@@ -2201,7 +2202,7 @@ def render(fresh, radar, stats, fx, fx_asof, build_dt, ref=None, sref=None,
     paint(b.getAttribute('data-mode'));
   });
 
-  var first = host.querySelector('.pill');
+  var first = host.querySelector('[data-mode="operating"]') || host.querySelector('.pill');
   if(first){ first.classList.add('active'); paint(first.getAttribute('data-mode')); }
 })();
 </script>""")
@@ -2365,6 +2366,7 @@ def main():
     build_dt = os.environ.get("BUILD_DATE") or date.today().isoformat()
     body = render(fresh, radar, stats, fx, fx_asof, build_dt, ref, sref,
                   ref_countries, plocs, fprog)
+    body = upgrade_body(body, fresh, build_dt)
     # `body` is: <title>…<style>…</style> + <div class="wrap">…</div>. Split the head
     # material from the body content at the wrap div to assemble a valid document.
     page = ("<!doctype html><html lang=en><head><meta charset=utf-8>"

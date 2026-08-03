@@ -1,0 +1,16 @@
+programme_id,geography,region,programme,scope,reported_total_aud,published_awards_aud,drawdown_status,period_years,status,source,source_page
+funding-programme-001,United Kingdom,Europe,CCUS cluster support — Track-1 (Teesside / HyNet),ccs-specific,42315000000,,not published — not zero,25,committed,GCCSI Global Status of CCS 2024,48
+funding-programme-002,United Kingdom,Europe,Green Industry Growth Accelerator,ccs-eligible,1872000000,,not published — not zero,,committed,GCCSI Global Status of CCS 2024,48
+funding-programme-003,United States,Americas,Bipartisan Infrastructure Law — carbon management,ccs-specific,19125000000,3366000000,published,,operating,GCCSI Global Status of CCS 2024,33
+funding-programme-004,United States,Americas,Regional Direct Air Capture Hubs,ccs-specific,5355000000,1836000000,published,,operating,GCCSI Global Status of CCS 2024,21
+funding-programme-005,United States,Americas,45Q tax credit,ccs-specific,0,,not published — not zero,,operating,GCCSI Global Status of CCS 2024,33
+funding-programme-006,Canada,Americas,Canada Growth Fund — carbon contracts for difference,ccs-eligible,7840000000,,not published — not zero,,committed,GCCSI Global Status of CCS 2024,34
+funding-programme-007,Norway,Europe,Longship (Langskip) — state share,ccs-specific,2486400000,2486400000,published,,operating,GCCSI Global Status of CCS 2024,26
+funding-programme-008,European Union,EU bloc,Innovation Fund call (2023-24 round),ccs-eligible,6640000000,,not published — not zero,1,operating,GCCSI Global Status of CCS 2024,47
+funding-programme-009,Sweden,Europe,Bioenergy CCS state aid,ccs-specific,4980000000,,not published — not zero,,committed,GCCSI Global Status of CCS 2024,48
+funding-programme-010,Japan,Asia-Pacific,Climate transition bond — CCS share,ccs-specific,39780000000,,not published — not zero,10,committed,GCCSI Global Status of CCS 2024,41
+funding-programme-011,Australia,Asia-Pacific,Geoscience Australia subsurface resource mapping,ccs-eligible,556100000,,not published — not zero,10,committed,GCCSI Global Status of CCS 2024,40
+funding-programme-012,Germany,Europe,Industrial decarbonisation support — CCS hubs,ccs-specific,8300000000,,not published — not zero,,announced,CO2CRC news tracking,
+funding-programme-013,Denmark,Europe,ACCSION contract-for-difference (Aalborg Portland),ccs-specific,3679500000,,not published — not zero,15,committed,CO2CRC news tracking,
+funding-programme-014,India,Asia-Pacific,National CCUS scheme,ccs-specific,3580000000,,not published — not zero,5,announced,CO2CRC news tracking,
+funding-programme-015,Belgium,Europe,Flanders industrial decarbonisation — CCS tranche,ccs-specific,1992000000,332000000,published,,committed,CO2CRC news tracking,

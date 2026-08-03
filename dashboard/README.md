@@ -1,242 +1,86 @@
 # CCS Intelligence Dashboard
 
-A running, evidence-based read on global CCS momentum, built from the daily CCS-briefing corpus and
-viewed through the CO2CRC / CO2Tech strategic lens. For the *why* and the agreed scope, see
-[`SCOPE.md`](SCOPE.md).
+[`index.html`](index.html) is a self-contained, offline CCS intelligence product for board and senior-stakeholder use. It leads with data health and official deployment baselines, then uses the daily briefing as an evidence stream. A news article is never treated as a project-sized commitment.
 
-**Output:** [`index.html`](index.html) — a single self-contained HTML file (inline SVG charts, no
-external dependencies; opens in any browser, emails cleanly, works as a Claude Artifact). Dated
-board snapshots are archived in [`snapshots/`](snapshots/).
+## Architecture
 
-## How it works
-
-```
- briefing .md files  ──►  extraction (LLM)  ──►  facts records  ──►  build_dashboard.py  ──►  index.html
- (repo root, daily)       per EXTRACTION_SPEC       (JSON)            (dedup, A$, charts)      + snapshot
+```text
+daily facts + periodic reports ──► event archive ──► canonical entity crosswalk
+                                                     │
+official IEA / GCCSI / London baselines ─────────────┼──► reliability model ──► dashboard
+funding programme + event curation ──────────────────┘
 ```
 
-1. **Extraction** turns each briefing's prose into structured records per
-   [`data/EXTRACTION_SPEC.md`](data/EXTRACTION_SPEC.md) — the single source of truth for the schema,
-   controlled vocabularies, FX handling and dedup rules.
-   - **History (frozen):** [`data/facts-backfill.jsonl`](data/facts-backfill.jsonl) — a one-time
-     backfill of every briefing from 24 May 2026 onward. Do not regenerate casually; it carries
-     central-QA corrections (see below).
-   - **Ongoing:** the daily production routine emits `audit/YYYY-MM-DD-facts.json` alongside each
-     briefing (see `docs/routine-prompts/production.md`, output step E2).
-   - **Periodic external reports:** GCCSI quarterly updates (and similar periodic reports the user
-     drops into the local `03-GCCSI-publications/` folder) are extracted on arrival into
-     `data/quarterly/YYYY-QN.jsonl` — see EXTRACTION_SPEC.md's "Output location" section for the
-     convention, including the manual duplicate-check step against the daily corpus (these reports
-     have no per-item URLs and use different headline wording than the press, so the automatic
-     dedup below does NOT catch overlaps — check by org + event before adding a new quarter's file).
-     A local scheduled task (`gccsi-publications-watch`, Mondays) checks that folder for new files
-     and pings the user, since it's local-only and neither GitHub Actions nor the cloud briefing
-     routine can see it.
-2. **`scripts/build_dashboard.py`** reads the backfill + all `audit/*-facts.json` + all
-   `data/quarterly/*.jsonl`, normalises money to A$ (fixed rates in
-   [`data/fx_rates.json`](data/fx_rates.json)), dedups across days (reusing `scripts/_canon.py`),
-   excludes `radar` items from time-series, and renders `index.html`.
-3. **Weekly rebuild** — `.github/workflows/weekly-audit.yml` rebuilds the dashboard and writes a dated
-   snapshot every Saturday (Melbourne), committing both to `main`.
-4. **Weekly email** — committing that dated snapshot triggers `.github/workflows/email-dashboard.yml`,
-   which emails the self-contained dashboard as an attachment via Resend (same pattern as the briefing
-   and audit emails). Trigger it manually anytime from the Actions tab (`workflow_dispatch`).
+Key generated datasets:
 
-## Rebuild locally
+- `data/entities/projects.csv` — stable project/entity IDs, aliases, physical geography, lifecycle and verification fields.
+- `data/entities/components.csv` — capture facilities, transport networks, storage sites and other linked components.
+- `data/entities/capacities.csv` — the only additive local capacity table; basis-specific and deduplicated.
+- `data/entities/event-crosswalk.csv` — daily/periodic evidence mapped to canonical entities; uncertain mappings remain blank.
+- `data/entities/crosswalk-review.csv` — human mapping queue.
+- `data/model/funding-programmes.csv` and `funding-commitments.csv` — programme stock and unique event categories, kept separate.
+- `data/model/regional-reconciliation.csv` — one primary physical geography per event, including an explicit EU-bloc bucket.
+- `data/coverage/latest.json` — technical collection health; an impaired day can never become a quiet-day claim.
+
+The generated model is intentionally reviewable CSV/JSON. Source workbooks/feeds and checksums live under `data/sources/` and baseline metadata.
+
+## Reproducible rebuild
+
+The checked-in baseline outputs are current as of 3 August 2026. Refresh them in this order when their sources change:
 
 ```sh
-.venv/bin/python scripts/build_dashboard.py                 # refresh index.html
-.venv/bin/python scripts/build_dashboard.py --snapshot 2026-07-11   # + a dated board snapshot
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/ingest_iea_ccus.py \
+  dashboard/data/sources/iea-ccus-projects-database-2026.xlsx --retrieved 2026-08-03
+
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/ingest_gccsi_2025.py \
+  "/path/to/Global-Status-of-CCS-2025.pdf" --retrieved 2026-08-03
+
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/ingest_london_register.py \
+  dashboard/data/sources/london-register-2025.xlsx --retrieved 2026-08-03
+
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/build_entity_register.py
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/build_baseline_comparison.py
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/coverage_report.py --date 2026-08-03 --window 14
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/build_reliability_model.py
+BUILD_DATE=2026-08-03 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/build_dashboard.py
 ```
 
-No dependencies beyond the standard library + `scripts/_canon.py`, `scripts/_countries.py` and the
-generated `scripts/_worldmap.py`.
+The dashboard build fails if required generated layers are missing or if the verified IEA 2026, GCCSI 2025 or London Register 2025 metadata regresses. Use `--snapshot YYYY-MM-DD` on the final command for a board snapshot.
 
-## The world map
+## Companion baselines
 
-The page opens with a real-geography world map of CCS activity, above the numbered views. Countries
-are shaded by whichever measure the reader selects, and the selector buttons are **grouped by data
-source** so no figure can be read without knowing who produced it:
+### IEA CCUS Projects Database 2026
 
-| Group | Measures | Source |
-|---|---|---|
-| Government funding programmes | Total committed · Awarded to date | `data/funding-programmes.json` |
-| GCCSI Global Status of CCS 2024 | Facilities operating · Capture capacity · National CCS policy | `data/reference-baseline-countries.json` |
-| Storage register | Type of storage · CO₂ stored to date | `data/storage-baseline.json` (GCCSI × Imperial) |
-| CO2CRC news tracking (this window) | Tracked developments · New public money · New private money | this repo's briefing corpus |
+Source: <https://www.iea.org/data-and-statistics/data-product/ccus-projects-database>. Update 27 March 2026; retrieved 3 August 2026; CC BY 4.0.
 
-Hovering a country opens a card with its full record, kept in the same three labelled sections. Dots
-mark the individual storage projects in the register, placed at indicative coordinates from
-`data/project-locations.json`. A per-region roll-up sits under the map, and a **Key terms** section
-follows it defining every piece of vocabulary the dashboard uses (tracked development vs facility vs
-project, Mtpa, capacity vs stored, the four commitment stages, the three storage types).
+IEA coverage includes projects above 100,000 tCO₂/year and DAC above 1,000 tCO₂/year. It excludes low-climate-benefit utilisation, conventional internal urea use and naturally occurring CO₂ used for EOR. The authenticated official workbook contains 1,110 named projects, preserves partner, phase, hub, sector, capacity, milestone and reference fields, and states that project announcements are current through February 2026. Exact curated entity matches are accepted; plausible alias/component matches remain in the review queue. The 422-row public explorer feed is retained only as a reproducible fallback.
 
-Two generated files back the map; regenerate them only when the underlying source changes:
+### GCCSI Global Status of CCS 2025
 
-```sh
-# country outlines — Natural Earth 110m, public domain, simplified + Robinson-projected
-curl -o /tmp/ne110m.geojson https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson
-python3 scripts/gen_worldmap.py /tmp/ne110m.geojson          # -> scripts/_worldmap.py
+The global headline is 77 operating facilities / 64 Mtpa, 47 in construction / 44 Mtpa, 610 in development and 734 in the total pipeline / 513 Mtpa, with data as of July 2025. The reproducible importer extracts the report's full 47-row in-construction appendix. GSR 2025 does not reproduce the all-stage country facility table, so the country map is visibly labelled GSR 2024 rather than silently mixed with the 2025 global totals.
 
-# per-country facility counts, capacity, policy status, carbon price
-python3 scripts/gen_gccsi_countries.py "../03-GCCSI-publications/Global-Status-Report-6-November.pdf"
-```
+### London Register 2025
 
-`gen_gccsi_countries.py` parses the report's Section 5.0 Facilities List (pp.57-79, ~629 facilities)
-and validates its per-country totals against the report's own Figure 3.1-4: the United States (276),
-United Kingdom (65), Canada (58) and China (25) reconcile exactly; Norway comes out at 27 against a
-stated 26, a source-internal difference that is documented in the file's `known_gaps` rather than
-adjusted away. The script prints the check on every run.
+Source: DOI `10.5281/zenodo.18016847`, CC BY 4.0. The current downloadable workbook contains 46 projects and annual series through 2024. The independent sum is 384.597621 Mt cumulative all-storage and 33.218509 Mt in 2024. Dedicated, associated reinjection and EOR remain separate. Some annual figures are averages derived from cumulative disclosures, as documented in the source.
 
-## The nine views
+The older `storage-baseline.json` remains only for the legacy named-project map subset and is visibly labelled incomplete. It is not a headline source.
 
-1. Geography of commitment · 2. The global baseline — GCCSI · 2c. Cumulative storage
-delivered (GCCSI × Imperial) · 3. Where the money goes · 4. Actors (incl. O&G-major
-advancing/retreating) · 5. Deployment-mandate tracker · 6. Australia benchmark · 7. Momentum & social
-licence · 8. Capacity committed (Mtpa) · 9. Segmented CO2CRC/CO2Tech signal feed.
+## Capacity, funding and geography rules
 
-Every section carries a **data-source chip** naming the organisation behind its figures.
+- Capture, transport, storage injection, utilisation, removal-purchase/offtake, policy-target and cumulative resource values are distinct bases.
+- An event capacity is evidence only. Latest curator-verified project/component values control totals.
+- Project updates replace prior values; Pathways, Morecambe, Carbon TerraVault and Padeswood article repeats cannot add capacity.
+- Programme stock, CCS-eligible pots, published awards, actual spend, private investment, capex, supplier contracts, cancelled capex and withdrawn public funding are separate.
+- Missing drawdown is “not published”, never zero. “Published awards: at least A$8.02bn across four reporting programmes” is a lower bound.
+- “Status-weighted reported value” is an analytical scenario using disclosed weights; it is not committed money.
+- Multi-country tags are useful for discovery but non-additive. Reconciliation uses canonical physical location, not company headquarters. BP Tangguh is Indonesia; EU-wide measures sit in an EU-bloc bucket.
 
-View 2c reconciles two cumulative-storage sources that measure different things — GCCSI's dedicated
-(non-EOR) project count (capacity basis) and Imperial College's *London Register of Subsurface CO₂
-Storage* (measured actual tonnes, all storage types) — as two labelled series joined by a documented
-bridge, under a destination-based 3-way taxonomy (dedicated / associated / EOR). Data:
-`data/storage-baseline.json`. The Imperial source is watched **monthly** by
-`.github/workflows/imperial-register-check.yml` (emails on change via Resend).
+## Collection, recall and monitoring
 
-View 2 carries the external authoritative baseline — the Global CCS Institute *Global Status of CCS*
-report (`data/reference-baseline.json`). It is the starting point for the whole dashboard: the news
-views record what has moved since that annual survey was compiled, so they extend the baseline rather
-than being checked against it. It is dual-sourced and labelled by edition: the global
-headline + growth series are **GSR 2025** (from GCCSI's published figures), and the region-by-region
-facility counts & targets are **GSR 2024** (§4, data as of 24 Jul 2024) — the latest edition with a
-verifiable regional breakdown in the CO2CRC GCCSI library (`03-GCCSI-publications/`). GCCSI reports
-regional facility counts + Mtpa targets, not a per-region capacity table. Refresh `reference-baseline.json`
-when a newer edition's regional chapters become available locally.
+`scripts/coverage_report.py` records attempted/reachable feeds, retrieved articles, verified publication dates, failures and missing sampler files. Status is one of `normal coverage`, `partial coverage`, `collection impaired` or `no verified news`. The last status is legal only when all scheduled samplers are healthy.
 
-## Funding: two different questions
+The weekly audit adjudicates relevance before constructing the denominator, reports precision, overall and decision-relevant recall by geography/source/content, and applies the 90% floor only to adjudicated high-priority RSS items. Chapman capture–recapture is an experimental diagnostic because independence and equal-catchability assumptions are violated.
 
-The dashboard reports funding two ways, and conflating them was a real defect found in July 2026.
+`config/authoritative-sources.yml` and `scripts/monitor_authoritative_sources.py` fingerprint official baselines, regulators, operators/NOCs and technology providers. `.github/workflows/authoritative-source-monitor.yml` runs this with network access; changes that cannot be safely structured generate human-review alerts. `.github/workflows/collection-backfill.yml` re-runs the deterministic floor for an impaired date.
 
-**Government funding programmes** (`data/funding-programmes.json`) is a **stock**: what a government has
-committed in total, whenever announced, over the whole life of the programme — with the period and, where
-published, how much has actually been awarded. The UK's £21.7bn runs **over 25 years** (~£870m/yr average).
-Of the United States' US$12.5bn infrastructure-law carbon pot, **about 18% had been awarded** as at June 2024.
-Only four programmes publish a drawdown figure; a blank means unpublished, never zero.
-
-**New money reported** is a **flow**: money that surfaced in the news during the current window only. It is
-not a funding position. Before this split existed the map showed the UK's committed funding as **A$8.8m** —
-its £21.7bn predates the corpus window entirely, so the corpus could not see it.
-
-Every money figure is now re-extracted through `data/funding-enrichment.json`, which records for each record
-who is paying (`funder_type`), what the figure measures (`amount_basis`), the period it spans, and whether it
-duplicates another record. That overlay removes from funding totals: whole-economy investment aggregates, ETS
-cost savings, lawsuit values, merger synergy targets, supplier sub-contracts already inside a project's capex,
-and three confirmed double-counts (Pathways, India's CCUS scheme, Spain's PERTE round). Applying it moved the
-headline weighted total from A$35.47bn to **A$28.09bn** and face value from A$71.76bn to **A$50.01bn**.
-
-## Keeping the data current
-
-| Source | Detection | Update | Cadence |
-|---|---|---|---|
-| **CO2CRC briefings** | — | fully automatic | corpus grows **daily**; dashboard rebuilds **Saturday 08:00 Melbourne** (`weekly-audit.yml`) |
-| **Imperial register** | automatic | **manual** | fingerprint check **1st of each month** (`imperial-register-check.yml`) emails on change |
-| **GCCSI publications** | automatic | **manual** | local task `gccsi-publications-watch`, **Mondays**, classifies new files and names the next step |
-
-Two things about the weekly rebuild are easy to misread. It reads the **entire accumulated corpus**
-every time — backfill plus every `audit/*-facts.json` plus every `quarterly/*.jsonl` — so the dashboard
-is cumulative over the whole corpus span, not a report on the past seven days. And it renders whatever
-data files are committed: if a generated file is missing, the build succeeds and quietly drops that map
-layer rather than failing.
-
-Both external checks are **change detectors, not updaters**. They tell you something moved; a human
-decides what to do. Imperial alerts arrive from the same Resend sender whose dashboard mail has landed
-in Junk before — worth checking there.
-
-### When a new GCCSI report arrives
-
-Drop it in `03-GCCSI-publications/`. Monday's watcher runs
-`scripts/check_gccsi_publications.py`, classifies it and pushes a notification naming the action:
-
-- **Quarterly update** → extract to `data/quarterly/YYYY-QN.jsonl`, with the manual duplicate
-  cross-check against the daily corpus. Automatic dedup catches none of these (0 of 23 on Q2-2026).
-- **Global Status Report** → re-run `scripts/gen_gccsi_countries.py`. The facilities list is located by
-  its column header, so repagination is handled — but the edition-specific `NARRATIVE_CROSSCHECK`
-  targets and the hand-read `POLICY_STATUS` figure must be updated, or the parse is unverified.
-
-Run it by hand any time: `python3 scripts/check_gccsi_publications.py`
-
-### The curated datasets
-
-Four datasets are curated rather than extracted, and they live as **CSV, which is their source of
-truth** — the build reads them directly and there is no JSON copy to drift out of step:
-
-```
-dashboard/data/curation/
-├── NOTES.md                    what the columns mean, and every known gap
-├── funding-programmes.csv      standing government CCS funding pots
-├── funding-enrichment.csv      classification of every money figure in the corpus
-├── project-locations.csv       map coordinates for the storage projects
-└── gccsi-countries.csv         per-country facilities, capacity, policy (generated)
-```
-
-They are **maintained programmatically, not by hand.** Open any of them in Excel to read; they are
-committed, so a review shows exactly which figure moved. `gccsi-countries.csv` is regenerated by
-`scripts/gen_gccsi_countries.py` — hand edits there are discarded on the next run.
-
-`NOTES.md` carries what a spreadsheet row cannot: column meanings, source conventions and the known
-gaps. **When a change alters what the numbers mean, update NOTES.md in the same commit** — a figure
-without its caveat is worse than no figure.
-
-**A blank cell means "not stated by the source", never zero.** The dashboard depends on this: a
-country with no published drawdown must not render as having drawn down nothing.
-
-Two datasets deliberately stay JSON — `storage-baseline.json` (a reconciliation waterfall and two
-labelled series, not a table) and `reference-baseline.json` (nested global and regional blocks).
-Their caveats are rendered into the dashboard rather than being maintainer notes. The news corpus
-stays JSONL because a cloud routine appends to it daily.
-
-Data integrity is enforced by the test suite rather than at edit time, since these files are written
-programmatically: `test_curated_data_passes_integrity_checks` verifies country names against
-`_countries.py`, currencies against `fx_rates.json`, enum fields, that `awarded_to_date` never
-exceeds a programme total, that project names match `storage-baseline.json` exactly, and that
-coordinates are in range. Bad data fails the build instead of reaching the dashboard.
-
-### Funding review backlog
-
-`data/funding-enrichment.json` classifies each money figure by funder, basis and period. It is keyed by
-record id, so it only covers records reviewed to date — **new money is counted in full until classified**.
-Every build prints the backlog, the dashboard shows a warning banner while any exists, and
-`test_unreviewed_money_is_surfaced_not_silently_counted` fails if the queue is non-empty.
-
-## Reading the numbers (important caveats)
-
-- **Funding means public money** unless labelled private. Government pledges and company capital are
-  tracked separately and never summed.
-- **A programme total is not an annual budget.** Always read it with its period.
-- **Committed ≠ awarded.** The gap between a pledge and money out the door is often most of the pot.
-- **Announced ≠ committed ≠ spent.** Money is status-weighted (announced 0.25 / allocated 0.75 /
-  committed·spent 1.0); cancellations are tracked separately as a negative signal, never summed in.
-- **A$ at fixed reference rates** (as of 2026-06-30) — an assumption pending Finance review. Change
-  `data/fx_rates.json` and rebuild to update every figure.
-- **Coverage bias.** The corpus reflects the briefing's English-language source skew — Europe-UK,
-  North America and APAC dominate; China/India/MENA/Africa/LatAm are under-represented vs reality.
-  Absence of evidence is not evidence of absence.
-- **Mandate tracker is incidental**, not an exhaustive register of legislated CCS-dependent targets.
-- **Not audited financials** — a best-effort read of press summaries.
-- **A tracked development is not a project.** The corpus counts news events; one project generates
-  many developments over its life. Facility counts (GCCSI) and storage-project counts (the register)
-  are different populations again, and the three must never be added together.
-- **Nameplate capacity ≠ tonnes stored.** GCCSI capacity is design rate; Imperial's register is
-  measured injection, which has run 19–30% below reported capacity. The map keeps them on separate
-  buttons for that reason.
-- **Grey on the map means "not reported", not zero** — GCCSI's regional chapters often describe a
-  country's projects without giving a country-level number.
-
-## Central QA
-
-Extraction is faithful to the prose, but some source figures are market aggregates, cost-savings, or
-projected requirements rather than discrete commitments. These are corrected centrally (amount/capacity
-nulled or status set to `na`) and the correction is recorded in the record's `extractor_note`. Applied
-so far: State-of-CDR US$11.5bn market aggregate; JERA US$4bn project-cost-vs-charter; Morecambe £1.8bn
-economic-contribution projection; Europe 320 Mtpa 2050 shipping-requirement study.
+See [`../docs/reliability-operations.md`](../docs/reliability-operations.md) and [`data/SOURCE_INVENTORY.md`](data/SOURCE_INVENTORY.md) for refresh and operational handoff.

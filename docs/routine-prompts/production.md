@@ -54,6 +54,13 @@ The routine's other safeguards (Shelly's digest, the IEAGHG weekly, RSS floor) u
 - 0–2 fresh items: 'Quiet day' stub. Optional 'Still on the radar' section (same rules as above).
 - NEVER include items older than 7 days.
 
+**Technical-coverage gate:** Quiet-day language is permitted only when every scheduled collection
+step was attempted and the run can verify healthy coverage. Record each feed/source attempted,
+whether it was reachable, retrieved count, verified publication dates and verification failures.
+If WebSearch/WebFetch or a scheduled sampler is blocked/missing, label the run `collection impaired`
+(or `partial coverage` when only part of the floor failed), retain candidates with
+`verification_status: blocked|unverified|verified`, and do not claim the news day was quiet.
+
 === HEAVY NEWS DAY — PRIORITISATION + APPENDIX ===
 When more than 12 in-window candidates survive Step 3, this is a heavy news day. Pick the top 8–12 for the main briefing by applying this ranking ladder in order, taking from the top down until you have 8–12 items selected:
 
@@ -124,7 +131,7 @@ PROCEDURE
      git remote set-url origin https://rastadopoulos:<GITHUB_PAT_REDACTED>@github.com/rastadopoulos/ccs-news.git
      git pull --rebase --autostash || true
 
-2. WebSearches per (scope × geography) bucket with date anchors. For each candidate, WebFetch the page and read the publication date from page metadata/body. Discard out-of-window silently.
+2. WebSearches per (scope × geography) bucket with date anchors. For each candidate, WebFetch the page and read the publication date from page metadata/body. Discard verified out-of-window items; retain blocked/unverified candidates in the audit trace for retry.
    Run a MINIMUM of 14 distinct queries per run. If fewer than 8 in-window candidates have survived after the first full pass, run at least 5 additional queries drawn from the shadow sampler's concept list (docs/routine-prompts/shadow-sampler.md, Step 2) before declaring Quiet-day mode — a quiet day must be a verified finding, not a consequence of thin search effort.
    Issue at least one query per geographic bucket each run, including under-represented regions (China, MENA, India, SE Asia, LatAm, Africa). Issue at least two queries per run targeting multinational-strategy items (`<company> CCS strategy`, `<company> carbon capture investment`, `<company> CCS MoU OR JV OR partnership`) — rotate the company name across runs through both supermajors (BP / Shell / TotalEnergies / Eni / Chevron / ExxonMobil) and the trading houses listed in Tier 3 (Mitsui / Mitsubishi Corp / Itochu / Sumitomo / Marubeni / JERA). Issue at least one query per run on transboundary-CCS topics, rotating across: `London Protocol Article 6 CO2`, `transboundary CO2 OR cross-border CCS`, `CO2 export licence OR sub-seabed storage agreement`, `Bayu-Undan CCS OR Barossa CO2 injection`, `liquid CO2 carrier OR CO2 shipping`, `sea dumping CO2 OR Sea Dumping Act CCS`. Vary base term phrasing across runs to avoid cache-stuck hits — alternate 'CCS', 'carbon capture and storage', 'CCUS', 'carbon storage', plus the local-language equivalent where it materially changes results (Chinese, Spanish, Portuguese, Arabic, Indonesian).
 
@@ -187,7 +194,13 @@ PROCEDURE
        "in_window":         true | false,
        "kept":              true | false,
        "reject_reason":     "<short reason string, or null if kept>",
-       "found_via":         "search_query" | "shelly_digest" | "ieaghg_newsletter" | "rss" | "google_alerts"
+       "found_via":         "search_query" | "shelly_digest" | "ieaghg_newsletter" | "rss" | "google_alerts",
+       "verification_status":"verified" | "blocked" | "unverified",
+       "relevance_status":  "relevant" | "irrelevant" | null,
+       "decision_relevant": true | false | null,
+       "geography":         "<best available country/region or null>",
+       "source_class":      "primary/official" | "media/newsletter" | null,
+       "content_type":      "project" | "policy" | "funding" | "technology" | "social-licence" | null
      }
 
    reject_reason is a CONTROLLED VOCABULARY — use exactly one of: "out_of_window", "no_pub_date", "duplicate_url", "duplicate_headline", "already_covered" (item appeared in a prior briefing — see QUALITY BAR cross-day dedup), "off_topic", "round_up_retrospective", "opinion_in_section_1_4", "low_quality_source", "shelly_dedup_against_step_2", "appendix_overflow". Do NOT invent free-form values — downstream analysis groups on these strings.
@@ -196,9 +209,9 @@ PROCEDURE
 
    Include items rejected during Step 2/2b/2b-2/2c too — the audit needs to distinguish "never found" from "found and dropped". The trace MUST be a complete record of every URL the routine looked at, not just the ones that made the briefing.
 
-3. Self-check: enumerate every candidate with confirmed publication date, drop out-of-window items, decide normal vs Quiet-day vs Heavy-news-day mode based on the candidate count surviving the recency check.
+3. Self-check: enumerate every candidate with confirmed publication date, drop verified out-of-window items, and decide Normal / Quiet / Heavy only if technical coverage is healthy. Otherwise use Partial coverage or Collection impaired regardless of surviving item count.
 
-4. If WebSearches fail persistently: build a stub 'Quiet day' briefing noting the failure. (Step 2b failure alone is never a reason to fail the briefing.)
+4. If WebSearches fail persistently: build a `Collection impaired — CCS News Briefing` stub that states the technical failure and retains candidates for retry. Never call this a quiet day. A single Step 2b failure may still allow `partial coverage`, but it must be recorded rather than silent.
 
 OUTPUTS
 
@@ -242,6 +255,10 @@ D) Audit trace → audit/${TODAY}-candidates.json in the repo root.
    Write the `audit_trace` array (built in step 2d) as JSON, pretty-printed with 2-space indent. UTF-8, ensure_ascii off (preserve em-dashes, en-dashes, smart quotes).
    Example: `python3 -c "import json,sys; json.dump(arr, sys.stdout, indent=2, ensure_ascii=False)" > audit/${TODAY}-candidates.json`
    This file is staged and pushed alongside the briefing in step C. It is consumed by scripts/weekly_audit.py on Saturday mornings.
+   Every candidate also carries `verification_status` (`verified`, `blocked`, `unverified`),
+   `relevance_status` when adjudicated, `decision_relevant` when clear, and the best available
+   geography/source-class/content-type fields. Newsletter landing pages, tickers and false-positive
+   meanings of “CCS” must be marked irrelevant rather than silently entering the recall denominator.
 
 E2) Structured facts trace → audit/${TODAY}-facts.json in the repo root.
    For the CCS Intelligence Dashboard (dashboard/index.html), extract EACH item you published today
@@ -267,8 +284,8 @@ E) Success notification:
 
 EDGE CASES
 - File for today already exists (manual rerun): overwrite all three files (HTML, MD, audit JSON). The push will trigger the Action again, which will resend the email.
-- All searches blocked/empty: push a 'Quiet day' stub and let the Action send it. Still write an audit trace (even if mostly empty) so the audit can record "0 considered".
-- Outlook MCP unavailable for Step 2b / Step 2b-2: skip the affected step(s) silently and continue with the remaining results. Neither Shelly's digest nor the IEAGHG weekly is ever a reason to fail the briefing.
+- All searches blocked: push a `Collection impaired` stub and let the Action send it. Still write the audit and coverage traces so retry/backfill can recover the day. Empty but healthy searches may produce `No verified news`.
+- Outlook MCP unavailable for Step 2b / Step 2b-2: continue with remaining sources but record partial coverage. Neither source alone is a reason to abort, and neither may fail silently.
 - Heavy-news-day mode and Quiet-day mode are mutually exclusive — the routine is in exactly one mode each run (or Normal mode in between).
 
 FINAL OUTPUT

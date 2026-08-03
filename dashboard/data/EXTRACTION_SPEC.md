@@ -15,8 +15,10 @@ briefing *item*.
    - `radar` — an item under a *"Still on the radar"* / *older-context* heading. Capture it, but it is
      NOT a new commitment on this date (the dashboard excludes `radar` from time-series counts and
      only uses it to backfill context if the item never appears fresh elsewhere).
-5. **Quiet/stub days** (e.g. "Quiet day", "No CCS items confirmed") produce zero `fresh` records —
-   only whatever sits under *Still on the radar* as `radar`. That's expected and correct.
+5. **Quiet/stub days require healthy collection.** Zero `fresh` records is a valid “no verified news”
+   result only when the technical coverage report shows every scheduled sampler present and healthy.
+   Missing/blocked collection is `collection impaired`, not quiet. Retain unverified candidates with
+   `verification_status` for retry.
 6. When unsure of a controlled-vocab value, pick the closest listed value and add a note in
    `extractor_note`; never invent new vocab tokens.
 
@@ -44,7 +46,7 @@ briefing *item*.
 | `amount_aud` | number\|null | Filled centrally at normalisation time — extractors may leave null. |
 | `commitment_status` | enum | From COMMITMENT_STATUS. |
 | `target_year` | number\|null | Deadline/target year for mandate/deployment items (e.g. 2030 for NZIA 50 Mtpa). |
-| `capacity_mtpa` | number\|null | CO₂ capacity in Mtpa if stated (convert kt/yr → Mtpa: kt÷1000). |
+| `capacity_mtpa` | number\|null | Source-stated numeric evidence in Mtpa (convert kt/yr → Mtpa: kt÷1000). This legacy event field is **never additive**. The canonical component crosswalk must classify it as capture, transport, storage injection, removal purchase/offtake, utilisation, policy target or cumulative resource before it can enter a total. |
 | `co2crc_relevance` | enum | `high` \| `medium` \| `low` — strategic relevance to CO2CRC/CO2Tech/Australia. |
 | `co2crc_note` | string\|null | One line: *why it matters* for CO2CRC/Australia. Use the briefing's own "for CO2CRC" cues when present. |
 | `sentiment` | enum\|null | `positive` \| `neutral` \| `negative` — for media/social-licence items; null otherwise. |
@@ -53,6 +55,10 @@ briefing *item*.
 | `funder_type` | enum\|null | Who is paying: `government` \| `private` \| `mixed` \| `none`. `none` where the figure is not a funding flow at all. Do not infer from `org_types` — a government can *announce* money a company will spend. |
 | `amount_basis` | enum\|null | What the figure measures: `government-funding` \| `private-investment` \| `project-capex` \| `supplier-contract` \| `market-aggregate` \| `not-ccs-funding`. See notes below. |
 | `extractor_note` | string\|null | Any ambiguity flag for later human review. |
+
+Generated crosswalk fields (do not guess during extraction) add `project_id`, `primary_geography`,
+`source_type`, `verification_status`, `event_direction`, `media_tone` and `mandate_class`. A cancellation
+is a negative event direction; media tone is populated only for media/opinion/community coverage.
 
 ## Controlled vocabularies
 
@@ -126,7 +132,7 @@ differently, so the automatic headline dedup misses it. Known live examples: the
 (C$16.5bn / C$16bn), India's CCUS scheme (₹20,000 crore / ₹19,700 crore), and Spain's PERTE round where a
 €119m award is a *subset* of a €319m total. When a new figure looks like an existing commitment, check
 org + project + rough magnitude before treating it as new money, and record the link in
-`dashboard/data/funding-enrichment.json` rather than deleting the record.
+`dashboard/data/curation/funding-enrichment.csv` rather than deleting the record.
 
 ### FX_RATES — fixed reference rates to A$ (as of 2026-06-30; ASSUMPTION, editable)
 > These are **fixed** so trendlines reflect real commitment shifts, not FX noise. Values are approximate
@@ -176,11 +182,14 @@ appears `fresh`. Reuses the repo's existing `scripts/_canon.py` logic.
     routine already caught (same/near-identical headline+org, or same URL) correctly loses to the
     earlier daily-briefing record and is dropped.
   - `source`: the report's full name, e.g. `"Global CCS Institute — CCS Quarterly Update Q2 2026"`.
-  - `url`: `null` — these reports are PDFs with no per-item hyperlinks; never invent one.
+  - `url`: `null` — these reports are PDFs with no per-item hyperlinks; never invent one. The generated
+    event crosswalk supplies the official report-level URL and labels provenance accordingly.
   - `tags`: include a `"GCCSI-quarterly"` (or equivalent) tag on every record so the batch stays
     traceable to its source report.
   - Extract only the report's actual news sections (Projects/Partnerships/Funding/Policy/Tech
     equivalents); skip the publisher's own institutional activity (advocacy events, its own
     reports/factsheets, roll-call name lists that duplicate fuller items covered elsewhere in the
     same report) — these aren't market/policy/tech commitments and don't fit the schema.
-- The dashboard builder reads ALL THREE, dedups, and renders.
+- The canonical entity builder reads all three, maps evidence to stable IDs, and leaves ambiguity in a
+  review queue. The dashboard calculates project capacity only from the generated canonical capacity
+  register and funding only from unique category-separated commitments/programmes.

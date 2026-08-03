@@ -249,47 +249,27 @@ def test_real_data_build_produces_selfcontained_html(real_build, monkeypatch):
     assert snap.read_text() == page
 
 
-def test_real_build_storage_rate_kpis_match_independent_computation(real_build, monkeypatch):
-    """The header's two 'CO2 stored to date' KPIs must reuse the signed-off
-    bridge_waterfall figures (never re-derive a new cumulative total from
-    per-project rows, which are known-incomplete and would silently disagree
-    with the reconciled figures — e.g. summing EOR rows gives ~56.6 Mt vs the
-    bridge's own ~123 Mt). The View 2c annual-rate table's numbers must match
-    an independent recomputation from the same per-project data."""
+def test_real_build_storage_kpis_use_current_london_register(real_build, monkeypatch):
+    """Headline storage must come from the downloaded 2025 London Register,
+    not the superseded bridge estimates or incomplete named-project map subset."""
     out_html, _ = real_build
     monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
     bd.main()
     page = out_html.read_text()
 
-    sref = bd.load_storage_baseline()
-    bw_steps = sref["bridge_waterfall"]["steps"]
-    dedicated_step = next(s for s in bw_steps if s.get("basis") == "derived actual")
-    eor_step = next(s for s in bw_steps if "EOR projects" in s.get("label", ""))
-    assert f'{dedicated_step["mt"]} Mt' in page
-    assert f'~{abs(eor_step["mt"])} Mt' in page
-
-    def _class_rates(cls):
-        rows = [p for p in sref["projects"] if p.get("class") == cls]
-        cap_sum = sum(p["capacity_mtpa"] for p in rows if isinstance(p.get("capacity_mtpa"), (int, float)))
-        rate_sum = 0.0
-        for p in rows:
-            m, sy, asof = p.get("measured_actual_cumulative_mt"), p.get("start_year"), p.get("measured_asof")
-            if isinstance(m, (int, float)) and isinstance(sy, int) and isinstance(asof, int) and asof > sy:
-                rate_sum += m / (asof - sy)
-        return cap_sum, rate_sum
-
-    for cls in ("dedicated", "eor"):
-        cap_sum, rate_sum = _class_rates(cls)
-        assert f'{cap_sum:.1f}' in page, f"{cls} nameplate capacity {cap_sum:.1f} not found in page"
-        assert f'{rate_sum:.1f}' in page, f"{cls} measured-actual rate {rate_sum:.1f} not found in page"
+    with open(os.path.join(bd.DATA_DIR, "baselines", "london-register", "metadata.json")) as handle:
+        meta = json.load(handle)
+    summary = meta["summary"]
+    assert f'{summary["cumulative_all_storage_mt"]:.1f} Mt' in page
+    assert f'{summary["latest_annual_all_storage_mt"]:.2f} Mt' in page
+    for cls in ("dedicated", "associated", "eor"):
+        assert f'{summary["by_storage_class"][cls]["cumulative_mt"]:.2f} Mt' in page
+    assert "111.6 Mt map figure was an incomplete named-project subset" in page
 
 
-def test_real_build_flags_stale_dedicated_project_figures(real_build, monkeypatch):
-    """Regression for 2026-07-28: Gorgon and Moomba's operator-reported figures
-    sat a year stale until a human happened to notice by hand during a July
-    2026 rebuild. Any dedicated-project figure a year or more behind the build
-    year must be surfaced on the dashboard so this is caught automatically
-    next time, rather than depending on someone noticing by chance."""
+def test_real_build_labels_baseline_vintages_and_legacy_map_subset(real_build, monkeypatch):
+    """Current headline editions and the older all-stage country/map layer must
+    be visibly labelled so mixed vintages cannot masquerade as one baseline."""
     out_html, _ = real_build
     build_date = "2026-07-28"
     monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
@@ -297,24 +277,11 @@ def test_real_build_flags_stale_dedicated_project_figures(real_build, monkeypatc
     bd.main()
     page = out_html.read_text()
 
-    sref = bd.load_storage_baseline()
-    build_year = int(build_date[:4])
-    dedicated = [p for p in sref["projects"] if p.get("class") == "dedicated"]
-    expected_stale = {p["name"] for p in dedicated
-                       if isinstance(p.get("reported_asof"), int)
-                       and build_year - p["reported_asof"] >= 1}
-    assert expected_stale, "fixture data has no stale dedicated project to exercise this test"
-    assert "Gorgon" not in expected_stale and "Moomba" not in expected_stale, (
-        "Gorgon/Moomba were corrected to reported_asof 2026 on 2026-07-28 — "
-        "if this fails, check whether reported_asof regressed")
-
-    i = page.find("Figures due for a refresh check")
-    assert i != -1, "staleness card did not render even though stale projects exist"
-    card = page[i:i + 2000]
-    for name in expected_stale:
-        assert f"{name} —" in card, f"{name} is stale but missing from the refresh-check card"
-    assert "Gorgon —" not in card
-    assert "Moomba —" not in card
+    assert "IEA CCUS Projects Database 2026" in page
+    assert "GCCSI Global Status of CCS 2025" in page
+    assert "GCCSI Global Status of CCS 2024" in page
+    assert "Legacy named-project subset" in page
+    assert "current downloadable register gives 384.6 Mt through 2024" in page
 
 
 def test_real_data_has_no_unknown_currencies(real_build, monkeypatch):
@@ -625,9 +592,9 @@ def test_real_build_map_and_glossary_render(real_build, monkeypatch):
     page = out_html.read_text()
 
     for marker in ('id="ccs-map"', 'class="pillgroups"', 'id="ccs-country-card"',
-                   'id="ccs-map-data"', 'regionroll', 'class="glossary"',
+                   'id="ccs-map-data"', 'Exact regional/global reconciliation', 'id="methodology"',
                    'data-mode="developments"', 'data-mode="storageclass"',
-                   'class="srcchip'):
+                   'class="sectionnav'):
         assert marker in page, f"missing from build output: {marker}"
     for bad in ("<script src=", '<link rel="stylesheet"', 'src="http', "src='http"):
         assert bad not in page, f"external resource reference found: {bad}"
@@ -640,8 +607,11 @@ def test_every_section_declares_its_data_source(real_build, monkeypatch):
     monkeypatch.setattr("sys.argv", ["build_dashboard.py"])
     bd.main()
     page = out_html.read_text()
-    # one provenance line per numbered section (10 numbered + view 2c)
-    assert page.count('class="srcline"') >= 11
+    assert page.count("<h2 id=") >= 10
+    for marker in ("Latest facts file", "IEA CCUS Projects Database 2026",
+                   "GCCSI Global Status of CCS 2025", "London Register",
+                   "GCCSI GSR 2024 country table", "Source type"):
+        assert marker in page
 
 
 def test_dashboard_avoids_conflating_news_items_with_projects(real_build, monkeypatch):

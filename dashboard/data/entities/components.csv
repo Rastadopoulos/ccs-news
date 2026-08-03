@@ -1,0 +1,31 @@
+component_id,project_id,component_type,name,parent_hub_id,primary_country,co2_destination,lifecycle_stage
+au-moomba-ccs-storage-site,au-moomba-ccs,storage site,Moomba CCS,,Australia,dedicated storage,operating
+au-cliff-head-ccs-storage-site,au-cliff-head-ccs,storage site,Cliff Head CCS,,Australia,dedicated storage,FEED
+au-gorgon-ccs-storage-site,au-gorgon-ccs,storage site,Gorgon CCS,,Australia,associated reinjection,operating
+au-carbonnet-storage-site,au-carbonnet,storage site,CarbonNet,,Australia,dedicated storage,FEED
+ca-pathways-capture-facility,ca-pathways,capture facility,Pathways Alliance CCS network,,Canada,dedicated storage,feasibility
+ca-meadowbrook-storage-site,ca-meadowbrook,storage site,Meadowbrook Storage Hub,,Canada,dedicated storage,operating
+ca-varme-heartland-capture-facility,ca-varme-heartland,capture facility,Varme Heartland CCS,,Canada,dedicated storage,FEED
+us-carbon-terravault-i-storage-site,us-carbon-terravault-i,storage site,Carbon TerraVault I,,United States,dedicated storage,commissioning
+us-el-dorado-capture-facility,us-el-dorado,capture facility,El Dorado CCS,,United States,dedicated storage,FEED
+us-stratos-capture-facility,us-stratos,capture facility,STRATOS DAC hub,,United States,dedicated storage,construction
+us-bkv-east-texas-capture-facility,us-bkv-east-texas,capture facility,BKV East Texas CCS,,United States,dedicated storage,operating
+us-strategic-biofuels-storage-site,us-strategic-biofuels,storage site,Strategic Biofuels Louisiana Green Fuels,,United States,dedicated storage,permitted
+uk-morecambe-storage-site,uk-morecambe,storage site,MNZ / Morecambe Net Zero,,United Kingdom,dedicated storage,feasibility
+uk-hynet-protos-capture-facility,uk-hynet-protos,capture facility,HyNet Protos capture plant,uk-hynet,United Kingdom,dedicated storage,construction
+uk-hynet-padeswood-capture-facility,uk-hynet-padeswood,capture facility,HyNet Padeswood capture plant,uk-hynet,United Kingdom,dedicated storage,construction
+uk-hynet-transport-network,uk-hynet,transport network,HyNet North West,,United Kingdom,dedicated storage,FID/financial close
+uk-northern-endurance-storage-site,uk-northern-endurance,storage site,Northern Endurance Partnership,,United Kingdom,dedicated storage,construction
+uk-drax-beccs-capture-facility,uk-drax-beccs,capture facility,Drax BECCS,,United Kingdom,dedicated storage,permit application
+dk-accsion-capture-facility,dk-accsion,capture facility,ACCSION Aalborg Portland,,Denmark,dedicated storage,FID/financial close
+nl-aramis-storage-site,nl-aramis,storage site,Aramis CCS,,Netherlands,dedicated storage,permitted
+my-kasawari-capture-facility,my-kasawari,capture facility,Kasawari CCS,,Malaysia,associated reinjection,construction
+id-tangguh-ucc-capture-facility,id-tangguh-ucc,capture facility,Tangguh UCC,,Indonesia,associated reinjection,construction
+cn-tianchi-xinjiang-capture-facility,cn-tianchi-xinjiang,capture facility,Xinjiang Tianchi Energy CCUS,,China,dedicated storage,permit application
+cn-xingzichuan-capture-facility,cn-xingzichuan,capture facility,Yanchang Xingzichuan CO2-EOR,,China,EOR,commissioning
+cn-shengli-power-capture-facility,cn-shengli-power,capture facility,Shengli Power Plant CCUS,,China,EOR,FEED
+cn-baotou-chemical-capture-facility,cn-baotou-chemical,capture facility,China Energy Baotou Chemical capture,,China,utilisation,operating
+no-furu-daccs-capture-facility,no-furu-daccs,capture facility,Project Furu DACCS,,Norway,dedicated storage,construction
+se-stockholm-exergi-capture-facility,se-stockholm-exergi,capture facility,Stockholm Exergi BECCS,,Sweden,dedicated storage,construction
+au-myrtle-utilisation-facility,au-myrtle,utilisation facility,Myrtle carbon refinery,,Australia,utilisation,operating
+eu-nzia-2030-policy-target,eu-nzia-2030,policy target,EU NZIA Article 23 injection target,,European Union,dedicated storage,operating

@@ -1,0 +1,30 @@
+project_id,component_id,capacity_basis,nameplate_mtpa,actual_annual_mt,capacity_status,source_date,lifecycle_stage,source_url,confidence,additive_key
+au-moomba-ccs,au-moomba-ccs-storage-site,storage_injection_capacity,1.7,1.7,reported current,2026-05-24,operating,https://www.santos.com/news/moomba-ccs-project-stores-two-million-tonnes-of-co2/,high,au-moomba-ccs-storage-site|storage_injection_capacity|2026-05-24
+au-cliff-head-ccs,au-cliff-head-ccs-storage-site,storage_injection_capacity,1.0,,reported proposed,2026-05-25,FEED,,medium,au-cliff-head-ccs-storage-site|storage_injection_capacity|2026-05-25
+au-gorgon-ccs,au-gorgon-ccs-storage-site,storage_injection_capacity,4.0,,nameplate,2026-07-28,operating,,high,au-gorgon-ccs-storage-site|storage_injection_capacity|2026-07-28
+au-carbonnet,au-carbonnet-storage-site,storage_injection_capacity,6.0,,reported proposed,2025-07-01,FEED,,medium,au-carbonnet-storage-site|storage_injection_capacity|2025-07-01
+ca-pathways,ca-pathways-capture-facility,capture_capacity,16.0,,announced,2026-05-28,feasibility,,medium,ca-pathways-capture-facility|capture_capacity|2026-05-28
+ca-meadowbrook,ca-meadowbrook-storage-site,storage_injection_capacity,0.5,,nameplate,2026-06-30,operating,,medium,ca-meadowbrook-storage-site|storage_injection_capacity|2026-06-30
+ca-varme-heartland,ca-varme-heartland-capture-facility,capture_capacity,0.185,,reported proposed,2026-07-01,FEED,,medium,ca-varme-heartland-capture-facility|capture_capacity|2026-07-01
+us-carbon-terravault-i,us-carbon-terravault-i-storage-site,storage_injection_capacity,1.46,,nameplate,2026-05-28,commissioning,,high,us-carbon-terravault-i-storage-site|storage_injection_capacity|2026-05-28
+us-el-dorado,us-el-dorado-capture-facility,capture_capacity,0.5,,reported proposed,2026-05-25,FEED,,medium,us-el-dorado-capture-facility|capture_capacity|2026-05-25
+us-stratos,us-stratos-capture-facility,capture_capacity,0.5,,nameplate,2026-06-17,construction,,high,us-stratos-capture-facility|capture_capacity|2026-06-17
+us-bkv-east-texas,us-bkv-east-texas-capture-facility,capture_capacity,0.12,,nameplate combined,2026-07-02,operating,,medium,us-bkv-east-texas-capture-facility|capture_capacity|2026-07-02
+us-strategic-biofuels,us-strategic-biofuels-storage-site,storage_injection_capacity,1.0,,permitted,2026-07-02,permitted,,high,us-strategic-biofuels-storage-site|storage_injection_capacity|2026-07-02
+uk-morecambe,uk-morecambe-storage-site,storage_injection_capacity,3.0,,reported proposed,2026-06-12,feasibility,,high,uk-morecambe-storage-site|storage_injection_capacity|2026-06-12
+uk-hynet-protos,uk-hynet-protos-capture-facility,capture_capacity,0.37,,nameplate,2026-05-29,construction,,high,uk-hynet-protos-capture-facility|capture_capacity|2026-05-29
+uk-hynet-padeswood,uk-hynet-padeswood-capture-facility,capture_capacity,0.8,,nameplate,2026-06-11,construction,,high,uk-hynet-padeswood-capture-facility|capture_capacity|2026-06-11
+uk-northern-endurance,uk-northern-endurance-storage-site,storage_injection_capacity,23.0,,network storage design capacity,2026-07-27,construction,,high,uk-northern-endurance-storage-site|storage_injection_capacity|2026-07-27
+uk-drax-beccs,uk-drax-beccs-capture-facility,capture_capacity,8.0,,nameplate proposed,2026-06-09,permit application,,medium,uk-drax-beccs-capture-facility|capture_capacity|2026-06-09
+dk-accsion,dk-accsion-capture-facility,capture_capacity,1.25,,contracted nameplate,2026-06-16,FID/financial close,,high,dk-accsion-capture-facility|capture_capacity|2026-06-16
+nl-aramis,nl-aramis-storage-site,storage_injection_capacity,22.0,,licensed maximum,2026-05-29,permitted,,high,nl-aramis-storage-site|storage_injection_capacity|2026-05-29
+my-kasawari,my-kasawari-capture-facility,capture_capacity,3.3,,nameplate,2026-06-17,construction,,high,my-kasawari-capture-facility|capture_capacity|2026-06-17
+id-tangguh-ucc,id-tangguh-ucc-capture-facility,capture_capacity,3.0,,GCCSI nameplate; whole-scheme 15 Mt is cumulative and non-additive,2025-07,construction,,high,id-tangguh-ucc-capture-facility|capture_capacity|2025-07
+cn-tianchi-xinjiang,cn-tianchi-xinjiang-capture-facility,capture_capacity,0.9,,nameplate,2026-06-30,permit application,,medium,cn-tianchi-xinjiang-capture-facility|capture_capacity|2026-06-30
+cn-xingzichuan,cn-xingzichuan-capture-facility,capture_capacity,0.26,,nameplate,2026-06-30,commissioning,,medium,cn-xingzichuan-capture-facility|capture_capacity|2026-06-30
+cn-shengli-power,cn-shengli-power-capture-facility,capture_capacity,1.0,,nameplate,2026-06-30,FEED,,medium,cn-shengli-power-capture-facility|capture_capacity|2026-06-30
+cn-baotou-chemical,cn-baotou-chemical-capture-facility,capture_capacity,0.3,,nameplate,2026-06-30,operating,,medium,cn-baotou-chemical-capture-facility|capture_capacity|2026-06-30
+no-furu-daccs,no-furu-daccs-capture-facility,capture_capacity,0.01,,nameplate,2026-06-01,construction,,medium,no-furu-daccs-capture-facility|capture_capacity|2026-06-01
+se-stockholm-exergi,se-stockholm-exergi-capture-facility,capture_capacity,0.8,,nameplate,2026-06-01,construction,,high,se-stockholm-exergi-capture-facility|capture_capacity|2026-06-01
+au-myrtle,au-myrtle-utilisation-facility,utilisation_capacity,0.0025,,nameplate,2026-06-25,operating,,high,au-myrtle-utilisation-facility|utilisation_capacity|2026-06-25
+eu-nzia-2030,eu-nzia-2030-policy-target,policy_target_capacity,50.0,,legislated target,2026-07-01,operating,https://climate.ec.europa.eu/news-other-reads/news/eu-makes-good-progress-towards-its-2030-co2-injection-target-2026-05-28_en,high,eu-nzia-2030-policy-target|policy_target_capacity|2026-07-01

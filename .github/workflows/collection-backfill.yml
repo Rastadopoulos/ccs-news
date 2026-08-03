@@ -1,0 +1,32 @@
+name: Retry and backfill impaired collection days
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Impaired date to re-run (YYYY-MM-DD)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install collector dependencies
+        run: pip install feedparser PyYAML
+      - name: Re-run deterministic sampler floor
+        run: python scripts/rss_collector.py --date "${{ inputs.date }}"
+      - name: Refresh technical coverage report
+        run: python scripts/coverage_report.py --date "${{ inputs.date }}" --window 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "ccs-backfill-${{ inputs.date }}"
+          path: |
+            audit/${{ inputs.date }}-*.json
+            dashboard/data/coverage/*.json
