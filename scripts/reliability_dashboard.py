@@ -244,9 +244,54 @@ body{background:#f3f6f5;color:#17302d}.wrap{max-width:1240px}.rheader{padding:8p
       '<p class="compare-note">Edition/data: GSR 2025, July 2025. The current structured appendix covers all 47 in-construction facilities. The all-stage country map remains explicitly GSR 2024 because GSR 2025 does not reproduce that full country table.</p></div></div>')
     A(f'<div class="callout"><b>Cross-baseline comparison is reviewable, not guessed.</b> Exact normalised IEA↔GCCSI names: {comparison["matched_projects"]}; rule-assisted same-country naming candidates awaiting human review: {comparison["likely_naming_candidates_for_review"]}; authenticated IEA named projects: {iea_meta["summary"]["named_project_rows"]}; GCCSI construction names without an exact IEA name match: {comparison["gccsi_only_named_projects"]}. Candidate matches are never silently accepted.</div>')
 
-    A('<h3>Canonical capacity by basis and lifecycle</h3><div class="card"><table class="rtbl"><thead><tr><th>Basis</th><th>Lifecycle</th><th class="num">Nameplate Mtpa</th><th>Population / vintage</th></tr></thead><tbody>')
+    A('<h3>How much annual CO₂ capacity is represented at each stage of development?</h3><div class="card">')
+    A(f'<p class="sectionlead">Each sentence combines the nameplate capacity recorded for the relevant projects in the {len(projects)}-entity curated register. Latest source dates are 2025–2026.</p>')
+    A('<table class="rtbl"><thead><tr><th>Capacity type</th><th>What this means</th></tr></thead><tbody>')
+    capacity_language = {
+        "capture_capacity": ("Capture", "capture"),
+        "storage_injection_capacity": ("Storage injection", "inject"),
+        "transport_capacity": ("CO₂ transport", "transport"),
+        "utilisation_capacity": ("CO₂ utilisation", "use"),
+    }
+    stage_language = {
+        "FEED": "{kind} projects at the FEED design stage",
+        "FID/financial close": "{kind} projects that have reached FID or financial close",
+        "commissioning": "{kind} projects being commissioned",
+        "construction": "{kind} projects in construction",
+        "feasibility": "{kind} projects at the feasibility stage",
+        "operating": "Operating {kind_lower} projects",
+        "permit application": "{kind} projects with permit applications",
+        "permitted": "Permitted {kind_lower} projects",
+    }
     for row in model["capacity_by_basis_and_stage"]:
-        A(f'<tr><td>{esc(row["capacity_basis"].replace("_", " "))}</td><td>{esc(row["lifecycle_stage"])}</td><td class="num">{float(row["nameplate_mtpa"]):.3f}</td><td>{len(projects)}-entity curated register · latest source dates 2025–2026</td></tr>')
+        basis = row["capacity_basis"]
+        amount = f'{float(row["nameplate_mtpa"]):,.3f}'.rstrip('0').rstrip('.')
+        if basis == "policy_target_capacity":
+            label = "Policy target"
+            sentence = (f'The recorded policy target calls for {amount} million tonnes per year. '
+                        'This is an ambition, not operating project capacity.')
+            sentence_html = esc(sentence).replace(
+                esc(f'{amount} million tonnes per year'),
+                f'<strong>{esc(amount)} million tonnes per year</strong>',
+                1,
+            )
+        else:
+            label, verb = capacity_language.get(
+                basis,
+                (basis.replace("_", " ").title(), "handle"),
+            )
+            kind = "Storage" if basis == "storage_injection_capacity" else label
+            subject = stage_language.get(
+                row["lifecycle_stage"],
+                "{kind} projects at the {stage} stage",
+            ).format(
+                kind=kind,
+                kind_lower=kind.lower(),
+                stage=row["lifecycle_stage"],
+            )
+            sentence_html = (f'{esc(subject)} could {esc(verb)} a combined '
+                             f'<strong>{esc(amount)} million tonnes per year</strong>.')
+        A(f'<tr><td>{esc(label)}</td><td>{sentence_html}</td></tr>')
     A('</tbody></table><p class="source-note">Policy-target capacity is non-project and non-additive. Removal purchases, cumulative storage resources and transport values are excluded unless their own basis is populated.</p></div>')
 
     A('<h3>Actual storage delivery — current London Register</h3><div class="metricgrid">')

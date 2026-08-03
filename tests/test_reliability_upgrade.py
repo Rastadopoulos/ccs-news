@@ -46,6 +46,14 @@ def test_capacity_is_basis_specific_and_article_duplicates_cannot_add():
                if row["capacity_reported_mtpa"])
 
 
+def test_capacity_table_uses_plain_language():
+    html = (ROOT / "dashboard" / "index.html").read_text(encoding="utf-8")
+    assert "How much annual CO₂ capacity is represented at each stage of development?" in html
+    assert "Capture projects in construction could capture a combined <strong>8.78 million tonnes per year</strong>." in html
+    assert "Operating storage projects could inject a combined <strong>6.2 million tonnes per year</strong>." in html
+    assert "Nameplate Mtpa" not in html
+
+
 def test_funding_categories_and_cancellations_are_separate():
     commitments = rows(DATA / "model" / "funding-commitments.csv")
     by_id = {row["commitment_id"]: row for row in commitments}
