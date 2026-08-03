@@ -1,0 +1,127 @@
+[
+  {
+    "id": "2026-08-04#01",
+    "briefing_date": "2026-08-04",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Thailand and Canada pilot mobile carbon capture in the cement industry",
+    "summary": "The Thai Cement Manufacturers Association, with Canadian partners including the Government of Saskatchewan and the University of Regina, will install a Mobile Carbon Capture Unit at a cement plant in the Saraburi “sandbox” to build technological readiness toward Thailand’s 2050 Net Zero Cement and Concrete Roadmap.",
+    "source": "The Manila Times / TCMA",
+    "pub_date": "2026-08-03",
+    "url": "https://www.manilatimes.net/2026/08/03/tmt-newswire/media-outreach-newswire/thailand-canada-pilot-carbon-capture-in-cement-industry-to-advance-net-zero-2050/2397242",
+    "region": "APAC",
+    "countries": [
+      "Thailand",
+      "Canada"
+    ],
+    "organisations": [
+      "Thai Cement Manufacturers Association",
+      "Government of Saskatchewan",
+      "University of Regina"
+    ],
+    "org_types": [
+      "industry-body",
+      "government",
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2050,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Cross-border cement-CCS technology transfer in APAC — a template for capturing emissions from a hard-to-abate industry, relevant to CO2CRC’s regional engagement.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-04#02",
+    "briefing_date": "2026-08-04",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "PayPal backs emerging carbon removal technologies in its latest climate investment strategy",
+    "summary": "PayPal said its latest climate investment strategy will support emerging carbon dioxide removal (CDR) technologies, adding a new corporate buyer to the durable-removal market; no purchase volume or dollar figure was disclosed.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-03",
+    "url": "https://carbonherald.com/paypal-backs-emerging-carbon-removal-technologies-in-latest-climate-investment-strategy/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "PayPal"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals continued growth in corporate CDR demand; tangential to CO2CRC’s geological-storage focus.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "No purchase volume or dollar figure stated; corporate strategy announcement."
+  },
+  {
+    "id": "2026-08-04#03",
+    "briefing_date": "2026-08-04",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Entropy commissions Glacier co-generation + CCS project, Alberta",
+    "summary": "Entropy Inc. commissioned Phase 2 of its Glacier project in Alberta — a 15 MW gas-turbine co-generation unit with integrated post-combustion capture across 45 MW of generation, expected to sequester about 192,000 tonnes of CO2 a year; billed as the first post-combustion CCS on a gas turbine for power.",
+    "source": "BOE Report / PR Newswire",
+    "pub_date": "2026-07-30",
+    "url": "https://boereport.com/2026/07/30/entropy-inc-commissions-the-glacier-co-generation-carbon-capture-and-storage-project-delivering-first-of-kind-low-carbon-natural-gas-and-low-carbon-power/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Entropy Inc.",
+      "Advantage Energy"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.192,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Benchmark for post-combustion CCS retrofitted onto gas-fired power generation.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar item — commissioned 30 Jul, outside the 3–4 Aug window; surfaced as near-miss context."
+  }
+]
