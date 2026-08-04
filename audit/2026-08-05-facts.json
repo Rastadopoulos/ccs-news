@@ -1,0 +1,219 @@
+[
+  {
+    "id": "2026-08-05#01",
+    "briefing_date": "2026-08-05",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "MOL, Hitachi and JAL to trial Japan's first Direct Ocean Capture project off Kumejima",
+    "summary": "Mitsui O.S.K. Lines, Hitachi and Japan Airlines signed an MoU to run Japan's first Direct Ocean Capture (DOC) demonstration on Kume Island, Okinawa — a land-based container unit that draws in seawater, strips out dissolved CO2 and discharges the treated water — and will explore using the recovered CO2 for synthetic aviation fuel (e-SAF). No capacity figure disclosed.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-04",
+    "url": "https://carbonherald.com/mol-hitachi-and-jal-to-test-direct-ocean-capture-technology/",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "Mitsui O.S.K. Lines",
+      "Hitachi",
+      "Japan Airlines"
+    ],
+    "org_types": [
+      "OG-major",
+      "developer",
+      "other"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "marine-CDR",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Marine CDR / direct ocean capture is an emerging removal pathway adjacent to CO2CRC's storage focus; Japan's first DOC pilot and the Captura link are worth tracking for the APAC removals market.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "MoU/pilot; no capacity or capital figure stated."
+  },
+  {
+    "id": "2026-08-05#02",
+    "briefing_date": "2026-08-05",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Hungary's parliament abolishes its CO2 quota tax to ease EU ETS burden and unlock EU funds",
+    "summary": "Hungarian lawmakers voted on 4 Aug to scrap the 2023 CO2 quota tax — a national levy on revenue from selling EU ETS free allowances — making prior payers eligible for refunds; the repeal follows the CJEU ruling in C-519/24 (16 Apr 2026) and is part of a package Hungary must pass by 31 Aug 2026 to access blocked EU funds.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-04",
+    "url": "https://carbonherald.com/hungary-scraps-controversial-co2-quota-tax-in-bid-to-ease-eu-ets-burden/",
+    "region": "Europe-UK",
+    "countries": [
+      "Hungary",
+      "European Union"
+    ],
+    "organisations": [
+      "Government of Hungary",
+      "European Union",
+      "Court of Justice of the European Union"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2026,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Indirect CCS relevance — repealing the levy restores the full value of the EU ETS carbon-price signal in Hungary, which underpins the economics of CCS and other abatement investment.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "EU ETS carbon-pricing policy; CCS linkage is indirect (via carbon-price signal)."
+  },
+  {
+    "id": "2026-08-05#03",
+    "briefing_date": "2026-08-05",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Veolia trials the UK's first non-amine carbon capture at Sheffield energy-from-waste plant",
+    "summary": "With cleantech firm C-Capture, Veolia is running a two-year pilot at Sheffield's Energy Recovery Facility using a non-amine solvent originally discovered at the University of Leeds, capturing up to 1 tonne of CO2 a day; non-amine solvents promise lower regeneration energy and avoid toxic amine-degradation products.",
+    "source": "Energy Live News / Veolia",
+    "pub_date": "2026-08-03",
+    "url": "https://www.energylivenews.com/2026/08/03/uks-first-carbon-capture-trial-without-using-amines/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Veolia",
+      "C-Capture",
+      "University of Leeds",
+      "Sheffield City Council"
+    ],
+    "org_types": [
+      "other",
+      "startup",
+      "research",
+      "government"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.000365,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Non-amine solvent capture on energy-from-waste flue gas is directly relevant to CO2CRC's capture-technology interests; watch for scale-up beyond the 1 tpd pilot.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": 2,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Radar item — published 3 Aug, one day outside the window. capacity_mtpa is 1 t/day expressed in Mtpa (~0.000365)."
+  },
+  {
+    "id": "2026-08-05#04",
+    "briefing_date": "2026-08-05",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "JERA and Taiwan Power Company sign a low-carbon energy MoU covering CCUS",
+    "summary": "Japan's JERA and Taipower agreed a framework MoU to exchange knowledge on low-carbon fuel value chains, low-carbon power generation and CCUS; no capital figure was disclosed.",
+    "source": "JERA",
+    "pub_date": "2026-07-30",
+    "url": "https://www.jera.co.jp/en/news/notice/20260730_2481",
+    "region": "APAC",
+    "countries": [
+      "Japan",
+      "Taiwan"
+    ],
+    "organisations": [
+      "JERA",
+      "Taiwan Power Company"
+    ],
+    "org_types": [
+      "utility",
+      "utility"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Multinational-strategy signal for CCUS cooperation across North-East Asia; frames potential regional CCS demand.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar item — dated 30 Jul, outside the window; framework MoU with no capital figure."
+  },
+  {
+    "id": "2026-08-05#05",
+    "briefing_date": "2026-08-05",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Sinopec's Qilu-Shengli CCUS project passes 2.4 Mt cumulative CO2",
+    "summary": "China's first full-chain megatonne CCUS project has cumulatively captured and stored more than 2.4 Mt CO2, with Shengli Oilfield demo-area daily oil output lifted from 220 t to 506 t and EOR recovery-rate gains reported above 15%.",
+    "source": "China Hydrogen / Sinopec",
+    "pub_date": "2026-07-29",
+    "url": "https://chinahydrogen.substack.com/p/chinas-qilushengli-ccus-project-captures",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "Sinopec"
+    ],
+    "org_types": [
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 1.0,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Benchmark for a full-chain onshore CCUS-EOR operation at megatonne scale; cumulative-milestone context from China's flagship project.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar item — cumulative-milestone re-report dated 29 Jul, outside the window. capacity_mtpa reflects the project's ~1 Mtpa nameplate, not the 2.4 Mt cumulative figure."
+  }
+]
