@@ -1,11 +1,20 @@
 [
   {
-    "canonical_url": "https://zawya.com/en/press-release/asia-press-releases/thailand-canada-pilot-carbon-capture-in-cement-industry-to-advance-net-zero-2050-419269",
-    "raw_url": "https://www.zawya.com/en/press-release/asia-press-releases/thailand-canada-pilot-carbon-capture-in-cement-industry-to-advance-net-zero-2050-419269",
-    "headline": "Thailand - Canada Pilot Carbon Capture in Cement Industry to Advance Net Zero 2050",
-    "source_domain": "zawya.com",
-    "publication_date": "2026-08-03T23:32:31+00:00",
-    "fuzzy_key": "2050,advance,canada,capture,carbon,cement,industry,net,pilot,thailand,zero",
+    "canonical_url": "https://carbonherald.com/veolia-trials-uk-first-non-amine-carbon-capture-tech",
+    "raw_url": "https://carbonherald.com/veolia-trials-uk-first-non-amine-carbon-capture-tech/",
+    "headline": "Veolia Trials UK-First Non-Amine Carbon Capture Tech",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-08-04T19:28:49+00:00",
+    "fuzzy_key": "amine,capture,carbon,first,non,tech,trials,uk,veolia",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/entropy-commissions-glacier-phase-2-ccs-project-in-alberta/2256406.article",
+    "raw_url": "https://www.gasworld.com/story/entropy-commissions-glacier-phase-2-ccs-project-in-alberta/2256406.article/",
+    "headline": "Entropy commissions Glacier phase 2 CCS project in Alberta | Carbon Capture - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-08-04T22:11:20+00:00",
+    "fuzzy_key": "alberta,capture,carbon,ccs,commissions,entropy,gasworld,glacier,phase,project",
     "found_via": "google_alerts"
   },
   {
@@ -18,12 +27,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/veolia-trials-uk-first-non-amine-carbon-capture-tech",
-    "raw_url": "https://carbonherald.com/veolia-trials-uk-first-non-amine-carbon-capture-tech/",
-    "headline": "Veolia Trials UK-First Non-Amine Carbon Capture Tech",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-08-04T19:28:49+00:00",
-    "fuzzy_key": "amine,capture,carbon,first,non,tech,trials,uk,veolia",
+    "canonical_url": "https://zawya.com/en/press-release/asia-press-releases/thailand-canada-pilot-carbon-capture-in-cement-industry-to-advance-net-zero-2050-419269",
+    "raw_url": "https://www.zawya.com/en/press-release/asia-press-releases/thailand-canada-pilot-carbon-capture-in-cement-industry-to-advance-net-zero-2050-419269",
+    "headline": "Thailand - Canada Pilot Carbon Capture in Cement Industry to Advance Net Zero 2050",
+    "source_domain": "zawya.com",
+    "publication_date": "2026-08-03T23:32:31+00:00",
+    "fuzzy_key": "2050,advance,canada,capture,carbon,cement,industry,net,pilot,thailand,zero",
     "found_via": "google_alerts"
   }
 ]
