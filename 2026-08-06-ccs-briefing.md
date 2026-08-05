@@ -1,0 +1,7 @@
+# Quiet day — CCS briefing — Thu 06 Aug 2026
+
+No CCS/CCUS items could be confirmed within today's recency window (published 5 or 6 August 2026, Melbourne time). Twenty-four searches were run across every geographic bucket (Australia & APAC, North America, Europe & UK, Middle East, China, India, Latin America, Africa) and every scope area (projects, policy, technology, markets & multinational strategy, media & social licence), including the mandated multinational-strategy (Mitsui / Mitsubishi / JERA) and transboundary / London Protocol rotations. Every candidate surfaced was either an evergreen outlook/round-up piece or an item dated on or before 3 August 2026 — outside today's window. The nearest misses (Petronas soil-survey contract, ISO × GHG Protocol accounting standard, a US bipartisan CDR-purchase bill — all 3 Aug; PayPal's CDR strategy — already briefed 4 Aug; Northern Lights' fourth CO₂ carrier — 29 Jul, already briefed) are all out of window.
+
+Note on verification: the routine's page-fetch channel (WebFetch / direct HTTPS to news origins) is currently blocked by the egress allowlist — every news domain returned `403 CONNECT tunnel failed`. Because the recency rule requires reading each article's publication date from the page, no candidate could be date-confirmed to standard today, which reinforces the Quiet-day call rather than promoting unverifiable items.
+
+— Auto-briefing
