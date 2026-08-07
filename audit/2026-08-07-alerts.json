@@ -1,38 +1,11 @@
 [
   {
-    "canonical_url": "https://co2crc.com.au/event/co2crc-ccs-symposium-2026-melbourne-australia",
-    "raw_url": "https://co2crc.com.au/event/co2crc-ccs-symposium-2026-melbourne-australia/",
-    "headline": "CO2CRC CCS Symposium 2026 - Melbourne, Australia.",
-    "source_domain": "co2crc.com.au",
-    "publication_date": "2026-08-06T04:10:34+00:00",
-    "fuzzy_key": "2026,australia,ccs,co2crc,melbourne,symposium",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://maritimejournal.com/marine-construction/seabed-lease-unlocks-offshore-phase-of-liverpool-bay-ccs-project/1510114.article",
-    "raw_url": "https://www.maritimejournal.com/marine-construction/seabed-lease-unlocks-offshore-phase-of-liverpool-bay-ccs-project/1510114.article",
-    "headline": "Seabed lease unlocks offshore phase of Liverpool Bay CCS project - Maritime Journal",
-    "source_domain": "maritimejournal.com",
-    "publication_date": "2026-08-06T04:39:58+00:00",
-    "fuzzy_key": "bay,ccs,journal,lease,liverpool,maritime,offshore,phase,project,seabed,unlocks",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://energiesmedia.com/uniper-slb-capturi-carbon-capture-deeside",
-    "raw_url": "https://energiesmedia.com/uniper-slb-capturi-carbon-capture-deeside/",
-    "headline": "Uniper selects SLB Capturi's amine-based carbon capture technology for its 1.38 GW low ...",
-    "source_domain": "energiesmedia.com",
-    "publication_date": "2026-08-06T04:39:58+00:00",
-    "fuzzy_key": "38,amine,based,capture,capturi,carbon,gw,low,selects,slb,technology,uniper",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal",
-    "raw_url": "https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal/",
-    "headline": "Microsoft Backs Wastewater Carbon Removal With CREW Carbon Offtake Deal",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-08-06T05:23:38+00:00",
-    "fuzzy_key": "backs,carbon,crew,deal,microsoft,offtake,removal,wastewater",
+    "canonical_url": "https://accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
+    "raw_url": "https://www.accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
+    "headline": "Carbon capture tax credit claims face long delays and rejections - Accounting Today",
+    "source_domain": "accountingtoday.com",
+    "publication_date": "2026-08-06T21:38:11+00:00",
+    "fuzzy_key": "accounting,capture,carbon,claims,credit,delays,face,long,rejections,tax,today",
     "found_via": "google_alerts"
   },
   {
@@ -45,21 +18,39 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "headline": "The Race to Become the Region's CO2 Storage Hub - Pipeline Technology Journal",
-    "source_domain": "pipeline-journal.net",
-    "publication_date": "2026-08-06T19:19:59+00:00",
-    "fuzzy_key": "become,co2,hub,journal,pipeline,race,region,storage,technology",
+    "canonical_url": "https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal",
+    "raw_url": "https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal/",
+    "headline": "Microsoft Backs Wastewater Carbon Removal With CREW Carbon Offtake Deal",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-08-06T05:23:38+00:00",
+    "fuzzy_key": "backs,carbon,crew,deal,microsoft,offtake,removal,wastewater",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
-    "raw_url": "https://www.accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
-    "headline": "Carbon capture tax credit claims face long delays and rejections - Accounting Today",
-    "source_domain": "accountingtoday.com",
-    "publication_date": "2026-08-06T21:38:11+00:00",
-    "fuzzy_key": "accounting,capture,carbon,claims,credit,delays,face,long,rejections,tax,today",
+    "canonical_url": "https://co2crc.com.au/event/co2crc-ccs-symposium-2026-melbourne-australia",
+    "raw_url": "https://co2crc.com.au/event/co2crc-ccs-symposium-2026-melbourne-australia/",
+    "headline": "CO2CRC CCS Symposium 2026 - Melbourne, Australia.",
+    "source_domain": "co2crc.com.au",
+    "publication_date": "2026-08-06T04:10:34+00:00",
+    "fuzzy_key": "2026,australia,ccs,co2crc,melbourne,symposium",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energiesmedia.com/uniper-slb-capturi-carbon-capture-deeside",
+    "raw_url": "https://energiesmedia.com/uniper-slb-capturi-carbon-capture-deeside/",
+    "headline": "Uniper selects SLB Capturi's amine-based carbon capture technology for its 1.38 GW low ...",
+    "source_domain": "energiesmedia.com",
+    "publication_date": "2026-08-06T04:39:58+00:00",
+    "fuzzy_key": "38,amine,based,capture,capturi,carbon,gw,low,selects,slb,technology,uniper",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
+    "raw_url": "https://www.environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
+    "headline": "Carbon Capture's New Advantage Is Now Execution Speed - Environment+Energy Leader",
+    "source_domain": "environmentenergyleader.com",
+    "publication_date": "2026-08-06T22:16:47+00:00",
+    "fuzzy_key": "advantage,capture,carbon,energy,environment,execution,leader,new,now,speed",
     "found_via": "google_alerts"
   },
   {
@@ -72,12 +63,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
-    "raw_url": "https://www.environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
-    "headline": "Carbon Capture's New Advantage Is Now Execution Speed - Environment+Energy Leader",
-    "source_domain": "environmentenergyleader.com",
-    "publication_date": "2026-08-06T22:16:47+00:00",
-    "fuzzy_key": "advantage,capture,carbon,energy,environment,execution,leader,new,now,speed",
+    "canonical_url": "https://linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
+    "raw_url": "https://www.linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
+    "headline": "Carbon Removal Basics | Climeworks - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-08-07T01:42:15+00:00",
+    "fuzzy_key": "basics,carbon,climeworks,linkedin,removal",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://maritimejournal.com/marine-construction/seabed-lease-unlocks-offshore-phase-of-liverpool-bay-ccs-project/1510114.article",
+    "raw_url": "https://www.maritimejournal.com/marine-construction/seabed-lease-unlocks-offshore-phase-of-liverpool-bay-ccs-project/1510114.article",
+    "headline": "Seabed lease unlocks offshore phase of Liverpool Bay CCS project - Maritime Journal",
+    "source_domain": "maritimejournal.com",
+    "publication_date": "2026-08-06T04:39:58+00:00",
+    "fuzzy_key": "bay,ccs,journal,lease,liverpool,maritime,offshore,phase,project,seabed,unlocks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "headline": "The Race to Become the Region's CO2 Storage Hub - Pipeline Technology Journal",
+    "source_domain": "pipeline-journal.net",
+    "publication_date": "2026-08-06T19:19:59+00:00",
+    "fuzzy_key": "become,co2,hub,journal,pipeline,race,region,storage,technology",
     "found_via": "google_alerts"
   }
 ]
