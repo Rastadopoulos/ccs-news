@@ -1,29 +1,11 @@
 [
   {
-    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "headline": "[Analysis] Southeast Asia's New Pipeline Frontier: The Race to Become the Region's CO2 ...",
-    "source_domain": "pipeline-journal.net",
-    "publication_date": "2026-08-06T21:12:58+00:00",
-    "fuzzy_key": "analysis,asia,become,co2,frontier,new,pipeline,race,region,southeast",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
     "raw_url": "https://www.accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
     "headline": "Carbon capture tax credit claims face long delays and rejections - Accounting Today",
     "source_domain": "accountingtoday.com",
     "publication_date": "2026-08-06T21:38:11+00:00",
     "fuzzy_key": "accounting,capture,carbon,claims,credit,delays,face,long,rejections,tax,today",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
-    "raw_url": "https://www.inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
-    "headline": "Would Scotland joining EU really lead to carbon capture progress? Expert has say - inkl",
-    "source_domain": "inkl.com",
-    "publication_date": "2026-08-06T21:38:11+00:00",
-    "fuzzy_key": "capture,carbon,eu,expert,has,inkl,joining,lead,progress,really,say,scotland,would",
     "found_via": "google_alerts"
   },
   {
@@ -36,39 +18,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
+    "raw_url": "https://www.indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
+    "headline": "Japan's first direct ocean capture pilot project set to begin in Okinawa",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-08-07T20:43:40+00:00",
+    "fuzzy_key": "begin,capture,direct,first,japan,ocean,okinawa,pilot,project,set",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
+    "raw_url": "https://www.inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
+    "headline": "Would Scotland joining EU really lead to carbon capture progress? Expert has say - inkl",
+    "source_domain": "inkl.com",
+    "publication_date": "2026-08-06T21:38:11+00:00",
+    "fuzzy_key": "capture,carbon,eu,expert,has,inkl,joining,lead,progress,really,say,scotland,would",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
     "raw_url": "https://www.linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
     "headline": "Carbon Removal Basics | Climeworks - LinkedIn",
     "source_domain": "linkedin.com",
     "publication_date": "2026-08-07T01:42:15+00:00",
     "fuzzy_key": "basics,carbon,climeworks,linkedin,removal",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
-    "raw_url": "https://www.upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
-    "headline": "Launch of EU's first offshore CCS project 'imminent' - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-08-07T09:33:00+00:00",
-    "fuzzy_key": "ccs,eu,first,imminent,launch,offshore,online,project,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for",
-    "raw_url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
-    "headline": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-08-07T12:58:03+00:00",
-    "fuzzy_key": "ahead,barreling,canada,capture,carbon,cooling,oil,sands,still,why,world",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise",
-    "raw_url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
-    "headline": "Business Brief: Canada's carbon capture compromise - The Globe and Mail",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-08-07T12:58:03+00:00",
-    "fuzzy_key": "brief,business,canada,capture,carbon,compromise,globe,mail",
     "found_via": "google_alerts"
   },
   {
@@ -81,12 +54,39 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
-    "raw_url": "https://www.indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
-    "headline": "Japan's first direct ocean capture pilot project set to begin in Okinawa",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-08-07T20:43:40+00:00",
-    "fuzzy_key": "begin,capture,direct,first,japan,ocean,okinawa,pilot,project,set",
+    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "headline": "[Analysis] Southeast Asia's New Pipeline Frontier: The Race to Become the Region's CO2 ...",
+    "source_domain": "pipeline-journal.net",
+    "publication_date": "2026-08-06T21:12:58+00:00",
+    "fuzzy_key": "analysis,asia,become,co2,frontier,new,pipeline,race,region,southeast",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise",
+    "raw_url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
+    "headline": "Business Brief: Canada's carbon capture compromise - The Globe and Mail",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-08-07T12:58:03+00:00",
+    "fuzzy_key": "brief,business,canada,capture,carbon,compromise,globe,mail",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for",
+    "raw_url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
+    "headline": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-08-07T12:58:03+00:00",
+    "fuzzy_key": "ahead,barreling,canada,capture,carbon,cooling,oil,sands,still,why,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
+    "raw_url": "https://www.upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
+    "headline": "Launch of EU's first offshore CCS project 'imminent' - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-08-07T09:33:00+00:00",
+    "fuzzy_key": "ccs,eu,first,imminent,launch,offshore,online,project,upstream",
     "found_via": "google_alerts"
   }
 ]
