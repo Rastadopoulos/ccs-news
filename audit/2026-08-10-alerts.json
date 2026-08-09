@@ -1,14 +1,5 @@
 [
   {
-    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
-    "headline": "[Analysis] Southeast Asia's New Pipeline Frontier: The Race to Become the Region's CO2 ...",
-    "source_domain": "pipeline-journal.net",
-    "publication_date": "2026-08-06T21:12:58+00:00",
-    "fuzzy_key": "analysis,asia,become,co2,frontier,new,pipeline,race,region,southeast",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
     "raw_url": "https://www.accountingtoday.com/news/carbon-capture-tax-credit-claims-face-long-delays-and-rejections",
     "headline": "Carbon capture tax credit claims face long delays and rejections - Accounting Today",
@@ -18,102 +9,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
-    "raw_url": "https://www.inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
-    "headline": "Would Scotland joining EU really lead to carbon capture progress? Expert has say - inkl",
-    "source_domain": "inkl.com",
-    "publication_date": "2026-08-06T21:38:11+00:00",
-    "fuzzy_key": "capture,carbon,eu,expert,has,inkl,joining,lead,progress,really,say,scotland,would",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
-    "raw_url": "https://www.environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
-    "headline": "Carbon Capture's New Advantage Is Now Execution Speed - Environment+Energy Leader",
-    "source_domain": "environmentenergyleader.com",
-    "publication_date": "2026-08-06T22:16:47+00:00",
-    "fuzzy_key": "advantage,capture,carbon,energy,environment,execution,leader,new,now,speed",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
-    "raw_url": "https://www.linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
-    "headline": "Carbon Removal Basics | Climeworks - LinkedIn",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-08-07T01:42:15+00:00",
-    "fuzzy_key": "basics,carbon,climeworks,linkedin,removal",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
-    "raw_url": "https://www.upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
-    "headline": "Launch of EU's first offshore CCS project 'imminent' - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-08-07T09:33:00+00:00",
-    "fuzzy_key": "ccs,eu,first,imminent,launch,offshore,online,project,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for",
-    "raw_url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
-    "headline": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-08-07T12:58:03+00:00",
-    "fuzzy_key": "ahead,barreling,canada,capture,carbon,cooling,oil,sands,still,why,world",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise",
-    "raw_url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
-    "headline": "Business Brief: Canada's carbon capture compromise - The Globe and Mail",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-08-07T12:58:03+00:00",
-    "fuzzy_key": "brief,business,canada,capture,carbon,compromise,globe,mail",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://mrw.co.uk/news/veolia-trials-carbon-capture-at-sheffield-efw-06-08-2026",
-    "raw_url": "https://www.mrw.co.uk/news/veolia-trials-carbon-capture-at-sheffield-efw-06-08-2026/",
-    "headline": "Veolia notes impact of carbon capture trial at Sheffield EfW - Materials Recycling World",
-    "source_domain": "mrw.co.uk",
-    "publication_date": "2026-08-07T19:39:07+00:00",
-    "fuzzy_key": "capture,carbon,efw,impact,materials,notes,recycling,sheffield,trial,veolia,world",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
-    "raw_url": "https://www.indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
-    "headline": "Japan's first direct ocean capture pilot project set to begin in Okinawa",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-08-07T20:43:40+00:00",
-    "fuzzy_key": "begin,capture,direct,first,japan,ocean,okinawa,pilot,project,set",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://trendhunter.com/trends/thryveearth",
-    "raw_url": "https://www.trendhunter.com/trends/thryveearth",
-    "headline": "Nature-Based Carbon Removal - Trend Hunter",
-    "source_domain": "trendhunter.com",
-    "publication_date": "2026-08-08T06:22:22+00:00",
-    "fuzzy_key": "based,carbon,hunter,nature,removal,trend",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://threads.com/@globeandmail/post/Dbu8VSGmzjs/the-world-is-cooling-on-carbon-capture-why-is-canada-still-barreling-ahead-in",
-    "raw_url": "https://www.threads.com/@globeandmail/post/Dbu8VSGmzjs/the-world-is-cooling-on-carbon-capture-why-is-canada-still-barreling-ahead-in/",
-    "headline": "The world is cooling on carbon capture. Why is Canada still barrelling ahead in the oil sands?",
-    "source_domain": "threads.com",
-    "publication_date": "2026-08-08T06:41:53+00:00",
-    "fuzzy_key": "ahead,barrelling,canada,capture,carbon,cooling,oil,sands,still,why,world",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://seetaoe.com/details/274084.html",
-    "raw_url": "https://www.seetaoe.com/details/274084.html",
-    "headline": "China Kazakhstan focuses on oil and gas development and carbon capture technology",
-    "source_domain": "seetaoe.com",
-    "publication_date": "2026-08-08T08:58:25+00:00",
-    "fuzzy_key": "capture,carbon,china,development,focuses,gas,kazakhstan,oil,technology",
+    "canonical_url": "https://beaconcollective.com/case-studies/carbon-engineering-dac-technology-animation",
+    "raw_url": "https://www.beaconcollective.com/case-studies/carbon-engineering-dac-technology-animation",
+    "headline": "Case Carbon Engineering DAC Technology Animation. - Beacon Design Collective",
+    "source_domain": "beaconcollective.com",
+    "publication_date": "2026-08-08T23:42:15+00:00",
+    "fuzzy_key": "animation,beacon,carbon,case,collective,dac,design,engineering,technology",
     "found_via": "google_alerts"
   },
   {
@@ -126,6 +27,87 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
+    "raw_url": "https://www.environmentenergyleader.com/stories/carbon-captures-new-advantage-is-now-execution-speed,135375",
+    "headline": "Carbon Capture's New Advantage Is Now Execution Speed - Environment+Energy Leader",
+    "source_domain": "environmentenergyleader.com",
+    "publication_date": "2026-08-06T22:16:47+00:00",
+    "fuzzy_key": "advantage,capture,carbon,energy,environment,execution,leader,new,now,speed",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
+    "raw_url": "https://www.indianchemicalnews.com/ccus/japans-first-direct-ocean-capture-pilot-project-set-to-begin-in-okinawa-31420",
+    "headline": "Japan's first direct ocean capture pilot project set to begin in Okinawa",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-08-07T20:43:40+00:00",
+    "fuzzy_key": "begin,capture,direct,first,japan,ocean,okinawa,pilot,project,set",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
+    "raw_url": "https://www.inkl.com/news/would-scotland-joining-eu-really-lead-to-carbon-capture-progress-expert-has-say",
+    "headline": "Would Scotland joining EU really lead to carbon capture progress? Expert has say - inkl",
+    "source_domain": "inkl.com",
+    "publication_date": "2026-08-06T21:38:11+00:00",
+    "fuzzy_key": "capture,carbon,eu,expert,has,inkl,joining,lead,progress,really,say,scotland,would",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
+    "raw_url": "https://www.linkedin.com/posts/climeworks_carbon-removal-challenge-1-carbon-removal-activity-7490723364219637760-yTz2",
+    "headline": "Carbon Removal Basics | Climeworks - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-08-07T01:42:15+00:00",
+    "fuzzy_key": "basics,carbon,climeworks,linkedin,removal",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://mrw.co.uk/news/veolia-trials-carbon-capture-at-sheffield-efw-06-08-2026",
+    "raw_url": "https://www.mrw.co.uk/news/veolia-trials-carbon-capture-at-sheffield-efw-06-08-2026/",
+    "headline": "Veolia notes impact of carbon capture trial at Sheffield EfW - Materials Recycling World",
+    "source_domain": "mrw.co.uk",
+    "publication_date": "2026-08-07T19:39:07+00:00",
+    "fuzzy_key": "capture,carbon,efw,impact,materials,notes,recycling,sheffield,trial,veolia,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "raw_url": "https://www.pipeline-journal.net/news/analysis-southeast-asias-new-pipeline-frontier-race-become-regions-co2-storage-hub",
+    "headline": "[Analysis] Southeast Asia's New Pipeline Frontier: The Race to Become the Region's CO2 ...",
+    "source_domain": "pipeline-journal.net",
+    "publication_date": "2026-08-06T21:12:58+00:00",
+    "fuzzy_key": "analysis,asia,become,co2,frontier,new,pipeline,race,region,southeast",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://seetaoe.com/details/274084.html",
+    "raw_url": "https://www.seetaoe.com/details/274084.html",
+    "headline": "China Kazakhstan focuses on oil and gas development and carbon capture technology",
+    "source_domain": "seetaoe.com",
+    "publication_date": "2026-08-08T08:58:25+00:00",
+    "fuzzy_key": "capture,carbon,china,development,focuses,gas,kazakhstan,oil,technology",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise",
+    "raw_url": "https://www.theglobeandmail.com/business/article-business-brief-canadas-carbon-capture-compromise/",
+    "headline": "Business Brief: Canada's carbon capture compromise - The Globe and Mail",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-08-07T12:58:03+00:00",
+    "fuzzy_key": "brief,business,canada,capture,carbon,compromise,globe,mail",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for",
+    "raw_url": "https://www.theglobeandmail.com/business/article-norways-northern-lights-carbon-capture-holds-valuable-lessons-for/",
+    "headline": "The world is cooling on carbon capture. Why is Canada still barreling ahead in the oil sands?",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-08-07T12:58:03+00:00",
+    "fuzzy_key": "ahead,barreling,canada,capture,carbon,cooling,oil,sands,still,why,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://threads.com/@globeandmail/post/DbyKJGPDtJM/canada-is-barreling-ahead-on-carbon-capture-what-can-we-learn-from-norways-big",
     "raw_url": "https://www.threads.com/@globeandmail/post/DbyKJGPDtJM/canada-is-barreling-ahead-on-carbon-capture-what-can-we-learn-from-norways-big/",
     "headline": "Canada is barreling ahead on carbon capture. What can we learn from Norway's big bet on ...",
@@ -135,12 +117,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://beaconcollective.com/case-studies/carbon-engineering-dac-technology-animation",
-    "raw_url": "https://www.beaconcollective.com/case-studies/carbon-engineering-dac-technology-animation",
-    "headline": "Case Carbon Engineering DAC Technology Animation. - Beacon Design Collective",
-    "source_domain": "beaconcollective.com",
-    "publication_date": "2026-08-08T23:42:15+00:00",
-    "fuzzy_key": "animation,beacon,carbon,case,collective,dac,design,engineering,technology",
+    "canonical_url": "https://threads.com/@globeandmail/post/Dbu8VSGmzjs/the-world-is-cooling-on-carbon-capture-why-is-canada-still-barreling-ahead-in",
+    "raw_url": "https://www.threads.com/@globeandmail/post/Dbu8VSGmzjs/the-world-is-cooling-on-carbon-capture-why-is-canada-still-barreling-ahead-in/",
+    "headline": "The world is cooling on carbon capture. Why is Canada still barrelling ahead in the oil sands?",
+    "source_domain": "threads.com",
+    "publication_date": "2026-08-08T06:41:53+00:00",
+    "fuzzy_key": "ahead,barrelling,canada,capture,carbon,cooling,oil,sands,still,why,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://trendhunter.com/trends/thryveearth",
+    "raw_url": "https://www.trendhunter.com/trends/thryveearth",
+    "headline": "Nature-Based Carbon Removal - Trend Hunter",
+    "source_domain": "trendhunter.com",
+    "publication_date": "2026-08-08T06:22:22+00:00",
+    "fuzzy_key": "based,carbon,hunter,nature,removal,trend",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
+    "raw_url": "https://www.upstreamonline.com/exclusive/launch-of-eus-first-offshore-ccs-project-imminent/2-1-2025219",
+    "headline": "Launch of EU's first offshore CCS project 'imminent' - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-08-07T09:33:00+00:00",
+    "fuzzy_key": "ccs,eu,first,imminent,launch,offshore,online,project,upstream",
     "found_via": "google_alerts"
   }
 ]
