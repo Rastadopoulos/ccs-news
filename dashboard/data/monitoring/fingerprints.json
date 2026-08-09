@@ -1,0 +1,281 @@
+{
+  "iea-ccus-product": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.iea.org/data-and-statistics/data-product/ccus-projects-database",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "iea-ccus-explorer-data": {
+    "sha256": "445101ae29d6b83a631ed27dcf11644a0e520eb507fe63f6dfff59ca30831d46",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "0x8DE8B2368A938A2",
+    "last_modified": "Thu, 26 Mar 2026 10:35:32 GMT",
+    "url": "https://iea.blob.core.windows.net/scripts/ccus-projects-database/data/projects.json",
+    "error": ""
+  },
+  "gccsi-publications": {
+    "sha256": "f152fc2bd623b0173b42efad13da3cc6450661700f8fb1daa9a01c6a3df9c947",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Sat, 08 Aug 2026 22:04:06 GMT",
+    "url": "https://www.globalccsinstitute.com/resources/publications-reports-research/",
+    "error": ""
+  },
+  "london-register-zenodo": {
+    "sha256": "4ba446e54241e39b871066e67a0a370edd6cd646659103a45d2db47f209237d5",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "\"5\"",
+    "last_modified": "",
+    "url": "https://zenodo.org/api/records/18016847",
+    "error": ""
+  },
+  "us-epa-class-vi": {
+    "sha256": "3aafec14b8a7635973050e345bbd3f9f4282744a42b0b0939d26f4ffcc1230f3",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "\"1786280483\"",
+    "last_modified": "Sun, 09 Aug 2026 13:01:23 GMT",
+    "url": "https://www.epa.gov/uic/class-vi-wells-permitted-epa",
+    "error": ""
+  },
+  "uk-nsta-carbon-storage": {
+    "sha256": "5532c5401a044fd4369531db62af1c927c6a1ead9a9a488a153836a32e9ffd60",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.nstauthority.co.uk/regulatory-information/licensing-and-consents/carbon-storage/",
+    "error": ""
+  },
+  "uk-ofgem-ccus": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.ofgem.gov.uk/energy-policy-and-regulation/policy-and-regulatory-programmes/carbon-capture-usage-and-storage-ccus",
+    "error": "HTTP Error 503: backend read error"
+  },
+  "au-nopta-ghg": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.nopta.gov.au/offshore-industry/greenhouse-gas-storage.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "au-neats": {
+    "sha256": "f4688f84c1372fd6e6c62e0168d1f73411441928b52a8199ff63d48d2b8efa26",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "\"50e401f8725dd1:0\"",
+    "last_modified": "Thu, 06 Aug 2026 09:36:56 GMT",
+    "url": "https://neats.nopta.gov.au/",
+    "error": ""
+  },
+  "au-nopsema-environment-plans": {
+    "sha256": "a1ad487c7dcfee30396af9ba0371f1075c2288cb7a813f5542c31bfea784ac68",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "W/\"89764abf2562a20223ae57cb48dee280\"",
+    "last_modified": "",
+    "url": "https://info.nopsema.gov.au/environment_plans",
+    "error": ""
+  },
+  "au-sea-dumping": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.dcceew.gov.au/environment/marine/sea-dumping/permits",
+    "error": "The read operation timed out"
+  },
+  "eu-nzia": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/net-zero-industry-act_en",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "aramco-ccs": {
+    "sha256": "0b8b4b01d2892dd40e468a31659932af18583adbf813199d84ddae23149e526a",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "W/\"1065B1BE22D2DAF95D4DA90426C15EBE\"",
+    "last_modified": "",
+    "url": "https://www.aramco.com/en/sustainability/climate-change/managing-our-footprint/carbon-capture-utilization-and-storage",
+    "error": ""
+  },
+  "adnoc-ccs": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.adnoc.ae/en/our-projects/carbon-capture-and-storage",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "petronas-ccs": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.petronas.com/ccs-ventures",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "pertamina-news": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.pertamina.com/en/news-room/news-release",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "petrobras-news": {
+    "sha256": "2ac3fc4cf6d345a49ab459a0b65459edc7b1af63068b46df0c176ccac7c16a07",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://agencia.petrobras.com.br/en",
+    "error": ""
+  },
+  "sinopec-news": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "http://www.sinopecgroup.com/group/en/Sinopecnews/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "jogmec-ccs": {
+    "sha256": "fb3096d2735e4728a4b913c39f50d8b633a6c4e2e779fee4ec779762aac04fd7",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Tue, 10 Jan 2017 03:27:00 GMT",
+    "url": "https://www.jogmec.go.jp/english/oil/oilgas_10_000010.html",
+    "error": ""
+  },
+  "inpex-news": {
+    "sha256": "49b8016969c71ce5d0ccb64dbbd29419be1416cdbeb21bf2771e8229ec2f71d5",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Fri, 07 Aug 2026 08:04:04 GMT",
+    "url": "https://www.inpex.com/english/news/",
+    "error": ""
+  },
+  "santos-news": {
+    "sha256": "4ffd64ad063ca27235d6600414755370f9cce528e7ff5a7591e6671ae2dd6b11",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.santos.com/news/",
+    "error": ""
+  },
+  "equinor-ccs": {
+    "sha256": "05cafa75a18f64cc4c75709ee5661c5c3767230c45cfcb8d4d64ad70c7be0818",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.equinor.com/energy/carbon-capture-utilisation-and-storage",
+    "error": ""
+  },
+  "eni-ccus": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.eni.com/en-IT/actions/energy-transition/carbon-capture-utilization-storage.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "bp-ccus": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.bp.com/en/global/corporate/what-we-do/gas-and-low-carbon-energy/carbon-capture-use-and-storage.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "shell-ccs": {
+    "sha256": "77a7a65c1898ce03254a7acd5beb65c1decd99b7293eb5754036915277de79b1",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Fri, 07 Aug 2026 19:15:02 GMT",
+    "url": "https://www.shell.com/what-we-do/carbon-capture-and-storage.html",
+    "error": ""
+  },
+  "exxon-ccs": {
+    "sha256": "723241632735c6ced5b412c0f73e6bcb12d9aa25ba563a341592b3c35af608c4",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://corporate.exxonmobil.com/what-we-do/delivering-industrial-solutions/carbon-capture-and-storage",
+    "error": ""
+  },
+  "1pointfive-news": {
+    "sha256": "2cfbb52a25b9651ca6083cf0f81d388c765bf51a60448ab22005d9cded421cef",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.1pointfive.com/news",
+    "error": ""
+  },
+  "mhi-carbon-capture": {
+    "sha256": "f3baf8f578fa50cc95473dfe8d613577f27b69ba5749940e2cb0f916e9777b4a",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Sun, 09 Aug 2026 04:36:08 GMT",
+    "url": "https://www.mhi.com/products/engineering/co2plants.html",
+    "error": ""
+  },
+  "svante-news": {
+    "sha256": "80a806f672923b724ecf165949686c2e046233903eac4e0711b7a0df687661a8",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 200,
+    "etag": "",
+    "last_modified": "Tue, 16 Jun 2026 09:45:30 GMT",
+    "url": "https://www.svanteinc.com/news/",
+    "error": ""
+  },
+  "slb-carbon-solutions": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.slb.com/products-and-services/decarbonizing-industry/carbon-solutions",
+    "error": "HTTP Error 404: 404 File Not Found"
+  },
+  "baker-hughes-ccus": {
+    "sha256": "",
+    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "http_status": 0,
+    "etag": "",
+    "last_modified": "",
+    "url": "https://www.bakerhughes.com/energy-transition/carbon-capture-utilization-and-storage-ccus",
+    "error": "HTTP Error 404: Not Found"
+  }
+}
