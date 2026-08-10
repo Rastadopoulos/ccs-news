@@ -1,20 +1,20 @@
 [
   {
+    "canonical_url": "https://investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
+    "raw_url": "https://www.investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
+    "headline": "Carbon TerraVault begins CO2 injection at California CCS project - Investing.com",
+    "source_domain": "investing.com",
+    "publication_date": "2026-08-10T17:59:49+00:00",
+    "fuzzy_key": "begins,california,carbon,ccs,co2,com,injection,investing,project,terravault",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/tom-baxter-a141a1b_acorn-ccs-is-public-money-being-squandered-activity-7492098945662291968-feok",
     "raw_url": "https://www.linkedin.com/posts/tom-baxter-a141a1b_acorn-ccs-is-public-money-being-squandered-activity-7492098945662291968-feok",
     "headline": "Tom Baxter's Post - Acorn CCS - LinkedIn",
     "source_domain": "linkedin.com",
     "publication_date": "2026-08-09T23:23:29+00:00",
     "fuzzy_key": "acorn,baxter,ccs,linkedin,post,tom",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://themanufacturer.com/articles/rotork-manufactures-first-iq3-pro-actuators-for-liverpool-bay-carbon-capture-project",
-    "raw_url": "https://www.themanufacturer.com/articles/rotork-manufactures-first-iq3-pro-actuators-for-liverpool-bay-carbon-capture-project/",
-    "headline": "Rotork manufactures first IQ3 Pro actuators for Liverpool Bay carbon capture project",
-    "source_domain": "themanufacturer.com",
-    "publication_date": "2026-08-10T03:39:21+00:00",
-    "fuzzy_key": "actuators,bay,capture,carbon,first,iq3,liverpool,manufactures,pro,project,rotork",
     "found_via": "google_alerts"
   },
   {
@@ -27,21 +27,21 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://themanufacturer.com/articles/rotork-manufactures-first-iq3-pro-actuators-for-liverpool-bay-carbon-capture-project",
+    "raw_url": "https://www.themanufacturer.com/articles/rotork-manufactures-first-iq3-pro-actuators-for-liverpool-bay-carbon-capture-project/",
+    "headline": "Rotork manufactures first IQ3 Pro actuators for Liverpool Bay carbon capture project",
+    "source_domain": "themanufacturer.com",
+    "publication_date": "2026-08-10T03:39:21+00:00",
+    "fuzzy_key": "actuators,bay,capture,carbon,first,iq3,liverpool,manufactures,pro,project,rotork",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://tradewindsnews.com/sustainability/carbon-capture-could-be-a-game-changer-for-brunei/2-1-2026577",
     "raw_url": "https://www.tradewindsnews.com/sustainability/carbon-capture-could-be-a-game-changer-for-brunei/2-1-2026577",
     "headline": "Carbon capture could be a 'game changer' for Brunei - TradeWinds",
     "source_domain": "tradewindsnews.com",
     "publication_date": "2026-08-10T07:28:49+00:00",
     "fuzzy_key": "brunei,capture,carbon,changer,could,game,tradewinds",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
-    "raw_url": "https://www.investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
-    "headline": "Carbon TerraVault begins CO2 injection at California CCS project - Investing.com",
-    "source_domain": "investing.com",
-    "publication_date": "2026-08-10T17:59:49+00:00",
-    "fuzzy_key": "begins,california,carbon,ccs,co2,com,injection,investing,project,terravault",
     "found_via": "google_alerts"
   }
 ]
