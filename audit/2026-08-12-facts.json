@@ -1,0 +1,165 @@
+[
+  {
+    "id": "2026-08-12#01",
+    "briefing_date": "2026-08-12",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Cardinal Glass to install 'world's first' float-glass carbon capture at Winlock, Washington",
+    "summary": "Cardinal Glass Industries will fit a post-combustion capture system (up to 95% removal, ~130,000 t/yr CO2) at its Cardinal FG float-glass plant in Washington, working with Italy's K2-CO2; privately funded, purchase orders placed, start-up targeted Q1 2029.",
+    "source": "gasworld",
+    "pub_date": "2026-08-11",
+    "url": "https://www.gasworld.com/story/cardinal-announces-worlds-first-float-glass-carbon-capture-system-in-washington/2256985.article",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Cardinal Glass Industries",
+      "K2-CO2"
+    ],
+    "org_types": [
+      "other",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2029,
+    "capacity_mtpa": 0.13,
+    "co2crc_relevance": "low",
+    "co2crc_note": "CCS extending into a new hard-to-abate industrial sector (float glass); relevant to industrial-capture interest, though start-up is years out.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-12#02",
+    "briefing_date": "2026-08-12",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Consumer Watchdog report brands CCS a 'multi-billion-dollar boondoggle' and a public risk",
+    "summary": "US advocacy group Consumer Watchdog released a report calling CCS 'a bad bet for the public and the environment,' singling out California Resources and arguing gas-plant CCS has never run at commercial scale and leans on 45Q credits; the industry rebutted the same day.",
+    "source": "Consumer Watchdog / PR Newswire",
+    "pub_date": "2026-08-11",
+    "url": "https://consumerwatchdog.org/energy/as-carbon-capture-storage-gathers-steam-new-consumer-watchdog-report-questions-its-threat-to-the-public-and-lifeline-for-fossil-fuels/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Consumer Watchdog",
+      "California Resources Corporation"
+    ],
+    "org_types": [
+      "other",
+      "developer"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence signal — organised, quantified US consumer-advocacy opposition to CCS economics and safety, the kind of narrative Australian proponents increasingly face.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-12#03",
+    "briefing_date": "2026-08-12",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "IEEFA: carbon capture is failing the capital-discipline test",
+    "summary": "An IEEFA commentary argues CCS projects repeatedly miss on cost, capture rates and subsidy-reliance, falling short of a basic capital-allocation bar — reinforcing the 'poor capital discipline' framing shadowing CCS funding debates.",
+    "source": "IEEFA",
+    "pub_date": "2026-08-11",
+    "url": "https://ieefa.org/resources/how-carbon-capture-failing-capital-discipline-test",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "IEEFA"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Investor-facing critique of CCS project economics; feeds the capital-allocation scepticism relevant to CO2CRC funding conversations.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-12#04",
+    "briefing_date": "2026-08-12",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "California Resources reports first CO2 injection and revenue at Carbon TerraVault I",
+    "summary": "In its Q2 2026 results CRC said it reached first CO2 injection and first revenue at Carbon TerraVault I, the operational start of California's first commercial CCS store (Elk Hills), and signed a ~US$63m deal to acquire Crimson Midstream. Announced 10 Aug, one day outside the daily window.",
+    "source": "California Resources / GlobeNewswire",
+    "pub_date": "2026-08-10",
+    "url": "https://www.globenewswire.com/news-release/2026/08/10/3341802/0/en/california-resources-corporation-reports-second-quarter-2026-financial-and-operating-results.html",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "California Resources Corporation"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "California's first operational commercial CO2 store reaching first injection — a US storage milestone that parallels Australia's own commercial-storage ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "US$63m Crimson Midstream figure is a separate M&A item, not a CCS commitment; amount left null."
+  }
+]
