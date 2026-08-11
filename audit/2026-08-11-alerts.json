@@ -9,6 +9,24 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://investing.com/news/company-news/california-resources-q2-2026-slides-midstream-deals-ccs-milestone-93CH-4850024",
+    "raw_url": "https://www.investing.com/news/company-news/california-resources-q2-2026-slides-midstream-deals-ccs-milestone-93CH-4850024",
+    "headline": "California Resources Q2 2026 slides: midstream deals, CCS milestone - Investing.com",
+    "source_domain": "investing.com",
+    "publication_date": "2026-08-11T11:43:44+00:00",
+    "fuzzy_key": "2026,california,ccs,com,deals,investing,midstream,milestone,q2,resources,slides",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://in.investing.com/news/company-news/california-resources-q2-2026-slides-midstream-deals-ccs-milestone-93CH-5547800",
+    "raw_url": "https://in.investing.com/news/company-news/california-resources-q2-2026-slides-midstream-deals-ccs-milestone-93CH-5547800",
+    "headline": "California Resources Q2 2026 slides: midstream deals, CCS milestone - Investing.com India",
+    "source_domain": "investing.com",
+    "publication_date": "2026-08-11T11:43:44+00:00",
+    "fuzzy_key": "2026,california,ccs,com,deals,india,investing,midstream,milestone,q2,resources,slides",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
     "raw_url": "https://www.investing.com/news/company-news/carbon-terravault-begins-co2-injection-at-california-ccs-project-93CH-4849165",
     "headline": "Carbon TerraVault begins CO2 injection at California CCS project - Investing.com",
@@ -33,6 +51,15 @@
     "source_domain": "linkedin.com",
     "publication_date": "2026-08-09T23:23:29+00:00",
     "fuzzy_key": "acorn,baxter,ccs,linkedin,post,tom",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://morningstar.com/news/pr-newswire/20260810dc23563/as-carbon-capture-storage-gathers-steam-new-consumer-watchdog-report-questions-its-threat-to-the-public-and-lifeline-for-fossil-fuels",
+    "raw_url": "https://www.morningstar.com/news/pr-newswire/20260810dc23563/as-carbon-capture-storage-gathers-steam-new-consumer-watchdog-report-questions-its-threat-to-the-public-and-lifeline-for-fossil-fuels",
+    "headline": "As Carbon Capture & Storage Gathers Steam, New Consumer Watchdog Report Questions ...",
+    "source_domain": "morningstar.com",
+    "publication_date": "2026-08-11T11:43:44+00:00",
+    "fuzzy_key": "capture,carbon,consumer,gathers,new,questions,report,steam,storage,watchdog",
     "found_via": "google_alerts"
   },
   {
