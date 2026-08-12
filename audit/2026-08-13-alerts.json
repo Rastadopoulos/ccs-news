@@ -1,23 +1,5 @@
 [
   {
-    "canonical_url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china",
-    "raw_url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china/",
-    "headline": "Isometric Expands Carbon Removal Certification to China - ESG News",
-    "source_domain": "esgnews.com",
-    "publication_date": "2026-08-12T06:15:08+00:00",
-    "fuzzy_key": "carbon,certification,china,esg,expands,isometric,news,removal",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://techexplorist.com/cement-plants-giant-carbon-removal-machines/103904",
-    "raw_url": "https://www.techexplorist.com/cement-plants-giant-carbon-removal-machines/103904/",
-    "headline": "Cement plants could become giant carbon removal machines - Tech Explorist",
-    "source_domain": "techexplorist.com",
-    "publication_date": "2026-08-12T10:35:44+00:00",
-    "fuzzy_key": "become,carbon,cement,could,explorist,giant,machines,plants,removal,tech",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://carbonherald.com/new-ogci-report-highlights-policy-gaps-in-asia-pacific-carbon-capture",
     "raw_url": "https://carbonherald.com/new-ogci-report-highlights-policy-gaps-in-asia-pacific-carbon-capture/",
     "headline": "New OGCI Report Highlights Policy Gaps In Asia-Pacific Carbon Capture",
@@ -27,12 +9,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china",
+    "raw_url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china/",
+    "headline": "Isometric Expands Carbon Removal Certification to China - ESG News",
+    "source_domain": "esgnews.com",
+    "publication_date": "2026-08-12T06:15:08+00:00",
+    "fuzzy_key": "carbon,certification,china,esg,expands,isometric,news,removal",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://ogci.com/news/ogci-publishes-new-report-on-scaling-ccs-across-the-asia-pacific-region",
     "raw_url": "https://www.ogci.com/news/ogci-publishes-new-report-on-scaling-ccs-across-the-asia-pacific-region/",
     "headline": "OGCI publishes new report on scaling CCS across the Asia-Pacific region",
     "source_domain": "ogci.com",
     "publication_date": "2026-08-12T18:01:52+00:00",
     "fuzzy_key": "across,asia,ccs,new,ogci,pacific,publishes,region,report,scaling",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://techexplorist.com/cement-plants-giant-carbon-removal-machines/103904",
+    "raw_url": "https://www.techexplorist.com/cement-plants-giant-carbon-removal-machines/103904/",
+    "headline": "Cement plants could become giant carbon removal machines - Tech Explorist",
+    "source_domain": "techexplorist.com",
+    "publication_date": "2026-08-12T10:35:44+00:00",
+    "fuzzy_key": "become,carbon,cement,could,explorist,giant,machines,plants,removal,tech",
     "found_via": "google_alerts"
   }
 ]
