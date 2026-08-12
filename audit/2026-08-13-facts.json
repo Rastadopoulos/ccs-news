@@ -1,0 +1,130 @@
+[
+  {
+    "id": "2026-08-13#01",
+    "briefing_date": "2026-08-13",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "OGCI publishes report on scaling CCS across the Asia-Pacific region",
+    "summary": "A new Oil and Gas Climate Initiative report, prepared by the Global CCS Institute, examines the policy, regulatory, storage and economic conditions needed to accelerate CCS deployment across Asia-Pacific, with screening-level storage assessments (including Australia's North West Shelf) and a gap analysis calling for greater regulatory alignment and investment.",
+    "source": "OGCI / Global CCS Institute",
+    "pub_date": "2026-08-12",
+    "url": "https://www.ogci.com/news/ogci-publishes-new-report-on-scaling-ccs-across-the-asia-pacific-region/",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Oil and Gas Climate Initiative",
+      "Global CCS Institute"
+    ],
+    "org_types": [
+      "industry-body",
+      "industry-body"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "APAC-focused CCS scaling report with screening-level storage assessment (incl. Australia's North West Shelf) and a regulatory-gap analysis directly relevant to CO2CRC's regional strategy.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Report/publication item; no financial dimension. Collection partly impaired today (WebFetch egress blocks on several trade-press domains; Outlook newsletters unavailable)."
+  },
+  {
+    "id": "2026-08-13#02",
+    "briefing_date": "2026-08-13",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Isometric signs its first China-based carbon-removal projects",
+    "summary": "Carbon-removal registry Isometric signed its first three China-based CDR developers — DAC firm DeCarbon Tech and biochar developers Tongao Greenchar and Vastwing Energy — to certify projects against its protocols, extending Western CDR-registry standards into China.",
+    "source": "Carbon Pulse / Isometric",
+    "pub_date": "2026-08-10",
+    "url": "https://isometric.com/writing-articles/isometric-signs-its-first-carbon-removal-projects-in-china",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "Isometric",
+      "DeCarbon Tech",
+      "Tongao Greenchar",
+      "Vastwing Energy"
+    ],
+    "org_types": [
+      "registry",
+      "developer",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "DAC",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals CDR-registry standardisation reaching China's DAC/biochar developers; peripheral to CO2CRC's geological-storage focus.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar: story broke ~10 Aug 2026, one calendar day outside the Thu 13 Aug window (which starts 12 Aug)."
+  },
+  {
+    "id": "2026-08-13#03",
+    "briefing_date": "2026-08-13",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Cement plants could become net carbon-removal machines, ETH Zurich study finds",
+    "summary": "Science-press coverage of an ETH Zurich study (Bardow group, Chem Circularity, June 2026) showing calcium-looping direct air capture combined with electrified kilns could cut cement's climate impact by up to 78% by 2050 and turn plants into net CO2 removers.",
+    "source": "TechXplore (study: Chem Circularity / ETH Zurich)",
+    "pub_date": "2026-08-12",
+    "url": "https://techxplore.com/news/2026-08-cement-atmosphere.html",
+    "region": "Europe-UK",
+    "countries": [
+      "Switzerland"
+    ],
+    "organisations": [
+      "ETH Zurich"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "DAC",
+      "capture",
+      "mineralisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2050,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Peer-reviewed pathway (calcium-looping DAC + electrified kilns) for turning cement plants into net CO2 removers; long-horizon technology interest.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar: science-press writeup (12 Aug) of a June 2026 Chem Circularity study; underlying research out of the daily window."
+  }
+]
