@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.ogci.com/news/ogci-publishes-new-report-on-scaling-ccs-across-the-asia-pacific-region/",
+    "canonical_url": "https://ogci.com/news/ogci-publishes-new-report-on-scaling-ccs-across-the-asia-pacific-region",
+    "fuzzy_key": "across,asia,ccs,new,ogci,pacific,publishes,region,report,scaling",
+    "source_domain": "ogci.com",
+    "headline": "OGCI publishes new report on scaling CCS across the Asia-Pacific region",
+    "publication_date": "2026-08-12",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://carbonherald.com/new-ogci-report-highlights-policy-gaps-in-asia-pacific-carbon-capture/",
+    "canonical_url": "https://carbonherald.com/new-ogci-report-highlights-policy-gaps-in-asia-pacific-carbon-capture",
+    "fuzzy_key": "asia,capture,carbon,gaps,highlights,new,ogci,pacific,policy,report",
+    "source_domain": "carbonherald.com",
+    "headline": "New OGCI Report Highlights Policy Gaps In Asia-Pacific Carbon Capture",
+    "publication_date": "2026-08-12",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://isometric.com/writing-articles/isometric-signs-its-first-carbon-removal-projects-in-china",
+    "canonical_url": "https://isometric.com/writing-articles/isometric-signs-its-first-carbon-removal-projects-in-china",
+    "fuzzy_key": "carbon,china,first,isometric,projects,removal,signs",
+    "source_domain": "isometric.com",
+    "headline": "Isometric signs its first carbon removal projects in China",
+    "publication_date": "2026-08-10",
+    "in_window": false,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china/",
+    "canonical_url": "https://esgnews.com/isometric-expands-carbon-removal-certification-to-china",
+    "fuzzy_key": "carbon,certification,china,esg,expands,isometric,news,removal",
+    "source_domain": "esgnews.com",
+    "headline": "Isometric Expands Carbon Removal Certification to China - ESG News",
+    "publication_date": "2026-08-12",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://carbon-pulse.com/530958/",
+    "canonical_url": "https://carbon-pulse.com/530958",
+    "fuzzy_key": "carbon,china,developers,first,isometric,launches,protocol,registers,removal,signs,soil",
+    "source_domain": "carbon-pulse.com",
+    "headline": "Isometric launches soil carbon protocol, registers first developers",
+    "publication_date": "2026-08-10",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://techxplore.com/news/2026-08-cement-atmosphere.html",
+    "canonical_url": "https://techxplore.com/news/2026-08-cement-atmosphere.html",
+    "fuzzy_key": "atmosphere,can,cement,co2,how,plants,remove",
+    "source_domain": "techxplore.com",
+    "headline": "How cement plants can remove CO2 from the atmosphere",
+    "publication_date": "2026-08-12",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.techexplorist.com/cement-plants-giant-carbon-removal-machines/103904/",
+    "canonical_url": "https://techexplorist.com/cement-plants-giant-carbon-removal-machines/103904",
+    "fuzzy_key": "become,carbon,cement,could,explorist,giant,machines,plants,removal,tech",
+    "source_domain": "techexplorist.com",
+    "headline": "Cement plants could become giant carbon removal machines - Tech Explorist",
+    "publication_date": "2026-08-12",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://carbonherald.com/malaysia-and-japan-advance-cross-border-ccs-plan/",
+    "canonical_url": "https://carbonherald.com/malaysia-and-japan-advance-cross-border-ccs-plan",
+    "fuzzy_key": "advance,border,ccs,cross,japan,malaysia,plan",
+    "source_domain": "carbonherald.com",
+    "headline": "Malaysia And Japan Advance Cross-Border CCS Plan",
+    "publication_date": "2026-02-01",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2608835-petronas-japanese-firms-advance-sarawak-ccs-project",
+    "canonical_url": "https://argusmedia.com/en/news-and-insights/latest-market-news/2608835-petronas-japanese-firms-advance-sarawak-ccs-project",
+    "fuzzy_key": "advance,ccs,firms,japanese,petronas,project,sarawak",
+    "source_domain": "argusmedia.com",
+    "headline": "Petronas, Japanese firms advance Sarawak CCS project",
+    "publication_date": "2026-02-01",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carboncredits.com/u-s-doe-restores-carbon-capture-hub-funding-texas-and-louisiana-projects-approved/",
+    "canonical_url": "https://carboncredits.com/u-s-doe-restores-carbon-capture-hub-funding-texas-and-louisiana-projects-approved",
+    "fuzzy_key": "approved,capture,carbon,doe,funding,hub,louisiana,projects,restores,texas,us",
+    "source_domain": "carboncredits.com",
+    "headline": "U.S. DOE Restores Carbon Capture Hub Funding: Texas and Louisiana Projects Approved",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "no_pub_date",
+    "found_via": "search_query"
+  }
+]
