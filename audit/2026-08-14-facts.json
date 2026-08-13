@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2026-08-14#01",
+    "briefing_date": "2026-08-14",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "CCS-specific frameworks in Asia-Pacific 'largely absent'",
+    "summary": "gasworld's write-up of the OGCI / Global CCS Institute Asia-Pacific report (briefed 13 Aug) underscores that CCS-specific legal and regulatory frameworks across most APAC jurisdictions remain largely absent, a gap the report says must close to unlock regional storage.",
+    "source": "gasworld",
+    "pub_date": "2026-08-13",
+    "url": "https://www.gasworld.com/story/ccs-specific-frameworks-in-asia-pacific-largely-absent/2257082.article",
+    "region": "APAC",
+    "countries": [
+      "Australia",
+      "Indonesia",
+      "Malaysia",
+      "Japan"
+    ],
+    "organisations": [
+      "OGCI",
+      "Global CCS Institute"
+    ],
+    "org_types": [
+      "industry-body",
+      "industry-body"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Reinforces Australia's regulatory head-start (offshore GHG storage permits) versus APAC neighbours still lacking CCS frameworks — relevant to CO2CRC's regional partnering and storage-hub positioning.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar re-coverage of the OGCI/GCCSI Asia-Pacific report already briefed on 2026-08-13; gasworld page egress-blocked, date confirmed from Google Alerts feed metadata."
+  },
+  {
+    "id": "2026-08-14#02",
+    "briefing_date": "2026-08-14",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Startup turns captured CO₂ into a consumer soft drink",
+    "summary": "Heatmap News profiles a venture using captured CO₂ as the carbonation in a branded soft drink — a small but media-friendly example of CO₂ utilisation and a marketing route for carbon-removal storytelling.",
+    "source": "Heatmap News",
+    "pub_date": "2026-08-13",
+    "url": "https://heatmap.news/carbon-removal/direct-air-capture-soda",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "utilisation",
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Peripheral CO₂-utilisation novelty; limited direct relevance to CO2CRC's storage/MMV focus but a useful public-engagement narrative data point.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar novelty item; Heatmap page egress-blocked, date confirmed from Google Alerts feed metadata; specific company name not independently verified."
+  }
+]

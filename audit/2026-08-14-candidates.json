@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://pgjonline.com/news/2026/august/uks-hynet-co2-pipeline-network-reaches-manufacturing-milestone",
+    "canonical_url": "https://pgjonline.com/news/2026/august/uks-hynet-co2-pipeline-network-reaches-manufacturing-milestone",
+    "fuzzy_key": "co2,hynet,manufacturing,milestone,network,pipeline,reaches,uks",
+    "source_domain": "pgjonline.com",
+    "headline": "UK's HyNet CO2 pipeline network reaches manufacturing milestone",
+    "publication_date": "2026-08-13T07:40:32+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.cemnet.com/News/story/181847/eth-study-explores-integration-of-direct-air-capture-with-cement-production.html",
+    "canonical_url": "https://cemnet.com/news/story/181847/eth-study-explores-integration-of-direct-air-capture-with-cement-production.html",
+    "fuzzy_key": "air,capture,cement,direct,eth,explores,integration,production,study",
+    "source_domain": "cemnet.com",
+    "headline": "ETH study explores integration of direct air capture with cement production",
+    "publication_date": "2026-08-13T11:42:15+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "round_up_retrospective",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://heatmap.news/carbon-removal/direct-air-capture-soda",
+    "canonical_url": "https://heatmap.news/carbon-removal/direct-air-capture-soda",
+    "fuzzy_key": "asks,drink,emission,gas,greenhouse,heatmap,news,soda,would",
+    "source_domain": "heatmap.news",
+    "headline": "This Soda Asks: Would You Drink a Greenhouse Gas Emission?",
+    "publication_date": "2026-08-13T14:22:31+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-long-term-growth-trajectory-for-carbon-removal-technologies",
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-long-term-growth-trajectory-for-carbon-removal-technologies",
+    "fuzzy_key": "carbon,climeworks,growth,highlights,long,removal,technologies,term,trajectory",
+    "source_domain": "tipranks.com",
+    "headline": "Climeworks Highlights Long-Term Growth Trajectory for Carbon Removal Technologies",
+    "publication_date": "2026-08-13T14:42:16+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "round_up_retrospective",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.japanccs.com/en/news/20260813-1/",
+    "canonical_url": "https://japanccs.com/en/news/20260813-1",
+    "fuzzy_key": "5th,august,class,fun,gave,japan,learn,sdgs,thu",
+    "source_domain": "japanccs.com",
+    "headline": "On August 6 (Thu), Japan CCS gave a fun class at the 5th “Let’s learn SDGs!”",
+    "publication_date": "2026-08-13T00:00:00+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "off_topic",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.gasworld.com/story/ccs-specific-frameworks-in-asia-pacific-largely-absent/2257082.article/",
+    "canonical_url": "https://gasworld.com/story/ccs-specific-frameworks-in-asia-pacific-largely-absent/2257082.article",
+    "fuzzy_key": "absent,asia,ccs,frameworks,gasworld,largely,pacific,specific",
+    "source_domain": "gasworld.com",
+    "headline": "CCS-specific frameworks in Asia Pacific 'largely absent'",
+    "publication_date": "2026-08-13T19:57:47+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.worldpipelines.com/project-news/11082026/united-infrastructure-and-rotork-mark-major-manufacturing-milestone-with-highly-skilled-british-workforce/",
+    "canonical_url": "https://worldpipelines.com/project-news/11082026/united-infrastructure-and-rotork-mark-major-manufacturing-milestone-with-highly-skilled-british-workforce",
+    "fuzzy_key": "british,infrastructure,major,manufacturing,mark,milestone,rotork,skilled,united,workforce",
+    "source_domain": "worldpipelines.com",
+    "headline": "United Infrastructure and Rotork mark major manufacturing milestone with highly skilled British workforce",
+    "publication_date": "2026-08-11T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbon-pulse.com/540733/",
+    "canonical_url": "https://carbon-pulse.com/540733",
+    "fuzzy_key": "californias,ccs,compliance,drives,first,growing,interest,pressure,project",
+    "source_domain": "carbon-pulse.com",
+    "headline": "Compliance pressure drives growing interest at California's first CCS project",
+    "publication_date": "2026-08-11T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/purefield-launches-150000-ton-carbon-capture-facility-in-kansas/",
+    "canonical_url": "https://carbonherald.com/purefield-launches-150000-ton-carbon-capture-facility-in-kansas",
+    "fuzzy_key": "150000,capture,carbon,facility,kansas,launches,purefield,ton",
+    "source_domain": "carbonherald.com",
+    "headline": "PureField Launches 150,000-Ton Carbon Capture Facility In Kansas",
+    "publication_date": "2026-08-03T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/carbonquest-enters-canada-with-mof-enhanced-ccs/",
+    "canonical_url": "https://carbonherald.com/carbonquest-enters-canada-with-mof-enhanced-ccs",
+    "fuzzy_key": "canada,carbonquest,ccs,enhanced,enters,mof",
+    "source_domain": "carbonherald.com",
+    "headline": "CarbonQuest Enters Canada With MOF-Enhanced CCS",
+    "publication_date": "2026-08-05T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  }
+]

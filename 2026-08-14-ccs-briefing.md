@@ -1,0 +1,10 @@
+# Quiet day — CCS briefing — Fri 14 Aug 2026
+
+A genuinely quiet news cycle. A full sweep — 22 web searches spanning every geographic bucket (Australia/APAC, North America, Europe/UK, Middle East, China, India, Latin America, Africa), multinational-strategy queries (Mitsui/Mitsubishi/Marubeni and BP/Shell/TotalEnergies/Eni), and transboundary-CCS topics (London Protocol, Norway–Denmark–Sweden, cross-border CO₂ shipping), plus the day's Google Alerts feed — surfaced no clean, fresh, previously-unbriefed CCS news dated 13–14 August (Melbourne). Every confirmable in-window item was either already carried in a prior briefing (the HyNet/Rotork actuator milestone on 11 Aug; the OGCI/Global CCS Institute Asia-Pacific report on 13 Aug) or a round-up of older news (the ETH Zürich cement–DAC study is from June; Climeworks' H1 growth numbers broke in June–July). Shelly Murrell's and the IEAGHG weekly digests were not reachable this run and are skipped (non-blocking). Fewer fresh items beats more stale items — so today is a stub, with two near-misses flagged below.
+
+## Still on the radar
+
+- **CCS-specific frameworks in Asia-Pacific 'largely absent'** — Trade-press write-up of the OGCI / Global CCS Institute Asia-Pacific report (its own findings were briefed yesterday), stressing that CCS-specific legal and regulatory frameworks across most APAC jurisdictions remain largely absent — a gap the report says must close to unlock the region's storage potential, and a reminder of Australia's regulatory head-start. Underlying report already covered 13 Aug. (gasworld, 13 Aug 2026) [link](https://www.gasworld.com/story/ccs-specific-frameworks-in-asia-pacific-largely-absent/2257082.article)
+- **Startup turns captured CO₂ into a consumer soft drink** *(13 Aug 2026)* — Heatmap News profiles a venture carbonating a branded soft drink with captured CO₂ — a minor but media-friendly CO₂-utilisation story and a public-engagement narrative worth noting rather than a substantive project development. (Heatmap News, 13 Aug 2026) [link](https://heatmap.news/carbon-removal/direct-air-capture-soda)
+
+— Auto-briefing
