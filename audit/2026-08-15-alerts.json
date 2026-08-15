@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://carbonherald.com/eth-zurich-cement-as-a-carbon-removal-solution",
+    "raw_url": "https://carbonherald.com/eth-zurich-cement-as-a-carbon-removal-solution/",
+    "headline": "ETH Zurich: Cement As a Carbon Removal Solution",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-08-15T00:25:44+00:00",
+    "fuzzy_key": "carbon,cement,eth,removal,solution,zurich",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/troegs-independent-brewing-secures-pennsylvania-carbon-capture-grant",
     "raw_url": "https://carbonherald.com/troegs-independent-brewing-secures-pennsylvania-carbon-capture-grant/",
     "headline": "Tröegs Independent Brewing Secures Pennsylvania Carbon Capture Grant",
@@ -18,6 +27,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://esgnews.earth/latest-news/microsoft-diversifies-carbon-removal-with-crew-offtake/21342.html",
+    "raw_url": "https://www.esgnews.earth/latest-news/microsoft-diversifies-carbon-removal-with-crew-offtake/21342.html",
+    "headline": "Microsoft Diversifies Carbon Removal with CREW Offtake | ESG News.earth",
+    "source_domain": "esgnews.earth",
+    "publication_date": "2026-08-15T00:25:44+00:00",
+    "fuzzy_key": "carbon,crew,diversifies,earth,esg,microsoft,news,offtake,removal",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/exclusive-ucaneo-ceo-outlines-next-steps-after-opening-germanys-largest-dac-facility/2257119.article",
     "raw_url": "https://www.gasworld.com/story/exclusive-ucaneo-ceo-outlines-next-steps-after-opening-germanys-largest-dac-facility/2257119.article/",
     "headline": "Exclusive: Ucaneo CEO outlines next steps after opening Germany's largest DAC facility",
@@ -33,6 +51,15 @@
     "source_domain": "linkedin.com",
     "publication_date": "2026-08-14T05:10:49+00:00",
     "fuzzy_key": "carbon,challenge,climeworks,fact,linkedin,myth,removal,series",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://finance.yahoo.com/energy/articles/carbon-capture-canada-returns-amid-140000131.html",
+    "raw_url": "https://finance.yahoo.com/energy/articles/carbon-capture-canada-returns-amid-140000131.html",
+    "headline": "Carbon Capture Canada Returns Amid Growing Investment and Momentum in ... - Yahoo Finance",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-08-15T00:08:34+00:00",
+    "fuzzy_key": "amid,canada,capture,carbon,finance,growing,investment,momentum,returns,yahoo",
     "found_via": "google_alerts"
   }
 ]
