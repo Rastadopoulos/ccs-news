@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2026-08-17#01",
+    "briefing_date": "2026-08-17",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Ucaneo CEO outlines next steps after opening Germany's largest DAC facility",
+    "summary": "A gasworld interview with Ucaneo's CEO following the 2 July inauguration of the company's 150 t/yr electrochemical direct-air-capture plant in Berlin-Marzahn — described as Germany's first verified DAC combined with geological storage — flags a roughly ten-times-larger commercial facility with construction targeted from 2027.",
+    "source": "gasworld",
+    "pub_date": "2026-08-14",
+    "url": "https://www.gasworld.com/story/exclusive-ucaneo-ceo-outlines-next-steps-after-opening-germanys-largest-dac-facility/2257119.article",
+    "region": "Europe-UK",
+    "countries": [
+      "Germany"
+    ],
+    "organisations": [
+      "Ucaneo"
+    ],
+    "org_types": [
+      "startup"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "DAC",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2027,
+    "capacity_mtpa": 0.00015,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Sub-scale but a rare verified DAC-plus-geological-storage precedent in Europe; relevant to CO2CRC's planned full-chain DAC/BECCS demonstrations at the Otway International Test Centre, though volumes are negligible.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar near-miss: the article is in-window (14 Aug) but its news hook — the plant opening — was 2 July 2026, so it is ineligible for the main sections. gasworld page egress-blocked this run; date confirmed from the Google Alerts feed metadata."
+  },
+  {
+    "id": "2026-08-17#02",
+    "briefing_date": "2026-08-17",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Tröegs Independent Brewing secures Pennsylvania carbon-capture grant",
+    "summary": "Carbon Herald reports that Pennsylvania craft brewer Tröegs won a state grant to capture fermentation CO₂ for on-site reuse — a small-scale industrial capture-and-utilisation example rather than a storage development.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-14",
+    "url": "https://carbonherald.com/troegs-independent-brewing-secures-pennsylvania-carbon-capture-grant/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Tröegs Independent Brewing"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "grant-funding",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Peripheral small-scale fermentation-CO₂ capture/utilisation; minimal direct relevance to CO2CRC's geological-storage and MMV focus, but a public-engagement data point on where CCUS grants are flowing.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Radar near-miss (14 Aug, ≤7 days). Grant dollar figure not stated in accessible text; carbonherald page egress-blocked this run, date confirmed from the Google Alerts feed metadata."
+  }
+]
