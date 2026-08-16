@@ -1,7 +1,7 @@
 {
   "iea-ccus-product": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -10,7 +10,7 @@
   },
   "iea-ccus-explorer-data": {
     "sha256": "445101ae29d6b83a631ed27dcf11644a0e520eb507fe63f6dfff59ca30831d46",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "0x8DE8B2368A938A2",
     "last_modified": "Thu, 26 Mar 2026 10:35:32 GMT",
@@ -18,17 +18,17 @@
     "error": ""
   },
   "gccsi-publications": {
-    "sha256": "f152fc2bd623b0173b42efad13da3cc6450661700f8fb1daa9a01c6a3df9c947",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "8f0c63eb8026cacb3c0fd11aebc9543136a6a777350dfb746aa02824c6206009",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
-    "last_modified": "Sat, 08 Aug 2026 22:04:06 GMT",
+    "last_modified": "Sun, 16 Aug 2026 09:47:27 GMT",
     "url": "https://www.globalccsinstitute.com/resources/publications-reports-research/",
     "error": ""
   },
   "london-register-zenodo": {
-    "sha256": "4ba446e54241e39b871066e67a0a370edd6cd646659103a45d2db47f209237d5",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "83fec51468166b2bab18de4c6f5c2a9673029646f9b28731433adc95619603f3",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "\"5\"",
     "last_modified": "",
@@ -36,17 +36,17 @@
     "error": ""
   },
   "us-epa-class-vi": {
-    "sha256": "3aafec14b8a7635973050e345bbd3f9f4282744a42b0b0939d26f4ffcc1230f3",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "c5eb35f9d4c0954adf160e87c3964396f046f261a8f7c5e11351442baad893c5",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
-    "etag": "\"1786280483\"",
-    "last_modified": "Sun, 09 Aug 2026 13:01:23 GMT",
+    "etag": "\"1786899933\"",
+    "last_modified": "Sun, 16 Aug 2026 17:05:33 GMT",
     "url": "https://www.epa.gov/uic/class-vi-wells-permitted-epa",
     "error": ""
   },
   "uk-nsta-carbon-storage": {
-    "sha256": "5532c5401a044fd4369531db62af1c927c6a1ead9a9a488a153836a32e9ffd60",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "af42e5970acc96cc8ab19a6a2dc7ffee6cef01c25f62de36b79780bb092553cf",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -55,16 +55,16 @@
   },
   "uk-ofgem-ccus": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
     "url": "https://www.ofgem.gov.uk/energy-policy-and-regulation/policy-and-regulatory-programmes/carbon-capture-usage-and-storage-ccus",
-    "error": "HTTP Error 503: backend read error"
+    "error": "HTTP Error 404: Not Found"
   },
   "au-nopta-ghg": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -72,26 +72,26 @@
     "error": "HTTP Error 404: Not Found"
   },
   "au-neats": {
-    "sha256": "f4688f84c1372fd6e6c62e0168d1f73411441928b52a8199ff63d48d2b8efa26",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "854f75e46f8713bd4bc6dc32fdbece5126a8fd4a912fba856e48052e8740a8f8",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
-    "etag": "\"50e401f8725dd1:0\"",
-    "last_modified": "Thu, 06 Aug 2026 09:36:56 GMT",
+    "etag": "\"cbfbf603d2add1:0\"",
+    "last_modified": "Wed, 12 Aug 2026 09:31:39 GMT",
     "url": "https://neats.nopta.gov.au/",
     "error": ""
   },
   "au-nopsema-environment-plans": {
-    "sha256": "a1ad487c7dcfee30396af9ba0371f1075c2288cb7a813f5542c31bfea784ac68",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "d2de85c9f5f502561f29f25403daea4639558a759bcd3b1946d93d6c3a40b841",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
-    "etag": "W/\"89764abf2562a20223ae57cb48dee280\"",
+    "etag": "W/\"ab210539c7332ccfeffdfe401c72a135\"",
     "last_modified": "",
     "url": "https://info.nopsema.gov.au/environment_plans",
     "error": ""
   },
   "au-sea-dumping": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -100,7 +100,7 @@
   },
   "eu-nzia": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -109,7 +109,7 @@
   },
   "aramco-ccs": {
     "sha256": "0b8b4b01d2892dd40e468a31659932af18583adbf813199d84ddae23149e526a",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "W/\"1065B1BE22D2DAF95D4DA90426C15EBE\"",
     "last_modified": "",
@@ -118,7 +118,7 @@
   },
   "adnoc-ccs": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -127,7 +127,7 @@
   },
   "petronas-ccs": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -136,7 +136,7 @@
   },
   "pertamina-news": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -144,8 +144,8 @@
     "error": "HTTP Error 404: Not Found"
   },
   "petrobras-news": {
-    "sha256": "2ac3fc4cf6d345a49ab459a0b65459edc7b1af63068b46df0c176ccac7c16a07",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "00ea8c509ac41926342d897b63cc5da1ec6f2761a7808d9eb1008657ffae38bc",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -154,7 +154,7 @@
   },
   "sinopec-news": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -163,7 +163,7 @@
   },
   "jogmec-ccs": {
     "sha256": "fb3096d2735e4728a4b913c39f50d8b633a6c4e2e779fee4ec779762aac04fd7",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "Tue, 10 Jan 2017 03:27:00 GMT",
@@ -172,7 +172,7 @@
   },
   "inpex-news": {
     "sha256": "49b8016969c71ce5d0ccb64dbbd29419be1416cdbeb21bf2771e8229ec2f71d5",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "Fri, 07 Aug 2026 08:04:04 GMT",
@@ -180,8 +180,8 @@
     "error": ""
   },
   "santos-news": {
-    "sha256": "4ffd64ad063ca27235d6600414755370f9cce528e7ff5a7591e6671ae2dd6b11",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "bee189813a6b8f0b7a80da28fb0adde0e2fa7f71f52203d46fe313dc7beee0b1",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -189,8 +189,8 @@
     "error": ""
   },
   "equinor-ccs": {
-    "sha256": "05cafa75a18f64cc4c75709ee5661c5c3767230c45cfcb8d4d64ad70c7be0818",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "0a50dd5f4983da55dd1cec314d72bff2bb69ec0cdcead4291cd6d37fe6540000",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -199,7 +199,7 @@
   },
   "eni-ccus": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -208,7 +208,7 @@
   },
   "bp-ccus": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -216,17 +216,17 @@
     "error": "HTTP Error 403: Forbidden"
   },
   "shell-ccs": {
-    "sha256": "77a7a65c1898ce03254a7acd5beb65c1decd99b7293eb5754036915277de79b1",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "556fb7950dec7323fdb4157e5991f1104b64ac7b943be642f3c8f1c205358f6d",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
-    "last_modified": "Fri, 07 Aug 2026 19:15:02 GMT",
+    "last_modified": "Fri, 14 Aug 2026 07:22:11 GMT",
     "url": "https://www.shell.com/what-we-do/carbon-capture-and-storage.html",
     "error": ""
   },
   "exxon-ccs": {
-    "sha256": "723241632735c6ced5b412c0f73e6bcb12d9aa25ba563a341592b3c35af608c4",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "16cee165fe639640f251cb9e74279f57c8bd81a703d1827f1cce92aa667dcdc5",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -234,8 +234,8 @@
     "error": ""
   },
   "1pointfive-news": {
-    "sha256": "2cfbb52a25b9651ca6083cf0f81d388c765bf51a60448ab22005d9cded421cef",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "10143d8207eb8217b097d31b926190bbf36b906197d6b4d5c1d784934a88ba24",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "",
@@ -243,17 +243,17 @@
     "error": ""
   },
   "mhi-carbon-capture": {
-    "sha256": "f3baf8f578fa50cc95473dfe8d613577f27b69ba5749940e2cb0f916e9777b4a",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "3df53295c02a66468f3de0c8397dcaf2b088f896746d8c4681096832e9df749c",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
-    "last_modified": "Sun, 09 Aug 2026 04:36:08 GMT",
+    "last_modified": "Sat, 15 Aug 2026 23:02:12 GMT",
     "url": "https://www.mhi.com/products/engineering/co2plants.html",
     "error": ""
   },
   "svante-news": {
-    "sha256": "80a806f672923b724ecf165949686c2e046233903eac4e0711b7a0df687661a8",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "sha256": "df5db652c98fcfebe7d632b1cc1892daeba7e79bdf39b07b5504be9a4deb50a2",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 200,
     "etag": "",
     "last_modified": "Tue, 16 Jun 2026 09:45:30 GMT",
@@ -262,7 +262,7 @@
   },
   "slb-carbon-solutions": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
@@ -271,7 +271,7 @@
   },
   "baker-hughes-ccus": {
     "sha256": "",
-    "retrieved_at": "2026-08-09T20:52:54.366730+00:00",
+    "retrieved_at": "2026-08-16T20:39:55.817876+00:00",
     "http_status": 0,
     "etag": "",
     "last_modified": "",
