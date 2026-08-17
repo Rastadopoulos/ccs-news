@@ -1,0 +1,29 @@
+[
+  {
+    "canonical_url": "https://tradingview.com/news/reuters.com,2026:newsml_FWN44C0AF:0-japex-began-drilling-second-exploratory-well-to-confirm-existence-of-formations-suitable-for-co-storage-to-advance-tomakomai-ccs-project",
+    "raw_url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN44C0AF:0-japex-began-drilling-second-exploratory-well-to-confirm-existence-of-formations-suitable-for-co-storage-to-advance-tomakomai-ccs-project/",
+    "headline": "Japex - Began Drilling Second Exploratory Well To Confirm Existence Of Formations ...",
+    "source_domain": "tradingview.com",
+    "publication_date": "2026-08-17T15:15:47+00:00",
+    "fuzzy_key": "began,confirm,drilling,existence,exploratory,formations,japex,second,well",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/japex-nearing-fid-for-flagship-carbon-capture-project/2-1-2029797",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/japex-nearing-fid-for-flagship-carbon-capture-project/2-1-2029797",
+    "headline": "Japex nearing FID for flagship carbon capture project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-08-17T16:42:18+00:00",
+    "fuzzy_key": "capture,carbon,fid,flagship,japex,nearing,online,project,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/halliburton-wins-drilling-contract-for-landmark-petrobras-ccs-project/2-1-2030251",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/halliburton-wins-drilling-contract-for-landmark-petrobras-ccs-project/2-1-2030251",
+    "headline": "Halliburton wins drilling contract for landmark Petrobras CCS project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-08-17T19:49:49+00:00",
+    "fuzzy_key": "ccs,contract,drilling,halliburton,landmark,online,petrobras,project,upstream,wins",
+    "found_via": "google_alerts"
+  }
+]
