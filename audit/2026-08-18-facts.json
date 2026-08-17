@@ -1,0 +1,137 @@
+[
+  {
+    "id": "2026-08-18#01",
+    "briefing_date": "2026-08-18",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "JAPEX starts second exploratory well as it nears FID on flagship Tomakomai CCS project",
+    "summary": "Japan Petroleum Exploration began drilling a second exploratory well (extended-reach, from a rig in Tomakomai, Hokkaido) to confirm formations suitable for CO2 storage; data from this and the first well will underpin a final investment decision on the Tomakomai CCS project, targeted within FY2026, with CO2 storage slated to begin around FY2030. The project would capture CO2 from Idemitsu's Hokkaido refinery and Hokkaido Electric Power's station via the new Tomakomai CCS Co. (TCCS) implementing entity.",
+    "source": "Upstream / Reuters",
+    "pub_date": "2026-08-17",
+    "url": "https://www.upstreamonline.com/carbon-capture/japex-nearing-fid-for-flagship-carbon-capture-project/2-1-2029797",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "JAPEX",
+      "Idemitsu Kosan",
+      "Hokkaido Electric Power",
+      "JOGMEC"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "utility",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Japan is a priority CCS partner and competitor for Australia; a Tomakomai FID within FY2026 firms up Japanese demand for CO2 storage, which underpins the Australia-Japan cross-border CCS value chain CO2CRC tracks.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "JAPEX is a listed Japanese E&P; tagged 'developer' as project lead. WebFetch egress-blocked; date confirmed from the Google Alerts feed metadata (Reuters wire and Upstream both dated 17 Aug 2026) and corroborating trade-press coverage. Second-well drilling began 15 Aug."
+  },
+  {
+    "id": "2026-08-18#02",
+    "briefing_date": "2026-08-18",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Halliburton wins drilling contract for landmark Petrobras CCS project",
+    "summary": "Upstream reports Halliburton has secured a drilling contract for a landmark Petrobras carbon capture and storage project in Brazil. Petrobras operates the world's largest offshore CCUS-EOR programme in the Santos Basin pre-salt and has been advancing its first dedicated (non-EOR) CO2 storage effort; the award moves that work into its drilling phase.",
+    "source": "Upstream",
+    "pub_date": "2026-08-17",
+    "url": "https://www.upstreamonline.com/carbon-capture/halliburton-wins-drilling-contract-for-landmark-petrobras-ccs-project/2-1-2030251",
+    "region": "Latin America",
+    "countries": [
+      "Brazil"
+    ],
+    "organisations": [
+      "Halliburton",
+      "Petrobras"
+    ],
+    "org_types": [
+      "other",
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals a major NOC and a top oilfield-services contractor moving an offshore dedicated-storage project into execution — a supply-chain and capability datapoint relevant to Australia's own offshore storage build-out.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Contract award = project-milestone. Upstream is paywalled and WebFetch egress-blocked; headline, URL and publication date (17 Aug 2026) taken from the dated Google Alerts feed. Contract value and Mtpa not confirmable, left null (no fabrication)."
+  },
+  {
+    "id": "2026-08-18#03",
+    "briefing_date": "2026-08-18",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "US Treasury and IRS extend and expand the Section 45Q safe harbour (Notice 2026-50)",
+    "summary": "Treasury and the IRS on 14 Aug issued Notice 2026-50, extending and broadening a safe harbour for the federal Section 45Q carbon-capture tax credit and adding an independent-engineer certification path, in response to an EPA proposal to scrap key Greenhouse Gas Reporting Program requirements (including Subpart RR) used to verify geologic storage.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-14",
+    "url": "https://carbonherald.com/treasury-and-irs-extend-section-45q-safe-harbor/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "US Treasury",
+      "IRS",
+      "EPA"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "government"
+    ],
+    "instrument_type": "tax-credit",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "US-specific credit mechanics, but the safe-harbour extension steadies the world's largest CCS incentive amid EPA reporting rollback — a signal on policy durability that global (and Australian) project economics watch.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar near-miss: dated 14 Aug 2026, outside the 17-18 Aug window, so ineligible for the main sections. Notice number and substance confirmed across Carbon Herald and ENR search coverage; WebFetch egress-blocked."
+  }
+]
