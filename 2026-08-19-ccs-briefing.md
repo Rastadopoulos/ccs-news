@@ -1,0 +1,15 @@
+# Quiet day — CCS briefing — Wed 19 Aug 2026
+
+A quiet day for fresh CCS/CCUS news. One item cleared the recency window (18–19 Aug Melbourne time): three firms bidding in Sweden's second BECCS reverse auction. The day's other CCS traffic was either already covered in yesterday's briefing (JAPEX's second Tomakomai well; Halliburton's Petrobras drilling contract) or sat just outside the window (North Dakota's Project Tundra, Vietnam's petroleum-law CCS chapter, China's carbon-market expansion), collected below under "Still on the radar". Note: source-page date verification and the weekly Outlook feeds (Shelly Murrell, IEAGHG) were unavailable this run due to environment egress restrictions, so eligibility leaned on search metadata rather than page fetches.
+
+## Policy
+
+- **Three Swedish firms bid in second BECCS reverse auction** — Three companies submitted bids for Swedish state support under the country's second reverse auction for bioenergy with carbon capture and storage (BECCS), competing for the next tranche of the SEK 36bn (~€3.3bn) 2026–2046 support scheme; the first auction was won by Stockholm Exergi. Bidder names were not disclosed in open sources. (Carbon Pulse, 18 Aug 2026) [paywall] [link](https://carbon-pulse.com/542426/)
+
+## Still on the radar
+
+- **North Dakota's Project Tundra signs new lead developer, to explore enhanced oil recovery** *(17 Aug 2026)* — Minnkota Power Cooperative brought in Reliant Carbon Capture & Storage as the new lead developer/owner-operator of the ~5 Mtpa capture retrofit at the Milton R. Young coal station (Baker Hughes cryogenic capture); Minnkota keeps CO₂ storage, and the team is also pursuing CO₂-EOR in the Bakken. (Grand Forks Herald / Carbon Pulse, 17 Aug 2026) [link](https://www.grandforksherald.com/news/north-dakota/new-partner-takes-lead-on-project-tundra-carbon-capture-facility)
+- **Vietnam advances a dedicated CCS/CCUS chapter in its amended Petroleum Law** *(17 Aug 2026)* — The National Assembly is progressing amendments that, for the first time, add a dedicated chapter enabling CCS/CCUS in the oil & gas sector (PSC amendments to incorporate CCS, with CCS costs recoverable under the existing cost-recovery mechanism); the NA Standing Committee reviewed upstream governance on 17 Aug ahead of an expected vote this session. (VietnamPlus / Carbon Pulse, 17 Aug 2026) [link](https://en.vietnamplus.vn/na-standing-committee-asks-for-clear-mechanisms-for-upstream-oil-gas-management-post350212.vnp)
+- **China to add petrochemicals and chemicals to its national carbon market** *(15 Aug 2026)* — The Ministry of Ecology and Environment said it will expand the national emissions trading scheme to cover the petrochemical and chemical industries, bringing about 80% of the country's CO₂ emissions under the scheme; announced by vice-minister Li Gao on 15 Aug. (Caixin Global, 15 Aug 2026) [link](https://www.caixinglobal.com/2026-08-15/china-to-add-petrochemicals-chemicals-to-national-carbon-market-102474336.html)
+
+— Auto-briefing

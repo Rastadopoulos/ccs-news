@@ -1,0 +1,165 @@
+[
+  {
+    "id": "2026-08-19#01",
+    "briefing_date": "2026-08-19",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Three Swedish firms bid in second BECCS reverse auction",
+    "summary": "Three companies submitted bids for Swedish state support under the country's second reverse auction for bioenergy with carbon capture and storage (BECCS), competing for the next tranche of the SEK 36bn (~EUR 3.3bn) 2026-2046 support scheme; the first auction was won by Stockholm Exergi.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-08-18",
+    "url": "https://carbon-pulse.com/542426/",
+    "region": "Europe-UK",
+    "countries": [
+      "Sweden"
+    ],
+    "organisations": [
+      "Swedish Energy Agency"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "grant-funding",
+    "value_chain": [
+      "BECCS"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Sweden's reverse-auction procurement is a leading template for cost-effective public support of BECCS/CDR - a useful reference for Australian CDR/CCS policy design.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": null,
+    "extractor_note": "Publication date (18 Aug 2026) taken from Carbon Pulse/QC Intel/Argus search metadata; source page not fetch-verifiable this run (egress to carbon-pulse.com blocked by org policy). Bidder names not disclosed in open sources."
+  },
+  {
+    "id": "2026-08-19#02",
+    "briefing_date": "2026-08-19",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "North Dakota's Project Tundra signs new lead developer, to explore enhanced oil recovery",
+    "summary": "Minnkota Power Cooperative brought in Reliant Carbon Capture & Storage as the new lead developer/owner-operator of the ~5 Mtpa capture retrofit at the Milton R. Young coal station (using Baker Hughes cryogenic capture); Minnkota retains CO2 storage, and the team is also pursuing CO2-EOR in the Bakken.",
+    "source": "Grand Forks Herald / Carbon Pulse",
+    "pub_date": "2026-08-17",
+    "url": "https://www.grandforksherald.com/news/north-dakota/new-partner-takes-lead-on-project-tundra-carbon-capture-facility",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Minnkota Power Cooperative",
+      "Reliant Carbon Capture & Storage",
+      "Baker Hughes"
+    ],
+    "org_types": [
+      "utility",
+      "developer",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 5,
+    "co2crc_relevance": "low",
+    "co2crc_note": "US coal-retrofit CCS with EOR; limited direct CO2CRC relevance beyond capture-technology benchmarking.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar - dated ~17 Aug (Carbon Pulse via SendeCO2/Grand Forks Herald), just outside the 18-19 Aug window; page not fetch-verifiable (egress blocked)."
+  },
+  {
+    "id": "2026-08-19#03",
+    "briefing_date": "2026-08-19",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "Vietnam advances dedicated CCS/CCUS chapter in amended Petroleum Law",
+    "summary": "Vietnam's National Assembly is progressing amendments to the Petroleum Law that add, for the first time, a dedicated chapter enabling CCS/CCUS in the oil & gas sector (PSC amendments to incorporate CCS, CCS costs recoverable under existing cost-recovery); the NA Standing Committee reviewed upstream governance on 17 Aug ahead of an expected vote this session.",
+    "source": "VietnamPlus / Carbon Pulse",
+    "pub_date": "2026-08-17",
+    "url": "https://en.vietnamplus.vn/na-standing-committee-asks-for-clear-mechanisms-for-upstream-oil-gas-management-post350212.vnp",
+    "region": "APAC",
+    "countries": [
+      "Vietnam"
+    ],
+    "organisations": [
+      "National Assembly of Vietnam"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A new SE Asian CCS legal framework expands the regional storage/market opportunity set relevant to Australia-APAC cross-border CCS value chains.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar - legislative process (group debate 4 Aug, Standing Committee 17 Aug); no confirmed 18-19 Aug vote; page not fetch-verifiable (egress blocked)."
+  },
+  {
+    "id": "2026-08-19#04",
+    "briefing_date": "2026-08-19",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "China to add petrochemicals and chemicals to national carbon market",
+    "summary": "China's Ministry of Ecology and Environment said it will expand the national emissions trading scheme to cover the petrochemical and chemical industries, bringing about 80% of the country's CO2 emissions under the scheme; announced by vice-minister Li Gao on 15 Aug.",
+    "source": "Caixin Global",
+    "pub_date": "2026-08-15",
+    "url": "https://www.caixinglobal.com/2026-08-15/china-to-add-petrochemicals-chemicals-to-national-carbon-market-102474336.html",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "Ministry of Ecology and Environment"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Broader ETS coverage strengthens the long-run carbon-price signal underpinning CCS economics in China.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar - dated 15 Aug, outside window; ETS-scope policy, tangential to CCS specifically."
+  }
+]
