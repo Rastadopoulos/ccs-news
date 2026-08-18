@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energy-pedia.com/news/japan/implementation-of-second-exploratory-drilling-for-ccs-project-in-the-tomakomai-area-204981",
+    "raw_url": "https://www.energy-pedia.com/news/japan/implementation-of-second-exploratory-drilling-for-ccs-project-in-the-tomakomai-area-204981",
+    "headline": "Japan: JAPEX announces implementation of second exploratory drilling for CCS Project in ...",
+    "source_domain": "energy-pedia.com",
+    "publication_date": "2026-08-18T07:24:58+00:00",
+    "fuzzy_key": "announces,ccs,drilling,exploratory,implementation,japan,japex,project,second",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/japex-starts-second-drilling-at-tomakomai-ccs-project/2257409.article",
     "raw_url": "https://www.gasworld.com/story/japex-starts-second-drilling-at-tomakomai-ccs-project/2257409.article/",
     "headline": "Japex starts second drilling at Tomakomai CCS project | Carbon Capture - gasworld",
@@ -24,6 +33,24 @@
     "source_domain": "japex.co.jp",
     "publication_date": "2026-08-17T21:20:21+00:00",
     "fuzzy_key": "area,ccs,drilling,exploratory,implementation,project,second,tomakomai",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-technology.com/news/japex-second-exploratory-ccs-drilling-tomakomai",
+    "raw_url": "https://www.offshore-technology.com/news/japex-second-exploratory-ccs-drilling-tomakomai/",
+    "headline": "JAPEX begins drilling second exploratory CCS well in Tomakomai - Offshore Technology",
+    "source_domain": "offshore-technology.com",
+    "publication_date": "2026-08-18T07:24:58+00:00",
+    "fuzzy_key": "begins,ccs,drilling,exploratory,japex,offshore,second,technology,tomakomai,well",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ogj.com/energy-transition/news/55398481/japex-begins-drilling-second-well-for-tomakomai-ccs-project",
+    "raw_url": "https://www.ogj.com/energy-transition/news/55398481/japex-begins-drilling-second-well-for-tomakomai-ccs-project",
+    "headline": "JAPEX begins drilling second well for Tomakomai CCS Project | Oil & Gas Journal",
+    "source_domain": "ogj.com",
+    "publication_date": "2026-08-18T07:24:58+00:00",
+    "fuzzy_key": "begins,ccs,drilling,gas,japex,journal,oil,project,second,tomakomai,well",
     "found_via": "google_alerts"
   },
   {
@@ -60,6 +87,15 @@
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-08-17T16:42:18+00:00",
     "fuzzy_key": "capture,carbon,fid,flagship,japex,nearing,online,project,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://yahoo.com/news/science/articles/japex-begins-drilling-second-exploratory-141557669.html",
+    "raw_url": "https://www.yahoo.com/news/science/articles/japex-begins-drilling-second-exploratory-141557669.html",
+    "headline": "JAPEX begins drilling second exploratory CCS well in Tomakomai - Yahoo",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-08-18T07:24:58+00:00",
+    "fuzzy_key": "begins,ccs,drilling,exploratory,japex,second,tomakomai,well,yahoo",
     "found_via": "google_alerts"
   }
 ]
