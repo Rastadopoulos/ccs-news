@@ -1,0 +1,19 @@
+# Quiet day — CCS briefing — Thu 20 Aug 2026
+
+A thin news day. After a wide search across all regions and the standard feeds, only two items were confirmed inside the recency window (19–20 Aug Melbourne). The overnight flow was dominated by items that were either already briefed this week (JAPEX/Tomakomai, the Petrobras–Halliburton São Tomé contract) or that broke a day or two too early (Eni–SONATRACH, the Senken biomass deal) — those near-misses are parked under "Still on the radar". No fresh Australian development surfaced, though the Global CCS Institute's APAC Forum is running in Adelaide this week.
+
+## Policy
+
+- **Austria's cement industry says missing CO₂ transport and storage infrastructure is now the main barrier to CCS** — Austrian cement makers (Alpacem) told visiting State Secretary Elisabeth Zehetner that the absence of national and cross-border CO₂ transport-and-storage infrastructure — alongside high energy prices and regulatory uncertainty — is the chief obstacle to deploying carbon capture in the sector; Austria is still working to lift its geological-storage ban and secure export routes. (Table.Briefings, 19 Aug 2026) [link](https://table.media/en/climate/feature/austria-cement-industry-complains-about-lack-of-ccs-infrastructure)
+
+## Markets & strategy
+
+- **Canada's oil sands producers target a late-2027 Pathways CCS decision, aiming to settle fiscal terms by mid-November** — Kendall Dilling, head of the Oil Sands Alliance (Canadian Natural Resources, Imperial Oil, Suncor, Cenovus, ConocoPhillips Canada), said the group expects definitive agreements with the Alberta and federal governments on fiscal terms for the ~C$16.5bn Pathways CO₂ transport-and-storage network by mid-November, with a final investment decision targeted for late 2027/early 2028; the network aims to cut oil-sands emissions by 6 Mtpa by the mid-2030s. (Reuters via Mining Weekly, 19 Aug 2026) [link](https://www.miningweekly.com/article/canadas-oil-producers-target-late-2027-for-pathways-carbon-capture-decision-2026-08-19)
+
+## Still on the radar
+
+- **Chevron withdraws from the federal Western Regional DAC hub in Kern County, California** *(18 Aug 2026)* — Chevron confirmed a "consensus termination" with the US DOE of its award for the Western Regional Direct Air Capture Hub — the last local DAC hub still holding federal design funding — after drawing down roughly US$1m of an initial US$3m allocation; it said the exit does not reflect on DAC's viability. One day outside today's window. (Carbon Herald, 18 Aug 2026) [link](https://carbonherald.com/chevron-withdraws-from-federal-dac-project-in-kern-county/)
+- **Eni and SONATRACH expand their Algeria decarbonisation partnership to nature-based CDR and methane management** *(18 Aug 2026)* — A new MoU (signed 17 Aug) extends the pair's 2023 cooperation framework to add forestry-based CO₂ removal and broaden methane monitoring, measurement and reduction across Algeria's upstream sector, alongside existing flaring, efficiency and CCUS work. Underlying signing 17 Aug, just outside the window. (Carbon Herald, 18 Aug 2026) [link](https://carbonherald.com/eni-and-sonatrach-partner-on-nature-based-cdr-and-methane-management-in-algeria/)
+- **Senken and Carbonsate ink Europe's largest biomass-burial carbon-removal offtake — 50,000 t, Namibia** *(18 Aug 2026)* — Berlin-based Senken signed a multi-year offtake with Carbonsate for 50,000 tonnes of permanent CO₂ removal (2026–2028 vintages) from Carbonsate's Puro.earth-certified biomass geological-storage project in Namibia's Otjiwarongo region — billed as Europe's largest biomass-storage buyer commitment and the largest for an African removal project. Broke 18 Aug, outside the window. (Carbon Herald, 18 Aug 2026) [link](https://carbonherald.com/senken-and-carbonsate-ink-europes-largest-biomass-storage-deal-to-date/)
+
+— Auto-briefing
