@@ -1,0 +1,227 @@
+[
+  {
+    "id": "2026-08-20#01",
+    "briefing_date": "2026-08-20",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Canada's oil sands producers target late-2027 Pathways CCS decision, aim to settle fiscal terms by mid-November",
+    "summary": "Kendall Dilling, head of the Oil Sands Alliance (Canadian Natural Resources, Imperial Oil, Suncor, Cenovus, ConocoPhillips Canada), said the group expects definitive agreements with the Alberta and federal governments on fiscal terms for the ~C$16.5bn Pathways CO2 transport-and-storage network by mid-November, with a final investment decision targeted for late 2027/early 2028; the network targets 6 Mtpa of oil-sands emissions cuts by the mid-2030s.",
+    "source": "Reuters (via Mining Weekly)",
+    "pub_date": "2026-08-19",
+    "url": "https://www.miningweekly.com/article/canadas-oil-producers-target-late-2027-for-pathways-carbon-capture-decision-2026-08-19",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Pathways Alliance",
+      "Canadian Natural Resources",
+      "Imperial Oil",
+      "Suncor Energy",
+      "Cenovus Energy",
+      "ConocoPhillips",
+      "Government of Alberta",
+      "Government of Canada"
+    ],
+    "org_types": [
+      "industry-body",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "OG-major",
+      "government",
+      "government"
+    ],
+    "instrument_type": "project-FID",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": 16500000000,
+    "currency": "CAD",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2027,
+    "capacity_mtpa": 6,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Bellwether for how large-scale CCS gets de-risked via government fiscal frameworks; timeline slippage in a flagship OECD project informs Australian FID and policy expectations.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "mixed",
+    "amount_basis": "project-capex",
+    "extractor_note": "C$16.5bn is the network's project capex, not a new committed award; FID only targeted (announced)."
+  },
+  {
+    "id": "2026-08-20#02",
+    "briefing_date": "2026-08-20",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Austria's cement industry warns missing CO2 transport and storage infrastructure is now the main barrier to CCS",
+    "summary": "Austrian cement makers (Alpacem) told visiting State Secretary Elisabeth Zehetner that the absence of national and cross-border CO2 transport-and-storage infrastructure, together with high energy prices and regulatory uncertainty, is the chief obstacle to deploying carbon capture in the sector; Austria is still working to lift its geological-storage ban and secure CO2 export routes.",
+    "source": "Table.Briefings",
+    "pub_date": "2026-08-19",
+    "url": "https://table.media/en/climate/feature/austria-cement-industry-complains-about-lack-of-ccs-infrastructure",
+    "region": "Europe-UK",
+    "countries": [
+      "Austria"
+    ],
+    "organisations": [
+      "Alpacem",
+      "Government of Austria"
+    ],
+    "org_types": [
+      "other",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Reinforces that T&S infrastructure, not capture tech, is the binding constraint for hard-to-abate CCS - the same sequencing lesson relevant to Australian hub planning.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Industry-sentiment/policy-barrier feature; no financial dimension."
+  },
+  {
+    "id": "2026-08-20#03",
+    "briefing_date": "2026-08-20",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Chevron withdraws from federal Western Regional DAC hub in Kern County, California",
+    "summary": "Chevron confirmed it agreed a consensus termination with the US DOE of its award for the Western Regional Direct Air Capture Hub in Kern County - the only local DAC hub still holding federal design funding - after drawing down about US$1m of an initial US$3m allocation; it said the exit does not reflect on DAC's viability.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-18",
+    "url": "https://carbonherald.com/chevron-withdraws-from-federal-dac-project-in-kern-county/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Chevron",
+      "US Department of Energy"
+    ],
+    "org_types": [
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "project-cancellation",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Another US DAC-hub retrenchment; signals continued fragility of first-of-a-kind DAC economics and federal support under the current administration.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Radar/near-miss (18 Aug, one day outside the daily window); negative event direction."
+  },
+  {
+    "id": "2026-08-20#04",
+    "briefing_date": "2026-08-20",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Eni and SONATRACH expand Algeria decarbonisation partnership with nature-based CDR and methane management",
+    "summary": "Eni and Algeria's SONATRACH signed a new MoU extending their 2023 cooperation framework to add forestry-based CO2 removal and broaden methane monitoring, measurement and reduction, alongside existing work on flaring, efficiency, renewables and CCUS across Algeria's upstream sector.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-18",
+    "url": "https://carbonherald.com/eni-and-sonatrach-partner-on-nature-based-cdr-and-methane-management-in-algeria/",
+    "region": "Africa",
+    "countries": [
+      "Algeria",
+      "Italy"
+    ],
+    "organisations": [
+      "Eni",
+      "SONATRACH"
+    ],
+    "org_types": [
+      "OG-major",
+      "NOC"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Multinational-NOC decarbonisation strategy in North Africa; nature-based CDR rather than geological storage, but a marker of Eni's regional emissions programme.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar/near-miss (MoU signed 17 Aug, coverage 18 Aug - outside daily window). Nature-based CDR + methane, not CCS storage."
+  },
+  {
+    "id": "2026-08-20#05",
+    "briefing_date": "2026-08-20",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Senken and Carbonsate sign Europe's largest biomass-burial carbon-removal offtake (50,000 t, Namibia)",
+    "summary": "Berlin-based Senken signed a multi-year offtake with Carbonsate for 50,000 tonnes of permanent CO2 removal (2026-2028 vintages) from Carbonsate's Puro.earth-certified biomass geological-storage project in Namibia's Otjiwarongo region - billed as Europe's largest biomass-storage buyer commitment and the largest for an African removal project.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-08-18",
+    "url": "https://carbonherald.com/senken-and-carbonsate-ink-europes-largest-biomass-storage-deal-to-date/",
+    "region": "Europe-UK",
+    "countries": [
+      "Germany",
+      "Namibia"
+    ],
+    "organisations": [
+      "Senken",
+      "Carbonsate",
+      "Puro.earth"
+    ],
+    "org_types": [
+      "startup",
+      "developer",
+      "registry"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "BECCS"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": 0.05,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Durable-CDR offtake scale-up (biomass geological storage); adjacent to CCS demand-side signals rather than point-source capture.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": 3,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Radar/near-miss (18 Aug). 50,000 t total over 2026-2028 vintages = 0.05 Mtpa-equivalent offtake, not annual capture capacity."
+  }
+]
