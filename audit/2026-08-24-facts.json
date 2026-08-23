@@ -1,0 +1,240 @@
+[
+  {
+    "id": "2026-08-24#01",
+    "briefing_date": "2026-08-24",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "INPEX's Bonaparte CCS project takes another step on its environmental assessment pathway",
+    "summary": "Energy News Bulletin reports a further step in the environmental-assessment pathway for INPEX's proposed Bonaparte offshore CCS project near Darwin, one of Australia's largest proposed storage hubs (up to 10 Mtpa in the Bonaparte Basin). Follows the NT EPA's July approval of EIS terms of reference and INPEX's January withdrawal of its federal EPBC referral pending Act reforms.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-08-21",
+    "url": "https://www.energynewsbulletin.net/energy-transition/news-analysis/4535838/step-assessment-pathway-inpexs-bonaparte-ccs-plan",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "INPEX",
+      "NT EPA"
+    ],
+    "org_types": [
+      "NOC",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2031,
+    "capacity_mtpa": 10,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Bonaparte is a flagship Australian offshore storage hub; its regulatory progress under the reformed EPBC/NT frameworks is a bellwether for domestic CCS project consenting.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Source page egress-blocked this run; specific procedural step not confirmable from body. Date from Google Alerts feed metadata."
+  },
+  {
+    "id": "2026-08-24#02",
+    "briefing_date": "2026-08-24",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Australia flagged as a potential cross-border CCS hub for Asia",
+    "summary": "Energy News Bulletin (around the GCCSI APAC Forum in Adelaide) frames Australia as a prospective destination for imported CO2 from storage-constrained economies such as Japan, South Korea and Singapore, enabled by London Protocol Article 6 arrangements.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-08-21",
+    "url": "https://www.energynewsbulletin.net/energy-transition/news-analysis/4535819/australia-potential-cross-border-ccs-hub",
+    "region": "APAC",
+    "countries": [
+      "Australia",
+      "Japan",
+      "South Korea",
+      "Singapore"
+    ],
+    "organisations": [
+      "Global CCS Institute"
+    ],
+    "org_types": [
+      "industry-body"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Cross-border CO2 import is the core commercial thesis for large-scale Australian storage; directly relevant to CO2CRC's transboundary-CCS agenda.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Source page egress-blocked; analysis/forum-coverage piece. Date from Google Alerts feed metadata."
+  },
+  {
+    "id": "2026-08-24#03",
+    "briefing_date": "2026-08-24",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "HyNet anchor Protos energy-from-waste plant burns first waste as it enters commissioning",
+    "summary": "Encyclis's Protos energy recovery facility near Ellesmere Port, Cheshire, has incinerated its first residual waste as it enters commissioning, a milestone for the HyNet North West cluster's anchor EfW project, which plans to capture ~370,000 tpa of CO2 for pipeline transport to storage beneath Liverpool Bay, targeting operation with capture by 2029.",
+    "source": "Energy Voice",
+    "pub_date": "2026-08-21",
+    "url": "https://www.energyvoice.com/renewables-energy-transition/ccs/602780/hynet-encyclis-erf/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Encyclis",
+      "HyNet"
+    ],
+    "org_types": [
+      "developer",
+      "industry-body"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2029,
+    "capacity_mtpa": 0.37,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Reference point for energy-from-waste CCS deployment and cluster commissioning sequencing.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Same event also reported by The Business Desk (22 Aug). Milestone is host-plant first waste, not CO2 capture start."
+  },
+  {
+    "id": "2026-08-24#04",
+    "briefing_date": "2026-08-24",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Study identifies freight rail as a key enabler of CCS roll-out",
+    "summary": "A new study finds freight rail could be a key enabler for scaling CCS by moving captured CO2 from dispersed industrial emitters to storage where pipelines are absent, complementing pipeline and shipping in the transport chain.",
+    "source": "Energate Messenger",
+    "pub_date": "2026-08-21",
+    "url": "https://www.energate-messenger.com/news/265561/study-identifies-freight-trains-as-a-key-enabler-of-the-ccs-roll-out",
+    "region": "Europe-UK",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Relevant to CO2 transport-logistics options for dispersed emitters without pipeline access.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Source page egress-blocked; study reported by trade press. Date from Google Alerts feed metadata."
+  },
+  {
+    "id": "2026-08-24#05",
+    "briefing_date": "2026-08-24",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Reader letter argues carbon-capture storage 'does not work to a significant degree'",
+    "summary": "A letter to the Grand Forks Herald contends CCS does not meaningfully reduce emissions, a sceptic social-licence data point from North Dakota, a US region central to CCS/EOR (Project Tundra, Summit's pipeline) where public opposition remains active.",
+    "source": "Grand Forks Herald",
+    "pub_date": "2026-08-23",
+    "url": "https://www.grandforksherald.com/opinion/letters/letter-carbon-capture-storage-does-not-work-to-a-significant-degree",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Grand Forks Herald"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Illustrates persistent grassroots CCS scepticism in a key US storage region; social-licence signal.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-24#06",
+    "briefing_date": "2026-08-24",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Heidelberg Materials pauses full-scale CCS at its Edmonton cement plant over weak carbon pricing",
+    "summary": "Heidelberg Materials has paused its ~1 Mtpa CCUS project at its northwest Edmonton cement plant (feeding the Wabamun Carbon Hub; ~C$1.36bn federally supported within a build costed up to ~C$2bn) after weak Canadian carbon pricing undermined the economics, with credits near C$45/t against the ~C$170/t by 2030 the project assumed. Broke 18 Aug, outside today's window.",
+    "source": "Taproot Edmonton / Carbon Herald",
+    "pub_date": "2026-08-18",
+    "url": "https://edmonton.taproot.news/news/2026/08/18/carbon-capture-project-on-hold-at-edmonton-cement-plant",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Heidelberg Materials"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "project-cancellation",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": 1360000000,
+    "currency": "CAD",
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": 2026,
+    "capacity_mtpa": 1,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A high-profile cement-sector CCS pause shows how carbon-price levels, not technology, can stall projects; relevant to Australian CCS economics debates.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "project-capex",
+    "extractor_note": "Out of window (18 Aug); surfaced under 'Still on the radar'. Amount is the federally-supported figure; total build cited up to ~C$2bn."
+  }
+]
