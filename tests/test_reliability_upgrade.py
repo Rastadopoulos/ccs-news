@@ -75,11 +75,23 @@ def test_regional_global_reconciliation_and_eu_bloc():
 
 def test_stock_flow_provenance_and_report_level_urls():
     model = json.loads((DATA / "model" / "summary.json").read_text())
-    assert model["source_counts"]["daily_news"] == 153
-    assert model["source_counts"]["periodic_report"] == 115
     links = rows(DATA / "entities" / "event-crosswalk.csv")
     periodic = [row for row in links if row["source_type"] == "periodic_report"]
-    assert len(periodic) == 115
+
+    # daily_news is a flow: it grows with every briefing, so pin a floor, not a
+    # snapshot. It was pinned at ==153 and went red the moment the dashboard was
+    # rebuilt after three blocked Saturdays (2026-08-08/-15/-22) — the count had
+    # moved to 181 while the data sat frozen. A stock/flow test must not itself
+    # assume the flow stopped.
+    DAILY_NEWS_FLOOR = 153
+    assert model["source_counts"]["daily_news"] >= DAILY_NEWS_FLOOR, (
+        "daily_news went backwards — the corpus only grows; a drop means records "
+        "were lost, not that the floor is stale")
+
+    # periodic_report is a stock: it moves only when a new GCCSI quarterly is
+    # ingested. The invariant that matters is that the model and the crosswalk
+    # agree, so assert them against each other rather than against a literal.
+    assert model["source_counts"]["periodic_report"] == len(periodic)
     assert all(row["report_url"] for row in periodic if not row["item_url"])
     assert all(row["verification_status"] == "report-level provenance"
                for row in periodic if not row["item_url"])

@@ -135,13 +135,18 @@ def _load(name: str) -> dict:
     return yaml.safe_load((WORKFLOWS / name).read_text())
 
 
-def _job_steps(wf: dict) -> list:
-    (job,) = wf["jobs"].values()
-    return job["steps"]
+def _job_steps(wf: dict, job=None) -> list:
+    """Steps of the named job, or of the only job when a workflow has just one.
+    weekly-audit.yml gained a second job (notify-failure) once a red Saturday
+    started emailing an alert, so callers targeting it must name their job."""
+    if job is not None:
+        return wf["jobs"][job]["steps"]
+    (only,) = wf["jobs"].values()
+    return only["steps"]
 
 
-def _all_run_text(wf: dict) -> str:
-    return "\n".join(s.get("run", "") for s in _job_steps(wf))
+def _all_run_text(wf: dict, job=None) -> str:
+    return "\n".join(s.get("run", "") for s in _job_steps(wf, job))
 
 
 EMAIL_WORKFLOWS = ["email-briefing.yml", "email-audit.yml", "email-dashboard.yml"]
@@ -182,7 +187,7 @@ def test_weekly_audit_dispatches_email_workflows():
     """Regression for 2026-07-18: pushes made with GITHUB_TOKEN never trigger
     push-path workflows, so weekly-audit must dispatch the two email workflows
     explicitly after committing."""
-    run_text = _all_run_text(_load("weekly-audit.yml"))
+    run_text = _all_run_text(_load("weekly-audit.yml"), "audit")
     assert "gh workflow run email-audit.yml" in run_text
     assert "gh workflow run email-dashboard.yml" in run_text
 
@@ -193,17 +198,64 @@ def test_weekly_audit_gates_on_tests_before_rebuild_and_commit():
     data-integrity test (e.g. the double-count or unreviewed-money guards)
     would not have blocked publication. The test step must exist and must
     run before the rebuild/commit steps, not just exist somewhere."""
-    steps = _job_steps(_load("weekly-audit.yml"))
+    steps = _job_steps(_load("weekly-audit.yml"), "audit")
     names = [s.get("name", "") for s in steps]
     test_idx = next(i for i, n in enumerate(names) if "test" in n.lower())
     rebuild_idx = next(i for i, n in enumerate(names) if "rebuild" in n.lower())
     commit_idx = next(i for i, n in enumerate(names) if "commit" in n.lower())
     assert test_idx < rebuild_idx < commit_idx
 
-    run_text = _all_run_text(_load("weekly-audit.yml"))
+    run_text = _all_run_text(_load("weekly-audit.yml"), "audit")
     assert "pytest tests/" in run_text
     install_text = "\n".join(s.get("run", "") for s in steps if "install" in s.get("name", "").lower())
     assert "pytest" in install_text, "pytest must actually be installed before it's run"
+
+
+def test_weekly_audit_emails_on_failure():
+    """Regression for 2026-08-08/-15/-22: the audit failed three Saturdays running
+    and nothing reached a human, because the only symptom was an email that never
+    arrived. A red scheduled run must actively alert."""
+    wf = _load("weekly-audit.yml")
+    assert "notify-failure" in wf["jobs"], "no failure-alert job on the weekly audit"
+    job = wf["jobs"]["notify-failure"]
+    assert job["needs"] == "audit"
+    # Must fire only on a red run, and only for unattended (scheduled) ones.
+    assert "failure()" in job["if"]
+    assert "schedule" in job["if"]
+
+    run_text = _all_run_text(wf, "notify-failure")
+    assert "https://api.resend.com/emails" in run_text
+    assert '::error::RESEND_API_KEY secret is not set' in run_text
+    # The alert must name what broke, not just that something did.
+    assert "--log-failed" in run_text
+
+
+CRON_GATED = {
+    # workflow -> {Melbourne UTC offset: the cron that must act at that offset}
+    "late-file-check.yml": {"+1100": "50 20 * * 0-4", "+1000": "50 21 * * 0-4"},
+    "deadman-check.yml": {"+1100": "30 21 * * 0-4", "+1000": "30 22 * * 0-4"},
+}
+
+
+@pytest.mark.parametrize("name", sorted(CRON_GATED))
+def test_dst_guard_keys_on_which_cron_fired_not_the_clock(name):
+    """Regression for 2026-08-25: both crons are registered and the job self-gates
+    so exactly one acts per day. Gating on the Melbourne hour was not drift-proof —
+    GitHub ran the out-of-phase cron 15 min late, it landed inside hour 07, passed
+    an hour-only guard and nudged 45 min early while the 07:00 routine was still
+    running. github.event.schedule is the cron literal that fired, so scheduler
+    drift cannot spoof it."""
+    wf = _load(name)
+    declared = {c["cron"] for c in (wf.get("on") or wf.get(True))["schedule"]}
+    guard = "\n".join(s.get("run", "") for s in _job_steps(wf))
+
+    assert "github.event.schedule" in yaml.dump(wf), f"{name}: guard must see which cron fired"
+    assert "date +%H" not in guard, f"{name}: still gating on the local hour"
+
+    for offset, cron in CRON_GATED[name].items():
+        assert cron in declared, f"{name}: guard references undeclared cron {cron!r}"
+        assert f"{offset}) WANT='{cron}'" in guard, (
+            f"{name}: at {offset} the guard must accept only {cron!r}")
 
 
 def test_storage_baseline_check_never_auto_writes_storage_baseline_json():

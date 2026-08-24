@@ -99,3 +99,72 @@ jobs:
           gh workflow run email-audit.yml     --repo "$GITHUB_REPOSITORY" -f date="$SNAP"
           gh workflow run email-dashboard.yml --repo "$GITHUB_REPOSITORY" -f date="$SNAP"
           echo "Dispatched email-audit and email-dashboard for $SNAP"
+
+  notify-failure:
+    # Without this the audit fails silently: no report, no dashboard, no email,
+    # and nothing that reaches a human. That is exactly what happened on
+    # 2026-08-08, -15 and -22 — three consecutive red Saturdays went unnoticed
+    # for three weeks because the only symptom was an email that never arrived.
+    # Scheduled runs only; a manual run is attended by whoever dispatched it.
+    needs: audit
+    if: failure() && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    steps:
+      - name: Alert via Resend
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          if [ -z "${RESEND_API_KEY}" ]; then
+            echo "::error::RESEND_API_KEY secret is not set in this repo"
+            exit 1
+          fi
+          TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
+
+          # Pull the failing test names out of the run log so the email says what
+          # broke, not just that something did. Best-effort: never let a log-fetch
+          # problem swallow the alert itself.
+          FAILURES=$(gh run view "${GITHUB_RUN_ID}" --repo "$GITHUB_REPOSITORY" --log-failed 2>/dev/null \
+                      | grep -oE 'FAILED [^ ]+' | sed 's/^FAILED //' | sort -u | head -20 || true)
+
+          {
+            echo "<p>The weekly recall audit failed on ${TODAY} (Melbourne). <strong>No recall report and no dashboard were produced, and neither email was sent.</strong></p>"
+            if [ -n "$FAILURES" ]; then
+              echo "<p>Failing tests:</p><ul>"
+              printf '%s\n' "$FAILURES" | while IFS= read -r t; do
+                [ -n "$t" ] && echo "<li><code>${t}</code></li>"
+              done
+              echo "</ul>"
+              echo "<p>The rebuild is gated on the test suite by design — a data-integrity guard (unmapped countries, unreviewed money, double-counting) blocks the weekly commit rather than shipping a wrong dashboard. Fix the underlying data, then re-run.</p>"
+            else
+              echo "<p>The failure was not in the test suite — check the run log for the failing step.</p>"
+            fi
+            echo "<p><a href=\"${RUN_URL}\">Open the failed run</a>. To rebuild a specific week once fixed: Actions tab &rarr; Weekly recall audit &rarr; Run workflow, with <code>week_ending</code> set to that Saturday.</p>"
+          } > /tmp/body.html
+
+          jq -n \
+            --arg subject "ALERT: weekly CCS audit + dashboard failed — ${TODAY}" \
+            --rawfile html /tmp/body.html \
+            '{
+              from: "CCS Briefing <onboarding@resend.dev>",
+              to: ["matthias.raab@co2crc.com.au"],
+              subject: $subject,
+              html: $html
+            }' > /tmp/resend.json
+
+          HTTP=$(curl -sS -o /tmp/resend.out -w '%{http_code}' \
+            -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${RESEND_API_KEY}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @/tmp/resend.json)
+          echo "Resend HTTP $HTTP"
+          cat /tmp/resend.out
+          echo
+          case "$HTTP" in
+            2*) echo "::notice::Failure alert emailed" ;;
+            *)  echo "::error::Resend rejected the alert (HTTP $HTTP)"; exit 1 ;;
+          esac

@@ -16,7 +16,7 @@ on:
   schedule:
     # Target: 08:30 Melbourne on weekdays. Cron is UTC and Melbourne shifts
     # between AEST (UTC+10) and AEDT (UTC+11), so two crons fire and the job
-    # self-gates on Melbourne local hour == 08 — exactly one acts per day.
+    # self-gates on which cron triggered it — exactly one acts per day.
     - cron: '30 21 * * 0-4'   # 08:30 AEDT (roughly Oct–Apr)
     - cron: '30 22 * * 0-4'   # 08:30 AEST (roughly Apr–Oct)
   workflow_dispatch: {}
@@ -32,18 +32,28 @@ jobs:
         id: gate
         env:
           EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
           TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
-          HOUR=$(TZ=Australia/Melbourne date +%H)
           DOW=$(TZ=Australia/Melbourne date +%u)
           echo "today=$TODAY" >> "$GITHUB_OUTPUT"
           echo "proceed=false" >> "$GITHUB_OUTPUT"
 
           # Only the cron matching the current DST phase acts (manual runs bypass).
-          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "08" ]; then
-            echo "Local hour is $HOUR, not 08 — this is the wrong-DST cron. Skipping."
-            exit 0
+          # Gates on WHICH cron fired, not the Melbourne clock — see the same guard
+          # in late-file-check.yml for why an hour-only test is not drift-proof.
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            OFFSET=$(TZ=Australia/Melbourne date +%z)
+            case "$OFFSET" in
+              +1100) WANT='30 21 * * 0-4' ;;   # AEDT
+              +1000) WANT='30 22 * * 0-4' ;;   # AEST
+              *) echo "::error::Unexpected Melbourne UTC offset $OFFSET"; exit 1 ;;
+            esac
+            if [ "$SCHEDULE" != "$WANT" ]; then
+              echo "Triggered by cron '$SCHEDULE'; Melbourne is $OFFSET so '$WANT' is the live one. Skipping."
+              exit 0
+            fi
           fi
           if [ "$DOW" -gt 5 ]; then
             echo "Weekend in Melbourne — no briefing expected. Skipping."

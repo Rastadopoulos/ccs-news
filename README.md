@@ -73,10 +73,10 @@ Workflows (all in `.github/workflows/`):
 
 - `email-briefing.yml` — fires on push of `*-ccs-briefing.{html,md}` to `main`, or via dispatch from `reconcile-routine-branch.yml`; emails the briefing via Resend.
 - `reconcile-routine-branch.yml` — fires on push to `claude/**`. Backstop: if a routine's work lands on a branch instead of `main`, brings routine-authored dated files (incl. `*-shadow.json`) onto `main` without clobbering existing files, then dispatches `email-briefing.yml` per reconciled date. Since the routines now push `HEAD:main`, this normally no-ops.
-- `late-file-check.yml` — cron 07:50 Melbourne weekdays. Soft "not in yet" nudge if the day's files haven't reached `main`; 40 min before the dead-man's switch.
+- `late-file-check.yml` — cron 07:50 Melbourne weekdays. Soft "not in yet" nudge if the day's files haven't reached `main`; 40 min before the dead-man's switch. Gates on which cron fired, not the local hour: GitHub's scheduler runs crons late, and on 2026-08-25 the out-of-phase cron drifted into hour 07, passed an hour-only guard and nudged at 07:05 while the 07:00 routine was still running.
 - `rss-floor.yml` — cron 07:00 Melbourne weekdays. Writes `audit/${TODAY}-rss.json` and updates `audit/candidates.db`.
 - `alerts-ingest.yml` — cron every 30 min during business hours. Requires `GMAIL_ADDRESS` + `GMAIL_APP_PASSWORD` secrets + `ALERTS_INGEST_ENABLED=true` repo variable.
-- `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`. Manual: Actions tab → Weekly recall audit → Run workflow.
+- `weekly-audit.yml` — cron 08:00 Sat Melbourne. Renders `audit/${SAT}-recall-report.{html,md}`, rebuilds the dashboard, and dispatches both email workflows. The rebuild is gated on `pytest tests/` so a data-integrity guard blocks the weekly commit rather than shipping a wrong dashboard. A `notify-failure` job emails an alert (naming the failing tests) when a *scheduled* run fails — without it the whole chain fails silently, as it did for three consecutive Saturdays from 2026-08-08 to -22. Manual: Actions tab → Weekly recall audit → Run workflow.
 - `email-audit.yml` — fires on push of a new audit report; emails it via Resend.
 - `deadman-check.yml` — cron 08:30 Melbourne weekdays. Alerts by email if today's briefing (`${TODAY}-ccs-briefing.md`) or shadow trace (`audit/${TODAY}-shadow.json`) is missing from `main`. Since `reconcile-routine-branch.yml` now delivers the routines' branch pushes, a genuine alert here means the routine truly did not run (check its run history in Claude Code) — not a branch mis-push. Skips weekends and Vic public holidays; the holiday list must be kept in sync with the production prompt.
 - `authoritative-source-monitor.yml` — weekly deterministic fingerprints for official baselines, registers, regulators and a geographically broader operator/technology set; structured changes and human-review alerts land under `dashboard/data/monitoring/`.
@@ -106,7 +106,7 @@ Cron expressions run in UTC. Manual swap twice a year:
 | `rss-floor.yml` | `0 21 * * 0-4` | `0 20 * * 0-4` |
 | `weekly-audit.yml` | `0 22 * * 5` | `0 21 * * 5` |
 | `alerts-ingest.yml` | `*/30 20-23 * * *` + `*/30 0-12 * * *` | no swap needed (runs in UTC business-hours band) |
-| `deadman-check.yml` | no swap needed (both crons registered; job self-gates on Melbourne local hour) | — |
+| `deadman-check.yml` / `late-file-check.yml` | no swap needed (both crons registered; each job self-gates on `github.event.schedule` — the cron literal that fired — matched against Melbourne's current UTC offset) | — |
 
 Calendar reminders: early October to switch to AEDT, early April to switch back.
 
