@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-08-25#01",
+    "briefing_date": "2026-08-25",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "JOGMEC signs six-company consortium to design ship-based Mizushima CCS cluster",
+    "summary": "JOGMEC signed a design-work agreement with a consortium of JFE Steel, Sumitomo Corporation, Asahi Kasei, ENEOS, Mitsubishi Gas Chemical and Mitsubishi Chemical for an advanced ship-based CCS project at the Mizushima Industrial Complex (Kurashiki, Okayama). The cluster is designed to handle about 3.43 Mtpa of liquefied CO2, which would make it the largest planned CO2 shipping hub among CCS clusters now in development.",
+    "source": "Sumitomo Corp / Carbon Pulse",
+    "pub_date": "2026-08-24",
+    "url": "https://www.sumitomocorp.com/en/easia/news/topics/2026/group/20260824",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "JOGMEC",
+      "JFE Steel",
+      "Sumitomo Corporation",
+      "Asahi Kasei",
+      "ENEOS",
+      "Mitsubishi Gas Chemical",
+      "Mitsubishi Chemical"
+    ],
+    "org_types": [
+      "government",
+      "other",
+      "financier",
+      "other",
+      "OG-major",
+      "other",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": 3.43,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Japan's maritime-transport CCS clusters are the demand side of the Australia-as-import-hub thesis — liquefied-CO2 shipping hubs like Mizushima are prospective sources of CO2 for Australian offshore storage under London Protocol Article 6 arrangements.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": null,
+    "extractor_note": "No contract value disclosed. 3.43 Mtpa is the stated liquefied-CO2 shipping throughput for the Mizushima cluster (transport-chain capacity), not a discrete new storage-injection commitment."
+  }
+]
