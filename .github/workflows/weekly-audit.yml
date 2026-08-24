@@ -20,6 +20,7 @@ jobs:
       actions: write   # to dispatch the email workflows below
     outputs:
       failed_tests: ${{ steps.capture.outputs.failed }}
+      failed_phase: ${{ steps.capture.outputs.phase }}
     steps:
       - name: Check out repo
         uses: actions/checkout@v5
@@ -34,33 +35,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyYAML feedparser pytest
 
-      - name: Run test suite
+      - name: Run test suite (inputs)
         id: tests
         # Gate the rebuild on the test suite passing — a failing data-integrity
         # test (e.g. the double-count or unreviewed-money guards) must block
         # the weekly commit/email, not just be discoverable after the fact by
         # someone running pytest locally.
+        #
+        # This pass validates the INPUTS: the news corpus, the curated CSVs and
+        # the workflow definitions, all as committed. It cannot speak for the
+        # derived data, which does not exist yet — see the post-rebuild pass.
         run: |
           set -o pipefail
-          python3 -m pytest tests/ -q 2>&1 | tee /tmp/pytest.txt
-
-      - name: Capture failing tests for the alert
-        # notify-failure cannot read these back from the run log: `gh run view
-        # --log-failed` refuses while the run is still in progress, and the run
-        # IS in progress — notify-failure is part of it. (First observed
-        # 2026-08-25: the alert fired correctly but said "not in the test
-        # suite" for a run with two red tests.) So hand the names forward as a
-        # job output instead of trying to recover them afterwards.
-        id: capture
-        if: failure()
-        run: |
-          FAILED=$(grep -oE '^FAILED [^ ]+' /tmp/pytest.txt 2>/dev/null \
-                    | sed 's/^FAILED //' | sort -u | head -20 || true)
-          {
-            echo 'failed<<PYTEST_EOF'
-            printf '%s\n' "$FAILED"
-            echo 'PYTEST_EOF'
-          } >> "$GITHUB_OUTPUT"
+          python3 -m pytest tests/ -q 2>&1 | tee /tmp/pytest-inputs.txt
 
       - name: Run weekly audit
         env:
@@ -88,6 +75,52 @@ jobs:
           python3 scripts/build_reliability_model.py
           BUILD_DATE="${SNAP}" python3 scripts/build_dashboard.py --snapshot "${SNAP}"
 
+      - name: Validate rebuilt data
+        id: tests_post
+        # The pre-rebuild pass runs against data the rebuild is about to
+        # overwrite, so it can never speak for what the rebuild produces. That
+        # gap shipped a real defect: test_stock_flow_provenance pinned a corpus
+        # count that the rebuild moved, the bad figure was committed by the run
+        # that created it, and the suite only went red the FOLLOWING Saturday —
+        # blocking that week's dashboard for a fault introduced a week earlier.
+        #
+        # Re-running the suite here closes it. The derived files under
+        # dashboard/data are now the freshly generated ones in the working tree,
+        # so this pass validates exactly what the next step is about to commit.
+        # Failing here means nothing is committed, pushed or emailed, and
+        # notify-failure alerts — the same contract as the input gate.
+        run: |
+          set -o pipefail
+          python3 -m pytest tests/ -q 2>&1 | tee /tmp/pytest-rebuilt.txt
+
+      - name: Capture failing tests for the alert
+        # notify-failure cannot read these back from the run log: `gh run view
+        # --log-failed` refuses while the run is still in progress, and the run
+        # IS in progress — notify-failure is part of it. (First observed
+        # 2026-08-25: the alert fired correctly but said "not in the test
+        # suite" for a run with two red tests.) So hand the names forward as a
+        # job output instead of trying to recover them afterwards.
+        #
+        # Runs after both passes and reads whichever files exist, so it reports
+        # input failures and rebuilt-data failures alike. When the input gate
+        # fails the later steps are skipped, /tmp/pytest-rebuilt.txt is never
+        # written, and the glob simply finds one file.
+        id: capture
+        if: failure()
+        run: |
+          FAILED=$(cat /tmp/pytest-inputs.txt /tmp/pytest-rebuilt.txt 2>/dev/null \
+                    | grep -oE '^FAILED [^ ]+' | sed 's/^FAILED //' | sort -u | head -20 || true)
+          PHASE="inputs"
+          if [ -f /tmp/pytest-rebuilt.txt ] && ! grep -q '^FAILED ' /tmp/pytest-inputs.txt 2>/dev/null; then
+            PHASE="rebuilt data"
+          fi
+          echo "phase=$PHASE" >> "$GITHUB_OUTPUT"
+          {
+            echo 'failed<<PYTEST_EOF'
+            printf '%s\n' "$FAILED"
+            echo 'PYTEST_EOF'
+          } >> "$GITHUB_OUTPUT"
+
       - name: Commit audit report + dashboard
         id: commit
         run: |
@@ -112,7 +145,7 @@ jobs:
         # email-audit.yml and email-dashboard.yml never fire from it. Dispatch
         # them explicitly instead — workflow_dispatch via the API is exempt from
         # that suppression. (First missed Saturday: 2026-07-18.)
-        if: steps.commit.outputs.pushed == 'true'
+        if: success() && steps.commit.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           WEEK_ENDING: ${{ github.event.inputs.week_ending }}
@@ -138,6 +171,7 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           FAILED_TESTS: ${{ needs.audit.outputs.failed_tests }}
+          FAILED_PHASE: ${{ needs.audit.outputs.failed_phase }}
         run: |
           set -euo pipefail
           if [ -z "${RESEND_API_KEY}" ]; then
@@ -153,11 +187,16 @@ jobs:
           {
             echo "<p>The weekly recall audit failed on ${TODAY} (Melbourne). <strong>No recall report and no dashboard were produced, and neither email was sent.</strong></p>"
             if [ -n "$FAILURES" ]; then
-              echo "<p>Failing tests:</p><ul>"
+              echo "<p>Failing tests (${FAILED_PHASE:-inputs}):</p><ul>"
               printf '%s\n' "$FAILURES" | while IFS= read -r t; do
                 [ -n "$t" ] && echo "<li><code>${t}</code></li>"
               done
               echo "</ul>"
+              if [ "${FAILED_PHASE:-inputs}" = "rebuilt data" ]; then
+                echo "<p>These failed against the <b>freshly rebuilt</b> derived data, not the committed inputs — the rebuild itself produced something the guards reject. Nothing was committed, so <code>main</code> still holds last week&#39;s dashboard.</p>"
+              else
+                echo "<p>These failed against the committed <b>inputs</b> (news corpus, curated CSVs, workflow definitions), before the rebuild ran.</p>"
+              fi
               echo "<p>The rebuild is gated on the test suite by design — a data-integrity guard (unmapped countries, unreviewed money, double-counting) blocks the weekly commit rather than shipping a wrong dashboard. Fix the underlying data, then re-run.</p>"
             else
               echo "<p>The failure was not in the test suite — check the run log for the failing step.</p>"

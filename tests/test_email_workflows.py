@@ -196,17 +196,37 @@ def test_weekly_audit_gates_on_tests_before_rebuild_and_commit():
     """Regression for 2026-07-28: weekly-audit used to rebuild, commit and
     dispatch the board email regardless of test status — a failing
     data-integrity test (e.g. the double-count or unreviewed-money guards)
-    would not have blocked publication. The test step must exist and must
-    run before the rebuild/commit steps, not just exist somewhere."""
-    steps = _job_steps(_load("weekly-audit.yml"), "audit")
-    names = [s.get("name", "") for s in steps]
-    test_idx = next(i for i, n in enumerate(names) if "test" in n.lower())
-    rebuild_idx = next(i for i, n in enumerate(names) if "rebuild" in n.lower())
-    commit_idx = next(i for i, n in enumerate(names) if "commit" in n.lower())
-    assert test_idx < rebuild_idx < commit_idx
+    would not have blocked publication.
 
-    run_text = _all_run_text(_load("weekly-audit.yml"), "audit")
-    assert "pytest tests/" in run_text
+    Extended 2026-08-25: gating only BEFORE the rebuild is not enough. That pass
+    runs against data the rebuild is about to overwrite, so it cannot speak for
+    what the rebuild produces — a bad derived figure was committed by the very
+    run that generated it and only went red a week later. The suite must run on
+    both sides of the rebuild, and the commit must sit after both."""
+    steps = _job_steps(_load("weekly-audit.yml"), "audit")
+    idx = {s["id"]: i for i, s in enumerate(steps) if "id" in s}
+    names = [s.get("name", "") for s in steps]
+    rebuild_idx = next(i for i, n in enumerate(names) if n.lower().startswith("rebuild"))
+
+    for step_id in ("tests", "tests_post", "capture", "commit"):
+        assert step_id in idx, f"weekly-audit lost its '{step_id}' step"
+    assert idx["tests"] < rebuild_idx < idx["tests_post"] < idx["commit"], (
+        "the suite must gate the rebuild on both sides, and commit must follow both")
+    assert idx["tests_post"] < idx["capture"], (
+        "capture must see the post-rebuild results or it cannot name them")
+
+    # Both passes must actually run the suite, and must not let tee mask the
+    # exit code — without pipefail a red suite reports success and ships.
+    for step_id, log in (("tests", "pytest-inputs.txt"), ("tests_post", "pytest-rebuilt.txt")):
+        run = steps[idx[step_id]]["run"]
+        assert "pytest tests/" in run, f"{step_id} does not run the suite"
+        assert "set -o pipefail" in run, f"{step_id}: tee would mask a red suite"
+        assert log in run, f"{step_id} must tee to {log} for the alert to name failures"
+
+    # The post-rebuild pass is worthless if the rebuild's output is committed
+    # regardless, so the commit must not opt out of the default success() gate.
+    assert "if" not in steps[idx["commit"]], "commit must stay gated on prior steps passing"
+
     install_text = "\n".join(s.get("run", "") for s in steps if "install" in s.get("name", "").lower())
     assert "pytest" in install_text, "pytest must actually be installed before it's run"
 
@@ -234,15 +254,19 @@ def test_weekly_audit_emails_on_failure():
     assert "--log-failed" not in run_text, "log-fetch race reintroduced"
     alert = next(s for s in _job_steps(wf, "notify-failure") if "run" in s)
     assert "needs.audit.outputs.failed_tests" in alert["env"]["FAILED_TESTS"]
+
+    # The alert must say WHICH side of the rebuild failed: a red input gate and
+    # a red rebuilt-data gate need different responses (fix the corpus/curation
+    # vs fix what the build produced), and main is left in a different state.
+    assert "needs.audit.outputs.failed_phase" in alert["env"]["FAILED_PHASE"]
+    assert wf["jobs"]["audit"]["outputs"]["failed_phase"] == "${{ steps.capture.outputs.phase }}"
+    assert "rebuilt data" in alert["run"]
     assert wf["jobs"]["audit"]["outputs"]["failed_tests"] == "${{ steps.capture.outputs.failed }}"
     audit_steps = _job_steps(wf, "audit")
     capture = next(s for s in audit_steps if s.get("id") == "capture")
     assert capture["if"] == "failure()"
-    tests_idx = next(i for i, s in enumerate(audit_steps) if s.get("id") == "tests")
-    assert audit_steps.index(capture) > tests_idx, "capture must follow the test run"
-    assert "tee /tmp/pytest.txt" in audit_steps[tests_idx]["run"]
-    assert "set -o pipefail" in audit_steps[tests_idx]["run"], \
-        "without pipefail, tee masks pytest's exit code and a red suite would pass"
+    # Ordering, the tee targets and pipefail on both passes are pinned by
+    # test_weekly_audit_gates_on_tests_before_rebuild_and_commit.
 
 
 CRON_GATED = {
