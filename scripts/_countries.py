@@ -58,6 +58,11 @@ COUNTRY_ISO = {
     "Morocco": "MA",
     "Mozambique": "MZ",
     "New Zealand": "NZ",
+    "Algeria": "DZ",
+    "Austria": "AT",
+    "Brunei": "BN",
+    "Namibia": "NA",
+    "Taiwan": "TW",
     # Not in the news corpus, but present in storage-baseline.json / reference-baseline.json.
     "Iceland": "IS",
     "South Africa": "ZA",
@@ -99,12 +104,14 @@ CONTINENT_GROUPS = {
     "Oman": "Middle East & Africa", "Nigeria": "Middle East & Africa",
     "Kenya": "Middle East & Africa", "Angola": "Middle East & Africa",
     "Mozambique": "Middle East & Africa", "South Africa": "Middle East & Africa",
+    "Algeria": "Middle East & Africa", "Namibia": "Middle East & Africa",
 
     "South Korea": "Asia-Pacific", "Japan": "Asia-Pacific", "China": "Asia-Pacific",
     "India": "Asia-Pacific", "Vietnam": "Asia-Pacific", "Thailand": "Asia-Pacific",
     "Malaysia": "Asia-Pacific", "Singapore": "Asia-Pacific", "Indonesia": "Asia-Pacific",
     "Australia": "Asia-Pacific", "New Zealand": "Asia-Pacific",
     "Papua New Guinea": "Asia-Pacific", "Timor-Leste": "Asia-Pacific",
+    "Brunei": "Asia-Pacific", "Taiwan": "Asia-Pacific",
 
     "Greece": "Europe", "Hungary": "Europe", "Bulgaria": "Europe",
     "Latvia": "Europe", "Lithuania": "Europe",
@@ -113,6 +120,8 @@ CONTINENT_GROUPS = {
     "Russia": "Europe",
 
     "Bahrain": "Middle East & Africa", "Libya": "Middle East & Africa",
+
+    "Austria": "Europe",
 }
 
 GROUP_ORDER = ["Americas", "Europe", "Middle East & Africa", "Asia-Pacific"]

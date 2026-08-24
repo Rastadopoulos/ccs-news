@@ -113,9 +113,15 @@ while the record itself stays, because the news did happen.
   and a test fails if the queue is non-empty.
 - **Duplicate detection is manual.** The daily corpus and the GCCSI quarterlies describe the same
   events in different words, so automatic headline dedup catches none of them. Confirmed live cases:
-  the Pathways Alliance network (C$16.5bn / C$16bn), India's CCUS scheme (₹20,000cr / ₹19,700cr), and
+  the Pathways Alliance network (C$16.5bn / C$16bn, now re-reported a **third** time in Aug 2026 as
+  the group set a mid-November fiscal-terms target), India's CCUS scheme (₹20,000cr / ₹19,700cr), and
   Spain's PERTE round where a €119m award is a *subset* of a €319m total.
 - **Periods are only recorded where the source states one**, which is the minority of records.
+- **CDR adjacent to geological storage is carried, not excluded.** Biochar, mineralisation and
+  enhanced-weathering venture rounds (NoviqTech, Captura, Mafix) sit in the totals as
+  `private-investment`, because the corpus collects them and `not-ccs-funding` is reserved for money
+  that is not carbon funding at all. The consequence is that the private-investment total is a
+  carbon-management figure, slightly wider than geological CCS. Say so in the row's note.
 - **`project-capex` sometimes covers more than the CCS.** BP's Tangguh Ubadari is carried at its
   US$7bn whole-scheme cost, but that pairs a gas development with enhanced gas recovery and CO₂
   storage — the CCS-specific share is not broken out and the figure therefore overstates it. Where a
