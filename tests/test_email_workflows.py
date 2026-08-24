@@ -226,8 +226,23 @@ def test_weekly_audit_emails_on_failure():
     run_text = _all_run_text(wf, "notify-failure")
     assert "https://api.resend.com/emails" in run_text
     assert '::error::RESEND_API_KEY secret is not set' in run_text
-    # The alert must name what broke, not just that something did.
-    assert "--log-failed" in run_text
+
+    # The alert must name what broke, not just that something did — and the names
+    # must be handed forward as a job output, not read back from the run log:
+    # `gh run view --log-failed` refuses while the run is in progress, which it
+    # always is when notify-failure runs (observed 2026-08-25).
+    assert "--log-failed" not in run_text, "log-fetch race reintroduced"
+    alert = next(s for s in _job_steps(wf, "notify-failure") if "run" in s)
+    assert "needs.audit.outputs.failed_tests" in alert["env"]["FAILED_TESTS"]
+    assert wf["jobs"]["audit"]["outputs"]["failed_tests"] == "${{ steps.capture.outputs.failed }}"
+    audit_steps = _job_steps(wf, "audit")
+    capture = next(s for s in audit_steps if s.get("id") == "capture")
+    assert capture["if"] == "failure()"
+    tests_idx = next(i for i, s in enumerate(audit_steps) if s.get("id") == "tests")
+    assert audit_steps.index(capture) > tests_idx, "capture must follow the test run"
+    assert "tee /tmp/pytest.txt" in audit_steps[tests_idx]["run"]
+    assert "set -o pipefail" in audit_steps[tests_idx]["run"], \
+        "without pipefail, tee masks pytest's exit code and a red suite would pass"
 
 
 CRON_GATED = {

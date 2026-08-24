@@ -18,6 +18,8 @@ jobs:
     permissions:
       contents: write
       actions: write   # to dispatch the email workflows below
+    outputs:
+      failed_tests: ${{ steps.capture.outputs.failed }}
     steps:
       - name: Check out repo
         uses: actions/checkout@v5
@@ -33,11 +35,32 @@ jobs:
           pip install PyYAML feedparser pytest
 
       - name: Run test suite
+        id: tests
         # Gate the rebuild on the test suite passing — a failing data-integrity
         # test (e.g. the double-count or unreviewed-money guards) must block
         # the weekly commit/email, not just be discoverable after the fact by
         # someone running pytest locally.
-        run: python3 -m pytest tests/ -q
+        run: |
+          set -o pipefail
+          python3 -m pytest tests/ -q 2>&1 | tee /tmp/pytest.txt
+
+      - name: Capture failing tests for the alert
+        # notify-failure cannot read these back from the run log: `gh run view
+        # --log-failed` refuses while the run is still in progress, and the run
+        # IS in progress — notify-failure is part of it. (First observed
+        # 2026-08-25: the alert fired correctly but said "not in the test
+        # suite" for a run with two red tests.) So hand the names forward as a
+        # job output instead of trying to recover them afterwards.
+        id: capture
+        if: failure()
+        run: |
+          FAILED=$(grep -oE '^FAILED [^ ]+' /tmp/pytest.txt 2>/dev/null \
+                    | sed 's/^FAILED //' | sort -u | head -20 || true)
+          {
+            echo 'failed<<PYTEST_EOF'
+            printf '%s\n' "$FAILED"
+            echo 'PYTEST_EOF'
+          } >> "$GITHUB_OUTPUT"
 
       - name: Run weekly audit
         env:
@@ -109,14 +132,12 @@ jobs:
     needs: audit
     if: failure() && github.event_name == 'schedule'
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
     steps:
       - name: Alert via Resend
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          FAILED_TESTS: ${{ needs.audit.outputs.failed_tests }}
         run: |
           set -euo pipefail
           if [ -z "${RESEND_API_KEY}" ]; then
@@ -125,11 +146,9 @@ jobs:
           fi
           TODAY=$(TZ=Australia/Melbourne date +%Y-%m-%d)
 
-          # Pull the failing test names out of the run log so the email says what
-          # broke, not just that something did. Best-effort: never let a log-fetch
-          # problem swallow the alert itself.
-          FAILURES=$(gh run view "${GITHUB_RUN_ID}" --repo "$GITHUB_REPOSITORY" --log-failed 2>/dev/null \
-                      | grep -oE 'FAILED [^ ]+' | sed 's/^FAILED //' | sort -u | head -20 || true)
+          # Names handed forward by the audit job's capture step — see the note
+          # there for why they are not read back out of the run log.
+          FAILURES=$(printf '%s' "${FAILED_TESTS}" | sed '/^[[:space:]]*$/d')
 
           {
             echo "<p>The weekly recall audit failed on ${TODAY} (Melbourne). <strong>No recall report and no dashboard were produced, and neither email was sent.</strong></p>"
