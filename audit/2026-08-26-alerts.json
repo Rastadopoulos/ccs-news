@@ -1,38 +1,20 @@
 [
   {
-    "canonical_url": "https://indianchemicalnews.com/ccus/japan-targets-major-ccs-hub-at-mizushima-industrial-complex-31610",
-    "raw_url": "https://www.indianchemicalnews.com/ccus/japan-targets-major-ccs-hub-at-mizushima-industrial-complex-31610",
-    "headline": "Japan targets major CCS Hub at Mizushima Industrial Complex - Indian Chemical News",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-08-24T22:31:08+00:00",
-    "fuzzy_key": "ccs,chemical,complex,hub,indian,industrial,japan,major,mizushima,news,targets",
+    "canonical_url": "https://breakbulk.news/jan-de-nul-enters-ccs-market-with-north-sea-pipeline-protection-contract",
+    "raw_url": "https://breakbulk.news/jan-de-nul-enters-ccs-market-with-north-sea-pipeline-protection-contract/",
+    "headline": "Jan De Nul enters CCS market with North Sea pipeline protection contract - Breakbulk News",
+    "source_domain": "breakbulk.news",
+    "publication_date": "2026-08-25T19:26:32+00:00",
+    "fuzzy_key": "breakbulk,ccs,contract,de,enters,jan,market,news,north,nul,pipeline,protection,sea",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://splash247.com/aker-solutions-and-microsoft-team-up-on-global-ccs-push",
-    "raw_url": "https://splash247.com/aker-solutions-and-microsoft-team-up-on-global-ccs-push/",
-    "headline": "Aker Solutions and Microsoft team up on global CCS push - Splash247",
-    "source_domain": "splash247.com",
-    "publication_date": "2026-08-25T00:12:24+00:00",
-    "fuzzy_key": "aker,ccs,global,microsoft,push,solutions,splash247,team,up",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project",
-    "raw_url": "https://www.pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project",
-    "headline": "Corinth Pipeworks Secures Contract for UK HyNet Carbon Capture Pipeline Project",
-    "source_domain": "pipeline-journal.net",
-    "publication_date": "2026-08-25T00:48:31+00:00",
-    "fuzzy_key": "capture,carbon,contract,corinth,hynet,pipeline,pipeworks,project,secures,uk",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://linkedin.com/posts/sumitomocorporation_ccs-decarbonization-sumitomocorporation-activity-7497487891523117056-fCgK",
-    "raw_url": "https://www.linkedin.com/posts/sumitomocorporation_ccs-decarbonization-sumitomocorporation-activity-7497487891523117056-fCgK",
-    "headline": "#ccs #decarbonization #sumitomocorporation | Sumitomo Corporation - LinkedIn",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-08-25T02:40:19+00:00",
-    "fuzzy_key": "ccs,corporation,decarbonization,linkedin,sumitomo,sumitomocorporation",
+    "canonical_url": "https://carbonherald.com/microsoft-and-aker-solutions-join-forces-to-drive-carbon-capture-delivery",
+    "raw_url": "https://carbonherald.com/microsoft-and-aker-solutions-join-forces-to-drive-carbon-capture-delivery/",
+    "headline": "Microsoft And Aker Solutions Join Forces To Drive Carbon Capture Delivery",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-08-25T20:26:50+00:00",
+    "fuzzy_key": "aker,capture,carbon,delivery,drive,forces,join,microsoft,solutions",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +27,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://offshore-mag.com/energy-transition/news/55400465/aker-solutions-ons-2026-aker-solutions-microsoft-partner-to-accelerate-global-ccs-and-carbon-removal-projects",
-    "raw_url": "https://www.offshore-mag.com/energy-transition/news/55400465/aker-solutions-ons-2026-aker-solutions-microsoft-partner-to-accelerate-global-ccs-and-carbon-removal-projects",
-    "headline": "ONS 2026: Aker Solutions, Microsoft partner to accelerate global CCS and carbon removal projects",
-    "source_domain": "offshore-mag.com",
-    "publication_date": "2026-08-25T03:13:34+00:00",
-    "fuzzy_key": "2026,accelerate,aker,carbon,ccs,global,microsoft,ons,partner,projects,removal,solutions",
+    "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19573841.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/ccs/article19573841.ece",
+    "headline": "Aker Solutions and Microsoft to mature CCS projects - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-08-25T19:26:32+00:00",
+    "fuzzy_key": "aker,ccs,energywatch,mature,microsoft,projects,solutions",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/ccus/japan-targets-major-ccs-hub-at-mizushima-industrial-complex-31610",
+    "raw_url": "https://www.indianchemicalnews.com/ccus/japan-targets-major-ccs-hub-at-mizushima-industrial-complex-31610",
+    "headline": "Japan targets major CCS Hub at Mizushima Industrial Complex - Indian Chemical News",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-08-24T22:31:08+00:00",
+    "fuzzy_key": "ccs,chemical,complex,hub,indian,industrial,japan,major,mizushima,news,targets",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/sumitomocorporation_ccs-decarbonization-sumitomocorporation-activity-7497487891523117056-fCgK",
+    "raw_url": "https://www.linkedin.com/posts/sumitomocorporation_ccs-decarbonization-sumitomocorporation-activity-7497487891523117056-fCgK",
+    "headline": "#ccs #decarbonization #sumitomocorporation | Sumitomo Corporation - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-08-25T02:40:19+00:00",
+    "fuzzy_key": "ccs,corporation,decarbonization,linkedin,sumitomo,sumitomocorporation",
     "found_via": "google_alerts"
   },
   {
@@ -60,6 +60,42 @@
     "source_domain": "note.com",
     "publication_date": "2026-08-25T03:41:12+00:00",
     "fuzzy_key": "added,ccs,credits,emissions,moomba,note,own,santos",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oceannews.com/news/energy/slb-integrates-subsea-and-reservoir-engineering-for-havstjerne-ccs-project",
+    "raw_url": "https://oceannews.com/news/energy/slb-integrates-subsea-and-reservoir-engineering-for-havstjerne-ccs-project/",
+    "headline": "SLB Integrates Subsea And Reservoir Engineering For Havstjerne CCS Project",
+    "source_domain": "oceannews.com",
+    "publication_date": "2026-08-25T19:26:32+00:00",
+    "fuzzy_key": "ccs,engineering,havstjerne,integrates,project,reservoir,slb,subsea",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-mag.com/energy-transition/news/55400465/aker-solutions-ons-2026-aker-solutions-microsoft-partner-to-accelerate-global-ccs-and-carbon-removal-projects",
+    "raw_url": "https://www.offshore-mag.com/energy-transition/news/55400465/aker-solutions-ons-2026-aker-solutions-microsoft-partner-to-accelerate-global-ccs-and-carbon-removal-projects",
+    "headline": "ONS 2026: Aker Solutions, Microsoft partner to accelerate global CCS and carbon removal projects",
+    "source_domain": "offshore-mag.com",
+    "publication_date": "2026-08-25T03:13:34+00:00",
+    "fuzzy_key": "2026,accelerate,aker,carbon,ccs,global,microsoft,ons,partner,projects,removal,solutions",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project",
+    "raw_url": "https://www.pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project",
+    "headline": "Corinth Pipeworks Secures Contract for UK HyNet Carbon Capture Pipeline Project",
+    "source_domain": "pipeline-journal.net",
+    "publication_date": "2026-08-25T00:48:31+00:00",
+    "fuzzy_key": "capture,carbon,contract,corinth,hynet,pipeline,pipeworks,project,secures,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://splash247.com/aker-solutions-and-microsoft-team-up-on-global-ccs-push",
+    "raw_url": "https://splash247.com/aker-solutions-and-microsoft-team-up-on-global-ccs-push/",
+    "headline": "Aker Solutions and Microsoft team up on global CCS push - Splash247",
+    "source_domain": "splash247.com",
+    "publication_date": "2026-08-25T00:12:24+00:00",
+    "fuzzy_key": "aker,ccs,global,microsoft,push,solutions,splash247,team,up",
     "found_via": "google_alerts"
   },
   {
@@ -78,42 +114,6 @@
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-08-25T17:29:14+00:00",
     "fuzzy_key": "capture,carbon,north,online,project,sea,slb,tapped,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://oceannews.com/news/energy/slb-integrates-subsea-and-reservoir-engineering-for-havstjerne-ccs-project",
-    "raw_url": "https://oceannews.com/news/energy/slb-integrates-subsea-and-reservoir-engineering-for-havstjerne-ccs-project/",
-    "headline": "SLB Integrates Subsea And Reservoir Engineering For Havstjerne CCS Project",
-    "source_domain": "oceannews.com",
-    "publication_date": "2026-08-25T19:26:32+00:00",
-    "fuzzy_key": "ccs,engineering,havstjerne,integrates,project,reservoir,slb,subsea",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://breakbulk.news/jan-de-nul-enters-ccs-market-with-north-sea-pipeline-protection-contract",
-    "raw_url": "https://breakbulk.news/jan-de-nul-enters-ccs-market-with-north-sea-pipeline-protection-contract/",
-    "headline": "Jan De Nul enters CCS market with North Sea pipeline protection contract - Breakbulk News",
-    "source_domain": "breakbulk.news",
-    "publication_date": "2026-08-25T19:26:32+00:00",
-    "fuzzy_key": "breakbulk,ccs,contract,de,enters,jan,market,news,north,nul,pipeline,protection,sea",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19573841.ece",
-    "raw_url": "https://energywatch.com/EnergyNews/ccs/article19573841.ece",
-    "headline": "Aker Solutions and Microsoft to mature CCS projects - EnergyWatch",
-    "source_domain": "energywatch.com",
-    "publication_date": "2026-08-25T19:26:32+00:00",
-    "fuzzy_key": "aker,ccs,energywatch,mature,microsoft,projects,solutions",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/microsoft-and-aker-solutions-join-forces-to-drive-carbon-capture-delivery",
-    "raw_url": "https://carbonherald.com/microsoft-and-aker-solutions-join-forces-to-drive-carbon-capture-delivery/",
-    "headline": "Microsoft And Aker Solutions Join Forces To Drive Carbon Capture Delivery",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-08-25T20:26:50+00:00",
-    "fuzzy_key": "aker,capture,carbon,delivery,drive,forces,join,microsoft,solutions",
     "found_via": "google_alerts"
   }
 ]
