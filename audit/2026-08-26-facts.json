@@ -1,0 +1,214 @@
+[
+  {
+    "id": "2026-08-26#01",
+    "briefing_date": "2026-08-26",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "SLB selected as strategic reservoir and subsea partner for the Havstjerne CO2 storage project",
+    "summary": "SLB, with OneSubsea, has been selected for reservoir, well and subsea (FEED) engineering on the Havstjerne floating CO2 storage project in the Norwegian North Sea, operated by Harbour Energy with Stella Maris CCS (a Yinson Production company), as the EU Innovation Fund-backed development advances toward FID. A 2025 appraisal well confirmed reservoir quality suitable for injection.",
+    "source": "World Oil / Upstream",
+    "pub_date": "2026-08-25",
+    "url": "https://www.worldoil.com/news/2026/8/25/slb-selected-for-feed-work-on-havstjerne-carbon-storage-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "SLB",
+      "OneSubsea",
+      "Harbour Energy",
+      "Stella Maris CCS",
+      "Yinson Production"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "OG-major",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Floating offshore CO2 storage plus subsea-injection engineering (Harbour/Yinson, Norwegian North Sea) mirrors the technical model for Australia's offshore storage ambitions; SLB/OneSubsea are key vendors across the CCS value chain.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "SLB (with OneSubsea) selected for reservoir/well/subsea FEED; contract value undisclosed. Havstjerne's EUR 225m EU Innovation Fund grant (2025) is prior context, not this event."
+  },
+  {
+    "id": "2026-08-26#02",
+    "briefing_date": "2026-08-26",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Corinth Pipeworks wins 41 km pipe-supply contract for Eni's HyNet Liverpool Bay CO2 pipeline",
+    "summary": "Corinth Pipeworks has been awarded a contract to manufacture and deliver about 41 km of LSAW steel line pipe plus hot induction bends for Eni's Liverpool Bay CO2 pipeline, the transport backbone of the HyNet North West cluster in the UK. First injection into depleted Liverpool Bay reservoirs is targeted for 2028.",
+    "source": "Pipeline Technology Journal",
+    "pub_date": "2026-08-25",
+    "url": "https://www.pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Corinth Pipeworks",
+      "Eni"
+    ],
+    "org_types": [
+      "other",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Supply-chain milestone for a flagship UK CO2 transport network (HyNet/Liverpool Bay); indicative of maturing CCS EPC procurement globally.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Contract value not disclosed; ~41 km line pipe plus bends (supplier-contract inside Eni's Liverpool Bay project, no figure)."
+  },
+  {
+    "id": "2026-08-26#03",
+    "briefing_date": "2026-08-26",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "China approves 2025-26 allowance allocation plan for its national emissions trading scheme",
+    "summary": "China's Ministry of Ecology and Environment approved the 2025-26 allowance allocation plan for the national ETS, using an output-based, intensity-controlled method across the newly expanded industrial sectors. The scheme's carbon-price signal is the principal domestic driver of CCUS economics in the world's largest-emitting economy.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-08-25",
+    "url": "https://carbon-pulse.com/544236/",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "Ministry of Ecology and Environment"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2026,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "China's ETS carbon-price signal is the main economic lever for CCUS in the world's largest emitter; allocation stringency shapes future CCS demand and the competitive backdrop CO2CRC tracks.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Carbon-market (ETS) policy rather than a CCS-specific measure; included under Policy scope (China national carbon market). Output-based, intensity-controlled allocation."
+  },
+  {
+    "id": "2026-08-26#04",
+    "briefing_date": "2026-08-26",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Aker Solutions and Microsoft partner to accelerate global CCS and carbon-removal projects",
+    "summary": "At ONS in Stavanger, Aker Solutions signed a strategic agreement with Microsoft to accelerate the development, bankability and delivery of CCS and carbon-dioxide-removal projects worldwide. It pairs Microsoft's digital, AI, MRV and carbon-markets capabilities with Aker Solutions' techno-economic advisory and end-to-end EPC engineering to move projects toward final investment decision.",
+    "source": "Offshore Energy / Carbon Herald",
+    "pub_date": "2026-08-25",
+    "url": "https://www.offshore-energy.biz/aker-solutions-microsoft-partner-to-fast-track-global-ccs-carbon-removal-pipeline/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Aker Solutions",
+      "Microsoft"
+    ],
+    "org_types": [
+      "other",
+      "other"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A digital/MRV plus EPC partnership aimed at CCS bankability and FID acceleration globally - directly relevant to the commercial-readiness and MRV challenges CO2CRC works on.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Strategic collaboration agreement, no monetary value disclosed; announced at ONS 2026, Stavanger. Global/multi-region scope - a corporate-strategy item with no single named project."
+  },
+  {
+    "id": "2026-08-26#05",
+    "briefing_date": "2026-08-26",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Jan De Nul enters CCS with first project - rock protection for the Northern Endurance Partnership North Sea CO2 pipeline",
+    "summary": "Belgian marine contractor Jan De Nul is undertaking its first CCS project, deploying the rock-installation vessel Simon Stevin to protect the Northern Endurance Partnership's ~149 km North Sea CO2 export pipeline (carrying captured CO2 from Teesside and the Humber to offshore storage) as a subcontractor to Saipem.",
+    "source": "Ocean News & Technology",
+    "pub_date": "2026-08-25",
+    "url": "https://oceannews.com/news/subsea-and-survey/jan-de-nul-installs-rock-protection-for-north-sea-co2-storage-pipeline",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Jan De Nul",
+      "Saipem",
+      "Northern Endurance Partnership"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "developer"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A marine-services market entrant into CCS (NEP North Sea CO2 pipeline) - a data point on the widening CCS EPC and vendor base.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Jan De Nul's first CCS project; subcontract to Saipem on the NEP 149 km CO2 pipeline. Contract value undisclosed."
+  }
+]
