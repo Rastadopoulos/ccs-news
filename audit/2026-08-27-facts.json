@@ -1,0 +1,86 @@
+[
+  {
+    "id": "2026-08-27#01",
+    "briefing_date": "2026-08-27",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Santos' Moomba CCS passes 2 million tonnes of CO2e stored",
+    "summary": "Santos said its Moomba CCS project in South Australia's Cooper Basin has stored more than 2 Mt CO2e in just over 18 months since Sept-2024 start-up; it frames the Cooper/Eromanga acreage as able to support up to 20 Mtpa for 50 years.",
+    "source": "Santos / OilPrice",
+    "pub_date": "2026-08-24",
+    "url": "https://www.santos.com/news/moomba-ccs-project-achieves-historic-emissions-reduction-milestone/",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Santos"
+    ],
+    "org_types": [
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Australia's largest onshore CCS project and a flagship Cooper Basin storage proof-point directly relevant to CO2CRC's domestic storage agenda.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar near-miss: broke 24 Aug 2026, outside the 26-27 Aug window; date cross-checked across search results (on-page fetch blocked by egress policy this run)."
+  },
+  {
+    "id": "2026-08-27#02",
+    "briefing_date": "2026-08-27",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Mantel raises US$18m to scale molten-borate carbon capture for heavy industry",
+    "summary": "MIT spin-out Mantel closed an US$18m strategic round led by Constellation Technology Ventures and Azimut (total funding ~US$50m) to commercialise a high-temperature liquid-phase (molten-borate) capture system for heavy industry, with deployments cited in Canada, West Virginia and Quebec.",
+    "source": "Carbon Herald / ESG Today",
+    "pub_date": "2026-08-24",
+    "url": "https://carbonherald.com/mantel-secures-18m-investment-to-scale-molten-borate-carbon-capture/",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Canada"
+    ],
+    "organisations": [
+      "Mantel",
+      "Constellation Technology Ventures",
+      "Azimut"
+    ],
+    "org_types": [
+      "startup",
+      "financier",
+      "financier"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": 18000000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Next-gen high-temperature capture solvent chemistry relevant to CO2CRC's capture-cost R&D watch on alternatives to conventional amines.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Radar near-miss: broke 24 Aug 2026, outside the 26-27 Aug window; date cross-checked across search results (on-page fetch blocked by egress policy this run)."
+  }
+]
