@@ -1,5 +1,23 @@
 [
   {
+    "canonical_url": "https://middleeast.carbon-capture-conference.com/news/aramco-chases-cheaper-air-to-carbon-capture",
+    "raw_url": "https://www.middleeast.carbon-capture-conference.com/news/aramco-chases-cheaper-air-to-carbon-capture",
+    "headline": "Aramco Chases Cheaper Air-to-Carbon Capture",
+    "source_domain": "carbon-capture-conference.com",
+    "publication_date": "2026-08-27T18:54:59+00:00",
+    "fuzzy_key": "air,aramco,capture,carbon,chases,cheaper",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carboncredits.com/japan-3-43m-ton-co2-shipping-hub-ccs",
+    "raw_url": "https://carboncredits.com/japan-3-43m-ton-co2-shipping-hub-ccs/",
+    "headline": "Japan Advances Maritime CCS Hub to Ship 3.43M Tons of CO2 a Year - CarbonCredits.com",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-08-27T23:57:20+00:00",
+    "fuzzy_key": "43m,advances,carboncredits,ccs,co2,com,hub,japan,maritime,ship,tons,year",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://dayakdaily.com/sarawaks-first-ccus-project-expected-to-begin-at-kasawari-in-2028",
     "raw_url": "https://dayakdaily.com/sarawaks-first-ccus-project-expected-to-begin-at-kasawari-in-2028/",
     "headline": "Sarawak's first CCUS project expected to begin at Kasawari in 2028 | DayakDaily",
@@ -9,30 +27,57 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://sarawaktribune.com/sarawaks-first-ccus-project-targeted-at-kasawari-oilfield-by-2028",
-    "raw_url": "https://www.sarawaktribune.com/sarawaks-first-ccus-project-targeted-at-kasawari-oilfield-by-2028/",
-    "headline": "Sarawak's First CCUS Project Targeted At Kasawari Oilfield By 2028",
-    "source_domain": "sarawaktribune.com",
-    "publication_date": "2026-08-27T05:10:27+00:00",
-    "fuzzy_key": "2028,ccus,first,kasawari,oilfield,project,sarawak,targeted",
+    "canonical_url": "https://ecobiz.asia/indonesia-eyes-regional-ccs-hub-sees-43-billion-investment-potential",
+    "raw_url": "https://ecobiz.asia/indonesia-eyes-regional-ccs-hub-sees-43-billion-investment-potential/",
+    "headline": "Indonesia Eyes Regional CCS Hub, Sees US$43 Billion Investment Potential - Ecobiz Asia",
+    "source_domain": "ecobiz.asia",
+    "publication_date": "2026-08-28T01:22:25+00:00",
+    "fuzzy_key": "43,asia,billion,ccs,ecobiz,eyes,hub,indonesia,investment,potential,regional,sees,us",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://x.com/DayakDaily/status/2092544454259536230",
-    "raw_url": "https://x.com/DayakDaily/status/2092544454259536230",
-    "headline": "Sarawak's first CCUS project expected to begin at Kasawari in 2028",
-    "source_domain": "x.com",
-    "publication_date": "2026-08-27T10:35:42+00:00",
-    "fuzzy_key": "2028,begin,ccus,expected,first,kasawari,project,sarawak",
+    "canonical_url": "https://ecobiz.asia/pertamina-identifies-13-potential-ccs-ccus-study-locations-across-indonesia",
+    "raw_url": "https://ecobiz.asia/pertamina-identifies-13-potential-ccs-ccus-study-locations-across-indonesia/",
+    "headline": "Pertamina Identifies 13 Potential CCS/CCUS Study Locations Across Indonesia",
+    "source_domain": "ecobiz.asia",
+    "publication_date": "2026-08-28T01:22:25+00:00",
+    "fuzzy_key": "13,across,ccs,ccus,identifies,indonesia,locations,pertamina,potential,study",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://theglobeandmail.com/investing/markets/markets-news/ACN/4191699/the-4th-international-indonesia-ccs-forum-2026-strengthens-indonesia-s-position-as-an-emerging-regional-ccs-hub",
-    "raw_url": "https://www.theglobeandmail.com/investing/markets/markets-news/ACN/4191699/the-4th-international-indonesia-ccs-forum-2026-strengthens-indonesia-s-position-as-an-emerging-regional-ccs-hub/",
-    "headline": "The 4th International & Indonesia CCS Forum 2026 Strengthens Indonesia's Position as an ...",
-    "source_domain": "theglobeandmail.com",
-    "publication_date": "2026-08-27T14:32:54+00:00",
-    "fuzzy_key": "2026,4th,ccs,forum,indonesia,international,position,strengthens",
+    "canonical_url": "https://fuelcellsworks.com/2026/08/27/news/inpex-commences-co-injection-into-depleted-gas-field-at-kashiwazaki-hydrogen-park-as-part-of-integrated-blue-hydrogen-and-ammonia-production-and-utilization-demonstration-project-in-kashiwazaki-niigata-prefecture",
+    "raw_url": "https://fuelcellsworks.com/2026/08/27/news/inpex-commences-co-injection-into-depleted-gas-field-at-kashiwazaki-hydrogen-park-as-part-of-integrated-blue-hydrogen-and-ammonia-production-and-utilization-demonstration-project-in-kashiwazaki-niigata-prefecture",
+    "headline": "INPEX CO2 Injection Blue Hydrogen Project - Fuel Cells Works",
+    "source_domain": "fuelcellsworks.com",
+    "publication_date": "2026-08-28T01:40:55+00:00",
+    "fuzzy_key": "blue,cells,co2,fuel,hydrogen,injection,inpex,project,works",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://hellenicshippingnews.com/oil-and-gas-companies-remain-key-adopters-of-ccus-despite-project-delivery-challenges-says-globaldata",
+    "raw_url": "https://www.hellenicshippingnews.com/oil-and-gas-companies-remain-key-adopters-of-ccus-despite-project-delivery-challenges-says-globaldata/",
+    "headline": "Oil and gas companies remain key adopters of CCUS despite project delivery challenges ...",
+    "source_domain": "hellenicshippingnews.com",
+    "publication_date": "2026-08-27T22:13:40+00:00",
+    "fuzzy_key": "adopters,ccus,challenges,companies,delivery,despite,gas,key,oil,project,remain",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/jan-de-nul-enters-ccs-market-with-uks-first-offshore-carbon-storage-project",
+    "raw_url": "https://www.indexbox.io/blog/jan-de-nul-enters-ccs-market-with-uks-first-offshore-carbon-storage-project/",
+    "headline": "Jan De Nul Enters CCS Market with UK's First Offshore Carbon Storage Project - IndexBox",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-08-27T18:39:21+00:00",
+    "fuzzy_key": "carbon,ccs,de,enters,first,indexbox,jan,market,nul,offshore,project,storage,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://investor.id/business/451897/phe-dorong-indonesia-jadi-kolaborator-regional-dalam-pengembangan-carbon-capture-and-storage",
+    "raw_url": "https://investor.id/business/451897/phe-dorong-indonesia-jadi-kolaborator-regional-dalam-pengembangan-carbon-capture-and-storage",
+    "headline": "PHE Dorong Indonesia Jadi Kolaborator Regional dalam Pengembangan Carbon Capture ...",
+    "source_domain": "investor.id",
+    "publication_date": "2026-08-28T01:22:25+00:00",
+    "fuzzy_key": "capture,carbon,dalam,dorong,indonesia,jadi,kolaborator,pengembangan,phe,regional",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +90,57 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://indexbox.io/blog/jan-de-nul-enters-ccs-market-with-uks-first-offshore-carbon-storage-project",
-    "raw_url": "https://www.indexbox.io/blog/jan-de-nul-enters-ccs-market-with-uks-first-offshore-carbon-storage-project/",
-    "headline": "Jan De Nul Enters CCS Market with UK's First Offshore Carbon Storage Project - IndexBox",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-08-27T18:39:21+00:00",
-    "fuzzy_key": "carbon,ccs,de,enters,first,indexbox,jan,market,nul,offshore,project,storage,uk",
+    "canonical_url": "https://petromindo.com/news/article/danantara-eyes-integration-of-20-30-waste-to-energy-plants-with-ccs-system",
+    "raw_url": "https://www.petromindo.com/news/article/danantara-eyes-integration-of-20-30-waste-to-energy-plants-with-ccs-system",
+    "headline": "Danantara eyes integration of 20–30 waste-to-energy plants with CCS system - Petromindo",
+    "source_domain": "petromindo.com",
+    "publication_date": "2026-08-28T01:22:25+00:00",
+    "fuzzy_key": "20,30,ccs,danantara,energy,eyes,integration,petromindo,plants,system,waste",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://petromindo.com/news/article/tangguh-ccus-set-to-become-first-ccs-project-registered-under-indonesia-japan-jcm",
+    "raw_url": "https://www.petromindo.com/news/article/tangguh-ccus-set-to-become-first-ccs-project-registered-under-indonesia-japan-jcm",
+    "headline": "Tangguh CCUS set to become first CCS project registered under Indonesia-Japan JCM",
+    "source_domain": "petromindo.com",
+    "publication_date": "2026-08-28T01:22:25+00:00",
+    "fuzzy_key": "become,ccs,ccus,first,indonesia,japan,jcm,project,registered,set,tangguh,under",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/ammonia/article/inpex-starts-co2-injections-into-gas-field-at-kashiwazaki-hydrogen-park-71791.html",
+    "raw_url": "https://www.qcintel.com/ammonia/article/inpex-starts-co2-injections-into-gas-field-at-kashiwazaki-hydrogen-park-71791.html",
+    "headline": "INPEX starts CO2 injections into gas field at Kashiwazaki Hydrogen Park",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-08-28T01:40:55+00:00",
+    "fuzzy_key": "co2,field,gas,hydrogen,injections,inpex,into,kashiwazaki,park,starts",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://sarawaktribune.com/sarawaks-first-ccus-project-targeted-at-kasawari-oilfield-by-2028",
+    "raw_url": "https://www.sarawaktribune.com/sarawaks-first-ccus-project-targeted-at-kasawari-oilfield-by-2028/",
+    "headline": "Sarawak's First CCUS Project Targeted At Kasawari Oilfield By 2028",
+    "source_domain": "sarawaktribune.com",
+    "publication_date": "2026-08-27T05:10:27+00:00",
+    "fuzzy_key": "2028,ccus,first,kasawari,oilfield,project,sarawak,targeted",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theglobeandmail.com/investing/markets/markets-news/ACN/4191699/the-4th-international-indonesia-ccs-forum-2026-strengthens-indonesia-s-position-as-an-emerging-regional-ccs-hub",
+    "raw_url": "https://www.theglobeandmail.com/investing/markets/markets-news/ACN/4191699/the-4th-international-indonesia-ccs-forum-2026-strengthens-indonesia-s-position-as-an-emerging-regional-ccs-hub/",
+    "headline": "The 4th International & Indonesia CCS Forum 2026 Strengthens Indonesia's Position as an ...",
+    "source_domain": "theglobeandmail.com",
+    "publication_date": "2026-08-27T14:32:54+00:00",
+    "fuzzy_key": "2026,4th,ccs,forum,indonesia,international,position,strengthens",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/DayakDaily/status/2092544454259536230",
+    "raw_url": "https://x.com/DayakDaily/status/2092544454259536230",
+    "headline": "Sarawak's first CCUS project expected to begin at Kasawari in 2028",
+    "source_domain": "x.com",
+    "publication_date": "2026-08-27T10:35:42+00:00",
+    "fuzzy_key": "2028,begin,ccus,expected,first,kasawari,project,sarawak",
     "found_via": "google_alerts"
   }
 ]
