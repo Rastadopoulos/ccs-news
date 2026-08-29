@@ -20,6 +20,8 @@ us-bkv-east-texas,2026-07-02#02,2026-06-30,commissioning,positive,https://www.bu
 ca-pathways,2026-08-20#01,2026-08-19,FID/financial close,positive,https://www.miningweekly.com/article/canadas-oil-producers-target-late-2027-for-pathways-carbon-capture-decision-2026-08-19,medium,Stage signal extracted from event; current register remains curator-controlled.
 uk-hynet,2026-08-24#03,2026-08-21,commissioning,positive,https://www.energyvoice.com/renewables-energy-transition/ccs/602780/hynet-encyclis-erf/,medium,Stage signal extracted from event; current register remains curator-controlled.
 cn-shengli-power,2026-08-24#06,2026-08-18,cancelled,negative,https://edmonton.taproot.news/news/2026/08/18/carbon-capture-project-on-hold-at-edmonton-cement-plant,medium,Stage signal extracted from event; current register remains curator-controlled.
+uk-hynet,2026-08-26#02,2026-08-25,commissioning,positive,https://www.pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project,medium,Stage signal extracted from event; current register remains curator-controlled.
+my-kasawari,2026-08-28#02,2026-08-27,commissioning,positive,https://dayakdaily.com/sarawaks-first-ccus-project-expected-to-begin-at-kasawari-in-2028/,medium,Stage signal extracted from event; current register remains curator-controlled.
 au-moomba-ccs,canonical-snapshot,2026-05-24,operating,neutral,https://www.santos.com/news/moomba-ccs-project-stores-two-million-tonnes-of-co2/,high,Current curator-verified snapshot.
 au-cliff-head-ccs,canonical-snapshot,2026-05-25,FEED,neutral,,medium,Current curator-verified snapshot.
 au-gorgon-ccs,canonical-snapshot,2026-07-28,operating,neutral,,high,Current curator-verified snapshot.

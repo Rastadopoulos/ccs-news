@@ -1,0 +1,114 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CCS recall audit — week ending 2026-08-29 — pooled recall 12%</title><style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;color:#222;line-height:1.5;font-size:16px}h1{font-size:22px}h2{font-size:17px;margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #ddd;padding:6px 10px;text-align:left;font-size:14px}th{background:#f4f4f4}a{color:#0a4}@media print{a{color:#000;text-decoration:none}}</style></head><body><h1>CCS recall audit — week ending 2026-08-29 — pooled recall 12%</h1>
+<h2>Headline metrics</h2>
+<ul>
+<li><strong>Pooled recall</strong> (A ∩ U / U): <strong>12%</strong>  (14 of 118)</li>
+<li><strong>Precision</strong> (adjudicated relevant items / production items): <strong>100%</strong></li>
+<li><strong>Decision-relevant recall</strong>: <strong>12%</strong></li>
+<li><strong>Adjudicated high-priority floor recall</strong> (A ∩ B★ / B★): <strong>0%</strong>  (0 of 47)</li>
+<li><strong>Experimental Chapman diagnostic</strong> (median of 2 pair-estimates): <strong>3%</strong> — not an authoritative absolute-recall estimate</li>
+</ul>
+<h2>Sampler sizes</h2>
+<table>
+<tr><th>Sampler</th><th>Items</th></tr>
+<tr><td>A · Production routine</td><td>16</td></tr>
+<tr><td>B · RSS floor</td><td>47</td></tr>
+<tr><td>C · Google Alerts</td><td>69</td></tr>
+<tr><td>D · Shadow LLM</td><td>0</td></tr>
+<tr><td>E · Shelly Murrell digest</td><td>0</td></tr>
+<tr><td>F · IEAGHG Weekly News</td><td>0</td></tr>
+<tr><td>A★ · Production, search-only subset (used for Chapman)</td><td>6</td></tr>
+<tr><td><strong>Union U</strong></td><td><strong>118</strong></td></tr>
+</table>
+<p>_7 junk domains excluded from all samplers (config/junk_domains.txt)._</p>
+<h2>Sampler run coverage</h2>
+<table>
+<tr><th>Sampler</th><th>Ran (5 weekdays)</th><th>Missing</th></tr>
+<tr><td>B · RSS floor</td><td>5/5</td><td>—</td></tr>
+<tr><td>A · Production routine</td><td>5/5</td><td>—</td></tr>
+<tr><td>D · Shadow LLM</td><td>5/5</td><td>—</td></tr>
+<tr><td>C · Google Alerts</td><td>5/5</td><td>—</td></tr>
+</table>
+<p><em>Public holidays are legitimate skips and still show as missing here.</em></p>
+<h2>Experimental Chapman pair-estimates</h2>
+<p><em>Capture side restricted to A★ (search-only, 6 items) — full A ingests the RSS floor and Google Alerts feeds, so it is not independent of samplers B/C.</em></p>
+<p><em>Diagnostic only: sampler independence and equal catchability are violated, so this must not be read as authoritative absolute recall.</em></p>
+<table>
+<tr><th>Pair</th><th>Overlap</th><th>Estimated N</th></tr>
+<tr><td>A★ × B (RSS floor)</td><td>0</td><td>335</td></tr>
+<tr><td>A★ × C (Google Alerts)</td><td>0</td><td>489</td></tr>
+</table>
+<h2>Top missed items (104 total)</h2>
+<h2>Recall by geography</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>Unclassified</td><td>118</td><td>14</td><td>12%</td></tr>
+</table>
+<h2>Recall by source class</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>media/newsletter</td><td>117</td><td>14</td><td>12%</td></tr>
+<tr><td>primary/official</td><td>1</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Recall by content type</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>unclassified</td><td>118</td><td>14</td><td>12%</td></tr>
+</table>
+<ul>
+<li><strong>ITB Petroleum Engineering Students Present Economical and Forward-Looking CCS Well ...</strong> — ac.id · found via <em>C</em> · <a href="https://itb.ac.id/news/itb-petroleum-engineering-students-present-economical-and-forward-looking-ccs-well-development-strategy-at-international-conference/63748">link</a></li>
+<li><strong>Direct air capture supports sustainable methanol production in water-limited regions - Bioengineer.org</strong> — bioengineer.org · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQYTd3LVJOdkctb3g5SFJaaDZKbnRDSWNSWGctLXZLd2lfNTZIT05XRkRNUFBWWkNXWmhaM2E5RjAydGRHVndWbkx0X0hGUlVral9MMFZkQ1hwQWRtUzFxR0hhVTRCelRNT0w4Q3BXb3U4Rnc0QkFmRHlWVzBQQ0VRalNJdVJkR0dVWHlEaGtmOHpiT18wWldKZU9vM2lSUHpGYmZ6UG5EU1lhTXgyRVE?oc=5">link</a></li>
+<li><strong>What has changed for carbon capture and storage in Brazil? - BNamericas</strong> — bnamericas.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPN2hmNFlYc0tObF9DZG40YXdmbmtEYjFuXzdSQ0FSdEx0YV9wdWtmN2l1N3hDZndGdUJZaUUzU01hNmc4OFRWeDZPX2xSa1E3dG5BeHNHNzRscWs5aUQyalh5R05fclkyQ295MG1EcWxBSVRpbVpETUs2enoxZjFzd1pxN045TkJseVY1U2dNTQ?oc=5">link</a></li>
+<li><strong>Jan De Nul enters CCS market with North Sea pipeline protection contract</strong> — breakbulk.news · found via <em>C</em> · <a href="https://breakbulk.news/jan-de-nul-enters-ccs-market-with-north-sea-pipeline-protection-contract">link</a></li>
+<li><strong>Aramco Chases Cheaper Air-to-Carbon Capture</strong> — carbon-capture-conference.com · found via <em>C</em> · <a href="https://www.middleeast.carbon-capture-conference.com/news/aramco-chases-cheaper-air-to-carbon-capture">link</a></li>
+<li><strong>Carbon Capture Journal - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMDdLOFNHMWd4UWdwV3NYY2kyaHRpYzlzZjdRRklJSkJGcDh5c0JSdnpwdmFWUTF3RmwwNDVZZFc0c3NHWTNtYUVMblNHSnpCMkp4UU1nVFRGY28xbzBoYVkxVEt1LTdmQWxCMzhFckxjUEJCRHJpOVZ5ZU5IWlNUTno0alQ2QWFHMENJTVFzUUtqZXlESXpHRzZXRjRYdlNWeTVGbHNmWlpCbmJ3UTUyNFNHTW9iY2psRGpoWm9uazR1aFk?oc=5">link</a></li>
+<li><strong>Cosmo Oil and KEPCO to design CO2 capture and marine transport - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPTGowMlhxME1HbDF3aFlQelhsOVFOVGJLa0gtdzktTFhUeGpmV1Njc21kemZmcVNBZDRXc050R0VpU3IwVU5lbVRyaC1UVkhoMUp1RWN3Ulh3RkJOZUJTWi1PYm0yTk5FVlNYT01ZZkRjWW5TWXBBZU5jTHhON290WWR1Z0luTjB0dUFVMHJodWkwWE9mVlZ6UEpVRklMX2R5UGJyNEpVejlRc0lZd1I4T05zd3hTVjFIRmxzR2dvVFB0eW9hM3c?oc=5">link</a></li>
+<li><strong>Höganäs AB and Öresundskraft sign agreement on carbon removals - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxORFM4cm4tTmRIUFNZWkUyMl9WN1MtZWY5VEFuc3o0UjNVVmJXQkppNVczcm9mSHBiTE5WbF80NXJQUkNLVjRXODNqdTJiNGlhaXhsYTQ3aXJKbmpNbkpkNDRnVlBjUTZNX05QZnhzUXpEeUc3OW8tazJxS3RoVVQ4bVdiU0l6SWFtUUtDS3ZTc2VlXzdHVkYxcUNzMzV6Skh0NjF5cXVmS0pXSnh4eFhCYV9pY2pFZnBBbTZaS2pSbUs3QQ?oc=5">link</a></li>
+<li><strong>MHI extends compact CO2 capture system to larger size - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQRjRGclpxUXJ6VzZHSUlaNUhzYkUxa2oxWWEwYXo1OWM3ZWRjYlFHV2l5LXFuNloxYkRIOF9tSjU4YjNpRzZSWjIwLUZjazYwd2pyQjRqZXF6c2Z5N2lGb3plRzU5dDhzMnlzYUY1RVJsTm14aEZxT283a05HQm5kbFAtWUpmWGs4Zmx4OFhGTWE1dENONDRjUk1lWEZhd1RzRVVFVDJYU1VPTkM4LU81LXhMTHR5OEw5Umc?oc=5">link</a></li>
+<li><strong>Mantel raises cash to scale commercial carbon capture deployment - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcTJacHJfbzBDcUhmV3BwcFU0WnVEQUItdnFCNVFFOGs5ZjZ5b3h4bkZsc3B6VFdJbkkwREc1TEhIMk8xeGNEU0tBSlZScE1ublo5Mk5jVU5TZ3BYX29WTTVBaE5GdEVPTkZZRHZQTVZvUWFYVEJOU2MtOTF1aGVaaWJYTGhqUzdBWTBFMnY0ZGswV1pvMnNNTEtiSGMwcUxnY3JpRGhCX19BYzkyZHFJSlZRd2FZRHBJbDdFcFJUTUVyZExQdDF0Mw?oc=5">link</a></li>
+</ul>
+<h2>Source-coverage matrix</h2>
+<table>
+<tr><th>Source</th><th>Published (B+C+D+E)</th><th>Captured by A</th><th>Capture rate</th></tr>
+<tr><td>carbonherald.com</td><td>23</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncapturejournal.com</td><td>7</td><td>0</td><td>0%</td></tr>
+<tr><td>climeworks.com</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>petromindo.com</td><td>4</td><td>0</td><td>0%</td></tr>
+<tr><td>energynewsbulletin.net</td><td>3</td><td>2</td><td>67%</td></tr>
+<tr><td>carboncredits.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>ecobiz.asia</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>energiesmedia.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>fuelcellsworks.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>gasworld.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>globalccsinstitute.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>oceannews.com</td><td>2</td><td>1</td><td>50%</td></tr>
+<tr><td>offshore-energy.biz</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>pipeline-journal.net</td><td>2</td><td>1</td><td>50%</td></tr>
+<tr><td>tipranks.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>ac.id</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>bioengineer.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>bnamericas.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>breakbulk.news</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carbon-capture-conference.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carbon-pulse.com</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>ccsassociation.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>chemengonline.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>chemxplore.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>dayakdaily.com</td><td>1</td><td>1</td><td>100%</td></tr>
+</table>
+<h2>Drift — last 12 weeks</h2>
+<table>
+<tr><th>Week ending</th><th>Pooled recall</th><th>Floor recall</th></tr>
+<tr><td>2026-05-30</td><td>20%</td><td>0%</td></tr>
+<tr><td>2026-06-06</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-06-13</td><td>7%</td><td>2%</td></tr>
+<tr><td>2026-06-20</td><td>14%</td><td>0%</td></tr>
+<tr><td>2026-06-27</td><td>12%</td><td>2%</td></tr>
+<tr><td>2026-07-04</td><td>19%</td><td>11%</td></tr>
+<tr><td>2026-07-11</td><td>6%</td><td>3%</td></tr>
+<tr><td>2026-07-18</td><td>18%</td><td>5%</td></tr>
+<tr><td>2026-07-25</td><td>11%</td><td>10%</td></tr>
+<tr><td>2026-08-01</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-08-22</td><td>22%</td><td>13%</td></tr>
+<tr><td>2026-08-29</td><td>12%</td><td>0%</td></tr>
+</table>
+<p><em>— Auto-audit</em></p><p style='color:#888;font-size:12px'>Generated 2026-08-29T13:32:13.312648+10:00</p></body></html>
