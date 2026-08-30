@@ -1,0 +1,250 @@
+[
+  {
+    "id": "2026-08-31#01",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "INPEX begins first CO2 injection at Kashiwazaki Hydrogen Park",
+    "summary": "INPEX commenced CO2 injection into the depleted Higashi-Kashiwazaki gas field (Niigata) as part of Japan's first fully integrated blue hydrogen/ammonia production-and-usage demonstration, capturing CO2 with BASF/JGC HiPACT technology; it targets at least 2.5 Mtpa of CO2 injection by 2030.",
+    "source": "QC Intel / gasworld",
+    "pub_date": "2026-08-28",
+    "url": "https://www.qcintel.com/ammonia/article/inpex-starts-co2-injections-into-gas-field-at-kashiwazaki-hydrogen-park-71791.html",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "INPEX",
+      "BASF",
+      "JGC Corporation"
+    ],
+    "org_types": [
+      "NOC",
+      "other",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2030,
+    "capacity_mtpa": 2.5,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Live demonstration of depleted-reservoir CO2 storage tied to blue ammonia in Japan — a key prospective customer for Australian CO2 export and a direct analogue for Australia's blue-ammonia-plus-CCS pathway.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Injection commenced 27 Aug JST; wide coverage 28 Aug (Melbourne). capacity_mtpa 2.5 = INPEX's stated 2030 CO2 injection target, not current rate (current H2 output ~700 t/yr)."
+  },
+  {
+    "id": "2026-08-31#02",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Woodside's Browse CCS cleared for full assessment under the amended EPBC Act",
+    "summary": "The federal Environment Minister determined that Woodside's resubmitted Browse CCS referral will be assessed wholly under the amended EPBC Act 1999, restoring a defined federal assessment pathway; the scheme would inject CO2 into the offshore Calliance Storage Formation (permit G-8-AP) and cut project emissions by ~53 Mt CO2e vs a 2019 Scope 1 baseline.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-08-28",
+    "url": "https://www.energynewsbulletin.net/operations/news-articles/4536155/browse-ccs-federal-assessment-pathway",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Woodside Energy",
+      "Australian Government (Environment Minister)"
+    ],
+    "org_types": [
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 4.0,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Regulatory progress on a flagship Australian offshore CCS project central to the contested Browse gas development; directly relevant to CO2CRC's Australian storage focus.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Procedural assessment determination, not FID (commitment_status announced). 53 Mt CO2e is a lifetime reduction estimate, not additive; capacity_mtpa 4.0 = Woodside's proposed injection rate (~4 Mtpa) reported previously."
+  },
+  {
+    "id": "2026-08-31#03",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Pertamina identifies 13 CCS/CCUS study locations across Indonesia (~7.3 Gt potential)",
+    "summary": "At Jakarta's International & Indonesia CCS Forum, Pertamina said it has identified ~13 CCS/CCUS study locations across Sumatra, Java, Kalimantan and Sulawesi with combined storage potential of ~7.3 Gt, headlined by the Asri Basin hub (up to ~2.9 Gt), under its Dual Growth Strategy toward net zero by 2060.",
+    "source": "Ecobiz Asia / CNN Indonesia",
+    "pub_date": "2026-08-28",
+    "url": "https://ecobiz.asia/pertamina-identifies-13-potential-ccs-ccus-study-locations-across-indonesia/",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Pertamina"
+    ],
+    "org_types": [
+      "NOC"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2060,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A concrete storage pipeline behind Indonesia's regional-hub push — Australia's most direct competitor/collaborator for storage-constrained Asian CO2.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "7.3 Gt (and Asri Basin 2.9 Gt) is a cumulative storage RESOURCE estimate, not an event/annual capacity, so capacity_mtpa left null per golden rule. Feasibility-stage study identification (instrument_type R&D)."
+  },
+  {
+    "id": "2026-08-31#04",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Tangguh CCUS set to become the first CCS project registered under the Indonesia-Japan Joint Crediting Mechanism",
+    "summary": "The Indonesia-Japan JCM Joint Committee approved the Ofaweri decarbonisation initiative built on the BP-operated Tangguh CCUS project (West Papua) to advance as a JCM project, making it the first CCUS project registered under the bilateral crediting framework; it follows a BP/Mitsubishi Research Institute METI-commissioned JCM CCUS methodology study.",
+    "source": "Petromindo",
+    "pub_date": "2026-08-28",
+    "url": "https://www.petromindo.com/news/article/tangguh-ccus-set-to-become-first-ccs-project-registered-under-indonesia-japan-jcm",
+    "region": "APAC",
+    "countries": [
+      "Indonesia",
+      "Japan"
+    ],
+    "organisations": [
+      "BP",
+      "Indonesia-Japan JCM Joint Committee",
+      "Mitsubishi Research Institute"
+    ],
+    "org_types": [
+      "OG-major",
+      "government",
+      "research"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A working template for monetising cross-border CCS via a bilateral carbon-credit framework — directly relevant to Australia's transboundary CO2 storage ambitions under London Protocol Article 6 arrangements.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Cross-border/transboundary crediting milestone (Indonesia captures/stores, credits shared with Japan). Registration approval, not FID or credit issuance yet (commitment_status announced)."
+  },
+  {
+    "id": "2026-08-31#05",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Indonesia positions itself as an Asia-Pacific CCS hub, flagging up to US$43bn of investment potential",
+    "summary": "Coverage from the 4th International & Indonesia CCS Forum framed Indonesia as an emerging regional CCS hub, with the Indonesia CCS Center and Pertamina Hulu Energi pitching a cross-border storage build-out that could attract up to ~US$43bn of investment, create ~170,000 jobs/yr and lift GDP by ~0.8-1%, leveraging national storage potential above 400 Gt.",
+    "source": "Ecobiz Asia / Indonesia Business Post",
+    "pub_date": "2026-08-28",
+    "url": "https://ecobiz.asia/indonesia-eyes-regional-ccs-hub-sees-43-billion-investment-potential/",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Indonesia CCS Center",
+      "Pertamina Hulu Energi"
+    ],
+    "org_types": [
+      "industry-body",
+      "NOC"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Indonesia is Australia's most direct competitor and potential collaborator for storage-constrained Asian CO2 (Japan, South Korea, Singapore); its hub economics reset the regional benchmark.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "US$43bn is a projected economy-wide investment potential (market-aggregate), not a discrete committed sum, so amount is null and commitment_status na per golden rules. 400 Gt is a national storage resource."
+  },
+  {
+    "id": "2026-08-31#06",
+    "briefing_date": "2026-08-31",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Oil & gas companies remain the key adopters of CCUS despite project-delivery challenges - GlobalData",
+    "summary": "A GlobalData analysis finds >70% of operational and upcoming capture facilities (by count) are tied to energy assets as of June 2026, with oil-and-gas players still driving CCUS around LNG, refining, hydrogen and upstream; the operational base is ~140 projects and ~62 Mtpa cumulative capacity, most future capacity stuck at feasibility/FEED, with shared pipelines, shipping and storage hubs flagged as the critical unlock.",
+    "source": "GlobalData",
+    "pub_date": "2026-08-28",
+    "url": "https://www.globaldata.com/media/oil-gas/oil-and-gas-companies-remain-key-adopters-of-ccus-despite-project-delivery-challenges-says-globaldata/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "GlobalData"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Global read on where the CCS pipeline is actually converting from FEED to construction — useful context for benchmarking Australian projects against the worldwide operational base.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "62 Mtpa is the global cumulative operational capacity (market-aggregate/cumulative), not a discrete new event capacity, so capacity_mtpa and amount left null per golden rules. Analyst report (commitment_status na)."
+  }
+]
