@@ -22,7 +22,7 @@
     "raw_url": "https://carboncredits.com/japan-3-43m-ton-co2-shipping-hub-ccs/",
     "headline": "Japan Advances Maritime CCS Hub to Ship 3.43M Tons of CO2 a Year - CarbonCredits.com",
     "source_domain": "carboncredits.com",
-    "publication_date": "2026-08-27T23:57:20+00:00",
+    "publication_date": "2026-08-28T22:33:58+00:00",
     "fuzzy_key": "43m,advances,carboncredits,ccs,co2,com,hub,japan,maritime,ship,tons,year",
     "found_via": "google_alerts"
   },
@@ -33,6 +33,15 @@
     "source_domain": "carbonherald.com",
     "publication_date": "2026-08-28T15:45:58+00:00",
     "fuzzy_key": "capture,carbon,contract,de,first,jan,north,nul,pipeline,sea,secures,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://cyprusshippingnews.com/2026/08/28/oil-and-gas-companies-remain-key-adopters-of-ccus-despite-project-delivery-challenges-says-globaldata",
+    "raw_url": "https://cyprusshippingnews.com/2026/08/28/oil-and-gas-companies-remain-key-adopters-of-ccus-despite-project-delivery-challenges-says-globaldata/",
+    "headline": "Oil and gas companies remain key adopters of CCUS despite project delivery challenges ...",
+    "source_domain": "cyprusshippingnews.com",
+    "publication_date": "2026-08-28T18:40:04+00:00",
+    "fuzzy_key": "adopters,ccus,challenges,companies,delivery,despite,gas,key,oil,project,remain",
     "found_via": "google_alerts"
   },
   {
@@ -94,7 +103,7 @@
     "raw_url": "https://www.gasworld.com/story/jan-de-nul-enters-north-sea-ccs-market/2258309.article/",
     "headline": "Jan De Nul enters North Sea CCS market | Carbon Capture - gasworld",
     "source_domain": "gasworld.com",
-    "publication_date": "2026-08-28T11:21:39+00:00",
+    "publication_date": "2026-08-28T18:40:04+00:00",
     "fuzzy_key": "capture,carbon,ccs,de,enters,gasworld,jan,market,north,nul,sea",
     "found_via": "google_alerts"
   },
