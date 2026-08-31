@@ -1,0 +1,33 @@
+[
+  {
+    "id": "2026-09-01#01",
+    "briefing_date": "2026-09-01",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "China's CCUS target sets 'credible benchmark' for oil and gas sector, says think tank",
+    "summary": "Analysts and the Global CCS Institute characterise China's first quantified national CCUS objective — set out in the 15th Five-Year Plan for the oil and gas sector — as a constructive, credible policy benchmark, while cautioning that wider deployment will hinge on supporting policy, infrastructure and commercial frameworks.",
+    "source": "Upstream",
+    "pub_date": "2026-08-31",
+    "url": "https://www.upstreamonline.com/carbon-capture/china-s-ccus-target-sets-credible-benchmark-for-oil-and-gas-sector-says-think-tank/2-1-2034170",
+    "region": "China",
+    "countries": ["China"],
+    "organisations": ["Global CCS Institute", "CNPC"],
+    "org_types": ["industry-body", "NOC"],
+    "instrument_type": "policy",
+    "value_chain": ["whole-chain"],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "China setting its first quantified national CCUS target is a macro demand signal and a competitive/benchmarking reference point for Australia's own CCS ambitions in the Asia-Pacific.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Policy-signal item; no discrete figure cited in-window, so amount and capacity left null per no-fabrication rule."
+  }
+]
