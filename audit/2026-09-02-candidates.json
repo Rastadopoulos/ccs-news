@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article/",
+    "canonical_url": "https://gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article",
+    "fuzzy_key": "co2,deepstar,jfe,pipeline,project,selected,steel",
+    "source_domain": "gasworld.com",
+    "headline": "JFE Steel selected for DeepStar CO2 pipeline project",
+    "publication_date": "2026-09-01T13:49:21+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://news.mesteel.com/jfe-steel-selected-for-co2-transport-pipeline-rd-project/",
+    "canonical_url": "https://mesteel.com/jfe-steel-selected-for-co2-transport-pipeline-rd-project",
+    "fuzzy_key": "co2,jfe,pipeline,project,rd,selected,steel,transport",
+    "source_domain": "mesteel.com",
+    "headline": "JFE Steel selected for CO2 transport pipeline R&D project",
+    "publication_date": null,
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.law360.com/articles/2518716/texas-court-sends-oxy-carbon-capture-claims-to-arbitration",
+    "canonical_url": "https://law360.com/articles/2518716/texas-court-sends-oxy-carbon-capture-claims-to-arbitration",
+    "fuzzy_key": "arbitration,capture,carbon,claims,court,oxy,sends,texas",
+    "source_domain": "law360.com",
+    "headline": "Texas Court Sends Oxy Carbon Capture Claims To Arbitration",
+    "publication_date": "2026-09-01T03:21:31+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.hunton.com/the-nickel-report/navigating-challenges-to-class-vi-permits-before-the-epa-environmental-appeals-board",
+    "canonical_url": "https://hunton.com/the-nickel-report/navigating-challenges-to-class-vi-permits-before-the-epa-environmental-appeals-board",
+    "fuzzy_key": "appeals,before,board,challenges,class,environmental,epa,navigating,permits,vi",
+    "source_domain": "hunton.com",
+    "headline": "Navigating Challenges to Class VI Permits Before the EPA Environmental Appeals Board",
+    "publication_date": "2026-09-01T01:16:30+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "round_up_retrospective",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://safety4sea.com/lr-can-onboard-carbon-capture-bridge-the-gap-to-maritime-net-zero/",
+    "canonical_url": "https://safety4sea.com/lr-can-onboard-carbon-capture-bridge-the-gap-to-maritime-net-zero",
+    "fuzzy_key": "bridge,can,capture,carbon,gap,lr,maritime,net,onboard,zero",
+    "source_domain": "safety4sea.com",
+    "headline": "LR: Can onboard carbon capture bridge the gap to maritime net zero?",
+    "publication_date": "2026-09-01T03:30:02+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "off_topic",
+    "found_via": "google_alerts"
+  }
+]
