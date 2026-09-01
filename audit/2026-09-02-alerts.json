@@ -1,5 +1,50 @@
 [
   {
+    "canonical_url": "https://carboncapturejournal.com/news/inpex-begins-co2-injection-at-kashiwazaki-hydrogen-park/7399.aspx?Category=all",
+    "raw_url": "https://www.carboncapturejournal.com/news/inpex-begins-co2-injection-at-kashiwazaki-hydrogen-park/7399.aspx?Category=all",
+    "headline": "INPEX begins CO2 injection at Kashiwazaki Hydrogen Park - Carbon Capture Journal",
+    "source_domain": "carboncapturejournal.com",
+    "publication_date": "2026-09-01T21:47:06+00:00",
+    "fuzzy_key": "begins,capture,carbon,co2,hydrogen,injection,inpex,journal,kashiwazaki,park",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carboncredits.com/cf-industries-jera-and-mitsui-break-ground-on-3-7-billion-low-carbon-ammonia-plant-in-louisiana",
+    "raw_url": "https://carboncredits.com/cf-industries-jera-and-mitsui-break-ground-on-3-7-billion-low-carbon-ammonia-plant-in-louisiana/",
+    "headline": "CF Industries, JERA and Mitsui Break Ground on $3.7 Billion Low-Carbon Ammonia Plant in ...",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-09-01T17:27:12+00:00",
+    "fuzzy_key": "ammonia,billion,break,carbon,cf,ground,industries,jera,low,mitsui,plant",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/exclusive-avnos-launches-hybrid-dac-operations-at-project-brighton",
+    "raw_url": "https://carbonherald.com/exclusive-avnos-launches-hybrid-dac-operations-at-project-brighton/",
+    "headline": "Exclusive: Avnos Launches Hybrid DAC Operations At Project Brighton - Carbon Herald",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-09-01T19:56:46+00:00",
+    "fuzzy_key": "avnos,brighton,carbon,dac,exclusive,herald,hybrid,launches,operations,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/michigan-introduces-legislation-to-establish-state-carbon-capture-framework",
+    "raw_url": "https://carbonherald.com/michigan-introduces-legislation-to-establish-state-carbon-capture-framework/",
+    "headline": "Michigan Introduces Legislation To Establish State Carbon Capture Framework",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-09-01T17:27:12+00:00",
+    "fuzzy_key": "capture,carbon,establish,framework,introduces,legislation,michigan,state",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article",
+    "raw_url": "https://www.gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article/",
+    "headline": "JFE Steel selected for DeepStar CO2 pipeline project | Carbon Dioxide - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-09-01T13:49:21+00:00",
+    "fuzzy_key": "carbon,co2,deepstar,dioxide,gasworld,jfe,pipeline,project,selected,steel",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://hunton.com/the-nickel-report/navigating-challenges-to-class-vi-permits-before-the-epa-environmental-appeals-board",
     "raw_url": "https://www.hunton.com/the-nickel-report/navigating-challenges-to-class-vi-permits-before-the-epa-environmental-appeals-board",
     "headline": "Navigating Challenges to Class VI Permits Before the EPA Environmental Appeals Board",
@@ -18,21 +63,21 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://asia.nikkei.com/business/technology/japan-s-jfe-engineering-to-use-nobel-winning-material-for-carbon-capture",
+    "raw_url": "https://asia.nikkei.com/business/technology/japan-s-jfe-engineering-to-use-nobel-winning-material-for-carbon-capture",
+    "headline": "Japan's JFE Engineering to use Nobel-winning material for carbon capture - Nikkei Asia",
+    "source_domain": "nikkei.com",
+    "publication_date": "2026-09-01T19:55:42+00:00",
+    "fuzzy_key": "asia,capture,carbon,engineering,japan,jfe,material,nikkei,nobel,use,winning",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://safety4sea.com/lr-can-onboard-carbon-capture-bridge-the-gap-to-maritime-net-zero",
     "raw_url": "https://safety4sea.com/lr-can-onboard-carbon-capture-bridge-the-gap-to-maritime-net-zero/",
     "headline": "LR: Can onboard carbon capture bridge the gap to maritime net zero? - SAFETY4SEA",
     "source_domain": "safety4sea.com",
     "publication_date": "2026-09-01T03:30:02+00:00",
     "fuzzy_key": "bridge,can,capture,carbon,gap,lr,maritime,net,onboard,safety4sea,zero",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article",
-    "raw_url": "https://www.gasworld.com/story/jfe-steel-selected-for-deepstar-co2-pipeline-project/2258546.article/",
-    "headline": "JFE Steel selected for DeepStar CO2 pipeline project | Carbon Dioxide - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-09-01T13:49:21+00:00",
-    "fuzzy_key": "carbon,co2,deepstar,dioxide,gasworld,jfe,pipeline,project,selected,steel",
     "found_via": "google_alerts"
   }
 ]
