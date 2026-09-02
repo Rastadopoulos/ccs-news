@@ -1,0 +1,170 @@
+[
+  {
+    "id": "2026-09-03#01",
+    "briefing_date": "2026-09-03",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "UK's Northern Endurance Partnership begins offshore pipelaying as Saipem's Castorone arrives on site",
+    "summary": "Saipem's 325 m pipelay vessel Castorone has begun laying the ~145 km offshore pipeline linking Teesside emitters to the Endurance saline aquifer in the Southern North Sea; the T&S network is designed for ~4 Mtpa from 2027-28 with storage from 2028 and up to 100 Mt over the initial 25-year phase.",
+    "source": "Offshore Energy",
+    "pub_date": "2026-09-02",
+    "url": "https://www.offshore-energy.biz/uks-first-offshore-ccs-project-enters-construction-as-huge-pipelayer-arrives-on-site/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Northern Endurance Partnership",
+      "Saipem",
+      "bp",
+      "Equinor",
+      "TotalEnergies"
+    ],
+    "org_types": [
+      "developer",
+      "other",
+      "OG-major",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": 4,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "UK's first offshore CCS transport-and-storage network moving into offshore installation is a live delivery benchmark for Australia's offshore-storage ambitions (Bonaparte, Browse, CarbonNet).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Page-fetch blocked by egress proxy; date (2 Sep 2026) confirmed via multiple corroborating sources and URL date-path, not read on-page."
+  },
+  {
+    "id": "2026-09-03#02",
+    "briefing_date": "2026-09-03",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "Climate Change Authority warns reliance on short-term carbon credits threatens Australia's long-term targets",
+    "summary": "The CCA cautioned that Australia's largest emitters increasingly rely on abatement projects lasting only ~25 years, making long-term climate goals harder to reach - tightening scrutiny of offset-based abatement.",
+    "source": "Crikey",
+    "pub_date": "2026-09-01",
+    "url": "https://www.crikey.com.au/2026/09/01/climate-change-authority-short-term-carbon-credits-accus/",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Climate Change Authority"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Signals tightening scrutiny of short-lived offsets in Australia - indirectly reinforces the value proposition of durable geological storage.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar near-miss (pub 1 Sep, outside 2-3 Sep window)."
+  },
+  {
+    "id": "2026-09-03#03",
+    "briefing_date": "2026-09-03",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Avnos launches hybrid DAC operations at Project Brighton",
+    "summary": "Avnos began operations at its hybrid direct-air-capture facility, Project Brighton, a design that co-produces water alongside captured CO2.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-01",
+    "url": "https://carbonherald.com/exclusive-avnos-launches-hybrid-dac-operations-at-project-brighton/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Avnos"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "DAC",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Watch item for DAC cost and water-cobenefit trajectory.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar near-miss (pub 1 Sep, outside 2-3 Sep window)."
+  },
+  {
+    "id": "2026-09-03#04",
+    "briefing_date": "2026-09-03",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "Michigan introduces legislation to establish a state carbon-capture framework",
+    "summary": "Michigan lawmakers introduced a bill to set up a state-level CCS regulatory framework, extending the North American state-by-state build-out of storage rules and primacy.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-01",
+    "url": "https://carbonherald.com/michigan-introduces-legislation-to-establish-state-carbon-capture-framework/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "State of Michigan"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Incremental read on North American state-level CCS regulatory build-out.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar near-miss (pub 1 Sep, outside 2-3 Sep window)."
+  }
+]
