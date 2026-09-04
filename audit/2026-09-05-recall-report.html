@@ -1,0 +1,114 @@
+<!doctype html><html><head><meta charset='utf-8'><title>CCS recall audit — week ending 2026-09-05 — pooled recall 14%</title><style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;color:#222;line-height:1.5;font-size:16px}h1{font-size:22px}h2{font-size:17px;margin-top:24px}table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #ddd;padding:6px 10px;text-align:left;font-size:14px}th{background:#f4f4f4}a{color:#0a4}@media print{a{color:#000;text-decoration:none}}</style></head><body><h1>CCS recall audit — week ending 2026-09-05 — pooled recall 14%</h1>
+<h2>Headline metrics</h2>
+<ul>
+<li><strong>Pooled recall</strong> (A ∩ U / U): <strong>14%</strong>  (10 of 74)</li>
+<li><strong>Precision</strong> (adjudicated relevant items / production items): <strong>100%</strong></li>
+<li><strong>Decision-relevant recall</strong>: <strong>14%</strong></li>
+<li><strong>Adjudicated high-priority floor recall</strong> (A ∩ B★ / B★): <strong>7%</strong>  (2 of 30)</li>
+<li><strong>Experimental Chapman diagnostic</strong> (median of 2 pair-estimates): <strong>13%</strong> — not an authoritative absolute-recall estimate</li>
+</ul>
+<h2>Sampler sizes</h2>
+<table>
+<tr><th>Sampler</th><th>Items</th></tr>
+<tr><td>A · Production routine</td><td>13</td></tr>
+<tr><td>B · RSS floor</td><td>30</td></tr>
+<tr><td>C · Google Alerts</td><td>49</td></tr>
+<tr><td>D · Shadow LLM</td><td>0</td></tr>
+<tr><td>E · Shelly Murrell digest</td><td>0</td></tr>
+<tr><td>F · IEAGHG Weekly News</td><td>0</td></tr>
+<tr><td>A★ · Production, search-only subset (used for Chapman)</td><td>5</td></tr>
+<tr><td><strong>Union U</strong></td><td><strong>74</strong></td></tr>
+</table>
+<p>_7 junk domains excluded from all samplers (config/junk_domains.txt)._</p>
+<h2>Sampler run coverage</h2>
+<table>
+<tr><th>Sampler</th><th>Ran (5 weekdays)</th><th>Missing</th></tr>
+<tr><td>B · RSS floor</td><td>5/5</td><td>—</td></tr>
+<tr><td>A · Production routine</td><td>5/5</td><td>—</td></tr>
+<tr><td>D · Shadow LLM</td><td>5/5</td><td>—</td></tr>
+<tr><td>C · Google Alerts</td><td>5/5</td><td>—</td></tr>
+</table>
+<p><em>Public holidays are legitimate skips and still show as missing here.</em></p>
+<h2>Experimental Chapman pair-estimates</h2>
+<p><em>Capture side restricted to A★ (search-only, 5 items) — full A ingests the RSS floor and Google Alerts feeds, so it is not independent of samplers B/C.</em></p>
+<p><em>Diagnostic only: sampler independence and equal catchability are violated, so this must not be read as authoritative absolute recall.</em></p>
+<table>
+<tr><th>Pair</th><th>Overlap</th><th>Estimated N</th></tr>
+<tr><td>A★ × B (RSS floor)</td><td>2</td><td>61</td></tr>
+<tr><td>A★ × C (Google Alerts)</td><td>2</td><td>99</td></tr>
+</table>
+<h2>Top missed items (64 total)</h2>
+<h2>Recall by geography</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>Unclassified</td><td>74</td><td>10</td><td>14%</td></tr>
+</table>
+<h2>Recall by source class</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>media/newsletter</td><td>72</td><td>10</td><td>14%</td></tr>
+<tr><td>primary/official</td><td>2</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Recall by content type</h2>
+<table>
+<tr><th>Group</th><th>Adjudicated relevant</th><th>Captured</th><th>Recall</th></tr>
+<tr><td>unclassified</td><td>74</td><td>10</td><td>14%</td></tr>
+</table>
+<ul>
+<li><strong>Avnos’ Largest Hybrid Direct Air Capture Deployment Enters Operations - 01net</strong> — 01net.it · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQRzdGUTBnZFpVTjVrUUZ4eEprdHp0VUp3T1ZyaXB2a1NUdlE1NzZwRHB2dV84ZnhaSmhEUFFqNGNfbTRsTWVNVDJGZTEtYl9PUVp0Wno1Uk1keGtwQzhaUnpncG1KMUVheFpJdUNGSDR1OS0xdExPcUFFNTloZ1ZNNkZ5blhOZ0c1N3JUbVlBMW9hclNB?oc=5">link</a></li>
+<li><strong>Climate authority questions viability of short-term carbon credits - AFR</strong> — afr.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNmM4RGM4TjlYR2lKempjZUhfWVpmLTNVQTR6WnN3b0UwQ0lFcTNBbnhiUjAxRjBOLUJFb2J5d2dMOS00RHpMQU5nZHpub1hiOVR1OENBUWdjOHVZNlktM3FtXzBVMG04NGk2T081MjBGbXk5a0lKbHM3NUl4OHBCZnVJUjZCbnI1WGZFWlhpQ2NfUzNaeWVCUGFVU3FvTGRyUkhvUVNkemNpcUtTRjRDVnByc0lEMktBZ25Z?oc=5">link</a></li>
+<li><strong>Pertamina Eyes Regional CCS Hub Role - AsiaToday.id</strong> — asiatoday.id · found via <em>C</em> · <a href="https://asiatoday.id/read/pertamina-eyes-regional-ccs-hub-role">link</a></li>
+<li><strong>EU should start securing international carbon credits well before 2036, researchers say</strong> — carbon-pulse.com · found via <em>C</em> · <a href="https://carbon-pulse.com/545908/?site=cpp">link</a></li>
+<li><strong>Carbon Capture Journal - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNHp3b09uWEt0S2NlRGdydVkxWHpDYjFLWUV1WklLM2wtajlXRFFEMVNuR3pualIxZ1ktZ21aR3NMQUVfOThObGlweC0wZlJXNkdJV3FtNXFNVkV4R3hGU3czaXpqLVVJZ1BhRi1OaDh3dm1lV2EzakVuVF9Bb2ZON2lkeU1iVUxEQ0RoSGhFMEJXTFZsRU84WXlOQk5CdXZza1BacDZmRE5qXzRDZ0dEV19VSmFoSkJESmgzaGc3TTQtWkxPem1XOURuZ3ZrbFBzRUtYRnVR?oc=5">link</a></li>
+<li><strong>INPEX begins CO2 injection at Kashiwazaki Hydrogen Park - Carbon Capture Journal</strong> — carboncapturejournal.com · found via <em>C</em> · <a href="https://www.carboncapturejournal.com/news/inpex-begins-co2-injection-at-kashiwazaki-hydrogen-park/7399.aspx?Category=all">link</a></li>
+<li><strong>LR: Applying Onboard Carbon Capture and Storage to Ships - carboncapturejournal.com</strong> — carboncapturejournal.com · found via <em>B</em> · <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNa0I4QTVYOEQtTjVSQkF0VDZRQm5wWHo2R09FQjNLbnRvMExJNlhKNE5VNzRyUVR6d3ZBRS00YldCNUxpZ3cteXMweHpSYjFjbl9NWVZLNDdDRE1JcEdxVC13V3JacG02T1pwR2VtMjhMeFpkYmNWYWkxZ0xsRVJzQnpsYmVEaTdHSFBuNmFZZFQxRVVGMEVaQ3VoaDhtcm5aYzJmS0EtakVicGpCN0pNSWNvUVdlSlZYOHlmTA?oc=5">link</a></li>
+<li><strong>CF Industries, JERA and Mitsui Break Ground on $3.7 Billion Low-Carbon Ammonia Plant in ...</strong> — carboncredits.com · found via <em>C</em> · <a href="https://carboncredits.com/cf-industries-jera-and-mitsui-break-ground-on-3-7-billion-low-carbon-ammonia-plant-in-louisiana/">link</a></li>
+<li><strong>Japan Advances Maritime CCS Hub to Ship 3.43M Tons of CO2 a Year - CarbonCredits.com</strong> — carboncredits.com · found via <em>C</em> · <a href="https://carboncredits.com/japan-3-43m-ton-co2-shipping-hub-ccs/">link</a></li>
+<li><strong>Alberta Allocates $20M To Scale Hydrogen And Carbon Capture</strong> — carbonherald.com · found via <em>B</em> · <a href="https://carbonherald.com/alberta-allocates-20m-to-scale-hydrogen-and-carbon-capture/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=alberta-allocates-20m-to-scale-hydrogen-and-carbon-capture">link</a></li>
+</ul>
+<h2>Source-coverage matrix</h2>
+<table>
+<tr><th>Source</th><th>Published (B+C+D+E)</th><th>Captured by A</th><th>Capture rate</th></tr>
+<tr><td>carbonherald.com</td><td>17</td><td>2</td><td>12%</td></tr>
+<tr><td>gasworld.com</td><td>5</td><td>1</td><td>20%</td></tr>
+<tr><td>petromindo.com</td><td>4</td><td>1</td><td>25%</td></tr>
+<tr><td>carboncapturejournal.com</td><td>3</td><td>0</td><td>0%</td></tr>
+<tr><td>carboncredits.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>ecobiz.asia</td><td>2</td><td>2</td><td>100%</td></tr>
+<tr><td>offshore-energy.biz</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>upstreamonline.com</td><td>2</td><td>0</td><td>0%</td></tr>
+<tr><td>01net.it</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>afr.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>asiatoday.id</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>carbon-pulse.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>ccsassociation.org</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>crikey.com.au</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>cyprusshippingnews.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>endswasteandbioenergy.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>energynewsbulletin.net</td><td>1</td><td>1</td><td>100%</td></tr>
+<tr><td>energyvoice.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>esgnews.earth</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>europa.eu</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>fuelcellsworks.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>fxempire.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>globo.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>hellenicshippingnews.com</td><td>1</td><td>0</td><td>0%</td></tr>
+<tr><td>hklaw.com</td><td>1</td><td>0</td><td>0%</td></tr>
+</table>
+<h2>Drift — last 12 weeks</h2>
+<table>
+<tr><th>Week ending</th><th>Pooled recall</th><th>Floor recall</th></tr>
+<tr><td>2026-06-06</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-06-13</td><td>7%</td><td>2%</td></tr>
+<tr><td>2026-06-20</td><td>14%</td><td>0%</td></tr>
+<tr><td>2026-06-27</td><td>12%</td><td>2%</td></tr>
+<tr><td>2026-07-04</td><td>19%</td><td>11%</td></tr>
+<tr><td>2026-07-11</td><td>6%</td><td>3%</td></tr>
+<tr><td>2026-07-18</td><td>18%</td><td>5%</td></tr>
+<tr><td>2026-07-25</td><td>11%</td><td>10%</td></tr>
+<tr><td>2026-08-01</td><td>13%</td><td>0%</td></tr>
+<tr><td>2026-08-22</td><td>22%</td><td>13%</td></tr>
+<tr><td>2026-08-29</td><td>12%</td><td>0%</td></tr>
+<tr><td>2026-09-05</td><td>14%</td><td>7%</td></tr>
+</table>
+<p><em>— Auto-audit</em></p><p style='color:#888;font-size:12px'>Generated 2026-09-05T09:46:02.121777+10:00</p></body></html>
