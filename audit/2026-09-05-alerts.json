@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://carbonherald.com/offshore-heavyweight-castorone-arrives-in-north-sea-to-lay-crucial-co2-pipeline",
+    "raw_url": "https://carbonherald.com/offshore-heavyweight-castorone-arrives-in-north-sea-to-lay-crucial-co2-pipeline/",
+    "headline": "Offshore Heavyweight Castorone Arrives In North Sea To Lay Crucial CO2 Pipeline",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-09-04T01:39:43+00:00",
+    "fuzzy_key": "arrives,castorone,co2,crucial,heavyweight,lay,north,offshore,pipeline,sea",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://cyprusshippingnews.com/2026/09/03/onboard-carbon-capture-offers-a-practical-co2-emissions-reduction-pathway-for-shippings-global-fleet",
     "raw_url": "https://cyprusshippingnews.com/2026/09/03/onboard-carbon-capture-offers-a-practical-co2-emissions-reduction-pathway-for-shippings-global-fleet/",
     "headline": "Onboard carbon capture offers a practical CO2 emissions reduction pathway for shipping's ...",
@@ -9,12 +18,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/offshore-heavyweight-castorone-arrives-in-north-sea-to-lay-crucial-co2-pipeline",
-    "raw_url": "https://carbonherald.com/offshore-heavyweight-castorone-arrives-in-north-sea-to-lay-crucial-co2-pipeline/",
-    "headline": "Offshore Heavyweight Castorone Arrives In North Sea To Lay Crucial CO2 Pipeline",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-09-04T01:39:43+00:00",
-    "fuzzy_key": "arrives,castorone,co2,crucial,heavyweight,lay,north,offshore,pipeline,sea",
+    "canonical_url": "https://endswasteandbioenergy.com/article/1969237/pipeline-work-begins-teesside-ccs-project",
+    "raw_url": "https://www.endswasteandbioenergy.com/article/1969237/pipeline-work-begins-teesside-ccs-project",
+    "headline": "Pipeline work begins for Teesside CCS project - ENDS Waste & Bioenergy",
+    "source_domain": "endswasteandbioenergy.com",
+    "publication_date": "2026-09-04T19:13:50+00:00",
+    "fuzzy_key": "begins,bioenergy,ccs,ends,pipeline,project,teesside,waste,work",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/603411/north-of-england-dominates-ccsa-carbon-capture-awards-shortlist",
+    "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/603411/north-of-england-dominates-ccsa-carbon-capture-awards-shortlist/",
+    "headline": "North of England dominates CCSA carbon capture awards shortlist - Energy Voice",
+    "source_domain": "energyvoice.com",
+    "publication_date": "2026-09-04T03:48:56+00:00",
+    "fuzzy_key": "awards,capture,carbon,ccsa,dominates,energy,england,north,shortlist,voice",
     "found_via": "google_alerts"
   },
   {
@@ -36,30 +54,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/603411/north-of-england-dominates-ccsa-carbon-capture-awards-shortlist",
-    "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/603411/north-of-england-dominates-ccsa-carbon-capture-awards-shortlist/",
-    "headline": "North of England dominates CCSA carbon capture awards shortlist - Energy Voice",
-    "source_domain": "energyvoice.com",
-    "publication_date": "2026-09-04T03:48:56+00:00",
-    "fuzzy_key": "awards,capture,carbon,ccsa,dominates,energy,england,north,shortlist,voice",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://upstreamonline.com/carbon-capture/-1-6-billion-north-dakota-carbon-capture-project-revived-after-state-loans/2-1-2039109",
     "raw_url": "https://www.upstreamonline.com/carbon-capture/-1-6-billion-north-dakota-carbon-capture-project-revived-after-state-loans/2-1-2039109",
     "headline": "$1.6 billion North Dakota carbon capture project revived after state loans - Upstream Online",
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-09-04T13:27:22+00:00",
     "fuzzy_key": "after,billion,capture,carbon,dakota,loans,north,online,project,revived,state,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://endswasteandbioenergy.com/article/1969237/pipeline-work-begins-teesside-ccs-project",
-    "raw_url": "https://www.endswasteandbioenergy.com/article/1969237/pipeline-work-begins-teesside-ccs-project",
-    "headline": "Pipeline work begins for Teesside CCS project - ENDS Waste & Bioenergy",
-    "source_domain": "endswasteandbioenergy.com",
-    "publication_date": "2026-09-04T19:13:50+00:00",
-    "fuzzy_key": "begins,bioenergy,ccs,ends,pipeline,project,teesside,waste,work",
     "found_via": "google_alerts"
   }
 ]
