@@ -1,29 +1,11 @@
 [
   {
-    "canonical_url": "https://tipranks.com/news/private-companies/svante-highlights-role-in-carbon-capture-and-direct-air-capture-markets",
-    "raw_url": "https://www.tipranks.com/news/private-companies/svante-highlights-role-in-carbon-capture-and-direct-air-capture-markets",
-    "headline": "Svante Highlights Role in Carbon Capture and Direct Air Capture Markets - TipRanks.com",
-    "source_domain": "tipranks.com",
-    "publication_date": "2026-09-07T02:38:49+00:00",
-    "fuzzy_key": "air,capture,carbon,com,direct,highlights,markets,role,svante,tipranks",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://facebook.com/groups/849994733672039/posts/1471429804861859",
-    "raw_url": "https://www.facebook.com/groups/849994733672039/posts/1471429804861859/",
-    "headline": "Carbon Capture & Storage — Norway - Facebook",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-09-07T09:16:33+00:00",
-    "fuzzy_key": "capture,carbon,facebook,norway,storage",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://petromindo.com/news/article/analysis-indonesia-s-ccs-pipeline-grows-but-investment-stalls",
-    "raw_url": "https://www.petromindo.com/news/article/analysis-indonesia-s-ccs-pipeline-grows-but-investment-stalls",
-    "headline": "Analysis: Indonesia's CCS pipeline grows, but investment stalls - Petromindo",
-    "source_domain": "petromindo.com",
-    "publication_date": "2026-09-07T14:50:12+00:00",
-    "fuzzy_key": "analysis,ccs,grows,indonesia,investment,petromindo,pipeline,stalls",
+    "canonical_url": "https://breakingthenews.net/Article/Europe's-largest-carbon-capture-plant-opens/67056939",
+    "raw_url": "https://breakingthenews.net/Article/Europe's-largest-carbon-capture-plant-opens/67056939",
+    "headline": "Europe's largest carbon capture plant opens - Breakingthenews.net",
+    "source_domain": "breakingthenews.net",
+    "publication_date": "2026-09-07T22:29:33+00:00",
+    "fuzzy_key": "breakingthenews,capture,carbon,europe,largest,net,opens,plant",
     "found_via": "google_alerts"
   },
   {
@@ -36,12 +18,66 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://facebook.com/groups/849994733672039/posts/1471429804861859",
+    "raw_url": "https://www.facebook.com/groups/849994733672039/posts/1471429804861859/",
+    "headline": "Carbon Capture & Storage — Norway - Facebook",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-09-07T09:16:33+00:00",
+    "fuzzy_key": "capture,carbon,facebook,norway,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ground.news/article/carbon-capture-tech-exists-scaling-it-up-is-the-hard-part_e0510c",
+    "raw_url": "https://ground.news/article/carbon-capture-tech-exists-scaling-it-up-is-the-hard-part_e0510c",
+    "headline": "Carbon Capture Tech Exists. Scaling It up Is the Hard Part - Ground News",
+    "source_domain": "ground.news",
+    "publication_date": "2026-09-07T16:45:27+00:00",
+    "fuzzy_key": "capture,carbon,exists,ground,hard,news,part,scaling,tech,up",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://mondaq.com/unitedstates/corporate-tax/1839584/treasury-department-expands-and-extends-section-45q-carbon-capture-safe-harbor",
+    "raw_url": "https://www.mondaq.com/unitedstates/corporate-tax/1839584/treasury-department-expands-and-extends-section-45q-carbon-capture-safe-harbor",
+    "headline": "Treasury Department Expands And Extends Section 45Q Carbon Capture Safe Harbor - Mondaq",
+    "source_domain": "mondaq.com",
+    "publication_date": "2026-09-07T16:45:27+00:00",
+    "fuzzy_key": "45q,capture,carbon,department,expands,extends,harbor,mondaq,safe,section,treasury",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://oedigital.com/news/542773-europe-s-largest-industrial-carbon-capture-facility-opens-in-netherlands",
     "raw_url": "https://www.oedigital.com/news/542773-europe-s-largest-industrial-carbon-capture-facility-opens-in-netherlands",
     "headline": "Europe's Largest Industrial Carbon Capture Facility Opens in Netherlands",
     "source_domain": "oedigital.com",
     "publication_date": "2026-09-07T14:50:12+00:00",
     "fuzzy_key": "capture,carbon,europe,facility,industrial,largest,netherlands,opens",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://petromindo.com/news/article/analysis-indonesia-s-ccs-pipeline-grows-but-investment-stalls",
+    "raw_url": "https://www.petromindo.com/news/article/analysis-indonesia-s-ccs-pipeline-grows-but-investment-stalls",
+    "headline": "Analysis: Indonesia's CCS pipeline grows, but investment stalls - Petromindo",
+    "source_domain": "petromindo.com",
+    "publication_date": "2026-09-07T14:50:12+00:00",
+    "fuzzy_key": "analysis,ccs,grows,indonesia,investment,petromindo,pipeline,stalls",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://reuters.com/sustainability/cop/europes-largest-carbon-capture-facility-opens-netherlands-2026-09-07",
+    "raw_url": "https://www.reuters.com/sustainability/cop/europes-largest-carbon-capture-facility-opens-netherlands-2026-09-07/",
+    "headline": "Europe's largest carbon capture facility opens in Netherlands - Reuters",
+    "source_domain": "reuters.com",
+    "publication_date": "2026-09-07T16:45:27+00:00",
+    "fuzzy_key": "capture,carbon,europe,facility,largest,netherlands,opens,reuters",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/svante-highlights-role-in-carbon-capture-and-direct-air-capture-markets",
+    "raw_url": "https://www.tipranks.com/news/private-companies/svante-highlights-role-in-carbon-capture-and-direct-air-capture-markets",
+    "headline": "Svante Highlights Role in Carbon Capture and Direct Air Capture Markets - TipRanks.com",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-09-07T02:38:49+00:00",
+    "fuzzy_key": "air,capture,carbon,com,direct,highlights,markets,role,svante,tipranks",
     "found_via": "google_alerts"
   }
 ]
