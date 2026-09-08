@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://chemanalyst.com/NewsAndDeals/NewsDetails/sinopec-launches-global-ccus-cooperation-44311",
+    "raw_url": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/sinopec-launches-global-ccus-cooperation-44311",
+    "headline": "Sinopec Launches Global CCUS Cooperation Initiative - ChemAnalyst",
+    "source_domain": "chemanalyst.com",
+    "publication_date": "2026-09-08T02:25:43+00:00",
+    "fuzzy_key": "ccus,chemanalyst,cooperation,global,initiative,launches,sinopec",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://esgnews.com/europes-largest-ccs-facility-targets-12m-tons",
     "raw_url": "https://esgnews.com/europes-largest-ccs-facility-targets-12m-tons/",
     "headline": "Europe's Largest CCS Facility Targets 12M Tons - ESG News",
@@ -24,6 +33,15 @@
     "source_domain": "facebook.com",
     "publication_date": "2026-09-07T09:16:33+00:00",
     "fuzzy_key": "capture,carbon,facebook,norway,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/sinopec-and-partners-launch-global-ccus-initiative/2258991.article",
+    "raw_url": "https://www.gasworld.com/story/sinopec-and-partners-launch-global-ccus-initiative/2258991.article/",
+    "headline": "Sinopec and partners launch global CCUS initiative | Carbon Capture - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-09-08T02:25:43+00:00",
+    "fuzzy_key": "capture,carbon,ccus,gasworld,global,initiative,launch,partners,sinopec",
     "found_via": "google_alerts"
   },
   {
@@ -78,6 +96,33 @@
     "source_domain": "tipranks.com",
     "publication_date": "2026-09-07T02:38:49+00:00",
     "fuzzy_key": "air,capture,carbon,com,direct,highlights,markets,role,svante,tipranks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://au.finance.yahoo.com/news/europes-largest-carbon-capture-facility-092400232.html",
+    "raw_url": "https://au.finance.yahoo.com/news/europes-largest-carbon-capture-facility-092400232.html",
+    "headline": "Europe's largest carbon capture facility officially inaugurated at Yara Sluiskil in the Netherlands",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-09-08T01:17:01+00:00",
+    "fuzzy_key": "capture,carbon,europe,facility,inaugurated,largest,netherlands,officially,sluiskil,yara",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ca.finance.yahoo.com/news/europes-largest-carbon-capture-facility-125759017.html",
+    "raw_url": "https://ca.finance.yahoo.com/news/europes-largest-carbon-capture-facility-125759017.html",
+    "headline": "Europe's largest carbon capture facility opens in Netherlands - Yahoo! Finance Canada",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-09-08T02:25:43+00:00",
+    "fuzzy_key": "canada,capture,carbon,europe,facility,finance,largest,netherlands,opens,yahoo",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://zawya.com/en/press-release/africa-press-releases/african-energy-week-aew-2026-to-explore-how-carbon-capture-and-storage-ccs-can-unlock-new-value-from-africas-oil-and-gas-assets-480909",
+    "raw_url": "https://www.zawya.com/en/press-release/africa-press-releases/african-energy-week-aew-2026-to-explore-how-carbon-capture-and-storage-ccs-can-unlock-new-value-from-africas-oil-and-gas-assets-480909",
+    "headline": "African Energy Week (AEW) 2026 to Explore How Carbon capture and storage (CCS) Can ... - Zawya",
+    "source_domain": "zawya.com",
+    "publication_date": "2026-09-08T01:17:01+00:00",
+    "fuzzy_key": "2026,aew,african,can,capture,carbon,ccs,energy,explore,how,storage,week,zawya",
     "found_via": "google_alerts"
   }
 ]
