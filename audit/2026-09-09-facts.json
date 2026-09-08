@@ -1,0 +1,131 @@
+[
+  {
+    "id": "2026-09-09#01",
+    "briefing_date": "2026-09-09",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Cool Planet Technologies officially opens membrane CO2 capture demonstration plant at Holcim's Höver cement works",
+    "summary": "Cool Planet Technologies held the official opening of its membrane-based CO2 capture demonstration plant at Holcim Germany's Höver cement works in Lower Saxony; the multilayer-polymer-membrane, end-of-pipe unit is sized to capture ~10,000 t/yr of CO2, with the technology aimed at eventually capturing ~90% of the plant's ~500,000 t/yr emissions.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-07",
+    "url": "https://carbonherald.com/cool-planet-officially-opens-carbon-capture-plant-at-holcim-facility/",
+    "region": "Europe-UK",
+    "countries": [
+      "Germany"
+    ],
+    "organisations": [
+      "Cool Planet Technologies",
+      "Holcim",
+      "Helmholtz-Zentrum Hereon"
+    ],
+    "org_types": [
+      "developer",
+      "other",
+      "research"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.01,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Retrofittable membrane capture on hard-to-abate cement flue gas is a lower-cost capture pathway of direct interest to CO2CRC's capture-technology programme.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar (7 Sep, one day outside the 8-9 Sep window). Page-fetch to carbonherald.com blocked by egress proxy; date and details confirmed via corroborating trade coverage (CemNet, Global Cement). Underlying plant was commissioned 21 Aug 2026; this is the official opening event."
+  },
+  {
+    "id": "2026-09-09#02",
+    "briefing_date": "2026-09-09",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Peak Cluster requests Wirral Council land access for surveys on its £5bn CO2 pipeline network",
+    "summary": "The Peak Cluster project formally asked Wirral Council for access to council-owned land to run survey works for its proposed £5bn CCS pipeline network, which would gather CO2 from Derbyshire and Staffordshire cement and lime plants and route it across the Wirral for permanent offshore storage beneath the Irish Sea; the request goes to the council's Policy and Resource Committee amid local and Chester Zoo concerns.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-07",
+    "url": "https://carbonherald.com/peak-cluster-requests-wirral-council-land-access-for-5b-carbon-pipeline-surveys/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Peak Cluster",
+      "Wirral Council",
+      "Chester Zoo"
+    ],
+    "org_types": [
+      "developer",
+      "government",
+      "other"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": 5000000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Illustrates the social-licence and land-access friction of onshore CO2 pipeline routing, relevant to Australian onshore transport planning.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "Radar (7 Sep, one day outside window). £5bn is the stated project-cost scale of the pipeline network, not a new commitment; commitment_status 'announced'. Page-fetch blocked by egress proxy; corroborated by Wirral Today and Chester Standard."
+  },
+  {
+    "id": "2026-09-09#03",
+    "briefing_date": "2026-09-09",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Africa eyes depleted oil and gas reservoirs for carbon storage",
+    "summary": "A World Oil feature, timed to the African Energy Week build-up, surveys how African producers are looking to repurpose depleted oil and gas reservoirs and existing infrastructure as CO2 storage hubs to lower emissions from hydrocarbon production and extend asset life; South Africa (Council for Geoscience/Sasol, the Leandra saline-formation pilot) and Nigeria's emerging carbon-market architecture feature.",
+    "source": "World Oil",
+    "pub_date": "2026-09-07",
+    "url": "https://www.worldoil.com/news/2026/9/7/africa-eyes-depleted-oil-and-gas-reservoirs-for-carbon-storage/",
+    "region": "Africa",
+    "countries": [
+      "South Africa",
+      "Nigeria"
+    ],
+    "organisations": [
+      "Council for Geoscience",
+      "Sasol"
+    ],
+    "org_types": [
+      "research",
+      "OG-major"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Depleted-reservoir storage is CO2CRC's core competency (Otway); Africa emerging as a new storage frontier is a watch item for partnerships and competition.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar (7 Sep, one day outside window). Thematic feature rather than a discrete new commitment; commitment_status 'na'."
+  }
+]
