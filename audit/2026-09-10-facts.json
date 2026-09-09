@@ -1,0 +1,232 @@
+[
+  {
+    "id": "2026-09-10#01",
+    "briefing_date": "2026-09-10",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Enhance Energy breaks ground on Origins CCS Hub, set to be Canada's largest, with first storage in January 2027",
+    "summary": "Enhance Energy, with the governments of Canada and Alberta, broke ground near Clive, Alberta on the Origins carbon capture and storage hub, which will initially store up to 1.5 Mtpa of CO2 (expandable), connecting to the Alberta Carbon Trunk Line and Enhance's existing Clive CCS site (>9 Mt stored since 2020); operations are targeted for January 2027.",
+    "source": "BOE Report / World Oil / The Globe and Mail",
+    "pub_date": "2026-09-09",
+    "url": "https://boereport.com/2026/09/09/building-our-way-to-net-zero-canada-breaks-ground-on-nations-largest-carbon-capture-and-storage-project/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Enhance Energy",
+      "Government of Canada",
+      "Government of Alberta"
+    ],
+    "org_types": [
+      "developer",
+      "government",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2027,
+    "capacity_mtpa": 1.5,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Construction start of a commercial shared-infrastructure storage hub on an existing CO2 trunk line is a benchmark for the shared T&S/hub model CO2CRC tracks for CarbonNet and Moomba.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "mixed",
+    "amount_basis": "project-capex",
+    "extractor_note": "Groundbreaking/construction start (commitment_status 'committed'). No new discrete money figure disclosed; amount null. Page-fetch to boereport.com blocked by egress proxy; date (9 Sep) and 1.5 Mtpa capacity corroborated across World Oil (URL /2026/9/9/), Globe and Mail, Mirage News and Newswire."
+  },
+  {
+    "id": "2026-09-10#02",
+    "briefing_date": "2026-09-10",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Carbon capture 'under fire again' as Euronews weighs critics' 'delay tactic' charge against EU CCS funding",
+    "summary": "A Euronews analysis pegged to the EU's continued backing of CCS (following the Yara Sluiskil cross-border project) sets out critics' argument that carbon capture is a 'dangerous distraction' risking billions in taxpayer money and delaying climate action, noting that of 208 Innovation Fund grants signed only 45 have reached financial close and 16 are operational.",
+    "source": "Euronews",
+    "pub_date": "2026-09-09",
+    "url": "https://www.euronews.com/2026/09/09/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "European Commission",
+      "Euronews"
+    ],
+    "org_types": [
+      "government",
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A live social-licence signal: mainstream European scrutiny of public money for CCS as 'unproven' mirrors debates CO2CRC must navigate on Australian public funding and community acceptance.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Section 5 media-sentiment item; value is the critique, not the underlying (already-covered) Yara Sluiskil project. Page-fetch blocked by egress proxy; date (9 Sep) confirmed via URL path and Yahoo News Canada syndication."
+  },
+  {
+    "id": "2026-09-10#03",
+    "briefing_date": "2026-09-10",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Oracle commits up to US$1m to study carbon capture and storage at its Project Jupiter data centre in New Mexico",
+    "summary": "Oracle announced up to US$1m in research funding to assess the technical, economic and environmental feasibility of capturing CO2 from on-site Bloom Energy fuel cells at its Project Jupiter facility and storing it in New Mexico geology — its first publicised CCS investment, tied to a goal of matching the site's energy use with 100% carbon-free energy by 2031.",
+    "source": "Carbon Herald / Oracle",
+    "pub_date": "2026-09-08",
+    "url": "https://carbonherald.com/oracle-grants-1m-to-study-carbon-capture-potential-at-data-center/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Oracle",
+      "Bloom Energy"
+    ],
+    "org_types": [
+      "other",
+      "developer"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": 1000000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2031,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Data-centre / fuel-cell CO2 capture is an emerging demand segment worth watching as AI power growth drives new capture opportunities.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Radar (8 Sep, one day outside the 9-10 Sep window). 'Up to $1m' research grant, not yet awarded (commitment_status 'announced'). Underlying Oracle announcement dated 8 Sep (oracle.com URL, KVIA)."
+  },
+  {
+    "id": "2026-09-10#04",
+    "briefing_date": "2026-09-10",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Fortera and MLC sign development agreement for first full-scale commercial ReAct cement plant capturing lime-kiln CO2",
+    "summary": "Fortera and MLC signed a development agreement to build a full-scale commercial plant producing more than 300,000 t/yr of low-carbon ReAct cement, deploying Fortera's ReCarb process to capture CO2 from MLC's high-calcium lime manufacturing and mineralise it into cement (~50% captured CO2 by weight); it scales up from Fortera's 15,000 t/yr Redding, California demonstration. Location, cost and timeline were not disclosed.",
+    "source": "Carbon Herald / Global Cement / MLC",
+    "pub_date": "2026-09-08",
+    "url": "https://carbonherald.com/fortera-and-mlc-to-capture-carbon-from-lime-production/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Fortera",
+      "MLC"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "capture",
+      "mineralisation",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Mineralisation of captured CO2 into cement is a utilisation pathway adjacent to CO2CRC's interests in hard-to-abate industrial capture.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "Radar (8 Sep, one day outside window). Development agreement to build; no cost/location disclosed, amount null. Corroborated by Global Cement and MLC's own release."
+  },
+  {
+    "id": "2026-09-10#05",
+    "briefing_date": "2026-09-10",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "ORLEN and 13 Northern/Central European energy firms launch Baltic Energy Initiative spanning CO2 transport and storage",
+    "summary": "Poland's ORLEN and 13 partners (including Ørsted, Fortum, Siemens Energy, Topsoe, DNV, Eesti Energia, KN Energies, Latvenergo and Gasgrid Finland) across nine countries formed the Baltic Energy Initiative to pool expertise and pursue EU funds for cross-border projects including CO2 transport and storage, alongside offshore wind, LNG/bioLNG, hydrogen and SMRs.",
+    "source": "Carbon Herald / GlobeNewswire",
+    "pub_date": "2026-09-04",
+    "url": "https://carbonherald.com/baltic-energy-initiative-unites-14-companies-to-advance-regional-carbon-storage-and-infrastructure/",
+    "region": "Europe-UK",
+    "countries": [
+      "Poland",
+      "Finland",
+      "Sweden",
+      "Denmark",
+      "Germany",
+      "Lithuania",
+      "Latvia",
+      "Estonia",
+      "Norway"
+    ],
+    "organisations": [
+      "ORLEN",
+      "Ørsted",
+      "Fortum",
+      "Siemens Energy",
+      "Topsoe",
+      "Gasgrid Finland"
+    ],
+    "org_types": [
+      "OG-major",
+      "utility",
+      "utility",
+      "other",
+      "other",
+      "government"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Regional cross-border CO2 T&S cooperation model; CCS is one of several pillars, relevant as a template for shared Baltic storage infrastructure.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar (launch ~3-4 Sep, outside window). CCS is one of several focus areas (offshore wind, LNG, hydrogen, SMRs). Corroborated by GlobeNewswire (KN Energies, 3 Sep) and EuropaWire (ORLEN, 4 Sep)."
+  }
+]
