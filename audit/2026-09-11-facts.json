@@ -1,0 +1,132 @@
+[
+  {
+    "id": "2026-09-11#01",
+    "briefing_date": "2026-09-11",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Climeworks reports Mammoth DAC plant captured six times more CO₂ in H1 2026 as running costs more than halve",
+    "summary": "Climeworks said its Mammoth direct-air-capture plant in Iceland removed 675 tonnes of CO₂ in the first half of 2026 — almost six times the year-earlier figure — with the cost of running the plant down by more than half, on plant-design and filter-material upgrades.",
+    "source": "Bloomberg",
+    "pub_date": "2026-09-10",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-10/carbon-removal-pioneer-climeworks-increases-co2-capture-sixfold",
+    "region": "Europe-UK",
+    "countries": [
+      "Iceland",
+      "Switzerland"
+    ],
+    "organisations": [
+      "Climeworks"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "DAC cost-down and throughput scaling is a durable-CDR trajectory signal CO2CRC tracks for technology benchmarking.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "675 t is a half-year (H1 2026) removal figure, not nameplate annual capacity, so capacity_mtpa left null."
+  },
+  {
+    "id": "2026-09-11#02",
+    "briefing_date": "2026-09-11",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Vateris secures over €50m in binding offtakes and LOIs for CO₂-derived carbon-negative minerals",
+    "summary": "UK climate-tech firm Vateris signed binding multi-year offtake agreements and letters of intent worth over €50m in potential annual turnover with six industrial partners (Holcim, Marshalls and Goldbeck for GypCarb calcium carbonate; Waypoint Commodities and two fertiliser producers for sulphate of potash), mineralising captured flue-gas CO₂ into construction materials and fertiliser; first deliveries from a UK demonstration plant from late 2027.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-10",
+    "url": "https://carbonherald.com/vateris-secures-over-e50m-in-offtake-deals-for-carbon-negative-minerals/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Vateris",
+      "Holcim",
+      "Marshalls",
+      "Goldbeck",
+      "Waypoint Commodities"
+    ],
+    "org_types": [
+      "startup",
+      "other",
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "mineralisation",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Demand-side signal for CO₂ utilisation/mineralisation offtakes and CBAM-driven European low-carbon supply chains.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "€50m is potential annual offtake turnover (mix of binding agreements and LOIs), not a discrete CCS funding commitment, so amount left null."
+  },
+  {
+    "id": "2026-09-11#03",
+    "briefing_date": "2026-09-11",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "Finland awards €26.6m to three industrial biogenic carbon-capture (BECCS) projects",
+    "summary": "Finland's Ministry of Economic Affairs and Employment awarded €26.6m in state investment aid to three industrial biogenic carbon-capture projects — €21m to Metsä Fibre for a 100,000 t/yr biogenic CO₂ capture unit at its Rauma pulp mill — the first awards under a €90m competitive scheme, with the captured biogenic CO₂ destined largely as feedstock for e-fuels.",
+    "source": "Finnish Government",
+    "pub_date": "2026-09-09",
+    "url": "https://valtioneuvosto.fi/en/-/1410877/three-industrial-biogenic-carbon-capture-projects-receive-eur-26.6-million-in-aid",
+    "region": "Europe-UK",
+    "countries": [
+      "Finland"
+    ],
+    "organisations": [
+      "Ministry of Economic Affairs and Employment (Finland)",
+      "Metsä Fibre"
+    ],
+    "org_types": [
+      "government",
+      "other"
+    ],
+    "instrument_type": "grant-funding",
+    "value_chain": [
+      "BECCS",
+      "capture"
+    ],
+    "amount": 26600000,
+    "currency": "EUR",
+    "amount_aud": null,
+    "commitment_status": "allocated",
+    "target_year": null,
+    "capacity_mtpa": 0.1,
+    "co2crc_relevance": "low",
+    "co2crc_note": "European BECCS state-aid precedent; biogenic CO₂-to-e-fuels pathway relevant to durable-removal policy design.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Award decision dated 9 Sep 2026 — outside the 10–11 Sep briefing window, carried as radar; follows the 4 Sep Ministerial Finance Committee endorsement. capacity_mtpa 0.1 is the Metsä Fibre unit only, not the three-project total."
+  }
+]
