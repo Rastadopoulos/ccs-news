@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://businessgreen.com/news-analysis/4535368/global-briefing-europes-largest-carbon-capture-facility-inaugurated",
+    "raw_url": "https://www.businessgreen.com/news-analysis/4535368/global-briefing-europes-largest-carbon-capture-facility-inaugurated",
+    "headline": "Global Briefing: Europe's largest carbon capture facility inaugurated - BusinessGreen",
+    "source_domain": "businessgreen.com",
+    "publication_date": "2026-09-12T02:24:44+00:00",
+    "fuzzy_key": "briefing,businessgreen,capture,carbon,europe,facility,global,inaugurated,largest",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/climeworks-hits-new-dac-milestone-achieving-major-co2-capture-increase-at-lower-costs",
     "raw_url": "https://carbonherald.com/climeworks-hits-new-dac-milestone-achieving-major-co2-capture-increase-at-lower-costs/",
     "headline": "Climeworks Hits New DAC Milestone, Achieving Major CO2 Capture Increase At Lower Costs",
@@ -114,6 +123,15 @@
     "source_domain": "linkedin.com",
     "publication_date": "2026-09-11T20:32:06+00:00",
     "fuzzy_key": "change,christoph,costs,gebald,how,mammoth,performance,reducing,step,unlocking",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://politico.com/newsletters/california-currents/2026/09/11/the-guy-selling-both-california-and-trump-on-carbon-removal-01073234",
+    "raw_url": "https://www.politico.com/newsletters/california-currents/2026/09/11/the-guy-selling-both-california-and-trump-on-carbon-removal-01073234",
+    "headline": "The guy selling both California and Trump on carbon removal - POLITICO",
+    "source_domain": "politico.com",
+    "publication_date": "2026-09-12T00:32:06+00:00",
+    "fuzzy_key": "both,california,carbon,guy,politico,removal,selling,trump",
     "found_via": "google_alerts"
   },
   {
