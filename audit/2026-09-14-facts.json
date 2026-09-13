@@ -1,0 +1,100 @@
+[
+  {
+    "id": "2026-09-14#01",
+    "briefing_date": "2026-09-14",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "SABIC Agri-Nutrients takes FID on Jubail ammonia-urea complex with an integrated large-scale carbon-capture unit",
+    "summary": "SABIC Agri-Nutrients approved a final investment decision and awarded a US$3.47bn EPC contract to Samsung E&A for a new ammonia and urea complex in Jubail, Saudi Arabia (1.2 Mtpa ammonia via KBR technology; two urea plants totalling 2.6 Mtpa, lifting SABIC AN urea capacity 54% to 7.4 Mtpa), with an integrated large-scale carbon-capture unit using Shell Global Solutions technology to cut the complex's emissions intensity.",
+    "source": "Carbon Herald / AGBI",
+    "pub_date": "2026-09-11",
+    "url": "https://carbonherald.com/sabic-an-to-boost-urea-production-54-with-new-carbon-capture-facility/",
+    "region": "Middle East",
+    "countries": [
+      "Saudi Arabia",
+      "South Korea"
+    ],
+    "organisations": [
+      "SABIC Agri-Nutrients",
+      "Samsung E&A",
+      "Shell",
+      "KBR"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "OG-major",
+      "other"
+    ],
+    "instrument_type": "project-FID",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A Gulf blue-ammonia/urea FID that bundles capture into the plant design (Shell tech) is a signal on integrated-capture project economics relevant to Australia's blue-ammonia export ambitions and capture-vendor landscape.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "US$3.47bn is the whole ammonia-urea complex EPC contract, not CCS-unit-specific spend, and no CO2 capture capacity (Mtpa) was stated, so amount and capacity_mtpa left null per the project-cost / no-figure rules."
+  },
+  {
+    "id": "2026-09-14#02",
+    "briefing_date": "2026-09-14",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Whirlpool assembles a diversified carbon-removal portfolio through ClimeFi across four CDR pathways in the US and Brazil",
+    "summary": "Whirlpool Corporation procured a diversified durable carbon-removal portfolio via portfolio manager ClimeFi, spanning four suppliers and pathways — CREW Carbon (marine CDR), Gevo (biogenic carbon capture & storage), InPlanet (enhanced weathering, Brazil) and Liferaft (biochar) — combining firm offtake agreements with fixed-price options that reserve future supply.",
+    "source": "Carbon Herald / ESG News",
+    "pub_date": "2026-09-11",
+    "url": "https://carbonherald.com/whirlpool-corporation-invests-in-a-carbon-removal-portfolio-via-climefi/",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Brazil"
+    ],
+    "organisations": [
+      "Whirlpool",
+      "ClimeFi",
+      "CREW Carbon",
+      "Gevo",
+      "InPlanet",
+      "Liferaft"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "developer",
+      "developer",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "marine-CDR",
+      "BECCS",
+      "mineralisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A multinational buyer taking a multi-pathway durable-CDR portfolio (incl. a Bio-CCS slice) is a demand-side signal for the voluntary CDR market that underpins some Australian BECCS/CCS project economics.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": "No total dollar value or tonnage for Whirlpool's slice was disclosed, so amount and capacity_mtpa left null; enhanced weathering and biochar mapped to nearest value_chain tokens (mineralisation)."
+  }
+]
