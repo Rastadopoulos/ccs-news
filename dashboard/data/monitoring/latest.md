@@ -1,6 +1,6 @@
 # Authoritative CCS source monitor
 
-Retrieved: 2026-09-06T22:08:08.654786+00:00
+Retrieved: 2026-09-13T22:25:34.365196+00:00
 
 - **RETRIEVAL-FAILED** IEA CCUS Projects Database product — HTTP Error 403: Forbidden
 - **UNCHANGED** IEA CCUS Projects Explorer data
@@ -14,7 +14,7 @@ Retrieved: 2026-09-06T22:08:08.654786+00:00
 - **REVIEW** NOPSEMA environment plan activity
 - **RETRIEVAL-FAILED** Australian sea dumping and CO2 export permits — The read operation timed out
 - **RETRIEVAL-FAILED** EU Net-Zero Industry Act strategic projects and CO2 storage — HTTP Error 404: Not Found
-- **UNCHANGED** Saudi Aramco carbon capture
+- **CHANGED** Saudi Aramco carbon capture
 - **RETRIEVAL-FAILED** ADNOC carbon capture — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** PETRONAS carbon capture and storage — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** Pertamina corporate news — HTTP Error 404: Not Found
