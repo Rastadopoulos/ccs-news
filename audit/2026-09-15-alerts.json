@@ -1,11 +1,83 @@
 [
   {
+    "canonical_url": "https://bmmagazine.co.uk/news/reform-peak-cluster-carbon-capture",
+    "raw_url": "https://bmmagazine.co.uk/news/reform-peak-cluster-carbon-capture/",
+    "headline": "Reform to block Peak Cluster carbon capture project - Business Matters",
+    "source_domain": "bmmagazine.co.uk",
+    "publication_date": "2026-09-13T23:28:21+00:00",
+    "fuzzy_key": "block,business,capture,carbon,cluster,matters,peak,project,reform",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbon-pulse.com/549978",
+    "raw_url": "https://carbon-pulse.com/549978/",
+    "headline": "Fund warns Australia must move quickly on CCS deals or risk losing projects to regional rivals",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-09-14T21:57:31+00:00",
+    "fuzzy_key": "australia,ccs,deals,fund,losing,move,must,projects,quickly,regional,risk,rivals,warns",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://facebook.com/wirralglobe/posts/a-new-fund-will-support-communities-surrounding-the-hynet-carbon-capture-project/1721048359536105",
     "raw_url": "https://www.facebook.com/wirralglobe/posts/a-new-fund-will-support-communities-surrounding-the-hynet-carbon-capture-project/1721048359536105/",
     "headline": "Hynet carbon capture project community fund for surrounding areas - Facebook",
     "source_domain": "facebook.com",
     "publication_date": "2026-09-13T23:11:13+00:00",
     "fuzzy_key": "areas,capture,carbon,community,facebook,fund,hynet,project,surrounding",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/groups/849994733672039/posts/1477754944229345",
+    "raw_url": "https://www.facebook.com/groups/849994733672039/posts/1477754944229345/",
+    "headline": "Norway has begun operating a major carbon capture and storage project beneath the North Sea",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-09-14T02:18:48+00:00",
+    "fuzzy_key": "begun,beneath,capture,carbon,has,major,north,norway,operating,project,sea,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://futura-sciences.com/en/europes-largest-co₂-plant-one-years-work-erased-in-just-11-minutes_39369",
+    "raw_url": "https://www.futura-sciences.com/en/europes-largest-co₂-plant-one-years-work-erased-in-just-11-minutes_39369/",
+    "headline": "Europe's largest carbon capture plant traps 800,000 tons of CO₂ a year—the world emits ...",
+    "source_domain": "futura-sciences.com",
+    "publication_date": "2026-09-14T17:40:55+00:00",
+    "fuzzy_key": "000,800,capture,carbon,co,emits,europe,largest,plant,tons,traps,world,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/climeworks-upgrades-dac-tech-at-iceland-facility-after-low-co2-capture-record/2259464.article",
+    "raw_url": "https://www.gasworld.com/story/climeworks-upgrades-dac-tech-at-iceland-facility-after-low-co2-capture-record/2259464.article/",
+    "headline": "Climeworks upgrades DAC tech at Iceland facility after low CO2 capture record - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-09-14T17:37:32+00:00",
+    "fuzzy_key": "after,capture,climeworks,co2,dac,facility,gasworld,iceland,low,record,tech,upgrades",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/yara-opens-europes-largest-ccs-facility-at-sluiskil-ammonia-plant",
+    "raw_url": "https://www.indexbox.io/blog/yara-opens-europes-largest-ccs-facility-at-sluiskil-ammonia-plant/",
+    "headline": "Yara Opens Europe's Largest CCS Facility at Sluiskil Ammonia Plant - IndexBox",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-09-14T17:40:55+00:00",
+    "fuzzy_key": "ammonia,ccs,europe,facility,indexbox,largest,opens,plant,sluiskil,yara",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
+    "raw_url": "https://www.morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
+    "headline": "Alfa Laval selected by Saipem to supply heat transfer technology for one of Europe's largest ...",
+    "source_domain": "morningstar.com",
+    "publication_date": "2026-09-14T21:57:31+00:00",
+    "fuzzy_key": "alfa,europe,heat,largest,laval,one,saipem,selected,supply,technology,transfer",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qajima.com/home-1/f/carbon-capture-qatars-bet-on-cleaner-lng",
+    "raw_url": "https://qajima.com/home-1/f/carbon-capture-qatars-bet-on-cleaner-lng",
+    "headline": "Carbon Capture: Qatar's Bet on Cleaner LNG - qajima oil and gas pipeline",
+    "source_domain": "qajima.com",
+    "publication_date": "2026-09-14T06:52:09+00:00",
+    "fuzzy_key": "bet,capture,carbon,cleaner,gas,lng,oil,pipeline,qajima,qatar",
     "found_via": "google_alerts"
   },
   {
@@ -24,33 +96,6 @@
     "source_domain": "x.com",
     "publication_date": "2026-09-13T23:11:13+00:00",
     "fuzzy_key": "areas,capture,carbon,community,fund,globe,hosting,hynet,launched,wirral",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://bmmagazine.co.uk/news/reform-peak-cluster-carbon-capture",
-    "raw_url": "https://bmmagazine.co.uk/news/reform-peak-cluster-carbon-capture/",
-    "headline": "Reform to block Peak Cluster carbon capture project - Business Matters",
-    "source_domain": "bmmagazine.co.uk",
-    "publication_date": "2026-09-13T23:28:21+00:00",
-    "fuzzy_key": "block,business,capture,carbon,cluster,matters,peak,project,reform",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://facebook.com/groups/849994733672039/posts/1477754944229345",
-    "raw_url": "https://www.facebook.com/groups/849994733672039/posts/1477754944229345/",
-    "headline": "Norway has begun operating a major carbon capture and storage project beneath the North Sea",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-09-14T02:18:48+00:00",
-    "fuzzy_key": "begun,beneath,capture,carbon,has,major,north,norway,operating,project,sea,storage",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://qajima.com/home-1/f/carbon-capture-qatars-bet-on-cleaner-lng",
-    "raw_url": "https://qajima.com/home-1/f/carbon-capture-qatars-bet-on-cleaner-lng",
-    "headline": "Carbon Capture: Qatar's Bet on Cleaner LNG - qajima oil and gas pipeline",
-    "source_domain": "qajima.com",
-    "publication_date": "2026-09-14T06:52:09+00:00",
-    "fuzzy_key": "bet,capture,carbon,cleaner,gas,lng,oil,pipeline,qajima,qatar",
     "found_via": "google_alerts"
   }
 ]
