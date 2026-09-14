@@ -1,0 +1,93 @@
+[
+  {
+    "id": "2026-09-15#01",
+    "briefing_date": "2026-09-15",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Reform UK vows to block the £5bn Peak Cluster carbon-capture scheme if elected",
+    "summary": "Reform UK deputy leader Richard Tice, with the party's leaders of Staffordshire and Derbyshire county councils, wrote to Peak Cluster's private-sector backers warning it would block all planning applications for the proposed CO2 pipeline network — gathering emissions from Derbyshire and Staffordshire cement and lime plants for storage beneath the east Irish Sea — if the party enters government, branding it a 'net zero vanity project'.",
+    "source": "Business Matters / Derbyshire Times",
+    "pub_date": "2026-09-13",
+    "url": "https://bmmagazine.co.uk/news/reform-peak-cluster-carbon-capture/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Reform UK",
+      "Peak Cluster",
+      "Staffordshire County Council",
+      "Derbyshire County Council",
+      "National Wealth Fund"
+    ],
+    "org_types": [
+      "other",
+      "developer",
+      "government",
+      "government",
+      "financier"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A national political party threatening to block a flagship UK CCS cluster is a live social-licence and political-risk signal — relevant to how Australian CCS projects (CarbonNet, Moomba) sustain community consent and bipartisan policy support.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Core of the item is political opposition, not a financial commitment; the £5bn is scheme cost and ~£30m is criticised National Wealth Fund backing, so amount left null per project-cost / non-commitment rules. Story dated 13 Sep UK = 14 Sep Melbourne, inside the Tuesday window; on-page date unverifiable (trade-press egress blocked), confirmed via Google-Alerts timestamp feed and multiple outlets."
+  },
+  {
+    "id": "2026-09-15#02",
+    "briefing_date": "2026-09-15",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "Community benefit fund launched for areas hosting HyNet's Liverpool Bay CO2 transport-and-storage infrastructure",
+    "summary": "Liverpool Bay CCS Limited (Eni-operated) launched a voluntary Community Benefit Fund for Cheshire and Flintshire communities near the HyNet CO2 transport-and-storage network, funding local education, environmental and heritage projects around Liverpool Bay.",
+    "source": "Chester Standard",
+    "pub_date": "2026-09-12",
+    "url": "https://www.chesterstandard.co.uk/news/26538910.community-fund-launched-areas-hosting-hynet-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Liverpool Bay CCS",
+      "Eni",
+      "HyNet"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Voluntary host-community benefit funds are a social-licence model CO2CRC can watch for Otway/CarbonNet community engagement.",
+    "sentiment": "positive",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Radar item — Chester Standard reported 'published 2 days ago' (~12 Sep), just outside the Tuesday 14-15 Sep Melbourne window; surfaced as Still-on-the-radar (<=7 days). No fund size disclosed, so amount null."
+  }
+]
