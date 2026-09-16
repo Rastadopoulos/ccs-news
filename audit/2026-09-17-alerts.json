@@ -1,23 +1,5 @@
 [
   {
-    "canonical_url": "https://youtube.com/shorts/sLhdvwEn5m8",
-    "raw_url": "https://www.youtube.com/shorts/sLhdvwEn5m8",
-    "headline": "Building a Career in CCUS: Phillips 66 | Viking CCS (Part 2) - YouTube",
-    "source_domain": "youtube.com",
-    "publication_date": "2026-09-15T23:17:22+00:00",
-    "fuzzy_key": "66,building,career,ccs,ccus,part,phillips,viking,youtube",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
-    "raw_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
-    "headline": "Climeworks lifts carbon capture at Iceland plant as direct air capture seeks a cheaper path",
-    "source_domain": "indiatimes.com",
-    "publication_date": "2026-09-16T00:52:30+00:00",
-    "fuzzy_key": "air,capture,carbon,cheaper,climeworks,direct,iceland,lifts,path,plant,seeks",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://finance.biggo.com/news/ff6495df-fe80-4ec5-aa3f-790ba7973d33",
     "raw_url": "https://finance.biggo.com/news/ff6495df-fe80-4ec5-aa3f-790ba7973d33",
     "headline": "Alfa Laval Wins Heat Exchanger Order for Landmark Stockholm Carbon Capture Plant",
@@ -27,39 +9,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://sustainabilitymag.com/news/the-benefits-of-using-ngk-ceramics-in-direct-air-capture",
-    "raw_url": "https://sustainabilitymag.com/news/the-benefits-of-using-ngk-ceramics-in-direct-air-capture",
-    "headline": "The Benefits of Using NGK Ceramics in Direct Air Capture | Sustainability Magazine",
-    "source_domain": "sustainabilitymag.com",
-    "publication_date": "2026-09-16T01:32:06+00:00",
-    "fuzzy_key": "air,benefits,capture,ceramics,direct,magazine,ngk,sustainability,using",
+    "canonical_url": "https://bizjournals.com/houston/news/2026/09/16/exxonmobil-rose-ccs-texas-railroad-commission.html",
+    "raw_url": "https://www.bizjournals.com/houston/news/2026/09/16/exxonmobil-rose-ccs-texas-railroad-commission.html",
+    "headline": "ExxonMobil wins Texas carbon sequestration permit after community challenge",
+    "source_domain": "bizjournals.com",
+    "publication_date": "2026-09-16T13:18:02+00:00",
+    "fuzzy_key": "after,carbon,challenge,community,exxonmobil,permit,sequestration,texas,wins",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://ca.finance.yahoo.com/news/market-chatter-exxon-mobil-wins-215021473.html",
-    "raw_url": "https://ca.finance.yahoo.com/news/market-chatter-exxon-mobil-wins-215021473.html",
-    "headline": "Market Chatter: Exxon Mobil Wins Approval For Texas Carbon Capture Project",
-    "source_domain": "yahoo.com",
-    "publication_date": "2026-09-16T03:10:09+00:00",
-    "fuzzy_key": "approval,capture,carbon,chatter,exxon,market,mobil,project,texas,wins",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://energynews.pro/en/uniper-submits-carbon-capture-plans-for-new-killingholme-power-station",
-    "raw_url": "https://energynews.pro/en/uniper-submits-carbon-capture-plans-for-new-killingholme-power-station",
-    "headline": "Uniper Submits Carbon Capture Plans for New Killingholme Power Station",
-    "source_domain": "energynews.pro",
-    "publication_date": "2026-09-16T03:10:09+00:00",
-    "fuzzy_key": "capture,carbon,killingholme,new,plans,power,station,submits,uniper",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://hellenicshippingnews.com/approval-in-principle-aip-acquired-for-standard-low-pressure-liquefied-co2-carrier-toward-realization-of-ccs-business-in-japan",
-    "raw_url": "https://www.hellenicshippingnews.com/approval-in-principle-aip-acquired-for-standard-low-pressure-liquefied-co2-carrier-toward-realization-of-ccs-business-in-japan/",
-    "headline": "Approval in Principle (AiP) Acquired for Standard Low-Pressure Liquefied CO2 Carrier ...",
-    "source_domain": "hellenicshippingnews.com",
-    "publication_date": "2026-09-16T08:15:56+00:00",
-    "fuzzy_key": "acquired,aip,approval,carrier,co2,liquefied,low,pressure,principle,standard",
+    "canonical_url": "https://borsaitaliana.it/borsa/notizie/radiocor/finance/dettaglio/saipem-wins-carbon-capture-contract-for-rengas-emethane-project-in-finland-nRC_16092026_1317_352536216.html?lang=en",
+    "raw_url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finance/dettaglio/saipem-wins-carbon-capture-contract-for-rengas-emethane-project-in-finland-nRC_16092026_1317_352536216.html?lang=en",
+    "headline": "Saipem wins carbon capture contract for Ren-Gas e-methane project in Finland",
+    "source_domain": "borsaitaliana.it",
+    "publication_date": "2026-09-16T18:29:54+00:00",
+    "fuzzy_key": "capture,carbon,contract,finland,gas,methane,project,ren,saipem,wins",
     "found_via": "google_alerts"
   },
   {
@@ -72,12 +36,39 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://trend.az/world/europe/4224688.html",
-    "raw_url": "https://www.trend.az/world/europe/4224688.html",
-    "headline": "Saipem wins contract for carbon capture in Finland - Trend News Agency",
-    "source_domain": "trend.az",
-    "publication_date": "2026-09-16T11:16:13+00:00",
-    "fuzzy_key": "agency,capture,carbon,contract,finland,news,saipem,trend,wins",
+    "canonical_url": "https://energynews.pro/en/uniper-submits-carbon-capture-plans-for-new-killingholme-power-station",
+    "raw_url": "https://energynews.pro/en/uniper-submits-carbon-capture-plans-for-new-killingholme-power-station",
+    "headline": "Uniper Submits Carbon Capture Plans for New Killingholme Power Station",
+    "source_domain": "energynews.pro",
+    "publication_date": "2026-09-16T03:10:09+00:00",
+    "fuzzy_key": "capture,carbon,killingholme,new,plans,power,station,submits,uniper",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19647515.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/ccs/article19647515.ece",
+    "headline": "ExxonMobil gets green light for USD 5bn CCS project - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-09-16T18:29:54+00:00",
+    "fuzzy_key": "5bn,ccs,energywatch,exxonmobil,gets,green,light,project,usd",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/skyrenu-delivers-first-dac-co2-to-secant-fuel/2259800.article",
+    "raw_url": "https://www.gasworld.com/story/skyrenu-delivers-first-dac-co2-to-secant-fuel/2259800.article/",
+    "headline": "Skyrenu delivers first DAC CO2 to Secant Fuel | Carbon Capture - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-09-16T16:49:07+00:00",
+    "fuzzy_key": "capture,carbon,co2,dac,delivers,first,fuel,gasworld,secant,skyrenu",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://hellenicshippingnews.com/approval-in-principle-aip-acquired-for-standard-low-pressure-liquefied-co2-carrier-toward-realization-of-ccs-business-in-japan",
+    "raw_url": "https://www.hellenicshippingnews.com/approval-in-principle-aip-acquired-for-standard-low-pressure-liquefied-co2-carrier-toward-realization-of-ccs-business-in-japan/",
+    "headline": "Approval in Principle (AiP) Acquired for Standard Low-Pressure Liquefied CO2 Carrier ...",
+    "source_domain": "hellenicshippingnews.com",
+    "publication_date": "2026-09-16T08:15:56+00:00",
+    "fuzzy_key": "acquired,aip,approval,carrier,co2,liquefied,low,pressure,principle,standard",
     "found_via": "google_alerts"
   },
   {
@@ -90,15 +81,6 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://stocktitan.net/news/BKV/bkv-completes-acquisition-of-barnett-shale-upstream-midstream-and-0ghe3vlqmrxm.html",
-    "raw_url": "https://www.stocktitan.net/news/BKV/bkv-completes-acquisition-of-barnett-shale-upstream-midstream-and-0ghe3vlqmrxm.html",
-    "headline": "BKV Completes Acquisition of Barnett Shale Upstream, Midstream, and Carbon Capture Assets",
-    "source_domain": "stocktitan.net",
-    "publication_date": "2026-09-16T11:16:13+00:00",
-    "fuzzy_key": "acquisition,assets,barnett,bkv,capture,carbon,completes,midstream,shale,upstream",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://indiashippingnews.com/international-shipping/k-line-aip-acquired-for-standard-low-pressure-liquefied-co₂-carrier-toward-realization-of-ccs-business-in-japan",
     "raw_url": "https://indiashippingnews.com/international-shipping/k-line-aip-acquired-for-standard-low-pressure-liquefied-co₂-carrier-toward-realization-of-ccs-business-in-japan/",
     "headline": "“K” LINE - AiP acquired for Standard Low-Pressure Liquefied CO₂ Carrier toward ...",
@@ -108,12 +90,93 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://bizjournals.com/houston/news/2026/09/16/exxonmobil-rose-ccs-texas-railroad-commission.html",
-    "raw_url": "https://www.bizjournals.com/houston/news/2026/09/16/exxonmobil-rose-ccs-texas-railroad-commission.html",
-    "headline": "ExxonMobil wins Texas carbon sequestration permit after community challenge",
-    "source_domain": "bizjournals.com",
-    "publication_date": "2026-09-16T13:18:02+00:00",
-    "fuzzy_key": "after,carbon,challenge,community,exxonmobil,permit,sequestration,texas,wins",
+    "canonical_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
+    "raw_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
+    "headline": "Climeworks lifts carbon capture at Iceland plant as direct air capture seeks a cheaper path",
+    "source_domain": "indiatimes.com",
+    "publication_date": "2026-09-16T00:52:30+00:00",
+    "fuzzy_key": "air,capture,carbon,cheaper,climeworks,direct,iceland,lifts,path,plant,seeks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://investing.com/news/stock-market-news/exxonmobil-wins-approval-for-texas-carbon-capture-permit-93CH-4902629",
+    "raw_url": "https://www.investing.com/news/stock-market-news/exxonmobil-wins-approval-for-texas-carbon-capture-permit-93CH-4902629",
+    "headline": "ExxonMobil wins approval for Texas carbon capture permit - Investing.com",
+    "source_domain": "investing.com",
+    "publication_date": "2026-09-16T18:29:54+00:00",
+    "fuzzy_key": "approval,capture,carbon,com,exxonmobil,investing,permit,texas,wins",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://stocktitan.net/news/BKV/bkv-completes-acquisition-of-barnett-shale-upstream-midstream-and-0ghe3vlqmrxm.html",
+    "raw_url": "https://www.stocktitan.net/news/BKV/bkv-completes-acquisition-of-barnett-shale-upstream-midstream-and-0ghe3vlqmrxm.html",
+    "headline": "BKV Completes Acquisition of Barnett Shale Upstream, Midstream, and Carbon Capture Assets",
+    "source_domain": "stocktitan.net",
+    "publication_date": "2026-09-16T11:16:13+00:00",
+    "fuzzy_key": "acquisition,assets,barnett,bkv,capture,carbon,completes,midstream,shale,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://sustainabilitymag.com/news/the-benefits-of-using-ngk-ceramics-in-direct-air-capture",
+    "raw_url": "https://sustainabilitymag.com/news/the-benefits-of-using-ngk-ceramics-in-direct-air-capture",
+    "headline": "The Benefits of Using NGK Ceramics in Direct Air Capture | Sustainability Magazine",
+    "source_domain": "sustainabilitymag.com",
+    "publication_date": "2026-09-16T01:32:06+00:00",
+    "fuzzy_key": "air,benefits,capture,ceramics,direct,magazine,ngk,sustainability,using",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://trend.az/world/europe/4224688.html",
+    "raw_url": "https://www.trend.az/world/europe/4224688.html",
+    "headline": "Saipem wins contract for carbon capture in Finland - Trend News Agency",
+    "source_domain": "trend.az",
+    "publication_date": "2026-09-16T11:16:13+00:00",
+    "fuzzy_key": "agency,capture,carbon,contract,finland,news,saipem,trend,wins",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/texas-gives-green-light-to-exxonmobil-s-controversial-rose-carbon-capture-project/2-1-2044656",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/texas-gives-green-light-to-exxonmobil-s-controversial-rose-carbon-capture-project/2-1-2044656",
+    "headline": "Texas gives green light to ExxonMobil's controversial Rose carbon capture project",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-09-16T18:09:09+00:00",
+    "fuzzy_key": "capture,carbon,controversial,exxonmobil,gives,green,light,project,rose,texas",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/production/us-player-completes-purchase-of-barnett-shale-assets-and-ccs-plant/2-1-2044629",
+    "raw_url": "https://www.upstreamonline.com/production/us-player-completes-purchase-of-barnett-shale-assets-and-ccs-plant/2-1-2044629",
+    "headline": "US player completes purchase of Barnett shale assets and CCS plant - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-09-16T18:09:09+00:00",
+    "fuzzy_key": "assets,barnett,ccs,completes,online,plant,player,purchase,shale,upstream,us",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ca.finance.yahoo.com/news/market-chatter-exxon-mobil-wins-215021473.html",
+    "raw_url": "https://ca.finance.yahoo.com/news/market-chatter-exxon-mobil-wins-215021473.html",
+    "headline": "Market Chatter: Exxon Mobil Wins Approval For Texas Carbon Capture Project",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-09-16T03:10:09+00:00",
+    "fuzzy_key": "approval,capture,carbon,chatter,exxon,market,mobil,project,texas,wins",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://au.finance.yahoo.com/news/terradot-google-combine-superpollutants-carbon-120000094.html",
+    "raw_url": "https://au.finance.yahoo.com/news/terradot-google-combine-superpollutants-carbon-120000094.html",
+    "headline": "Terradot and Google Combine Superpollutants and Carbon Removal in the World's Largest ...",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-09-16T16:29:39+00:00",
+    "fuzzy_key": "carbon,combine,google,largest,removal,superpollutants,terradot,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://youtube.com/shorts/sLhdvwEn5m8",
+    "raw_url": "https://www.youtube.com/shorts/sLhdvwEn5m8",
+    "headline": "Building a Career in CCUS: Phillips 66 | Viking CCS (Part 2) - YouTube",
+    "source_domain": "youtube.com",
+    "publication_date": "2026-09-15T23:17:22+00:00",
+    "fuzzy_key": "66,building,career,ccs,ccus,part,phillips,viking,youtube",
     "found_via": "google_alerts"
   }
 ]
