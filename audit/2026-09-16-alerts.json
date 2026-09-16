@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://finance.biggo.com/news/ff6495df-fe80-4ec5-aa3f-790ba7973d33",
+    "raw_url": "https://finance.biggo.com/news/ff6495df-fe80-4ec5-aa3f-790ba7973d33",
+    "headline": "Alfa Laval Wins Heat Exchanger Order for Landmark Stockholm Carbon Capture Plant",
+    "source_domain": "biggo.com",
+    "publication_date": "2026-09-16T00:56:59+00:00",
+    "fuzzy_key": "alfa,capture,carbon,exchanger,heat,landmark,laval,order,plant,stockholm,wins",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbon-pulse.com/549978",
     "raw_url": "https://carbon-pulse.com/549978/",
     "headline": "Fund warns Australia must move quickly on CCS deals or risk losing projects to regional rivals",
@@ -72,6 +81,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
+    "raw_url": "https://sustainability.economictimes.indiatimes.com/news/green-energy/climeworks-lifts-carbon-capture-at-iceland-plant-as-direct-air-capture-seeks-a-cheaper-path/134259572",
+    "headline": "Climeworks lifts carbon capture at Iceland plant as direct air capture seeks a cheaper path",
+    "source_domain": "indiatimes.com",
+    "publication_date": "2026-09-16T00:52:30+00:00",
+    "fuzzy_key": "air,capture,carbon,cheaper,climeworks,direct,iceland,lifts,path,plant,seeks",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
     "raw_url": "https://www.morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
     "headline": "Alfa Laval selected by Saipem to supply heat transfer technology for one of Europe's largest ...",
@@ -114,6 +132,15 @@
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-09-15T14:28:00+00:00",
     "fuzzy_key": "begins,canada,capture,carbon,construction,hub,largest,online,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://youtube.com/shorts/sLhdvwEn5m8",
+    "raw_url": "https://www.youtube.com/shorts/sLhdvwEn5m8",
+    "headline": "Building a Career in CCUS: Phillips 66 | Viking CCS (Part 2) - YouTube",
+    "source_domain": "youtube.com",
+    "publication_date": "2026-09-15T23:17:22+00:00",
+    "fuzzy_key": "66,building,career,ccs,ccus,part,phillips,viking,youtube",
     "found_via": "google_alerts"
   }
 ]
