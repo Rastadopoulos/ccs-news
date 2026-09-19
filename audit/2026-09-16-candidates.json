@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.alfalaval.com/media/news/investors/2026/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europe-s-largest-carbon-capture-projects/",
+    "canonical_url": "https://alfalaval.com/media/news/investors/2026/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europe-s-largest-carbon-capture-projects",
+    "fuzzy_key": "alfa,capture,carbon,europe,heat,laval,largest,one,projects,saipem,selected,supply,technology,transfer",
+    "source_domain": "alfalaval.com",
+    "headline": "Alfa Laval selected by Saipem to supply heat transfer technology for one of Europe's largest carbon capture projects",
+    "publication_date": "2026-09-14T21:57:31+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbon-pulse.com/549978/",
+    "canonical_url": "https://carbon-pulse.com/549978",
+    "fuzzy_key": "australia,ccs,deals,fund,losing,move,must,projects,quickly,regional,risk,rivals,warns",
+    "source_domain": "carbon-pulse.com",
+    "headline": "Fund warns Australia must move quickly on CCS deals or risk losing projects to regional rivals",
+    "publication_date": "2026-09-14T21:57:31+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.gasworld.com/story/dotz-lands-e600000-deal-to-supply-sorbent-for-european-direct-air-capture/2259529.article",
+    "canonical_url": "https://gasworld.com/story/dotz-lands-e600000-deal-to-supply-sorbent-for-european-direct-air-capture/2259529.article",
+    "fuzzy_key": "600000,air,capture,deal,direct,dotz,european,lands,sorbent,supply",
+    "source_domain": "gasworld.com",
+    "headline": "Dotz lands €600000 deal to supply sorbent for European direct air capture",
+    "publication_date": "2026-09-15T03:59:11+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://carbonherald.com/pyroccs-secures-funding-to-scale-biocarbon-and-carbon-removal-supply-chain/",
+    "canonical_url": "https://carbonherald.com/pyroccs-secures-funding-to-scale-biocarbon-and-carbon-removal-supply-chain",
+    "fuzzy_key": "biocarbon,carbon,chain,funding,pyroccs,removal,scale,secures,supply",
+    "source_domain": "carbonherald.com",
+    "headline": "PyroCCS Secures Funding To Scale Biocarbon And Carbon Removal Supply Chain",
+    "publication_date": "2026-09-15T03:59:11+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
+    "canonical_url": "https://morningstar.com/news/pr-newswire/20260914hs46782/alfa-laval-selected-by-saipem-to-supply-heat-transfer-technology-for-one-of-europes-largest-carbon-capture-projects",
+    "fuzzy_key": "alfa,capture,carbon,europe,heat,laval,largest,one,projects,saipem,selected,supply,technology,transfer",
+    "source_domain": "morningstar.com",
+    "headline": "Alfa Laval selected by Saipem to supply heat transfer technology for one of Europe's largest carbon capture projects",
+    "publication_date": "2026-09-14T21:57:31+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "duplicate_headline",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.chosun.com/english/industry-en/2026/09/15/MCY76LUXQNCMLJV4OPCRRXBKPI/",
+    "canonical_url": "https://chosun.com/english/industry-en/2026/09/15/mcy76luxqncmljv4opcrrxbkpi",
+    "fuzzy_key": "capture,carbolution,carbon,enters,global,market,spoic",
+    "source_domain": "chosun.com",
+    "headline": "Carbolution's SPOIC Enters Global Carbon Capture Market",
+    "publication_date": "2026-09-15T09:32:06+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "low_quality_source",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://gasworld.com/story/climeworks-upgrades-dac-tech-at-iceland-facility-after-low-co2-capture-record/2259464.article",
+    "canonical_url": "https://gasworld.com/story/climeworks-upgrades-dac-tech-at-iceland-facility-after-low-co2-capture-record/2259464.article",
+    "fuzzy_key": "after,capture,climeworks,co2,dac,facility,iceland,low,record,tech,upgrades",
+    "source_domain": "gasworld.com",
+    "headline": "Climeworks upgrades DAC tech at Iceland facility after low CO2 capture record",
+    "publication_date": "2026-09-10T00:00:00+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-north-american-carbon-removal-market-trends",
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-north-american-carbon-removal-market-trends",
+    "fuzzy_key": "american,carbon,climeworks,highlights,market,north,removal,trends",
+    "source_domain": "tipranks.com",
+    "headline": "Climeworks Highlights North American Carbon Removal Market Trends",
+    "publication_date": "2026-09-15T04:32:06+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "low_quality_source",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://seekingalpha.com/article/4946135-occidental-petroleum-keep-an-eye-on-this-one-in-the-carbon-capture-space",
+    "canonical_url": "https://seekingalpha.com/article/4946135-occidental-petroleum-keep-an-eye-on-this-one-in-the-carbon-capture-space",
+    "fuzzy_key": "capture,carbon,eye,keep,occidental,one,petroleum,space",
+    "source_domain": "seekingalpha.com",
+    "headline": "Occidental Petroleum: Keep An Eye On This One In The Carbon Capture Space",
+    "publication_date": "2026-09-15T03:09:28+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "low_quality_source",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.energyconnects.com/opinion/thought-leadership/2026/september/enabling-the-world-s-most-advanced-hydrogen-ammonia-and-ccs-projects/",
+    "canonical_url": "https://energyconnects.com/opinion/thought-leadership/2026/september/enabling-the-world-s-most-advanced-hydrogen-ammonia-and-ccs-projects",
+    "fuzzy_key": "advanced,ammonia,ccs,enabling,fukui,hydrogen,most,projects,world",
+    "source_domain": "energyconnects.com",
+    "headline": "FUKUI: Enabling the World's Most Advanced Hydrogen, Ammonia, and CCS Projects",
+    "publication_date": "2026-09-15T12:31:05+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "opinion_in_section_1_4",
+    "found_via": "google_alerts"
+  }
+]
