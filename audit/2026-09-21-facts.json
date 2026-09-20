@@ -1,0 +1,257 @@
+[
+  {
+    "id": "2026-09-21#01",
+    "briefing_date": "2026-09-21",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "INEOS-led Greensand opens EU's first full-scale offshore CO2 storage site",
+    "summary": "King Frederik X opened Project Greensand at the Port of Esbjerg; the INEOS Energy / Harbour Energy / Nordsofonden venture moves into commercial operation, storing up to 400,000 t/yr of CO2 (initially from Danish biomethane plants) in the depleted Nini West field ~250 km offshore, with capacity designed to scale to 4-8 Mtpa.",
+    "source": "Upstream",
+    "pub_date": "2026-09-18",
+    "url": "https://www.upstreamonline.com/carbon-capture/ineos-opens-eus-first-offshore-carbon-storage-project/2-1-2045700",
+    "region": "Europe-UK",
+    "countries": [
+      "Denmark"
+    ],
+    "organisations": [
+      "INEOS Energy",
+      "Harbour Energy",
+      "Nordsofonden"
+    ],
+    "org_types": [
+      "OG-major",
+      "developer",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.4,
+    "co2crc_relevance": "high",
+    "co2crc_note": "First operational EU full-scale offshore storage hub with cross-border intake and a biomethane-CO2 value chain - a live commercialisation template for CarbonNet/Bonaparte-style hubs.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-21#02",
+    "briefing_date": "2026-09-21",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Worley completes FEED for INPEX's Abadi LNG and CCS infrastructure in Indonesia's Masela block",
+    "summary": "Worley delivered front-end engineering design for two offshore packages - about 150 km of subsea infrastructure plus gas-export and CO2 pipelines - on INPEX's roughly US$21bn Abadi LNG project (9.5 Mtpa LNG) in the Masela block, a national strategic project that integrates CCS as it advances toward FID.",
+    "source": "Offshore Energy",
+    "pub_date": "2026-09-18",
+    "url": "https://www.offshore-energy.biz/worley-helps-propel-21b-asian-lng-and-ccs-project-forward-with-feeds-now-out-of-the-way/",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Worley",
+      "INPEX"
+    ],
+    "org_types": [
+      "other",
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Major APAC LNG-plus-CCS scheme advancing to FID; Indonesian storage and regulatory precedent is directly relevant to Australia-Asia CO2 value chains and CO2CRC regional engagement.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "US$21bn is total project capex (not a discrete new commitment) - amount left null per golden rule."
+  },
+  {
+    "id": "2026-09-21#03",
+    "briefing_date": "2026-09-21",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Vallourec wins tubular contract for Greece's Prinos CO2 storage project",
+    "summary": "EnEarth (Energean) awarded Vallourec ~3,000 t of premium VAM casing pipe for phase one of the offshore Prinos CO2 store - an EU Project of Common Interest targeting up to 2.8 Mtpa injection (51.5 Mt total capacity). Vallourec separately took a >15,000 t line-pipe order for Petrobras' Sepia 2 development offshore Brazil.",
+    "source": "Upstream",
+    "pub_date": "2026-09-18",
+    "url": "https://www.upstreamonline.com/carbon-capture/vallourec-wins-pipe-deal-for-carbon-storage-project-offshore-greece/2-1-2045539",
+    "region": "Europe-UK",
+    "countries": [
+      "Greece",
+      "Brazil"
+    ],
+    "organisations": [
+      "Vallourec",
+      "EnEarth",
+      "Energean",
+      "Petrobras"
+    ],
+    "org_types": [
+      "other",
+      "developer",
+      "developer",
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": 2.8,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "CCS supply chain maturing in Europe; Prinos is a depleted-oil-reservoir storage analogue relevant to Australian depleted-field storage economics.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Contract scope stated in tonnes of pipe, no monetary value disclosed - amount null."
+  },
+  {
+    "id": "2026-09-21#04",
+    "briefing_date": "2026-09-21",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Japan Airlines and Climeworks sign world-first CORSIA-compliant carbon removal deal",
+    "summary": "JAL agreed to buy carbon dioxide removal credits from Climeworks Solutions in what both describe as the first CORSIA-compliant CDR agreement - combining pathways such as soil carbon and biochar for the CORSIA-eligible portion, plus separate direct-air-capture credits - an early bridge of durable CDR into aviation compliance markets.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-09-18",
+    "url": "https://carbon-pulse.com/551805/",
+    "region": "APAC",
+    "countries": [
+      "Japan",
+      "Switzerland"
+    ],
+    "organisations": [
+      "Japan Airlines",
+      "Climeworks"
+    ],
+    "org_types": [
+      "other",
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Compliance-market (CORSIA) demand pulling durable CDR - a demand-side precedent relevant to Australia's CDR method development and Article 6 positioning.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-21#05",
+    "briefing_date": "2026-09-21",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Public subsidy for Greensand CO2 storage draws scrutiny as INEOS defends state aid",
+    "summary": "As Greensand opened, INEOS founder Jim Ratcliffe publicly defended the billions in state support underpinning Denmark's CO2 storage build-out, spotlighting the live social-licence and value-for-money debate around subsidised CCS infrastructure.",
+    "source": "EnergyWatch",
+    "pub_date": "2026-09-18",
+    "url": "https://energywatch.com/EnergyNews/Oil___Gas/article19657072.ece",
+    "region": "Europe-UK",
+    "countries": [
+      "Denmark"
+    ],
+    "organisations": [
+      "INEOS"
+    ],
+    "org_types": [
+      "OG-major"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Subsidy-justification and social-licence framing around a flagship storage hub - directly relevant to public-funding arguments for Australian CCS (Otway, CarbonNet).",
+    "sentiment": "negative",
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-21#06",
+    "briefing_date": "2026-09-21",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Asia-Pacific CCUS market could reach US$255bn by 2035, Xodus says",
+    "summary": "Consultancy Xodus projected the APAC CCUS market could grow to around US$255bn by 2035, underscoring the region's investment pipeline across Australia, Japan, Korea and Southeast Asia.",
+    "source": "World Oil",
+    "pub_date": "2026-09-17",
+    "url": "https://www.worldoil.com/news/2026/9/17/asia-pacific-ccus-market-could-reach-255-billion-by-2035-xodus-says/",
+    "region": "APAC",
+    "countries": [],
+    "organisations": [
+      "Xodus"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2035,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "APAC market-size signal supporting the investment case for Australian CCS capacity and CO2CRC's regional relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "market-aggregate",
+    "extractor_note": "US$255bn is a sector-wide market forecast (market-aggregate) - amount left null."
+  }
+]

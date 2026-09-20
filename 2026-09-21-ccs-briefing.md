@@ -1,0 +1,23 @@
+# Quiet day — CCS briefing — Mon 21 Sep 2026
+
+Substantive but concentrated. The Monday window (Fri 18 – Mon 21 Sep, Melbourne dates) was dominated by one event — the launch of INEOS-led Greensand, the EU's first full-scale offshore CO2 store — which generated a large cluster of coverage that collapses to a handful of distinct stories after de-duplication. Five fresh items survived the recency and cross-day checks: two projects (Greensand; Worley's Abadi FEED in Indonesia), two markets items (Vallourec's Prinos storage contract; JAL–Climeworks' CORSIA-compliant CDR deal) and one social-licence item on the subsidy debate around Greensand. No verified in-window items surfaced from Australia, North America, China, the Middle East, India, Latin America (beyond Vallourec's Brazil pipe order) or Africa. Verification note: outbound fetches to trade-press and wire domains were blocked by the network egress policy this run, so publication dates were confirmed from corroborated search-index metadata (dated URLs, multiple outlets and the Google Alerts timestamp feed) rather than on-page reads. The Outlook feeds (Shelly Murrell weekly monitoring; IEAGHG Weekly News) were unavailable this run and were skipped without blocking delivery.
+
+## Projects
+
+- **INEOS-led Greensand opens the EU's first full-scale offshore CO2 storage site** — King Frederik X opened Project Greensand at the Port of Esbjerg, moving the INEOS Energy / Harbour Energy / Nordsøfonden venture into commercial operation; it can store up to 400,000 t/yr of CO2 (initially from Danish biomethane plants, liquefied and shipped ~250 km to the depleted Nini West field for injection ~1,800 m below the seabed), with capacity designed to scale to 4–8 Mtpa — Europe's first fully integrated capture-transport-store value chain. (Upstream, 18 Sep 2026) [link](https://www.upstreamonline.com/carbon-capture/ineos-opens-eus-first-offshore-carbon-storage-project/2-1-2045700)
+- **Worley completes FEED for INPEX's Abadi LNG and CCS infrastructure in Indonesia's Masela block** — Worley delivered front-end engineering design for two offshore packages — about 150 km of subsea infrastructure plus gas-export and CO2 pipelines — on INPEX's roughly US$21bn Abadi LNG project (9.5 Mtpa LNG), a national strategic project that integrates CCS as it advances toward a final investment decision. (Offshore Energy, 18 Sep 2026) [link](https://www.offshore-energy.biz/worley-helps-propel-21b-asian-lng-and-ccs-project-forward-with-feeds-now-out-of-the-way/)
+
+## Markets & strategy
+
+- **Vallourec wins tubular contract for Greece's Prinos CO2 storage project** — EnEarth (Energean) awarded Vallourec ~3,000 t of premium VAM casing pipe for phase one of the offshore Prinos CO2 store, an EU Project of Common Interest targeting up to 2.8 Mtpa injection (51.5 Mt total capacity); Vallourec separately took a >15,000 t line-pipe order for Petrobras' Sepia 2 development offshore Brazil. (Upstream, 18 Sep 2026) [link](https://www.upstreamonline.com/carbon-capture/vallourec-wins-pipe-deal-for-carbon-storage-project-offshore-greece/2-1-2045539)
+- **Japan Airlines and Climeworks sign 'world-first' CORSIA-compliant carbon removal deal** — JAL agreed to buy carbon dioxide removal credits from Climeworks Solutions in what both describe as the first CORSIA-compliant CDR agreement, combining pathways such as soil carbon and biochar for the CORSIA-eligible portion plus separate direct-air-capture credits — an early bridge of durable CDR into aviation compliance markets. (Carbon Pulse, 18 Sep 2026) [paywall] [link](https://carbon-pulse.com/551805/)
+
+## Media sentiment & social licence
+
+- **Public subsidy for Greensand CO2 storage draws scrutiny as INEOS defends state aid** — As Greensand opened, INEOS founder Jim Ratcliffe publicly defended the billions in state support underpinning Denmark's CO2 storage build-out, spotlighting the live social-licence and value-for-money debate around subsidised CCS infrastructure. (EnergyWatch, 18 Sep 2026) [paywall] [link](https://energywatch.com/EnergyNews/Oil___Gas/article19657072.ece)
+
+## Still on the radar
+
+- **Asia-Pacific CCUS market could reach US$255bn by 2035, Xodus says** — 17 Sep 2026 · Consultancy Xodus projected the APAC CCUS market could grow to around US$255bn by 2035, underscoring the region's investment pipeline across Australia, Japan, Korea and Southeast Asia — an APAC market-size signal one day outside the Monday window. (World Oil, 17 Sep 2026) [link](https://www.worldoil.com/news/2026/9/17/asia-pacific-ccus-market-could-reach-255-billion-by-2035-xodus-says/)
+
+— Auto-briefing
