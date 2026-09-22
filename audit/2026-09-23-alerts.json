@@ -1,11 +1,38 @@
 [
   {
-    "canonical_url": "https://indianchemicalnews.com/ccus/denmark-opens-eus-first-full-scale-co2-storage-facility-as-greensand-enters-commercial-operation-31967",
-    "raw_url": "https://www.indianchemicalnews.com/ccus/denmark-opens-eus-first-full-scale-co2-storage-facility-as-greensand-enters-commercial-operation-31967",
-    "headline": "Denmark opens EU's first full-scale CO2 storage facility as Greensand enters commercial operation",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-09-21T23:30:39+00:00",
-    "fuzzy_key": "co2,commercial,denmark,enters,eu,facility,first,full,greensand,opens,operation,scale,storage",
+    "canonical_url": "https://carboncredits.com/climeworks-jal-corsia-carbon-removal-deal",
+    "raw_url": "https://carboncredits.com/climeworks-jal-corsia-carbon-removal-deal/",
+    "headline": "Climeworks, Japan Airlines (JAL) Sign 'First' CORSIA-Compliant Carbon Removal Deal",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-09-22T19:34:25+00:00",
+    "fuzzy_key": "airlines,carbon,climeworks,compliant,corsia,deal,first,jal,japan,removal,sign",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/vaulted-deep-lands-35-million-as-big-tech-bets-on-turning-waste-into-carbon-removal",
+    "raw_url": "https://carbonherald.com/vaulted-deep-lands-35-million-as-big-tech-bets-on-turning-waste-into-carbon-removal/",
+    "headline": "Vaulted Deep Lands $35 Million As Big Tech Bets On Turning Waste Into Carbon Removal",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-09-22T12:47:22+00:00",
+    "fuzzy_key": "35,bets,big,carbon,deep,into,lands,million,removal,tech,turning,vaulted,waste",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://chemengonline.com/demeter-energy-advances-biomethanol-and-carbon-capture-facility-in-florida",
+    "raw_url": "https://www.chemengonline.com/demeter-energy-advances-biomethanol-and-carbon-capture-facility-in-florida/",
+    "headline": "Demeter Energy advances biomethanol and carbon capture facility in Florida",
+    "source_domain": "chemengonline.com",
+    "publication_date": "2026-09-22T18:35:21+00:00",
+    "fuzzy_key": "advances,biomethanol,capture,carbon,demeter,energy,facility,florida",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://co2crc.com.au/for-investors",
+    "raw_url": "https://co2crc.com.au/for-investors/",
+    "headline": "Invest in CCS Research - CO2CRC",
+    "source_domain": "co2crc.com.au",
+    "publication_date": "2026-09-22T19:27:37+00:00",
+    "fuzzy_key": "ccs,co2crc,invest,research",
     "found_via": "google_alerts"
   },
   {
@@ -18,15 +45,6 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://facebook.com/groups/1560015454640656/posts/2095995214376008",
-    "raw_url": "https://www.facebook.com/groups/1560015454640656/posts/2095995214376008/",
-    "headline": "ExxonMobil Submits Class VI Permit for Nighthawk CO2 Injection Wells in St. Landry Parish, LA",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-09-22T04:36:43+00:00",
-    "fuzzy_key": "class,co2,exxonmobil,injection,la,landry,nighthawk,parish,permit,st,submits,vi,wells",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://designboom.com/technology/europes-largest-carbon-capture-facility-co2-netherlands-yara-norway",
     "raw_url": "https://www.designboom.com/technology/europes-largest-carbon-capture-facility-co2-netherlands-yara-norway/",
     "headline": "europe's largest carbon capture facility sends CO₂ from the netherlands to norway - Designboom",
@@ -36,12 +54,57 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/vaulted-deep-lands-35-million-as-big-tech-bets-on-turning-waste-into-carbon-removal",
-    "raw_url": "https://carbonherald.com/vaulted-deep-lands-35-million-as-big-tech-bets-on-turning-waste-into-carbon-removal/",
-    "headline": "Vaulted Deep Lands $35 Million As Big Tech Bets On Turning Waste Into Carbon Removal",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-09-22T12:47:22+00:00",
-    "fuzzy_key": "35,bets,big,carbon,deep,into,lands,million,removal,tech,turning,vaulted,waste",
+    "canonical_url": "https://facebook.com/groups/1560015454640656/posts/2095995214376008",
+    "raw_url": "https://www.facebook.com/groups/1560015454640656/posts/2095995214376008/",
+    "headline": "ExxonMobil Submits Class VI Permit for Nighthawk CO2 Injection Wells in St. Landry Parish, LA",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-09-22T04:36:43+00:00",
+    "fuzzy_key": "class,co2,exxonmobil,injection,la,landry,nighthawk,parish,permit,st,submits,vi,wells",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/ccus/denmark-opens-eus-first-full-scale-co2-storage-facility-as-greensand-enters-commercial-operation-31967",
+    "raw_url": "https://www.indianchemicalnews.com/ccus/denmark-opens-eus-first-full-scale-co2-storage-facility-as-greensand-enters-commercial-operation-31967",
+    "headline": "Denmark opens EU's first full-scale CO2 storage facility as Greensand enters commercial operation",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-09-21T23:30:39+00:00",
+    "fuzzy_key": "co2,commercial,denmark,enters,eu,facility,first,full,greensand,opens,operation,scale,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://industrialinfo.com/iirenergy/industry-news/article/europe-celebrates-largest-carbon-capture-project--362664",
+    "raw_url": "https://www.industrialinfo.com/iirenergy/industry-news/article/europe-celebrates-largest-carbon-capture-project--362664",
+    "headline": "Europe Celebrates Largest Carbon Capture Project - Industrial Info Resources",
+    "source_domain": "industrialinfo.com",
+    "publication_date": "2026-09-22T18:08:33+00:00",
+    "fuzzy_key": "capture,carbon,celebrates,europe,industrial,info,largest,project,resources",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://interestingengineering.com/videos/yaras-carbon-capture-plant-to-capture-liquefy-up-to-800k-tons-of-co₂-annually",
+    "raw_url": "https://interestingengineering.com/videos/yaras-carbon-capture-plant-to-capture-liquefy-up-to-800k-tons-of-co₂-annually",
+    "headline": "Yara's carbon capture plant to capture, liquefy up to 800k tons of CO₂ annually",
+    "source_domain": "interestingengineering.com",
+    "publication_date": "2026-09-22T18:08:33+00:00",
+    "fuzzy_key": "800k,annually,capture,carbon,co,liquefy,plant,tons,up,yara",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/dac-firm-to-close-middle-east-pilot-facility-scale-in-norway-73529.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/dac-firm-to-close-middle-east-pilot-facility-scale-in-norway-73529.html",
+    "headline": "DAC firm to close Middle East pilot facility, scale in Norway",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-09-22T14:56:12+00:00",
+    "fuzzy_key": "close,dac,east,facility,firm,middle,norway,pilot,scale",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thecooldown.com/green-tech/largest-industrial-carbon-capture-site-netherlands",
+    "raw_url": "https://www.thecooldown.com/green-tech/largest-industrial-carbon-capture-site-netherlands/",
+    "headline": "Netherlands launches Europe's largest industrial carbon capture site to trap ... - The Cool Down",
+    "source_domain": "thecooldown.com",
+    "publication_date": "2026-09-22T21:17:39+00:00",
+    "fuzzy_key": "capture,carbon,cool,down,europe,industrial,largest,launches,netherlands,site,trap",
     "found_via": "google_alerts"
   }
 ]
