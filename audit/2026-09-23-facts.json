@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2026-09-23#01",
+    "briefing_date": "2026-09-23",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Vaulted Deep secures US$35m offtake-backed debt facility to scale biomass carbon removal",
+    "summary": "Bio-waste carbon-removal developer Vaulted Deep closed a US$35m debt facility from Mediobanca, arranged by CFP Energy and secured against long-term CDR purchase and waste-servicing contracts with Frontier Climate buyers (Google, Stripe and others). The company said it is the largest publicly disclosed US commercial debt deal in durable carbon removal backed by long-term purchase contracts, and that it delivered 20,000 tonnes of removals to Frontier buyers in H1 2026.",
+    "source": "ESG Dive / Vaulted Deep",
+    "pub_date": "2026-09-22",
+    "url": "https://www.esgdive.com/news/vaulted-deep-gets-35m-debt-deal-to-expand-bio-waste-cdr-frontier-climate/830912/",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Italy",
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Vaulted Deep",
+      "Mediobanca",
+      "CFP Energy",
+      "Frontier Climate",
+      "Google",
+      "Stripe"
+    ],
+    "org_types": [
+      "developer",
+      "financier",
+      "financier",
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "BECCS",
+      "storage"
+    ],
+    "amount": 35000000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals a maturing offtake-backed debt-finance model for durable CDR — a non-dilutive capital template relevant as Australian CDR/CCS developers seek project finance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Debt facility, not equity (mapped to nearest vocab 'investment'). US outlets (ESG Dive) dated the announcement 21 Sep 2026; carbonherald full timestamp 2026-09-22T12:47Z converts to 22 Sep Melbourne, the in-window date used here. 20,000 t is an H1-2026 delivery figure, not annual capacity, so capacity_mtpa left null."
+  }
+]
