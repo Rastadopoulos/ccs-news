@@ -1,0 +1,163 @@
+[
+  {
+    "id": "2026-09-24#01",
+    "briefing_date": "2026-09-24",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "DAC developer to close its Middle East pilot and concentrate scale-up in Norway",
+    "summary": "A direct air capture developer is shutting its Middle East pilot facility and refocusing its scale-up on Norway, per Quantum Commodity Intelligence — a siting decision consistent with pairing DAC with low-carbon power and North Sea storage.",
+    "source": "Quantum Commodity Intelligence",
+    "pub_date": "2026-09-23",
+    "url": "https://www.qcintel.com/carbon/article/dac-firm-to-close-middle-east-pilot-facility-scale-in-norway-73529.html",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "DAC siting logic (cheap low-carbon power + nearby storage) informs where atmospheric-removal capacity clusters; limited direct Australian relevance.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Developer unnamed and source paywalled/unfetchable; summary limited to headline-supported facts. Middle East pilot closure has a cancellation aspect but the overall story is a strategic relocation."
+  },
+  {
+    "id": "2026-09-24#02",
+    "briefing_date": "2026-09-24",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Relae and Microsoft publish sixth-edition High-Quality CDR criteria with first delivery-risk framework",
+    "summary": "Relae (formerly Carbon Direct) and Microsoft released the sixth edition of their Criteria for High-Quality Carbon Dioxide Removal, adding for the first time a delivery-risk framework (TECOP lens) that assesses whether a project will generate credits at the quantity and timeline promised to buyers — distinct from credit quality.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-23",
+    "url": "https://carbonherald.com/relae-microsoft-publish-new-high-quality-cdr-criteria-addressing-delivery-risk-for-the-first-time/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Relae",
+      "Microsoft"
+    ],
+    "org_types": [
+      "registry",
+      "other"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "CDR quality and delivery-risk standards shape buyer due diligence and project bankability across durable removals — relevant to Australian CDR/CCS project financing.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Relae = rebranded Carbon Direct; treated as a standards/advisory body (closest vocab: registry)."
+  },
+  {
+    "id": "2026-09-24#03",
+    "briefing_date": "2026-09-24",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Capsol Technologies wins five new carbon capture engineering studies",
+    "summary": "Norwegian capture-technology firm Capsol secured five engineering studies across cement and energy, including a second site for a returning CapsolGo demonstration customer, boosting near-term liquidity for its hot potassium carbonate (HPC) capture technology.",
+    "source": "Carbon Herald / World Cement",
+    "pub_date": "2026-09-22",
+    "url": "https://carbonherald.com/capsol-secures-five-new-carbon-capture-engineering-studies/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Capsol Technologies"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Incremental commercial traction for a European capture-tech vendor; limited direct CO2CRC relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Underlying announcement 22 Sep (out of the strict daily window); surfaced as radar. Contracts signed but no discrete money figure stated."
+  },
+  {
+    "id": "2026-09-24#04",
+    "briefing_date": "2026-09-24",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Idemitsu Americas backs InPlanet with non-recourse debt facility for enhanced rock weathering",
+    "summary": "Idemitsu Americas Holdings and InPlanet closed a non-recourse debt facility to scale InPlanet's enhanced rock weathering carbon removal in Brazil, structured against a contracted, insured delivery of more than 28,500 tonnes of CO2 removal (2026-2028), with delivery insurance from CFC and broking by Howden.",
+    "source": "Indian Chemical News / PR Newswire",
+    "pub_date": "2026-09-17",
+    "url": "https://www.indianchemicalnews.com/ccus/idemitsu-backs-inplanet-with-debt-facility-to-scale-carbon-removal-31989",
+    "region": "Latin America",
+    "countries": [
+      "Brazil",
+      "Japan"
+    ],
+    "organisations": [
+      "InPlanet",
+      "Idemitsu Americas Holdings",
+      "CFC",
+      "Howden"
+    ],
+    "org_types": [
+      "developer",
+      "financier",
+      "other",
+      "other"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "mineralisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A Japanese energy major deploying non-recourse debt into durable CDR signals maturing carbon-removal project finance — relevant to CO2CRC's removal-market and financing watch.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Non-recourse debt facility (project finance), not equity. Facility size not disclosed (amount null). 28,500 t is a cumulative 2026-2028 delivery volume, not a per-annum capacity, so capacity_mtpa left null. Announced 17 Sep (out of strict daily window); surfaced as radar."
+  }
+]
