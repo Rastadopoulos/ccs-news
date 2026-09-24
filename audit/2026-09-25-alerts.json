@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energyconnects.com/news/renewables/2026/september/climate-startup-shifts-focus-from-carbon-removal-to-oil-recovery",
+    "raw_url": "https://www.energyconnects.com/news/renewables/2026/september/climate-startup-shifts-focus-from-carbon-removal-to-oil-recovery/",
+    "headline": "Climate Startup Shifts Focus From Carbon Removal to Oil Recovery - Energy Connects",
+    "source_domain": "energyconnects.com",
+    "publication_date": "2026-09-24T22:41:49+00:00",
+    "fuzzy_key": "carbon,climate,connects,energy,focus,oil,recovery,removal,shifts,startup",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://facebook.com/interestingengineering/videos/fertiliser-maker-yara-has-officially-inaugurated-the-carbon-capture-facility-at-/1511350291036260",
     "raw_url": "https://www.facebook.com/interestingengineering/videos/fertiliser-maker-yara-has-officially-inaugurated-the-carbon-capture-facility-at-/1511350291036260/",
     "headline": "Yara Opens Europe's Largest Carbon Capture Facility at Sluiskil Plant",
@@ -18,12 +27,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://forbes.com/sites/forbesbooksauthors/2026/09/23/data-centers-need-the-grid-we-can-turn-that-into-a-carbon-removal-buildout",
+    "raw_url": "https://www.forbes.com/sites/forbesbooksauthors/2026/09/23/data-centers-need-the-grid-we-can-turn-that-into-a-carbon-removal-buildout/",
+    "headline": "Data Centers Need The Grid. We Can Turn That Into A Carbon Removal Buildout. - Forbes",
+    "source_domain": "forbes.com",
+    "publication_date": "2026-09-24T21:10:09+00:00",
+    "fuzzy_key": "buildout,can,carbon,centers,data,forbes,grid,into,need,removal,turn",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://instagram.com/reel/DdnQ9osk6-G",
     "raw_url": "https://www.instagram.com/reel/DdnQ9osk6-G/",
     "headline": "Yara's new carbon capture plant can trap 800,000 tons of CO2 a year. Yara has ... - Instagram",
     "source_domain": "instagram.com",
     "publication_date": "2026-09-24T03:29:18+00:00",
     "fuzzy_key": "000,800,can,capture,carbon,co2,has,instagram,new,plant,tons,trap,yara,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://moomoo.com/news/post/1000169271/carbon-capture-utilization-and-storage-market-worth-13-53-billion",
+    "raw_url": "https://www.moomoo.com/news/post/1000169271/carbon-capture-utilization-and-storage-market-worth-13-53-billion",
+    "headline": "Carbon Capture, Utilization, and Storage Market Worth $13.53 Billion by 2031 - Moomoo",
+    "source_domain": "moomoo.com",
+    "publication_date": "2026-09-24T21:10:09+00:00",
+    "fuzzy_key": "13,2031,53,billion,capture,carbon,market,moomoo,storage,utilization,worth",
     "found_via": "google_alerts"
   }
 ]
