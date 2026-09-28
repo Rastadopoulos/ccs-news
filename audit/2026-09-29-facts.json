@@ -1,0 +1,208 @@
+[
+  {
+    "id": "2026-09-29#01",
+    "briefing_date": "2026-09-29",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "CNPC passes 13 Mt of cumulative CO2 injected as it pushes CCUS commercialisation",
+    "summary": "China National Petroleum Corp says it has injected over 13 million tonnes of CO2 to date (>60% of the Chinese petroleum sector total), with H1 2026 injection of 1.37 Mt (+14.2% y/y), mostly via CO2-EOR; it plans integrated industrial CCUS clusters in the 15th Five-Year Plan.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-28",
+    "url": "https://carbonherald.com/cnpc-injects-over-13m-tons-of-co2-in-ccus-commercialization-push/",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "CNPC"
+    ],
+    "org_types": [
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "China's largest CCUS-EOR operator scaling toward Gt-class basin clusters is a competitive and technical benchmark for Australian storage ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "13 Mt is a cumulative injected volume (resource/progress), not additive annual capacity; capacity_mtpa left null."
+  },
+  {
+    "id": "2026-09-29#02",
+    "briefing_date": "2026-09-29",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "US BLM offers Tallgrass a right-of-way grant for Southeast Wyoming CO2 storage",
+    "summary": "The US Bureau of Land Management offered Tallgrass Energy a right-of-way grant to use 480 acres of federally managed pore space in Laramie County for its Southeast Wyoming CO2 Sequestration Project; final Wyoming DEQ Class VI injection-well permits are still needed before injection.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-28",
+    "url": "https://carbonherald.com/wyoming-carbon-storage-hub-gains-federal-approval/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Bureau of Land Management",
+      "Tallgrass Energy"
+    ],
+    "org_types": [
+      "government",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Federal pore-space access mechanics inform how public-land storage tenure can be structured; relevant to Australian offshore/onshore acreage frameworks.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Grant is offered pending Class VI permits; not yet operational."
+  },
+  {
+    "id": "2026-09-29#03",
+    "briefing_date": "2026-09-29",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "ICVCM approves Verra's CCS methodology under the Core Carbon Principles",
+    "summary": "The Integrity Council for the Voluntary Carbon Market approved Verra's CCS methodology as meeting its Core Carbon Principles, giving CCS-based credits access to the high-integrity CCP label.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-09-28",
+    "url": "https://carbon-pulse.com/554897/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "ICVCM",
+      "Verra"
+    ],
+    "org_types": [
+      "registry",
+      "registry"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "High-integrity crediting of CCS improves the voluntary-market revenue case for storage projects CO2CRC and partners could develop.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-29#04",
+    "briefing_date": "2026-09-29",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Revcoo brings all-electric cryogenic capture to a Belgian zinc plant in its first metals-sector deal",
+    "summary": "French firm Revcoo will deploy its all-electric cryogenic CarbonCloud system at Reazn's recycled-zinc alloy plant in Kruisem, Belgium, targeting 5,000-8,000 tpa of 99.99%-purity CO2; a feasibility study and FEED come first, with full operation slated for late 2028.",
+    "source": "gasworld",
+    "pub_date": "2026-09-28",
+    "url": "https://www.gasworld.com/story/revcoo-to-capture-up-to-8000-tonnes-of-co2-at-belgian-zinc-plant/2260346.article/",
+    "region": "Europe-UK",
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "organisations": [
+      "Revcoo",
+      "Reazn"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2028,
+    "capacity_mtpa": 0.008,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Solvent-free electric cryogenic capture and a new hard-to-abate sector (metals) broaden the capture-technology field CO2CRC tracks.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "capacity_mtpa from stated up-to-8,000 tpa (0.008 Mtpa); pre-FID feasibility stage."
+  },
+  {
+    "id": "2026-09-29#05",
+    "briefing_date": "2026-09-29",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "CCS projects could draw ~EUR8.7bn from the EU's proposed Industrial Decarbonisation Bank",
+    "summary": "Phase I of the EU's proposed Industrial Decarbonisation Bank could channel around EUR8.7 billion to CCS projects, per external estimates, as part of the July 2026 EU ETS revision package.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-09-25",
+    "url": "https://carbon-pulse.com/554477/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "European Commission"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "grant-funding",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": 8700000000,
+    "currency": "EUR",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Scale of EU public support for CCS shapes the global competitive landscape for capital and offtake.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "External estimate of a proposed (not-yet-approved) programme allocation; radar/near-miss item, out of daily window."
+  }
+]
