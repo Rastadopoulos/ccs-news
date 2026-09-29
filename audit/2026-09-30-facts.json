@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2026-09-30#01",
+    "briefing_date": "2026-09-30",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Air Liquide completes 'golden weld' connecting its Rotterdam capture plant to the Porthos CO2 pipeline",
+    "summary": "Air Liquide made the 'golden weld' physically tying its Cryocap cryogenic capture unit at Rozenburg into the shared Porthos CO2 transport-and-storage network in Rotterdam; captured CO2 will flow via the Maasvlakte compressor station to the offshore P18-A depleted gas field. Air Liquide is one of Porthos's four foundation customers (with Shell, Air Products and ExxonMobil); Porthos is targeted to start up in H2 2027 at the earliest.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-29",
+    "url": "https://carbonherald.com/golden-weld-connects-air-liquide-to-porthos-co2-pipeline-in-rotterdam/",
+    "region": "Europe-UK",
+    "countries": [
+      "Netherlands",
+      "France"
+    ],
+    "organisations": [
+      "Air Liquide",
+      "Porthos"
+    ],
+    "org_types": [
+      "OG-major",
+      "infrastructure"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2027,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "An open-access, multi-user offshore CO2 T&S hub reaching construction milestones is a direct reference model for Australian shared-infrastructure CCS hubs such as CarbonNet.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Construction connection milestone within an FID'd project; Porthos not yet operational (H2 2027 target). org_types: 'infrastructure' is not a listed ORG_TYPE — closest is 'other'; Porthos is the T&S JV. See extractor_note."
+  },
+  {
+    "id": "2026-09-30#02",
+    "briefing_date": "2026-09-30",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Climeworks wins ~£0.78m UK government tender to supply direct-air-capture removal credits",
+    "summary": "Swiss direct-air-capture developer Climeworks won a £783,749 (~US$1.04m) UK government tender to supply carbon-removal credits offsetting construction emissions of a new government building, part of a broader ~£2.5m government carbon-credit procurement.",
+    "source": "Quantum Commodity Intelligence",
+    "pub_date": "2026-09-29",
+    "url": "https://www.qcintel.com/carbon/article/climeworks-wins-784-000-uk-govt-carbon-credit-tender-73983.html",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Switzerland"
+    ],
+    "organisations": [
+      "Climeworks",
+      "UK Government"
+    ],
+    "org_types": [
+      "developer",
+      "government"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": 783749,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Public-sector procurement of durable engineered removals (rather than avoidance offsets) is a demand-side signal Australian CDR and storage developers can point to when building an offtake case.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "£783,749 is a government procurement award for removal credits (a supplier contract paid with public money); recorded as government-funding."
+  },
+  {
+    "id": "2026-09-30#03",
+    "briefing_date": "2026-09-30",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Rio Tinto and Shougang commission an industrial-scale blast-furnace CO2-capture trial at Jingtang, China",
+    "summary": "Rio Tinto and Chinese steelmaker Shougang commissioned an industrial-scale facility capturing CO2 from blast-furnace gas at Shougang's Jingtang base — processing up to 3,000 m3/h of blast-furnace gas and capturing up to 10,000 t/yr of CO2 using waste heat — and are exploring converting captured CO2 into syngas for reuse in steelmaking. Underlying announcement was 28 Sep, one day outside the daily window.",
+    "source": "Rio Tinto / Reuters",
+    "pub_date": "2026-09-28",
+    "url": "https://www.riotinto.com/en/news/releases/2026/shougang-group-and-rio-tinto-commission-an-industrial-scale-carbon-capture-trial-facility-for-blast-furnace-gas",
+    "region": "China",
+    "countries": [
+      "China",
+      "Australia"
+    ],
+    "organisations": [
+      "Rio Tinto",
+      "Shougang Group"
+    ],
+    "org_types": [
+      "OG-major",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.01,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Industrial-scale steel-sector blast-furnace CO2 capture, with an Australian mining major as partner, is a hard-to-abate capture benchmark relevant to Australia's steel/minerals decarbonisation.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar/near-miss: 28 Sep announcement, one day out of the daily window. capacity_mtpa from up-to-10,000 t/yr (0.01 Mtpa). Rio Tinto classed 'OG-major' as the closest listed large-corporate type (it is a mining major, not oil & gas)."
+  },
+  {
+    "id": "2026-09-30#04",
+    "briefing_date": "2026-09-30",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "CO2CRC publishes 'Turning field evidence into CO2 storage confidence'",
+    "summary": "A new CO2CRC knowledge-hub article on how field evidence underpins confidence in secure CO2 storage; flagged as a home-organisation item, though it reads as a technical explainer rather than a discrete news event and could not be fetched directly this run.",
+    "source": "CO2CRC",
+    "pub_date": "2026-09-29",
+    "url": "https://co2crc.com.au/ccus-knowledge-hub/turning-field-evidence-into-co2-storage-confidence/",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "CO2CRC"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "MMV-MRV",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Home-organisation content on storage assurance / MMV; directly relevant to CO2CRC's Otway and storage-characterisation work.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar item: CO2CRC knowledge-hub explainer, not a discrete hard-news event; page could not be fetched (egress blocked) to confirm a news hook."
+  }
+]
