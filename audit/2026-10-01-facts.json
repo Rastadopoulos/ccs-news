@@ -1,0 +1,215 @@
+[
+  {
+    "id": "2026-10-01#01",
+    "briefing_date": "2026-10-01",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Arbon Earth secures first marine CDR permit in Indonesia",
+    "summary": "Sweden's Arbon Earth won a first-of-its-kind Indonesian permit to run deep-sea marine carbon removal, sinking cultivated seaweed off Lombok, working with the Ministry of Marine Affairs and Fisheries (KKP).",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-30",
+    "url": "https://carbonherald.com/arbon-earth-secures-pioneering-mcdr-permit-in-indonesia/",
+    "region": "APAC",
+    "countries": [
+      "Indonesia",
+      "Sweden"
+    ],
+    "organisations": [
+      "Arbon Earth",
+      "Indonesia Ministry of Marine Affairs and Fisheries"
+    ],
+    "org_types": [
+      "startup",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "marine-CDR"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Marine CDR outside CO2CRC's geological-storage focus, but signals Indonesia's widening CO2-removal regulatory activity in the APAC neighbourhood.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-10-01#02",
+    "briefing_date": "2026-10-01",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "NYK buys 30% stake in Vår Energi's Trudvang offshore CO2 storage project",
+    "summary": "Japanese shipping major NYK is taking a 30% interest in Vår Energi's Trudvang CCS partnership and the EXL 007 storage licence in the Norwegian North Sea (initial 2 Mtpa, >10 Mtpa potential), its first direct equity in geological CO2 storage; post-deal ownership is Vår Energi 40% / INPEX Idemitsu Norge 30% / NYK 30%.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-09-30",
+    "url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway",
+      "Japan"
+    ],
+    "organisations": [
+      "Nippon Yusen Kabushiki Kaisha (NYK)",
+      "Vår Energi",
+      "INPEX Idemitsu Norge"
+    ],
+    "org_types": [
+      "other",
+      "OG-major",
+      "NOC"
+    ],
+    "instrument_type": "M&A",
+    "value_chain": [
+      "storage",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": 2,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A CO2-shipping major buying into European storage is the cross-border capture-here/store-there model CO2CRC tracks for Australia-APAC (e.g. Bayu-Undan, Japan-Malaysia).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "No transaction value disclosed; 2 Mtpa is the project's initial storage injection capacity, not a new commitment."
+  },
+  {
+    "id": "2026-10-01#03",
+    "briefing_date": "2026-10-01",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Louisiana Public Broadcasting documentary examines the state's carbon capture debate",
+    "summary": "'Going Underground: Carbon Capture in Louisiana' premiered on Louisiana Public Broadcasting, weighing safety, federal incentives, property rights and the role of CCS in cutting emissions.",
+    "source": "American Press",
+    "pub_date": "2026-09-30",
+    "url": "https://americanpress.com/2026/09/30/documentary-explores-louisianas-intense-carbon-capture-debate/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Louisiana Public Broadcasting"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "US social-licence bellwether; Louisiana's property-rights and pipeline-safety debate mirrors the community-consent challenges facing any onshore CCS.",
+    "sentiment": "neutral",
+    "tags": [
+      "broadcast"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-10-01#04",
+    "briefing_date": "2026-10-01",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Pertamina Hulu Energi pushes Asri Basin as a regional CO2 storage hub",
+    "summary": "PHE, with ExxonMobil, is positioning the offshore Asri Basin (est. 2.9 Gt potential) as an integrated regional CCS hub with LCO2 shipping, a reception terminal, offshore pipeline and injection wells; Indonesia's national storage potential is put at ~578 Gt across 20 basins.",
+    "source": "Antara News",
+    "pub_date": "2026-09-28",
+    "url": "https://www.antaranews.com/berita/5765085/phe-dorong-asri-basinjadi-hub-penyimpanan-karbon",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Pertamina Hulu Energi",
+      "ExxonMobil"
+    ],
+    "org_types": [
+      "NOC",
+      "OG-major"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "storage",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Indonesia's Asri hub is a direct APAC analogue/competitor to Australian cross-border storage ambitions; import-CO2 hub strategy worth monitoring.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "2.9 Gt / 578 Gt are cumulative storage-resource estimates, not Mtpa commitments (Indonesian-language source)."
+  },
+  {
+    "id": "2026-10-01#05",
+    "briefing_date": "2026-10-01",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Cotierra raises $3M to scale decentralised biochar",
+    "summary": "Zurich-based Cotierra closed a $3M round (co-led by Paulig's PINC and Carbon Removal Partners) to commercialise decentralised, farm-level biochar production for durable carbon removal, starting with coffee residues.",
+    "source": "Tech.eu",
+    "pub_date": "2026-09-29",
+    "url": "https://tech.eu/2026/09/29/cotierra-raises-3m-to-scale-decentralised-biochar-across-tropical-agriculture",
+    "region": "Europe-UK",
+    "countries": [
+      "Switzerland"
+    ],
+    "organisations": [
+      "Cotierra",
+      "PINC (Paulig)",
+      "Carbon Removal Partners"
+    ],
+    "org_types": [
+      "startup",
+      "financier",
+      "financier"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": 3000000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Biochar CDR seed round; peripheral to engineered CCS but part of the broader durable-removal financing picture.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Biochar CDR has no exact value_chain vocab token; used not-applicable."
+  }
+]
