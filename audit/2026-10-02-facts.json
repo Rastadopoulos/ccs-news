@@ -1,0 +1,166 @@
+[
+  {
+    "id": "2026-10-02#01",
+    "briefing_date": "2026-10-02",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Canada, Alberta and Oil Sands Alliance agree to advance the Pathways CCS project",
+    "summary": "Prime Minister Mark Carney announced in Fort McMurray that the federal and Alberta governments and the five-member Oil Sands Alliance have reached an agreement to advance the Pathways CCS project — targeting roughly 6 Mtpa of captured CO2 by the mid-2030s rising to 16 Mtpa by 2045 — with Ottawa extending investment tax credits (50% on capture equipment, 37.5% on transport and storage) to 2035; FID is not expected until late 2027 or early 2028, and the deal is tied to federal backing for the Pacific Link oil-export pipeline.",
+    "source": "Reuters",
+    "pub_date": "2026-10-01",
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N43F112:0-canada-s-oil-sands-alliance-reaches-agreement-to-advance-pathways-carbon-capture-and-storage-project/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Government of Canada",
+      "Government of Alberta",
+      "Oil Sands Alliance"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2035,
+    "capacity_mtpa": 6,
+    "co2crc_relevance": "high",
+    "co2crc_note": "One of the world's largest CCS projects clearing a key government-industry hurdle; validates the oil-and-gas-funded, tax-credit-backed storage model CO2CRC's research underpins and sets a global benchmark Australia's own hubs are measured against.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "mixed",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Capacity scales to 16 Mtpa by 2045; ITCs are percentage rates not a discrete committed sum, so amount left null."
+  },
+  {
+    "id": "2026-10-02#02",
+    "briefing_date": "2026-10-02",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Power generation set to lead upcoming CCUS capacity, GlobalData says",
+    "summary": "GlobalData reported that power generation is poised to become the single largest sector in the forward CCUS pipeline, with around 73 Mtpa of capture capacity across power projects expected online by 2030, reflecting rising electricity demand and efforts to extend the operating life of thermal assets.",
+    "source": "GlobalData (via QC Intelligence)",
+    "pub_date": "2026-10-01",
+    "url": "https://www.qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "GlobalData"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2030,
+    "capacity_mtpa": 73,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Signals the demand centre of gravity in CCUS shifting toward power-sector capture — shaping where storage demand and CO2CRC's commercial storage positioning will concentrate this decade.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "73 Mtpa is a sector-wide forward-pipeline forecast (market-aggregate), not a single new commitment; capacity_mtpa non-additive."
+  },
+  {
+    "id": "2026-10-02#03",
+    "briefing_date": "2026-10-02",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "EU Parliament groups sharpen positions on ETS reform ahead of October deadline",
+    "summary": "European Parliament political groups firmed up their positions on the EU ETS Directive revision ahead of the committee amendment deadline, with proposals including a EUR 40/t EUA price-stability trigger, a slower emissions-cap decline and the integration of permanent carbon removals (BioCCS and DACCS) — all of which shape the carbon-price signal and demand underpinning CCS and CDR economics.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-10-01",
+    "url": "https://carbon-pulse.com/556509/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "European Parliament"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Indirect: EU ETS integration of permanent removals strengthens the world's largest compliance-market demand signal for CCS/CDR, a reference point for Australian carbon-market design.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "EUR 40 is a proposed price-stability trigger, not a funding amount; amount left null."
+  },
+  {
+    "id": "2026-10-02#04",
+    "briefing_date": "2026-10-02",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "Hundreds march against the UK Peak Cluster carbon-capture pipeline",
+    "summary": "On 27 September close to a thousand residents across five counties joined a coordinated 'PipeWalk' protest along the proposed 128-mile Peak Cluster CO2 pipeline route, organised by Action Against Carbon Capture and Storage, citing pipeline safety, emergency-response, ecological and taxpayer-liability concerns.",
+    "source": "Derbyshire Times",
+    "pub_date": "2026-09-27",
+    "url": "https://www.derbyshiretimes.co.uk/news/people/derbyshire-campaigners-join-hundreds-on-march-against-peak-cluster-carbon-capture-scheme-9244831",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Peak Cluster",
+      "Action Against Carbon Capture and Storage"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A live social-licence flashpoint for CO2 pipeline infrastructure — the kind of community-opposition risk CO2CRC must anticipate for Australian transport-and-storage corridors.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Underlying event (27 Sep) falls just outside the Fri 2 Oct window; carried as radar/social-licence context."
+  }
+]
