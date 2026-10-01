@@ -1,11 +1,20 @@
 [
   {
-    "canonical_url": "https://indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries",
-    "raw_url": "https://www.indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries/",
-    "headline": "CCUS Investment Shifts Toward Power Generation and Hard-to-Abate Industries - IndexBox",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-09-30T21:42:05+00:00",
-    "fuzzy_key": "abate,ccus,generation,hard,indexbox,industries,investment,power,shifts,toward",
+    "canonical_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project",
+    "raw_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project/",
+    "headline": "NYK Buys 30% Stake In Vår Energi's Trudvang Offshore CO2 Storage Project",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "30,buys,co2,energi,nyk,offshore,project,stake,storage,trudvang",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://chemengonline.com/rio-tinto-and-shougang-commission-industrial-scale-carbon-capture-facility-for-blast-furnace-in-china",
+    "raw_url": "https://www.chemengonline.com/rio-tinto-and-shougang-commission-industrial-scale-carbon-capture-facility-for-blast-furnace-in-china/",
+    "headline": "Rio Tinto and Shougang commission industrial-scale carbon capture facility for blast furnace in China",
+    "source_domain": "chemengonline.com",
+    "publication_date": "2026-10-01T19:35:27+00:00",
+    "fuzzy_key": "blast,capture,carbon,china,commission,facility,furnace,industrial,rio,scale,shougang,tinto",
     "found_via": "google_alerts"
   },
   {
@@ -18,24 +27,6 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/big-boost-for-planned-norwegian-offshore-ccs-project/2-1-2051473",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/big-boost-for-planned-norwegian-offshore-ccs-project/2-1-2051473",
-    "headline": "Big boost for planned Norwegian offshore CCS project - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-10-01T03:18:57+00:00",
-    "fuzzy_key": "big,boost,ccs,norwegian,offshore,online,planned,project,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project",
-    "raw_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project/",
-    "headline": "NYK Buys 30% Stake In Vår Energi's Trudvang Offshore CO2 Storage Project",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-10-01T05:08:43+00:00",
-    "fuzzy_key": "30,buys,co2,energi,nyk,offshore,project,stake,storage,trudvang",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19693029.ece",
     "raw_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19693029.ece",
     "headline": "Vår Energi sells 30% stake in CCS project to Japanese shipping company - EnergyWatch",
@@ -45,12 +36,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
-    "raw_url": "https://www.qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
-    "headline": "Power generation leads upcoming CCUS capacity: GlobalData",
-    "source_domain": "qcintel.com",
-    "publication_date": "2026-10-01T05:08:43+00:00",
-    "fuzzy_key": "capacity,ccus,generation,globaldata,leads,power,upcoming",
+    "canonical_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19696961.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19696961.ece",
+    "headline": "Öresundskraft invests EUR 219m in CCS project involving Northern Lights - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-10-01T20:09:10+00:00",
+    "fuzzy_key": "219m,ccs,energywatch,eur,invests,involving,lights,northern,project,resundskraft",
     "found_via": "google_alerts"
   },
   {
@@ -63,6 +54,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries",
+    "raw_url": "https://www.indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries/",
+    "headline": "CCUS Investment Shifts Toward Power Generation and Hard-to-Abate Industries - IndexBox",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-09-30T21:42:05+00:00",
+    "fuzzy_key": "abate,ccus,generation,hard,indexbox,industries,investment,power,shifts,toward",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://mondaq.com/nigeria/oil-gas-electricity/1849254/carbon-capture-and-storage-as-a-bridge-to-net-zero-can-nigeria-reconcile-decarbonisation-with-its-hydrocarbon-economy",
     "raw_url": "https://www.mondaq.com/nigeria/oil-gas-electricity/1849254/carbon-capture-and-storage-as-a-bridge-to-net-zero-can-nigeria-reconcile-decarbonisation-with-its-hydrocarbon-economy",
     "headline": "Carbon Capture And Storage As A Bridge To Net Zero: Can Nigeria Reconcile ... - Mondaq",
@@ -72,12 +72,66 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://oedigital.com/news/543390-northern-lights-signs-up-second-swedish-ccs-customer",
+    "raw_url": "https://www.oedigital.com/news/543390-northern-lights-signs-up-second-swedish-ccs-customer",
+    "headline": "Northern Lights Signs Up Second Swedish CCS Customer - Offshore Engineer",
+    "source_domain": "oedigital.com",
+    "publication_date": "2026-10-01T20:09:10+00:00",
+    "fuzzy_key": "ccs,customer,engineer,lights,northern,offshore,second,signs,swedish,up",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://offshore-energy.biz/topic/carbon-capture-usage-storage?page=6&region=japan",
     "raw_url": "https://www.offshore-energy.biz/topic/carbon-capture-usage-storage?region=japan&page=6",
     "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
     "source_domain": "offshore-energy.biz",
     "publication_date": "2026-10-01T12:25:01+00:00",
     "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-energy.biz/2026/10/01/norways-co2-transport-and-storage-project-gets-second-swedish-customer",
+    "raw_url": "https://www.offshore-energy.biz/2026/10/01/norways-co2-transport-and-storage-project-gets-second-swedish-customer",
+    "headline": "Norway's CO2 transport and storage project gets second Swedish customer",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-10-01T20:09:10+00:00",
+    "fuzzy_key": "co2,customer,gets,norway,project,second,storage,swedish,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://openpr.com/news/4649554/overview-of-the-carbon-capture-utilization-and-storage-market",
+    "raw_url": "https://www.openpr.com/news/4649554/overview-of-the-carbon-capture-utilization-and-storage-market",
+    "headline": "Overview of the Carbon Capture, Utilization, and Storage Market - openPR.com",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-10-01T18:06:57+00:00",
+    "fuzzy_key": "capture,carbon,com,market,openpr,overview,storage,utilization",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://news.oregonstate.edu/news/new-material-developed-oregon-state-provides-boost-carbon-capture-technologies",
+    "raw_url": "https://news.oregonstate.edu/news/new-material-developed-oregon-state-provides-boost-carbon-capture-technologies",
+    "headline": "New material developed at Oregon State provides boost to carbon capture technologies",
+    "source_domain": "oregonstate.edu",
+    "publication_date": "2026-10-01T20:57:24+00:00",
+    "fuzzy_key": "boost,capture,carbon,developed,material,new,oregon,provides,state,technologies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
+    "raw_url": "https://www.qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
+    "headline": "Power generation leads upcoming CCUS capacity: GlobalData",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "capacity,ccus,generation,globaldata,leads,power,upcoming",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/big-boost-for-planned-norwegian-offshore-ccs-project/2-1-2051473",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/big-boost-for-planned-norwegian-offshore-ccs-project/2-1-2051473",
+    "headline": "Big boost for planned Norwegian offshore CCS project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-10-01T03:18:57+00:00",
+    "fuzzy_key": "big,boost,ccs,norwegian,offshore,online,planned,project,upstream",
     "found_via": "google_alerts"
   },
   {
