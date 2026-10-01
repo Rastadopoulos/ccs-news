@@ -1,11 +1,29 @@
 [
   {
+    "canonical_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project",
+    "raw_url": "https://carbonherald.com/nyk-buys-30-stake-in-var-energis-trudvang-offshore-co2-storage-project/",
+    "headline": "NYK Buys 30% Stake In Vår Energi's Trudvang Offshore CO2 Storage Project",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "30,buys,co2,energi,nyk,offshore,project,stake,storage,trudvang",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://coinmarketcal.com/news/petrobras-tests-cardano-to-stop-carbon-credit-double-counting",
     "raw_url": "https://coinmarketcal.com/news/petrobras-tests-cardano-to-stop-carbon-credit-double-counting",
     "headline": "Petrobras tests Cardano to stop carbon credit double-counting - CoinMarketCal",
     "source_domain": "coinmarketcal.com",
     "publication_date": "2026-10-01T00:16:43+00:00",
     "fuzzy_key": "carbon,cardano,coinmarketcal,counting,credit,double,petrobras,stop,tests",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19693029.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/Oil___Gas/article19693029.ece",
+    "headline": "Vår Energi sells 30% stake in CCS project to Japanese shipping company - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "30,ccs,company,energi,energywatch,japanese,project,sells,shipping,stake",
     "found_via": "google_alerts"
   },
   {
@@ -27,6 +45,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://hellenicshippingnews.com/nyk-to-join-trudvang-ccs-project-in-norway",
+    "raw_url": "https://www.hellenicshippingnews.com/nyk-to-join-trudvang-ccs-project-in-norway/",
+    "headline": "NYK to Join Trudvang CCS Project in Norway | Hellenic Shipping News Worldwide",
+    "source_domain": "hellenicshippingnews.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "ccs,hellenic,join,news,norway,nyk,project,shipping,trudvang,worldwide",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries",
     "raw_url": "https://www.indexbox.io/blog/ccus-investment-shifts-toward-power-generation-and-hard-to-abate-industries/",
     "headline": "CCUS Investment Shifts Toward Power Generation and Hard-to-Abate Industries - IndexBox",
@@ -36,12 +63,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://mondaq.com/nigeria/oil-gas-electricity/1849254/carbon-capture-and-storage-as-a-bridge-to-net-zero-can-nigeria-reconcile-decarbonisation-with-its-hydrocarbon-economy",
+    "raw_url": "https://www.mondaq.com/nigeria/oil-gas-electricity/1849254/carbon-capture-and-storage-as-a-bridge-to-net-zero-can-nigeria-reconcile-decarbonisation-with-its-hydrocarbon-economy",
+    "headline": "Carbon Capture And Storage As A Bridge To Net Zero: Can Nigeria Reconcile ... - Mondaq",
+    "source_domain": "mondaq.com",
+    "publication_date": "2026-10-01T08:21:46+00:00",
+    "fuzzy_key": "bridge,can,capture,carbon,mondaq,net,nigeria,reconcile,storage,zero",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://openpr.com/news/4648589/carbon-capture-utilization-and-storage-market-to-reach-us",
     "raw_url": "https://www.openpr.com/news/4648589/carbon-capture-utilization-and-storage-market-to-reach-us",
     "headline": "Carbon Capture, Utilization, and Storage Market to Reach US$ - openPR.com",
     "source_domain": "openpr.com",
     "publication_date": "2026-09-30T16:25:40+00:00",
     "fuzzy_key": "capture,carbon,com,market,openpr,reach,storage,us,utilization",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
+    "raw_url": "https://www.qcintel.com/hydrogen/article/power-generation-leads-upcoming-ccus-capacity-globaldata-74207.html",
+    "headline": "Power generation leads upcoming CCUS capacity: GlobalData",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-10-01T05:08:43+00:00",
+    "fuzzy_key": "capacity,ccus,generation,globaldata,leads,power,upcoming",
     "found_via": "google_alerts"
   },
   {
