@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2026-10-06#01",
+    "briefing_date": "2026-10-06",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "ExxonMobil adds Williams as its seventh CO2 storage customer for the Louisiana Energy Gateway",
+    "summary": "Williams selected ExxonMobil to transport and permanently store up to 1 million tonnes per year of CO2 from its proposed Louisiana Energy Gateway gas gathering and processing system; it is ExxonMobil's seventh commercial CCS customer and fifth in Louisiana, lifting its contracted CO2 transport-and-storage portfolio to about 9 Mtpa. The project remains subject to FID, permitting and other approvals.",
+    "source": "ExxonMobil / Oil & Gas Journal",
+    "pub_date": "2026-10-05",
+    "url": "https://lowcarbon.exxonmobil.com/newsroom/news-and-announcements/williams-selects-exxonmobil-for-co2-transportation-and-storage",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "ExxonMobil",
+      "Williams"
+    ],
+    "org_types": [
+      "OG-major",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 1.0,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Reinforces the commercial CO2 transport-and-storage-as-a-service hub model that Australian storage hubs (CarbonNet, Bayu-Undan) aim to replicate.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Publication date (5 Oct 2026) confirmed from search-result metadata; WebFetch date verification unavailable this run (news domains egress-blocked). Quiet day - single verified in-window item."
+  }
+]
