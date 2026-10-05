@@ -63,6 +63,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://nation.cymru/news/plans-submitted-for-200m-carbon-capture-facility",
+    "raw_url": "https://nation.cymru/news/plans-submitted-for-200m-carbon-capture-facility/",
+    "headline": "Plans submitted for £200m carbon capture facility - Nation.Cymru",
+    "source_domain": "nation.cymru",
+    "publication_date": "2026-10-05T01:13:50+00:00",
+    "fuzzy_key": "200m,capture,carbon,cymru,facility,nation,plans,submitted",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://newschannel9.com/newsletter-daily/in-special-meeting-tssaa-denies-ccs-appeal-over-new-football-classification-chattanooga-christian-school-sports-athletics",
     "raw_url": "https://newschannel9.com/newsletter-daily/in-special-meeting-tssaa-denies-ccs-appeal-over-new-football-classification-chattanooga-christian-school-sports-athletics",
     "headline": "In special meeting, TSSAA denies CCS appeal over new football classification",
@@ -95,6 +104,15 @@
     "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
     "source_domain": "offshore-energy.biz",
     "publication_date": "2026-10-02T03:30:17+00:00",
+    "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-energy.biz/topic/carbon-capture-usage-storage?page=17&region=asia-pacific",
+    "raw_url": "https://www.offshore-energy.biz/topic/carbon-capture-usage-storage?region=asia-pacific&page=17",
+    "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-10-02T18:20:51+00:00",
     "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
     "found_via": "google_alerts"
   },
