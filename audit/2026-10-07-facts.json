@@ -1,0 +1,167 @@
+[
+  {
+    "id": "2026-10-07#01",
+    "briefing_date": "2026-10-07",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Oregon State–led team unveils water-tolerant MOFs that capture CO2 from humid flue gas",
+    "summary": "An international team co-led by Oregon State chemist Kyriakos Stylianou reported in Nature a new class of metal-organic frameworks that keep CO2 selectivity in wet flue gas by spatially decoupling CO2 and H2O into separate adsorption sites; a screen of 325,000+ MOFs found two water-stable structures that outperform activated carbon and zeolite 13X from flue-gas to DAC-dilute concentrations.",
+    "source": "EurekAlert / Oregon State University (Nature)",
+    "pub_date": "2026-10-06",
+    "url": "https://www.eurekalert.org/news-releases/1146581",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Switzerland",
+      "United Kingdom",
+      "Canada",
+      "Spain"
+    ],
+    "organisations": [
+      "Oregon State University",
+      "EPFL",
+      "Heriot-Watt University",
+      "University of Ottawa",
+      "University of Granada"
+    ],
+    "org_types": [
+      "research",
+      "research",
+      "research",
+      "research",
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture",
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Water-tolerant sorbents cut the flue-gas-drying penalty that drives capture cost — directly relevant to CO2CRC/Australian post-combustion and DAC capture R&D and MMV work.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Peer-reviewed primary citation (Nature) confirmed via search; EurekAlert release dated 6 Oct 2026. Direct page fetch blocked by egress proxy this run."
+  },
+  {
+    "id": "2026-10-07#02",
+    "briefing_date": "2026-10-07",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Skytree secures €1m Dutch state development loan for a geothermal-powered DAC Skypark in Iceland",
+    "summary": "Amsterdam DAC developer Skytree secured a €1 million development loan from Dutch state-backed investor Invest International to fund engineering, permitting and site preparation for a geothermal-powered direct-air-capture Skypark in Iceland, extending its Netherlands Skypark model; captured CO2 is destined for horticulture, food and synthetic fuels, with installation and commercial start targeted for 2028.",
+    "source": "gasworld / NL Times",
+    "pub_date": "2026-10-06",
+    "url": "https://www.gasworld.com/story/skytree-secures-e1m-dutch-development-loan-for-iceland-dac-project/2261282.article",
+    "region": "Europe-UK",
+    "countries": [
+      "Netherlands",
+      "Iceland"
+    ],
+    "organisations": [
+      "Skytree",
+      "Invest International"
+    ],
+    "org_types": [
+      "developer",
+      "financier"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "DAC",
+      "capture"
+    ],
+    "amount": 1000000,
+    "currency": "EUR",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Small early-stage development loan; of interest as a state-backed development-finance template for scaling DAC projects internationally.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Development loan (not a project FID); amount €1m. Dates confirmed via multiple sources (nltimes 2026-10-06, hortidaily, ioplus, gasworld). Direct fetch blocked by egress proxy."
+  },
+  {
+    "id": "2026-10-07#03",
+    "briefing_date": "2026-10-07",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Carbon capture is coming for cement's CO2 emissions",
+    "summary": "A Carbon Herald feature surveying the state of carbon capture across the cement sector (~8% of global CO2), rather than a single discrete in-window decision.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-06",
+    "url": "https://carbonherald.com/carbon-capture-is-coming-for-cements-co2-emissions/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Sector-overview context on cement capture; no discrete new commitment.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Near-miss feature piece surfaced under Still on the radar; in-window (6 Oct) but not a discrete event. Direct fetch blocked by egress proxy."
+  },
+  {
+    "id": "2026-10-07#04",
+    "briefing_date": "2026-10-07",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "From the Netherlands to Norway: the CO2 journey reshaping European CCS",
+    "summary": "A Materia Rinnovabile / Renewable Matter analysis of the cross-border CO2 transport-and-storage chain linking Dutch capture projects to Norwegian sub-seabed storage; a feature rather than a discrete announcement.",
+    "source": "Materia Rinnovabile / Renewable Matter",
+    "pub_date": "2026-10-06",
+    "url": "https://www.renewablematter.eu/en/netherlands-norway-co2-journey-reshaping-european-ccs",
+    "region": "Europe-UK",
+    "countries": [
+      "Netherlands",
+      "Norway"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Context on the maturing European cross-border CO2 T&S model that Australian export/storage hubs (CarbonNet, Bayu-Undan) mirror.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Near-miss analysis piece surfaced under Still on the radar; in-window (6 Oct) but not a discrete event. Direct fetch blocked by egress proxy."
+  }
+]
