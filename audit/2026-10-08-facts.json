@@ -1,0 +1,33 @@
+[
+  {
+    "id": "2026-10-08#01",
+    "briefing_date": "2026-10-08",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "Germany signs first bilateral CO2 export agreements with Denmark and the Netherlands",
+    "summary": "At the Carbon Management Forum's Strategic Dialogue in Berlin (5-6 Oct), Germany signed its first government-to-government agreements allowing German industry to export CO2 for permanent sub-seabed storage under Denmark and the Netherlands. Germany bans onshore storage, so the deals open North Sea storage routes and are framed around enabling DACCS and BioCCS removals.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-06",
+    "url": "https://carbonherald.com/germany-signs-co2-export-agreements-with-denmark-and-the-netherlands/",
+    "region": "Europe-UK",
+    "countries": ["Germany", "Denmark", "Netherlands"],
+    "organisations": ["German Federal Ministry for Economic Affairs and Energy", "Carbon Management Forum"],
+    "org_types": ["government", "industry-body"],
+    "instrument_type": "policy",
+    "value_chain": ["transport", "storage"],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Direct precedent for Australia-Timor-Leste (Bayu-Undan) cross-border CO2 export; shows the London Protocol Article 6 transboundary framework maturing into signed government-to-government deals.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Underlying signing 5-6 Oct 2026 at the Berlin Carbon Management Forum; out of the 7-8 Oct briefing window, carried as a radar near-miss. Carbon Pulse (Tier-1, paywalled) and Montel also reported."
+  }
+]
