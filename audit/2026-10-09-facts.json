@@ -1,0 +1,170 @@
+[
+  {
+    "id": "2026-10-09#01",
+    "briefing_date": "2026-10-09",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Eni completes the “world's first” purpose-built offshore CCS platform at Liverpool Bay (HyNet)",
+    "summary": "Eni CCUS Holding (Eni with Global Infrastructure Partners) announced completion of the new Douglas CCS platform in Liverpool Bay, the offshore hub for the UK's HyNet cluster. It will receive CO2 from the Point of Ayr terminal and inject it into the depleted Hamilton, Hamilton North and Lennox reservoirs via repurposed offshore pipelines; Phase 1 is sized for up to ~4.5 Mtpa (potential ~10 Mtpa in the 2030s), with operations targeted for 2028.",
+    "source": "Eni (via Upstream)",
+    "pub_date": "2026-10-08",
+    "url": "https://www.eni.com/en-IT/media/press-release/2026/10/eni-ccus-holding-liverpool-bay-ccs.html",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Italy"
+    ],
+    "organisations": [
+      "Eni",
+      "Eni CCUS Holding",
+      "Global Infrastructure Partners",
+      "HyNet"
+    ],
+    "org_types": [
+      "OG-major",
+      "OG-major",
+      "financier",
+      "industry-body"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2028,
+    "capacity_mtpa": 4.5,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "World-first purpose-built offshore CCS platform validates depleted-reservoir offshore transport-and-storage at scale — a reference point for Australia's offshore storage hubs (CarbonNet, Bonaparte, Bayu-Undan).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Construction/installation milestone of an FID'd, financially closed project (DESNZ financial close 2025; £500m bank financing May 2026). Primary domains (eni.com, upstreamonline.com) egress-blocked this run; date and facts confirmed via convergent trade coverage (Seeking Alpha, GuruFocus, Energy Voice) and the Eni press-release URL path /2026/10/, plus the Google Alerts capture of 2026-10-08."
+  },
+  {
+    "id": "2026-10-09#02",
+    "briefing_date": "2026-10-09",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Energy-from-waste operator signs CO2 transport-and-storage deal with Northern Lights",
+    "summary": "A waste-to-energy operator agreed to ship captured CO2 to Norway's Northern Lights for permanent sub-seabed storage, adding to the cross-border Northern Lights customer book.",
+    "source": "ENDS Waste & Bioenergy",
+    "pub_date": "2026-10-07",
+    "url": "https://www.endswasteandbioenergy.com/article/1971950/efw-operator-strikes-co2-transport-storage-deal-northern-lights",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway",
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Northern Lights"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Further evidence the cross-border CO2 shipping-and-storage market is commercialising; relevant context for Australia-Timor-Leste transboundary storage.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Dated 7 Oct 2026, one day outside the 8-9 Oct window; carried as a radar near-miss. Operator identity not independently confirmed this run (source domain not fetched)."
+  },
+  {
+    "id": "2026-10-09#03",
+    "briefing_date": "2026-10-09",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "JFE Steel joins DeepStar R&D project to test ERW pipe for high-pressure CO2 transport",
+    "summary": "Japan's JFE Steel joined the DeepStar consortium's programme to qualify electric-resistance-welded (ERW) line pipe for dense-phase/high-pressure CO2 transport, a materials-qualification step for CCS pipeline networks.",
+    "source": "Pipeline & Gas Journal",
+    "pub_date": "2026-10-07",
+    "url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
+    "region": "North America",
+    "countries": [
+      "Japan",
+      "United States"
+    ],
+    "organisations": [
+      "JFE Steel",
+      "DeepStar"
+    ],
+    "org_types": [
+      "other",
+      "industry-body"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Pipeline materials qualification lowers the cost/risk of dense-phase CO2 transport infrastructure, relevant to any at-scale CCS hub.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Dated 7 Oct 2026, one day outside the window; radar near-miss."
+  },
+  {
+    "id": "2026-10-09#04",
+    "briefing_date": "2026-10-09",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Researchers report a simple modification to improve a commercial resin for direct air capture",
+    "summary": "A research group describes a low-cost chemical modification that boosts the CO2-capture performance of an off-the-shelf commercial resin for DAC, a potential cost lever for sorbent-based direct air capture.",
+    "source": "Newswise",
+    "pub_date": "2026-10-07",
+    "url": "https://www.newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "DAC",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Incremental sorbent cost-reduction research; background for DAC technology tracking.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Dated 7 Oct 2026, one day outside the window; radar near-miss."
+  }
+]
