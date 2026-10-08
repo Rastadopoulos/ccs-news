@@ -1,47 +1,38 @@
 [
   {
-    "canonical_url": "https://gasworld.com/story/skytree-secures-e1m-dutch-development-loan-for-iceland-dac-project/2261282.article",
-    "raw_url": "https://www.gasworld.com/story/skytree-secures-e1m-dutch-development-loan-for-iceland-dac-project/2261282.article/",
-    "headline": "Skytree secures €1m Dutch development loan for Iceland DAC project - gasworld",
-    "source_domain": "gasworld.com",
-    "publication_date": "2026-10-06T20:22:44+00:00",
-    "fuzzy_key": "1m,dac,development,dutch,gasworld,iceland,loan,project,secures,skytree",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://indexbox.io/blog/carbon-capture-storage-ccs-market-forecast-to-2035-heavy-industry-decarbonization-drives-expansion",
-    "raw_url": "https://www.indexbox.io/blog/carbon-capture-storage-ccs-market-forecast-to-2035-heavy-industry-decarbonization-drives-expansion/",
-    "headline": "Carbon Capture Storage CCS Market To 2035: Heavy Industry Demand Accelerates Growth",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-10-06T21:49:30+00:00",
-    "fuzzy_key": "2035,accelerates,capture,carbon,ccs,demand,growth,heavy,industry,market,storage",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://renewablematter.eu/en/netherlands-norway-co2-journey-reshaping-european-ccs",
-    "raw_url": "https://www.renewablematter.eu/en/netherlands-norway-co2-journey-reshaping-european-ccs",
-    "headline": "From the Netherlands to Norway: the CO₂ journey reshaping European CCS - Materia Rinnovabile",
-    "source_domain": "renewablematter.eu",
-    "publication_date": "2026-10-06T23:50:54+00:00",
-    "fuzzy_key": "ccs,co,european,journey,materia,netherlands,norway,reshaping,rinnovabile",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://ieefa.org/resources/hydrogen-and-carbon-capture-and-storage-ccs-water-stressed-texas",
-    "raw_url": "https://ieefa.org/resources/hydrogen-and-carbon-capture-and-storage-ccs-water-stressed-texas",
-    "headline": "Hydrogen and carbon capture and storage (CCS) in water-stressed Texas | IEEFA",
-    "source_domain": "ieefa.org",
-    "publication_date": "2026-10-07T02:40:07+00:00",
-    "fuzzy_key": "capture,carbon,ccs,hydrogen,ieefa,storage,stressed,texas,water",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://carbonherald.com/sylvera-report-carbon-credit-retirements-fall-9-as-prices-rise-in-q3-2026",
     "raw_url": "https://carbonherald.com/sylvera-report-carbon-credit-retirements-fall-9-as-prices-rise-in-q3-2026/",
     "headline": "Sylvera Report: Carbon Credit Retirements Fall 9% As Prices Rise In Q3 2026",
     "source_domain": "carbonherald.com",
     "publication_date": "2026-10-07T02:40:07+00:00",
     "fuzzy_key": "2026,carbon,credit,fall,prices,q3,report,retirements,rise,sylvera",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://app.dealroom.co/news/note/skytree-lands-1-million-loan-to-build-first-iceland-carbon-capture-hub",
+    "raw_url": "https://app.dealroom.co/news/note/skytree-lands-1-million-loan-to-build-first-iceland-carbon-capture-hub",
+    "headline": "Skytree lands €1 million loan to build first Iceland carbon-capture hub - Dealroom.co",
+    "source_domain": "dealroom.co",
+    "publication_date": "2026-10-07T19:07:41+00:00",
+    "fuzzy_key": "build,capture,carbon,co,dealroom,first,hub,iceland,lands,loan,million,skytree",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://app.dealroom.co/news/feed/skytree-secures-1-1m-loan-to-develop-first-icelandic-skypark-dac-hub",
+    "raw_url": "https://app.dealroom.co/news/feed/skytree-secures-1-1m-loan-to-develop-first-icelandic-skypark-dac-hub",
+    "headline": "Skytree secures $1.1M loan to develop first Icelandic Skypark DAC hub | Dealroom.co",
+    "source_domain": "dealroom.co",
+    "publication_date": "2026-10-07T19:07:41+00:00",
+    "fuzzy_key": "1m,co,dac,dealroom,develop,first,hub,icelandic,loan,secures,skypark,skytree",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://endswasteandbioenergy.com/article/1971950/efw-operator-strikes-co2-transport-storage-deal-northern-lights",
+    "raw_url": "https://www.endswasteandbioenergy.com/article/1971950/efw-operator-strikes-co2-transport-storage-deal-northern-lights",
+    "headline": "EfW operator strikes CO2 transport and storage deal with Northern Lights",
+    "source_domain": "endswasteandbioenergy.com",
+    "publication_date": "2026-10-07T22:23:10+00:00",
+    "fuzzy_key": "co2,deal,efw,lights,northern,operator,storage,strikes,transport",
     "found_via": "google_alerts"
   },
   {
@@ -54,12 +45,75 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://gasworld.com/story/skytree-secures-e1m-dutch-development-loan-for-iceland-dac-project/2261282.article",
+    "raw_url": "https://www.gasworld.com/story/skytree-secures-e1m-dutch-development-loan-for-iceland-dac-project/2261282.article/",
+    "headline": "Skytree secures €1m Dutch development loan for Iceland DAC project - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-10-06T20:22:44+00:00",
+    "fuzzy_key": "1m,dac,development,dutch,gasworld,iceland,loan,project,secures,skytree",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ieefa.org/resources/hydrogen-and-carbon-capture-and-storage-ccs-water-stressed-texas",
+    "raw_url": "https://ieefa.org/resources/hydrogen-and-carbon-capture-and-storage-ccs-water-stressed-texas",
+    "headline": "Hydrogen and carbon capture and storage (CCS) in water-stressed Texas | IEEFA",
+    "source_domain": "ieefa.org",
+    "publication_date": "2026-10-07T02:40:07+00:00",
+    "fuzzy_key": "capture,carbon,ccs,hydrogen,ieefa,storage,stressed,texas,water",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/carbon-capture-storage-ccs-market-forecast-to-2035-heavy-industry-decarbonization-drives-expansion",
+    "raw_url": "https://www.indexbox.io/blog/carbon-capture-storage-ccs-market-forecast-to-2035-heavy-industry-decarbonization-drives-expansion/",
+    "headline": "Carbon Capture Storage CCS Market To 2035: Heavy Industry Demand Accelerates Growth",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-06T21:49:30+00:00",
+    "fuzzy_key": "2035,accelerates,capture,carbon,ccs,demand,growth,heavy,industry,market,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge",
+    "raw_url": "https://www.indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge/",
+    "headline": "Gas Hydrates Market Forecast to 2035: Growth Accelerates as Energy Security and Carbon ...",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-07T21:37:40+00:00",
+    "fuzzy_key": "2035,accelerates,carbon,energy,forecast,gas,growth,hydrates,market,security",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/climeworks_carbon-removal-pioneer-climeworks-increases-activity-7513536459518406656-Cvb9",
     "raw_url": "https://www.linkedin.com/posts/climeworks_carbon-removal-pioneer-climeworks-increases-activity-7513536459518406656-Cvb9",
     "headline": "Carbon Removal Pioneer Climeworks Increases CO2 Capture Sixfold - LinkedIn",
     "source_domain": "linkedin.com",
     "publication_date": "2026-10-07T18:21:07+00:00",
     "fuzzy_key": "capture,carbon,climeworks,co2,increases,linkedin,pioneer,removal,sixfold",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
+    "raw_url": "https://www.newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
+    "headline": "Researchers Develop Simple Modification to Improve Commercial Resin for Direct Air Capture",
+    "source_domain": "newswise.com",
+    "publication_date": "2026-10-07T22:45:47+00:00",
+    "fuzzy_key": "air,capture,commercial,develop,direct,improve,modification,researchers,resin,simple",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
+    "raw_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
+    "headline": "JFE Steel joins DeepStar R&D project to test ERW pipe for high-pressure CO2 transport",
+    "source_domain": "pgjonline.com",
+    "publication_date": "2026-10-07T20:58:14+00:00",
+    "fuzzy_key": "co2,deepstar,erw,high,jfe,joins,pipe,pressure,project,steel,test,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://renewablematter.eu/en/netherlands-norway-co2-journey-reshaping-european-ccs",
+    "raw_url": "https://www.renewablematter.eu/en/netherlands-norway-co2-journey-reshaping-european-ccs",
+    "headline": "From the Netherlands to Norway: the CO₂ journey reshaping European CCS - Materia Rinnovabile",
+    "source_domain": "renewablematter.eu",
+    "publication_date": "2026-10-06T23:50:54+00:00",
+    "fuzzy_key": "ccs,co,european,journey,materia,netherlands,norway,reshaping,rinnovabile",
     "found_via": "google_alerts"
   }
 ]
