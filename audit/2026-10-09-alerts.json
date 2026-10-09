@@ -1,47 +1,11 @@
 [
   {
-    "canonical_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
-    "raw_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
-    "headline": "JFE Steel joins DeepStar R&D project to test ERW pipe for high-pressure CO2 transport",
-    "source_domain": "pgjonline.com",
-    "publication_date": "2026-10-07T20:58:14+00:00",
-    "fuzzy_key": "co2,deepstar,erw,high,jfe,joins,pipe,pressure,project,steel,test,transport",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge",
-    "raw_url": "https://www.indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge/",
-    "headline": "Gas Hydrates Market Forecast to 2035: Growth Accelerates as Energy Security and Carbon ...",
-    "source_domain": "indexbox.io",
-    "publication_date": "2026-10-07T21:37:40+00:00",
-    "fuzzy_key": "2035,accelerates,carbon,energy,forecast,gas,growth,hydrates,market,security",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://endswasteandbioenergy.com/article/1971950/efw-operator-strikes-co2-transport-storage-deal-northern-lights",
     "raw_url": "https://www.endswasteandbioenergy.com/article/1971950/efw-operator-strikes-co2-transport-storage-deal-northern-lights",
     "headline": "EfW operator strikes CO2 transport and storage deal with Northern Lights",
     "source_domain": "endswasteandbioenergy.com",
     "publication_date": "2026-10-07T22:23:10+00:00",
     "fuzzy_key": "co2,deal,efw,lights,northern,operator,storage,strikes,transport",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
-    "raw_url": "https://www.newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
-    "headline": "Researchers Develop Simple Modification to Improve Commercial Resin for Direct Air Capture",
-    "source_domain": "newswise.com",
-    "publication_date": "2026-10-07T22:45:47+00:00",
-    "fuzzy_key": "air,capture,commercial,develop,direct,improve,modification,researchers,resin,simple",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
-    "raw_url": "https://www.offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
-    "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
-    "source_domain": "offshore-energy.biz",
-    "publication_date": "2026-10-08T02:35:10+00:00",
-    "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
     "found_via": "google_alerts"
   },
   {
@@ -54,12 +18,39 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/eni-installs-world-s-first-offshore-ccs-platform/2-1-2055936",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/eni-installs-world-s-first-offshore-ccs-platform/2-1-2055936",
-    "headline": "Eni installs world's first offshore CCS platform - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-10-08T14:51:31+00:00",
-    "fuzzy_key": "ccs,eni,first,installs,offshore,online,platform,upstream,world",
+    "canonical_url": "https://indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge",
+    "raw_url": "https://www.indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge/",
+    "headline": "Gas Hydrates Market Forecast to 2035: Growth Accelerates as Energy Security and Carbon ...",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-07T21:37:40+00:00",
+    "fuzzy_key": "2035,accelerates,carbon,energy,forecast,gas,growth,hydrates,market,security",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
+    "raw_url": "https://www.newswise.com/articles/researchers-develop-simple-modification-to-improve-commercial-resin-for-direct-air-capture",
+    "headline": "Researchers Develop Simple Modification to Improve Commercial Resin for Direct Air Capture",
+    "source_domain": "newswise.com",
+    "publication_date": "2026-10-07T22:45:47+00:00",
+    "fuzzy_key": "air,capture,commercial,develop,direct,improve,modification,researchers,resin,simple",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oedigital.com/amp/news/543559-eni-installs-world-s-first-purpose-built-offshore-ccs-platform",
+    "raw_url": "https://www.oedigital.com/amp/news/543559-eni-installs-world-s-first-purpose-built-offshore-ccs-platform",
+    "headline": "Eni Installs 'World's First' Purpose-Built Offshore CCS Platform",
+    "source_domain": "oedigital.com",
+    "publication_date": "2026-10-08T19:17:19+00:00",
+    "fuzzy_key": "built,ccs,eni,first,installs,offshore,platform,purpose,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
+    "raw_url": "https://www.offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
+    "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-10-08T02:35:10+00:00",
+    "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
     "found_via": "google_alerts"
   },
   {
@@ -69,6 +60,42 @@
     "source_domain": "openpr.com",
     "publication_date": "2026-10-08T14:51:31+00:00",
     "fuzzy_key": "capture,carbon,chemicals,fueled,growth,market",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
+    "raw_url": "https://pgjonline.com/news/2026/october/jfe-steel-joins-deepstar-rd-project-to-test-erw-pipe-for-high-pressure-co2-transport",
+    "headline": "JFE Steel joins DeepStar R&D project to test ERW pipe for high-pressure CO2 transport",
+    "source_domain": "pgjonline.com",
+    "publication_date": "2026-10-07T20:58:14+00:00",
+    "fuzzy_key": "co2,deepstar,erw,high,jfe,joins,pipe,pressure,project,steel,test,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://techxplore.com/news/2026-10-simple-modification-commercial-resin-air.html",
+    "raw_url": "https://techxplore.com/news/2026-10-simple-modification-commercial-resin-air.html",
+    "headline": "Simple modification improves commercial resin for direct air capture",
+    "source_domain": "techxplore.com",
+    "publication_date": "2026-10-08T18:33:40+00:00",
+    "fuzzy_key": "air,capture,commercial,direct,improves,modification,resin,simple",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tipranks.com/news/private-companies/climeworks-highlights-role-of-permanent-carbon-removals-in-europes-climate-strategy",
+    "raw_url": "https://www.tipranks.com/news/private-companies/climeworks-highlights-role-of-permanent-carbon-removals-in-europes-climate-strategy",
+    "headline": "Climeworks Highlights Role of Permanent Carbon Removals in Europe's Climate Strategy",
+    "source_domain": "tipranks.com",
+    "publication_date": "2026-10-08T18:33:40+00:00",
+    "fuzzy_key": "carbon,climate,climeworks,europe,highlights,permanent,removals,role,strategy",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/eni-installs-world-s-first-offshore-ccs-platform/2-1-2055936",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/eni-installs-world-s-first-offshore-ccs-platform/2-1-2055936",
+    "headline": "Eni installs world's first offshore CCS platform - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-10-08T14:51:31+00:00",
+    "fuzzy_key": "ccs,eni,first,installs,offshore,online,platform,upstream,world",
     "found_via": "google_alerts"
   }
 ]
