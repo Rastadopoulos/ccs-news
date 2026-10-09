@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://eni.com/en-IT/media/press-release/2026/10/eni-ccus-holding-liverpool-bay-ccs.html",
+    "raw_url": "https://www.eni.com/en-IT/media/press-release/2026/10/eni-ccus-holding-liverpool-bay-ccs.html",
+    "headline": "Eni CCUS Holding: Liverpool Bay CCS completes the installation of the world's first offshore ...",
+    "source_domain": "eni.com",
+    "publication_date": "2026-10-09T02:16:03+00:00",
+    "fuzzy_key": "bay,ccs,ccus,completes,eni,first,holding,installation,liverpool,offshore,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://facebook.com/61560066990109/posts/aramco-60-linde-20-and-slb-20-have-signed-a-shareholders-agreement-to-build-one-/122236031012335566",
     "raw_url": "https://www.facebook.com/61560066990109/posts/aramco-60-linde-20-and-slb-20-have-signed-a-shareholders-agreement-to-build-one-/122236031012335566/",
     "headline": "Aramco carbon capture hub planned for Jubail, Saudi Arabia - Facebook",
@@ -18,12 +27,48 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://ground.news/article/eni-liverpool-bay-ccs-complete-installation-of-co-transport-and-storage-platform-in-the-uk",
+    "raw_url": "https://ground.news/article/eni-liverpool-bay-ccs-complete-installation-of-co-transport-and-storage-platform-in-the-uk",
+    "headline": "World's First Carbon Capture and Storage Platform Installed in Liverpool Bay - Ground News",
+    "source_domain": "ground.news",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "bay,capture,carbon,first,ground,installed,liverpool,news,platform,storage,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge",
     "raw_url": "https://www.indexbox.io/blog/gas-hydrates-market-forecast-to-2035-growth-accelerates-as-energy-security-and-carbon-capture-demand-converge/",
     "headline": "Gas Hydrates Market Forecast to 2035: Growth Accelerates as Energy Security and Carbon ...",
     "source_domain": "indexbox.io",
     "publication_date": "2026-10-07T21:37:40+00:00",
     "fuzzy_key": "2035,accelerates,carbon,energy,forecast,gas,growth,hydrates,market,security",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://inspenet.com/en/news/eni-installs-first-offshore-co₂-platform-at-liverpool-bay-ccs",
+    "raw_url": "https://inspenet.com/en/news/eni-installs-first-offshore-co₂-platform-at-liverpool-bay-ccs/",
+    "headline": "Eni installs first offshore CO₂ platform at Liverpool Bay CCS - Inspenet",
+    "source_domain": "inspenet.com",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "bay,ccs,co,eni,first,inspenet,installs,liverpool,offshore,platform",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://leaderlive.co.uk/news/26619473.hynet---carbon-capture-platform-installed-liverpool-bay",
+    "raw_url": "https://www.leaderlive.co.uk/news/26619473.hynet---carbon-capture-platform-installed-liverpool-bay/",
+    "headline": "HyNet - Carbon capture platform installed in Liverpool Bay - Leader Live",
+    "source_domain": "leaderlive.co.uk",
+    "publication_date": "2026-10-09T02:16:03+00:00",
+    "fuzzy_key": "bay,capture,carbon,hynet,installed,leader,live,liverpool,platform",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://nation.cymru/news/household-waste-carbon-capture-plant-delayed-after-failure-to-consult-residents-in-england",
+    "raw_url": "https://nation.cymru/news/household-waste-carbon-capture-plant-delayed-after-failure-to-consult-residents-in-england/",
+    "headline": "Household waste carbon capture plant delayed after failure to consult residents in England",
+    "source_domain": "nation.cymru",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "after,capture,carbon,consult,delayed,england,failure,household,plant,residents,waste",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +90,39 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://offshore-energy.biz/2026/10/08/world-first-ccs-platform-for-industrial-decarbonization-stands-tall-offshore-uk",
+    "raw_url": "https://www.offshore-energy.biz/2026/10/08/world-first-ccs-platform-for-industrial-decarbonization-stands-tall-offshore-uk",
+    "headline": "'World-first' CCS platform for industrial decarbonization stands tall offshore UK",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "ccs,decarbonization,first,industrial,offshore,platform,stands,tall,uk,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
     "raw_url": "https://www.offshore-energy.biz/topic/carbon-capture-usage-storage?page=74",
     "headline": "Carbon Capture Usage & Storage - Offshore-Energy.biz",
     "source_domain": "offshore-energy.biz",
     "publication_date": "2026-10-08T02:35:10+00:00",
     "fuzzy_key": "biz,capture,carbon,energy,offshore,storage,usage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-mag.com/energy-transition/news/55410750/douglas-ccs-platform-installed-for-liverpool-bay-carbon-storage-network",
+    "raw_url": "https://www.offshore-mag.com/energy-transition/news/55410750/douglas-ccs-platform-installed-for-liverpool-bay-carbon-storage-network",
+    "headline": "Douglas CCS platform installed for Liverpool Bay carbon storage network",
+    "source_domain": "offshore-mag.com",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "bay,carbon,ccs,douglas,installed,liverpool,network,platform,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ogj.com/energy-transition/news/55410615/eni-ccus-holding-completes-ccs-platform-installation",
+    "raw_url": "https://www.ogj.com/energy-transition/news/55410615/eni-ccus-holding-completes-ccs-platform-installation",
+    "headline": "Eni CCUS Holding completes CCS platform installation - Oil & Gas Journal",
+    "source_domain": "ogj.com",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "ccs,ccus,completes,eni,gas,holding,installation,journal,oil,platform",
     "found_via": "google_alerts"
   },
   {
@@ -78,6 +150,15 @@
     "source_domain": "techxplore.com",
     "publication_date": "2026-10-08T18:33:40+00:00",
     "fuzzy_key": "air,capture,commercial,direct,improves,modification,resin,simple",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thebusinessdesk.com/northwest/news/2180475-world-first-as-liverpool-bay-ccs-completes-installation-of-offshore-platform",
+    "raw_url": "https://www.thebusinessdesk.com/northwest/news/2180475-world-first-as-liverpool-bay-ccs-completes-installation-of-offshore-platform",
+    "headline": "World first as Liverpool Bay CCS completes installation of offshore platform",
+    "source_domain": "thebusinessdesk.com",
+    "publication_date": "2026-10-09T02:58:40+00:00",
+    "fuzzy_key": "bay,ccs,completes,first,installation,liverpool,offshore,platform,world",
     "found_via": "google_alerts"
   },
   {
