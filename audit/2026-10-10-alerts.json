@@ -1,5 +1,23 @@
 [
   {
+    "canonical_url": "https://businessnews.com.au/article/CSIRO-to-build-10m-South-Perth-carbon-capture-lab",
+    "raw_url": "https://www.businessnews.com.au/article/CSIRO-to-build-10m-South-Perth-carbon-capture-lab",
+    "headline": "CSIRO to build $10m South Perth carbon capture lab - Business News",
+    "source_domain": "businessnews.com.au",
+    "publication_date": "2026-10-10T01:29:44+00:00",
+    "fuzzy_key": "10m,build,business,capture,carbon,csiro,lab,news,perth,south",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carboncredits.com/sumitomo-projects-34000-ton-nickel-surplus-in-2027-amid-indonesia-output-recovery",
+    "raw_url": "https://carboncredits.com/sumitomo-projects-34000-ton-nickel-surplus-in-2027-amid-indonesia-output-recovery/",
+    "headline": "Sumitomo Projects 34000-Ton Nickel Surplus in 2027 Amid Indonesia Output Recovery",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-10-10T00:31:59+00:00",
+    "fuzzy_key": "2027,34000,amid,indonesia,nickel,output,projects,recovery,sumitomo,surplus,ton",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/enis-liverpool-bay-ccs-reaches-50-completion-with-douglas-platform-offshore-install",
     "raw_url": "https://carbonherald.com/enis-liverpool-bay-ccs-reaches-50-completion-with-douglas-platform-offshore-install/",
     "headline": "Eni's Liverpool Bay CCS Reaches 50% Completion With Douglas Platform Offshore Install",
@@ -15,6 +33,15 @@
     "source_domain": "carbonherald.com",
     "publication_date": "2026-10-09T14:57:51+00:00",
     "fuzzy_key": "1m,carbon,climeworks,credits,govt,invests,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://csiro.au/en/news/All/Articles/2026/October/CCMAC",
+    "raw_url": "https://www.csiro.au/en/news/All/Articles/2026/October/CCMAC",
+    "headline": "CSIRO's push to fast-track carbon capture materials",
+    "source_domain": "csiro.au",
+    "publication_date": "2026-10-10T01:29:44+00:00",
+    "fuzzy_key": "capture,carbon,csiro,fast,materials,push,track",
     "found_via": "google_alerts"
   },
   {
@@ -168,6 +195,15 @@
     "source_domain": "portnews.ru",
     "publication_date": "2026-10-09T18:04:40+00:00",
     "fuzzy_key": "built,ccs,eni,first,gip,installs,offshore,platform,purpose,uk,venture,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/carbon/article/analysis-dac-sector-to-emerge-smaller-leaner-after-crisis-74931.html",
+    "raw_url": "https://www.qcintel.com/carbon/article/analysis-dac-sector-to-emerge-smaller-leaner-after-crisis-74931.html",
+    "headline": "ANALYSIS: DAC sector to emerge smaller, leaner after crisis",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-10-10T01:29:44+00:00",
+    "fuzzy_key": "after,analysis,crisis,dac,emerge,leaner,sector,smaller",
     "found_via": "google_alerts"
   },
   {
