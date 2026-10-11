@@ -1,0 +1,229 @@
+[
+  {
+    "id": "2026-10-12#01",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Norway to give CO2 storage developers more time as carbon capture stalls",
+    "summary": "Norwegian authorities are extending work-programme timelines for CO2 storage exploration/exploitation licence holders as capture-project demand and T&S build-out run slower than expected, giving storage developers more time to mature sites rather than risk lapsed commitments.",
+    "source": "EnergyWatch",
+    "pub_date": "2026-10-09",
+    "url": "https://energywatch.com/EnergyNews/ccs/article19719788.ece",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Norwegian Ministry of Energy"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Regulatory flexibility on storage-licence work-programme timelines is a direct comparator for how Australia administers offshore GHG storage assessment/holding permits when capture demand lags.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Publication date taken from the Google Alerts audit feed; direct page fetch was blocked by the session egress policy (403)."
+  },
+  {
+    "id": "2026-10-12#02",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK government buys ~US$1m of carbon-removal credits from Climeworks",
+    "summary": "The UK government has purchased around US$1 million of engineered carbon-removal (direct air capture) credits from Climeworks - an early example of a government acting as a buyer of durable CDR to help seed the removals market.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-09",
+    "url": "https://carbonherald.com/uk-govt-invests-1m-in-carbon-credits-by-climeworks/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Switzerland"
+    ],
+    "organisations": [
+      "UK Government",
+      "Climeworks"
+    ],
+    "org_types": [
+      "government",
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": 1000000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Public procurement of durable removals is a demand-side policy lever Australia could emulate to build a CDR offtake market.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Amount (~US$1m) taken from the headline; tonnage not stated in available metadata. Page fetch blocked by egress policy (403)."
+  },
+  {
+    "id": "2026-10-12#03",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "CSIRO starts building ~A$10m automated lab to fast-track carbon-capture materials",
+    "summary": "CSIRO has begun construction of an automated, high-throughput research facility (reported at ~A$10.2m) at its Waterford campus in South Perth to accelerate discovery and testing of next-generation carbon-capture materials, including sorbents for direct air capture.",
+    "source": "CSIRO (via Business News)",
+    "pub_date": "2026-10-10",
+    "url": "https://www.csiro.au/en/news/All/Articles/2026/October/CCMAC",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "CSIRO"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture",
+      "DAC"
+    ],
+    "amount": 10200000,
+    "currency": "AUD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A home-country national-science-agency capability build directly adjacent to CO2CRC's capture-R&D remit; a potential collaboration and materials-pipeline partner.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "project-capex",
+    "extractor_note": "Cost (~A$10.2m) and South Perth/Waterford location from Business News; CSIRO is cited as the authoritative source. Page fetch blocked by egress policy (403)."
+  },
+  {
+    "id": "2026-10-12#04",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Clean-energy venture launches modular 'plug-in' CCS service for off-network sites",
+    "summary": "A clean-energy venture has launched a modular 'plug in' carbon-capture service aimed at industrial and energy-from-waste sites that are not connected to CO2 transport-and-storage pipeline networks, bundling capture with CO2 logistics for dispersed/stranded emitters.",
+    "source": "ENDS Waste & Bioenergy",
+    "pub_date": "2026-10-09",
+    "url": "https://www.endswasteandbioenergy.com/article/1972172/clean-energy-venture-offers-ccs-plug-in-service-disconnected-sites",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Modular/off-network capture-plus-logistics models are relevant to dispersed Australian emitters that lack access to a storage hub.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Operator name not confirmable; page fetch blocked by egress policy (403)."
+  },
+  {
+    "id": "2026-10-12#05",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Analysis: DAC sector seen emerging smaller and leaner after funding/demand crisis",
+    "summary": "A market analysis argues the direct air capture sector will consolidate into a smaller, leaner industry after a funding and demand downturn, with weaker developers exiting and survivors concentrating on cost reduction and secured offtakes.",
+    "source": "Quantum Commodity Intelligence (QCIntel)",
+    "pub_date": "2026-10-10",
+    "url": "https://www.qcintel.com/carbon/article/analysis-dac-sector-to-emerge-smaller-leaner-after-crisis-74931.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Signals a tougher near-term financing climate for engineered removals that frames expectations for any Australian DAC/CDR ambitions.",
+    "sentiment": "negative",
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Analysis/commentary piece (Tier-1 trade). Paywalled; page fetch blocked by egress policy (403)."
+  },
+  {
+    "id": "2026-10-12#06",
+    "briefing_date": "2026-10-12",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "English waste-to-energy carbon-capture plant delayed after failure to consult residents",
+    "summary": "A planned carbon-capture plant at a household-waste/energy-from-waste facility in England has been delayed after the developer failed to properly consult local residents - a social-licence and community-engagement setback for a CCS retrofit.",
+    "source": "Nation.Cymru",
+    "pub_date": "2026-10-09",
+    "url": "https://nation.cymru/news/household-waste-carbon-capture-plant-delayed-after-failure-to-consult-residents-in-england/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A cautionary community-consultation case; proactive engagement is central to CCS social licence in Australia (e.g. Otway, CarbonNet).",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Delay driven by consultation failure; page fetch blocked by egress policy (403)."
+  }
+]
