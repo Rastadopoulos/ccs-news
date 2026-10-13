@@ -1,0 +1,33 @@
+[
+  {
+    "id": "2026-10-14#01",
+    "briefing_date": "2026-10-14",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "CCSA presses UK government on CCUS policy and funding delays as it opens flagship CCUS 2026 conference",
+    "summary": "As the Carbon Capture & Storage Association opened its flagship two-day CCUS 2026 conference ('From Ambition to Delivery') in London on 13 October, it renewed pressure on the government over policy uncertainty and delayed funding allocations that are stalling the UK's project pipeline. The CCSA's standing research counts 100+ projects able to store ~77 Mtpa, but 27 capture projects cancelled or paused since 2023, delays averaging two years, and 75% of developers warning they may redirect investment overseas without clearer policy.",
+    "source": "CCSA",
+    "pub_date": "2026-10-13",
+    "url": "https://www.ccsassociation.org/events/ccus-2026-from-ambition-to-delivery/",
+    "region": "Europe-UK",
+    "countries": ["United Kingdom"],
+    "organisations": ["CCSA"],
+    "org_types": ["industry-body"],
+    "instrument_type": "policy",
+    "value_chain": ["whole-chain"],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A cautionary read on how policy and funding uncertainty stalls even a large, mature CCS pipeline and pushes investment offshore - directly relevant to the design and sequencing of Australia's CCUS Hubs funding and to sustaining investor confidence.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Fresh news hook is the 13-14 Oct CCUS 2026 conference opening; pipeline figures are the CCSA's standing Delivery Plan research. Direct article fetches were blocked by the egress proxy this run, so the date was confirmed from search-result metadata and the published conference schedule."
+  }
+]
