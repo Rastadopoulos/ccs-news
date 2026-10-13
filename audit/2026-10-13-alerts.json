@@ -1,11 +1,11 @@
 [
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/china-passes-milestone-in-offshore-enhanced-gas-recovery-project/2-1-2056270",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/china-passes-milestone-in-offshore-enhanced-gas-recovery-project/2-1-2056270",
-    "headline": "China passes milestone in offshore enhanced gas recovery project - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-10-12T01:41:04+00:00",
-    "fuzzy_key": "china,enhanced,gas,milestone,offshore,online,passes,project,recovery,upstream",
+    "canonical_url": "https://carbonherald.com/imo-adopts-assessment-frameworks-for-marine-carbon-removal",
+    "raw_url": "https://carbonherald.com/imo-adopts-assessment-frameworks-for-marine-carbon-removal/",
+    "headline": "IMO Adopts Assessment Frameworks For Marine Carbon Removal",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-12T10:42:01+00:00",
+    "fuzzy_key": "adopts,assessment,carbon,frameworks,imo,marine,removal",
     "found_via": "google_alerts"
   },
   {
@@ -18,30 +18,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://rigzone.com/news/eni_completes_landmark_installation_for_liverpool_bay_ccs-11-oct-2026-184811-article",
-    "raw_url": "https://www.rigzone.com/news/eni_completes_landmark_installation_for_liverpool_bay_ccs-11-oct-2026-184811-article/",
-    "headline": "Eni Completes Landmark Installation for Liverpool Bay CCS | Rigzone",
-    "source_domain": "rigzone.com",
-    "publication_date": "2026-10-12T10:17:41+00:00",
-    "fuzzy_key": "bay,ccs,completes,eni,installation,landmark,liverpool,rigzone",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://ocean-energyresources.com/2026/10/11/eni-installs-worlds-first-offshore-ccs-platform",
     "raw_url": "https://ocean-energyresources.com/2026/10/11/eni-installs-worlds-first-offshore-ccs-platform/",
     "headline": "Eni installs world's first offshore CCS platform - Ocean Energy Resources",
     "source_domain": "ocean-energyresources.com",
     "publication_date": "2026-10-12T10:17:41+00:00",
     "fuzzy_key": "ccs,energy,eni,first,installs,ocean,offshore,platform,resources,world",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/imo-adopts-assessment-frameworks-for-marine-carbon-removal",
-    "raw_url": "https://carbonherald.com/imo-adopts-assessment-frameworks-for-marine-carbon-removal/",
-    "headline": "IMO Adopts Assessment Frameworks For Marine Carbon Removal",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-10-12T10:42:01+00:00",
-    "fuzzy_key": "adopts,assessment,carbon,frameworks,imo,marine,removal",
     "found_via": "google_alerts"
   },
   {
@@ -60,6 +42,24 @@
     "source_domain": "onegeo.com",
     "publication_date": "2026-10-12T21:46:53+00:00",
     "fuzzy_key": "capture,carbon,com,first,lights,major,northern,norway,onegeo,project,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://rigzone.com/news/eni_completes_landmark_installation_for_liverpool_bay_ccs-11-oct-2026-184811-article",
+    "raw_url": "https://www.rigzone.com/news/eni_completes_landmark_installation_for_liverpool_bay_ccs-11-oct-2026-184811-article/",
+    "headline": "Eni Completes Landmark Installation for Liverpool Bay CCS | Rigzone",
+    "source_domain": "rigzone.com",
+    "publication_date": "2026-10-12T10:17:41+00:00",
+    "fuzzy_key": "bay,ccs,completes,eni,installation,landmark,liverpool,rigzone",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/china-passes-milestone-in-offshore-enhanced-gas-recovery-project/2-1-2056270",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/china-passes-milestone-in-offshore-enhanced-gas-recovery-project/2-1-2056270",
+    "headline": "China passes milestone in offshore enhanced gas recovery project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-10-12T01:41:04+00:00",
+    "fuzzy_key": "china,enhanced,gas,milestone,offshore,online,passes,project,recovery,upstream",
     "found_via": "google_alerts"
   }
 ]
