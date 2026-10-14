@@ -1,0 +1,195 @@
+[
+  {
+    "id": "2026-10-15#01",
+    "briefing_date": "2026-10-15",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK minister reframes carbon capture as \"economic infrastructure\" for the renewal of British industry",
+    "summary": "A UK government minister's keynote (\"Carbon capture and the renewal of British industry\") casts CCUS as \"economic infrastructure, not just environmental\" and central to rebuilding the industrial base - the government's clearest rhetorical answer to industry warnings on policy and funding delays, in the same week as the CCSA's CCUS 2026 conference and the first five UK CCUS projects reaching financial close in Teesside, the North-West and North Wales.",
+    "source": "GOV.UK",
+    "pub_date": "2026-10-14",
+    "url": "https://www.gov.uk/government/speeches/carbon-capture-and-the-renewal-of-british-industry",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "UK Government"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Reference point for how a peer government publicly frames CCS as core industrial infrastructure to sustain investment and social licence - relevant to the narrative framing of Australia's CCUS Hubs programme.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Ministerial speech on gov.uk, 14 Oct 2026; the 'economic infrastructure' framing is corroborated by a same-day secondary headline (indexbox). Specific minister not named in the source title. Direct page fetch was blocked by the egress proxy; date confirmed from alerts-ingest metadata. Distinct from yesterday's CCSA conference-opening item (not already_covered)."
+  },
+  {
+    "id": "2026-10-15#02",
+    "briefing_date": "2026-10-15",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Indonesia prepares incentives to spur carbon capture at coal-fired power plants",
+    "summary": "Indonesia is preparing a package of incentives to encourage carbon capture at its coal-fired power plants (PLTU), extending a CCS push hitherto centred on upstream oil-and-gas and dedicated storage licences (Presidential Regulation 14/2024) into the power sector that dominates its grid - a signal that a major Asian coal economy is leaning on CCS retrofit rather than only early plant retirement.",
+    "source": "Petromindo",
+    "pub_date": "2026-10-14",
+    "url": "https://www.petromindo.com/news/article/indonesia-prepares-incentives-for-carbon-capture-technology-at-coal-plants",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Ministry of Energy and Mineral Resources (Indonesia)"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "incentive",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Indonesia is a priority APAC CCS market and a plausible cross-border storage and partnership counterpart for Australia; a power-sector incentive signal shapes regional CCS demand and storage-hub opportunities.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Incentive package reported as in preparation (not yet detailed or allocated); PerPres 14/2024 and the National Electricity Plan CCS-for-coal roadmap are supporting context. Direct page fetch blocked by egress proxy; date from alerts-ingest metadata."
+  },
+  {
+    "id": "2026-10-15#03",
+    "briefing_date": "2026-10-15",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Japan pushes to move carbon capture from demonstration to a commercial industry",
+    "summary": "A trade report frames Japan as working to take CCS out of the demonstration phase into a commercial industry - consistent with its roadmap to begin commercial CCS around 2030, the JOGMEC 'Advanced CCS' projects (several built around ship-transported liquefied CO2) advancing toward investment decisions, and the 2024 Act on Carbon Dioxide Storage Business - with knock-on relevance for APAC cross-border CO2 shipping and demand for Australian storage.",
+    "source": "Energynews.pro",
+    "pub_date": "2026-10-14",
+    "url": "https://energynews.pro/en/japan-seeks-to-take-carbon-capture-to-the-commercial-stage",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "JOGMEC",
+      "METI"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Japan is a central actor in APAC cross-border CO2 shipping and a potential source of stored-CO2 demand for Australian basins; its commercialisation pace directly affects Australian storage-hub prospects.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Strategy/analysis piece; JOGMEC Advanced CCS projects, the 2030 commercial target and the 2024 CCS Business Act are supporting context. Direct page fetch blocked by egress proxy; date from alerts-ingest metadata."
+  },
+  {
+    "id": "2026-10-15#04",
+    "briefing_date": "2026-10-15",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Project-cargo operations ramp up at Hartlepool behind the Teesside offshore CO2 pipeline",
+    "summary": "Logistics-trade feature on project-cargo handling at the Port of Hartlepool backing the Northern Endurance Partnership's offshore CO2 export pipeline for the East Coast Cluster. Carried as context because the underlying pipelaying campaign began mid-2026, outside today's news window.",
+    "source": "Heavy Lift & Project Forwarding Intl",
+    "pub_date": "2026-10-14",
+    "url": "https://www.heavyliftpfi.com/ports-and-terminals/2026/10/14/hartlepools-project-cargo-ops-back-offshore-co%E2%82%82-pipeline/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Northern Endurance Partnership",
+      "PD Ports"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Supply-chain/logistics colour on a major UK CO2 transport buildout; limited direct read-across to Australia.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar item - round-up/logistics feature; underlying NEP offshore construction milestone predates the window."
+  },
+  {
+    "id": "2026-10-15#05",
+    "briefing_date": "2026-10-15",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "New membrane design reported to advance carbon capture",
+    "summary": "A press-release item on an improved membrane for CO2 separation. Held on the radar pending a confirmable primary peer-reviewed citation, which the egress proxy prevented verification of from the page this run.",
+    "source": "PA Media (Press Release Hub)",
+    "pub_date": "2026-10-14",
+    "url": "https://pressreleasehub.pa.media/article/new-membrane-design-advances-carbon-capture-85991.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Membrane-based CO2 separation is an active R&D area; relevance pending confirmation of the underlying institution and peer-reviewed source.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar item - press-release hub without a confirmable primary peer-reviewed citation; egress proxy blocked body verification."
+  }
+]
