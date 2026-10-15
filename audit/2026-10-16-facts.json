@@ -1,0 +1,86 @@
+[
+  {
+    "id": "2026-10-16#01",
+    "briefing_date": "2026-10-16",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK government warns carbon capture industry that subsidy cuts are coming",
+    "summary": "Bloomberg reports the UK government has signalled to the CCUS sector that support will be trimmed, as the Treasury presses DESNZ for savings against the £9.4bn earmarked for CCUS to 2030.",
+    "source": "Bloomberg",
+    "pub_date": "2026-10-15",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-14/uk-warns-carbon-capture-industry-that-subsidy-cuts-are-coming",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "UK Government",
+      "DESNZ",
+      "HM Treasury"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Shows how quickly investor confidence in a large, mature CCS pipeline can be unsettled by funding uncertainty — a caution for Australia's CCUS Hubs funding design.",
+    "sentiment": "negative",
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Egress proxy blocked article fetch; pub date (15 Oct AEDT) inferred from Google-Alert ingest time and Bloomberg US dateline (2026-10-14). £9.4bn is pre-existing 2025 spending-review context, not a new commitment."
+  },
+  {
+    "id": "2026-10-16#02",
+    "briefing_date": "2026-10-16",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "Sarawak government tells state assembly CCUS storage is \"safe and stable for the long term\"",
+    "summary": "A Sarawak deputy minister told the state legislative assembly that the state's CCS sites are geologically safe, estimating annual leakage probability at 0.001%-0.01%.",
+    "source": "The Star",
+    "pub_date": "2026-10-14",
+    "url": "https://www.thestar.com.my/news/nation/2026/10/14/carbon-capture-storage-in-sarawak-safe-and-stable-for-the-long-term-state-assembly-told",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "Sarawak State Government"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Social-licence signal from a key Malaysian CCS jurisdiction; relevant to public-confidence messaging on storage safety.",
+    "sentiment": "positive",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "Radar near-miss: pub date 14 Oct is one day outside the 15-16 Oct window."
+  }
+]
