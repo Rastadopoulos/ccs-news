@@ -1,41 +1,5 @@
 [
   {
-    "canonical_url": "https://worley.com/en/insights/our-news/conventional-energy/2026/ccs-storage-project-northern-lights",
-    "raw_url": "https://www.worley.com/en/insights/our-news/conventional-energy/2026/ccs-storage-project-northern-lights",
-    "headline": "Worley Rosenberg delivers Northern Lights Phase II",
-    "source_domain": "worley.com",
-    "publication_date": "2026-10-14T22:05:17+00:00",
-    "fuzzy_key": "delivers,ii,lights,northern,phase,rosenberg,worley",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://thecementinstitute.com/northern-lights-signs-200000-ton-ccs-agreement-with-oresundskraft",
-    "raw_url": "https://thecementinstitute.com/northern-lights-signs-200000-ton-ccs-agreement-with-oresundskraft/",
-    "headline": "Northern Lights Signs 200000-Ton CCS Agreement With Öresundskraft",
-    "source_domain": "thecementinstitute.com",
-    "publication_date": "2026-10-14T22:05:17+00:00",
-    "fuzzy_key": "200000,agreement,ccs,lights,northern,resundskraft,signs,ton",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://qcintel.com/ammonia/article/liverpool-bay-ccs-completes-installation-of-douglas-ccs-platform-75171.html",
-    "raw_url": "https://www.qcintel.com/ammonia/article/liverpool-bay-ccs-completes-installation-of-douglas-ccs-platform-75171.html",
-    "headline": "Liverpool Bay CCS completes installation of Douglas CCS platform",
-    "source_domain": "qcintel.com",
-    "publication_date": "2026-10-14T22:53:05+00:00",
-    "fuzzy_key": "bay,ccs,completes,douglas,installation,liverpool,platform",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://indianchemicalnews.com/ccus/worlds-first-purpose-built-offshore-ccs-platform-unstalled-in-liverpool-bay-32278",
-    "raw_url": "https://www.indianchemicalnews.com/ccus/worlds-first-purpose-built-offshore-ccs-platform-unstalled-in-liverpool-bay-32278",
-    "headline": "World's first purpose-built offshore CCS platform unstalled in Liverpool Bay",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-10-14T22:53:05+00:00",
-    "fuzzy_key": "bay,built,ccs,first,liverpool,offshore,platform,purpose,unstalled,world",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://bloomberg.com/news/articles/2026-10-14/uk-warns-carbon-capture-industry-that-subsidy-cuts-are-coming",
     "raw_url": "https://www.bloomberg.com/news/articles/2026-10-14/uk-warns-carbon-capture-industry-that-subsidy-cuts-are-coming",
     "headline": "UK Warns Carbon Capture Industry That Subsidy Cuts Are Coming - Bloomberg.com",
@@ -54,12 +18,102 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://business-standard.com/industry/news/vzfox-india-entry-mature-oilfields-eor-ccus-energy-126101500610_1.html",
+    "raw_url": "https://www.business-standard.com/industry/news/vzfox-india-entry-mature-oilfields-eor-ccus-energy-126101500610_1.html",
+    "headline": "Canadian subsurface engineering firm VZFOX set to enter Indian market | Industry News",
+    "source_domain": "business-standard.com",
+    "publication_date": "2026-10-15T20:08:42+00:00",
+    "fuzzy_key": "canadian,engineering,enter,firm,indian,industry,market,news,set,subsurface,vzfox",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/eu-unveils-e120m-horizon-europe-package-for-co2-storage-dac-and-ccus-clusters",
+    "raw_url": "https://carbonherald.com/eu-unveils-e120m-horizon-europe-package-for-co2-storage-dac-and-ccus-clusters/",
+    "headline": "EU Unveils €120M Horizon Europe Package For CO2 Storage, DAC, And CCUS Clusters",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-15T22:01:39+00:00",
+    "fuzzy_key": "120m,ccus,clusters,co2,dac,eu,europe,horizon,package,storage,unveils",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/university-of-houston-demonstrates-90-carbon-capture-efficiency-to-address-ai-energy-demand",
+    "raw_url": "https://carbonherald.com/university-of-houston-demonstrates-90-carbon-capture-efficiency-to-address-ai-energy-demand/",
+    "headline": "University Of Houston Demonstrates 90% Carbon Capture Efficiency To Address AI Energy Demand",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-15T21:16:58+00:00",
+    "fuzzy_key": "90,address,ai,capture,carbon,demand,demonstrates,efficiency,energy,houston,university",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://app.dealroom.co/news/feed/sumitomo-chemical-tests-co-capture-membrane-as-japan-funds-ccs-push-fair-value-4-37",
     "raw_url": "https://app.dealroom.co/news/feed/sumitomo-chemical-tests-co-capture-membrane-as-japan-funds-ccs-push-fair-value-4-37",
     "headline": "Sumitomo Chemical tests CO₂ capture membrane as Japan funds CCS push; fair value $4.37",
     "source_domain": "dealroom.co",
     "publication_date": "2026-10-15T02:10:02+00:00",
     "fuzzy_key": "37,capture,ccs,chemical,co,fair,funds,japan,membrane,push,sumitomo,tests,value",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/ccus/worlds-first-purpose-built-offshore-ccs-platform-unstalled-in-liverpool-bay-32278",
+    "raw_url": "https://www.indianchemicalnews.com/ccus/worlds-first-purpose-built-offshore-ccs-platform-unstalled-in-liverpool-bay-32278",
+    "headline": "World's first purpose-built offshore CCS platform unstalled in Liverpool Bay",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-10-14T22:53:05+00:00",
+    "fuzzy_key": "bay,built,ccs,first,liverpool,offshore,platform,purpose,unstalled,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://japanccs.com/en/news/20261015",
+    "raw_url": "https://www.japanccs.com/en/news/20261015/",
+    "headline": "Science classes were held in Tomakomai City. | Japan CCS Co., Ltd.",
+    "source_domain": "japanccs.com",
+    "publication_date": "2026-10-15T22:21:29+00:00",
+    "fuzzy_key": "ccs,city,classes,co,held,japan,ltd,science,tomakomai",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oceannews.com/news/energy/worley-rosenberg-wins-subsea-fabrication-contract-for-northern-lights-phase-ii-ccs-project",
+    "raw_url": "https://oceannews.com/news/energy/worley-rosenberg-wins-subsea-fabrication-contract-for-northern-lights-phase-ii-ccs-project/",
+    "headline": "Worley Rosenberg Wins Subsea Fabrication Contract For Northern Lights Phase II CCS Project",
+    "source_domain": "oceannews.com",
+    "publication_date": "2026-10-15T21:16:58+00:00",
+    "fuzzy_key": "ccs,contract,fabrication,ii,lights,northern,phase,project,rosenberg,subsea,wins,worley",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oedigital.com/news/543708-subsea7-hires-worley-for-northern-lights-ccs-fabrication-job",
+    "raw_url": "https://www.oedigital.com/news/543708-subsea7-hires-worley-for-northern-lights-ccs-fabrication-job",
+    "headline": "Subsea7 Hires Worley for Northern Lights CCS Fabrication Job",
+    "source_domain": "oedigital.com",
+    "publication_date": "2026-10-15T21:16:58+00:00",
+    "fuzzy_key": "ccs,fabrication,hires,job,lights,northern,subsea7,worley",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://qcintel.com/ammonia/article/liverpool-bay-ccs-completes-installation-of-douglas-ccs-platform-75171.html",
+    "raw_url": "https://www.qcintel.com/ammonia/article/liverpool-bay-ccs-completes-installation-of-douglas-ccs-platform-75171.html",
+    "headline": "Liverpool Bay CCS completes installation of Douglas CCS platform",
+    "source_domain": "qcintel.com",
+    "publication_date": "2026-10-14T22:53:05+00:00",
+    "fuzzy_key": "bay,ccs,completes,douglas,installation,liverpool,platform",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thecementinstitute.com/northern-lights-signs-200000-ton-ccs-agreement-with-oresundskraft",
+    "raw_url": "https://thecementinstitute.com/northern-lights-signs-200000-ton-ccs-agreement-with-oresundskraft/",
+    "headline": "Northern Lights Signs 200000-Ton CCS Agreement With Öresundskraft",
+    "source_domain": "thecementinstitute.com",
+    "publication_date": "2026-10-14T22:05:17+00:00",
+    "fuzzy_key": "200000,agreement,ccs,lights,northern,resundskraft,signs,ton",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://worley.com/en/insights/our-news/conventional-energy/2026/ccs-storage-project-northern-lights",
+    "raw_url": "https://www.worley.com/en/insights/our-news/conventional-energy/2026/ccs-storage-project-northern-lights",
+    "headline": "Worley Rosenberg delivers Northern Lights Phase II",
+    "source_domain": "worley.com",
+    "publication_date": "2026-10-14T22:05:17+00:00",
+    "fuzzy_key": "delivers,ii,lights,northern,phase,rosenberg,worley",
     "found_via": "google_alerts"
   }
 ]
