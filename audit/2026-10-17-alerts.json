@@ -63,6 +63,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://m.economictimes.com/small-biz/sustainability/turning-waste-into-value-how-anytech-hughes-plans-to-turn-carbon-capture-into-a-revenue-stream-for-indian-industry/articleshow/134982519.cms",
+    "raw_url": "https://m.economictimes.com/small-biz/sustainability/turning-waste-into-value-how-anytech-hughes-plans-to-turn-carbon-capture-into-a-revenue-stream-for-indian-industry/articleshow/134982519.cms",
+    "headline": "Turning waste into value: How Anytech Hughes plans to turn carbon capture into a revenue ...",
+    "source_domain": "economictimes.com",
+    "publication_date": "2026-10-17T04:55:33+00:00",
+    "fuzzy_key": "anytech,capture,carbon,how,hughes,into,plans,revenue,turn,turning,value,waste",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energiesmedia.com/eni-offshore-platform-liverpool-bay",
     "raw_url": "https://energiesmedia.com/eni-offshore-platform-liverpool-bay/",
     "headline": "Eni installs world's first purpose-built offshore CCS platform as Liverpool Bay project ...",
@@ -78,6 +87,15 @@
     "source_domain": "energy-pedia.com",
     "publication_date": "2026-10-16T20:15:26+00:00",
     "fuzzy_key": "achieves,australia,bonaparte,ccs,gas,greenhouse,milestone,project,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gastopowerjournal.com/news/brief-news/saipem-showcases-the-ccus-tech",
+    "raw_url": "https://gastopowerjournal.com/news/brief-news/saipem-showcases-the-ccus-tech/",
+    "headline": "Saipem showcases the CCUS tech - Gas to Power Journal",
+    "source_domain": "gastopowerjournal.com",
+    "publication_date": "2026-10-17T04:55:33+00:00",
+    "fuzzy_key": "ccus,gas,journal,power,saipem,showcases,tech",
     "found_via": "google_alerts"
   },
   {
@@ -198,6 +216,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://vermoegenszentrum.ch/en/stock-exchange-and-markets/news/inpexs-bonaparte-ccs-project-secures-australian-recognition-carbon",
+    "raw_url": "https://www.vermoegenszentrum.ch/en/stock-exchange-and-markets/news/inpexs-bonaparte-ccs-project-secures-australian-recognition-carbon",
+    "headline": "Inpex's Bonaparte CCS Project Secures Australian Recognition of Carbon Storage Site",
+    "source_domain": "vermoegenszentrum.ch",
+    "publication_date": "2026-10-17T07:14:23+00:00",
+    "fuzzy_key": "australian,bonaparte,carbon,ccs,inpex,project,recognition,secures,site,storage",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://worldoil.com/news/2026/10/16/worley-rosenberg-wins-subsea7-contract-for-northern-lights-ccs-project",
     "raw_url": "https://www.worldoil.com/news/2026/10/16/worley-rosenberg-wins-subsea7-contract-for-northern-lights-ccs-project/",
     "headline": "Worley Rosenberg wins Subsea7 contract for Northern Lights CCS project - World Oil",
@@ -213,6 +240,15 @@
     "source_domain": "x.com",
     "publication_date": "2026-10-16T05:59:15+00:00",
     "fuzzy_key": "achieves,bonaparte,ccs,gas,greenhouse,info,project,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://yorkshirepost.co.uk/news/environment/plans-to-add-hydrogen-and-carbon-capture-to-waste-incinerator-challenged-9290639",
+    "raw_url": "https://www.yorkshirepost.co.uk/news/environment/plans-to-add-hydrogen-and-carbon-capture-to-waste-incinerator-challenged-9290639",
+    "headline": "Plans to add hydrogen and carbon capture to waste incinerator challenged",
+    "source_domain": "yorkshirepost.co.uk",
+    "publication_date": "2026-10-17T04:55:33+00:00",
+    "fuzzy_key": "add,capture,carbon,challenged,hydrogen,incinerator,plans,waste",
     "found_via": "google_alerts"
   }
 ]
