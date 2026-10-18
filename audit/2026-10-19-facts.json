@@ -1,0 +1,260 @@
+[
+  {
+    "id": "2026-10-19#01",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Australia declares West Peron storage formation for INPEX-led Bonaparte CCS",
+    "summary": "Australia's federal government formally declared the West Peron formation (permit G-7-AP, ~260 km off Darwin) an identified greenhouse gas storage formation — the country's first such declaration for an offshore saline aquifer, clearing a key regulatory gate for the Bonaparte CCS project ahead of a future FID.",
+    "source": "Upstream",
+    "pub_date": "2026-10-16",
+    "url": "https://www.upstreamonline.com/carbon-capture/australias-first-offshore-ccs-project-wins-reservoir-approval/2-1-2059760",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "INPEX Browse E&P",
+      "TotalEnergies CCS Australia",
+      "Woodside Energy",
+      "Australian Government"
+    ],
+    "org_types": [
+      "NOC",
+      "OG-major",
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2030,
+    "capacity_mtpa": 10,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Landmark first Australian offshore saline-aquifer storage declaration — directly central to CO2CRC's domestic CCS mission and the national storage-resource pipeline.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": 35,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Government declaration (not FID or injection approval). Sources cite up to ~443 Mt total over ~35 yr and roughly 8-10 Mtpa; capacity_mtpa set to 10 (upper cited rate, not approved injection)."
+  },
+  {
+    "id": "2026-10-19#02",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Worley Rosenberg wins Subsea7 fabrication contract for Northern Lights Phase II",
+    "summary": "Worley's Rosenberg yard will fabricate subsea spools and structures for the Phase II expansion of Norway's Northern Lights (Longship) project, which lifts CO2 transport-and-storage capacity from 1.5 Mtpa to more than 5 Mtpa by 2028; Subsea7 is Equinor's technical service provider for the phase.",
+    "source": "Upstream",
+    "pub_date": "2026-10-16",
+    "url": "https://www.upstreamonline.com/carbon-capture/contractor-picks-up-fabrication-deal-for-major-norway-ccs-project/2-1-2060218",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Worley",
+      "Subsea7",
+      "Equinor",
+      "Northern Lights"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "OG-major",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2028,
+    "capacity_mtpa": 5,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Supply-chain execution on Europe's flagship open-access CO2 T&S network — a reference model for Australian cross-user storage hubs.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": "Contract award; value undisclosed. capacity_mtpa 5 is the Phase II expansion target, not this contract's scope."
+  },
+  {
+    "id": "2026-10-19#03",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "One Earth Energy scales back Illinois CO2 storage project to a single injection well",
+    "summary": "The ethanol producer's subsidiary cut its eastern McLean County plan from three injection wells to one (plus four monitoring wells and a 5.4-mile, 8-inch pipeline near Saybrook) as it revives post-moratorium; it still needs an EPA Class VI permit and an Illinois Commerce Commission certificate amid Mahomet Aquifer objections.",
+    "source": "WGLT",
+    "pub_date": "2026-10-16",
+    "url": "https://www.wglt.org/local-news/2026-10-16/one-earth-energy-scales-back-proposed-carbon-capture-proposal-in-eastern-mclean-county",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "One Earth Energy",
+      "US EPA",
+      "Illinois Commerce Commission"
+    ],
+    "org_types": [
+      "developer",
+      "government",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Illustrates US permitting and social-licence friction (aquifer protection) reshaping project scope — context for storage characterisation and community engagement.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Scope reduction (3 wells to 1), not a cancellation; project proceeding at reduced scale pending permits."
+  },
+  {
+    "id": "2026-10-19#04",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Frontier buyers sign ~US$11.7M in-situ mineralisation removal deal with Oman's 44.01",
+    "summary": "Frontier's advance-market buyers (Stripe, Google, Shopify, Autodesk, H&M Group, Workday and others via Watershed) committed ~US$11.7M for ~20,932 tonnes of CO2 removal delivered 2028-2031 using 44.01's peridotite mineralisation — Frontier's first in-situ mineralisation purchase.",
+    "source": "Carbon Credits",
+    "pub_date": "2026-10-16",
+    "url": "https://carboncredits.com/frontier-signs-11-7m-carbon-removal-deal-with-44-01s-rock-mineralization-technology/",
+    "region": "Middle East",
+    "countries": [
+      "Oman",
+      "United Arab Emirates",
+      "United States"
+    ],
+    "organisations": [
+      "Frontier",
+      "44.01",
+      "Stripe",
+      "Google",
+      "Shopify",
+      "Watershed"
+    ],
+    "org_types": [
+      "financier",
+      "startup",
+      "other",
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "mineralisation"
+    ],
+    "amount": 11700000,
+    "currency": "USD",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2031,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Validates permanent mineralisation storage pathway and corporate CDR demand — a storage modality adjacent to CO2CRC's saline-aquifer focus.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Removal offtake/purchase (~20,932 t total over 2028-2031), not an annual capacity; capacity_mtpa left null."
+  },
+  {
+    "id": "2026-10-19#05",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Wood Mackenzie: global CO2 transport sector to reach ~US$211bn by 2060, APAC ~60% of spend",
+    "summary": "A new Wood Mackenzie report projects ~US$211bn of global CO2 transport investment by 2060, enabling ~3 Gtpa moved with ~200 Mtpa crossing borders; Asia Pacific accounts for ~60% of spend, pipelines dominate, and the storage mismatch is driving cross-border CO2 trade and liquefied-CO2 shipping.",
+    "source": "Wood Mackenzie",
+    "pub_date": "2026-10-16",
+    "url": "https://www.woodmac.com/press-releases/global-co2-transport-industry-set-to-reach-usd-211-billion-by-2060/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Wood Mackenzie"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2060,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "APAC-centric transport outlook underscores the cross-border CO2 shipping/trade opportunity central to Australia's export-storage ambitions (Bonaparte, Bayu-Undan).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "Market-aggregate forecast (US$211bn by 2060), not a discrete commitment; amount left null per golden rules."
+  },
+  {
+    "id": "2026-10-19#06",
+    "briefing_date": "2026-10-19",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Plans to add hydrogen and carbon capture to a Yorkshire waste incinerator challenged",
+    "summary": "Proposals to retrofit hydrogen and carbon capture to a waste-to-energy incinerator in Yorkshire face a local challenge — the latest UK community-consent flashpoint for energy-from-waste CCS retrofits.",
+    "source": "Yorkshire Post",
+    "pub_date": "2026-10-17",
+    "url": "https://www.yorkshirepost.co.uk/news/environment/plans-to-add-hydrogen-and-carbon-capture-to-waste-incinerator-challenged-9290639",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Another UK social-licence flashpoint for EfW carbon capture — watch for consent-process lessons transferable to Australian projects.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Community/planning challenge to an EfW-CCS retrofit; social-licence item."
+  }
+]
