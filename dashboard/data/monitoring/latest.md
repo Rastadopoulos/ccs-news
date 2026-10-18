@@ -1,6 +1,6 @@
 # Authoritative CCS source monitor
 
-Retrieved: 2026-10-11T23:41:02.930435+00:00
+Retrieved: 2026-10-18T22:26:41.056669+00:00
 
 - **RETRIEVAL-FAILED** IEA CCUS Projects Database product — HTTP Error 403: Forbidden
 - **UNCHANGED** IEA CCUS Projects Explorer data
@@ -10,7 +10,7 @@ Retrieved: 2026-10-11T23:41:02.930435+00:00
 - **REVIEW** UK NSTA carbon storage public register
 - **RETRIEVAL-FAILED** UK Ofgem CO2 transport and storage regulation — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** Australian NOPTA offshore greenhouse gas storage — HTTP Error 404: Not Found
-- **REVIEW** Australian NEATS titles and identified storage formations
+- **UNCHANGED** Australian NEATS titles and identified storage formations
 - **REVIEW** NOPSEMA environment plan activity
 - **RETRIEVAL-FAILED** Australian sea dumping and CO2 export permits — The read operation timed out
 - **RETRIEVAL-FAILED** EU Net-Zero Industry Act strategic projects and CO2 storage — HTTP Error 404: Not Found
@@ -27,7 +27,7 @@ Retrieved: 2026-10-11T23:41:02.930435+00:00
 - **RETRIEVAL-FAILED** Eni carbon capture and storage — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** bp carbon capture use and storage — HTTP Error 403: Forbidden
 - **CHANGED** Shell carbon capture and storage
-- **CHANGED** ExxonMobil carbon capture and storage
+- **RETRIEVAL-FAILED** ExxonMobil carbon capture and storage — HTTP Error 403: Forbidden
 - **CHANGED** 1PointFive DAC and storage news
 - **CHANGED** Mitsubishi Heavy Industries carbon capture
 - **CHANGED** Svante carbon capture news
