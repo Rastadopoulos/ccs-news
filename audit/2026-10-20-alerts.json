@@ -1,11 +1,11 @@
 [
   {
-    "canonical_url": "https://simplywall.st/stocks/jp/energy/tse-1605/inpex-shares/news/how-investors-are-reacting-to-inpex-tse1605-bonaparte-ccs-ap",
-    "raw_url": "https://simplywall.st/stocks/jp/energy/tse-1605/inpex-shares/news/how-investors-are-reacting-to-inpex-tse1605-bonaparte-ccs-ap",
-    "headline": "How Investors Are Reacting To Inpex (TSE:1605) Bonaparte CCS Approval - Simply Wall St",
-    "source_domain": "simplywall.st",
-    "publication_date": "2026-10-18T20:26:43+00:00",
-    "fuzzy_key": "1605,approval,bonaparte,ccs,how,inpex,investors,reacting,simply,st,tse,wall",
+    "canonical_url": "https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026",
+    "raw_url": "https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026/",
+    "headline": "CCSA Unveils Winners Of Inaugural International CCUS Awards 2026 - Carbon Herald",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-19T10:35:23+00:00",
+    "fuzzy_key": "2026,awards,carbon,ccsa,ccus,herald,inaugural,international,unveils,winners",
     "found_via": "google_alerts"
   },
   {
@@ -18,12 +18,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026",
-    "raw_url": "https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026/",
-    "headline": "CCSA Unveils Winners Of Inaugural International CCUS Awards 2026 - Carbon Herald",
+    "canonical_url": "https://carbonherald.com/swiss-company-tivano-secures-new-grant-to-advance-carbon-removal-in-africa",
+    "raw_url": "https://carbonherald.com/swiss-company-tivano-secures-new-grant-to-advance-carbon-removal-in-africa/",
+    "headline": "Swiss Company Tivano Secures New Grant To Advance Carbon Removal In Africa",
     "source_domain": "carbonherald.com",
-    "publication_date": "2026-10-19T10:35:23+00:00",
-    "fuzzy_key": "2026,awards,carbon,ccsa,ccus,herald,inaugural,international,unveils,winners",
+    "publication_date": "2026-10-19T20:23:10+00:00",
+    "fuzzy_key": "advance,africa,carbon,company,grant,new,removal,secures,swiss,tivano",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
+    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
+    "headline": "Bonaparte CCS announces technical viability of storage site in Australia - Enerdata",
+    "source_domain": "enerdata.net",
+    "publication_date": "2026-10-19T20:16:01+00:00",
+    "fuzzy_key": "announces,australia,bonaparte,ccs,enerdata,site,storage,technical,viability",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
+    "raw_url": "https://www.indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
+    "headline": "Carbon Clean commissions carbon capture pilot plant in Navi Mumbai & delivers first CO2",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-10-19T20:16:01+00:00",
+    "fuzzy_key": "capture,carbon,clean,co2,commissions,delivers,first,mumbai,navi,pilot,plant",
     "found_via": "google_alerts"
   },
   {
@@ -33,6 +51,24 @@
     "source_domain": "openpr.com",
     "publication_date": "2026-10-19T10:35:23+00:00",
     "fuzzy_key": "54,accelerates,adoption,capture,carbon,ccs,operating,projects,rise,technology",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
+    "raw_url": "https://www.openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
+    "headline": "Onboard Carbon Capture System Market Report 2026 Market",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-10-19T20:30:00+00:00",
+    "fuzzy_key": "2026,capture,carbon,market,onboard,report,system",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://simplywall.st/stocks/jp/energy/tse-1605/inpex-shares/news/how-investors-are-reacting-to-inpex-tse1605-bonaparte-ccs-ap",
+    "raw_url": "https://simplywall.st/stocks/jp/energy/tse-1605/inpex-shares/news/how-investors-are-reacting-to-inpex-tse1605-bonaparte-ccs-ap",
+    "headline": "How Investors Are Reacting To Inpex (TSE:1605) Bonaparte CCS Approval - Simply Wall St",
+    "source_domain": "simplywall.st",
+    "publication_date": "2026-10-18T20:26:43+00:00",
+    "fuzzy_key": "1605,approval,bonaparte,ccs,how,inpex,investors,reacting,simply,st,tse,wall",
     "found_via": "google_alerts"
   }
 ]
