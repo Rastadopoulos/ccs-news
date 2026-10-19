@@ -1,0 +1,10 @@
+# Quiet day — CCS briefing — Tue 20 Oct 2026
+
+A genuinely quiet news day: no substantive CCS/CCUS item published on 19–20 October (Melbourne time) survived verification. The window overlaps Monday's briefing, and the fresh-dated articles that surfaced were either already covered (the Subsea7/Worley Rosenberg fabrication award for Northern Lights Phase II, and Australia's West Peron storage declaration for INPEX-led Bonaparte — both briefed on 19 October) or did not qualify (the CCSA International CCUS Awards gala was held on 13 October; a market-research repackaging on operating-project growth came from a press-release wire). Around 27 searches across every geographic bucket — Australia/APAC, North America, Europe/UK, Middle East, China, India, Latin America and Africa — plus multinational-strategy and transboundary/London Protocol queries returned nothing new in-window. Two near-miss items are listed below for context. (The Shelly Murrell and IEAGHG newsletter feeds were unavailable this run, and article-page date-verification could not run owing to a sandbox fetch restriction; dates are from search-result metadata.)
+
+## Still on the radar
+
+- **Cheshire East Council unanimously objects to the Peak Cluster CO2 pipeline** — The council passed a motion formally opposing the proposed Peak Cluster CO2 pipeline (an NSIP at pre-application stage), demanding independent environmental, hydrological, economic and safety assessments before any DCO determination; a widening community-consent flashpoint around UK CO2 transport infrastructure. (CemNet, 15 Oct 2026) [link](https://www.cemnet.com/News/story/182285/local-opposition-to-peak-cluster-pipeline.html)
+- **CCSA names winners of its inaugural International CCUS Awards** — The UK CCSA held its first International CCUS Awards in London on 13 October; winners included the Netherlands' Porthos project and the UK's NZT Power gas-fired capture project — a modest signal of European CCS project maturity. (Carbon Herald, 13 Oct 2026) [link](https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026/)
+
+— Auto-briefing

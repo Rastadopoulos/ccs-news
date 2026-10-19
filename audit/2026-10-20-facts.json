@@ -1,0 +1,87 @@
+[
+  {
+    "id": "2026-10-20#01",
+    "briefing_date": "2026-10-20",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "CCSA names inaugural International CCUS Awards winners (Porthos, NZT Power)",
+    "summary": "The UK Carbon Capture & Storage Association held its first International CCUS Awards in London on 13 October 2026; winners included the Netherlands' Porthos project and the UK's NZT Power gas-fired capture project.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-13",
+    "url": "https://carbonherald.com/ccsa-unveils-winners-of-inaugural-international-ccus-awards-2026/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Netherlands"
+    ],
+    "organisations": [
+      "CCSA",
+      "Porthos",
+      "NZT Power"
+    ],
+    "org_types": [
+      "industry-body",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Industry-recognition event; a soft signal of European CCS project maturity, limited direct CO2CRC relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar near-miss; awards gala held 13 Oct 2026 (outside the 19-20 Oct daily window), surfaced for context. Winners per Carbon Herald/CCSA. WebFetch date-confirmation unavailable this run; date from WebSearch metadata."
+  },
+  {
+    "id": "2026-10-20#02",
+    "briefing_date": "2026-10-20",
+    "item_status": "radar",
+    "section": "media",
+    "headline": "Cheshire East Council unanimously objects to Peak Cluster CO2 pipeline",
+    "summary": "Cheshire East Council unanimously passed a motion formally opposing the proposed Peak Cluster CO2 pipeline (a Nationally Significant Infrastructure Project at pre-application stage), demanding independent environmental, hydrological, economic and safety assessments of the route before any development consent determination.",
+    "source": "CemNet",
+    "pub_date": "2026-10-15",
+    "url": "https://www.cemnet.com/News/story/182285/local-opposition-to-peak-cluster-pipeline.html",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Cheshire East Council",
+      "Peak Cluster"
+    ],
+    "org_types": [
+      "government",
+      "developer"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Community-consent flashpoint for CO2 transport infrastructure; relevant to CO2CRC social-licence and stakeholder-engagement lessons for pipeline/storage siting.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar near-miss (~15 Oct, just outside the daily window); local-government opposition motion to an NSIP. A ~£5bn project cost is cited contextually, not a new commitment. WebFetch date-confirmation unavailable this run; date from WebSearch metadata."
+  }
+]
