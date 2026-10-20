@@ -1,20 +1,29 @@
 [
   {
-    "canonical_url": "https://enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
-    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
-    "headline": "Bonaparte CCS announces technical viability of storage site in Australia - Enerdata",
-    "source_domain": "enerdata.net",
-    "publication_date": "2026-10-19T20:16:01+00:00",
-    "fuzzy_key": "announces,australia,bonaparte,ccs,enerdata,site,storage,technical,viability",
+    "canonical_url": "https://balkangreenenergynews.com/eu-approves-first-grants-for-smr-direct-air-carbon-capture",
+    "raw_url": "https://balkangreenenergynews.com/eu-approves-first-grants-for-smr-direct-air-carbon-capture/",
+    "headline": "EU approves first grants for SMR, direct air carbon capture - Balkan Green Energy News",
+    "source_domain": "balkangreenenergynews.com",
+    "publication_date": "2026-10-20T17:18:15+00:00",
+    "fuzzy_key": "air,approves,balkan,capture,carbon,direct,energy,eu,first,grants,green,news,smr",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
-    "raw_url": "https://www.indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
-    "headline": "Carbon Clean commissions carbon capture pilot plant in Navi Mumbai & delivers first CO2",
-    "source_domain": "indianchemicalnews.com",
-    "publication_date": "2026-10-19T20:16:01+00:00",
-    "fuzzy_key": "capture,carbon,clean,co2,commissions,delivers,first,mumbai,navi,pilot,plant",
+    "canonical_url": "https://businessgreen.com/news/4537529/ccs-100-commercial-carbon-capture-projects-operation-globally",
+    "raw_url": "https://www.businessgreen.com/news/4537529/ccs-100-commercial-carbon-capture-projects-operation-globally",
+    "headline": "CCS: More than 100 commercial carbon capture projects now in operation globally",
+    "source_domain": "businessgreen.com",
+    "publication_date": "2026-10-20T17:18:15+00:00",
+    "fuzzy_key": "100,capture,carbon,ccs,commercial,globally,more,now,operation,projects,than",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/google-mckinsey-invest-in-silvopasture-carbon-removal-by-working-trees",
+    "raw_url": "https://carbonherald.com/google-mckinsey-invest-in-silvopasture-carbon-removal-by-working-trees/",
+    "headline": "Google, McKinsey Invest In Silvopasture Carbon Removal By Working Trees",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-20T17:54:23+00:00",
+    "fuzzy_key": "carbon,google,invest,mckinsey,removal,silvopasture,trees,working",
     "found_via": "google_alerts"
   },
   {
@@ -36,21 +45,66 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
-    "raw_url": "https://www.openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
-    "headline": "Onboard Carbon Capture System Market Report 2026 Market",
-    "source_domain": "openpr.com",
-    "publication_date": "2026-10-19T20:30:00+00:00",
-    "fuzzy_key": "2026,capture,carbon,market,onboard,report,system",
+    "canonical_url": "https://cemnet.com/News/story/182309/global-ccs-projects-pass-100-as-infrastructure-expands.html",
+    "raw_url": "https://www.cemnet.com/News/story/182309/global-ccs-projects-pass-100-as-infrastructure-expands.html",
+    "headline": "Global CCS projects pass 100 as infrastructure expands - International Cement Review",
+    "source_domain": "cemnet.com",
+    "publication_date": "2026-10-20T17:18:15+00:00",
+    "fuzzy_key": "100,ccs,cement,expands,global,infrastructure,international,pass,projects,review",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://initiatives.weforum.org/transitioning-industrial-clusters/case-study-details/hynet-north-west-securing-£2.5-billion-for-ccs/aJYTG0000001Gh34AE",
-    "raw_url": "https://initiatives.weforum.org/transitioning-industrial-clusters/case-study-details/hynet-north-west-securing-£2.5-billion-for-ccs/aJYTG0000001Gh34AE",
-    "headline": "Transitioning Industrial Clusters - HyNet North West securing £2.5 billion for CCS",
-    "source_domain": "weforum.org",
-    "publication_date": "2026-10-20T02:31:08+00:00",
-    "fuzzy_key": "billion,ccs,clusters,hynet,industrial,north,securing,transitioning,west",
+    "canonical_url": "https://enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
+    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/bonaparte-ccs-announces-technical-viability-storage-site-australia.html",
+    "headline": "Bonaparte CCS announces technical viability of storage site in Australia - Enerdata",
+    "source_domain": "enerdata.net",
+    "publication_date": "2026-10-19T20:16:01+00:00",
+    "fuzzy_key": "announces,australia,bonaparte,ccs,enerdata,site,storage,technical,viability",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://globalcement.com/news/21381-over-100-carbon-capture-and-storage-projects-reported-globally",
+    "raw_url": "https://www.globalcement.com/news/21381-over-100-carbon-capture-and-storage-projects-reported-globally",
+    "headline": "Over 100 carbon capture and storage projects reported globally - Cement Sector News",
+    "source_domain": "globalcement.com",
+    "publication_date": "2026-10-20T17:18:15+00:00",
+    "fuzzy_key": "100,capture,carbon,cement,globally,news,over,projects,reported,sector,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indexbox.io/blog/eu-innovation-fund-awards-eur223-million-to-atlas-co2-transport-and-storage-project",
+    "raw_url": "https://www.indexbox.io/blog/eu-innovation-fund-awards-eur223-million-to-atlas-co2-transport-and-storage-project/",
+    "headline": "EU Innovation Fund Awards EUR223 Million to Atlas CO2 Transport and Storage Project",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-20T19:14:29+00:00",
+    "fuzzy_key": "atlas,awards,co2,eu,eur223,fund,innovation,million,project,storage,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
+    "raw_url": "https://www.indianchemicalnews.com/sustainability/carbon-clean-commissions-carbon-capture-pilot-plant-in-navi-mumbai-delivers-first-co2-32336",
+    "headline": "Carbon Clean commissions carbon capture pilot plant in Navi Mumbai & delivers first CO2",
+    "source_domain": "indianchemicalnews.com",
+    "publication_date": "2026-10-19T20:16:01+00:00",
+    "fuzzy_key": "capture,carbon,clean,co2,commissions,delivers,first,mumbai,navi,pilot,plant",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "raw_url": "https://www.linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "headline": "INPEX | Bonaparte CCS project achieves major milestone | Stephanie Berlin - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-10-20T20:40:34+00:00",
+    "fuzzy_key": "achieves,berlin,bonaparte,ccs,inpex,linkedin,major,milestone,project,stephanie",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/carbon-herald_subsea7-taps-worley-rosenberg-for-northern-activity-7517881038589804544-HsLx",
+    "raw_url": "https://www.linkedin.com/posts/carbon-herald_subsea7-taps-worley-rosenberg-for-northern-activity-7517881038589804544-HsLx",
+    "headline": "Subsea7 Taps Worley Rosenberg For Northern Lights CCS | Carbon Herald - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-10-20T04:48:07+00:00",
+    "fuzzy_key": "carbon,ccs,herald,lights,linkedin,northern,rosenberg,subsea7,taps,worley",
     "found_via": "google_alerts"
   },
   {
@@ -63,12 +117,48 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://linkedin.com/posts/carbon-herald_subsea7-taps-worley-rosenberg-for-northern-activity-7517881038589804544-HsLx",
-    "raw_url": "https://www.linkedin.com/posts/carbon-herald_subsea7-taps-worley-rosenberg-for-northern-activity-7517881038589804544-HsLx",
-    "headline": "Subsea7 Taps Worley Rosenberg For Northern Lights CCS | Carbon Herald - LinkedIn",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-10-20T04:48:07+00:00",
-    "fuzzy_key": "carbon,ccs,herald,lights,linkedin,northern,rosenberg,subsea7,taps,worley",
+    "canonical_url": "https://openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
+    "raw_url": "https://www.openpr.com/news/4665872/onboard-carbon-capture-system-market-report-2026-market",
+    "headline": "Onboard Carbon Capture System Market Report 2026 Market",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-10-19T20:30:00+00:00",
+    "fuzzy_key": "2026,capture,carbon,market,onboard,report,system",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://streetinsider.com/EZ+Newswire/Terraton+Issues+First+Carbon+Removal+Credits+from+Agricultural+Waste,+Signs+Agreements+with+Climeworks+Solutions,+Climate+Impact+Partners,+Carbonfuture,+CUR8,+and+Terraset/27209242.html",
+    "raw_url": "https://www.streetinsider.com/EZ+Newswire/Terraton+Issues+First+Carbon+Removal+Credits+from+Agricultural+Waste,+Signs+Agreements+with+Climeworks+Solutions,+Climate+Impact+Partners,+Carbonfuture,+CUR8,+and+Terraset/27209242.html",
+    "headline": "Terraton Issues First Carbon Removal Credits from Agricultural Waste, Signs Agreements ...",
+    "source_domain": "streetinsider.com",
+    "publication_date": "2026-10-20T16:55:08+00:00",
+    "fuzzy_key": "agreements,agricultural,carbon,credits,first,issues,removal,signs,terraton,waste",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-220m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "raw_url": "https://www.tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-220m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "headline": "Hoegh Evi and Aker BP bag €220m from EU fund for carbon capture project - TradeWinds",
+    "source_domain": "tradewindsnews.com",
+    "publication_date": "2026-10-20T19:43:29+00:00",
+    "fuzzy_key": "220m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project,tradewinds",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://initiatives.weforum.org/transitioning-industrial-clusters/case-study-details/hynet-north-west-securing-£2.5-billion-for-ccs/aJYTG0000001Gh34AE",
+    "raw_url": "https://initiatives.weforum.org/transitioning-industrial-clusters/case-study-details/hynet-north-west-securing-£2.5-billion-for-ccs/aJYTG0000001Gh34AE",
+    "headline": "Transitioning Industrial Clusters - HyNet North West securing £2.5 billion for CCS",
+    "source_domain": "weforum.org",
+    "publication_date": "2026-10-20T02:31:08+00:00",
+    "fuzzy_key": "billion,ccs,clusters,hynet,industrial,north,securing,transitioning,west",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://worldcement.com/europe-cis/20102026/global-ccs-institute-more-than-100-ccs-projects-now-operating-globally-as-transport-and-storage-networks-expand",
+    "raw_url": "https://www.worldcement.com/europe-cis/20102026/global-ccs-institute-more-than-100-ccs-projects-now-operating-globally-as-transport-and-storage-networks-expand/",
+    "headline": "Global CCS Institute: More than 100 CCS projects now operating globally as transport and ...",
+    "source_domain": "worldcement.com",
+    "publication_date": "2026-10-20T17:18:15+00:00",
+    "fuzzy_key": "100,ccs,global,globally,institute,more,now,operating,projects,than,transport",
     "found_via": "google_alerts"
   }
 ]
