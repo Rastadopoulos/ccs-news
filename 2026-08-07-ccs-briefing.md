@@ -1,0 +1,15 @@
+# Quiet day — CCS briefing — Fri 07 Aug 2026
+
+A thin news day. A wide sweep across every geographic bucket (Aus/APAC, North America, Europe/UK, Middle East, China, India, LatAm, Africa) plus the mandated multinational-strategy (Mitsui / Mitsubishi / JERA) and transboundary / London Protocol rotations, and yesterday's Google Alerts trace, surfaced only one fresh, in-window item — Vietnam's move to legislate CCS for the first time. Several trade-press pieces carrying yesterday's date turned out to be re-reports of late-July or 4-August news (Uniper's SLB Capturi selection at Deeside, 28 Jul; the Liverpool Bay CCS Crown Estate seabed lease, 27 Jul; Microsoft's CREW Carbon offtake, 4 Aug) and were excluded under the anti-round-up rule. The most substantive near-miss is carried under "Still on the radar". The Outlook curated digests (Shelly Murrell weekly, IEAGHG Weekly News) were unavailable this run, and no RSS/Alerts trace was present for today.
+
+Note on verification: the routine's page-fetch channel (WebFetch / direct HTTPS to news origins) remains blocked by the session's egress policy — every news domain returns a 403 CONNECT tunnel failure. Because the recency rule normally requires reading each article's publication date from the page, dates below were confirmed from search-engine metadata, publisher URL/article-ID sequencing and corroborating outlets, and flagged where confidence is only moderate.
+
+## Policy
+
+- **Vietnam moves to legislate CCS for the first time in its amended Petroleum Law** — Vietnam's National Assembly is considering the amended Law on Petroleum at the extraordinary session of the 16th National Assembly, a draft that for the first time dedicates a separate chapter to carbon capture and storage. It creates a legal basis for CO₂ storage — encouraging domestic and foreign investment in CCS projects and the re-use of existing offshore oil-and-gas data and infrastructure for storage. Vietnam has evaluated 34 offshore fields for CO₂-storage potential; a high-value catch given how under-covered South-East Asian regulatory news is. Date confirmed to moderate confidence via source article-ID sequencing and corroborating coverage of the live August session; the page itself is paywalled and could not be fetched. (Carbon Pulse, 6 Aug 2026) [paywall] [link](https://carbon-pulse.com/539252/)
+
+## Still on the radar
+
+- **Microsoft signs 23,602-tonne carbon-removal offtake with wastewater CDR firm CREW Carbon** *(4 Aug 2026)* — CREW Carbon agreed to deliver up to 23,602 durable, verified carbon-removal units to Microsoft from its patented wastewater alkalinity-enhancement (WAE) technology, retro-fitted into existing wastewater-treatment plants; its first commercial project is at the East Shore facility in New Haven, Connecticut. Adds a corporate buyer to the durable-removal market via a novel pathway. Published 4 Aug, two days outside today's window. (Carbon Herald / Carbon Credits, 4 Aug 2026) [link](https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal/)
+
+— Auto-briefing

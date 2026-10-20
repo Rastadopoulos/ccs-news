@@ -1,0 +1,86 @@
+[
+  {
+    "id": "2026-08-07#01",
+    "briefing_date": "2026-08-07",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Vietnam moves to legislate CCS for the first time in its amended Petroleum Law",
+    "summary": "Vietnam's National Assembly is considering the amended Law on Petroleum at the 16th NA's extraordinary session, a draft that for the first time dedicates a separate chapter to carbon capture and storage, creating a legal basis for CO2 storage and re-use of existing offshore oil-and-gas infrastructure and data.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-08-06",
+    "url": "https://carbon-pulse.com/539252/",
+    "region": "APAC",
+    "countries": [
+      "Vietnam"
+    ],
+    "organisations": [
+      "National Assembly of Vietnam",
+      "Petrovietnam"
+    ],
+    "org_types": [
+      "government",
+      "NOC"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Another APAC nation building a CCS legal framework for offshore depleted-field storage — relevant to the regional cross-border CO2 storage market Australia is positioning for.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Publication date confirmed to moderate confidence via source article-ID sequencing plus corroborating coverage of the live August 2026 NA extraordinary session; direct page-fetch blocked by session egress policy."
+  },
+  {
+    "id": "2026-08-07#02",
+    "briefing_date": "2026-08-07",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Microsoft signs 23,602-tonne carbon-removal offtake with wastewater CDR firm CREW Carbon",
+    "summary": "CREW Carbon agreed to deliver up to 23,602 durable, verified carbon-removal units to Microsoft from its patented wastewater alkalinity-enhancement technology, retro-fitted into existing wastewater-treatment plants; first commercial project at New Haven, Connecticut.",
+    "source": "Carbon Herald / Carbon Credits",
+    "pub_date": "2026-08-04",
+    "url": "https://carbonherald.com/microsoft-backs-wastewater-carbon-removal-with-crew-carbon-offtake-deal/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Microsoft",
+      "CREW Carbon"
+    ],
+    "org_types": [
+      "other",
+      "startup"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "marine-CDR"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": 0.0236,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Corporate CDR offtake via a novel wastewater alkalinity-enhancement pathway; limited direct CO2CRC relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar item — underlying announcement 4 Aug 2026, outside today's window. Wastewater alkalinity enhancement mapped to marine-CDR as the closest value-chain token; no money figure disclosed so amount left null."
+  }
+]
