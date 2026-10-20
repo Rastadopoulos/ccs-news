@@ -1,0 +1,223 @@
+[
+  {
+    "id": "2026-08-03#01",
+    "briefing_date": "2026-08-03",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Entropy commissions Glacier co-generation carbon capture project in Alberta",
+    "summary": "Entropy Inc. (Advantage Energy) commissioned its Glacier co-generation CCS project in Saddle Hills County, Alberta, adding a 15 MW co-gen turbine with integrated capture and targeting ~192,000 tpa of CO2 captured and sequestered at capture rates above 90%; billed as first-of-kind low-carbon natural gas and low-carbon power.",
+    "source": "PR Newswire / BOE Report",
+    "pub_date": "2026-07-30",
+    "url": "https://www.prnewswire.com/news-releases/entropy-inc-commissions-the-glacier-co-generation-carbon-capture-and-storage-project-delivering-first-of-kind-low-carbon-natural-gas-and-low-carbon-power-302839526.html",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Entropy Inc.",
+      "Advantage Energy",
+      "Brookfield Asset Management",
+      "Canada Growth Fund"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "financier",
+      "financier"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.192,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A commissioned post-combustion capture co-gen unit with a multi-year operating record is a useful reference point for gas-processing CCS economics relevant to Australian operators.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Announced 30 Jul North American time; lands 31 Jul Melbourne, inside the Monday window that opens Friday."
+  },
+  {
+    "id": "2026-08-03#02",
+    "briefing_date": "2026-08-03",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Heidelberg hails piling progress at Padeswood cement carbon capture plant, Wales",
+    "summary": "Heidelberg Materials reported more than 600 piles installed at its Padeswood cement CCS facility in Flintshire, north Wales, with ~60,000 t of aggregate laid and 25,000 t of topsoil removed; the plant is designed to capture ~95% of the works' CO2 (~800,000 tpa) with CO2 routed via HyNet to Liverpool Bay storage, and is due operational in 2029. EPC is delivered by Worley and Mitsubishi Heavy Industries.",
+    "source": "Ground Engineering",
+    "pub_date": "2026-07-31",
+    "url": "https://www.geplus.co.uk/news/project-news/heidelberg-hails-piling-progress-on-carbon-capture-project-in-wales-31-07-2026/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Heidelberg Materials",
+      "Worley",
+      "Mitsubishi Heavy Industries",
+      "HyNet"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2029,
+    "capacity_mtpa": 0.8,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "First cement-works CCS in the UK moving into construction; a cement-sector reference for Australian hard-to-abate decarbonisation pathways.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "mixed",
+    "amount_basis": "project-capex",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-03#03",
+    "briefing_date": "2026-08-03",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Energy Intelligence: uncertainty plagues US DAC sector as players shift strategy",
+    "summary": "An Energy Intelligence analysis charts the US direct-air-capture sector bifurcating amid policy uncertainty — a freeze on the DOE's $3.5bn DAC Hubs programme and a proposed 45Q cut from $180 to $36/t for DAC — with buyers and developers concentrating in California, New York and Washington, well-capitalised integrated players such as Occidental proving resilient, and Canada and Kenya emerging as alternative DAC destinations.",
+    "source": "Energy Intelligence",
+    "pub_date": "2026-07-31",
+    "url": "https://www.energyintel.com/0000019f-a5ad-d152-a9ff-f7efc26c0000",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Canada",
+      "Kenya"
+    ],
+    "organisations": [
+      "Energy Intelligence",
+      "US Department of Energy",
+      "Occidental Petroleum"
+    ],
+    "org_types": [
+      "other",
+      "government",
+      "OG-major"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "US policy-driven DAC retrenchment reshapes the global CDR investment map and where capital and offtake demand flow — relevant to Australian CDR positioning.",
+    "sentiment": "negative",
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-08-03#04",
+    "briefing_date": "2026-08-03",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "Sinopec Qilu-Shengli CCUS project passes 2.4 Mt cumulative CO2 stored",
+    "summary": "Sinopec reported that by end-June 2026 its million-tonne-scale Qilu Petrochemical-Shengli Oilfield CCUS project — China's first full-chain megatonne CCUS demonstration — had cumulatively captured and sequestered more than 2.4 million tonnes of CO2, with daily EOR oil output in the demonstration area rising from 220 to 506 tonnes.",
+    "source": "China Hydrogen / Sinopec",
+    "pub_date": "2026-07-29",
+    "url": "https://chinahydrogen.substack.com/p/chinas-qilushengli-ccus-project-captures",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "Sinopec"
+    ],
+    "org_types": [
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "China's flagship full-chain CCUS-EOR demonstration continues to accrue stored volumes; a benchmark for large-scale operational learning.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar: 29 Jul, out of today's window."
+  },
+  {
+    "id": "2026-08-03#05",
+    "briefing_date": "2026-08-03",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Uniper selects SLB Capturi capture technology for Connah's Quay power CCS",
+    "summary": "SLB Capturi was selected as preferred carbon-capture technology licensor for Uniper's proposed Connah's Quay Low Carbon Power project in Deeside, Wales, deploying its amine-based Big Catch technology; captured CO2 would feed the HyNet network for offshore storage. This distinct technology-licensor selection follows the earlier Worley EPC award already briefed.",
+    "source": "SLB",
+    "pub_date": "2026-07-28",
+    "url": "https://www.slb.com/newsroom/features/2026/2026-0728-slb-capturi-uniper",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Uniper",
+      "SLB Capturi"
+    ],
+    "org_types": [
+      "utility",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Technology-licensor selection for a gas-plus-capture power project; a marker of the amine-capture supply chain for flexible power.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar: 28 Jul, out of today's window."
+  }
+]
