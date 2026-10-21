@@ -63,6 +63,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://eni.com/en-IT/media/press-release/2026/10/ravenna-ccs-selected-under-the-european-innovation-fund.html",
+    "raw_url": "https://www.eni.com/en-IT/media/press-release/2026/10/ravenna-ccs-selected-under-the-european-innovation-fund.html",
+    "headline": "Ravenna CCS selected under the European Innovation Fund - Eni",
+    "source_domain": "eni.com",
+    "publication_date": "2026-10-21T00:35:12+00:00",
+    "fuzzy_key": "ccs,eni,european,fund,innovation,ravenna,selected,under",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://globalcement.com/news/21381-over-100-carbon-capture-and-storage-projects-reported-globally",
     "raw_url": "https://www.globalcement.com/news/21381-over-100-carbon-capture-and-storage-projects-reported-globally",
     "headline": "Over 100 carbon capture and storage projects reported globally - Cement Sector News",
@@ -141,6 +150,15 @@
     "source_domain": "tradewindsnews.com",
     "publication_date": "2026-10-20T19:43:29+00:00",
     "fuzzy_key": "220m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project,tradewinds",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "raw_url": "https://www.tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "headline": "Hoegh Evi and Aker BP bag €223m from EU fund for carbon capture project - TradeWinds",
+    "source_domain": "tradewindsnews.com",
+    "publication_date": "2026-10-21T01:09:24+00:00",
+    "fuzzy_key": "223m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project,tradewinds",
     "found_via": "google_alerts"
   },
   {
