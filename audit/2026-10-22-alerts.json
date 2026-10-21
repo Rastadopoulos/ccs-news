@@ -1,11 +1,20 @@
 [
   {
-    "canonical_url": "https://linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
-    "raw_url": "https://www.linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
-    "headline": "INPEX | Bonaparte CCS project achieves major milestone | Stephanie Berlin - LinkedIn",
-    "source_domain": "linkedin.com",
-    "publication_date": "2026-10-20T20:40:34+00:00",
-    "fuzzy_key": "achieves,berlin,bonaparte,ccs,inpex,linkedin,major,milestone,project,stephanie",
+    "canonical_url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field",
+    "raw_url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field/",
+    "headline": "New Ocean Carbon Removal Watch Platform To Track The mCDR Field",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-21T13:26:03+00:00",
+    "fuzzy_key": "carbon,field,mcdr,new,ocean,platform,removal,track,watch",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19755404.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/ccs/article19755404.ece",
+    "headline": "Equinor puts EU-backed CO₂ Highway Europe pipeline on hold - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-10-21T17:57:06+00:00",
+    "fuzzy_key": "backed,co,energywatch,equinor,eu,europe,highway,hold,pipeline,puts",
     "found_via": "google_alerts"
   },
   {
@@ -18,21 +27,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
-    "raw_url": "https://www.tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
-    "headline": "Hoegh Evi and Aker BP bag €223m from EU fund for carbon capture project - TradeWinds",
-    "source_domain": "tradewindsnews.com",
-    "publication_date": "2026-10-21T01:09:24+00:00",
-    "fuzzy_key": "223m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project,tradewinds",
+    "canonical_url": "https://gasworld.com/story/frontier-inks-11-7m-co2-removal-deal-to-advance-rock-based-storage/2262257.article",
+    "raw_url": "https://www.gasworld.com/story/frontier-inks-11-7m-co2-removal-deal-to-advance-rock-based-storage/2262257.article/",
+    "headline": "Frontier inks $11.7m CO2 removal deal to advance rock-based storage - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-10-21T21:12:15+00:00",
+    "fuzzy_key": "11,7m,advance,based,co2,deal,frontier,gasworld,inks,removal,rock,storage",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
-    "raw_url": "https://www.steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
-    "headline": "More than 100 CCS projects operating globally - Steel Times International",
-    "source_domain": "steeltimesint.com",
-    "publication_date": "2026-10-21T03:16:49+00:00",
-    "fuzzy_key": "100,ccs,globally,international,more,operating,projects,steel,than,times",
+    "canonical_url": "https://indexbox.io/blog/aker-bp-and-hoegh-evi-secure-eu-innovation-fund-backing-for-north-sea-carbon-storage-project",
+    "raw_url": "https://www.indexbox.io/blog/aker-bp-and-hoegh-evi-secure-eu-innovation-fund-backing-for-north-sea-carbon-storage-project/",
+    "headline": "Aker BP, Hoegh Evi Win EUR223m EU Backing for Atlas CO2 Storage - IndexBox",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-21T15:36:29+00:00",
+    "fuzzy_key": "aker,atlas,backing,bp,co2,eu,eur223m,evi,hoegh,indexbox,storage,win",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "raw_url": "https://www.linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "headline": "INPEX | Bonaparte CCS project achieves major milestone | Stephanie Berlin - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-10-20T20:40:34+00:00",
+    "fuzzy_key": "achieves,berlin,bonaparte,ccs,inpex,linkedin,major,milestone,project,stephanie",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +63,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field",
-    "raw_url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field/",
-    "headline": "New Ocean Carbon Removal Watch Platform To Track The mCDR Field",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-10-21T13:26:03+00:00",
-    "fuzzy_key": "carbon,field,mcdr,new,ocean,platform,removal,track,watch",
+    "canonical_url": "https://steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
+    "raw_url": "https://www.steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
+    "headline": "More than 100 CCS projects operating globally - Steel Times International",
+    "source_domain": "steeltimesint.com",
+    "publication_date": "2026-10-21T03:16:49+00:00",
+    "fuzzy_key": "100,ccs,globally,international,more,operating,projects,steel,than,times",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "raw_url": "https://www.tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "headline": "Hoegh Evi and Aker BP bag €223m from EU fund for carbon capture project - TradeWinds",
+    "source_domain": "tradewindsnews.com",
+    "publication_date": "2026-10-21T01:09:24+00:00",
+    "fuzzy_key": "223m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project,tradewinds",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://travelweekly.co.uk/all-content/climate-change-expert-urges-focus-on-carbon-removal-projects",
+    "raw_url": "https://travelweekly.co.uk/all-content/climate-change-expert-urges-focus-on-carbon-removal-projects",
+    "headline": "Climate change expert urges focus on carbon removal projects - All Content - Travel Weekly",
+    "source_domain": "travelweekly.co.uk",
+    "publication_date": "2026-10-21T17:57:06+00:00",
+    "fuzzy_key": "all,carbon,change,climate,content,expert,focus,projects,removal,travel,urges,weekly",
     "found_via": "google_alerts"
   }
 ]
