@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.eni.com/en-IT/media/press-release/2026/10/ravenna-ccs-selected-under-the-european-innovation-fund.html",
+    "canonical_url": "https://eni.com/en-IT/media/press-release/2026/10/ravenna-ccs-selected-under-the-european-innovation-fund.html",
+    "fuzzy_key": "ccs,european,fund,innovation,ravenna,selected,under",
+    "source_domain": "eni.com",
+    "headline": "Ravenna CCS selected under the European Innovation Fund",
+    "publication_date": "2026-10-21T00:35:12+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "canonical_url": "https://tradewindsnews.com/gas/hoegh-evi-and-aker-bp-bag-223m-from-eu-fund-for-carbon-capture-project/2-1-2061470",
+    "fuzzy_key": "223m,aker,bag,bp,capture,carbon,eu,evi,fund,hoegh,project",
+    "source_domain": "tradewindsnews.com",
+    "headline": "Hoegh Evi and Aker BP bag €223m from EU fund for carbon capture project",
+    "publication_date": "2026-10-21T01:09:24+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field/",
+    "canonical_url": "https://carbonherald.com/new-ocean-carbon-removal-watch-platform-to-track-the-mcdr-field",
+    "fuzzy_key": "carbon,field,mcdr,new,ocean,platform,removal,track,watch",
+    "source_domain": "carbonherald.com",
+    "headline": "New Ocean Carbon Removal Watch Platform To Track The mCDR Field",
+    "publication_date": "2026-10-21T13:26:03+00:00",
+    "in_window": true,
+    "kept": true,
+    "reject_reason": null,
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.offshore-mag.com/energy-transition/news/55412995/inpex-australia-clears-bonaparte-offshore-aquifer-for-ccs-development",
+    "canonical_url": "https://offshore-mag.com/energy-transition/news/55412995/inpex-australia-clears-bonaparte-offshore-aquifer-for-ccs-development",
+    "fuzzy_key": "aquifer,australia,bonaparte,ccs,clears,development,offshore",
+    "source_domain": "offshore-mag.com",
+    "headline": "Australia clears Bonaparte offshore aquifer for CCS development",
+    "publication_date": "2026-10-21T07:13:16+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "already_covered",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
+    "canonical_url": "https://steeltimesint.com/news/more-than-100-ccs-projects-operating-globally",
+    "fuzzy_key": "100,ccs,globally,more,operating,projects,than",
+    "source_domain": "steeltimesint.com",
+    "headline": "More than 100 CCS projects operating globally",
+    "publication_date": "2026-10-21T03:16:49+00:00",
+    "in_window": true,
+    "kept": false,
+    "reject_reason": "round_up_retrospective",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "canonical_url": "https://linkedin.com/posts/stephanie-berlin_inpex-bonaparte-ccs-project-achieves-major-activity-7517848150166933504-2qJH",
+    "fuzzy_key": "achieves,bonaparte,ccs,inpex,major,milestone,project",
+    "source_domain": "linkedin.com",
+    "headline": "INPEX | Bonaparte CCS project achieves major milestone",
+    "publication_date": "2026-10-20T20:40:34+00:00",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "google_alerts"
+  },
+  {
+    "url": "https://www.brusselstimes.com/2368532/eu-backs-77-climate-tech-projects-with-e3-4b-touts-drastic-emissions-cuts",
+    "canonical_url": "https://brusselstimes.com/2368532/eu-backs-77-climate-tech-projects-with-e3-4b-touts-drastic-emissions-cuts",
+    "fuzzy_key": "4b,77,backs,climate,cuts,drastic,emissions,eu,projects,tech,touts",
+    "source_domain": "brusselstimes.com",
+    "headline": "EU backs 77 climate tech projects with €3.4b, touts drastic emissions cuts",
+    "publication_date": "2026-10-19",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.mlex.com/mlex/articles/2539431/small-modular-nuclear-reactor-among-77-projects-backed-by-eu-innovation-fund",
+    "canonical_url": "https://mlex.com/mlex/articles/2539431/small-modular-nuclear-reactor-among-77-projects-backed-by-eu-innovation-fund",
+    "fuzzy_key": "77,among,backed,eu,fund,innovation,modular,nuclear,projects,reactor,small",
+    "source_domain": "mlex.com",
+    "headline": "Small modular nuclear reactor among 77 projects backed by EU Innovation Fund",
+    "publication_date": "2026-10-19",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://carbonherald.com/eu-awards-e3-4b-to-77-net-zero-projects-including-first-daccs-grant/",
+    "canonical_url": "https://carbonherald.com/eu-awards-e3-4b-to-77-net-zero-projects-including-first-daccs-grant",
+    "fuzzy_key": "4b,77,awards,daccs,eu,first,grant,including,net,projects,zero",
+    "source_domain": "carbonherald.com",
+    "headline": "EU Awards €3.4B To 77 Net-Zero Projects, Including First DACCS Grant",
+    "publication_date": "2026-10-19",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  },
+  {
+    "url": "https://www.globalccsinstitute.com/resources/global-status-report/",
+    "canonical_url": "https://globalccsinstitute.com/resources/global-status-report",
+    "fuzzy_key": "2026,ccs,global,status",
+    "source_domain": "globalccsinstitute.com",
+    "headline": "Global Status of CCS 2026",
+    "publication_date": "2026-10-20",
+    "in_window": false,
+    "kept": false,
+    "reject_reason": "out_of_window",
+    "found_via": "search_query"
+  }
+]
