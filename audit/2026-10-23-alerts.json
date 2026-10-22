@@ -1,20 +1,47 @@
 [
   {
+    "canonical_url": "https://africasustainabilitymatters.com/global-carbon-capture-projects-surpass-100-as-transport-and-storage-networks-reshape-industrial-decarbonisation",
+    "raw_url": "https://africasustainabilitymatters.com/global-carbon-capture-projects-surpass-100-as-transport-and-storage-networks-reshape-industrial-decarbonisation/",
+    "headline": "Global carbon capture projects surpass 100 as transport and storage networks reshape ...",
+    "source_domain": "africasustainabilitymatters.com",
+    "publication_date": "2026-10-22T20:20:46+00:00",
+    "fuzzy_key": "100,capture,carbon,global,networks,projects,reshape,storage,surpass,transport",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carboncredits.com/terratons-first-biochar-credits-boost-carbon-removal-expansion-across-africa",
+    "raw_url": "https://carboncredits.com/terratons-first-biochar-credits-boost-carbon-removal-expansion-across-africa/",
+    "headline": "Terraton's First Biochar Credits Boost Carbon Removal Expansion Across Africa",
+    "source_domain": "carboncredits.com",
+    "publication_date": "2026-10-22T18:24:08+00:00",
+    "fuzzy_key": "across,africa,biochar,boost,carbon,credits,expansion,first,removal,terraton",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://co2crc.com.au/news-and-media-releases/global-status-of-ccs-2026",
+    "raw_url": "https://co2crc.com.au/news-and-media-releases/global-status-of-ccs-2026/",
+    "headline": "Global Status of CCS 2026: CCS projects pass 100 worldwide - CO2CRC",
+    "source_domain": "co2crc.com.au",
+    "publication_date": "2026-10-22T14:22:13+00:00",
+    "fuzzy_key": "100,2026,ccs,co2crc,global,pass,projects,status,worldwide",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://euro-petrole.com/ravenna-ccs-selected-under-the-european-innovation-fund-n-i-30825",
+    "raw_url": "https://www.euro-petrole.com/ravenna-ccs-selected-under-the-european-innovation-fund-n-i-30825",
+    "headline": "SNAM - Ravenna CCS selected under the European... - Europétrole - euro petrole",
+    "source_domain": "euro-petrole.com",
+    "publication_date": "2026-10-22T20:31:43+00:00",
+    "fuzzy_key": "ccs,euro,europ,european,petrole,ravenna,selected,snam,trole,under",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/frontier-inks-11-7m-co2-removal-deal-to-advance-rock-based-storage/2262257.article",
     "raw_url": "https://www.gasworld.com/story/frontier-inks-11-7m-co2-removal-deal-to-advance-rock-based-storage/2262257.article/",
     "headline": "Frontier inks $11.7m CO2 removal deal to advance rock-based storage - gasworld",
     "source_domain": "gasworld.com",
     "publication_date": "2026-10-21T21:12:15+00:00",
     "fuzzy_key": "11,7m,advance,based,co2,deal,frontier,gasworld,inks,removal,rock,storage",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://openpr.com/news/4668446/uk-carbon-capture-and-storage-market-to-reach-usd-4-97-billion",
-    "raw_url": "https://www.openpr.com/news/4668446/uk-carbon-capture-and-storage-market-to-reach-usd-4-97-billion",
-    "headline": "UK Carbon Capture and Storage Market to Reach USD 4.97 Billion - openPR.com",
-    "source_domain": "openpr.com",
-    "publication_date": "2026-10-21T23:11:59+00:00",
-    "fuzzy_key": "97,billion,capture,carbon,com,market,openpr,reach,storage,uk,usd",
     "found_via": "google_alerts"
   },
   {
@@ -27,12 +54,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://co2crc.com.au/news-and-media-releases/global-status-of-ccs-2026",
-    "raw_url": "https://co2crc.com.au/news-and-media-releases/global-status-of-ccs-2026/",
-    "headline": "Global Status of CCS 2026: CCS projects pass 100 worldwide - CO2CRC",
-    "source_domain": "co2crc.com.au",
-    "publication_date": "2026-10-22T14:22:13+00:00",
-    "fuzzy_key": "100,2026,ccs,co2crc,global,pass,projects,status,worldwide",
+    "canonical_url": "https://openpr.com/news/4668446/uk-carbon-capture-and-storage-market-to-reach-usd-4-97-billion",
+    "raw_url": "https://www.openpr.com/news/4668446/uk-carbon-capture-and-storage-market-to-reach-usd-4-97-billion",
+    "headline": "UK Carbon Capture and Storage Market to Reach USD 4.97 Billion - openPR.com",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-10-21T23:11:59+00:00",
+    "fuzzy_key": "97,billion,capture,carbon,com,market,openpr,reach,storage,uk,usd",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://sustainabilitymag.com/news/how-is-carbon-capture-laying-the-foundations-for-net-zero",
+    "raw_url": "https://sustainabilitymag.com/news/how-is-carbon-capture-laying-the-foundations-for-net-zero",
+    "headline": "How is Carbon Capture Laying the Foundations for Net Zero? | Sustainability Magazine",
+    "source_domain": "sustainabilitymag.com",
+    "publication_date": "2026-10-22T20:20:46+00:00",
+    "fuzzy_key": "capture,carbon,foundations,how,laying,magazine,net,sustainability,zero",
     "found_via": "google_alerts"
   }
 ]
