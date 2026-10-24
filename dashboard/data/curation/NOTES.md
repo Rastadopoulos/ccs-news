@@ -116,9 +116,11 @@ while the record itself stays, because the news did happen.
   the Pathways Alliance network (C$16.5bn / C$16bn, now re-reported a **third** time in Aug 2026 as
   the group set a mid-November fiscal-terms target), India's CCUS scheme (₹20,000cr / ₹19,700cr), and
   Spain's PERTE round where a €119m award is a *subset* of a €319m total.
+  The UK government's Climeworks DAC credit purchase was also reported twice (£783,749 on 30 Sep,
+  ~US$1m on 12 Oct 2026); counted once, at the earlier record.
 - **Periods are only recorded where the source states one**, which is the minority of records.
 - **CDR adjacent to geological storage is carried, not excluded.** Biochar, mineralisation and
-  enhanced-weathering venture rounds (NoviqTech, Captura, Mafix) sit in the totals as
+  enhanced-weathering venture rounds and CDR offtakes (NoviqTech, Captura, Mafix, Vaulted Deep, 44.01) sit in the totals as
   `private-investment`, because the corpus collects them and `not-ccs-funding` is reserved for money
   that is not carbon funding at all. The consequence is that the private-investment total is a
   carbon-management figure, slightly wider than geological CCS. Say so in the row's note.

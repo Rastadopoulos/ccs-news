@@ -63,6 +63,8 @@ COUNTRY_ISO = {
     "Brunei": "BN",
     "Namibia": "NA",
     "Taiwan": "TW",
+    "Estonia": "EE",
+    "Kazakhstan": "KZ",
     # Not in the news corpus, but present in storage-baseline.json / reference-baseline.json.
     "Iceland": "IS",
     "South Africa": "ZA",
@@ -122,6 +124,10 @@ CONTINENT_GROUPS = {
     "Bahrain": "Middle East & Africa", "Libya": "Middle East & Africa",
 
     "Austria": "Europe",
+    "Estonia": "Europe",
+    # Central Asia has no group of its own; placed with Asia-Pacific, the
+    # nearest of the four regional roll-ups.
+    "Kazakhstan": "Asia-Pacific",
 }
 
 GROUP_ORDER = ["Americas", "Europe", "Middle East & Africa", "Asia-Pacific"]
