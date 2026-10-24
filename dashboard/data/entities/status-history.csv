@@ -23,6 +23,7 @@ cn-shengli-power,2026-08-24#06,2026-08-18,cancelled,negative,https://edmonton.ta
 uk-hynet,2026-08-26#02,2026-08-25,commissioning,positive,https://www.pipeline-journal.net/news/corinth-pipeworks-secures-contract-uk-hynet-carbon-capture-pipeline-project,medium,Stage signal extracted from event; current register remains curator-controlled.
 my-kasawari,2026-08-28#02,2026-08-27,commissioning,positive,https://dayakdaily.com/sarawaks-first-ccus-project-expected-to-begin-at-kasawari-in-2028/,medium,Stage signal extracted from event; current register remains curator-controlled.
 id-tangguh-ucc,2026-08-31#04,2026-08-28,commissioning,positive,https://www.petromindo.com/news/article/tangguh-ccus-set-to-become-first-ccs-project-registered-under-indonesia-japan-jcm,medium,Stage signal extracted from event; current register remains curator-controlled.
+ca-pathways,2026-10-02#01,2026-10-01,FID/financial close,positive,"https://www.tradingview.com/news/reuters.com,2026:newsml_L6N43F112:0-canada-s-oil-sands-alliance-reaches-agreement-to-advance-pathways-carbon-capture-and-storage-project/",medium,Stage signal extracted from event; current register remains curator-controlled.
 au-moomba-ccs,canonical-snapshot,2026-05-24,operating,neutral,https://www.santos.com/news/moomba-ccs-project-stores-two-million-tonnes-of-co2/,high,Current curator-verified snapshot.
 au-cliff-head-ccs,canonical-snapshot,2026-05-25,FEED,neutral,,medium,Current curator-verified snapshot.
 au-gorgon-ccs,canonical-snapshot,2026-07-28,operating,neutral,,high,Current curator-verified snapshot.

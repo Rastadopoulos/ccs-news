@@ -1,14 +1,14 @@
 {
   "canonical_entities": 30,
   "canonical_projects_referenced_by_events": 29,
-  "events": 410,
-  "matched_events": 70,
-  "unmatched_events": 340,
+  "events": 518,
+  "matched_events": 74,
+  "unmatched_events": 444,
   "ambiguous_events": 0,
-  "capacity_review_queue": 43,
+  "capacity_review_queue": 68,
   "canonical_capacity_rows": 29,
   "source_type_counts": {
-    "daily_news": 295,
+    "daily_news": 403,
     "periodic_report": 115
   },
   "rules": {
