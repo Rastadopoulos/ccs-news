@@ -54,6 +54,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://chemindustry.com/news-read-id-646.html",
+    "raw_url": "https://www.chemindustry.com/news-read-id-646.html",
+    "headline": "New CCS projects added in Southeast Asia, developed through cooperation ... - Chemindustry.com",
+    "source_domain": "chemindustry.com",
+    "publication_date": "2026-10-24T05:44:45+00:00",
+    "fuzzy_key": "added,asia,ccs,chemindustry,com,cooperation,developed,new,projects,southeast,through",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://news.chemnet.com/news-11050.html",
     "raw_url": "https://news.chemnet.com/news-11050.html",
     "headline": "New CCS projects added in Southeast Asia, developed through cooperation ... - ChemNet News",
@@ -99,12 +108,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://endswasteandbioenergy.com/article/1973335/viridors-runcorn-efw-carbon-capture-project-delivered-two-phases",
+    "raw_url": "https://www.endswasteandbioenergy.com/article/1973335/viridors-runcorn-efw-carbon-capture-project-delivered-two-phases",
+    "headline": "Viridor's Runcorn EfW carbon capture project to be delivered in two phases",
+    "source_domain": "endswasteandbioenergy.com",
+    "publication_date": "2026-10-24T03:57:36+00:00",
+    "fuzzy_key": "capture,carbon,delivered,efw,phases,project,runcorn,two,viridor",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energynewsbulletin.net/operations/news-analysis/4538517/woodside-exits-bonaparte-ccs-jv-inpex-takes-project-enters-feed",
     "raw_url": "https://www.energynewsbulletin.net/operations/news-analysis/4538517/woodside-exits-bonaparte-ccs-jv-inpex-takes-project-enters-feed",
     "headline": "Woodside exits Bonaparte CCS JV as INPEX takes project enters FEED",
     "source_domain": "energynewsbulletin.net",
     "publication_date": "2026-10-23T10:24:26+00:00",
     "fuzzy_key": "bonaparte,ccs,enters,exits,feed,inpex,jv,project,takes,woodside",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/605879/carbo-capture-and-storage",
+    "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/605879/carbo-capture-and-storage/",
+    "headline": "Opinion: If Britain hesitates now, competitors will snap up CCS investment - Energy Voice",
+    "source_domain": "energyvoice.com",
+    "publication_date": "2026-10-24T03:57:36+00:00",
+    "fuzzy_key": "britain,ccs,competitors,energy,hesitates,if,investment,now,opinion,snap,up,voice,will",
     "found_via": "google_alerts"
   },
   {
@@ -126,12 +153,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://facebook.com/australianenergyproducers/posts/congratulations-to-inpex-australia-and-the-bonaparte-ccs-project-joint-venture-o/1600835398740273",
+    "raw_url": "https://www.facebook.com/australianenergyproducers/posts/congratulations-to-inpex-australia-and-the-bonaparte-ccs-project-joint-venture-o/1600835398740273/",
+    "headline": "Congratulations to INPEX Australia and the Bonaparte CCS Project Joint Venture on ... - Facebook",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-10-24T04:16:55+00:00",
+    "fuzzy_key": "australia,bonaparte,ccs,congratulations,facebook,inpex,joint,project,venture",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://facebook.com/INPEXAustralia/posts/today-the-bonaparte-ccs-joint-venture-announced-it-has-commenced-front-end-engin/1586475813502424",
     "raw_url": "https://www.facebook.com/INPEXAustralia/posts/today-the-bonaparte-ccs-joint-venture-announced-it-has-commenced-front-end-engin/1586475813502424/",
     "headline": "Inpex advances Bonaparte carbon capture and storage project - Facebook",
     "source_domain": "facebook.com",
     "publication_date": "2026-10-23T22:16:43+00:00",
     "fuzzy_key": "advances,bonaparte,capture,carbon,facebook,inpex,project,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/WABusinessNews/posts/inpex-will-buy-woodside-energy-out-of-its-bonaparte-carbon-capture-and-storage-p/1747866760672338",
+    "raw_url": "https://www.facebook.com/WABusinessNews/posts/inpex-will-buy-woodside-energy-out-of-its-bonaparte-carbon-capture-and-storage-p/1747866760672338/",
+    "headline": "Inpex will buy Woodside Energy out of its Bonaparte carbon capture and storage project off ...",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-10-24T04:16:55+00:00",
+    "fuzzy_key": "bonaparte,buy,capture,carbon,energy,inpex,off,out,project,storage,will,woodside",
     "found_via": "google_alerts"
   },
   {
@@ -186,6 +231,15 @@
     "source_domain": "offshore-energy.biz",
     "publication_date": "2026-10-23T20:40:23+00:00",
     "fuzzy_key": "area,co2,develop,malaysia,mitsui,off,peninsular,petronas,storage,totalenergies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://openaccessgovernment.org/energy-minister-outlines-carbon-capture-and-the-renewal-of-british-industry/215815",
+    "raw_url": "https://www.openaccessgovernment.org/energy-minister-outlines-carbon-capture-and-the-renewal-of-british-industry/215815/",
+    "headline": "Energy minister outlines carbon capture and the renewal of British industry",
+    "source_domain": "openaccessgovernment.org",
+    "publication_date": "2026-10-24T03:57:36+00:00",
+    "fuzzy_key": "british,capture,carbon,energy,industry,minister,outlines,renewal",
     "found_via": "google_alerts"
   },
   {
@@ -285,6 +339,24 @@
     "source_domain": "valve-world.net",
     "publication_date": "2026-10-23T22:16:43+00:00",
     "fuzzy_key": "advances,bonaparte,ccs,feed,into,project,valve,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/wabusinessnews/status/2113487783360909317/photo/1",
+    "raw_url": "https://x.com/wabusinessnews/status/2113487783360909317/photo/1",
+    "headline": "Business News on X: \"Woodside exits Bonaparte CCS as Inpex presses ahead: #oilgas ...",
+    "source_domain": "x.com",
+    "publication_date": "2026-10-24T04:16:55+00:00",
+    "fuzzy_key": "ahead,bonaparte,business,ccs,exits,inpex,news,oilgas,presses,woodside",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/FirstSquawk/status/2113473646522241230",
+    "raw_url": "https://x.com/FirstSquawk/status/2113473646522241230",
+    "headline": "Petronas, TotalEnergies and Mitsui Partner to Develop Carbon Storage Site in Southern CCS Hub - X",
+    "source_domain": "x.com",
+    "publication_date": "2026-10-24T05:44:45+00:00",
+    "fuzzy_key": "carbon,ccs,develop,hub,mitsui,partner,petronas,site,southern,storage,totalenergies",
     "found_via": "google_alerts"
   }
 ]
