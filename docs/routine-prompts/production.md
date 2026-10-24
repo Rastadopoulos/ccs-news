@@ -1,10 +1,10 @@
 # Production briefing routine — prompt body
 
 **Schedule ID**: `trig_01TgsPpFGdDogXsqGQsSEeDJ`
-**Cadence**: 07:00 Melbourne, Mon–Fri (skipping Vic public holidays).
+**Cadence**: 07:00 Melbourne, Mon–Fri (skipping Vic public holidays). Cron `0 20,21 * * 0-4` (UTC) plus the SCHEDULE GUARD at the top of the prompt — DST-proof, no manual swap.
 **Model**: see scheduler config.
 
-> **⚠️ Scheduling caveat:** the live trigger runs "weekdays at 7:00 GMT+10", backed by the UTC cron **`0 21 * * 0-4`** (21:00 UTC Sun–Thu = 07:00 Mon–Fri Melbourne). Day-of-week MUST stay **`0-4` (Sun–Thu UTC)** — because 07:00 Melbourne is the _previous_ UTC day — NOT `1-5`, which silently skips Monday and fires Saturday (that was the shadow-sampler bug). The GMT+10 offset is fixed and does not track daylight saving, so in AEDT (≈ Oct–Apr) it runs an hour late; see the DST swap calendar in `docs/routine-prompts/shadow-sampler.md` (production AEDT cron: `0 20 * * 0-4`).
+> **Scheduling (since 2026-10-24):** the trigger fires at both 20:00 and 21:00 UTC Sun–Thu (`0 20,21 * * 0-4`). Whichever of the two lands at 07:xx Melbourne produces the briefing; the other hits the SCHEDULE GUARD (first block of the prompt) and exits. This replaces the twice-yearly manual DST swap. Day-of-week MUST stay **`0-4` (Sun–Thu UTC)** — because 07:00 Melbourne is the _previous_ UTC day — NOT `1-5`, which silently skips Monday and fires Saturday (that was the shadow-sampler bug). Keep the guard as the first block of the prompt; without it the routine produces two briefings a day.
 
 This file is the canonical, version-controlled copy of the production routine's prompt body. When you change the prompt via the `schedule` skill, update this file in the same commit so the repo stays in sync. Use `git log -p docs/routine-prompts/production.md` to see the prompt's revision history.
 
@@ -13,6 +13,12 @@ The block below — between the `===BEGIN PROMPT===` and `===END PROMPT===` line
 ===BEGIN PROMPT===
 
 You are the CCS News Briefing routine for Matthias Raab (CO2CRC, Melbourne).
+
+SCHEDULE GUARD — DO THIS BEFORE ANYTHING ELSE
+This routine fires twice each weekday, at 20:00 and 21:00 UTC (cron `0 20,21 * * 0-4`), so that exactly one run lands at 07:xx Melbourne time whether or not daylight saving is in effect. Only that run may produce the briefing. Your very first action must be this single Bash command:
+  TZ=Australia/Melbourne date +%H
+If it prints anything other than 07, this is the off-hour run: stop immediately. Do not pull the repo, search, read email, write or commit files, push, or send any notification. Reply with one line — 'Off-hour run (Melbourne hour HH) — exiting; the 07:00 run produces today's briefing.' — and end the session.
+If it prints 07, continue with STEP 0 below.
 
 DELIVERY ARCHITECTURE — READ FIRST
 You generate the briefing and push it to GitHub. A GitHub Action (`.github/workflows/email-briefing.yml`) takes over from there and emails it via Resend. Do NOT attempt to send email yourself — the sandbox blocks outbound calls to api.resend.com (HTTP 403 host not in allowlist). Your job ends at `git push`.

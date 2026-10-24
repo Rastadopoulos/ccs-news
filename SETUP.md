@@ -72,16 +72,25 @@ To remove: `launchctl bootout gui/$(id -u)/com.mraab.ccs-news-pull && rm ~/Libra
 
 - **`YYYY-MM-DD-email.md`** — old Outlook-paste artifact. Replaced by `YYYY-MM-DD-ccs-briefing.md`. Old files remain in git history.
 
-## Daylight-saving swap
+## Daylight-saving (automatic since 2026-10-24)
 
-Routine cron is UTC-only. Manual swap twice a year:
+Routine cron is UTC-only, so it cannot follow Melbourne daylight saving by itself. Instead the routine fires at **both** possible times and checks the clock:
 
-- AEST (Apr–Oct, UTC+10): `0 21 * * 0-4`
-- AEDT (Oct–Apr, UTC+11): `0 20 * * 0-4` — currently set (switched 2026-10-24)
+- Cron: `0 20,21 * * 0-4` — 20:00 and 21:00 UTC, Sun–Thu (= Mon–Fri morning in Melbourne).
+- The first block of the routine prompt is a **SCHEDULE GUARD**: the run checks `TZ=Australia/Melbourne date +%H` and stops immediately unless it prints `07`.
+- AEDT (Oct–Apr, UTC+11): the 20:00 UTC run is 07:xx Melbourne and produces the briefing; the 21:00 run is 08:xx and exits.
+- AEST (Apr–Oct, UTC+10): the 21:00 UTC run is 07:xx and produces it; the 20:00 run is 06:xx and exits.
+- DST changes happen early Sunday morning in Melbourne, when the routine doesn't run, so there is no changeover day with two briefings or none.
 
-The October 2026 swap was missed: briefings from 5 to 23 Oct landed at ~08:15 instead of ~07:15. To check, compare the routine's schedule (claude.ai/code → routine "CCS Daily News Briefing", or `/schedule` in a `claude` terminal) against the table above, or look at the time briefing commits land — after 08:00 Melbourne means the AEST schedule is still set during AEDT.
+No manual swap is needed any more. Cost: one extra run per weekday that exits within seconds; it shows in the routine's run history with the reply "Off-hour run … exiting".
 
-Next swap: Sunday 4 April 2027, when AEDT ends — switch back to `0 21 * * 0-4` the Friday before or that weekend. After that, early October 2027 (AEDT starts Sunday 3 October 2027).
+**What to watch for**
+
+- **Two briefings in one day** → the guard was skipped or removed. Check it is still the first block of the prompt (claude.ai/code → routine "CCS Daily News Briefing", or `/schedule` in a `claude` terminal). The copy in `docs/routine-prompts/production.md` has the exact wording.
+- **No briefing on a weekday that isn't a public holiday** → the right run started so late it was already 08:xx (guard exited) — rare. Re-run the routine manually.
+- **Editing the prompt** → keep the guard first. Removing it while the cron is `0 20,21` gives two briefings a day.
+
+History: until 2026-10-24 this was a manual twice-yearly cron swap (`0 21 * * 0-4` AEST / `0 20 * * 0-4` AEDT). The October 2026 swap was missed, so briefings from 5 to 23 Oct landed at ~08:15 instead of ~07:15.
 
 ## Annual maintenance
 
