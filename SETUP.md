@@ -76,10 +76,12 @@ To remove: `launchctl bootout gui/$(id -u)/com.mraab.ccs-news-pull && rm ~/Libra
 
 Routine cron is UTC-only. Manual swap twice a year:
 
-- AEST (Apr–Oct, UTC+10): `0 21 * * 0-4` — currently set
-- AEDT (Oct–Apr, UTC+11): `0 20 * * 0-4`
+- AEST (Apr–Oct, UTC+10): `0 21 * * 0-4`
+- AEDT (Oct–Apr, UTC+11): `0 20 * * 0-4` — currently set (switched 2026-10-24)
 
-Calendar reminders: early October 2026 to switch to AEDT, early April 2027 to switch back.
+The October 2026 swap was missed: briefings from 5 to 23 Oct landed at ~08:15 instead of ~07:15. To check, compare the routine's schedule (claude.ai/code → routine "CCS Daily News Briefing", or `/schedule` in a `claude` terminal) against the table above, or look at the time briefing commits land — after 08:00 Melbourne means the AEST schedule is still set during AEDT.
+
+Next swap: Sunday 4 April 2027, when AEDT ends — switch back to `0 21 * * 0-4` the Friday before or that weekend. After that, early October 2027 (AEDT starts Sunday 3 October 2027).
 
 ## Annual maintenance
 
