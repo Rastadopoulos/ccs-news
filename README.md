@@ -93,7 +93,7 @@ For the Chapman estimator's theory and per-week metric definitions, see the comm
 - [`docs/secrets.md`](docs/secrets.md) — repo secrets and variables inventory, rotation guidance.
 - [`docs/google-alerts.md`](docs/google-alerts.md) — the 30 currently-configured Google Alerts with category groupings and maintenance notes.
 - [`docs/routine-prompts/`](docs/routine-prompts/) — version-controlled copies of both Claude scheduled-task prompts.
-- [`SETUP.md`](SETUP.md) — Resend wiring, decommissioned LaunchAgent, daylight-saving swap reminders.
+- [`SETUP.md`](SETUP.md) — Resend wiring, local auto-pull LaunchAgent (and its Full Disk Access grant), daylight-saving swap reminders.
 
 ## Daylight-saving swap
 

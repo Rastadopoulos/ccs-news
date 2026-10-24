@@ -44,13 +44,32 @@ The original `re_…` key was pasted in a Claude Code chat transcript. Once deli
    - Resend HTTP 422 → sender or recipient rejected. If you ever change your Resend signup email, the shared `onboarding@resend.dev` sender will stop delivering until you change it back or verify a domain.
 4. Junk folder. First send from a new sender to a corporate tenant often lands there.
 
+## Local auto-pull (recreated 2026-10-24)
+
+Not load-bearing — delivery is by email — but keeps the local clone at `~/Documents/Claude-Code/01-CCS-Brief` current for working on the code. It was removed in May and the clone silently fell two months behind.
+
+- **Agent:** `~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist`, daily at 08:30 local and at login (a run missed while asleep fires on wake).
+- **Command:** `/Library/Developer/CommandLineTools/usr/bin/git -C <clone> -c credential.helper= pull --ff-only origin main`. Fast-forward only, so it never merges or overwrites local work; a diverged clone just logs an error. The repo is public, so no credentials — the helper is disabled so a hidden keychain prompt can't hang the job.
+- **Log:** `~/Library/Logs/ccs-news-pull.log`. `launchctl print gui/$(id -u)/com.mraab.ccs-news-pull | grep "last exit code"` shows the last result.
+
+### Full Disk Access (required)
+
+The clone is under `~/Documents`, which macOS privacy protection (TCC) blocks for background jobs. Without a grant every run fails with `fatal: Unable to read current working directory: Operation not permitted`.
+
+Grant Full Disk Access to **`/Library/Developer/CommandLineTools/usr/bin/git`** — the real binary, not `/usr/bin/git`. `/usr/bin/git` is the xcode-select shim, signed separately (`com.apple.dt.xcode_select.tool-shim-public` vs `com.apple.git`); TCC checks the real git it hands off to, so a grant on the shim does nothing. The agent runs git directly rather than via a shell script so that only git needs the grant, not `bash`.
+
+1. System Settings → Privacy & Security → Full Disk Access.
+2. In Finder, Go → Go to Folder → `/Library/Developer/CommandLineTools/usr/bin`, and **drag `git` into the list**. Adding it with **+** and Cmd+Shift+G silently added nothing.
+3. Check the **git** entry (black "exec" icon) is switched on.
+
+Re-test: `launchctl kickstart -k gui/$(id -u)/com.mraab.ccs-news-pull`, then `tail ~/Library/Logs/ccs-news-pull.log`. Redo the grant after reinstalling Command Line Tools or moving to a new Mac.
+
+To diagnose a denial: `/usr/bin/log show --last 5m --predicate 'process == "tccd"' --info --debug | grep AUTHREQ_RESULT` (`authValue=0` = denied; use `/usr/bin/log`, as `log` is a zsh builtin).
+
+To remove: `launchctl bootout gui/$(id -u)/com.mraab.ccs-news-pull && rm ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist`.
+
 ## Decommissioned
 
-- **`~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist`** (07:15 local auto-pull) — no longer load-bearing now that delivery is by email. Unload + remove:
-  ```sh
-  launchctl unload ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist
-  rm ~/Library/LaunchAgents/com.mraab.ccs-news-pull.plist
-  ```
 - **`YYYY-MM-DD-email.md`** — old Outlook-paste artifact. Replaced by `YYYY-MM-DD-ccs-briefing.md`. Old files remain in git history.
 
 ## Daylight-saving swap
