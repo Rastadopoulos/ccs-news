@@ -1,0 +1,137 @@
+[
+  {
+    "id": "2026-10-26#01",
+    "briefing_date": "2026-10-26",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Woodside exits Bonaparte CCS as INPEX takes full control and moves the project into FEED",
+    "summary": "INPEX agreed to acquire Woodside's 21% stake in the INPEX-led Bonaparte CCS JV (~260 km offshore Darwin), lifting INPEX to 74% via a new entity INPEX Bonaparte CCS Pty Ltd (subject to regulatory approval); the JV has commenced FEED, targeting first CO2 injection in the early 2030s with Ichthys LNG as anchor customer.",
+    "source": "Upstream / Energy News Bulletin",
+    "pub_date": "2026-10-25",
+    "url": "https://www.upstreamonline.com/carbon-capture/inpex-launches-feed-for-australian-offshore-ccs-project/2-1-2063058",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "INPEX",
+      "Woodside Energy",
+      "TotalEnergies CCS Australia"
+    ],
+    "org_types": [
+      "NOC",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "M&A",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Australia's flagship offshore CCS project consolidates under a single operator and enters FEED — a major domestic milestone directly relevant to CO2CRC's home-market CCS pipeline and Darwin/Ichthys emissions abatement.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Stake-transfer + FEED-entry item; no money figure stated. Capacity (cited ~8-10 Mtpa / 443 Mt over 35 yrs elsewhere) not restated in this article, left null to avoid additive confusion."
+  },
+  {
+    "id": "2026-10-26#02",
+    "briefing_date": "2026-10-26",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "PETRONAS, TotalEnergies and Mitsui sign JV agreement to develop Southern CCS Hub storage area off Peninsular Malaysia",
+    "summary": "The trio signed a JV agreement to form a company developing a CO2 storage area offshore Peninsular Malaysia (Malaysia's Southern CCS Hub); phase one targets a depleted gas field with up to 5 Mtpa injection capacity and first injection as early as 2031, building on their 2023 Development Agreement and 2025 Key Principles Agreement. The hub is designed for domestic and cross-border CO2.",
+    "source": "Offshore Energy / Xinhua / gasworld",
+    "pub_date": "2026-10-23",
+    "url": "https://www.offshore-energy.biz/2026/10/23/petronas-totalenergies-and-mitsui-to-develop-co2-storage-area-off-peninsular-malaysia",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "PETRONAS CCS Ventures",
+      "TotalEnergies",
+      "Mitsui & Co."
+    ],
+    "org_types": [
+      "NOC",
+      "OG-major",
+      "financier"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "storage",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2031,
+    "capacity_mtpa": 5,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A regional transboundary CCS hub taking cross-border CO2 — a direct comparator and potential competitor/partner to Australia's own cross-border storage ambitions (Bonaparte, Bayu-Undan); Mitsui's involvement signals Japanese demand for APAC storage.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "JV formation ahead of FID; no money figure stated. 5 Mtpa is phase-one injection-capacity target."
+  },
+  {
+    "id": "2026-10-26#03",
+    "briefing_date": "2026-10-26",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Skytree, Galetech and Mwahera to add direct air capture to Kenya's Mwangea e-Fuels Project",
+    "summary": "The partners signed an agreement to integrate Skytree's DAC technology into the Mwangea e-Fuels Project in Kenya, combining captured CO2 with green hydrogen for carbon-neutral e-fuels; begins with an initial deployment phase and could scale to tens of kilotonnes of CO2 a year, with Skytree claiming sub-US$100/t costs.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-21",
+    "url": "https://carbonherald.com/skytree-galetech-and-mwahera-partner-on-direct-air-capture-for-e-fuel-production-in-kenya/",
+    "region": "Africa",
+    "countries": [
+      "Kenya"
+    ],
+    "organisations": [
+      "Skytree",
+      "Galetech Energy Developments",
+      "Mwahera Green Hydrogen"
+    ],
+    "org_types": [
+      "developer",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "DAC",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A rare African DAC-to-e-fuels catch; limited direct Australian relevance but useful signal on DAC cost claims and power-to-X demand for captured CO2.",
+    "sentiment": null,
+    "tags": [
+      "DAC"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Radar item — signing dated 21 Oct, just outside the Mon 23-26 window. Capacity 'tens of kilotonnes' is vague/aspirational; left null."
+  }
+]
