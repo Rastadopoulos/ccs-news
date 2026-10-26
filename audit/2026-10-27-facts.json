@@ -1,0 +1,136 @@
+[
+  {
+    "id": "2026-10-27#01",
+    "briefing_date": "2026-10-27",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "CSIRO runs sunlight-driven direct air capture field trial at its WA In-Situ Laboratory, timed for GHGT-18",
+    "summary": "CSIRO is demonstrating Seattle start-up Banyu Carbon's photoacid, sunlight-driven DAC unit at its In-Situ Laboratory in WA's south-west — reportedly the first carbon-capture technology deployed at the site — with the month-long trial timed to run for GHGT-18 delegates; CO2 is vented rather than stored during the test.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-10-26",
+    "url": "https://www.energynewsbulletin.net/energy-transition/news-articles/4538607/csiro-trials-dac-industry",
+    "region": "APAC",
+    "countries": [
+      "Australia",
+      "United States"
+    ],
+    "organisations": [
+      "CSIRO",
+      "Banyu Carbon"
+    ],
+    "org_types": [
+      "research",
+      "startup"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "DAC",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A novel DAC technology field-trialled on Australian soil at CSIRO's ISL during GHGT-18 (co-hosted by CO2CRC) — directly relevant to CO2CRC's capture-technology and field-testing agenda.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "R&D field demo; no money figure. 'Industry first' is the trade outlet's framing (first capture tech at the ISL site). Article body not fetchable this run (egress block); summary built from verified alerts-floor date + prior CSIRO 20 Oct pre-announcement."
+  },
+  {
+    "id": "2026-10-27#02",
+    "briefing_date": "2026-10-27",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "GHGT-18 opens in Perth with 1,000+ delegates — CO2CRC among the co-hosts",
+    "summary": "The 18th Greenhouse Gas Control Technologies Conference, the sector's flagship global scientific meeting run by the IEA Greenhouse Gas R&D Programme, opened at Crown Perth (25-29 Oct) — the first time it has been held in Western Australia — co-hosted by CSIRO, CO2CRC, Geoscience Australia and Australian Energy Producers.",
+    "source": "CSIRO",
+    "pub_date": "2026-10-26",
+    "url": "https://www.csiro.au/en/news/All/News/2026/October/Over-1000-delegates-gather-in-Perth-for-world-leading-CCUS-conference",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "CSIRO",
+      "CO2CRC",
+      "Geoscience Australia",
+      "Australian Energy Producers",
+      "IEAGHG"
+    ],
+    "org_types": [
+      "research",
+      "research",
+      "government",
+      "industry-body",
+      "industry-body"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "CO2CRC is a co-host of GHGT-18 — the sector's flagship global conference, held in CO2CRC's home country for the first time in WA; a marquee week for Australian CCS visibility.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Sector-event notice, no financial dimension. Included for CO2CRC home-country relevance; low hard-news value."
+  },
+  {
+    "id": "2026-10-27#03",
+    "briefing_date": "2026-10-27",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Trade press questions whether Commonwealth's A$3m grant to Pilot Energy's Mid West CCS scheme will be recovered",
+    "summary": "Energy News Bulletin examined public exposure on the ~A$3m initial Commonwealth grant (part of a ~A$6.5m CCUS Development Fund package) backing Pilot Energy's Cliff Head CO2-storage conversion and Capture6 DAC demonstration, against the small-cap developer's funding and delivery challenges. Full article text not retrievable this run; specifics provisional.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-10-26",
+    "url": "https://www.energynewsbulletin.net/operations/news-analysis/4538599/govts-usd3m-investment-pilots-ccs-scheme-recovered",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Pilot Energy",
+      "Commonwealth of Australia",
+      "Capture6"
+    ],
+    "org_types": [
+      "developer",
+      "government",
+      "startup"
+    ],
+    "instrument_type": "grant-funding",
+    "value_chain": [
+      "storage",
+      "DAC"
+    ],
+    "amount": 3000000,
+    "currency": "AUD",
+    "amount_aud": null,
+    "commitment_status": "allocated",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Accountability scrutiny of public CCS grant money in a WA project — reputation-relevant to Australian CCS social licence and to how Commonwealth CCUS Development Fund grants are judged.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Figure is the ~A$3m initial Commonwealth grant (part of ~A$6.5m package). amount_basis government-funding; status 'allocated' (awarded, recovery/delivery now in question). Article body not fetchable this run; A$3m taken from the headline and corroborating prior reporting."
+  }
+]
