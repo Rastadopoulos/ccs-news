@@ -1,38 +1,20 @@
 [
   {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/inpex-launches-feed-for-australian-offshore-ccs-project/2-1-2063058",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/inpex-launches-feed-for-australian-offshore-ccs-project/2-1-2063058",
-    "headline": "Inpex launches FEED for Australian offshore CCS project - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-10-25T20:17:06+00:00",
-    "fuzzy_key": "australian,ccs,feed,inpex,launches,offshore,online,project,upstream",
+    "canonical_url": "https://carbonherald.com/us-leads-global-surge-as-underground-co2-storage-reaches-43-6m-tons",
+    "raw_url": "https://carbonherald.com/us-leads-global-surge-as-underground-co2-storage-reaches-43-6m-tons/",
+    "headline": "US Leads Global Surge As Underground CO2 Storage Reaches 43.6M Tons",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-26T16:50:54+00:00",
+    "fuzzy_key": "43,6m,co2,global,leads,reaches,storage,surge,tons,underground,us",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://energy-pedia.com/news/australia/inpex-launches-feed-for-australian-offshore-ccs-project-205802",
-    "raw_url": "https://www.energy-pedia.com/news/australia/inpex-launches-feed-for-australian-offshore-ccs-project-205802",
-    "headline": "Australia: Inpex launches FEED for Australian offshore CCS project - energy-pedia",
-    "source_domain": "energy-pedia.com",
-    "publication_date": "2026-10-25T20:17:06+00:00",
-    "fuzzy_key": "australia,australian,ccs,energy,feed,inpex,launches,offshore,pedia,project",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://ntnews.com.au/business/northern-territory/bonaparte-basin-carbon-capture-project-off-darwin-enters-major-engineering-design-phase/news-story/9397af09f578aa2e545cfbfa809e6e9b",
-    "raw_url": "https://www.ntnews.com.au/business/northern-territory/bonaparte-basin-carbon-capture-project-off-darwin-enters-major-engineering-design-phase/news-story/9397af09f578aa2e545cfbfa809e6e9b",
-    "headline": "Bonaparte Basin carbon capture project off Darwin enters major engineering design phase",
-    "source_domain": "ntnews.com.au",
-    "publication_date": "2026-10-25T20:17:06+00:00",
-    "fuzzy_key": "basin,bonaparte,capture,carbon,darwin,design,engineering,enters,major,off,phase,project",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/petronas-totalenergies-and-mitsui-advance-southern-ccs-hub-project/2-1-2063106",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/petronas-totalenergies-and-mitsui-advance-southern-ccs-hub-project/2-1-2063106",
-    "headline": "Petronas, TotalEnergies and Mitsui advance Southern CCS Hub project - Upstream Online",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-10-25T20:35:37+00:00",
-    "fuzzy_key": "advance,ccs,hub,mitsui,online,petronas,project,southern,totalenergies,upstream",
+    "canonical_url": "https://chemanalyst.com/NewsAndDeals/NewsDetails/petronas-totalenergies-mitsui-advance-malaysias-co2-45139",
+    "raw_url": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/petronas-totalenergies-mitsui-advance-malaysias-co2-45139",
+    "headline": "PETRONAS, TotalEnergies, Mitsui Advance Malaysia's CO2 Storage Hub - ChemAnalyst",
+    "source_domain": "chemanalyst.com",
+    "publication_date": "2026-10-26T17:56:33+00:00",
+    "fuzzy_key": "advance,chemanalyst,co2,hub,malaysia,mitsui,petronas,storage,totalenergies",
     "found_via": "google_alerts"
   },
   {
@@ -45,12 +27,30 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://shipping-now.com/article/222281/inpex-launches-feed-for-australian-offshore-ccs-project",
-    "raw_url": "https://www.shipping-now.com/article/222281/inpex-launches-feed-for-australian-offshore-ccs-project?utm_source=trendingnowshipping&utm_medium=newsfeed&utm_campaign=trendingnowshipping-articleId-222281",
-    "headline": "Inpex launches FEED for Australian offshore CCS project - Trending Now Shipping",
-    "source_domain": "shipping-now.com",
-    "publication_date": "2026-10-26T04:17:09+00:00",
-    "fuzzy_key": "australian,ccs,feed,inpex,launches,now,offshore,project,shipping,trending",
+    "canonical_url": "https://enerdata.net/publications/daily-energy-news/petronas-totalenergies-and-mitsui-partner-5-mtyear-ccs-project-malaysia.html",
+    "raw_url": "https://www.enerdata.net/publications/daily-energy-news/petronas-totalenergies-and-mitsui-partner-5-mtyear-ccs-project-malaysia.html",
+    "headline": "Petronas, TotalEnergies and Mitsui partner for a 5 Mt/year CCS project in Malaysia",
+    "source_domain": "enerdata.net",
+    "publication_date": "2026-10-26T17:56:33+00:00",
+    "fuzzy_key": "ccs,malaysia,mitsui,mt,partner,petronas,project,totalenergies,year",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energy-pedia.com/news/australia/inpex-launches-feed-for-australian-offshore-ccs-project-205802",
+    "raw_url": "https://www.energy-pedia.com/news/australia/inpex-launches-feed-for-australian-offshore-ccs-project-205802",
+    "headline": "Australia: Inpex launches FEED for Australian offshore CCS project - energy-pedia",
+    "source_domain": "energy-pedia.com",
+    "publication_date": "2026-10-25T20:17:06+00:00",
+    "fuzzy_key": "australia,australian,ccs,energy,feed,inpex,launches,offshore,pedia,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energynewsbulletin.net/energy-transition/news-articles/4538607/csiro-trials-dac-industry",
+    "raw_url": "https://www.energynewsbulletin.net/energy-transition/news-articles/4538607/csiro-trials-dac-industry",
+    "headline": "CSIRO trials DAC in industry first - Energy News Bulletin",
+    "source_domain": "energynewsbulletin.net",
+    "publication_date": "2026-10-26T16:23:36+00:00",
+    "fuzzy_key": "bulletin,csiro,dac,energy,first,industry,news,trials",
     "found_via": "google_alerts"
   },
   {
@@ -63,6 +63,69 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19768442.ece",
+    "raw_url": "https://energywatch.com/EnergyNews/ccs/article19768442.ece",
+    "headline": "TotalEnergies completes new surveys of North Sea CO₂ storage sites - EnergyWatch",
+    "source_domain": "energywatch.com",
+    "publication_date": "2026-10-26T19:21:25+00:00",
+    "fuzzy_key": "co,completes,energywatch,new,north,sea,sites,storage,surveys,totalenergies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://fibre2fashion.com/news/energy-news/malaysia-s-petronas-totalenergies-mitsui-sign-co2-storage-jv-314525-newsdetails.htm",
+    "raw_url": "https://www.fibre2fashion.com/news/energy-news/malaysia-s-petronas-totalenergies-mitsui-sign-co2-storage-jv-314525-newsdetails.htm",
+    "headline": "Malaysia's PETRONAS, TotalEnergies, Mitsui sign CO2 storage JV - Fibre2Fashion",
+    "source_domain": "fibre2fashion.com",
+    "publication_date": "2026-10-26T17:56:33+00:00",
+    "fuzzy_key": "co2,fibre2fashion,jv,malaysia,mitsui,petronas,sign,storage,totalenergies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://imperial.ac.uk/news/articles/engineering/earth-science/2026/global-underground-co-storage-hits-record-436-million-tonnes-as-london-register-expands-reach",
+    "raw_url": "https://www.imperial.ac.uk/news/articles/engineering/earth-science/2026/global-underground-co-storage-hits-record-436-million-tonnes-as-london-register-expands-reach/",
+    "headline": "Global underground CO₂ storage hits record 43.6 million tonnes as London Register expands reach",
+    "source_domain": "imperial.ac.uk",
+    "publication_date": "2026-10-26T19:21:25+00:00",
+    "fuzzy_key": "43,co,expands,global,hits,london,million,reach,record,register,storage,tonnes,underground",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/upstream-the-international-oil-gas-newspaper_petronas-totalenergies-and-mitsui-advance-activity-7520392083904544768-T_4Q",
+    "raw_url": "https://www.linkedin.com/posts/upstream-the-international-oil-gas-newspaper_petronas-totalenergies-and-mitsui-advance-activity-7520392083904544768-T_4Q",
+    "headline": "Petronas, TotalEnergies and Mitsui advance Southern CCS Hub project | Upstream",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-10-26T20:29:07+00:00",
+    "fuzzy_key": "advance,ccs,hub,mitsui,petronas,project,southern,totalenergies,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ntnews.com.au/business/northern-territory/bonaparte-basin-carbon-capture-project-off-darwin-enters-major-engineering-design-phase/news-story/9397af09f578aa2e545cfbfa809e6e9b",
+    "raw_url": "https://www.ntnews.com.au/business/northern-territory/bonaparte-basin-carbon-capture-project-off-darwin-enters-major-engineering-design-phase/news-story/9397af09f578aa2e545cfbfa809e6e9b",
+    "headline": "Bonaparte Basin carbon capture project off Darwin enters major engineering design phase",
+    "source_domain": "ntnews.com.au",
+    "publication_date": "2026-10-25T20:17:06+00:00",
+    "fuzzy_key": "basin,bonaparte,capture,carbon,darwin,design,engineering,enters,major,off,phase,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://pfie.com/asia-pacific/2503905/malaysia-petronastotalenergiesmitsui-ink-ccs-deal",
+    "raw_url": "https://www.pfie.com/asia-pacific/2503905/malaysia-petronastotalenergiesmitsui-ink-ccs-deal",
+    "headline": "Malaysia – Petronas/TotalEnergies/Mitsui ink CCS deal | PFI - Project Finance International",
+    "source_domain": "pfie.com",
+    "publication_date": "2026-10-26T17:56:33+00:00",
+    "fuzzy_key": "ccs,deal,finance,ink,international,malaysia,mitsui,petronas,pfi,project,totalenergies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://shipping-now.com/article/222281/inpex-launches-feed-for-australian-offshore-ccs-project",
+    "raw_url": "https://www.shipping-now.com/article/222281/inpex-launches-feed-for-australian-offshore-ccs-project?utm_source=trendingnowshipping&utm_medium=newsfeed&utm_campaign=trendingnowshipping-articleId-222281",
+    "headline": "Inpex launches FEED for Australian offshore CCS project - Trending Now Shipping",
+    "source_domain": "shipping-now.com",
+    "publication_date": "2026-10-26T04:17:09+00:00",
+    "fuzzy_key": "australian,ccs,feed,inpex,launches,now,offshore,project,shipping,trending",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://simplywall.st/stocks/us/consumer-durables/nyse-ccs/century-communities/news/are-new-community-openings-altering-the-investment-case-for/amp",
     "raw_url": "https://simplywall.st/stocks/us/consumer-durables/nyse-ccs/century-communities/news/are-new-community-openings-altering-the-investment-case-for/amp",
     "headline": "Are New Community Openings Altering The Investment Case For Century Communities Stock?",
@@ -72,12 +135,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://energynewsbulletin.net/energy-transition/news-articles/4538607/csiro-trials-dac-industry",
-    "raw_url": "https://www.energynewsbulletin.net/energy-transition/news-articles/4538607/csiro-trials-dac-industry",
-    "headline": "CSIRO trials DAC in industry first - Energy News Bulletin",
-    "source_domain": "energynewsbulletin.net",
-    "publication_date": "2026-10-26T16:23:36+00:00",
-    "fuzzy_key": "bulletin,csiro,dac,energy,first,industry,news,trials",
+    "canonical_url": "https://upstreamonline.com/carbon-capture/inpex-launches-feed-for-australian-offshore-ccs-project/2-1-2063058",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/inpex-launches-feed-for-australian-offshore-ccs-project/2-1-2063058",
+    "headline": "Inpex launches FEED for Australian offshore CCS project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-10-25T20:17:06+00:00",
+    "fuzzy_key": "australian,ccs,feed,inpex,launches,offshore,online,project,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/petronas-totalenergies-and-mitsui-advance-southern-ccs-hub-project/2-1-2063106",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/petronas-totalenergies-and-mitsui-advance-southern-ccs-hub-project/2-1-2063106",
+    "headline": "Petronas, TotalEnergies and Mitsui advance Southern CCS Hub project - Upstream Online",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-10-25T20:35:37+00:00",
+    "fuzzy_key": "advance,ccs,hub,mitsui,online,petronas,project,southern,totalenergies,upstream",
     "found_via": "google_alerts"
   }
 ]
