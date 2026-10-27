@@ -1,0 +1,14 @@
+# CCS briefing — Wed 28 Oct 2026
+
+A light, Europe-and-Australia news day: BOC (Linde) reports commissioning a carbon capture unit at Teesside to firm up Britain's merchant CO2 supply; TotalEnergies says it has completed new surveys of its Danish North Sea storage sites; and CO2CRC's Otway International Test Centre featured prominently at GHGT-18 in Perth. *Partial-coverage run: outbound article-page fetches were blocked this session (egress proxy returned HTTP 403 for publisher hosts), so publication dates were verified from the Google Alerts floor's machine-extracted dates (all three items dated 27 Oct 2026 UTC = 27–28 Oct Melbourne) and cross-checked against WebSearch snippets rather than read off the page — article bodies could not be opened, so figures are reported conservatively. The Shelly Murrell and IEAGHG weekly newsletter feeds were unavailable (Outlook MCP not connected). WebSearch ran normally (~16 queries across all regional, multinational-strategy and transboundary buckets); this is a genuinely light day, not a search failure. Several widely-syndicated items (the PETRONAS–TotalEnergies–Mitsui Malaysian JV, INPEX's Bonaparte FEED buy-out, Ravenna's EU Innovation Fund award) were dropped as already covered on 22/26 Oct, and a Northern Lights "jumps to 5 Mt" piece and a West Virginia Class VI item were dropped as retrospectives of out-of-window events (the Worley Rosenberg fabrication award was ~15 Oct; WV primacy took effect March 2025).*
+
+## Projects
+
+- **BOC commissions Teesside carbon capture facility to strengthen UK CO2 supply** — Industrial-gases firm BOC (part of Linde) reports commissioning a carbon capture facility at Teesside that recovers CO2 to shore up Britain's domestic merchant and food-grade CO2 supply, which has suffered periodic shortages. (Carbon Herald, 27 Oct 2026) [link](https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply/)
+- **TotalEnergies completes new surveys of its North Sea CO2 storage sites** — TotalEnergies reports completing new site-characterisation surveys across its Danish North Sea storage acreage (held with state partner Nordsøfonden), advancing appraisal of its saline-aquifer and depleted-field storage options toward a stated >10 Mtpa European storage ambition by 2030. [paywall] (EnergyWatch, 27 Oct 2026) [link](https://energywatch.com/EnergyNews/ccs/article19768442.ece)
+
+## Technology
+
+- **CO2CRC's Otway International Test Centre on the world stage at GHGT-18** — CO2CRC's Otway International Test Centre took a prominent role at GHGT-18 (Perth, 25–29 Oct), showcasing its long-running CO2 storage, monitoring and verification (MMV) field research to the sector's flagship global scientific meeting, which CO2CRC co-hosts. (Carbon Capture Journal, 27 Oct 2026) [link](https://www.carboncapturejournal.com/news/otway-international-test-centre-on-the-world-stage-at-ghgt-18/7469.aspx?Category=all)
+
+— Auto-briefing

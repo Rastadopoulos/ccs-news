@@ -1,0 +1,130 @@
+[
+  {
+    "id": "2026-10-28#01",
+    "briefing_date": "2026-10-28",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "BOC commissions Teesside carbon capture facility to strengthen UK CO2 supply",
+    "summary": "Industrial-gases firm BOC (part of Linde) reports commissioning a carbon capture facility at Teesside that recovers CO2 to shore up Britain's domestic merchant/food-grade CO2 supply, which has suffered periodic shortages.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-27",
+    "url": "https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "BOC",
+      "Linde"
+    ],
+    "org_types": [
+      "other",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A merchant-CO2 capture plant (supply security) rather than CCS-for-storage; marginal for CO2CRC beyond showing capture tech reaching commercial industrial-gas operations.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Tier-1 (Carbon Herald) alerts-floor item; publication date 2026-10-27 verified via alerts-floor machine extraction. Article body NOT fetchable this run (egress 403 block); generic WebSearch did not surface corroborating coverage (item too fresh). Capacity/cost figures unverified — none asserted."
+  },
+  {
+    "id": "2026-10-28#02",
+    "briefing_date": "2026-10-28",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "TotalEnergies completes new surveys of its North Sea CO2 storage sites",
+    "summary": "TotalEnergies reports completing new surveys (site-characterisation work) across its Danish North Sea CO2 storage acreage, advancing appraisal of saline-aquifer and depleted-field storage options it operates with partners.",
+    "source": "EnergyWatch",
+    "pub_date": "2026-10-27",
+    "url": "https://energywatch.com/EnergyNews/ccs/article19768442.ece",
+    "region": "Europe-UK",
+    "countries": [
+      "Denmark"
+    ],
+    "organisations": [
+      "TotalEnergies",
+      "Nordsofonden"
+    ],
+    "org_types": [
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": 2030,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Offshore storage-site characterisation and survey practice is directly relevant to CO2CRC's storage-appraisal and MMV expertise and to Australia's offshore storage programme.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "EnergyWatch (trade, paywalled); date 2026-10-27 via alerts floor. Body not fetchable (egress block); WebSearch corroborates TotalEnergies' Danish North Sea storage licences (Bifrost/Harald) and the Inez exploration permit with Mitsui/Nordsofonden, but the specific surveyed site is not confirmed — kept general."
+  },
+  {
+    "id": "2026-10-28#03",
+    "briefing_date": "2026-10-28",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "CO2CRC's Otway International Test Centre featured on the world stage at GHGT-18 in Perth",
+    "summary": "CO2CRC's Otway International Test Centre took a prominent role at GHGT-18 (Perth, 25-29 Oct), showcasing its long-running storage, monitoring and verification (MMV) field research to the sector's flagship global scientific meeting.",
+    "source": "Carbon Capture Journal",
+    "pub_date": "2026-10-27",
+    "url": "https://www.carboncapturejournal.com/news/otway-international-test-centre-on-the-world-stage-at-ghgt-18/7469.aspx?Category=all",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "CO2CRC",
+      "Otway International Test Centre"
+    ],
+    "org_types": [
+      "research",
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "CO2CRC's own flagship field laboratory profiled at the conference CO2CRC co-hosts — direct reputational and scientific relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Carbon Capture Journal (Tier-2b); date 2026-10-27 via alerts floor. Body not fetchable (egress block); conference-profile piece, framed conservatively on Otway/CO2CRC's established MMV research. GHGT-18 opening was covered 2026-10-27 briefing; this Otway-specific item is distinct."
+  }
+]
