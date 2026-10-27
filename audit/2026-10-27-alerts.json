@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://carboncapturejournal.com/news/otway-international-test-centre-on-the-world-stage-at-ghgt-18/7469.aspx?Category=all",
+    "raw_url": "https://www.carboncapturejournal.com/news/otway-international-test-centre-on-the-world-stage-at-ghgt-18/7469.aspx?Category=all",
+    "headline": "Otway International Test Centre on the world stage at GHGT-18 - Carbon Capture Journal",
+    "source_domain": "carboncapturejournal.com",
+    "publication_date": "2026-10-27T07:58:18+00:00",
+    "fuzzy_key": "18,capture,carbon,centre,ghgt,international,journal,otway,stage,test,world",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply",
     "raw_url": "https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply/",
     "headline": "BOC Commissions Teesside Carbon Capture Facility To Strengthen UK CO2 Supply",
@@ -87,6 +96,15 @@
     "source_domain": "energywatch.com",
     "publication_date": "2026-10-26T19:21:25+00:00",
     "fuzzy_key": "co,completes,energywatch,new,north,sea,sites,storage,surveys,totalenergies",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://environmentenergyleader.com/articles/1177-west-virginia-gains-class-vi-well-authority-amid-concerns-over-carbon-storage-risks",
+    "raw_url": "https://www.environmentenergyleader.com/articles/1177-west-virginia-gains-class-vi-well-authority-amid-concerns-over-carbon-storage-risks",
+    "headline": "West Virginia Gains Class VI Well Authority Amid Concerns Over Carbon Storage Risks",
+    "source_domain": "environmentenergyleader.com",
+    "publication_date": "2026-10-27T07:16:47+00:00",
+    "fuzzy_key": "amid,authority,carbon,class,concerns,gains,over,risks,storage,vi,virginia,well,west",
     "found_via": "google_alerts"
   },
   {
@@ -186,6 +204,15 @@
     "source_domain": "worldoil.com",
     "publication_date": "2026-10-27T00:20:57+00:00",
     "fuzzy_key": "bonaparte,buys,ccs,feed,inpex,into,moves,oil,out,stake,woodside,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://youtube.com/shorts/Cng21Z9-8x4",
+    "raw_url": "https://www.youtube.com/shorts/Cng21Z9-8x4",
+    "headline": "INPEX Bonaparte CCS Project begins engineering design - YouTube",
+    "source_domain": "youtube.com",
+    "publication_date": "2026-10-27T07:58:18+00:00",
+    "fuzzy_key": "begins,bonaparte,ccs,design,engineering,inpex,project,youtube",
     "found_via": "google_alerts"
   }
 ]
