@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply",
+    "raw_url": "https://carbonherald.com/boc-commissions-teesside-carbon-capture-facility-to-strengthen-uk-co2-supply/",
+    "headline": "BOC Commissions Teesside Carbon Capture Facility To Strengthen UK CO2 Supply",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-27T02:46:09+00:00",
+    "fuzzy_key": "boc,capture,carbon,co2,commissions,facility,strengthen,supply,teesside,uk",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/us-leads-global-surge-as-underground-co2-storage-reaches-43-6m-tons",
     "raw_url": "https://carbonherald.com/us-leads-global-surge-as-underground-co2-storage-reaches-43-6m-tons/",
     "headline": "US Leads Global Surge As Underground CO2 Storage Reaches 43.6M Tons",
@@ -24,6 +33,15 @@
     "source_domain": "csiro.au",
     "publication_date": "2026-10-26T00:52:09+00:00",
     "fuzzy_key": "1000,ccus,conference,csiro,delegates,gather,leading,over,perth,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://cyprusshippingnews.com/2026/10/26/ravenna-ccs-selected-under-the-european-innovation-fund",
+    "raw_url": "https://cyprusshippingnews.com/2026/10/26/ravenna-ccs-selected-under-the-european-innovation-fund/",
+    "headline": "Ravenna CCS selected under the European Innovation Fund - Cyprus Shipping News",
+    "source_domain": "cyprusshippingnews.com",
+    "publication_date": "2026-10-27T01:11:50+00:00",
+    "fuzzy_key": "ccs,cyprus,european,fund,innovation,news,ravenna,selected,shipping,under",
     "found_via": "google_alerts"
   },
   {
@@ -90,6 +108,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://indexbox.io/blog/inpex-advances-bonaparte-ccs-to-feed-and-increases-stake",
+    "raw_url": "https://www.indexbox.io/blog/inpex-advances-bonaparte-ccs-to-feed-and-increases-stake/",
+    "headline": "INPEX Advances Bonaparte CCS to FEED and Increases Stake - IndexBox",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-10-27T00:20:57+00:00",
+    "fuzzy_key": "advances,bonaparte,ccs,feed,increases,indexbox,inpex,stake",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/upstream-the-international-oil-gas-newspaper_petronas-totalenergies-and-mitsui-advance-activity-7520392083904544768-T_4Q",
     "raw_url": "https://www.linkedin.com/posts/upstream-the-international-oil-gas-newspaper_petronas-totalenergies-and-mitsui-advance-activity-7520392083904544768-T_4Q",
     "headline": "Petronas, TotalEnergies and Mitsui advance Southern CCS Hub project | Upstream",
@@ -150,6 +177,15 @@
     "source_domain": "upstreamonline.com",
     "publication_date": "2026-10-25T20:35:37+00:00",
     "fuzzy_key": "advance,ccs,hub,mitsui,online,petronas,project,southern,totalenergies,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://worldoil.com/news/2026/10/26/inpex-moves-bonaparte-ccs-into-feed-buys-out-woodside-s-stake",
+    "raw_url": "https://www.worldoil.com/news/2026/10/26/inpex-moves-bonaparte-ccs-into-feed-buys-out-woodside-s-stake/",
+    "headline": "INPEX moves Bonaparte CCS into FEED, buys out Woodside's stake - World Oil",
+    "source_domain": "worldoil.com",
+    "publication_date": "2026-10-27T00:20:57+00:00",
+    "fuzzy_key": "bonaparte,buys,ccs,feed,inpex,into,moves,oil,out,stake,woodside,world",
     "found_via": "google_alerts"
   }
 ]
