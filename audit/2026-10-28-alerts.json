@@ -99,6 +99,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://knowledge.energyinst.org/new-energy-world/article?id=160522",
+    "raw_url": "https://knowledge.energyinst.org/new-energy-world/article?id=160522",
+    "headline": "Global CCS pipeline reaches 832 projects, report finds | Article Page - Energy Institute",
+    "source_domain": "energyinst.org",
+    "publication_date": "2026-10-28T00:22:01+00:00",
+    "fuzzy_key": "832,article,ccs,energy,finds,global,institute,page,pipeline,projects,reaches,report",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energywatch.com/EnergyNews/ccs/article19768442.ece",
     "raw_url": "https://energywatch.com/EnergyNews/ccs/article19768442.ece",
     "headline": "TotalEnergies completes new surveys of North Sea CO₂ storage sites - EnergyWatch",
@@ -222,6 +231,15 @@
     "source_domain": "pipeliner.com.au",
     "publication_date": "2026-10-27T22:14:22+00:00",
     "fuzzy_key": "advances,australian,bonaparte,ccs,feed,pipeliner",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theguardian.com/uk-news/2026/oct/27/chris-packham-chancellor-scrap-spending-fairytale-carbon-capture-budget",
+    "raw_url": "https://www.theguardian.com/uk-news/2026/oct/27/chris-packham-chancellor-scrap-spending-fairytale-carbon-capture-budget",
+    "headline": "UK spending on 'fairytale' carbon capture tech is a national embarrassment, chancellor told",
+    "source_domain": "theguardian.com",
+    "publication_date": "2026-10-28T02:14:37+00:00",
+    "fuzzy_key": "capture,carbon,chancellor,embarrassment,fairytale,national,spending,tech,told,uk",
     "found_via": "google_alerts"
   },
   {
