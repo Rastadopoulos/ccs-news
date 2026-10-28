@@ -1,0 +1,42 @@
+[
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNZmJYY285V0liS3BiOEhLWDRuUmdKWjRpX3dfeVVSTnp2WVhENkZFTDVaNngzb2F4SV91SmprZFR0VW9aRFpfNjNFQ3hUVm9fSEdHbGpQNHlzeWljNW1lX0FEdHRxT1Z1LWhwOQ?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNZmJYY285V0liS3BiOEhLWDRuUmdKWjRpX3dfeVVSTnp2WVhENkZFTDVaNngzb2F4SV91SmprZFR0VW9aRFpfNjNFQ3hUVm9fSEdHbGpQNHlzeWljNW1lX0FEdHRxT1Z1LWhwOQ?oc=5",
+    "headline": "Bonaparte CCS advances to FEED - The Australian Pipeliner",
+    "source_domain": "pipeliner.com.au",
+    "publication_date": "2026-10-26T22:08:41+00:00",
+    "fuzzy_key": "advances,australian,bonaparte,ccs,feed,pipeliner",
+    "feed_name": "The Australian Pipeliner (Google News)",
+    "feed_tier": "2b"
+  },
+  {
+    "canonical_url": "https://theguardian.com/uk-news/2026/oct/27/chris-packham-chancellor-scrap-spending-fairytale-carbon-capture-budget",
+    "raw_url": "https://www.theguardian.com/uk-news/2026/oct/27/chris-packham-chancellor-scrap-spending-fairytale-carbon-capture-budget",
+    "headline": "UK spending on ‘fairytale’ carbon capture tech is a national embarrassment, chancellor told",
+    "source_domain": "theguardian.com",
+    "publication_date": "2026-10-27T13:28:00+00:00",
+    "fuzzy_key": "capture,carbon,chancellor,embarrassment,fairytale,national,spending,tech,told,uk",
+    "feed_name": "The Guardian — CCS tag",
+    "feed_tier": 5
+  },
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM3VUVEg0d3pxeXBzTEJhZnczSXR0blVyRk1vYlJrN3pnamlQczdSRV8tZTkwSlRIaHpuY3d5QXliZGU4dW8zamJEeGNhOTJCdkl3M1lrc2tnYlRvdHY1bldFaS1RaVUxQ1RWYnpKUlQ1UXRKRnM2V1VEdlN2VERZa0dUeVpXWUxhSmprN3FmUEMza1dzNXZZSGF2eHpTMlpRRzFoOU15Qm5hdkxDWFE?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM3VUVEg0d3pxeXBzTEJhZnczSXR0blVyRk1vYlJrN3pnamlQczdSRV8tZTkwSlRIaHpuY3d5QXliZGU4dW8zamJEeGNhOTJCdkl3M1lrc2tnYlRvdHY1bldFaS1RaVUxQ1RWYnpKUlQ1UXRKRnM2V1VEdlN2VERZa0dUeVpXWUxhSmprN3FmUEMza1dzNXZZSGF2eHpTMlpRRzFoOU15Qm5hdkxDWFE?oc=5",
+    "headline": "Massive Dataset Accelerates Metal-Organic Framework Screening for Direct Air Capture - Bioengineer.org",
+    "source_domain": "bioengineer.org",
+    "publication_date": "2026-10-27T10:29:36+00:00",
+    "fuzzy_key": "accelerates,air,bioengineer,capture,dataset,direct,framework,massive,metal,org,organic,screening",
+    "feed_name": "Google News — CCS global",
+    "feed_tier": 1
+  },
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQk5TclhOX25jTnhyVnZEMWhTWjNJS2hPTE9BRXI3M2dxUHQxcW5BajFGUnhuS2Nuc0VFTEpkVV9nUjRta2NLdFJyd3hTMENzb3d3eFpPVVRuQzJweGdlUGl4VmFoMGw4YWdxR3JEZmhjenZmTkhpT2Fzcy1nSWZqNGlGVmRXQ2p4T0pNVXlBR2xEd1RsNk5BeVFOUUZiMkxfT0c0Sg?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQk5TclhOX25jTnhyVnZEMWhTWjNJS2hPTE9BRXI3M2dxUHQxcW5BajFGUnhuS2Nuc0VFTEpkVV9nUjRta2NLdFJyd3hTMENzb3d3eFpPVVRuQzJweGdlUGl4VmFoMGw4YWdxR3JEZmhjenZmTkhpT2Fzcy1nSWZqNGlGVmRXQ2p4T0pNVXlBR2xEd1RsNk5BeVFOUUZiMkxfT0c0Sg?oc=5",
+    "headline": "Implementing carbon capture and storage: Early completion of institutional framework and appropriate pilot programs. - Vietnam.vn",
+    "source_domain": "vietnam.vn",
+    "publication_date": "2026-10-27T12:37:05+00:00",
+    "fuzzy_key": "appropriate,capture,carbon,completion,early,framework,implementing,institutional,pilot,programs,storage,vietnam,vn",
+    "feed_name": "Google News — CCS global",
+    "feed_tier": 1
+  }
+]
