@@ -1,0 +1,244 @@
+[
+  {
+    "id": "2026-10-29#01",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Veolia wins CO2 purification contract for Protos carbon capture project",
+    "summary": "Veolia reported winning a contract to supply CO2 purification technology for the Protos energy-from-waste (EfW) carbon capture project at Ellesmere Port in north-west England, part of the UK's growing EfW-CCS supply chain.",
+    "source": "Circular Online / Envirotec",
+    "pub_date": "2026-10-27",
+    "url": "https://www.circularonline.co.uk/news/veolia-wins-co₂-purification-contract-for-protos-carbon-capture-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Veolia",
+      "Protos"
+    ],
+    "org_types": [
+      "other",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "UK energy-from-waste CCS supply-chain award (CO2 purification); marginal direct CO2CRC relevance beyond showing EfW capture reaching procurement.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": "Pub date 2026-10-27 from source-URL path (/2026/10/27/); sits at the near edge of today's Melbourne 28-29 Oct window. Three independent UK outlets (Circular Online, Envirotec, Chester Standard) carried the same story. Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  },
+  {
+    "id": "2026-10-29#02",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK Autumn Budget puts carbon capture and hydrogen investment in focus",
+    "summary": "The UK Autumn Budget, delivered on 28 October, placed carbon capture and hydrogen investment in focus, with trade press reporting carbon capture among the clean-energy areas addressed; specific allocations were not verifiable from source pages this run.",
+    "source": "gasworld / mining.com",
+    "pub_date": "2026-10-28",
+    "url": "https://www.gasworld.com/story/uk-budget-puts-carbon-capture-and-hydrogen-investment-in-focus/2262770.article/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "HM Treasury",
+      "DESNZ"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "UK fiscal signal on CCS/hydrogen support is a closely watched bellwether for government backing of CCS internationally, including Australia.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "UK Budget is a fixed public event dated 28 Oct 2026 (solidly in-window). Headline-level CCS relevance confirmed across gasworld, mining.com, miningglobal, miningdigital; exact spending lines NOT verified (page fetch blocked). commitment_status 'announced' and amount null pending verification of actual allocations. Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  },
+  {
+    "id": "2026-10-29#03",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "ClassNK issues guidance framework for onboard carbon capture",
+    "summary": "Japanese ship classification society ClassNK issued an implementation-framework handbook for onboard carbon capture systems (OCCS), reportedly covering monitoring/reporting/verification (MRV) and chain-of-custody for captured CO2 across a shipboard CCS project.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-27",
+    "url": "https://carbonherald.com/classnk-issues-guidance-framework-for-onboard-carbon-capture/",
+    "region": "APAC",
+    "countries": [
+      "Japan"
+    ],
+    "organisations": [
+      "ClassNK"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "capture",
+      "MMV-MRV",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Maritime/onboard CCS standardisation (MRV, chain-of-custody) is relevant to CO2 shipping/transport and transboundary CO2 logistics that underpin regional storage hubs.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Pub date 2026-10-27 (Carbon Herald, Tier-1) from alerts-floor timestamp; near edge of window. ClassNK OCCS guidance has prior editions (2023, 2025) - this item read as a new implementation-framework handbook, not a reissue, but not confirmable from page. Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  },
+  {
+    "id": "2026-10-29#04",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "South Africa's 150-gigatonne CO2 storage prize lies offshore, review finds",
+    "summary": "A newly published peer-reviewed review concludes that the overwhelming majority of South Africa's theoretical CO2 storage capacity (on the order of 150 Gt) lies in offshore basins, far from the inland Mpumalanga emission sources, underscoring the logistical challenge of matching sources to sinks.",
+    "source": "Bioengineer (citing peer-reviewed review)",
+    "pub_date": "2026-10-28",
+    "url": "https://bioengineer.org/south-africas-150-gigatonne-co2-storage-prize-lies-offshore-review-finds/",
+    "region": "Africa",
+    "countries": [
+      "South Africa"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Offshore saline/depleted-field storage-resource assessment is methodologically relevant to CO2CRC's storage characterisation work; a rare Africa data point.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Science-press write-up of a peer-reviewed review (review/retrospective in nature, but newly published). The 150 Gt is a theoretical offshore RESOURCE estimate, not a committed/assessed capacity - capacity_mtpa deliberately null (cumulative resource, never additive). Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  },
+  {
+    "id": "2026-10-29#05",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Campaigners urge chancellor to scrap 'fairytale' carbon capture spending ahead of UK Budget",
+    "summary": "Ahead of the 28 October Budget, The Guardian reported campaigners - including naturalist Chris Packham - urging the chancellor to scrap what they called 'fairytale' carbon capture spending, framing public CCS funding as poor value; a notable UK social-licence attack on CCS.",
+    "source": "The Guardian",
+    "pub_date": "2026-10-27",
+    "url": "https://www.theguardian.com/uk-news/2026/oct/27/chris-packham-chancellor-scrap-spending-fairytale-carbon-capture-budget",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "The Guardian",
+      "Chris Packham"
+    ],
+    "org_types": [
+      "other",
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "High-profile UK social-licence criticism of public CCS spending is a reputational bellwether for CCS funding debates globally, including Australia.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Pub date 2026-10-27 from Guardian URL slug; harvested 28 Oct UTC, directly part of the 28-Oct budget news cycle - treated as in-window at likely (late 27 Oct London) publish time; borderline. Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  },
+  {
+    "id": "2026-10-29#06",
+    "briefing_date": "2026-10-29",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Viet Nam urged to take a cautious approach to carbon capture technology",
+    "summary": "Vietnam News reported calls for Viet Nam to take a cautious approach to carbon capture technology, reflecting a measured/sceptical framing of CCS in a South-East Asian market weighing its decarbonisation options.",
+    "source": "Vietnam News",
+    "pub_date": "2026-10-27",
+    "url": "https://vietnamnews.vn/environment/1803006/viet-nam-urged-to-take-cautious-approach-to-carbon-capture-technology.html",
+    "region": "APAC",
+    "countries": [
+      "Vietnam"
+    ],
+    "organisations": [
+      "Vietnam News"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "SE Asia social-licence/policy-caution signal; relevant context for regional CCS market development across APAC.",
+    "sentiment": "neutral",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Pub date 2026-10-27 (Vietnam News) from alerts-floor timestamp; near edge of window. Article page not fetchable this run (egress 403 block on all news hosts) and Outlook newsletter feeds unavailable; date/details corroborated via Google-Alerts floor and WebSearch only, not confirmed from source page. No figure fabricated."
+  }
+]
