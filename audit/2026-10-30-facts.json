@@ -1,0 +1,215 @@
+[
+  {
+    "id": "2026-10-30#01",
+    "briefing_date": "2026-10-30",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Acorn CCS cluster left in funding limbo after UK Budget reprioritises its £200m grant",
+    "summary": "The £200m of CCS capital grant pulled in the Autumn Budget was earmarked for Acorn in north-east Scotland; the project has had no confirmed lead developer since Storegga stepped back (Dec 2025), and the Treasury says the commitment stands but may convert to loans or equity.",
+    "source": "Scottish Construction Now / energy-pedia / ITV News",
+    "pub_date": "2026-10-29",
+    "url": "https://www.scottishconstructionnow.com/articles/uk-budget-acorn-carbon-capture-project-left-without-funding",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "HM Treasury",
+      "Storegga",
+      "Acorn CCS"
+    ],
+    "org_types": [
+      "government",
+      "developer",
+      "developer"
+    ],
+    "instrument_type": "project-cancellation",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A flagship 'Track-2' cluster destabilised by fiscal reprioritisation — a cautionary case on grant-dependent CCS funding models relevant to Australian CCS hub financing.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "Same £200m reprioritisation as item #03 (policy); amount recorded on the policy item to avoid double-counting. Government says commitment stands (possible loans/equity), so status is at-risk rather than firmly cancelled."
+  },
+  {
+    "id": "2026-10-30#02",
+    "briefing_date": "2026-10-30",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Ozona and Marubeni reach FID on Pawnee carbon-sequestration project in Texas",
+    "summary": "Ozona CCS and Japan's Marubeni took a final investment decision on the Pawnee project, a 50:50 JV in Bee County, Texas (Eagle Ford), with Ozona building and operating storage and Marubeni leading carbon-credit commercialisation; capacity and capex were not disclosed in the reports seen.",
+    "source": "Offshore Technology / BIC Magazine",
+    "pub_date": "2026-10-29",
+    "url": "https://www.offshore-technology.com/news/ozona-ccs-marubeni-texas/",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Japan"
+    ],
+    "organisations": [
+      "Ozona CCS",
+      "Marubeni Corporation"
+    ],
+    "org_types": [
+      "developer",
+      "financier"
+    ],
+    "instrument_type": "project-FID",
+    "value_chain": [
+      "capture",
+      "storage",
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Trading-house-led offtake/commercialisation model (Marubeni) for US onshore storage — a commercial template of mild interest for CCS value-chain structuring.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "FID confirmed across trade press; no Mtpa or capex figure disclosed in sources seen (WebFetch blocked this run)."
+  },
+  {
+    "id": "2026-10-30#03",
+    "briefing_date": "2026-10-30",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "UK Autumn Budget pulls £200m from carbon-capture grants; Viking kept, Acorn hit",
+    "summary": "The 28 October Budget reprioritised £200m of CCS capital grants to defence (trade press framing it as part of a ~£700m cut across CCUS and hydrogen), maintained the Viking (Humber) grant, kept Track-1 Teesside/HyNet/North Wales as priorities, and signalled a possible move from grants to loans/equity.",
+    "source": "The Chemical Engineer / Carbon Brief / Energy Voice",
+    "pub_date": "2026-10-29",
+    "url": "https://www.thechemicalengineer.com/news/uk-budget-2026-government-deals-blow-to-ccus-and-hydrogen-as-funding-cut-by-700m/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "HM Treasury",
+      "UK Government"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": 200000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A major Western government cooling public CCS grant support — directly relevant to how Australian CCS programmes read political/fiscal risk to capture-hub subsidies.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "NEGATIVE funding event: £200m of CCS-specific grant WITHDRAWN/reprioritised (not new money). The ~£700m figure is CCUS+hydrogen combined (not CCS-only) and is not recorded as the amount. Government says it stands by the commitment and may convert to loans/equity."
+  },
+  {
+    "id": "2026-10-30#04",
+    "briefing_date": "2026-10-30",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "UK and Taiwan launch CCUS cooperation partnership",
+    "summary": "The UK and Taiwan launched a CCUS partnership to share policy, regulatory and supply-chain experience, pairing the UK's cluster track record with Taiwan's new carbon-storage regulation (Aug 2026) and state-utility demonstrations; scope and funding were not detailed.",
+    "source": "gasworld",
+    "pub_date": "2026-10-29",
+    "url": "https://gasworld.com/story/uk-taiwan-launch-ccus-partnership/2262886.article",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Taiwan"
+    ],
+    "organisations": [
+      "UK Government",
+      "Government of Taiwan"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Bilateral UK-APAC CCUS cooperation; Taiwan is an under-covered emerging storage market and a potential APAC CCS collaboration node of interest to CO2CRC.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-10-30#05",
+    "briefing_date": "2026-10-30",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "'Gravest betrayal': Scotland reacts angrily to Acorn CCS treatment in the Budget",
+    "summary": "Scottish business and political figures branded the reprioritisation of Acorn's £200m an 'abject betrayal' of north-east Scotland's carbon-capture ambitions, with the Deputy First Minister demanding clarity from Westminster — a CCS social-licence flashpoint over walked-back public funding.",
+    "source": "Energy Voice / Daily Business",
+    "pub_date": "2026-10-29",
+    "url": "https://www.energyvoice.com/oilandgas/north-sea/606135/budget-2026-gravest-betrayal-for-scotlands-jinxed-carbon-capture-ambitions/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Scottish Government"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence lesson: visible public/political backlash follows a government walking back CCS funding — reputational risk relevant wherever CCS relies on public subsidy.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Media/social-licence reaction to the same Budget event as items #01 and #03."
+  }
+]
