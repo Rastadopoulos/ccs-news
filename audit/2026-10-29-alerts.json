@@ -54,6 +54,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://dailybusinessgroup.co.uk/2026/10/abandoned-acorn-ccs-is-betrayal-of-north-east",
+    "raw_url": "https://dailybusinessgroup.co.uk/2026/10/abandoned-acorn-ccs-is-betrayal-of-north-east/",
+    "headline": "Abandoned Acorn CCS is 'betrayal' of north east - Daily Business",
+    "source_domain": "dailybusinessgroup.co.uk",
+    "publication_date": "2026-10-29T00:09:12+00:00",
+    "fuzzy_key": "abandoned,acorn,betrayal,business,ccs,daily,east,north",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://einpresswire.com/article/951776681/carbon-capture-market-trends-and-forecast-analysis-reveal-strong-long-term-potential",
     "raw_url": "https://www.einpresswire.com/article/951776681/carbon-capture-market-trends-and-forecast-analysis-reveal-strong-long-term-potential",
     "headline": "Carbon Capture Market Trends And Forecast Analysis Reveal Strong Long-Term Potential",
@@ -105,6 +114,24 @@
     "source_domain": "gasworld.com",
     "publication_date": "2026-10-28T11:59:10+00:00",
     "fuzzy_key": "budget,capture,carbon,europe,focus,gasworld,hydrogen,investment,puts,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/uk-taiwan-launch-ccus-partnership/2262886.article",
+    "raw_url": "https://www.gasworld.com/story/uk-taiwan-launch-ccus-partnership/2262886.article/",
+    "headline": "UK-Taiwan launch CCUS partnership | Carbon Dioxide - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-10-29T04:26:07+00:00",
+    "fuzzy_key": "carbon,ccus,dioxide,gasworld,launch,partnership,taiwan,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gasworld.com/story/veolia-wins-co2-purification-contract-for-uk-carbon-capture-project/2262830.article",
+    "raw_url": "https://www.gasworld.com/story/veolia-wins-co2-purification-contract-for-uk-carbon-capture-project/2262830.article/",
+    "headline": "Veolia wins CO2 purification contract for UK carbon capture project - gasworld",
+    "source_domain": "gasworld.com",
+    "publication_date": "2026-10-29T00:09:12+00:00",
+    "fuzzy_key": "capture,carbon,co2,contract,gasworld,project,purification,uk,veolia,wins",
     "found_via": "google_alerts"
   },
   {
@@ -195,6 +222,15 @@
     "source_domain": "tradersunion.com",
     "publication_date": "2026-10-27T20:36:05+00:00",
     "fuzzy_key": "budget,campaigners,capture,carbon,cuts,faces,pressure,spending,uk,urge",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://valve-world-americas.com/ozona-and-marubeni-reach-fid-on-texas-ccs-project",
+    "raw_url": "https://valve-world-americas.com/ozona-and-marubeni-reach-fid-on-texas-ccs-project/",
+    "headline": "Ozona and Marubeni reach FID on Texas CCS project - Valve World Americas",
+    "source_domain": "valve-world-americas.com",
+    "publication_date": "2026-10-29T02:48:38+00:00",
+    "fuzzy_key": "americas,ccs,fid,marubeni,ozona,project,reach,texas,valve,world",
     "found_via": "google_alerts"
   },
   {
