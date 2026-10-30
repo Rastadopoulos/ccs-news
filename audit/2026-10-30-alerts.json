@@ -1,5 +1,23 @@
 [
   {
+    "canonical_url": "https://1012industryreport.com/carbon-capture/131033",
+    "raw_url": "https://www.1012industryreport.com/carbon-capture/131033/",
+    "headline": "Community pushback and regulatory uncertainty are giving pause to players in the CCS space",
+    "source_domain": "1012industryreport.com",
+    "publication_date": "2026-10-30T01:54:44+00:00",
+    "fuzzy_key": "ccs,community,giving,pause,players,pushback,regulatory,space,uncertainty",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/epa-proposes-primacy-approval-for-utah-class-vi-carbon-storage-permitting",
+    "raw_url": "https://carbonherald.com/epa-proposes-primacy-approval-for-utah-class-vi-carbon-storage-permitting/",
+    "headline": "EPA Proposes Primacy Approval For Utah Class VI Carbon Storage Permitting",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-10-30T03:35:02+00:00",
+    "fuzzy_key": "approval,carbon,class,epa,permitting,primacy,proposes,storage,utah,vi",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbonherald.com/opinion-europes-ccs-market-is-maturing-whats-working",
     "raw_url": "https://carbonherald.com/opinion-europes-ccs-market-is-maturing-whats-working/",
     "headline": "Opinion: Europe's CCS Market Is Maturing – What's Working? - Carbon Herald",
@@ -42,6 +60,15 @@
     "source_domain": "dailybusinessgroup.co.uk",
     "publication_date": "2026-10-29T00:09:12+00:00",
     "fuzzy_key": "abandoned,acorn,betrayal,business,ccs,daily,east,north",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://deeside.com/200m-deeside-carbon-capture-plant-recommended-again-after-english-villages-consulted",
+    "raw_url": "https://www.deeside.com/200m-deeside-carbon-capture-plant-recommended-again-after-english-villages-consulted/",
+    "headline": "£200m Deeside carbon capture plant recommended again after English villages consulted |",
+    "source_domain": "deeside.com",
+    "publication_date": "2026-10-30T00:03:25+00:00",
+    "fuzzy_key": "200m,after,again,capture,carbon,consulted,deeside,english,plant,recommended,villages",
     "found_via": "google_alerts"
   },
   {
@@ -99,12 +126,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://hotcopper.com.au/news/editorial-content/156124/inpex-gives-green-light-to-bonaparte-ccs-off-wa-coast",
+    "raw_url": "https://hotcopper.com.au/news/editorial-content/156124/inpex-gives-green-light-to-bonaparte-ccs-off-wa-coast/",
+    "headline": "INPEX gives “green light” to Bonaparte CCS off WA coast | 2026-10-29 | HotCopper",
+    "source_domain": "hotcopper.com.au",
+    "publication_date": "2026-10-30T00:06:29+00:00",
+    "fuzzy_key": "10,2026,29,bonaparte,ccs,coast,gives,green,hotcopper,inpex,light,off,wa",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://linkedin.com/posts/antoine-mestrallet-952163153_stratos-occidental-1pointfive-activity-7520802802659606528-Orvr",
     "raw_url": "https://www.linkedin.com/posts/antoine-mestrallet-952163153_stratos-occidental-1pointfive-activity-7520802802659606528-Orvr",
     "headline": "#stratos #occidental #1pointfive #dac #carboncapture #ai #energystrategy | Antoine Mestrallet",
     "source_domain": "linkedin.com",
     "publication_date": "2026-10-29T05:45:40+00:00",
     "fuzzy_key": "1pointfive,ai,antoine,carboncapture,dac,energystrategy,mestrallet,occidental,stratos",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/tom-baxter-a141a1b_acorn-ccs-the-funding-dispute-receives-activity-7521488676372004865-yOmg",
+    "raw_url": "https://www.linkedin.com/posts/tom-baxter-a141a1b_acorn-ccs-the-funding-dispute-receives-activity-7521488676372004865-yOmg",
+    "headline": "Tom Baxter's Post - Acorn CCS - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-10-30T00:03:25+00:00",
+    "fuzzy_key": "acorn,baxter,ccs,linkedin,post,tom",
     "found_via": "google_alerts"
   },
   {
@@ -132,6 +177,24 @@
     "source_domain": "oilandgasmiddleeast.com",
     "publication_date": "2026-10-29T07:14:53+00:00",
     "fuzzy_key": "21,bonaparte,buy,ccs,east,feed,gas,inpex,middle,oil",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://royston-crow.co.uk/news/national/26680284.uk-government-will-stand-funding-carbon-capture-project---minister",
+    "raw_url": "https://www.royston-crow.co.uk/news/national/26680284.uk-government-will-stand-funding-carbon-capture-project---minister/",
+    "headline": "UK Government will stand by funding for carbon capture project – minister | Royston Crow",
+    "source_domain": "royston-crow.co.uk",
+    "publication_date": "2026-10-30T00:50:44+00:00",
+    "fuzzy_key": "capture,carbon,crow,funding,government,minister,project,royston,stand,uk,will",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://seekingalpha.com/news/4660707-lsb-industries-targets-25m-30m-annual-ccs-earnings-while-outlining-15m-20m-more-run-rate",
+    "raw_url": "https://seekingalpha.com/news/4660707-lsb-industries-targets-25m-30m-annual-ccs-earnings-while-outlining-15m-20m-more-run-rate",
+    "headline": "Lsb industries targets $25M-$30M annual CCS earnings while outlining $15M-$20M more ...",
+    "source_domain": "seekingalpha.com",
+    "publication_date": "2026-10-30T01:54:44+00:00",
+    "fuzzy_key": "15m,20m,25m,30m,annual,ccs,earnings,industries,lsb,more,outlining,targets,while",
     "found_via": "google_alerts"
   },
   {
