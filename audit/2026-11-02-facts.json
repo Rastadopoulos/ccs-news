@@ -1,0 +1,326 @@
+[
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": null,
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null,
+    "id": "2026-11-02#01",
+    "section": "projects",
+    "headline": "Appraisal wells completed for Teesside CCS (Endurance store)",
+    "summary": "Trade press reported completion of the carbon-storage appraisal wells for the Teesside CCS programme, advancing characterisation of the Endurance saline-aquifer store that will anchor the Northern Endurance Partnership / Net Zero Teesside hub.",
+    "source": "ENDS Waste & Bioenergy",
+    "pub_date": "2026-10-30",
+    "url": "https://www.endswasteandbioenergy.com/article/1973828/appraisal-wells-completed-teesside-ccs",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Northern Endurance Partnership",
+      "Net Zero Teesside",
+      "bp"
+    ],
+    "org_types": [
+      "developer",
+      "developer",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "commitment_status": "spent",
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Storage appraisal/characterisation progress at a flagship UK T&S hub — directly relevant to CO2CRC's storage-site and MMV expertise."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": 200000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": 0.25,
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "£200m is project build cost (project-capex), not a funding award; capacity approximate (~0.24-0.25 Mtpa).",
+    "id": "2026-11-02#02",
+    "section": "projects",
+    "headline": "£200m Deeside (Parc Adfer) carbon capture plant recommended for approval",
+    "summary": "Enfinium's proposed ~£200m post-combustion carbon-capture retrofit at the Parc Adfer energy-from-waste facility on Deeside was recommended for approval following further community consultation; the scheme would capture close to a quarter of a million tonnes of CO2 a year.",
+    "source": "Deeside.com",
+    "pub_date": "2026-10-30",
+    "url": "https://www.deeside.com/200m-deeside-carbon-capture-plant-recommended-again-after-english-villages-consulted/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Enfinium"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "commitment_status": "announced",
+    "co2crc_relevance": "low",
+    "co2crc_note": "EfW capture siting/consultation case — community-engagement and social-licence lessons for Australian projects."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": null,
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "pilot-scale trial (phase-one ~300 kg CO2/day); capacity not materially quantified.",
+    "id": "2026-11-02#03",
+    "section": "technology",
+    "headline": "ArcelorMittal, MHI and BHP complete carbon capture trial at Gent steel plant",
+    "summary": "ArcelorMittal, Mitsubishi Heavy Industries and BHP reported completing their pilot carbon-capture trial on blast-furnace off-gas at ArcelorMittal's Gent steelworks in Belgium, a step in assessing post-combustion capture for hard-to-abate steel production.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-01",
+    "url": "https://carbonherald.com/arcelormittal-mhi-and-bhp-complete-carbon-capture-trial-at-gent-steel-plant/",
+    "region": "Europe-UK",
+    "countries": [
+      "Belgium",
+      "Japan",
+      "Australia"
+    ],
+    "organisations": [
+      "ArcelorMittal",
+      "Mitsubishi Heavy Industries",
+      "BHP"
+    ],
+    "org_types": [
+      "other",
+      "other",
+      "other"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "commitment_status": "spent",
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Steel-sector post-combustion capture pilot (MHI solvent) — technology watch for capture on hard-to-abate industry."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": 0.2,
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "turnkey EPC award; no cost figure stated; start-up ~end of decade.",
+    "id": "2026-11-02#04",
+    "section": "markets",
+    "headline": "Linde Engineering to build turnkey carbon capture plant for 200,000 t/yr EfW facility",
+    "summary": "Linde Engineering was awarded a turnkey contract to build a ~200,000 t/yr carbon-capture plant at the Filbornaverket energy-from-waste facility in Helsingborg, Sweden, pairing BASF's OASE blue solvent with Linde's CO2 purification and liquefaction; start-up is targeted around the end of the decade.",
+    "source": "ENDS Waste & Bioenergy",
+    "pub_date": "2026-10-30",
+    "url": "https://www.endswasteandbioenergy.com/article/1973962/linde-engineering-build-turnkey-carbon-capture-plant-200000t-yr-efw-facility",
+    "region": "Europe-UK",
+    "countries": [
+      "Sweden"
+    ],
+    "organisations": [
+      "Linde Engineering",
+      "Öresundskraft",
+      "BASF"
+    ],
+    "org_types": [
+      "other",
+      "utility",
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture"
+    ],
+    "commitment_status": "committed",
+    "co2crc_relevance": "low",
+    "co2crc_note": "EfW capture EPC (BASF OASE blue + Linde) — supply-chain and technology benchmark for post-combustion capture."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": 0.45,
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "$25-30m is expected annual earnings (economic contribution), not a new money commitment -> amount null.",
+    "id": "2026-11-02#05",
+    "section": "markets",
+    "headline": "LSB Industries targets $25-30m annual CCS earnings from El Dorado project",
+    "summary": "On its Q3 2026 results, LSB Industries reiterated it expects roughly $25-30m in annual earnings once its El Dorado, Arkansas carbon-capture-and-sequestration project is fully operational, underpinned by the 45Q tax credit (currently $85/t); the project is designed to capture ~400,000-500,000 t/yr of CO2.",
+    "source": "Seeking Alpha",
+    "pub_date": "2026-10-30",
+    "url": "https://seekingalpha.com/news/4660707-lsb-industries-targets-25m-30m-annual-ccs-earnings-while-outlining-15m-20m-more-run-rate",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "LSB Industries"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "tax-credit",
+    "value_chain": [
+      "capture",
+      "storage"
+    ],
+    "commitment_status": "committed",
+    "co2crc_relevance": "low",
+    "co2crc_note": "Illustrates the US 45Q-driven ($85/t) business case for CCS on blue-ammonia production."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": null,
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null,
+    "id": "2026-11-02#06",
+    "section": "media",
+    "headline": "How a U.N. report legitimized carbon capture and skewed decades of climate policy",
+    "summary": "A ProPublica investigation argues that an influential UN/IPCC assessment helped legitimise carbon capture and shaped decades of climate policy, questioning the technology's scientific and policy foundations — a high-profile, sector-wide reputational critique.",
+    "source": "ProPublica",
+    "pub_date": "2026-10-30",
+    "url": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "ProPublica",
+      "IPCC"
+    ],
+    "org_types": [
+      "other",
+      "multilateral"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "commitment_status": "na",
+    "co2crc_relevance": "high",
+    "co2crc_note": "Major investigative critique of CCS's scientific legitimacy — a significant social-licence/reputational signal the whole sector (and CO2CRC) must be able to answer."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": null,
+    "sentiment": "positive",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null,
+    "id": "2026-11-02#07",
+    "section": "media",
+    "headline": "Opinion: Europe's CCS market is maturing — what's working?",
+    "summary": "A Carbon Herald opinion piece makes the constructive case that Europe's CCS market is maturing, highlighting the policy and project elements that are working — a counterpoint to the week's sceptical coverage.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-10-30",
+    "url": "https://carbonherald.com/opinion-europes-ccs-market-is-maturing-whats-working/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "commitment_status": "na",
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Constructive framing of European CCS progress — useful for CO2CRC stakeholder communications."
+  },
+  {
+    "briefing_date": "2026-11-02",
+    "item_status": "fresh",
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "target_year": null,
+    "capacity_mtpa": null,
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null,
+    "id": "2026-11-02#08",
+    "section": "media",
+    "headline": "Community pushback and regulatory uncertainty giving pause to CCS players",
+    "summary": "A US trade analysis reports that community opposition and regulatory uncertainty are causing CCS developers to pause or slow projects, underscoring the permitting and social-licence headwinds facing the sector.",
+    "source": "1012 Industry Report",
+    "pub_date": "2026-10-30",
+    "url": "https://www.1012industryreport.com/carbon-capture/131033/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "commitment_status": "na",
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Permitting and community-opposition headwinds slowing US CCS — community-engagement lessons for Australian storage projects."
+  }
+]
