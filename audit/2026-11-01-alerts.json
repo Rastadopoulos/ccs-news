@@ -18,6 +18,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://asiatimes.com/2026/10/un-scientists-secret-carbon-capture-vote-set-back-climate-policy",
+    "raw_url": "https://asiatimes.com/2026/10/un-scientists-secret-carbon-capture-vote-set-back-climate-policy/",
+    "headline": "UN scientists' secret carbon capture vote set back climate policy - Asia Times",
+    "source_domain": "asiatimes.com",
+    "publication_date": "2026-11-01T07:26:00+00:00",
+    "fuzzy_key": "asia,back,capture,carbon,climate,policy,scientists,secret,set,times,un,vote",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://carbon-pulse.com/565525",
     "raw_url": "https://carbon-pulse.com/565525/",
     "headline": "DATA DIVE: US, Brazil account for significant majority of global CO2 storage - Carbon Pulse",
@@ -303,6 +312,15 @@
     "source_domain": "sustainabilityonline.net",
     "publication_date": "2026-10-29T22:50:05+00:00",
     "fuzzy_key": "420m,co,global,more,online,reaches,storage,sustainability,than,tonnes,underground",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://events.usea.org/events/doe-fecm-and-cetp-funding-opportunities-within-ccus-hydrogen-and-renewable-fuels",
+    "raw_url": "https://events.usea.org/events/doe-fecm-and-cetp-funding-opportunities-within-ccus-hydrogen-and-renewable-fuels",
+    "headline": "DOE-FECM and CETP Funding Opportunities within CCUS, Hydrogen, and Renewable Fuels",
+    "source_domain": "usea.org",
+    "publication_date": "2026-11-01T10:57:35+00:00",
+    "fuzzy_key": "ccus,cetp,doe,fecm,fuels,funding,hydrogen,opportunities,renewable,within",
     "found_via": "google_alerts"
   }
 ]
