@@ -1,0 +1,133 @@
+[
+  {
+    "id": "2026-11-04#01",
+    "briefing_date": "2026-11-04",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Carbon TerraVault submits ~57 Mt CO2 storage application to EPA and signs Bloom Energy CCS MOU",
+    "summary": "California Resources' Carbon TerraVault submitted a new Class VI application to the US EPA for a reservoir with roughly 57 million tonnes of CO2 storage capacity, and signed a non-binding MOU with Bloom Energy to evaluate up to 1 GW of solid-oxide fuel-cell power paired with CCS; its first CCS project (Elk Hills 26R) began injecting in May 2026.",
+    "source": "California Resources / GlobeNewswire",
+    "pub_date": "2026-11-02",
+    "url": "https://www.globenewswire.com/news-release/2026/11/02/3393785/0/en/carbon-terravault-provides-third-quarter-2026-update.html",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "California Resources",
+      "Carbon TerraVault",
+      "Bloom Energy",
+      "US Environmental Protection Agency"
+    ],
+    "org_types": [
+      "developer",
+      "developer",
+      "developer",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "US Class VI storage-permitting progress and a fuel-cell+CCS pairing are reference points for Australian storage characterisation and power-plus-capture concepts.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "57 Mt is a cumulative storage-resource figure in a permit application, not an annual (Mtpa) rate; capacity_mtpa left null. Bloom MOU is non-binding."
+  },
+  {
+    "id": "2026-11-04#02",
+    "briefing_date": "2026-11-04",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "SNP urges UK to redirect ~£5bn of North Sea oil revenue to the Acorn CCS project",
+    "summary": "The Scottish National Party called on the UK government to channel around £5bn of North Sea oil-and-gas revenue into the stalled Acorn CCS cluster in north-east Scotland, escalating the political fight over Acorn's funding after the 28 October Autumn Budget reprioritised its £200m capital grant.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-03",
+    "url": "https://carbonherald.com/snp-urges-uk-to-direct-5b-oil-revenue-to-acorn-ccs-project/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Scottish National Party",
+      "UK Government",
+      "Acorn"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "developer"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": 5000000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Illustrates the volatility of UK public funding for CCS post-Budget — a cautionary signal for policy-dependent storage clusters everywhere, Australia included.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "The ~£5bn is a political demand (SNP call), not committed or allocated money; commitment_status set to announced."
+  },
+  {
+    "id": "2026-11-04#03",
+    "briefing_date": "2026-11-04",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Röchling Industrial to use Celanese carbon-capture-based POM in sustainable stock shapes",
+    "summary": "Röchling Industrial and Celanese partnered to launch sustainable semi-finished stock shapes made from POM (acetal) derived from captured CO2, drawing on Celanese's carbon-capture-and-utilisation methanol-to-POM chain at its Clear Lake and Bishop, Texas operations.",
+    "source": "Investing.com / Indian Chemical News",
+    "pub_date": "2026-11-03",
+    "url": "https://www.indianchemicalnews.com/ccus/celanese-and-rochling-partner-to-launch-sustainable-stock-shapes-derived-from-captured-co2-32497",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Germany"
+    ],
+    "organisations": [
+      "Röchling Industrial",
+      "Celanese"
+    ],
+    "org_types": [
+      "other",
+      "other"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "A CO2-utilisation (CCU) product partnership with limited direct relevance to CO2CRC's geological-storage focus.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": null,
+    "extractor_note": "CCU (utilisation) rather than geological storage; date from Google-Alerts sampler, not confirmed by direct fetch (WebFetch blocked this session)."
+  }
+]
