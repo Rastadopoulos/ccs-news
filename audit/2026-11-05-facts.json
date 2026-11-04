@@ -1,0 +1,88 @@
+[
+  {
+    "id": "2026-11-05#01",
+    "briefing_date": "2026-11-05",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Gulf Cryo to start production at new Abu Dhabi carbon-capture plant within weeks",
+    "summary": "UAE industrial-gases group Gulf Cryo said its new carbon-capture/CO2 facility in Abu Dhabi will begin production within weeks, part of a push to nearly double regional CO2 output (toward ~1,300 tonnes/day across the GCC by end-2026) and cut reliance on imported recovered CO2. A merchant-market CCU/capture start-up, not geological storage.",
+    "source": "Zawya / Big News Network",
+    "pub_date": "2026-11-04",
+    "url": "https://www.zawya.com/en/business/energy/uaes-gulf-cryo-to-start-production-at-abu-dhabi-carbon-capture-plant-within-weeks",
+    "region": "Middle East",
+    "countries": [
+      "United Arab Emirates"
+    ],
+    "organisations": [
+      "Gulf Cryo"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2026,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Gulf-region merchant CO2/CCU capacity growth is tangential to CO2CRC's geological-storage focus but a marker of MENA capture activity.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Imminent plant start-up (not yet operational); date and location from Google-Alerts sampler metadata, WebFetch blocked so unverified. Abu Dhabi plant aligns with Gulf Cryo's stated second UAE CCU facility targeted for end-2026."
+  },
+  {
+    "id": "2026-11-05#02",
+    "briefing_date": "2026-11-05",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "California court rules Kern County approval of Carbon TerraVault breached CEQA, forcing a temporary shutdown",
+    "summary": "A California Superior Court judge ruled that Kern County's approval of Carbon TerraVault I - the first operational CCS project in the US (first CO2 injection at Elk Hills 26R in May 2026) - violated the California Environmental Quality Act, requiring the project to temporarily halt pending a corrected environmental review. Operator California Resources can appeal.",
+    "source": "Courthouse News",
+    "pub_date": "2026-11-03",
+    "url": "https://www.courthousenews.com/environmentalists-successfully-block-californias-first-carbon-capture-project/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "California Resources",
+      "Carbon TerraVault",
+      "Kern County",
+      "Committee for a Better Shafter"
+    ],
+    "org_types": [
+      "developer",
+      "developer",
+      "government",
+      "other"
+    ],
+    "instrument_type": "litigation",
+    "value_chain": [
+      "storage",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A CEQA-driven forced shutdown of the first operational US CCS project is a salient social-licence and permitting-risk precedent for Australian storage approvals.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Court ruling / negative event direction (project forced to temporarily halt). Single-source (Courthouse News); pub_date inferred from 'ruled Tuesday' (3 Nov US = 4 Nov Melbourne, in-window); WebFetch blocked so unverified. Distinct NEW development vs the 4 Nov Carbon TerraVault Q3 permit/MOU item."
+  }
+]
