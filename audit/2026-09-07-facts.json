@@ -1,0 +1,207 @@
+[
+  {
+    "id": "2026-09-07#01",
+    "briefing_date": "2026-09-07",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Sinopec and international partners launch initiative to advance global CCUS cooperation",
+    "summary": "At the 2026 International CCUS Technology Conference in Astana (1–2 Sept), Sinopec joined the International CCUS Technology Innovation Cooperation Organization (ICTO), Kazakhstan's Ministry of Energy and Nazarbayev University to launch an Initiative for Cooperation on Low-Carbon Energy Development, calling for closer collaboration on CCUS technologies and standards; the launch drew representatives from China, Kazakhstan, the UK, the US and Canada.",
+    "source": "Sinopec (PR Newswire) / Manila Times",
+    "pub_date": "2026-09-04",
+    "url": "https://www.manilatimes.net/2026/09/04/tmt-newswire/pr-newswire/sinopec-and-international-partners-launch-initiative-to-advance-global-ccus-cooperation/2418828",
+    "region": "China",
+    "countries": [
+      "China",
+      "Kazakhstan",
+      "United Kingdom",
+      "United States",
+      "Canada"
+    ],
+    "organisations": [
+      "Sinopec",
+      "International CCUS Technology Innovation Cooperation Organization",
+      "Kazakhstan Ministry of Energy",
+      "Nazarbayev University"
+    ],
+    "org_types": [
+      "NOC",
+      "multilateral",
+      "government",
+      "research"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A China-Central Asia CCUS standards-and-cooperation bloc forming around Astana is a competitive-landscape signal for Australia's Asia-Pacific CCS positioning and for CCS standards harmonisation.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Consortium/initiative launch; no money figure disclosed."
+  },
+  {
+    "id": "2026-09-07#02",
+    "briefing_date": "2026-09-07",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Equinor asks regulators for a process extension on a North Sea CO2 storage project",
+    "summary": "Equinor has requested an extension to the regulatory/decision timeline for one of its North Sea CO2 storage projects, according to Energy Watch. (Detail limited: the source headline confirms the extension request; the site could not be fetched to verify further specifics under the current network policy.)",
+    "source": "Energy Watch",
+    "pub_date": "2026-09-05",
+    "url": "https://www.energywatch.com/EnergyNews/Oil___Gas/equinor-asks-for-process-extension-on-co2-storage-project-in-the-north-sea",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Equinor"
+    ],
+    "org_types": [
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Norwegian offshore-storage regulatory timelines are a leading benchmark for Australia's own offshore storage projects (Bonaparte, Browse, CarbonNet); slippage signals the maturation pace of European storage.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Summary is headline-grounded; article body not fetchable under network egress policy."
+  },
+  {
+    "id": "2026-09-07#03",
+    "briefing_date": "2026-09-07",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "North of England dominates CCSA International CCUS Awards 2026 shortlist",
+    "summary": "The Carbon Capture & Storage Association unveiled its International CCUS Awards 2026 shortlist (announced 3 Sept), with UK North-of-England projects prominent.",
+    "source": "Energy Voice / CCSA",
+    "pub_date": "2026-09-03",
+    "url": "https://www.energyvoice.com/renewables-energy-transition/ccs/603411/north-of-england-dominates-ccsa-carbon-capture-awards-shortlist/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Carbon Capture and Storage Association"
+    ],
+    "org_types": [
+      "industry-body"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Industry-recognition signal on UK CCS momentum; low direct CO2CRC relevance.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-07#04",
+    "briefing_date": "2026-09-07",
+    "item_status": "radar",
+    "section": "markets",
+    "headline": "Deep Sky One secures AAA-A pre-issuance rating from Sylvera for its DAC project",
+    "summary": "Sylvera issued an AAA-A pre-issuance rating (announced 3 Sept) for Deep Sky One in Canada — the first such rating for a direct-air-capture project — assessing carbon accounting, additionality, permanence and delivery risk before credits are issued.",
+    "source": "ESG News / Sylvera",
+    "pub_date": "2026-09-03",
+    "url": "https://esgnews.com/deep-sky-one-secures-aaa-a-rating-for-dac-project/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Deep Sky",
+      "Sylvera"
+    ],
+    "org_types": [
+      "developer",
+      "registry"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "DAC"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Independent pre-issuance ratings for DAC credits are a maturing-market signal for CDR integrity; indirect relevance to Australian CDR/credit-quality debates.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-09-07#05",
+    "briefing_date": "2026-09-07",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "Lloyd's Register: full-scale onboard carbon capture reaching 30–40%, port offloading the bottleneck",
+    "summary": "A Lloyd's Register assessment (early Sept) reports full-scale onboard carbon-capture installations removing ~30–40% of ship CO2, with wider deployment constrained mainly by the scarcity of ports able to receive captured CO2.",
+    "source": "gasworld / Lloyd's Register",
+    "pub_date": "2026-09-04",
+    "url": "https://www.gasworld.com/story/full-scale-onboard-carbon-capture-hits-40-but-port-bottleneck-remains/2258736.article/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Lloyd's Register"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Onboard/marine capture broadens future CO2 volumes needing port import and storage — relevant context for Australia's storage-hub import ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  }
+]
