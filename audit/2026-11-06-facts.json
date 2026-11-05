@@ -1,0 +1,89 @@
+[
+  {
+    "id": "2026-11-06#01",
+    "briefing_date": "2026-11-06",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Parc Adfer carbon-capture retrofit wins planning approval on Deeside",
+    "summary": "Flintshire County Council approved Enfinium's ~£200m post-combustion carbon-capture retrofit at the Parc Adfer energy-from-waste facility in North Wales, capturing close to a quarter of a million tonnes of CO2 a year for the HyNet network, despite objectors' doubts over the 95% capture-rate claim. Consent decision following the officers' recommendation-to-approve briefed on 2 Nov.",
+    "source": "Deeside.com",
+    "pub_date": "2026-11-05",
+    "url": "https://www.deeside.com/parc-adfer-carbon-capture-approved-despite-95-capture-doubts/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Enfinium",
+      "Flintshire County Council",
+      "HyNet"
+    ],
+    "org_types": [
+      "developer",
+      "government",
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport"
+    ],
+    "amount": 200000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 0.25,
+    "co2crc_relevance": "low",
+    "co2crc_note": "UK EfW-CCS consenting progress feeding the HyNet cluster; peripheral to CO2CRC's geological-storage focus but a marker of capture-project permitting momentum.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "project-capex",
+    "extractor_note": "£200m is the previously-announced project capex, not new money committed at approval. Planning consent is the new event. Date/detail from Google-Alerts sampler metadata; WebFetch blocked so unverified. Material new development vs the 30 Oct 'recommended for approval' item briefed 2 Nov."
+  },
+  {
+    "id": "2026-11-06#02",
+    "briefing_date": "2026-11-06",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "JERA takes equity stake in Oman's 44.01 to explore CO2-mineralisation storage",
+    "summary": "Japan's largest power generator JERA announced an investment in 44.01, the Oman-founded company that permanently stores CO2 by mineralising it in peridotite rock (with pilots in Oman and the UAE, including with Holcim in Fujairah), extending JERA's CCS value-chain strategy beyond conventional geological storage into mineralisation.",
+    "source": "JERA",
+    "pub_date": "2026-11-05",
+    "url": "https://www.jera.co.jp/en/news/information/20261104_2573",
+    "region": "APAC",
+    "countries": [
+      "Japan",
+      "Oman"
+    ],
+    "organisations": [
+      "JERA",
+      "44.01"
+    ],
+    "org_types": [
+      "utility",
+      "startup"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "mineralisation",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Japan is a key Australia CCS value-chain partner; a Japanese major diversifying into mineralisation storage is strategically relevant to Australia's storage-destination role and to mineralisation R&D interest.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "Equity investment amount not disclosed. JERA release URL encodes 4 Nov JST and the Google-Alerts sampler timestamp (21:15:36Z, shared with another entry) appears to be a batch-capture time, so the Melbourne calendar date sits on the window boundary; WebFetch blocked so unverified. 44.01 confirmed as an Oman/UAE CO2-mineralisation firm via corroborating search (Holcim Fujairah pilot)."
+  }
+]
