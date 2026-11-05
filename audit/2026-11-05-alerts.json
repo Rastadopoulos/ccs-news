@@ -1,29 +1,65 @@
 [
   {
-    "canonical_url": "https://investing.com/news/analyst-ratings/bloom-energy-stock-gains-on-carbon-capture-partnership-with-california-resources-93CH-4994093",
-    "raw_url": "https://www.investing.com/news/analyst-ratings/bloom-energy-stock-gains-on-carbon-capture-partnership-with-california-resources-93CH-4994093",
-    "headline": "Bloom Energy stock gains on carbon capture partnership with California Resources",
-    "source_domain": "investing.com",
-    "publication_date": "2026-11-03T23:19:50+00:00",
-    "fuzzy_key": "bloom,california,capture,carbon,energy,gains,partnership,resources,stock",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://scotsman.com/news/politics/acorn-carbon-capture-snp-net-zero-climate-targets-9325839",
-    "raw_url": "https://www.scotsman.com/news/politics/acorn-carbon-capture-snp-net-zero-climate-targets-9325839",
-    "headline": "SNP's climate targets thrown into doubt over Acorn carbon capture 'fairy tale'",
-    "source_domain": "scotsman.com",
-    "publication_date": "2026-11-03T23:19:50+00:00",
-    "fuzzy_key": "acorn,capture,carbon,climate,doubt,fairy,into,over,snp,tale,targets,thrown",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://bignewsnetwork.com/news/279409785/gulf-cryo-abu-dhabi-carbon-capture-plant-to-start-within-weeks",
     "raw_url": "https://www.bignewsnetwork.com/news/279409785/gulf-cryo-abu-dhabi-carbon-capture-plant-to-start-within-weeks",
     "headline": "Gulf Cryo Abu Dhabi carbon capture plant to start within weeks - Big News Network.com",
     "source_domain": "bignewsnetwork.com",
     "publication_date": "2026-11-04T01:18:43+00:00",
     "fuzzy_key": "abu,big,capture,carbon,com,cryo,dhabi,gulf,network,news,plant,start,weeks,within",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://desmoinesregister.com/press-release/story/147773/blue-hydrogen-market-to-grow-at-57-64-cagr-through-2031-driven-by-carbon-capture-mordor-intelligence",
+    "raw_url": "https://www.desmoinesregister.com/press-release/story/147773/blue-hydrogen-market-to-grow-at-57-64-cagr-through-2031-driven-by-carbon-capture-mordor-intelligence/",
+    "headline": "Blue Hydrogen Market to Grow at 57.64% CAGR Through 2031 Driven by Carbon Capture",
+    "source_domain": "desmoinesregister.com",
+    "publication_date": "2026-11-04T05:30:06+00:00",
+    "fuzzy_key": "2031,57,64,blue,cagr,capture,carbon,driven,grow,hydrogen,market,through",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/energyvoicenews/posts/5-billion-demandcall-for-every-single-penny-from-north-sea-to-fund-robbed-acorn-/1640040334582720",
+    "raw_url": "https://www.facebook.com/energyvoicenews/posts/5-billion-demandcall-for-every-single-penny-from-north-sea-to-fund-robbed-acorn-/1640040334582720/",
+    "headline": "Call to fund acorn ccs from north sea revenue - Facebook",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-11-04T01:50:40+00:00",
+    "fuzzy_key": "acorn,call,ccs,facebook,fund,north,revenue,sea",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/morningstaronline/posts/snp-demands-51bn-for-acorn-carbon-capture/1528511769295937",
+    "raw_url": "https://www.facebook.com/morningstaronline/posts/snp-demands-51bn-for-acorn-carbon-capture/1528511769295937/",
+    "headline": "SNP demands £5.1bn for Acorn carbon capture - Facebook",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-11-04T08:14:01+00:00",
+    "fuzzy_key": "1bn,acorn,capture,carbon,demands,facebook,snp",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://facebook.com/groups/ScotlandAgainstSpin/posts/29990844693851207",
+    "raw_url": "https://www.facebook.com/groups/ScotlandAgainstSpin/posts/29990844693851207/",
+    "headline": "Scotland's climate strategy uncertain due to reliance on carbon capture technology",
+    "source_domain": "facebook.com",
+    "publication_date": "2026-11-04T08:14:01+00:00",
+    "fuzzy_key": "capture,carbon,climate,due,reliance,scotland,strategy,technology,uncertain",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://gulfnews.com/uae/abu-dhabi/adipec-2026-rotterdam-seeks-uae-partnership-to-drive-energy-transition-with-hydrogen-and-ccs-investments-1.500736207",
+    "raw_url": "https://gulfnews.com/uae/abu-dhabi/adipec-2026-rotterdam-seeks-uae-partnership-to-drive-energy-transition-with-hydrogen-and-ccs-investments-1.500736207",
+    "headline": "ADIPEC 2026: Rotterdam seeks UAE partnership to drive energy transition with hydrogen ...",
+    "source_domain": "gulfnews.com",
+    "publication_date": "2026-11-04T18:43:52+00:00",
+    "fuzzy_key": "2026,adipec,drive,energy,hydrogen,partnership,rotterdam,seeks,transition,uae",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://ibanet.org/co2-injection-capacity-obligations-net-zer0-industry-act",
+    "raw_url": "https://www.ibanet.org/co2-injection-capacity-obligations-net-zer0-industry-act",
+    "headline": "CO2 injection capacity obligations under the Net-Zero Industry Act and oil and gas ...",
+    "source_domain": "ibanet.org",
+    "publication_date": "2026-11-04T02:37:19+00:00",
+    "fuzzy_key": "act,capacity,co2,gas,industry,injection,net,obligations,oil,under,zero",
     "found_via": "google_alerts"
   },
   {
@@ -45,21 +81,48 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://facebook.com/energyvoicenews/posts/5-billion-demandcall-for-every-single-penny-from-north-sea-to-fund-robbed-acorn-/1640040334582720",
-    "raw_url": "https://www.facebook.com/energyvoicenews/posts/5-billion-demandcall-for-every-single-penny-from-north-sea-to-fund-robbed-acorn-/1640040334582720/",
-    "headline": "Call to fund acorn ccs from north sea revenue - Facebook",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-11-04T01:50:40+00:00",
-    "fuzzy_key": "acorn,call,ccs,facebook,fund,north,revenue,sea",
+    "canonical_url": "https://investing.com/news/analyst-ratings/bloom-energy-stock-gains-on-carbon-capture-partnership-with-california-resources-93CH-4994093",
+    "raw_url": "https://www.investing.com/news/analyst-ratings/bloom-energy-stock-gains-on-carbon-capture-partnership-with-california-resources-93CH-4994093",
+    "headline": "Bloom Energy stock gains on carbon capture partnership with California Resources",
+    "source_domain": "investing.com",
+    "publication_date": "2026-11-03T23:19:50+00:00",
+    "fuzzy_key": "bloom,california,capture,carbon,energy,gains,partnership,resources,stock",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://ibanet.org/co2-injection-capacity-obligations-net-zer0-industry-act",
-    "raw_url": "https://www.ibanet.org/co2-injection-capacity-obligations-net-zer0-industry-act",
-    "headline": "CO2 injection capacity obligations under the Net-Zero Industry Act and oil and gas ...",
-    "source_domain": "ibanet.org",
-    "publication_date": "2026-11-04T02:37:19+00:00",
-    "fuzzy_key": "act,capacity,co2,gas,industry,injection,net,obligations,oil,under,zero",
+    "canonical_url": "https://jera.co.jp/en/news/information/20261104_2573",
+    "raw_url": "https://www.jera.co.jp/en/news/information/20261104_2573",
+    "headline": "JERA Invests in 44.01 to Explore New CO₂ Storage Solutions | Press Release(2026)",
+    "source_domain": "jera.co.jp",
+    "publication_date": "2026-11-04T21:15:36+00:00",
+    "fuzzy_key": "01,2026,44,co,explore,invests,jera,new,press,release,solutions,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://linkedin.com/posts/matthiasraab_ghgt18-ccs-ccus-activity-7523561477610524673-VUAJ",
+    "raw_url": "https://www.linkedin.com/posts/matthiasraab_ghgt18-ccs-ccus-activity-7523561477610524673-VUAJ",
+    "headline": "Matthias Raab PhD's Post - LinkedIn",
+    "source_domain": "linkedin.com",
+    "publication_date": "2026-11-04T18:25:00+00:00",
+    "fuzzy_key": "linkedin,matthias,phd,post,raab",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://scotsman.com/news/politics/acorn-carbon-capture-snp-net-zero-climate-targets-9325839",
+    "raw_url": "https://www.scotsman.com/news/politics/acorn-carbon-capture-snp-net-zero-climate-targets-9325839",
+    "headline": "SNP's climate targets thrown into doubt over Acorn carbon capture 'fairy tale'",
+    "source_domain": "scotsman.com",
+    "publication_date": "2026-11-03T23:19:50+00:00",
+    "fuzzy_key": "acorn,capture,carbon,climate,doubt,fairy,into,over,snp,tale,targets,thrown",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://simplywall.st/stocks/us/consumer-durables/nyse-ccs/century-communities/news/learn-why-the-bull-case-for-century-communities-stock-could-1",
+    "raw_url": "https://simplywall.st/stocks/us/consumer-durables/nyse-ccs/century-communities/news/learn-why-the-bull-case-for-century-communities-stock-could-1",
+    "headline": "Learn Why The Bull Case For Century Communities Stock Could Change Following New ...",
+    "source_domain": "simplywall.st",
+    "publication_date": "2026-11-04T22:28:35+00:00",
+    "fuzzy_key": "bull,case,century,change,communities,could,following,learn,new,stock,why",
     "found_via": "google_alerts"
   },
   {
@@ -69,33 +132,6 @@
     "source_domain": "zawya.com",
     "publication_date": "2026-11-04T05:30:06+00:00",
     "fuzzy_key": "abu,capture,carbon,cryo,dhabi,gulf,plant,production,start,uae,weeks,within,zawya",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://desmoinesregister.com/press-release/story/147773/blue-hydrogen-market-to-grow-at-57-64-cagr-through-2031-driven-by-carbon-capture-mordor-intelligence",
-    "raw_url": "https://www.desmoinesregister.com/press-release/story/147773/blue-hydrogen-market-to-grow-at-57-64-cagr-through-2031-driven-by-carbon-capture-mordor-intelligence/",
-    "headline": "Blue Hydrogen Market to Grow at 57.64% CAGR Through 2031 Driven by Carbon Capture",
-    "source_domain": "desmoinesregister.com",
-    "publication_date": "2026-11-04T05:30:06+00:00",
-    "fuzzy_key": "2031,57,64,blue,cagr,capture,carbon,driven,grow,hydrogen,market,through",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://facebook.com/groups/ScotlandAgainstSpin/posts/29990844693851207",
-    "raw_url": "https://www.facebook.com/groups/ScotlandAgainstSpin/posts/29990844693851207/",
-    "headline": "Scotland's climate strategy uncertain due to reliance on carbon capture technology",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-11-04T08:14:01+00:00",
-    "fuzzy_key": "capture,carbon,climate,due,reliance,scotland,strategy,technology,uncertain",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://facebook.com/morningstaronline/posts/snp-demands-51bn-for-acorn-carbon-capture/1528511769295937",
-    "raw_url": "https://www.facebook.com/morningstaronline/posts/snp-demands-51bn-for-acorn-carbon-capture/1528511769295937/",
-    "headline": "SNP demands £5.1bn for Acorn carbon capture - Facebook",
-    "source_domain": "facebook.com",
-    "publication_date": "2026-11-04T08:14:01+00:00",
-    "fuzzy_key": "1bn,acorn,capture,carbon,demands,facebook,snp",
     "found_via": "google_alerts"
   }
 ]
