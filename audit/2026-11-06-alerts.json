@@ -27,12 +27,30 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://esgnews.com/gabon-sefe-forest-carbon-credits",
+    "raw_url": "https://esgnews.com/gabon-sefe-forest-carbon-credits/",
+    "headline": "Germany's SEFE to Buy About 6 Million Tons of Gabon's Sovereign Forest Carbon Credits",
+    "source_domain": "esgnews.com",
+    "publication_date": "2026-11-06T01:51:47+00:00",
+    "fuzzy_key": "about,buy,carbon,credits,forest,gabon,germany,million,sefe,sovereign,tons",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://gasworld.com/story/california-overturns-approval-of-operational-ccs-project/2263467.article",
     "raw_url": "https://www.gasworld.com/story/california-overturns-approval-of-operational-ccs-project/2263467.article/",
     "headline": "California overturns approval of operational CCS project | Carbon Capture - gasworld",
     "source_domain": "gasworld.com",
     "publication_date": "2026-11-05T02:29:06+00:00",
     "fuzzy_key": "approval,california,capture,carbon,ccs,gasworld,operational,overturns,project",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://indiandefensenews.in/2026/11/bel-poised-for-30000-crore-qrsam-boost.html",
+    "raw_url": "https://www.indiandefensenews.in/2026/11/bel-poised-for-30000-crore-qrsam-boost.html",
+    "headline": "BEL Poised For ₹30000 Crore QRSAM Boost As CCS Approval Nears",
+    "source_domain": "indiandefensenews.in",
+    "publication_date": "2026-11-06T00:56:38+00:00",
+    "fuzzy_key": "30000,approval,bel,boost,ccs,crore,nears,poised,qrsam",
     "found_via": "google_alerts"
   },
   {
@@ -60,6 +78,15 @@
     "source_domain": "newsday.com",
     "publication_date": "2026-11-05T10:40:48+00:00",
     "fuzzy_key": "approves,australia,carbon,company,japanese,newsday,pollution,seabed,site,store,where,will",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://onepetro.org/ccusce/proceedings-pdf/26JCUS/26JCUS/D032S021R001/5357047/spe-ccus-2026-4424932.pdf",
+    "raw_url": "https://onepetro.org/ccusce/proceedings-pdf/26JCUS/26JCUS/D032S021R001/5357047/spe-ccus-2026-4424932.pdf",
+    "headline": "Wellborne: A Platform for Standardized Legacy Well Integrity Screening and Class VI Well Permitting",
+    "source_domain": "onepetro.org",
+    "publication_date": "2026-11-06T04:34:36+00:00",
+    "fuzzy_key": "class,integrity,legacy,permitting,platform,screening,standardized,vi,well,wellborne",
     "found_via": "google_alerts"
   },
   {
