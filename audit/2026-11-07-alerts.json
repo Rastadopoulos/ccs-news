@@ -18,6 +18,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://carbonherald.com/gulf-cryo-expands-industrial-ccus-footprint-across-uae-market-ahead-of-adipec-2026",
+    "raw_url": "https://carbonherald.com/gulf-cryo-expands-industrial-ccus-footprint-across-uae-market-ahead-of-adipec-2026/",
+    "headline": "Gulf Cryo Expands Industrial CCUS Footprint Across UAE Market Ahead Of ADIPEC 2026",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-11-07T00:51:48+00:00",
+    "fuzzy_key": "2026,across,adipec,ahead,ccus,cryo,expands,footprint,gulf,industrial,market,uae",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://aa.com.tr/en/energy/general/global-carbon-capture-capacity-set-to-exceed-100m-tonnes/60750",
     "raw_url": "https://www.aa.com.tr/en/energy/general/global-carbon-capture-capacity-set-to-exceed-100m-tonnes/60750",
     "headline": "Global carbon capture capacity set to exceed 100M tonnes",
@@ -78,6 +87,15 @@
     "source_domain": "onepetro.org",
     "publication_date": "2026-11-06T04:34:36+00:00",
     "fuzzy_key": "class,integrity,legacy,permitting,platform,screening,standardized,vi,well,wellborne",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://reuters.com/business/canadas-enbridge-posts-higher-quarterly-profit-2026-11-06",
+    "raw_url": "https://www.reuters.com/business/canadas-enbridge-posts-higher-quarterly-profit-2026-11-06/",
+    "headline": "Enbridge expresses interest in building pipeline for Canada's Pathways carbon capture network",
+    "source_domain": "reuters.com",
+    "publication_date": "2026-11-07T00:03:30+00:00",
+    "fuzzy_key": "building,canada,capture,carbon,enbridge,expresses,interest,network,pathways,pipeline",
     "found_via": "google_alerts"
   }
 ]
