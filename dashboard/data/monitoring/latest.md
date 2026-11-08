@@ -1,16 +1,16 @@
 # Authoritative CCS source monitor
 
-Retrieved: 2026-11-01T23:37:37.699446+00:00
+Retrieved: 2026-11-08T23:44:40.982409+00:00
 
 - **RETRIEVAL-FAILED** IEA CCUS Projects Database product — HTTP Error 403: Forbidden
 - **UNCHANGED** IEA CCUS Projects Explorer data
 - **REVIEW** Global CCS Institute publications
 - **REVIEW** London Register of Subsurface CO2 Storage
-- **UNCHANGED** US EPA Class VI permitted wells and project repositories
+- **REVIEW** US EPA Class VI permitted wells and project repositories
 - **REVIEW** UK NSTA carbon storage public register
 - **RETRIEVAL-FAILED** UK Ofgem CO2 transport and storage regulation — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** Australian NOPTA offshore greenhouse gas storage — HTTP Error 404: Not Found
-- **REVIEW** Australian NEATS titles and identified storage formations
+- **UNCHANGED** Australian NEATS titles and identified storage formations
 - **REVIEW** NOPSEMA environment plan activity
 - **RETRIEVAL-FAILED** Australian sea dumping and CO2 export permits — The read operation timed out
 - **RETRIEVAL-FAILED** EU Net-Zero Industry Act strategic projects and CO2 storage — HTTP Error 404: Not Found
