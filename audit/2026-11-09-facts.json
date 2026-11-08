@@ -1,0 +1,158 @@
+[
+  {
+    "id": "2026-11-09#01",
+    "briefing_date": "2026-11-09",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Enbridge signals interest in building the Pathways carbon-capture CO2 pipeline",
+    "summary": "On its Q3 earnings, Canadian midstream major Enbridge expressed interest in building the long-haul CO2 pipeline for the Oil Sands Alliance's (formerly Pathways Alliance) proposed carbon-capture network, which would move captured oilsands CO2 from the Fort McMurray area to a storage hub near Cold Lake, Alberta (sized for ~6 Mtpa by the mid-2030s), ahead of a late-2027 FID.",
+    "source": "Reuters",
+    "pub_date": "2026-11-06",
+    "url": "https://www.reuters.com/business/canadas-enbridge-posts-higher-quarterly-profit-2026-11-06",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Enbridge",
+      "Oil Sands Alliance",
+      "Pathways Alliance"
+    ],
+    "org_types": [
+      "other",
+      "industry-body",
+      "industry-body"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2027,
+    "capacity_mtpa": 6.0,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A credible pipeline proponent stepping forward de-risks the transport leg of a flagship oilsands CCS network; relevant to how large CO2 T&S infrastructure gets financed and operated.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Expression of interest only, not a committed project. 6 Mtpa is the Pathways network design capacity, not Enbridge's own commitment. Source is Enbridge Q3 earnings coverage; pipeline-interest detail from Google-Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-09#02",
+    "briefing_date": "2026-11-09",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "New platform standardises legacy well-integrity screening for Class VI CO2-storage permitting",
+    "summary": "An SPE CCUS 2026 technical paper describes 'Wellborne', a platform for standardised screening of legacy well integrity to support US EPA Class VI (CO2 injection) well permitting, tackling a containment-risk bottleneck where old wellbores penetrating a storage complex must be assessed for leakage before a permit can proceed.",
+    "source": "OnePetro / SPE",
+    "pub_date": "2026-11-06",
+    "url": "https://onepetro.org/ccusce/proceedings-pdf/26JCUS/26JCUS/D032S021R001/5357047/spe-ccus-2026-4424932.pdf",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "SPE"
+    ],
+    "org_types": [
+      "industry-body"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "MMV-MRV",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Legacy-well integrity screening is a core storage-site characterisation and MMV challenge directly relevant to CO2CRC's geological-storage assurance work and to any Australian storage-permitting workflow.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "SPE CCUS 2026 conference proceedings (technical tool/methodology), not a commercial deal. Date from Google-Alerts sampler, unverified."
+  },
+  {
+    "id": "2026-11-09#03",
+    "briefing_date": "2026-11-09",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Gulf Cryo expands UAE industrial CCUS footprint ahead of ADIPEC 2026",
+    "summary": "UAE industrial-gases group Gulf Cryo set out a broader push to expand its carbon-capture/CO2-utilisation footprint across the UAE market, timed to ADIPEC 2026, extending the single Abu Dhabi plant start-up briefed on 5 Nov into a company-wide regional-expansion strategy. A merchant-market CCU play rather than geological storage.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-07",
+    "url": "https://carbonherald.com/gulf-cryo-expands-industrial-ccus-footprint-across-uae-market-ahead-of-adipec-2026",
+    "region": "Middle East",
+    "countries": [
+      "United Arab Emirates"
+    ],
+    "organisations": [
+      "Gulf Cryo"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "investment",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Merchant CO2/CCU market expansion in the Gulf; peripheral to CO2CRC's geological-storage focus but a marker of CCUS commercial activity around ADIPEC.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "CO2-utilisation/merchant-gas expansion, not geological CCS. Extends the 5 Nov Gulf Cryo single-plant item into a company-wide strategy framing. Date/detail from Google-Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-09#04",
+    "briefing_date": "2026-11-09",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Global operating carbon-capture capacity on track to pass 100 Mt/yr once builds complete, report finds",
+    "summary": "A new industry report finds operating CO2-capture capacity would rise about 82% to above 100 Mtpa once projects currently under construction enter service, but warns policy and financing remain the binding constraints on that pipeline actually converting to operation. A capacity-outlook read, not a discrete new commitment.",
+    "source": "Anadolu Agency",
+    "pub_date": "2026-11-06",
+    "url": "https://www.aa.com.tr/en/energy/general/global-carbon-capture-capacity-set-to-exceed-100m-tonnes/60750",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": 100.0,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Market-aggregate capacity outlook; useful context on global CCS deployment pace and the policy/financing constraints that also shape the Australian pipeline.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "market-aggregate",
+    "extractor_note": "Capacity-outlook/market-aggregate figure (>100 Mtpa once under-construction projects complete), NOT a discrete commitment; capacity_mtpa is a cumulative global resource, non-additive. Date from Google-Alerts sampler, unverified; underlying report release may predate the window."
+  }
+]
