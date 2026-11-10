@@ -1,5 +1,23 @@
 [
   {
+    "canonical_url": "https://carbon-pulse.com/569000",
+    "raw_url": "https://carbon-pulse.com/569000/",
+    "headline": "Companies urged to allocate 3% of decarbonisation budgets to carbon removals -report",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-11-09T15:48:15+00:00",
+    "fuzzy_key": "allocate,budgets,carbon,companies,decarbonisation,removals,report,urged",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/texas-carbon-capture-project-secures-first-credits-under-new-verra-standard",
+    "raw_url": "https://carbonherald.com/texas-carbon-capture-project-secures-first-credits-under-new-verra-standard/",
+    "headline": "Texas Carbon Capture Project Secures First Credits Under New Verra Standard",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-11-09T17:08:14+00:00",
+    "fuzzy_key": "capture,carbon,credits,first,new,project,secures,standard,texas,under,verra",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://greentechlead.com/renewable-energy/carbon-capture-project-economics-cost-per-tonne-capex-contracts-and-returns-from-major-ccus-investments-56378",
     "raw_url": "https://greentechlead.com/renewable-energy/carbon-capture-project-economics-cost-per-tonne-capex-contracts-and-returns-from-major-ccus-investments-56378",
     "headline": "Carbon Capture Project Economics: Cost Per Tonne, CAPEX, Contracts and Returns from ...",
@@ -9,12 +27,66 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://industrialinfo.com/news/article/heidelberg-materials-stops-german-carbon-capture-project--364584",
+    "raw_url": "https://www.industrialinfo.com/news/article/heidelberg-materials-stops-german-carbon-capture-project--364584",
+    "headline": "Heidelberg Materials Stops German Carbon Capture Project - Industrial Info",
+    "source_domain": "industrialinfo.com",
+    "publication_date": "2026-11-09T16:26:40+00:00",
+    "fuzzy_key": "capture,carbon,german,heidelberg,industrial,info,materials,project,stops",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://magzter.com/stories/newspaper/Western-Mail/200M-CARBON-CAPTURE-PLANT-GETS-GOAHEAD",
+    "raw_url": "https://www.magzter.com/stories/newspaper/Western-Mail/200M-CARBON-CAPTURE-PLANT-GETS-GOAHEAD",
+    "headline": "£200m carbon capture plant gets go-ahead | Western Mail - newspaper - Magzter",
+    "source_domain": "magzter.com",
+    "publication_date": "2026-11-10T00:10:41+00:00",
+    "fuzzy_key": "200m,ahead,capture,carbon,gets,go,magzter,mail,newspaper,plant,western",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://report.az/en/industry/azerbaijan-s-cement-plants-metallurgical-industry-to-transition-to-carbon-capture-technologies",
+    "raw_url": "https://report.az/en/industry/azerbaijan-s-cement-plants-metallurgical-industry-to-transition-to-carbon-capture-technologies",
+    "headline": "Azerbaijan's cement plants, metallurgical industry to transition to carbon capture technologies",
+    "source_domain": "report.az",
+    "publication_date": "2026-11-09T16:39:14+00:00",
+    "fuzzy_key": "azerbaijan,capture,carbon,cement,industry,metallurgical,plants,technologies,transition",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://reutersconnect.com/item/california-climate-technology-company-heirloom-on-thursday-unveiled-what-it-says-is-the-first-us-commercial-direct-air-capture-plant-to-suck-planet-warming-carbon-dioxide-from-the-air/dGFnOnJldXRlcnMuY29tLDIwMjM6bmV3c21sX1JDMlc5NEE5VTlBNA?lastViewed=dGFnOnJldXRlcnMuY29tLDIwMjM6bmV3c21sX1JDMlc5NEE0U0cwRQ&position=2",
     "raw_url": "https://www.reutersconnect.com/item/california-climate-technology-company-heirloom-on-thursday-unveiled-what-it-says-is-the-first-us-commercial-direct-air-capture-plant-to-suck-planet-warming-carbon-dioxide-from-the-air/dGFnOnJldXRlcnMuY29tLDIwMjM6bmV3c21sX1JDMlc5NEE5VTlBNA?lastViewed=dGFnOnJldXRlcnMuY29tLDIwMjM6bmV3c21sX1JDMlc5NEE0U0cwRQ&position=2",
     "headline": "California climate technology company Heirloom on Thursday unveiled what it says is the ...",
     "source_domain": "reutersconnect.com",
     "publication_date": "2026-11-08T23:40:47+00:00",
     "fuzzy_key": "california,climate,company,heirloom,says,technology,thursday,unveiled,what",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://stocktitan.net/sec-filings/CCS/8-k-century-communities-inc-reports-material-event-aab97c666eb6.html",
+    "raw_url": "https://www.stocktitan.net/sec-filings/CCS/8-k-century-communities-inc-reports-material-event-aab97c666eb6.html",
+    "headline": "Century Communities names James Francescon president | CCS 8-K Filing - Stock Titan",
+    "source_domain": "stocktitan.net",
+    "publication_date": "2026-11-09T20:50:20+00:00",
+    "fuzzy_key": "ccs,century,communities,filing,francescon,james,names,president,stock,titan",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tradingview.com/news/tradingview:412e6cdb795c8:0",
+    "raw_url": "https://www.tradingview.com/news/tradingview:412e6cdb795c8:0/",
+    "headline": "Century Communities, Inc. (CCS) asciende a Jim Francescon a presidente a partir del 1 de ...",
+    "source_domain": "tradingview.com",
+    "publication_date": "2026-11-09T20:50:20+00:00",
+    "fuzzy_key": "asciende,ccs,century,communities,de,del,francescon,inc,jim,partir,presidente",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/court-order-puts-california-s-first-carbon-capture-project-in-jeopardy/2-1-2071600",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/court-order-puts-california-s-first-carbon-capture-project-in-jeopardy/2-1-2071600",
+    "headline": "Court order puts California's first carbon capture project in jeopardy - Upstream",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-11-09T21:06:53+00:00",
+    "fuzzy_key": "california,capture,carbon,court,first,jeopardy,order,project,puts,upstream",
     "found_via": "google_alerts"
   }
 ]
