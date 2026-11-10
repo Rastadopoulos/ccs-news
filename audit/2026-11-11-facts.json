@@ -1,0 +1,91 @@
+[
+  {
+    "id": "2026-11-11#01",
+    "briefing_date": "2026-11-11",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Elemental Energies wins Viking CCS engineering contract from Harbour Energy",
+    "summary": "Harbour Energy awarded UK subsurface-and-wells specialist Elemental Energies a contract supporting the Viking CCS project in the Humber — the depleted-gasfield CO2 store (targeting ~4 Mtpa, rising toward 10 Mtpa by 2030) that Harbour operates (60%) with bp (40%). The engineering/wells scope advances the project as it works toward FID and first injection later this decade.",
+    "source": "Energy Voice",
+    "pub_date": "2026-11-10",
+    "url": "https://www.energyvoice.com/all-news/606760/viking-ccs-harbour-energy/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Harbour Energy",
+      "Elemental Energies",
+      "bp"
+    ],
+    "org_types": [
+      "OG-major",
+      "developer",
+      "OG-major"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2030,
+    "capacity_mtpa": 4,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Viking is a flagship UK depleted-field CO2 store; wells/subsurface engineering milestones there are directly comparable to CO2CRC's depleted-reservoir storage work.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": "No contract value disclosed in source snippets. Story carried by 5 outlets (Energy Voice, Carbon Herald, Marine Technology News, World Pipelines, Upstream) all dated 10 Nov 2026 via Google-Alerts sampler. WebFetch blocked this session so unverified; capacity_mtpa=4 is established Viking project background, not a figure in this specific item."
+  },
+  {
+    "id": "2026-11-11#02",
+    "briefing_date": "2026-11-11",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Occidental beats Q3 estimates and flags new CO2 offtake deals for enhanced oil recovery",
+    "summary": "In its third-quarter 2026 results Occidental beat analyst estimates and disclosed new CO2 offtake agreements tied to enhanced oil recovery, reinforcing its dual-track low-carbon strategy spanning the Stratos DAC facility in the Permian (via 1PointFive) and CO2-EOR offtake.",
+    "source": "Upstream",
+    "pub_date": "2026-11-10",
+    "url": "https://www.upstreamonline.com/finance/occidental-beats-estimates-reveals-co2-offtake-deals-for-enhanced-oil-recovery/2-1-2071639",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Occidental",
+      "1PointFive"
+    ],
+    "org_types": [
+      "OG-major",
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "DAC",
+      "utilisation",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "US CO2-EOR offtake economics and DAC commercial progress are a reference point for CCS revenue models, though peripheral to CO2CRC's dedicated-storage focus.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "No specific CO2 volumes or deal values in source snippet; Q3 earnings beat is the frame. Date from Google-Alerts sampler (10 Nov 2026); WebFetch blocked so unverified."
+  }
+]
