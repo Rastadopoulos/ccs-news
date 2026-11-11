@@ -1,0 +1,123 @@
+[
+  {
+    "id": "2026-11-12#01",
+    "briefing_date": "2026-11-12",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "At COP31, Global CCS Institute presses for gigatonne-scale CCS with the Nordic model as template",
+    "summary": "In a COP31 session at the Nordic Pavilion in Antalya, Global CCS Institute CEO Jarad Daniels argued CCS must move to gigatonne scale and that this will not happen in the Nordics alone, with Norway's Brevik cement capture plant and the Northern Lights network held up as the industrial template.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-11",
+    "url": "https://carbonherald.com/cop31-how-the-nordic-model-is-paving-the-way-for-industrial-carbon-capture/",
+    "region": "Global",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Global CCS Institute",
+      "Northern Lights",
+      "Heidelberg Materials"
+    ],
+    "org_types": [
+      "industry-body",
+      "developer",
+      "OG-major"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Industry scaling narrative at COP31 frames the deployment gap CO2CRC's demonstration work (Otway) addresses; reinforces cross-border/hub model relevant to Australia-APAC storage ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Conference-session coverage at COP31 Day 3; publication date contextual (COP31 live 9-20 Nov), WebFetch date-verification blocked this run so verification_status unverified."
+  },
+  {
+    "id": "2026-11-12#02",
+    "briefing_date": "2026-11-12",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "SINTEF's GigaCCS at COP31: CCS scale-up must include the Global South",
+    "summary": "Research organisation SINTEF used its GigaCCS session at COP31 to argue that proven CCS technology must be deployed far more widely and that the Global South should be an integral part of gigatonne-scale carbon management, not an afterthought.",
+    "source": "SINTEF",
+    "pub_date": "2026-11-11",
+    "url": "https://www.sintef.no/en/latest-news/2026/research-works-and-the-global-south-should-be-part-of-it-gigaccs-at-cop31/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "SINTEF",
+      "Global CCS Institute"
+    ],
+    "org_types": [
+      "research",
+      "industry-body"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Research-led equity framing aligns with CO2CRC's capability-sharing role in APAC; Global-South deployment argument is directly relevant to Australia's cross-border storage-hub positioning (e.g. Bayu-Undan, Indonesia/Malaysia).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "COP31 research-institute session; publication date contextual, WebFetch date-verification blocked this run so verification_status unverified."
+  },
+  {
+    "id": "2026-11-12#03",
+    "briefing_date": "2026-11-12",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "COP31: climate activists reject carbon capture and marine geoengineering as 'false solutions'",
+    "summary": "At COP31 in Antalya, campaign groups including Friends of the Earth Japan publicly rejected carbon capture and marine geoengineering, framing CCS as a fossil-fuel lifeline rather than a genuine climate solution and pressing governments to drop it.",
+    "source": "Premium Times (Nigeria)",
+    "pub_date": "2026-11-11",
+    "url": "https://www.premiumtimesng.com/business/business-news/924472-cop31-climate-activists-reject-carbon-capture-marine-geoengineering-as-false-solutions.html",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Friends of the Earth Japan"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence pressure at the UN climate summit is directly reputation-relevant to CCS proponents including CO2CRC; 'false solutions' framing is the core narrative CO2CRC communications must counter.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Section-5 social-licence item; non-Western outlet (Nigeria). Publication date contextual (COP31 Day 3), WebFetch date-verification blocked so verification_status unverified."
+  }
+]
