@@ -36,6 +36,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://indexbox.io/blog/sonardyne-deploys-six-seabed-landers-at-uks-first-commercial-offshore-ccs-project",
+    "raw_url": "https://www.indexbox.io/blog/sonardyne-deploys-six-seabed-landers-at-uks-first-commercial-offshore-ccs-project/",
+    "headline": "Sonardyne Deploys Six Seabed Landers at UK's First Commercial Offshore CCS Project",
+    "source_domain": "indexbox.io",
+    "publication_date": "2026-11-11T04:12:06+00:00",
+    "fuzzy_key": "ccs,commercial,deploys,first,landers,offshore,project,seabed,six,sonardyne,uk",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://magzter.com/stories/newspaper/Western-Mail/200M-CARBON-CAPTURE-PLANT-GETS-GOAHEAD",
     "raw_url": "https://www.magzter.com/stories/newspaper/Western-Mail/200M-CARBON-CAPTURE-PLANT-GETS-GOAHEAD",
     "headline": "£200m carbon capture plant gets go-ahead | Western Mail - newspaper - Magzter",
@@ -60,6 +69,33 @@
     "source_domain": "morningstar.com",
     "publication_date": "2026-11-10T20:45:24+00:00",
     "fuzzy_key": "ccs,completes,facility,morningstar,oak,sale,services,silver",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oedigital.com/amp/news/544263-sonardyne-begins-seabed-monitoring-for-offshore-ccs-project",
+    "raw_url": "https://www.oedigital.com/amp/news/544263-sonardyne-begins-seabed-monitoring-for-offshore-ccs-project",
+    "headline": "Sonardyne Begins Seabed Monitoring for Offshore CCS Project",
+    "source_domain": "oedigital.com",
+    "publication_date": "2026-11-11T04:12:06+00:00",
+    "fuzzy_key": "begins,ccs,monitoring,offshore,project,seabed,sonardyne",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://oedigital.com/news/544258-uk-s-endurance-ccs-project-expands-seabed-seismic-monitoring-ops",
+    "raw_url": "https://www.oedigital.com/news/544258-uk-s-endurance-ccs-project-expands-seabed-seismic-monitoring-ops",
+    "headline": "UK's Endurance CCS Project Expands Seabed Seismic Monitoring Ops",
+    "source_domain": "oedigital.com",
+    "publication_date": "2026-11-11T04:12:06+00:00",
+    "fuzzy_key": "ccs,endurance,expands,monitoring,ops,project,seabed,seismic,uk",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://offshore-energy.biz/2026/11/10/seabed-monitoring-starts-at-uk-ccs-project-to-prepare-for-co2-injection",
+    "raw_url": "https://www.offshore-energy.biz/2026/11/10/seabed-monitoring-starts-at-uk-ccs-project-to-prepare-for-co2-injection",
+    "headline": "Seabed monitoring starts at UK CCS project to prepare for CO2 injection - Offshore Energy",
+    "source_domain": "offshore-energy.biz",
+    "publication_date": "2026-11-11T04:12:06+00:00",
+    "fuzzy_key": "ccs,co2,energy,injection,monitoring,offshore,prepare,project,seabed,starts,uk",
     "found_via": "google_alerts"
   },
   {
