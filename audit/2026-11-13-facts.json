@@ -1,0 +1,169 @@
+[
+  {
+    "id": "2026-11-13#01",
+    "briefing_date": "2026-11-13",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Malaysia to unveil national CCUS roadmap by end-November; Kerteh hub to be phased",
+    "summary": "Malaysia's Economy Minister said the national CCUS roadmap will be launched by end-November and that the Kerteh carbon-capture hub in Terengganu will be developed in phases, part of the plan for three CCUS hubs (Kerteh, Kuantan, Bintulu) with ~15 Mtpa storage by 2030.",
+    "source": "The Star / The Edge Markets / NST",
+    "pub_date": "2026-11-12",
+    "url": "https://www.thestar.com.my/news/nation/2026/11/12/kerteh-carbon-capture-hub-to-be-developed-in-phases-says-economy-minister",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "Ministry of Economy (Malaysia)",
+      "Petronas"
+    ],
+    "org_types": [
+      "government",
+      "NOC"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2030,
+    "capacity_mtpa": 15,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "ASEAN storage-hub buildout shapes regional cross-border CO2 demand relevant to Australia's own storage-export ambitions (Bayu-Undan, Moomba third-party CO2).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date from Google Alerts sampler; WebFetch blocked so page date unverified. Five-outlet cluster deduped to one."
+  },
+  {
+    "id": "2026-11-13#02",
+    "briefing_date": "2026-11-13",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Petrokimia Gresik maps 2039 CCS link to cut fertiliser emissions",
+    "summary": "Indonesian fertiliser producer Petrokimia Gresik (Pupuk Indonesia group) outlined a roadmap to connect its operations to carbon capture and storage by 2039, targeting fertiliser-production CO2 emissions.",
+    "source": "Petromindo",
+    "pub_date": "2026-11-12",
+    "url": "https://www.petromindo.com/news/article/petrokimia-gresik-maps-2039-ccs-link-targets-fertilizer-related-emissions",
+    "region": "APAC",
+    "countries": [
+      "Indonesia"
+    ],
+    "organisations": [
+      "Petrokimia Gresik",
+      "Pupuk Indonesia"
+    ],
+    "org_types": [
+      "developer",
+      "other"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2039,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Indonesian industrial CO2 (fertiliser) is a potential source feeding regional storage hubs; APAC CCS demand CO2CRC tracks.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date from Google Alerts sampler; WebFetch blocked so page date unverified."
+  },
+  {
+    "id": "2026-11-13#03",
+    "briefing_date": "2026-11-13",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "ExxonMobil files legal challenge against EU carbon-capture/CO2-storage obligation (FT)",
+    "summary": "ExxonMobil has filed a legal challenge against the EU's carbon-capture/CO2-storage obligation under the Net-Zero Industry Act, the Financial Times reported — escalating from its September 2026 Energy Charter Treaty notice of dispute. It joins a wider wave of oil-and-gas challenges to the EU's mandated storage framework.",
+    "source": "Financial Times (via Yahoo Finance)",
+    "pub_date": "2026-11-12",
+    "url": "https://sg.finance.yahoo.com/news/exxon-files-legal-challenge-eu-225812897.html",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "ExxonMobil",
+      "European Commission"
+    ],
+    "org_types": [
+      "OG-major",
+      "government"
+    ],
+    "instrument_type": "litigation",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Tests legal durability of mandated CO2-storage obligations — precedent relevant to how storage mandates could be designed and defended in the EU and Australia.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "FT paywalled; accessed via Yahoo aggregator snippet. Date from Google Alerts sampler; forum (ECT arbitration vs CJEU) not confirmed from snippet."
+  },
+  {
+    "id": "2026-11-13#04",
+    "briefing_date": "2026-11-13",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Norway consolidating its lead role in CO2 storage",
+    "summary": "Trade coverage casts Norway as consolidating its lead role in CO2 transport and storage, anchored by the Northern Lights network and liquid-CO2 shipping value chain serving European emitters.",
+    "source": "Cyprus Shipping News",
+    "pub_date": "2026-11-12",
+    "url": "https://cyprusshippingnews.com/2026/11/12/norway-consolidating-lead-role-for-co2-storage/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Northern Lights"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Norway/Northern Lights is the global template and benchmark competitor-partner for Australian cross-border CO2 storage ambitions.",
+    "sentiment": "positive",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Single niche-trade outlet; WebFetch blocked so content/date unverified beyond Google Alerts sampler metadata."
+  }
+]
