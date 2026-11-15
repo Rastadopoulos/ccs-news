@@ -1,0 +1,302 @@
+[
+  {
+    "id": "2026-11-16#01",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Carbon removal and CCUS enter COP31 cover-decision talks",
+    "summary": "CDR and CCUS officially entered preliminary discussions for the COP31 cover decision after an informal consultation summary released by the Turkiye Presidency on 13 Nov; whether the language survives depends on later drafting rounds.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-13",
+    "url": "https://carbonherald.com/cop31-carbon-removal-and-ccus-included-in-cop31-cover-decision-talks/",
+    "region": "Global",
+    "countries": [
+      "Turkey"
+    ],
+    "organisations": [
+      "UNFCCC",
+      "COP31 Presidency (Turkiye)"
+    ],
+    "org_types": [
+      "multilateral",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Explicit CCUS/CDR text in a COP cover decision would legitimise CCS in the UNFCCC process and shape national policy signals Australia tracks.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date from Google Alerts sampler; WebFetch blocked so page date unverified."
+  },
+  {
+    "id": "2026-11-16#02",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "Mining waste touted at COP31 as a goldmine for scaling carbon removal",
+    "summary": "A COP31 session framed mine tailings and alkaline mining waste as a large, under-used feedstock for enhanced rock weathering and mineralisation-based CO2 removal, arguing it could help scale durable CDR cheaply.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-13",
+    "url": "https://carbonherald.com/cop31-mining-waste-emerges-as-a-potential-goldmine-for-scaling-carbon-removal/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "mineralisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Mineralisation/enhanced weathering pathways are adjacent to CO2CRC's geological-storage focus and relevant to Australia's large mining-waste streams.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Conference-session coverage; date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#03",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Gulf carbon-capture outlook cut as hydrogen projects stall",
+    "summary": "Analysis reports the Gulf's carbon-capture deployment outlook has been slashed as blue-hydrogen projects that would anchor CO2 capture stall on weak offtake demand, dampening near-term CCS build-out expectations across the region.",
+    "source": "AGBI",
+    "pub_date": "2026-11-13",
+    "url": "https://www.agbi.com/analysis/energy/2026/11/gulf-carbon-capture-outlook-slashed-as-hydrogen-projects-stall/",
+    "region": "Middle East",
+    "countries": [
+      "United Arab Emirates",
+      "Saudi Arabia"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Gulf NOC CCS pipelines are a global benchmark; a slowdown reshapes competitive supply of storage capacity and blue-product markets Australia also eyes.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Regional analysis; date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#04",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Occidental targets ~4 Mtpa CO2 supply via new carbon-capture partnerships",
+    "summary": "Occidental said it is targeting around 4 million tonnes per year of CO2 supply through new carbon-capture partnerships, building on CO2 offtake deals flagged at its Q3 results and feeding its Permian CO2-EOR and 1PointFive DAC strategy.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-13",
+    "url": "https://carbonherald.com/occidental-targets-4-million-tonnes-of-co2-supply-through-new-carbon-capture-partnerships/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Occidental",
+      "1PointFive"
+    ],
+    "org_types": [
+      "OG-major",
+      "developer"
+    ],
+    "instrument_type": "offtake",
+    "value_chain": [
+      "capture",
+      "utilisation"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": 4,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Quantifies Oxy's CO2-supply ambition; CO2-EOR-linked offtake remains a template and a credibility question for CCS business models.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Builds on 10-11 Nov Q3 offtake disclosure; adds 4 Mtpa figure. Date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#05",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "COP31 panel warns buyers to lock in carbon-removal supply before demand surges",
+    "summary": "A COP31 panel warned companies to secure durable carbon-removal supply now, before anticipated demand outstrips a still-thin supply of high-quality CDR credits and pushes prices up.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-13",
+    "url": "https://carbonherald.com/cop31-panel-warns-companies-to-secure-carbon-removal-supply-before-demand-surges/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "CDR market-tightness signals underpin the longer-term revenue case for engineered carbon storage.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Conference-session coverage; date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#06",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Analysis: Pathways CCS economics hinge on government support",
+    "summary": "An analysis of the Pathways Alliance oil-sands CCS project argues its underlying economics do not work without substantial federal and Alberta government support, framing the live fiscal-agreement negotiations as decisive for FID.",
+    "source": "EnergyNow",
+    "pub_date": "2026-11-13",
+    "url": "https://energynow.ca/2026/11/analysis-underlying-economics-behind-pathways-carbon-capture-and-storage-project-show-government-support-needed-to-make-it-work/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Pathways Alliance"
+    ],
+    "org_types": [
+      "OG-major"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Pathways is a bellwether for public-support dependence of large CCS; its economics debate informs Australia's own funding-gap discussion.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": null,
+    "extractor_note": "Analytical piece tied to live 15-Nov fiscal-agreement deadline; date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#07",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Norwegian-British Chamber eyes cross-country CCS collaboration",
+    "summary": "The Norwegian British Chamber of Commerce signalled a push for closer UK-Norway cross-country energy collaboration, including on carbon capture and storage value chains linking UK emitters to Norwegian offshore storage.",
+    "source": "Energy Voice",
+    "pub_date": "2026-11-13",
+    "url": "https://www.energyvoice.com/renewables-energy-transition/ccs/607008/norwegian-british-chamber-of-commerce-eyes-cross-country-collaboration/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway",
+      "United Kingdom"
+    ],
+    "organisations": [
+      "Norwegian British Chamber of Commerce"
+    ],
+    "org_types": [
+      "industry-body"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Cross-border CO2 transport-and-storage collaboration models (UK-Norway) parallel Australia's own export-storage ambitions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Trade-body item filed under CCS; date from Google Alerts sampler, WebFetch blocked so unverified."
+  },
+  {
+    "id": "2026-11-16#08",
+    "briefing_date": "2026-11-16",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Community pushback and regulatory uncertainty give pause in the CCS space",
+    "summary": "A US trade-press piece reports that community opposition and regulatory uncertainty are causing developers to hesitate on CCS projects, underscoring the social-licence and permitting risks around pipelines and storage siting.",
+    "source": "1012 Industry Report",
+    "pub_date": "2026-11-13",
+    "url": "https://www.1012industryreport.com/uncategorized/community-pushback-and-regulatory-uncertainty-give-pause-in-the-ccs-space/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence friction and permitting delay are the same headwinds CO2CRC-adjacent projects face in winning community acceptance.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Lower-tier regional trade source; date from Google Alerts sampler, WebFetch blocked so unverified."
+  }
+]
