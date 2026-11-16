@@ -1,0 +1,120 @@
+[
+  {
+    "id": "2026-11-17#01",
+    "briefing_date": "2026-11-17",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Record ~700 carbon-capture lobbyists granted access to COP31",
+    "summary": "The Center for International Environmental Law reports a record ~700 delegates advocating for carbon capture and storage secured accreditation to COP31 in Antalya (up from 531 at COP30), underscoring the intensity of industry lobbying as CCUS and CDR language is negotiated into the cover decision.",
+    "source": "CIEL",
+    "pub_date": "2026-11-16",
+    "url": "https://www.ciel.org/news/record-700-carbon-capture-lobbyists-secured-access-to-cop31-climate-talks/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Center for International Environmental Law"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence barometer: record CCS lobbying at COP31 sharpens the public legitimacy debate CO2CRC must navigate as it argues the pro-CCS case in Australia.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date from Google Alerts sampler metadata; WebFetch blocked so page date unverified."
+  },
+  {
+    "id": "2026-11-17#02",
+    "briefing_date": "2026-11-17",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Oil Change International rejects draft COP31 cover decision's reliance on CCS and CDR",
+    "summary": "In a response to the draft COP31 cover text, Oil Change International welcomed its diagnosis of fossil-fuel dependence but criticised reliance on massively scaled-up CCS and carbon dioxide removal, arguing electrification must be powered by renewables rather than gas or offsets.",
+    "source": "Oil Change International",
+    "pub_date": "2026-11-16",
+    "url": "https://oilchange.org/news/response-to-the-draft-cop31-cover-decision/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Oil Change International"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Signals the social-licence headwinds facing CCS/CDR in the final COP31 text — directly relevant to the multilateral framing CO2CRC relies on for Australian CCS legitimacy.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date '16 November 2026' stated explicitly in WebSearch snippet; WebFetch blocked so page not directly confirmed."
+  },
+  {
+    "id": "2026-11-17#03",
+    "briefing_date": "2026-11-17",
+    "item_status": "radar",
+    "section": "policy",
+    "headline": "COP31: South Korea pushes cross-border CCUS and global onboard carbon capture",
+    "summary": "Seoul is pressing at Antalya for cross-border CO2 accounting rules and global safety standards for onboard (shipboard) carbon capture.",
+    "source": "Carbon Herald",
+    "pub_date": null,
+    "url": "https://carbonherald.com/cop31-south-korea-pushes-cross-border-ccus-and-global-onboard-capture/",
+    "region": "APAC",
+    "countries": [
+      "South Korea"
+    ],
+    "organisations": [
+      "Government of South Korea"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "transport",
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Transboundary CO2 accounting and onboard-capture standards shape the regional cross-border storage market Australia is positioning for (Bayu-Undan, Moomba third-party CO2).",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar item: publication date could not be confirmed (WebFetch blocked); held for retry, not a dated commitment."
+  }
+]
