@@ -1,0 +1,154 @@
+[
+  {
+    "id": "2026-11-18#01",
+    "briefing_date": "2026-11-18",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "COP31 draft cover decision sets first-ever 2035 CCUS and carbon-removal capacity goals",
+    "summary": "The Türkiye COP31 Presidency's first draft cover decision proposes, for the first time in a COP text, quantified scale-up goals for carbon management — at least ~500 Mt CO₂/yr of CCUS capacity by 2035, alongside a longer-term ambition cited at 1.3–2.5 Gt/yr. The Presidency stressed the draft reflects divergent national positions, not consensus, and EU climate chief Wopke Hoekstra dismissed it as a “shopping list” at odds with the logic of implementation; adoption is targeted for the closing plenary on Friday.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-17",
+    "url": "https://carbonherald.com/cop31-first-draft-sets-ambitious-2035-targets-for-carbon-capture-removal-gains-ground/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "UNFCCC COP31 Presidency",
+      "European Commission"
+    ],
+    "org_types": [
+      "multilateral",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2035,
+    "capacity_mtpa": 500,
+    "co2crc_relevance": "high",
+    "co2crc_note": "First COP cover text to quantify global CCUS deployment ambition — a material policy signal for CCS investment and for Australia's international positioning.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Capacity figure is a draft policy target (not consensus); a longer-term 1.3–2.5 Gt/yr ambition is also cited. Page-level date confirmed via Google Alerts feed ISO timestamp + web search corroboration (WebFetch blocked for carbonherald.com this session)."
+  },
+  {
+    "id": "2026-11-18#02",
+    "briefing_date": "2026-11-18",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "CNPC commissions what it calls China's longest CO₂ pipeline for Jilin CCUS-EOR",
+    "summary": "PetroChina/CNPC has put into operation a long-distance dense-phase CO₂ pipeline feeding its Jilin oilfield CCUS-EOR complex in the Songliao Basin, north-east China. The first phase runs about 282 km with a design capacity of roughly 3.3 Mt CO₂/yr (the planned full route is near 400 km linking Changchun, Jilin, Songyuan and Siping), extending CNPC's commercial CCUS-EOR push — the company has cumulatively injected more than 13 Mt CO₂.",
+    "source": "Carbon Herald; gasworld",
+    "pub_date": "2026-11-17",
+    "url": "https://carbonherald.com/cnpc-commissions-chinas-longest-co2-pipeline/",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "CNPC",
+      "PetroChina Jilin Oilfield"
+    ],
+    "org_types": [
+      "NOC",
+      "NOC"
+    ],
+    "instrument_type": "infrastructure",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 3.3,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "An Asian NOC scaling CO₂ transport infrastructure — a benchmark for dense-phase pipeline and CCUS-EOR deployment relevant to APAC transport value chains.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "'Longest' is CNPC's own, historically contested claim; first-phase length/capacity from corroborating background search. Capacity_mtpa is a transport figure (not additive to capture). Date via alerts feed + two outlets (WebFetch blocked)."
+  },
+  {
+    "id": "2026-11-18#03",
+    "briefing_date": "2026-11-18",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Plans to rely on carbon removal and CCS at COP31 spark scientific debate",
+    "summary": "New Scientist reports growing contention at COP31 over the draft cover decision's heavy reliance on carbon dioxide removal and CCS to manage the 1.5°C overshoot, with scientists and campaigners warning the technologies remain unproven at the scale implied and risk diluting near-term emission cuts.",
+    "source": "New Scientist",
+    "pub_date": "2026-11-17",
+    "url": "https://www.newscientist.com/article/2599223-plans-to-rely-on-carbon-removal-tech-spark-debate-at-cop31/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "UNFCCC"
+    ],
+    "org_types": [
+      "multilateral"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Signals social-licence and credibility risk around over-reliance on CDR/CCS in global climate policy — relevant to how CCS is framed publicly.",
+    "sentiment": "negative",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date via alerts feed ISO + web search (WebFetch blocked for newscientist.com)."
+  },
+  {
+    "id": "2026-11-18#04",
+    "briefing_date": "2026-11-18",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "COP31 ‘Think Negative’ pavilion draws strong crowds as carbon removal takes centre stage",
+    "summary": "Carbon Herald reports the dedicated carbon-removal pavilion at COP31 drew large crowds, reflecting the rising mainstream profile of CDR — including DAC and BECCS — within the UN climate negotiations.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-17",
+    "url": "https://carbonherald.com/cop31-think-negative-pavilion-draws-strong-crowds-as-carbon-removal-takes-center-stage/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "DAC",
+      "BECCS"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Indicator of growing visibility and engagement for carbon removal at COP — a positive momentum signal for the CDR/CCS sector.",
+    "sentiment": "positive",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Date via alerts feed ISO timestamp (WebFetch blocked for carbonherald.com)."
+  }
+]

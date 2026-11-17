@@ -1,0 +1,15 @@
+# Quiet day — CCS briefing — Wed 18 Nov 2026
+
+Quiet news day dominated by COP31 in Antalya, where the Presidency's first draft cover decision put quantified CCUS and carbon-removal targets into a COP text for the first time, and by CNPC commissioning a major CO₂ pipeline in China. Coverage note: this run is partial — per-item page verification via WebFetch was blocked for the trade-press domains in this session (dates were confirmed instead from the Google Alerts feed timestamps and corroborating web search), and the Outlook MCP was unavailable, so Shelly Murrell's and the IEAGHG weekly digests could not be ingested.
+
+## Projects
+- **CNPC commissions what it calls China's longest CO₂ pipeline for Jilin CCUS-EOR** — PetroChina/CNPC has put into operation a long-distance dense-phase CO₂ pipeline feeding its Jilin oilfield CCUS-EOR complex in the Songliao Basin, north-east China. The first phase runs about 282 km with a design capacity of roughly 3.3 Mt CO₂/yr (the planned full route is near 400 km linking Changchun, Jilin, Songyuan and Siping), extending CNPC's commercial CCUS-EOR push — the company has cumulatively injected more than 13 Mt CO₂. (Carbon Herald; gasworld, 17 Nov 2026) [link](https://carbonherald.com/cnpc-commissions-chinas-longest-co2-pipeline/)
+
+## Policy
+- **COP31 draft cover decision sets first-ever 2035 CCUS and carbon-removal capacity goals** — The Türkiye COP31 Presidency's first draft cover decision proposes, for the first time in a COP text, quantified scale-up goals for carbon management — at least ~500 Mt CO₂/yr of CCUS capacity by 2035, alongside a longer-term ambition cited at 1.3–2.5 Gt/yr. The Presidency stressed the draft reflects divergent national positions, not consensus, and EU climate chief Wopke Hoekstra dismissed it as a “shopping list” at odds with the logic of implementation; adoption is targeted for the closing plenary on Friday. (Carbon Herald, 17 Nov 2026) [link](https://carbonherald.com/cop31-first-draft-sets-ambitious-2035-targets-for-carbon-capture-removal-gains-ground/)
+
+## Media sentiment & social licence
+- **Plans to rely on carbon removal and CCS at COP31 spark scientific debate** — New Scientist reports growing contention at COP31 over the draft cover decision's heavy reliance on carbon dioxide removal and CCS to manage the 1.5°C overshoot, with scientists and campaigners warning the technologies remain unproven at the scale implied and risk diluting near-term emission cuts. (New Scientist, 17 Nov 2026) [link](https://www.newscientist.com/article/2599223-plans-to-rely-on-carbon-removal-tech-spark-debate-at-cop31/)
+- **COP31 ‘Think Negative’ pavilion draws strong crowds as carbon removal takes centre stage** — Carbon Herald reports the dedicated carbon-removal pavilion at COP31 drew large crowds, reflecting the rising mainstream profile of CDR — including DAC and BECCS — within the UN climate negotiations. (Carbon Herald, 17 Nov 2026) [link](https://carbonherald.com/cop31-think-negative-pavilion-draws-strong-crowds-as-carbon-removal-takes-center-stage/)
+
+— Auto-briefing
