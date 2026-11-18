@@ -1,0 +1,32 @@
+[
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OS3g5dzRuSWhCYXg5ekRIVWZqWnhudnkwZTEtbWt6elRDWVhqOEFVMEp0Vkk1RHFzcW1ET2pxbDRoNXJDNlJHc003Nnl4NWltXzcwSEM0aWdrbUlGcENoWGdmMEFwcnQ1Y1QyeVhGa28wMk15V2I3Z1V3?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OS3g5dzRuSWhCYXg5ekRIVWZqWnhudnkwZTEtbWt6elRDWVhqOEFVMEp0Vkk1RHFzcW1ET2pxbDRoNXJDNlJHc003Nnl4NWltXzcwSEM0aWdrbUlGcENoWGdmMEFwcnQ1Y1QyeVhGa28wMk15V2I3Z1V3?oc=5",
+    "headline": "Layoffs at Carbfix - Iceland Monitor",
+    "source_domain": "mbl.is",
+    "publication_date": "2026-11-17T11:57:00+00:00",
+    "fuzzy_key": "carbfix,iceland,layoffs,monitor",
+    "feed_name": "Orca / CarbFix (storage project)",
+    "feed_tier": "3b"
+  },
+  {
+    "canonical_url": "https://phys.org/news/2026-11-weathering-carbon-capture.html",
+    "raw_url": "https://phys.org/news/2026-11-weathering-carbon-capture.html",
+    "headline": "How enhanced rock weathering can speed up carbon capture",
+    "source_domain": "phys.org",
+    "publication_date": "2026-11-17T02:20:01+00:00",
+    "fuzzy_key": "can,capture,carbon,enhanced,how,rock,speed,up,weathering",
+    "feed_name": "Phys.org — Earth Sciences",
+    "feed_tier": 4
+  },
+  {
+    "canonical_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYmdWVWl5VF9MSFdOOTdjbi1US0lPT2lRZ1dVT3Uyc0NJa2RxNmVJTVBSNHBCNDJoWmdGNHJEZEU3VHFCNm9qakU3a2dqdWVocmVINmFlWFRRMG52d2twYU4zbHI2T2FFQVdCWEYxWmR1cjdUVFdTQWsxckxIM0xSVDFMSVRWYWh1TlRlNFB5eFhIX1JQUHRjVFluclg?oc=5",
+    "raw_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYmdWVWl5VF9MSFdOOTdjbi1US0lPT2lRZ1dVT3Uyc0NJa2RxNmVJTVBSNHBCNDJoWmdGNHJEZEU3VHFCNm9qakU3a2dqdWVocmVINmFlWFRRMG52d2twYU4zbHI2T2FFQVdCWEYxWmR1cjdUVFdTQWsxckxIM0xSVDFMSVRWYWh1TlRlNFB5eFhIX1JQUHRjVFluclg?oc=5",
+    "headline": "Carbon Capture and Storage Market to Reach USD 15.96 Billion - openPR.com",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-11-17T07:21:34+00:00",
+    "fuzzy_key": "15,96,billion,capture,carbon,com,market,openpr,reach,storage,usd",
+    "feed_name": "Google News — CCS global",
+    "feed_tier": 1
+  }
+]
