@@ -1,0 +1,164 @@
+[
+  {
+    "id": "2026-11-20#01",
+    "briefing_date": "2026-11-20",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "COP31 Day-10 draft keeps CCUS and carbon-removal goals but drops fossil-fuel references",
+    "summary": "The Turkiye/Australia Presidency's revised second draft cover decision retains the bracketed goal to scale CCS to at least ~500 Mt CO2/yr by 2035 and keeps broad carbon-dioxide-removal language, while stripping out explicit fossil-fuel wording, leaving carbon-management provisions among the most contested items heading into the closing plenary.",
+    "source": "Climate Home News / Energy Intelligence",
+    "pub_date": "2026-11-19",
+    "url": "https://www.climatechangenews.com/2026/11/19/cop31-antalya-turkiye-australia-ministers-agremeent-fossil-fuels-electrification/",
+    "region": "Global",
+    "countries": [
+      "Turkey",
+      "Australia",
+      "European Union"
+    ],
+    "organisations": [
+      "COP31 Presidency",
+      "European Union"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2035,
+    "capacity_mtpa": 500.0,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A first-ever COP-level CCUS/CDR capacity goal would set the global policy frame CO2CRC's Australian CCS work operates within; Australia co-presides the talks.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "500 Mt is a draft policy target in brackets, not a commitment; capacity_mtpa is a policy-target figure, non-additive. Day-10 development, distinct from the first draft briefed 17-18 Nov."
+  },
+  {
+    "id": "2026-11-20#02",
+    "briefing_date": "2026-11-20",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Reuters asks whether Europe can scale its flagship carbon-capture projects into a viable industrial solution",
+    "summary": "A Reuters feature weighs whether Europe's marquee CCS schemes can move from demonstration to commercially viable industrial decarbonisation, citing cost, demand and capture plants' dependence on still-incomplete transport-and-storage clusters.",
+    "source": "Reuters",
+    "pub_date": "2026-11-19",
+    "url": "https://www.reuters.com/sustainability/climate-energy/can-europe-scale-flagship-carbon-capture-projects-into-viable-solution-cleaning--ecmii-2026-11-18/",
+    "region": "Europe-UK",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "Reuters"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "European commercial-viability debate informs the demand-side and T&S-cluster risks CO2CRC tracks for Australian CCS economics.",
+    "sentiment": "neutral",
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Analytical feature, not a discrete event; no money figure."
+  },
+  {
+    "id": "2026-11-20#03",
+    "briefing_date": "2026-11-20",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "COP31 carbon-capture target raises fears of prolonged fossil-fuel dependence",
+    "summary": "African coverage of the Antalya talks reports warnings that the draft cover decision's ~500 Mt CO2/yr CCS goal could entrench fossil-fuel use, with CIEL's Rachel Kennerley arguing the focus on capture technology distracts from phasing out fossil fuels.",
+    "source": "allAfrica",
+    "pub_date": "2026-11-19",
+    "url": "https://allafrica.com/stories/202611190154.html",
+    "region": "Africa",
+    "countries": [
+      "Nigeria"
+    ],
+    "organisations": [
+      "Center for International Environmental Law"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Social-licence pushback on CCS in the COP text is reputationally relevant to CO2CRC's public-engagement work.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Media/social-licence item; quotes CIEL."
+  },
+  {
+    "id": "2026-11-20#04",
+    "briefing_date": "2026-11-20",
+    "item_status": "radar",
+    "section": "technology",
+    "headline": "New water-tolerant carbon-capture material turns humidity from obstacle to ally",
+    "summary": "Oregon State University researchers report a metal-organic framework (BVR-X, Angewandte Chemie) that routes water and CO2 into separate pore regions so moisture no longer blocks capture sites, sustaining performance across dozens of cycles in humid exhaust; a patent has been filed.",
+    "source": "ScienceDaily / Digital Journal",
+    "pub_date": "2026-11-17",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261116023405.htm",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Oregon State University"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Water-tolerant sorbent chemistry is relevant to capture-cost R&D CO2CRC follows, but early-stage.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar: underlying news dated 17 Nov, just outside the 19-20 Nov window."
+  }
+]
