@@ -45,6 +45,33 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://ctvnews.ca/politics/article/alberta-tweaks-carbon-capture-incentive-program-to-allow-grants-during-construction",
+    "raw_url": "https://www.ctvnews.ca/politics/article/alberta-tweaks-carbon-capture-incentive-program-to-allow-grants-during-construction/",
+    "headline": "Alberta tweaks carbon capture incentive program to allow grants during construction",
+    "source_domain": "ctvnews.ca",
+    "publication_date": "2026-11-21T03:56:24+00:00",
+    "fuzzy_key": "alberta,allow,capture,carbon,construction,during,grants,incentive,program,tweaks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://desmog.com/2026/11/20/the-great-carbon-capture-delusion-returns-to-haunt-cop31",
+    "raw_url": "https://www.desmog.com/2026/11/20/the-great-carbon-capture-delusion-returns-to-haunt-cop31/",
+    "headline": "The Great Carbon Capture Delusion Returns to Haunt COP31 - DeSmog",
+    "source_domain": "desmog.com",
+    "publication_date": "2026-11-21T02:12:00+00:00",
+    "fuzzy_key": "capture,carbon,cop31,delusion,desmog,great,haunt,returns",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energynewsbulletin.net/exploration/news-analysis/4539806/wa-acreage-released-exploration-ccs",
+    "raw_url": "https://www.energynewsbulletin.net/exploration/news-analysis/4539806/wa-acreage-released-exploration-ccs",
+    "headline": "New WA acreage released for O&G exploration and CCS - Energy News Bulletin",
+    "source_domain": "energynewsbulletin.net",
+    "publication_date": "2026-11-21T04:15:48+00:00",
+    "fuzzy_key": "acreage,bulletin,ccs,energy,exploration,new,news,released,wa",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://energyvoice.com/renewables-energy-transition/ccs/607395/government-squashes-connahs-quay-hynet-hopes",
     "raw_url": "https://www.energyvoice.com/renewables-energy-transition/ccs/607395/government-squashes-connahs-quay-hynet-hopes/",
     "headline": "Government squashes Connah's Quay HyNet hopes - Energy Voice",
@@ -141,6 +168,15 @@
     "source_domain": "worldpipelines.com",
     "publication_date": "2026-11-20T21:46:17+00:00",
     "fuzzy_key": "accord,capture,carbon,centre,climate,cop31,draft,pipelines,puts,strategy,world",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://x.com/InsideEPA/status/2123551700493406229",
+    "raw_url": "https://x.com/InsideEPA/status/2123551700493406229",
+    "headline": "CCS Advocates Detail Calls For EPA To Update Class VI Permit Rules - X",
+    "source_domain": "x.com",
+    "publication_date": "2026-11-21T03:59:25+00:00",
+    "fuzzy_key": "advocates,calls,ccs,class,detail,epa,permit,rules,update,vi",
     "found_via": "google_alerts"
   }
 ]
