@@ -1,0 +1,481 @@
+[
+  {
+    "id": "2026-11-23#01",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Australia releases new offshore acreage inviting CCS exploration",
+    "summary": "Canberra opened a fresh round of offshore acreage — spanning both petroleum and greenhouse-gas storage areas — weeks after legislating its 2035 climate target, with several Western Australian blocks flagged for CO2 storage appraisal.",
+    "source": "Energy News Bulletin",
+    "pub_date": "2026-11-21",
+    "url": "https://www.energynewsbulletin.net/exploration/news-analysis/4539806/wa-acreage-released-exploration-ccs",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Australian Government",
+      "NOPTA"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "New Australian offshore CO2-storage acreage expands the national storage inventory CO2CRC characterisation work underpins.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Block count/basins not page-verified (WebFetch blocked)."
+  },
+  {
+    "id": "2026-11-23#02",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "UK government excludes Uniper's Connah's Quay from HyNet CO2 cluster",
+    "summary": "Trade coverage reports the UK government has ended the Connah's Quay low-carbon power project's path into the HyNet carbon-capture cluster, a setback for one of the gas-fired projects previously shortlisted to connect to the North West network.",
+    "source": "Energy Voice",
+    "pub_date": "2026-11-20",
+    "url": "https://www.energyvoice.com/renewables-energy-transition/ccs/607395/government-squashes-connahs-quay-hynet-hopes/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "UK Government",
+      "Uniper",
+      "HyNet"
+    ],
+    "org_types": [
+      "government",
+      "utility",
+      "developer"
+    ],
+    "instrument_type": "project-cancellation",
+    "value_chain": [
+      "capture",
+      "transport"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "cancelled",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "UK fiscal pressure trims the HyNet capture pipeline — context on cluster-model delivery risk.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Headline-only; project detail unverified (WebFetch blocked)."
+  },
+  {
+    "id": "2026-11-23#03",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "COP31 collapses in Antalya without an adopted cover decision — draft CCUS and carbon-removal targets fall with it",
+    "summary": "The Antalya climate summit ended Sunday with no agreed cover decision — the first COP without an overarching deal since 2009 — with fossil-fuel language, carbon capture and finance among the unresolved fault lines, meaning the draft's first-ever quantified CCUS/CDR capacity goals were never adopted.",
+    "source": "UN News; CBS News",
+    "pub_date": "2026-11-22",
+    "url": "https://news.un.org/en/story/2026/11/1168855",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "UNFCCC",
+      "United Nations"
+    ],
+    "org_types": [
+      "multilateral",
+      "multilateral"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "COP31 adopted no text, so the draft ~500 Mt/yr CCUS goal is not in force — removes a near-term multilateral tailwind for CCS.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Draft CCUS/CDR capacity targets NOT adopted; capacity figure intentionally left null."
+  },
+  {
+    "id": "2026-11-23#04",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Alberta extends Carbon Capture Incentive Program to 2035 and allows grant payments during construction",
+    "summary": "Alberta has reworked its 12% capital-grant CCUS incentive — extending it to 2035 and letting operators draw part of the grant during construction rather than only after a project is operating, aligning it more closely with Canada's federal CCUS investment tax credit.",
+    "source": "Western Standard; CTV News",
+    "pub_date": "2026-11-21",
+    "url": "https://www.ctvnews.ca/politics/article/alberta-tweaks-carbon-capture-incentive-program-to-allow-grants-during-construction/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Government of Alberta"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "incentive",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": 2035,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Construction-phase grant payments are a fiscal-design model for accelerating CCS FIDs — relevant to Australian support design.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "government",
+    "amount_basis": "government-funding",
+    "extractor_note": "12% capital-grant rate; no total A$/C$ figure stated, amount null."
+  },
+  {
+    "id": "2026-11-23#05",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "technology",
+    "headline": "SINTEF asks whether CCS can keep the AI/data-centre boom inside the carbon budget",
+    "summary": "Norwegian research institute SINTEF sets out the case that rapidly rising data-centre and AI power demand will outpace clean supply this decade, and examines where carbon capture on gas generation and industry could blunt the resulting emissions overshoot.",
+    "source": "SINTEF",
+    "pub_date": "2026-11-20",
+    "url": "https://www.sintef.no/en/latest-news/2026/can-ccs-stop-the-ai-boom-from-blowing-the-carbon-budget/",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "SINTEF"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "R&D",
+    "value_chain": [
+      "capture"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Data-centre/AI power demand increasingly cited in CCS deployment cases — a framing input, not a project.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-23#06",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Carbon Herald: Alberta CCS projects face weak economics and rising taxpayer risk",
+    "summary": "A trade analysis argues several Alberta carbon-capture projects rest on fragile economics that lean heavily on public support, warning of growing fiscal exposure for taxpayers as provincial and federal incentives underwrite the build-out.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-20",
+    "url": "https://carbonherald.com/alberta-carbon-capture-projects-face-weak-economics-and-rising-taxpayer-risk/",
+    "region": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "organisations": [
+      "Pathways Alliance",
+      "Government of Alberta"
+    ],
+    "org_types": [
+      "industry-body",
+      "government"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Project-economics and public-subsidy dependence debate parallels Australian CCS funding-design questions.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Analysis piece; no discrete new commitment."
+  },
+  {
+    "id": "2026-11-23#07",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Forbes: Türkiye turned COP31 into an energy summit — now utilities and lenders must deliver",
+    "summary": "A Forbes analysis argues the Antalya talks effectively pivoted from a negotiated climate deal toward an energy-and-investment agenda, placing the onus on utilities, financiers and project developers — including in carbon management — to convert pledges into bankable projects.",
+    "source": "Forbes",
+    "pub_date": "2026-11-22",
+    "url": "https://www.forbes.com/sites/guneyyildiz/2026/11/22/turkey-made-cop31-an-energy-summit-utilities-and-lenders-must-now-deliver-it/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Post-COP delivery burden shifts to lenders/utilities/developers — capital-allocation read for carbon management.",
+    "sentiment": null,
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Opinion/analysis."
+  },
+  {
+    "id": "2026-11-23#08",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "ProPublica: why is the world still counting on unproven carbon capture technology?",
+    "summary": "A ProPublica investigation questions the heavy reliance on carbon capture and storage in climate models and national plans, arguing deployment has consistently lagged projections and that the technology is being used to justify continued fossil-fuel production.",
+    "source": "ProPublica",
+    "pub_date": "2026-11-21",
+    "url": "https://www.propublica.org/article/carbon-capture-and-storage-climate-models",
+    "region": "Global",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "ProPublica"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "High-profile investigative-media scepticism will shape CCS public and political framing.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-23#09",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "DeSmog: 'the great carbon capture delusion returns to haunt COP31'",
+    "summary": "DeSmog argues the prominence of carbon capture and removal at the Antalya talks reflects fossil-interest lobbying rather than deliverable climate action, casting the technology as a delay tactic.",
+    "source": "DeSmog",
+    "pub_date": "2026-11-20",
+    "url": "https://www.desmog.com/2026/11/20/the-great-carbon-capture-delusion-returns-to-haunt-cop31/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "DeSmog"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Advocacy-media critique casting CCS at COP31 as a fossil-fuel delay narrative.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion",
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-23#10",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "IEEFA: 'different geology, different risks' — what can go wrong underground in CCS",
+    "summary": "A think-tank briefing from IEEFA argues storage-site geology varies widely and that leakage, induced seismicity and containment uncertainties mean CCS carries site-specific subsurface risks often understated in project promotion.",
+    "source": "IEEFA",
+    "pub_date": "2026-11-20",
+    "url": "https://ieefa.org/resources/different-geology-different-risks-what-can-go-wrong-underground-carbon-capture-and",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "IEEFA"
+    ],
+    "org_types": [
+      "research"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage",
+      "MMV-MRV"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Storage-integrity/subsurface-risk critique speaks directly to the Otway MMV evidence base CO2CRC leads.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-23#11",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "allAfrica: COP31 carbon-removal push could threaten African farmland and fisheries, activist warns",
+    "summary": "African civil-society coverage from Antalya warns that scaling land- and ocean-based carbon removal championed at COP31 could compete with food production and fishing livelihoods across the continent.",
+    "source": "allAfrica",
+    "pub_date": "2026-11-20",
+    "url": "https://allafrica.com/stories/202611190333.html",
+    "region": "Africa",
+    "countries": [],
+    "organisations": [],
+    "org_types": [],
+    "instrument_type": "other",
+    "value_chain": [
+      "marine-CDR",
+      "BECCS"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Global-South food-security/land-use dimension of the CDR/CCS social-licence debate.",
+    "sentiment": "negative",
+    "tags": [
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-23#12",
+    "briefing_date": "2026-11-23",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "RenewEconomy: 'failed gas fantasy' — CCS slammed as Labor opens offshore acreage for carbon storage",
+    "summary": "RenewEconomy and the Greens attack the government's new offshore acreage release, casting the accompanying CO2-storage areas as 'offshore carbon dumping' that props up continued gas extraction rather than cutting emissions.",
+    "source": "RenewEconomy",
+    "pub_date": "2026-11-21",
+    "url": "https://reneweconomy.com.au/failed-gas-fantasy-ccs-slammed-as-labor-issues-permits-for-offshore-carbon-dumping/",
+    "region": "APAC",
+    "countries": [
+      "Australia"
+    ],
+    "organisations": [
+      "Australian Greens",
+      "Australian Government"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Domestic political contest over Australian offshore CCS acreage — direct home-market social licence for CO2CRC.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion",
+      "NGO"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  }
+]
