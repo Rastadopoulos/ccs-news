@@ -1,6 +1,6 @@
 # Authoritative CCS source monitor
 
-Retrieved: 2026-11-15T23:58:16.623201+00:00
+Retrieved: 2026-11-23T00:55:02.411929+00:00
 
 - **RETRIEVAL-FAILED** IEA CCUS Projects Database product — HTTP Error 403: Forbidden
 - **UNCHANGED** IEA CCUS Projects Explorer data
@@ -10,17 +10,17 @@ Retrieved: 2026-11-15T23:58:16.623201+00:00
 - **REVIEW** UK NSTA carbon storage public register
 - **RETRIEVAL-FAILED** UK Ofgem CO2 transport and storage regulation — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** Australian NOPTA offshore greenhouse gas storage — HTTP Error 404: Not Found
-- **UNCHANGED** Australian NEATS titles and identified storage formations
+- **REVIEW** Australian NEATS titles and identified storage formations
 - **REVIEW** NOPSEMA environment plan activity
 - **RETRIEVAL-FAILED** Australian sea dumping and CO2 export permits — The read operation timed out
-- **RETRIEVAL-FAILED** EU Net-Zero Industry Act strategic projects and CO2 storage — HTTP Error 429: Too Many Requests
+- **RETRIEVAL-FAILED** EU Net-Zero Industry Act strategic projects and CO2 storage — HTTP Error 404: Not Found
 - **CHANGED** Saudi Aramco carbon capture
 - **RETRIEVAL-FAILED** ADNOC carbon capture — HTTP Error 403: Forbidden
 - **RETRIEVAL-FAILED** PETRONAS carbon capture and storage — HTTP Error 404: Not Found
 - **RETRIEVAL-FAILED** Pertamina corporate news — HTTP Error 404: Not Found
 - **CHANGED** Petrobras news and releases
 - **RETRIEVAL-FAILED** Sinopec news — HTTP Error 404: Not Found
-- **CHANGED** JOGMEC CCS programme
+- **UNCHANGED** JOGMEC CCS programme
 - **CHANGED** INPEX news
 - **CHANGED** Santos media releases
 - **CHANGED** Equinor carbon capture and storage
