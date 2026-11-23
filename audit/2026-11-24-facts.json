@@ -1,0 +1,136 @@
+[
+  {
+    "id": "2026-11-24#01",
+    "briefing_date": "2026-11-24",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "EnEarth acquires Storegga's 30% stake and Lead Developer role in Acorn CCS",
+    "summary": "EnEarth, the carbon-storage arm spun out of Energean, has signed a sale-and-purchase agreement to take Storegga's 30% working interest and Lead Developer role in the Acorn CO2 transport-and-storage project in north-east Scotland, folding Acorn into a planned pan-European CO2 storage platform.",
+    "source": "Carbon Herald; Upstream; PFI",
+    "pub_date": "2026-11-23",
+    "url": "https://carbonherald.com/storegga-exits-acorn-ccs-project-as-enearth-acquires-30-stake/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom",
+      "Greece"
+    ],
+    "organisations": [
+      "EnEarth",
+      "Energean",
+      "Storegga",
+      "Acorn",
+      "Shell",
+      "Harbour Energy"
+    ],
+    "org_types": [
+      "developer",
+      "OG-major",
+      "developer",
+      "other",
+      "OG-major",
+      "OG-major"
+    ],
+    "instrument_type": "M&A",
+    "value_chain": [
+      "transport",
+      "storage",
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Developer consolidation at a flagship UK Track-2 cluster; a Mediterranean CO2-storage player building a pan-European T&S platform shows how CCS operatorship is consolidating across borders.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "private-investment",
+    "extractor_note": "Deal value not disclosed. Page date not WebFetch-verified (hosts blocked); 23 Nov confirmed via Google Alerts timestamps and multiple corroborating Tier-1/2 search sources."
+  },
+  {
+    "id": "2026-11-24#02",
+    "briefing_date": "2026-11-24",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Study argues a 'Carbon Takeback' obligation on North Sea producers could fund first wave of UK CCS",
+    "summary": "BusinessGreen reports on research arguing that a Carbon Takeback Obligation - requiring oil and gas producers to store a rising share of the CO2 embedded in their products - could fund the first wave of UK CCS without relying on open-ended taxpayer subsidy.",
+    "source": "BusinessGreen",
+    "pub_date": "2026-11-23",
+    "url": "https://www.businessgreen.com/news/4539324/study-carbon-takeback-north-sea-oil-gas-producers-fund-wave-uk-ccs-projects",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "BusinessGreen"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Carbon takeback / producer-pays mechanisms are a live alternative to grant-funded CCS and directly relevant to how Australia might finance storage without perpetual subsidy.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Reports on a policy study/proposal (no money committed). Underlying carbon-takeback research predates the window (earlier Oxford/Green Alliance work); treated as fresh on BusinessGreen's 23 Nov news framing. Page date not WebFetch-verified; from Google Alerts metadata."
+  },
+  {
+    "id": "2026-11-24#03",
+    "briefing_date": "2026-11-24",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "CNPC's Xinjiang oilfield CCUS project passes 2 million tonnes cumulative CO2 injection",
+    "summary": "PetroChina/CNPC reported that cumulative CO2 injection at its Xinjiang oilfield CCUS-EOR project in north-west China has passed 2 million tonnes, with plans for a CO2 pipeline network during the 15th Five-Year Plan to replace tanker-truck transport.",
+    "source": "CGTN / AFP",
+    "pub_date": "2026-11-17",
+    "url": "https://www.afpbb.com/articles/-/3609458",
+    "region": "China",
+    "countries": [
+      "China"
+    ],
+    "organisations": [
+      "CNPC",
+      "PetroChina"
+    ],
+    "org_types": [
+      "NOC",
+      "NOC"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "storage",
+      "utilisation",
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Illustrates steady Chinese NOC CCUS-EOR build-out; a reference point for commercial injection scale-up in a systematically under-covered region.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Radar item: published 17 Nov, outside the 23-24 Nov window but within 7 days. Cumulative injection figure is a resource/cumulative total, not an annual capacity - capacity_mtpa left null (non-additive)."
+  }
+]
