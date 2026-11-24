@@ -1,0 +1,130 @@
+[
+  {
+    "id": "2026-11-25#01",
+    "briefing_date": "2026-11-25",
+    "item_status": "fresh",
+    "section": "projects",
+    "headline": "Ozona CCS and Marubeni reach FID on Texas's Pawnee carbon sequestration project",
+    "summary": "The 50/50 Ozona-Marubeni JV took FID on the Pawnee project in Bee County, South Texas, capturing CO2 from a StarTex gas-treating facility and storing up to 400,000 t/yr in the Sligo Formation, with first injection targeted for Q1 2027. Marubeni leads carbon-credit marketing.",
+    "source": "JPT/SPE; BIC Magazine",
+    "pub_date": "2026-11-24",
+    "url": "https://jpt.spe.org/texas-carbon-storage-project-receives-fid",
+    "region": "North America",
+    "countries": [
+      "United States",
+      "Japan"
+    ],
+    "organisations": [
+      "Ozona CCS",
+      "Marubeni",
+      "StarTex Field Services"
+    ],
+    "org_types": [
+      "developer",
+      "financier",
+      "other"
+    ],
+    "instrument_type": "project-FID",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": 2027,
+    "capacity_mtpa": 0.4,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Trading-house-backed (Marubeni) storage-plus-credit-marketing model mirrors the off-take/value-chain structures Australian CCS hubs are pursuing; a rare fresh FID data point.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": null,
+    "extractor_note": "FID date inferred from 24 Nov trade-coverage flurry and SPE announcement; per-article WebFetch date-verification blocked this session (all external hosts unresolvable)."
+  },
+  {
+    "id": "2026-11-25#02",
+    "briefing_date": "2026-11-25",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Malaysia: CCUS development should benefit all states, including Sabah and Sarawak, as national roadmap nears launch",
+    "summary": "A federal minister said Malaysia's emerging CCUS industry must deliver value across all states, naming Sabah and Sarawak, as the government prepares to launch its Malaysia CCUS Roadmap 2050 by end-November, amid debate over federal-Sarawak regulatory coordination.",
+    "source": "The Malaysian Reserve",
+    "pub_date": "2026-11-24",
+    "url": "https://themalaysianreserve.com/2026/11/24/akmal-ccus-development-should-benefit-all-states-including-sabah-and-sarawak/",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "Government of Malaysia",
+      "Malaysia CCUS Agency",
+      "Petronas"
+    ],
+    "org_types": [
+      "government",
+      "government",
+      "NOC"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2050,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Malaysia is an APAC CCS storage-hub competitor and prospective cross-border CO2 partner; the roadmap and federal/Sarawak split shape the regional market Australia operates in.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Minister surname per headline; per-article WebFetch blocked this session."
+  },
+  {
+    "id": "2026-11-25#03",
+    "briefing_date": "2026-11-25",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "CleanTechnica: COP31 plants a big wet kiss on failed carbon capture technology",
+    "summary": "A sharply critical opinion piece argues the COP31 outcome lent undue legitimacy to CCS and carbon removal, framing the technology as a costly distraction from direct emissions cuts.",
+    "source": "CleanTechnica",
+    "pub_date": "2026-11-24",
+    "url": "https://cleantechnica.com/2026/11/23/cop-31-plants-a-big-wet-kiss-on-failed-carbon-capture-technology/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "CleanTechnica"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Representative of the post-COP31 sceptic wave; relevant to CCS social-licence monitoring but no direct Australian/CO2CRC link.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Publisher URL slug dated 2026-11-23 (US); Google Alerts capture 2026-11-24T02:39Z converts to 24 Nov Melbourne, within window."
+  }
+]
