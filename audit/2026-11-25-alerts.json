@@ -9,6 +9,15 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign",
+    "raw_url": "https://www.briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign/",
+    "headline": "Equinor Warns of CCS Shortfall Slowing Deals - Briefs Finance",
+    "source_domain": "briefs.co",
+    "publication_date": "2026-11-25T04:35:51+00:00",
+    "fuzzy_key": "briefs,ccs,deals,equinor,finance,shortfall,slowing,warns",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://businessgreen.com/news/4539324/study-carbon-takeback-north-sea-oil-gas-producers-fund-wave-uk-ccs-projects",
     "raw_url": "https://www.businessgreen.com/news/4539324/study-carbon-takeback-north-sea-oil-gas-producers-fund-wave-uk-ccs-projects",
     "headline": "Study: 'Carbon Takeback' by North Sea oil and gas producers could fund first wave of UK ...",
@@ -162,6 +171,24 @@
     "found_via": "google_alerts"
   },
   {
+    "canonical_url": "https://petromindo.com/news/article/regional-ccs-singapore-australia-sign-cross-border-co2-storage-agreement",
+    "raw_url": "https://www.petromindo.com/news/article/regional-ccs-singapore-australia-sign-cross-border-co2-storage-agreement",
+    "headline": "Regional CCS: Singapore, Australia sign cross-border CO2 storage agreement",
+    "source_domain": "petromindo.com",
+    "publication_date": "2026-11-25T04:35:51+00:00",
+    "fuzzy_key": "agreement,australia,border,ccs,co2,cross,regional,sign,singapore,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://theborneopost.com/2026/11/24/ccus-roadmap-2050-projects-up-to-rm170-bln-investments-under-27-initiatives",
+    "raw_url": "https://www.theborneopost.com/2026/11/24/ccus-roadmap-2050-projects-up-to-rm170-bln-investments-under-27-initiatives/",
+    "headline": "CCUS Roadmap 2050 projects up to RM170 bln investments under 27 initiatives",
+    "source_domain": "theborneopost.com",
+    "publication_date": "2026-11-25T04:41:57+00:00",
+    "fuzzy_key": "2050,27,bln,ccus,initiatives,investments,projects,rm170,roadmap,under,up",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://theedgemalaysia.com/node/827008",
     "raw_url": "https://theedgemalaysia.com/node/827008",
     "headline": "Economy Ministry targets up to six CCUS hubs, RM170 bil in investments by 2050",
@@ -177,6 +204,15 @@
     "source_domain": "themalaysianreserve.com",
     "publication_date": "2026-11-24T15:48:44+00:00",
     "fuzzy_key": "akmal,all,benefit,ccus,development,including,sabah,sarawak,should,states",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
+    "raw_url": "https://www.thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
+    "headline": "Govt eyes up to 250000 jobs from RM170bil carbon capture industry by 2050 - The Vibes",
+    "source_domain": "thevibes.com",
+    "publication_date": "2026-11-25T04:41:57+00:00",
+    "fuzzy_key": "2050,250000,capture,carbon,eyes,govt,industry,jobs,rm170bil,up,vibes",
     "found_via": "google_alerts"
   },
   {
