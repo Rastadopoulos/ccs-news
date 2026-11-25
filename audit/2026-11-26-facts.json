@@ -1,0 +1,249 @@
+[
+  {
+    "id": "2026-11-26#01",
+    "briefing_date": "2026-11-26",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Australia and Singapore conclude 'first-of-its-kind' cross-border CCS agreement",
+    "summary": "Australia and Singapore have reached a first-of-its-kind bilateral cross-border CCS instrument under their Green Economy Agreement, intended to allow captured CO2 from Singapore to be shipped to and stored in Australian offshore reservoirs. It is positioned as a potential pathfinder for cross-border CCS across the Asia-Pacific/ASEAN, resting on Australia's provisional application of the London Protocol Article 6 amendment.",
+    "source": "Upstream; Petromindo",
+    "pub_date": "2026-11-25",
+    "url": "https://www.upstreamonline.com/carbon-capture/australia-and-singapore-target-cross-border-ccs-in-first-of-its-kind-agreement/2-1-2079038",
+    "region": "APAC",
+    "countries": [
+      "Australia",
+      "Singapore"
+    ],
+    "organisations": [
+      "Government of Australia",
+      "Government of Singapore"
+    ],
+    "org_types": [
+      "government",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "Directly relevant to CO2CRC: a binding Australia-Singapore transboundary CCS framework turns Australian offshore storage into a regional service and validates the cross-border import-storage model (cf. Bayu-Undan); a pathfinder for ASEAN CO2 flows.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "Could not WebFetch to confirm exact 'signed' vs 'concluded' wording; corroborated across Upstream and Petromindo (both 25 Nov)."
+  },
+  {
+    "id": "2026-11-26#02",
+    "briefing_date": "2026-11-26",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "Malaysia launches CCUS Roadmap 2050, projecting up to RM170 billion investment and six hubs",
+    "summary": "Malaysia's Economy Ministry unveiled its 'Malaysia CCUS Roadmap 2050', projecting up to RM170 billion (~A$58bn) in cumulative CCUS investment, up to six CCUS hubs by 2050, around 27 initiatives, and the potential for up to 250,000 jobs. The roadmap sets a phased direction for the country's CCUS industry and follows the recently enacted CCUS Act.",
+    "source": "The Edge Malaysia; Malay Mail; The Borneo Post",
+    "pub_date": "2026-11-25",
+    "url": "https://theedgemalaysia.com/node/827008",
+    "region": "APAC",
+    "countries": [
+      "Malaysia"
+    ],
+    "organisations": [
+      "Malaysia Economy Ministry"
+    ],
+    "org_types": [
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": 2050,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "high",
+    "co2crc_note": "A regional competitor/partner's national CCUS roadmap with hard aggregate targets; shapes the ASEAN storage market CO2CRC's Australian hubs and the Australia-Singapore corridor will compete and cooperate with.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "market-aggregate",
+    "extractor_note": "RM170bn is an economy-wide projected investment aggregate (MYR not in FX table); treated as market-aggregate, amount null per golden rule."
+  },
+  {
+    "id": "2026-11-26#03",
+    "briefing_date": "2026-11-26",
+    "item_status": "fresh",
+    "section": "policy",
+    "headline": "US Carbon Capture Coalition submits Class VI permitting-reform proposals to EPA",
+    "summary": "The Carbon Capture Coalition submitted a package of proposals to the EPA aimed at reforming and accelerating Class VI (CO2 injection well) permitting, targeting the large backlog of pending applications and seeking greater consistency across EPA regions and state primacy programs.",
+    "source": "Carbon Herald",
+    "pub_date": "2026-11-25",
+    "url": "https://carbonherald.com/carbon-capture-coalition-submits-class-vi-permitting-reform-proposals-to-epa/",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Carbon Capture Coalition",
+      "US EPA"
+    ],
+    "org_types": [
+      "industry-body",
+      "government"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Class VI permitting throughput is the key US storage bottleneck; reform signals affect global CCS investment pace and benchmarking of Australia's own offshore GHG storage approvals.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-26#04",
+    "briefing_date": "2026-11-26",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Equinor CEO says CO2 shortage and cost are holding back new CCS deals",
+    "summary": "Equinor's chief executive said a shortage of committed CO2 volumes and high costs are impeding new carbon-capture-and-storage deals, underscoring that transport-and-storage operators face a demand/off-taker gap even as storage capacity (e.g. Northern Lights) expands.",
+    "source": "Bloomberg",
+    "pub_date": "2026-11-25",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-24/equinor-says-co2-shortage-is-holding-back-new-ccs-deals",
+    "region": "Europe-UK",
+    "countries": [
+      "Norway"
+    ],
+    "organisations": [
+      "Equinor"
+    ],
+    "org_types": [
+      "OG-major"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "transport",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A candid demand-side warning from Europe's leading storage operator; the 'not enough captured CO2 to fill stores' problem is the same chicken-and-egg risk facing Australian storage hubs seeking anchor volumes.",
+    "sentiment": null,
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-26#05",
+    "briefing_date": "2026-11-26",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Euronews: was carbon capture a COP31 'delay tactic or genuine solution'?",
+    "summary": "A Euronews feature revisits the contested role of CCS after COP31, framing the debate over whether carbon capture is a legitimate decarbonisation tool or a fossil-fuel 'delay tactic', as the EU continues to invest in what critics call unproven technology.",
+    "source": "Euronews",
+    "pub_date": "2026-11-25",
+    "url": "https://www.euronews.com/2026/11/24/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
+    "region": "Global",
+    "countries": [
+      "European Union"
+    ],
+    "organisations": [
+      "Euronews"
+    ],
+    "org_types": [
+      "other"
+    ],
+    "instrument_type": "other",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Continuing post-COP31 social-licence pushback in mainstream European media; tracks the reputational headwind narrative CO2CRC communications must anticipate.",
+    "sentiment": "negative",
+    "tags": [
+      "opinion"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": null
+  },
+  {
+    "id": "2026-11-26#06",
+    "briefing_date": "2026-11-26",
+    "item_status": "radar",
+    "section": "projects",
+    "headline": "East Coast Cluster reported to award £2.25bn in UK CCS contracts",
+    "summary": "Trade coverage reports the Teesside East Coast Cluster has awarded around £2.25 billion of CCS supply-chain contracts. The figure is uncorroborated against other sources and the article pre-dates the window, so it is flagged for watch rather than briefed.",
+    "source": "World Pipelines",
+    "pub_date": "2026-11-23",
+    "url": "https://www.worldpipelines.com/business-news/23112026/-east-coast-cluster-awards-225-billion-in-uk-ccs-contracts/",
+    "region": "Europe-UK",
+    "countries": [
+      "United Kingdom"
+    ],
+    "organisations": [
+      "East Coast Cluster"
+    ],
+    "org_types": [
+      "developer"
+    ],
+    "instrument_type": "project-milestone",
+    "value_chain": [
+      "capture",
+      "transport",
+      "storage"
+    ],
+    "amount": 2250000000,
+    "currency": "GBP",
+    "amount_aud": null,
+    "commitment_status": "committed",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "low",
+    "co2crc_note": "Scale of UK CCS supply-chain contracting is a demand signal for the global CCS equipment market; figure unverified.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "private",
+    "amount_basis": "supplier-contract",
+    "extractor_note": "Out-of-window (23 Nov) and single-source/uncorroborated; radar only."
+  }
+]
