@@ -1,0 +1,129 @@
+[
+  {
+    "id": "2026-11-27#01",
+    "briefing_date": "2026-11-27",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "Puro.earth issues 280,000 CORCs to a Nebraska corn-ethanol BECCS project",
+    "summary": "Carbon-removal registry Puro.earth issued ~280,000 CO2 Removal Certificates to a BECCS project tied to ADM's Columbus, Nebraska ethanol complex, with biogenic CO2 stored via the Tallgrass Trailblazer pipeline — converting ADM's September market-entry plan into delivered, verified geologic-storage credits.",
+    "source": "Quantum Commodity Intelligence",
+    "pub_date": "2026-11-26",
+    "url": "https://www.qcintel.com/carbon/article/puro-issues-280-000-carbon-credits-to-nebraska-beccs-project-78248.html",
+    "region": "North America",
+    "countries": [
+      "United States"
+    ],
+    "organisations": [
+      "Puro.earth",
+      "ADM",
+      "Tallgrass"
+    ],
+    "org_types": [
+      "registry",
+      "other",
+      "other"
+    ],
+    "instrument_type": "carbon-credit-removal",
+    "value_chain": [
+      "BECCS",
+      "storage"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "spent",
+    "target_year": null,
+    "capacity_mtpa": 0.28,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Verified geologic-storage-backed BECCS crediting at scale is a precedent for the removal-credit integrity and MMV frameworks underpinning CO2CRC-linked research.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": "none",
+    "amount_basis": "not-ccs-funding",
+    "extractor_note": "280,000 is a CORC credit count (capacity_mtpa reflects credits issued, not annual capture capacity of 0.8+ Mtpa); not a money figure."
+  },
+  {
+    "id": "2026-11-27#02",
+    "briefing_date": "2026-11-27",
+    "item_status": "fresh",
+    "section": "markets",
+    "headline": "QatarEnergy and Japan's JBIC sign energy MoU spanning LNG, CCS and power",
+    "summary": "QatarEnergy and the Japan Bank for International Cooperation are reported to have signed an MoU on energy cooperation covering LNG, carbon capture and storage, and power, extending the Gulf NOC/Japanese policy-bank financing relationship into carbon management. Single-source, not independently corroborated this session.",
+    "source": "Construction Review Online",
+    "pub_date": "2026-11-26",
+    "url": "https://constructionreviewonline.com/qatarenergy-jbic-energy-mou-targets-lng-ccs-and-power/",
+    "region": "Middle East",
+    "countries": [
+      "Qatar",
+      "Japan"
+    ],
+    "organisations": [
+      "QatarEnergy",
+      "JBIC"
+    ],
+    "org_types": [
+      "NOC",
+      "financier"
+    ],
+    "instrument_type": "MoU-JV",
+    "value_chain": [
+      "whole-chain"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "announced",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "A Gulf NOC paired with Japanese policy-bank finance on CCS mirrors the Australia-Japan/Asia value-chain and project-finance structures relevant to Australian CCS exports.",
+    "sentiment": null,
+    "tags": [],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": "Single trade-press source; WebFetch verification blocked this session — scope preliminary."
+  },
+  {
+    "id": "2026-11-27#03",
+    "briefing_date": "2026-11-27",
+    "item_status": "fresh",
+    "section": "media",
+    "headline": "Carbon Pulse: COPs face a 'technology neutrality' problem after the CCUS fight in Antalya",
+    "summary": "A Carbon Pulse briefing analyses the carbon-capture dispute that helped sink COP31's cover decision, arguing the failure to set the first quantified CCUS/CDR capacity goals has left the UN process split over whether CCS and removals belong in headline targets or are a fossil-aligned distraction.",
+    "source": "Carbon Pulse",
+    "pub_date": "2026-11-26",
+    "url": "https://carbon-pulse.com/575316/",
+    "region": "Global",
+    "countries": [],
+    "organisations": [
+      "Carbon Pulse",
+      "UNFCCC"
+    ],
+    "org_types": [
+      "other",
+      "multilateral"
+    ],
+    "instrument_type": "policy",
+    "value_chain": [
+      "not-applicable"
+    ],
+    "amount": null,
+    "currency": null,
+    "amount_aud": null,
+    "commitment_status": "na",
+    "target_year": null,
+    "capacity_mtpa": null,
+    "co2crc_relevance": "medium",
+    "co2crc_note": "Shapes the post-COP31 international policy and social-licence environment in which Australian CCS projects seek legitimacy and finance.",
+    "sentiment": "negative",
+    "tags": [
+      "paywall"
+    ],
+    "amount_period_years": null,
+    "funder_type": null,
+    "amount_basis": null,
+    "extractor_note": null
+  }
+]
