@@ -1,23 +1,5 @@
 [
   {
-    "canonical_url": "https://malaymail.com/news/malaysia/2026/11/24/minister-malaysia-targets-up-to-rm170b-in-carbon-capture-investments-six-hubs-by-2050/244542",
-    "raw_url": "https://www.malaymail.com/news/malaysia/2026/11/24/minister-malaysia-targets-up-to-rm170b-in-carbon-capture-investments-six-hubs-by-2050/244542",
-    "headline": "Minister: Malaysia targets up to RM170b in carbon capture investments, six hubs by 2050",
-    "source_domain": "malaymail.com",
-    "publication_date": "2026-11-24T21:50:25+00:00",
-    "fuzzy_key": "2050,capture,carbon,hubs,investments,malaysia,minister,rm170b,six,targets,up",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://wrexham.com/news/government-drops-planned-connahs-quay-power-station-from-hynet-carbon-capture-talks-303111.html",
-    "raw_url": "https://wrexham.com/news/government-drops-planned-connahs-quay-power-station-from-hynet-carbon-capture-talks-303111.html",
-    "headline": "Government drops planned Connah's Quay power station from HyNet carbon capture talks",
-    "source_domain": "wrexham.com",
-    "publication_date": "2026-11-24T23:16:39+00:00",
-    "fuzzy_key": "capture,carbon,connah,drops,government,hynet,planned,power,quay,station,talks",
-    "found_via": "google_alerts"
-  },
-  {
     "canonical_url": "https://bloomberg.com/news/articles/2026-11-24/equinor-says-co2-shortage-is-holding-back-new-ccs-deals",
     "raw_url": "https://www.bloomberg.com/news/articles/2026-11-24/equinor-says-co2-shortage-is-holding-back-new-ccs-deals",
     "headline": "Equinor CEO Says Carbon Capture Deals Impeded by Cost, Shortage - Bloomberg.com",
@@ -27,66 +9,21 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://theedgemalaysia.com/node/827008",
-    "raw_url": "https://theedgemalaysia.com/node/827008",
-    "headline": "Economy Ministry targets up to six CCUS hubs, RM170 bil in investments by 2050",
-    "source_domain": "theedgemalaysia.com",
-    "publication_date": "2026-11-25T01:34:44+00:00",
-    "fuzzy_key": "2050,bil,ccus,economy,hubs,investments,ministry,rm170,six,targets,up",
+    "canonical_url": "https://briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign",
+    "raw_url": "https://www.briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign/",
+    "headline": "Equinor Warns of CCS Shortfall Slowing Deals - Briefs Finance",
+    "source_domain": "briefs.co",
+    "publication_date": "2026-11-25T04:35:51+00:00",
+    "fuzzy_key": "briefs,ccs,deals,equinor,finance,shortfall,slowing,warns",
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://euronews.com/2026/11/24/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
-    "raw_url": "https://www.euronews.com/2026/11/24/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
-    "headline": "Carbon capture was a sticking point at COP31: Is it a delay tactic or genuine solution?",
-    "source_domain": "euronews.com",
-    "publication_date": "2026-11-25T01:34:44+00:00",
-    "fuzzy_key": "capture,carbon,cop31,delay,genuine,point,solution,sticking,tactic",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://energynewsbeat.co/carbon-capture/operating-carbon-capture-plants-equal-0-18-of-energy-emissions-governments-earmarked-54-billion",
-    "raw_url": "https://energynewsbeat.co/carbon-capture/operating-carbon-capture-plants-equal-0-18-of-energy-emissions-governments-earmarked-54-billion/",
-    "headline": "Operating Carbon-Capture Plants Equal 0.18% of Energy Emissions. Governments ...",
-    "source_domain": "energynewsbeat.co",
-    "publication_date": "2026-11-25T01:34:44+00:00",
-    "fuzzy_key": "18,capture,carbon,emissions,energy,equal,governments,operating,plants",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://openpr.com/news/4698432/co2-pipeline-transport-market-2026-growth-estimates-key",
-    "raw_url": "https://www.openpr.com/news/4698432/co2-pipeline-transport-market-2026-growth-estimates-key",
-    "headline": "CO2 Pipeline Transport Market 2026: Growth Estimates, Key - openPR.com",
-    "source_domain": "openpr.com",
-    "publication_date": "2026-11-25T01:34:44+00:00",
-    "fuzzy_key": "2026,co2,com,estimates,growth,key,market,openpr,pipeline,transport",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://cooalliance.com/podcasts/ep-617-climeworks-coo-douglas-chan-from-oil-rigs-to-carbon-removal",
-    "raw_url": "https://cooalliance.com/podcasts/ep-617-climeworks-coo-douglas-chan-from-oil-rigs-to-carbon-removal/",
-    "headline": "Ep. 617 - Climeworks COO Douglas Chan - From Oil Rigs to Carbon Removal",
-    "source_domain": "cooalliance.com",
-    "publication_date": "2026-11-25T01:46:36+00:00",
-    "fuzzy_key": "617,carbon,chan,climeworks,coo,douglas,ep,oil,removal,rigs",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://upstreamonline.com/carbon-capture/australia-and-singapore-target-cross-border-ccs-in-first-of-its-kind-agreement/2-1-2079038",
-    "raw_url": "https://www.upstreamonline.com/carbon-capture/australia-and-singapore-target-cross-border-ccs-in-first-of-its-kind-agreement/2-1-2079038",
-    "headline": "Australia and Singapore target cross-border CCS in 'first-of-its-kind' agreement | Upstream",
-    "source_domain": "upstreamonline.com",
-    "publication_date": "2026-11-25T03:13:20+00:00",
-    "fuzzy_key": "agreement,australia,border,ccs,cross,first,kind,singapore,target,upstream",
-    "found_via": "google_alerts"
-  },
-  {
-    "canonical_url": "https://carbonherald.com/carbon-capture-coalition-submits-class-vi-permitting-reform-proposals-to-epa",
-    "raw_url": "https://carbonherald.com/carbon-capture-coalition-submits-class-vi-permitting-reform-proposals-to-epa/",
-    "headline": "Carbon Capture Coalition Submits Class VI Permitting Reform Proposals To EPA",
-    "source_domain": "carbonherald.com",
-    "publication_date": "2026-11-25T03:17:02+00:00",
-    "fuzzy_key": "capture,carbon,class,coalition,epa,permitting,proposals,reform,submits,vi",
+    "canonical_url": "https://carbon-pulse.com/575316",
+    "raw_url": "https://carbon-pulse.com/575316/",
+    "headline": "BRIEFING: COPs face a tech neutrality problem after CCUS fight in Antalya - Carbon Pulse",
+    "source_domain": "carbon-pulse.com",
+    "publication_date": "2026-11-26T02:37:36+00:00",
+    "fuzzy_key": "after,antalya,briefing,carbon,ccus,cops,face,fight,neutrality,problem,pulse,tech",
     "found_via": "google_alerts"
   },
   {
@@ -99,12 +36,84 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign",
-    "raw_url": "https://www.briefs.co/news/equinor-flags-ccs-bottleneck-not-enough-captured-co2-to-sign/",
-    "headline": "Equinor Warns of CCS Shortfall Slowing Deals - Briefs Finance",
-    "source_domain": "briefs.co",
-    "publication_date": "2026-11-25T04:35:51+00:00",
-    "fuzzy_key": "briefs,ccs,deals,equinor,finance,shortfall,slowing,warns",
+    "canonical_url": "https://carbonherald.com/carbon-capture-coalition-submits-class-vi-permitting-reform-proposals-to-epa",
+    "raw_url": "https://carbonherald.com/carbon-capture-coalition-submits-class-vi-permitting-reform-proposals-to-epa/",
+    "headline": "Carbon Capture Coalition Submits Class VI Permitting Reform Proposals To EPA",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-11-25T03:17:02+00:00",
+    "fuzzy_key": "capture,carbon,class,coalition,epa,permitting,proposals,reform,submits,vi",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://carbonherald.com/malaysia-launches-ccus-roadmap-targeting-six-hubs-and-41-3b-in-investment",
+    "raw_url": "https://carbonherald.com/malaysia-launches-ccus-roadmap-targeting-six-hubs-and-41-3b-in-investment/",
+    "headline": "Malaysia Launches CCUS Roadmap Targeting Six Hubs And $41.3B In Investment",
+    "source_domain": "carbonherald.com",
+    "publication_date": "2026-11-26T02:02:26+00:00",
+    "fuzzy_key": "3b,41,ccus,hubs,investment,launches,malaysia,roadmap,six,targeting",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://cooalliance.com/podcasts/ep-617-climeworks-coo-douglas-chan-from-oil-rigs-to-carbon-removal",
+    "raw_url": "https://cooalliance.com/podcasts/ep-617-climeworks-coo-douglas-chan-from-oil-rigs-to-carbon-removal/",
+    "headline": "Ep. 617 - Climeworks COO Douglas Chan - From Oil Rigs to Carbon Removal",
+    "source_domain": "cooalliance.com",
+    "publication_date": "2026-11-25T01:46:36+00:00",
+    "fuzzy_key": "617,carbon,chan,climeworks,coo,douglas,ep,oil,removal,rigs",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://cyprusshippingnews.com/2026/11/25/cop31-sets-gigatonne-scale-ambition-for-carbon-capture-by-2035",
+    "raw_url": "https://cyprusshippingnews.com/2026/11/25/cop31-sets-gigatonne-scale-ambition-for-carbon-capture-by-2035/",
+    "headline": "COP31 sets gigatonne-scale ambition for carbon capture by 2035 - Cyprus Shipping News",
+    "source_domain": "cyprusshippingnews.com",
+    "publication_date": "2026-11-26T02:02:26+00:00",
+    "fuzzy_key": "2035,ambition,capture,carbon,cop31,cyprus,gigatonne,news,scale,sets,shipping",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://energynewsbeat.co/carbon-capture/operating-carbon-capture-plants-equal-0-18-of-energy-emissions-governments-earmarked-54-billion",
+    "raw_url": "https://energynewsbeat.co/carbon-capture/operating-carbon-capture-plants-equal-0-18-of-energy-emissions-governments-earmarked-54-billion/",
+    "headline": "Operating Carbon-Capture Plants Equal 0.18% of Energy Emissions. Governments ...",
+    "source_domain": "energynewsbeat.co",
+    "publication_date": "2026-11-25T01:34:44+00:00",
+    "fuzzy_key": "18,capture,carbon,emissions,energy,equal,governments,operating,plants",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://euronews.com/2026/11/24/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
+    "raw_url": "https://www.euronews.com/2026/11/24/delay-tactic-or-genuine-solution-carbon-capture-under-fire-again-as-eu-invests-in-unproven",
+    "headline": "Carbon capture was a sticking point at COP31: Is it a delay tactic or genuine solution?",
+    "source_domain": "euronews.com",
+    "publication_date": "2026-11-25T01:34:44+00:00",
+    "fuzzy_key": "capture,carbon,cop31,delay,genuine,point,solution,sticking,tactic",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://malaymail.com/news/malaysia/2026/11/24/minister-malaysia-targets-up-to-rm170b-in-carbon-capture-investments-six-hubs-by-2050/244542",
+    "raw_url": "https://www.malaymail.com/news/malaysia/2026/11/24/minister-malaysia-targets-up-to-rm170b-in-carbon-capture-investments-six-hubs-by-2050/244542",
+    "headline": "Minister: Malaysia targets up to RM170b in carbon capture investments, six hubs by 2050",
+    "source_domain": "malaymail.com",
+    "publication_date": "2026-11-24T21:50:25+00:00",
+    "fuzzy_key": "2050,capture,carbon,hubs,investments,malaysia,minister,rm170b,six,targets,up",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://norlights.com/co2storage-in-europe",
+    "raw_url": "https://norlights.com/co2storage-in-europe/",
+    "headline": "CO₂ storage in Europe - Northern Lights",
+    "source_domain": "norlights.com",
+    "publication_date": "2026-11-26T02:02:26+00:00",
+    "fuzzy_key": "co,europe,lights,northern,storage",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://openpr.com/news/4698432/co2-pipeline-transport-market-2026-growth-estimates-key",
+    "raw_url": "https://www.openpr.com/news/4698432/co2-pipeline-transport-market-2026-growth-estimates-key",
+    "headline": "CO2 Pipeline Transport Market 2026: Growth Estimates, Key - openPR.com",
+    "source_domain": "openpr.com",
+    "publication_date": "2026-11-25T01:34:44+00:00",
+    "fuzzy_key": "2026,co2,com,estimates,growth,key,market,openpr,pipeline,transport",
     "found_via": "google_alerts"
   },
   {
@@ -126,12 +135,12 @@
     "found_via": "google_alerts"
   },
   {
-    "canonical_url": "https://thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
-    "raw_url": "https://www.thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
-    "headline": "Govt eyes up to 250000 jobs from RM170bil carbon capture industry by 2050 - The Vibes",
-    "source_domain": "thevibes.com",
-    "publication_date": "2026-11-25T04:41:57+00:00",
-    "fuzzy_key": "2050,250000,capture,carbon,eyes,govt,industry,jobs,rm170bil,up,vibes",
+    "canonical_url": "https://theedgemalaysia.com/node/827008",
+    "raw_url": "https://theedgemalaysia.com/node/827008",
+    "headline": "Economy Ministry targets up to six CCUS hubs, RM170 bil in investments by 2050",
+    "source_domain": "theedgemalaysia.com",
+    "publication_date": "2026-11-25T01:34:44+00:00",
+    "fuzzy_key": "2050,bil,ccus,economy,hubs,investments,ministry,rm170,six,targets,up",
     "found_via": "google_alerts"
   },
   {
@@ -141,6 +150,51 @@
     "source_domain": "themalaysianreserve.com",
     "publication_date": "2026-11-25T04:41:57+00:00",
     "fuzzy_key": "akmal,all,benefit,ccus,development,including,sabah,sarawak,should,states",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
+    "raw_url": "https://www.thevibes.com/articles/news/129905/govt-eyes-up-to-250000-jobs-from-rm170bil-carbon-capture-industry-by-2050",
+    "headline": "Govt eyes up to 250000 jobs from RM170bil carbon capture industry by 2050 - The Vibes",
+    "source_domain": "thevibes.com",
+    "publication_date": "2026-11-25T04:41:57+00:00",
+    "fuzzy_key": "2050,250000,capture,carbon,eyes,govt,industry,jobs,rm170bil,up,vibes",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://upstreamonline.com/carbon-capture/australia-and-singapore-target-cross-border-ccs-in-first-of-its-kind-agreement/2-1-2079038",
+    "raw_url": "https://www.upstreamonline.com/carbon-capture/australia-and-singapore-target-cross-border-ccs-in-first-of-its-kind-agreement/2-1-2079038",
+    "headline": "Australia and Singapore target cross-border CCS in 'first-of-its-kind' agreement | Upstream",
+    "source_domain": "upstreamonline.com",
+    "publication_date": "2026-11-25T03:13:20+00:00",
+    "fuzzy_key": "agreement,australia,border,ccs,cross,first,kind,singapore,target,upstream",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://wrexham.com/news/government-drops-planned-connahs-quay-power-station-from-hynet-carbon-capture-talks-303111.html",
+    "raw_url": "https://wrexham.com/news/government-drops-planned-connahs-quay-power-station-from-hynet-carbon-capture-talks-303111.html",
+    "headline": "Government drops planned Connah's Quay power station from HyNet carbon capture talks",
+    "source_domain": "wrexham.com",
+    "publication_date": "2026-11-24T23:16:39+00:00",
+    "fuzzy_key": "capture,carbon,connah,drops,government,hynet,planned,power,quay,station,talks",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://finance.yahoo.com/energy/articles/ce-partners-baumit-advance-carbon-154300970.html",
+    "raw_url": "https://finance.yahoo.com/energy/articles/ce-partners-baumit-advance-carbon-154300970.html",
+    "headline": "CE Partners With Baumit to Advance Carbon Capture-Based Solutions - Yahoo Finance",
+    "source_domain": "yahoo.com",
+    "publication_date": "2026-11-26T02:37:36+00:00",
+    "fuzzy_key": "advance,based,baumit,capture,carbon,ce,finance,partners,solutions,yahoo",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://zacks.com/stock/news/3035345/ce-partners-with-baumit-to-advance-carbon-capture-based-solutions",
+    "raw_url": "https://www.zacks.com/stock/news/3035345/ce-partners-with-baumit-to-advance-carbon-capture-based-solutions",
+    "headline": "CE Partners With Baumit to Advance Carbon Capture-Based Solutions - November 25, 2026",
+    "source_domain": "zacks.com",
+    "publication_date": "2026-11-26T02:37:36+00:00",
+    "fuzzy_key": "2026,25,advance,based,baumit,capture,carbon,ce,november,partners,solutions",
     "found_via": "google_alerts"
   }
 ]
