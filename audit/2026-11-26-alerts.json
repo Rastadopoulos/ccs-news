@@ -1,5 +1,14 @@
 [
   {
+    "canonical_url": "https://argusmedia.com/news-and-insights/latest-market-news/2908953-malaysia-targets-6-ccus-hubs-41bn-investment-by-2050",
+    "raw_url": "https://www.argusmedia.com/news-and-insights/latest-market-news/2908953-malaysia-targets-6-ccus-hubs-41bn-investment-by-2050",
+    "headline": "Malaysia targets 6 CCUS hubs, $41bn investment by 2050 | Latest Market News",
+    "source_domain": "argusmedia.com",
+    "publication_date": "2026-11-26T04:00:07+00:00",
+    "fuzzy_key": "2050,41bn,ccus,hubs,investment,latest,malaysia,market,news,targets",
+    "found_via": "google_alerts"
+  },
+  {
     "canonical_url": "https://bloomberg.com/news/articles/2026-11-24/equinor-says-co2-shortage-is-holding-back-new-ccs-deals",
     "raw_url": "https://www.bloomberg.com/news/articles/2026-11-24/equinor-says-co2-shortage-is-holding-back-new-ccs-deals",
     "headline": "Equinor CEO Says Carbon Capture Deals Impeded by Cost, Shortage - Bloomberg.com",
@@ -51,6 +60,24 @@
     "source_domain": "carbonherald.com",
     "publication_date": "2026-11-26T02:02:26+00:00",
     "fuzzy_key": "3b,41,ccus,hubs,investment,launches,malaysia,roadmap,six,targeting",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://chesteronline.co.uk/hynet-carbon-capture-stanlow-ince-priority-update",
+    "raw_url": "https://chesteronline.co.uk/hynet-carbon-capture-stanlow-ince-priority-update/",
+    "headline": "HyNet Update: Stanlow Hydrogen and Ince Kept as Priorities | Chester Online",
+    "source_domain": "chesteronline.co.uk",
+    "publication_date": "2026-11-26T04:17:09+00:00",
+    "fuzzy_key": "chester,hydrogen,hynet,ince,kept,online,priorities,stanlow,update",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://thestar.com.my/aseanplus/aseanplus-news/2026/11/25/singapore-australia-sign-agreement-to-enable-cross-border-carbon-capture-storage",
+    "raw_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/25/singapore-australia-sign-agreement-to-enable-cross-border-carbon-capture-storage",
+    "headline": "Singapore, Australia sign agreement to enable cross-border carbon capture, storage",
+    "source_domain": "com.my",
+    "publication_date": "2026-11-26T04:00:07+00:00",
+    "fuzzy_key": "agreement,australia,border,capture,carbon,cross,enable,sign,singapore,storage",
     "found_via": "google_alerts"
   },
   {
@@ -159,6 +186,15 @@
     "source_domain": "thevibes.com",
     "publication_date": "2026-11-25T04:41:57+00:00",
     "fuzzy_key": "2050,250000,capture,carbon,eyes,govt,industry,jobs,rm170bil,up,vibes",
+    "found_via": "google_alerts"
+  },
+  {
+    "canonical_url": "https://tradersunion.com/news/companies/show/4385164-malaysia-ccus-roadmap-investment-2050",
+    "raw_url": "https://tradersunion.com/news/companies/show/4385164-malaysia-ccus-roadmap-investment-2050/",
+    "headline": "Malaysia projects RM160 billion to RM170 billion in investment under the CCUS Roadmap 2050",
+    "source_domain": "tradersunion.com",
+    "publication_date": "2026-11-26T04:00:07+00:00",
+    "fuzzy_key": "2050,billion,ccus,investment,malaysia,projects,rm160,rm170,roadmap,under",
     "found_via": "google_alerts"
   },
   {
